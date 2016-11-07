@@ -2,13 +2,13 @@
 =============================================
 <img src="http://dglibre.com/wp-content/subidas/2008/09/tux.png" width="125">
 
-<img src="http://imgur.com/4whZ4Vg" width="125">
+<img src="http://i.imgur.com/4whZ4Vg.png" width="125">
 
-<img src="http://imgur.com/3pUHFFw" width="125">
+<img src="http://i.imgur.com/3pUHFFw.png" width="125">
 
-<img src="http://imgur.com/i8YpsRZ" width="125">
+<img src="http://i.imgur.com/i8YpsRZ.png" width="125">
 
-<img src="http://imgur.com/X7GPrt2" width="125">
+<img src="http://i.imgur.com/X7GPrt2.png" width="125">
 
 Configurable app referent to packages, updates and configurations.
 
