@@ -1,6 +1,14 @@
 # ubunsys v2016.11.07
 =============================================
-![](http://dglibre.com/wp-content/subidas/2008/09/tux.png)
+![](http://dglibre.com/wp-content/subidas/2008/09/tux.png = 125x)
+
+![](http://imgur.com/4whZ4Vg = 125x)
+
+![](http://imgur.com/3pUHFFw = 125x)
+
+![](http://imgur.com/i8YpsRZ = 125x)
+
+![](http://imgur.com/X7GPrt2 = 125x)
 
 Configurable app referent to packages, updates and configurations.
 
