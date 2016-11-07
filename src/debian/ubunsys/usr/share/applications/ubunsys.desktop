@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=0.1
+Type=Application
+Terminal=false
+Name=ubunsys
+Exec=gksudo /usr/bin/ubunsys
+Comment=Batch install apps and configure system
+Icon=/usr/share/pixmaps/ubunsys.ico
+StartupNotify=false
+Categories=Utility;
+Keywords=installer;apps;configure;
+GenericName=Installer & system configurer
+Name[es_ES]=ubunsys
+Name[en_US]=ubunsys
+Name[en_GB]=ubunsys

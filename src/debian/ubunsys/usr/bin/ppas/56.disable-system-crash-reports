@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### disable-system-crash-reports
+sudo sed -i -e 's/enabled=1/enabled=0/g' /etc/default/apport
+sudo service apport stop

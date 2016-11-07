@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### oibaf - Possibly Unstable
+sudo add-apt-repository -y ppa:oibaf/graphics-drivers
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade

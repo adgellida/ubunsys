@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### flatabulous-theme
+sudo add-apt-repository -y ppa:noobslab/icons
+sudo apt-fast -y update
+sudo apt-fast install ultra-flat-icons ultra-flat-icons-green ultra-flat-icons-orange

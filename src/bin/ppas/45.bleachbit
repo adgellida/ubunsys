@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### bleachbit
+sudo apt-fast -y install bleachbit

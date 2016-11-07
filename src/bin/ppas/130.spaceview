@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### spaceview
+sudo add-apt-repository -y ppa:vlijm/spaceview
+sudo apt-fast -y update
+sudo apt-fast -y install spaceview

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+##### compress-uncompress-utils
+sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar p7zip sharutils mpack arj cabextract

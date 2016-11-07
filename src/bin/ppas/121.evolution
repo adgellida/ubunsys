@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### evolution
+sudo apt-fast -y install evolution #mail-notification-evolution evolution-indicator

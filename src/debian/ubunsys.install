@@ -1,0 +1,4 @@
+bin/ubunsys usr/bin
+bin/ppas/* usr/bin/ppas
+ubunsys.desktop usr/share/applications
+src/ubunsys.ico usr/share/pixmaps

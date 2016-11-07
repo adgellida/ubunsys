@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### pepper-flash-for-firefox
+sudo apt-fast -y install browser-plugin-freshplayer-pepperflash
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#sudo apt-fast -y update
+#sudo apt-fast -y install pepperflashplugin-nonfree freshplayerplugin

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### ubutricks
+#http://www.tuxarena.com/apps/ubutricks/
+sudo apt-fast -y install zenity gksu
+wget http://www.tuxarena.com/intro/files/ubutricks.sh
+chmod +x ubutricks.sh
+./ubutricks.sh

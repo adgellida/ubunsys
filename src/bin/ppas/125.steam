@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### steam
+wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
+sudo dpkg -i steam.deb
+rm steam.deb

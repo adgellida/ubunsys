@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### qmmp
+sudo add-apt-repository -y ppa:forkotov02/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install qmmp #qmmp-plugin-pack
+#wget http://dl.dropbox.com/u/72782740/debian/qmmp-skins-pack-0.1-all.deb
+#sudo dpkg -i qmmp-skins-pack*.deb
+#rm qmmp-skins-pack*.deb

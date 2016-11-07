@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### canonical-livepatch
+#https://auth.livepatch.canonical.com/
+sudo snap install canonical-livepatch
+sudo canonical-livepatch enable TOKEN

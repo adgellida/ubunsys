@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### appgrid
+sudo add-apt-repository -y ppa:appgrid/stable
+sudo apt-fast -y update
+sudo apt-fast -y install appgrid

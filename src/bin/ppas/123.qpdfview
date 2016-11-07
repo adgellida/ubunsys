@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### qpdfview
+sudo apt-fast -y install qpdfview

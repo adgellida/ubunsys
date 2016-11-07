@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### indicator-diskman
+sudo add-apt-repository -y ppa:teejee2008/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install indicator-diskman

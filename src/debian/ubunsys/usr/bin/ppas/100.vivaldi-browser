@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### vivaldi-browser
+
+wget https://downloads.vivaldi.com/stable/vivaldi-stable_1.2.490.43-1_amd64.deb
+sudo gdebi vivaldi-stable_1.2.490.43-1_amd64.deb
+rm vivaldi-stable_1.2.490.43-1_amd64.deb
+
+sudo apt-fast install -y chromium-codecs-ffmpeg-extra pepperflashplugin-nonfree

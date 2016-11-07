@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### uninstallpackages
+sudo apt-fast -y remove tilda pidgin* shotwell* gnome-orca onboard* xzoom plank hexchat* rhythmbox
+#sudo apt-fast -y remove thunderbird thunderbird-locale-es thunderbird-locale-en
+sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
+#sudo apt-fast -y remove adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer
+#sudo apt-add-repository -y --remove ppa:xxx/xxx
+#sudo ppa-purge -y ppa:xxx/xxx

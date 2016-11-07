@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### kicad
+#sudo add-apt-repository -y ppa:js-reynaud/kicad-package-daily-stable
+#sudo add-apt-repository -y ppa:adamwolf/kicad-trusty-backports
+sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
+sudo apt-fast -y update
+sudo apt-fast -y install kicad

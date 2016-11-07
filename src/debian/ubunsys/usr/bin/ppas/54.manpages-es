@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### manpages-es
+sudo apt-fast install -f manpages-es manpages-es-extra
+sudo dpkg-reconfigure locales
+#Las teclas de subir y bajar servirán justamente para lo que indica su nombre.
+#La tecla Q nos sacará del manual.
+#La tecla H nos mostrará información adicional (incluidos estos tres puntos).

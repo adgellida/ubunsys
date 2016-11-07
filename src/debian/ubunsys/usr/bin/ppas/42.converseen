@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### converseen
+sudo add-apt-repository -y ppa:faster3ck/converseen
+sudo apt-fast -y update
+sudo apt-fast -y install converseen

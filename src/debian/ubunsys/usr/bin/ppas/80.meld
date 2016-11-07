@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### meld
+sudo apt-fast -y install meld

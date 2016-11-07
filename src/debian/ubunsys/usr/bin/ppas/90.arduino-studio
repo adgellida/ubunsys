@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#### arduino-studio
+wget https://launchpad.net/ubuntu/+archive/primary/+files/libgcrypt11_1.5.3-2ubuntu4.2_amd64.deb
+wget http://download.arduino.org/studio/bundle/0.0.5/arduinostudio-0.0.5-linux64.deb
+sudo dpkg -i libgcrypt11*.deb
+sudo dpkg -i arduinostudio*.deb
+rm libgcrypt11*.deb arduinostudio*.deb
+#sudo usermod -a -G dialout usuario
+#sudo chmod a+rw /dev/ttyUSB0
+
+

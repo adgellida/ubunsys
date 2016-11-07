@@ -1,0 +1,4 @@
+#!/bin/bash
+
+##### handbrake
+sudo apt-fast -y install handbrake

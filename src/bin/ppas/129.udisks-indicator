@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### udisks-indicator
+sudo add-apt-repository -y ppa:udisks-indicator-team/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install udisks-indicator

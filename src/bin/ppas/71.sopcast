@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#### sopcast
+mkdir sopcast
+cd sopcast
+wget http://download.sopcast.com/download/sp-auth.tgz
+tar xzvf sp-auth.tgz
+cd sp-auth
+sudo cp sp-sc-auth /usr/local/bin/
+cd ..
+
+wget http://www.sopcast.com/download/libstdcpp5.tgz
+tar xzvf libstdcpp5.tgz
+cd usr/lib/
+sudo cp * /usr/local/lib/
+sudo ldconfig
+cd ../..
+
+sudo apt-get install python-glade2 vlc
+wget https://sopcast-player.googlecode.com/files/sopcast-player-0.8.5.tar.gz
+cd sopcast-player
+make
+sudo make install
+
+sopcast-player

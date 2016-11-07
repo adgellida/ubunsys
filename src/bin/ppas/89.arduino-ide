@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#### arduino-ide - 1.7.11
+#http://arduino-er.blogspot.com.es/2014/08/arduino-ide-error-avrdude-seropen-cant.html
+wget http://download.arduino.org/IDE/1.7.11/arduino-1.7.11.org-linux64.tar.xz
+tar -xf arduino-1.7.11.org-linux64.tar.xz
+#sudo usermod -a -G dialout usuario
+#sudo chmod a+rw /dev/ttyUSB0
+
+#### arduino-ide - 1.6.5
+#wget https://www.arduino.cc/download_handler.php?f=/arduino-1.6.5-r5-linux64.tar.xz
+#tar -xf arduino-1.6.5-r5-linux64.tar.xz
+#sudo usermod -a -G dialout usuario
+#sudo chmod a+rw /dev/ttyUSB0

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#### getdeb way 1
+wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
+sudo gdebi getdeb-repository_0.1-1~getdeb1_all.deb
+rm getdeb-repository_0.1-1~getdeb1_all.deb
+
+sudo sed -i 's/yakkety/xenial/g' /etc/apt/sources.list.d/getdeb.list
+sudo rename 's/yakkety/xenial/g' /etc/apt/sources.list.d/getdeb.list
+
+#### getdeb way 2
+#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/getdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu xenial-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
+#sudo apt-fast -y update

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### git-stable
+sudo add-apt-repository -y ppa:git-core/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install git

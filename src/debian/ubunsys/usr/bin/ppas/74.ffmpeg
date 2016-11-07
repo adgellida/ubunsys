@@ -1,0 +1,4 @@
+#!/bin/bash
+
+##### ffmpeg
+sudo apt-fast -y install ffmpeg

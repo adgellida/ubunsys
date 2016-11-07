@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### jdownloader-beta
+wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+chmod +rwx JD2SilentSetup_x64.sh
+su usuario -c ./JD2SilentSetup_x64.sh
+rm JD2SilentSetup_x64.sh
+
+#https://mega.nz/#!LJ9FyK7b!t88t6YBo2Wm_ABkSO7GikxujDF5Hddng9bgDb8fwoJQ

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### git-rc
+sudo add-apt-repository -y ppa:git-core/candidate
+sudo apt-fast -y update
+sudo apt-fast -y install git

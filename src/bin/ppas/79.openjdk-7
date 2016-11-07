@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### openjdk-7
+sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre openjdk-7-jre-headless

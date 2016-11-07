@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### synaptic
+sudo apt-fast -y install synaptic

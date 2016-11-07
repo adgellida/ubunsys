@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### gnome-software
+sudo apt-fast -y install gnome-software

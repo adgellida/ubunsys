@@ -1,0 +1,48 @@
+#!/bin/bash
+
+#### thunderbird-nightly - working - https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/
+#example
+sudo apt-fast -y remove thunderbird thunderbird-locale-es
+cd $HOME
+wget https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/thunderbird-50.0a1.en-US.linux-x86_64.tar.bz2
+tar xvfj $HOME/thunderbird-50.0a1.en-US.linux-x86_64.tar.bz2
+mv $HOME/thunderbird $HOME/thunderbird-app
+rm $HOME/thunderbird-50.0a1.en-US.linux-x86_64.tar.bz2
+
+#### thunderbird-stable
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/thunderbird-stable
+#sudo apt-get -y update
+#sudo apt-get -y dist-upgrade
+#sudo apt-get -y install thunderbird thunderbird-locale-es
+
+#### thunderbird-next (beta) - RECOMMENDED
+#sudo add-apt-repository -y ppa:mozillateam/thunderbird-next
+#sudo apt-get -y update
+#sudo apt-get -y dist-upgrade
+#sudo apt-get -y install thunderbird thunderbird-locale-es
+
+#### thunderbird-aurora (aurora) - not working
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/thunderbird-aurora
+#sudo apt-get -y update
+#sudo apt-get -y dist-upgrade
+#sudo apt-get -y install thunderbird thunderbird-locale-es
+
+#### thunderbird-trunk (nightly) - not working
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/ppa
+#sudo apt-get -y update
+#sudo apt-get -y dist-upgrade
+#sudo apt-get -y install thunderbird-trunk thunderbird-locale-es
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/thunderbird.desktop
+test -f ~/.config/autostart/thunderbird.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=/home/usuario/thunderbird-app/thunderbird %u
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=Thunderbird Daily DELAYED
+Name=Thunderbird Daily DELAYED
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/thunderbird.desktop'

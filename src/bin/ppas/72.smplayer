@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##### smplayer + mpv support
+sudo add-apt-repository -y ppa:rvm/smplayer
+sudo add-apt-repository -y ppa:mc3man/ffmpeg-test1
+sudo apt-fast -y update
+sudo apt-fast -y install smplayer mpv smtube smplayer-themes smplayer-skins

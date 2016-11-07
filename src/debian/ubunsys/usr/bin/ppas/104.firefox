@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### firefox
+sudo apt-fast -y install firefox firefox-locale-es firefox-locale-en xul-ext-ubufox

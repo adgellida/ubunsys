@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### wire
+wget https://wire-app.wire.com/linux/wire_2.11.2661_amd64.deb
+sudo gdebi wire_2.11.2661_amd64.deb
+rm wire_2.11.2661_amd64.deb

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#### ubuntu-after-install
+sudo add-apt-repository -y ppa:thefanclub/ubuntu-after-install
+
+sudo sed -i 's/yakkety/xenial/g' /etc/apt/sources.list.d/notepadqq-team-ubuntu-notepadqq-yakkety.list
+sudo rename 's/yakkety/xenial/g' /etc/apt/sources.list.d/notepadqq-team-ubuntu-notepadqq-yakkety.list
+
+sudo apt-fast -y update
+sudo apt-fast -y install ubuntu-after-install

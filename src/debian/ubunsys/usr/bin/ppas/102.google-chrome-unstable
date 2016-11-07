@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### google-chrome-unstable
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+test -f /etc/apt/sources.list.d/google-chrome-unstable.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome-unstable.list'
+sudo apt-fast -y update
+sudo apt-fast -y install google-chrome-unstable

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### xorg-edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
+sudo add-apt-repository -y ppa:xorg-edgers/ppa
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade

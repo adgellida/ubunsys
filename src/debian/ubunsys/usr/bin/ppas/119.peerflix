@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#### peerflix
+#sudo add-apt-repository -y ppa:chris-lea/node.js
+#sudo add-apt-repository -y ppa:rwky/nodejs
+#sudo apt-fast -y update
+sudo apt-fast -y install nodejs npm
+sudo npm install -g peerflix
+
+#fix way 1 - /usr/bin/env: node: No existe el archivo o el directorio
+#sudo ln -s /usr/bin/nodejs /usr/bin/node
+#fix way 2
+####Changed line #!/usr/bin/env node to #!/usr/bin/nodejs in file /usr/local/lib/node_modules/peerflix/app.js and everything works.
+
+##peerflix "magnet url" --vlc
+##peerflix "torrent url" --vlc

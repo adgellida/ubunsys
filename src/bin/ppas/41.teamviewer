@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#### teamviewer
+#http://www.teamviewer.com/es/download/linux.aspx
+#http://www.marcosbox.org/2016/10/installare-teamviewer-ubuntu-16-10.html
+wget http://cz.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_i386.deb
+sudo gdebi libpng12-0_1.2.54-1ubuntu1_i386.deb
+sudo dpkg --add-architecture i386
+sudo apt-fast -y update
+wget http://download.teamviewer.com/download/teamviewer_i386.deb
+sudo gdebi teamviewer_i386.deb
+#sudo dpkg --remove-architecture i386
+#sudo apt-fast -f -y install
+rm teamviewer_i386.deb
+#sudo dpkg --remove-architecture i386
+
+##wait a few moments, costs to init

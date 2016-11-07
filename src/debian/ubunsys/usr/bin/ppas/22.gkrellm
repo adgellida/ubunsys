@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### gkrellm
+sudo apt-fast -y install gkrellm

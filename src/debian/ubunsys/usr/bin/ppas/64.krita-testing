@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#### krita-testing - recommended
+sudo add-apt-repository -y ppa:dimula73/krita
+sudo apt-fast -y update
+
+wget http://mirrors.kernel.org/ubuntu/pool/main/b/boost1.58/libboost-system1.58.0_1.58.0+dfsg-5ubuntu3_amd64.deb
+sudo gdebi libboost-system1.58.0_1.58.0+dfsg-5ubuntu3_amd64.deb
+
+sudo apt-fast -y install krita3-testing krita3-testing-l10n
+#sudo mv /usr/share/applications/kde4/krita.desktop /usr/share/applications/

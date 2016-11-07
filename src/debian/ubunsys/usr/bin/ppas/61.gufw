@@ -1,0 +1,5 @@
+#!/bin/bash
+
+##### gufw
+sudo apt-fast -y install gufw
+sudo ufw enable

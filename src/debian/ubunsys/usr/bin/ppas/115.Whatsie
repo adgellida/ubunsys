@@ -1,0 +1,14 @@
+#!/bin/bash
+
+##### Whatsie
+#gpg --keyserver pool.sks-keyservers.net --recv-keys 1537994D
+#gpg --export --armor 1537994D | sudo apt-key add -
+sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-keys 1537994D
+#echo "deb http://dl.bintray.com/aluxian/deb stable main" | sudo tee /etc/apt/sources.list.d/whatsie.list
+test -f /etc/apt/sources.list.d/whatsie.list || sudo sh -c 'echo "deb http://dl.bintray.com/aluxian/deb stable main" >> /etc/apt/sources.list.d/whatsie.list'
+sudo apt-fast -y update
+sudo apt-fast -y install whatsie
+
+#wget https://github.com/Aluxian/Whatsie/releases/download/v2.0.19/whatsie-2.0.19-linux-amd64.deb
+#sudo dpkg -i whatsie-2.0.19-linux-amd64.deb
+#rm whatsie-2.0.19-linux-amd64.deb

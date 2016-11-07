@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### uecide
+sudo apt-key adv --keyserver keys.gnupg.net --recv-key CA9F00A1
+test -f /etc/apt/sources.list.d/uecide.list || sudo sh -c 'echo "deb http://dist.majenko.co.uk/ stable main" >> /etc/apt/sources.list.d/uecide.list'
+sudo apt-fast -y update
+sudo apt-fast -y install uecide

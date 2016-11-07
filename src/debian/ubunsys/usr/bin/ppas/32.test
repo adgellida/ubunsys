@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### test
+#sudo apt-fast -y install test

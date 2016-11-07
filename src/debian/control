@@ -1,0 +1,16 @@
+Source: ubunsys
+Section: Utility
+Priority: optional
+Maintainer: Antonio David Gellida Lavara <adgellida@gmail.com>
+Build-Depends: debhelper (>= 9), qtbase5-dev, qtbase5-dev-tools, qt5-qmake
+Standards-Version: 3.9.8
+Homepage: <https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/ubunsys.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/ubunsys.git
+
+Package: ubunsys
+Architecture: any
+Depends: libqt5gui5, libqt5widgets5, libqt5core5a, ${misc:Depends}, ${shlibs:Depends}
+Description: Batch install apps and configure system
+ You can install apps
+ and configure your system... 

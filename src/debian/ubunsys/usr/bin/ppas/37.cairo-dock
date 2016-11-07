@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#### cairo-dock
+#Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
+##sudo add-apt-repository -y ppa:cairo-dock-team/weekly
+sudo add-apt-repository -y ppa:cairo-dock-team/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install cairo-dock cairo-dock-plug-ins
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/cairo-dock.desktop
+test -f ~/.config/autostart/cairo-dock.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=cairo-dock -W
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[es_ES]=Cairo Dock
+Name=Cairo Dock
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/cairo-dock.desktop'

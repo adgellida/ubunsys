@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### ubuntu-mozilla-security
+sudo add-apt-repository -y ppa:ubuntu-mozilla-security/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install firefox firefox-locale-es

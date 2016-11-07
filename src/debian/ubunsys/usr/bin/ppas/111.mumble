@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### mumble
+sudo add-apt-repository -y ppa:mumble/snapshot
+sudo apt-fast -y update
+sudo apt-fast -y install mumble

@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/copy.png</file>
+        <file>images/cut.png</file>
+        <file>images/new.png</file>
+        <file>images/open.png</file>
+        <file>images/paste.png</file>
+        <file>images/save.png</file>
+        <file>images/shellscript-icon.png</file>
+        <file>images/linux-icon.png</file>
+        <file>images/kernel.jpg</file>
+        <file>images/update.png</file>
+        <file>images/upgrade.png</file>
+        <file>images/flecha_arriba.png</file>
+        <file>images/repair.png</file>
+        <file>images/install.png</file>
+        <file>images/typografia.png</file>
+        <file>images/escoba.png</file>
+        <file>images/red-number-1.jpg</file>
+        <file>images/red-number-2.jpg</file>
+        <file>images/red-number-3.jpg</file>
+        <file>images/red-number-4.jpg</file>
+        <file>images/red-number-5.jpg</file>
+        <file>images/red-number-6.jpg</file>
+    </qresource>
+</RCC>

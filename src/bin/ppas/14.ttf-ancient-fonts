@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### ttf-ancient-fonts
+sudo apt-fast -y install ttf-ancient-fonts

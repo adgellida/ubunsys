@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### freefilesync
+sudo apt-fast -y install freefilesync

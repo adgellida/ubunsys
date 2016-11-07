@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### software-center 
+sudo apt-fast -y install software-center 

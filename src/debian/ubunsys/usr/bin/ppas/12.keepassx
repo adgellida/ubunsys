@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### keepassx
+sudo apt-fast -y install keepassx

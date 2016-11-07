@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### brasero
+sudo apt-fast -y install brasero

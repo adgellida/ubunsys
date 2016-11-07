@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### inkscape-trunk
+sudo add-apt-repository -y ppa:inkscape.dev/trunk
+sudo apt-fast -y update
+sudo apt-fast -y install inkscape-trunk

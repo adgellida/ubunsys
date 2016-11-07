@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### dia
+sudo add-apt-repository -y ppa:dreibh/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install dia

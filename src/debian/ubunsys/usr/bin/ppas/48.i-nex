@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### i-nex - http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
+sudo add-apt-repository -y ppa:gambas-team/gambas3
+sudo add-apt-repository -y ppa:i-nex-development-team/daily
+sudo apt-fast -y update
+sudo apt-fast -y install i-nex

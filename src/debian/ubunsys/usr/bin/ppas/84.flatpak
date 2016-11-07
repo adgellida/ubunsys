@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### flatpak
+sudo add-apt-repository -y ppa:alexlarsson/flatpak
+sudo apt-fast -y update
+sudo apt-fast -y install flatpak
