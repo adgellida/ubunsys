@@ -1,4 +1,4 @@
-# ubunsys v2016.11.07
+# ubunsys v2016.11.09
 =============================================
 <img src="http://dglibre.com/wp-content/subidas/2008/09/tux.png" width="125">
 
@@ -11,6 +11,13 @@
 <img src="http://i.imgur.com/X7GPrt2.png" width="500">
 
 Configurable app referent to packages, updates and configurations.
+
+If you want to use PPA
+=============================================
+
+sudo add-apt-repository -y ppa:adgellida/ubunsys
+sudo apt-get -y update
+sudo apt-get -y install ubunsys
 
 What this program do
 =============================================

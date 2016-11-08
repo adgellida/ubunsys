@@ -10,7 +10,7 @@ Homepage: <https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys>
 
 Package: ubunsys
 Architecture: any
-Depends: libqt5gui5, libqt5widgets5, libqt5core5a, ${misc:Depends}, ${shlibs:Depends}
+Depends: libqt5gui5, libqt5widgets5, libqt5core5a
 Description: Batch install apps and configure system
  You can install apps
  and configure your system... 

@@ -126,10 +126,10 @@ ae4eded3a7bcb60328a87619b570fda2  usr/bin/ppas/92.guit-gui
 d89a4cba2567382508746b7d59275666  usr/bin/ppas/93.Qt-Linux
 e388c6b2b7ff433a15f9fbe94b0c7308  usr/bin/ppas/94.kicad
 c2ac5cd2a4a692aa4d3185f52fc1f761  usr/bin/ppas/check_apt-fast_installed
-51550f2f3ddbcd7d8a891f0a363ba4ee  usr/bin/ubunsys
-f3f4f42170d193a49ef7c28ce69da76d  usr/share/applications/ubunsys.desktop
+76e53e20c9d01c536dbc6432738a92db  usr/bin/ubunsys
+de109324aa361ee94d6655e81265cffe  usr/share/applications/ubunsys.desktop
 7c685fff85ae54069c04b2e1cc8ceba9  usr/share/doc/ubunsys/README.Debian
-0341c9d74f31cf6cbf9ce5df9da51561  usr/share/doc/ubunsys/changelog.gz
+62ebe15b6281626fe1069995c4cfb92a  usr/share/doc/ubunsys/changelog.gz
 1d36f573e5ef6e7786c6feae07d51d46  usr/share/doc/ubunsys/copyright
-27571c2a9b5be15780cee6d2a3507752  usr/share/menu/ubunsys
+a7ed6c2384ddfa40a0a0c9772211efb2  usr/share/menu/ubunsys
 233842a442d3547736ab619dcadd0b1f  usr/share/pixmaps/ubunsys.ico

@@ -1,9 +1,9 @@
 Package: ubunsys
-Version: 2016.11.07
+Version: 2016.11.09
 Architecture: amd64
 Maintainer: Antonio David Gellida Lavara <adgellida@gmail.com>
 Installed-Size: 2052
-Depends: libqt5gui5, libqt5widgets5, libqt5core5a, libc6 (>= 2.4), libgcc1 (>= 1:3.0), libstdc++6 (>= 4.1.1)
+Depends: libqt5gui5, libqt5widgets5, libqt5core5a
 Section: utils
 Priority: optional
 Homepage: <https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys>
