@@ -1,9 +1,9 @@
 # ubunsys v2016.11.09
 =============================================
 
-Configurable app referent to packages, updates and configurations.
-
 <img src="http://dglibre.com/wp-content/subidas/2008/09/tux.png" width="80">
+
+Configurable app referent to packages, updates and configurations.
 
 <img src="http://i.imgur.com/4whZ4Vg.png" width="500">
 
