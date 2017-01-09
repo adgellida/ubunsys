@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### furiusisomount
+sudo apt-fast -y install furiusisomount

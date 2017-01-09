@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### unetbootin
+sudo add-apt-repository -y ppa:n-muench/programs-ppa
+sudo apt-fast -y update
+sudo apt-fast -y install unetbootin

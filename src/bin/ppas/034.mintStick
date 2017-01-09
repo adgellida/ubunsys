@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### mintStick
+#http://packages.linuxmint.com/pool/main/m/mintstick/
+wget http://packages.linuxmint.com/pool/main/m/mintstick/mintstick_1.2.8_all.deb
+sudo gdebi mintstick_1.2.8_all.deb
+rm mintstick_1.2.8_all.deb

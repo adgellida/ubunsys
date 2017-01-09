@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### vlc-daily
+sudo add-apt-repository -y ppa:videolan/master-daily
+sudo apt-fast -y update
+sudo apt-fast -y install vlc #vlc-plugin-pulse libvlc5

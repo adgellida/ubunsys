@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### ubunsys
+sudo add-apt-repository -y ppa:adgellida/ubunsys
+sudo apt-fast -y update
+sudo apt-fast -y install ubunsys

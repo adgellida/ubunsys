@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#### keepassx
+
+sudo apt-fast -y install keepassx
+
+##with yubico support
+##https://launchpad.net/~hda-me/+archive/ubuntu/keepassx2-yubico
+#sudo add-apt-repository -y ppa:hda-me/keepassx2-yubico
+#sudo add-apt-repository -y ppa:yubico/stable
+#sudo apt-fast -y update
+#sudo apt-fast -y install keepassx yubikey-personalization-gui

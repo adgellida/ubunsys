@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### gsmartcontrol
+sudo apt-fast -y install gsmartcontrol

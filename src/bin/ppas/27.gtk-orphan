@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#### gtkorphan
-sudo apt-fast -y install gtkorphan

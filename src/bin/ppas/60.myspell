@@ -1,5 +1,0 @@
-#!/bin/bash
-
-#### myspell
-sudo apt-fast -y install myspell-es wspanish language-pack-es language-pack-es-base 
-sudo apt-fast -y install myspell-en-gb myspell-en-us

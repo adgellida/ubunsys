@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### gparted
+sudo apt-fast -y install gparted

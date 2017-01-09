@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -50,7 +50,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_3">
        <property name="geometry">
@@ -248,6 +248,108 @@ apt-get -y dist-upgrade</string>
         </property>
         <property name="text">
          <string>Recover space from unused kernels</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>170</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>do-release-upgrade</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="upgradeLatestStableButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Upgrade to latest stable</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/kernel.jpg</normaloff>:/images/kernel.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_61">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>220</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>do-release-upgrade -d</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="upgradeLatestDevButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>210</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Upgrade to latest stable</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/kernel.jpg</normaloff>:/images/kernel.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
         </property>
        </widget>
       </widget>
@@ -542,7 +644,7 @@ packages for normal users</string>
        <rect>
         <x>10</x>
         <y>20</y>
-        <width>101</width>
+        <width>141</width>
         <height>16</height>
        </rect>
       </property>
@@ -553,7 +655,58 @@ packages for normal users</string>
        </font>
       </property>
       <property name="text">
-       <string>Coming soon...</string>
+       <string>Documents &amp; Files </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="installTemplates">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>221</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <property name="text">
+       <string>Install Templates</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ubunsys.qrc">
+        <normaloff>:/images/kernel.jpg</normaloff>:/images/kernel.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="shortcut">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_62">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>This adds content to New Doc Sub-Menu</string>
       </property>
      </widget>
     </widget>
@@ -1278,7 +1431,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>Backup &amp; Sync</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_01">
+       <widget class="QCheckBox" name="checkBox_001">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1288,10 +1441,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>1.freefilesync</string>
+         <string>001.freefilesync</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_02">
+       <widget class="QCheckBox" name="checkBox_002">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1301,10 +1454,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>2.dropbox</string>
+         <string>002.dropbox</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_03">
+       <widget class="QCheckBox" name="checkBox_003">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1314,7 +1467,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>3.megasync</string>
+         <string>003.megasync</string>
         </property>
        </widget>
       </widget>
@@ -1322,7 +1475,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>OS &amp; Utilities</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_12">
+       <widget class="QCheckBox" name="checkBox_012">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1332,10 +1485,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>12.keepassx</string>
+         <string>012.keepassx</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_13">
+       <widget class="QCheckBox" name="checkBox_013">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1345,10 +1498,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>13.ubuntu-restricted-extras</string>
+         <string>013.ubuntu-restricted-extras</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_14">
+       <widget class="QCheckBox" name="checkBox_014">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1358,10 +1511,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>14.ttf-ancient fonts</string>
+         <string>014.ttf-ancient fonts</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_09">
+       <widget class="QCheckBox" name="checkBox_009">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1371,10 +1524,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>9.xorg-edgers</string>
+         <string>009.xorg-edgers</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_11">
+       <widget class="QCheckBox" name="checkBox_011">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1384,10 +1537,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>11.graphics-drivers-team</string>
+         <string>011.graphics-drivers-team</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_20">
+       <widget class="QCheckBox" name="checkBox_020">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1397,10 +1550,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>20.gnome-disk-utility</string>
+         <string>020.gnome-disk-utility</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_10">
+       <widget class="QCheckBox" name="checkBox_010">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1410,10 +1563,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>10.oibaf</string>
+         <string>010.oibaf</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_21">
+       <widget class="QCheckBox" name="checkBox_021">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1423,10 +1576,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>21.gparted</string>
+         <string>021.gparted</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_08">
+       <widget class="QCheckBox" name="checkBox_008">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1436,10 +1589,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>8.mtp-support</string>
+         <string>008.mtp-support</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_15">
+       <widget class="QCheckBox" name="checkBox_015">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1449,10 +1602,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>15.synaptic</string>
+         <string>015.synaptic</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_05">
+       <widget class="QCheckBox" name="checkBox_005">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1462,10 +1615,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>5.y-ppa-manager</string>
+         <string>005.y-ppa-manager</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_16">
+       <widget class="QCheckBox" name="checkBox_016">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1475,10 +1628,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>16.preload</string>
+         <string>016.preload</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_17">
+       <widget class="QCheckBox" name="checkBox_017">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1488,10 +1641,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>17.prelink</string>
+         <string>017.prelink</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_18">
+       <widget class="QCheckBox" name="checkBox_018">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1501,10 +1654,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>18.gdebi</string>
+         <string>018.gdebi</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_19">
+       <widget class="QCheckBox" name="checkBox_019">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1514,10 +1667,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>19.ppa-purge</string>
+         <string>019.ppa-purge</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_04">
+       <widget class="QCheckBox" name="checkBox_004">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1527,10 +1680,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>4.apt-fast</string>
+         <string>004.apt-fast</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_06">
+       <widget class="QCheckBox" name="checkBox_006">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1540,10 +1693,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>6.getdeb</string>
+         <string>006.getdeb</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_22">
+       <widget class="QCheckBox" name="checkBox_022">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1553,10 +1706,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>22.gkrellm</string>
+         <string>022.gkrellm</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_07">
+       <widget class="QCheckBox" name="checkBox_007">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1566,10 +1719,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>7.playdeb</string>
+         <string>007.playdeb</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_23">
+       <widget class="QCheckBox" name="checkBox_023">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1579,10 +1732,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>23.mate-tweak</string>
+         <string>023.mate-tweak</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_24">
+       <widget class="QCheckBox" name="checkBox_024">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1592,10 +1745,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>24.recoll</string>
+         <string>024.recoll</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_25">
+       <widget class="QCheckBox" name="checkBox_025">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1605,10 +1758,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>25.brasero</string>
+         <string>025.brasero</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_26">
+       <widget class="QCheckBox" name="checkBox_026">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1618,10 +1771,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>26.k3b</string>
+         <string>026.k3b</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_27">
+       <widget class="QCheckBox" name="checkBox_027">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1631,10 +1784,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>27.gtkorphan</string>
+         <string>027.gtkorphan</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_28">
+       <widget class="QCheckBox" name="checkBox_028">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1644,10 +1797,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>28.byobu</string>
+         <string>028.byobu</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_29">
+       <widget class="QCheckBox" name="checkBox_029">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1657,10 +1810,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>29.gsmartcontrol</string>
+         <string>029.gsmartcontrol</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_30">
+       <widget class="QCheckBox" name="checkBox_030">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1670,10 +1823,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>30.software-center</string>
+         <string>030.software-center</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_31">
+       <widget class="QCheckBox" name="checkBox_031">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1683,10 +1836,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>31.gnome-software</string>
+         <string>031.gnome-software</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_32">
+       <widget class="QCheckBox" name="checkBox_032">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1696,10 +1849,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>32.test</string>
+         <string>032.test</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_33">
+       <widget class="QCheckBox" name="checkBox_033">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1709,10 +1862,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>33.appgrid</string>
+         <string>033.appgrid</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_34">
+       <widget class="QCheckBox" name="checkBox_034">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1722,10 +1875,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>34.mintStick</string>
+         <string>034.mintStick</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_35">
+       <widget class="QCheckBox" name="checkBox_035">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1735,10 +1888,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>35.mate-dock-applet</string>
+         <string>035.mate-dock-applet</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_36">
+       <widget class="QCheckBox" name="checkBox_036">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1748,10 +1901,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>36.extundelete</string>
+         <string>036.extundelete</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_37">
+       <widget class="QCheckBox" name="checkBox_037">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1761,10 +1914,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>37.cairo-dock</string>
+         <string>037.cairo-dock</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_38">
+       <widget class="QCheckBox" name="checkBox_038">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1774,10 +1927,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>38.ubuntu-after-install</string>
+         <string>038.ubuntu-after-install</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_39">
+       <widget class="QCheckBox" name="checkBox_039">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1787,10 +1940,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>39.ubutricks</string>
+         <string>039.ubutricks</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_40">
+       <widget class="QCheckBox" name="checkBox_040">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1800,10 +1953,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>40.postinstallerf</string>
+         <string>040.postinstallerf</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_46">
+       <widget class="QCheckBox" name="checkBox_046">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1813,10 +1966,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>46.clipit</string>
+         <string>046.clipit</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_45">
+       <widget class="QCheckBox" name="checkBox_045">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1826,10 +1979,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>45.bleachbit</string>
+         <string>045.bleachbit</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_44">
+       <widget class="QCheckBox" name="checkBox_044">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1839,10 +1992,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>44.grub-customizer</string>
+         <string>044.grub-customizer</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_43">
+       <widget class="QCheckBox" name="checkBox_043">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1852,10 +2005,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>43.synapse</string>
+         <string>043.synapse</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_42">
+       <widget class="QCheckBox" name="checkBox_042">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1865,10 +2018,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>42.converseen</string>
+         <string>042.converseen</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_41">
+       <widget class="QCheckBox" name="checkBox_041">
         <property name="geometry">
          <rect>
           <x>230</x>
@@ -1878,10 +2031,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>41.teamviewer</string>
+         <string>041.teamviewer</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_47">
+       <widget class="QCheckBox" name="checkBox_047">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1891,10 +2044,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>47.screenfetch</string>
+         <string>047.screenfetch</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_48">
+       <widget class="QCheckBox" name="checkBox_048">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1904,10 +2057,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>48.i-nex</string>
+         <string>048.i-nex</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_49">
+       <widget class="QCheckBox" name="checkBox_049">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1917,10 +2070,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>49.ANGRYsearch</string>
+         <string>049.ANGRYsearch</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_50">
+       <widget class="QCheckBox" name="checkBox_050">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1930,10 +2083,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>50.fish-shell</string>
+         <string>050.fish-shell</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_51">
+       <widget class="QCheckBox" name="checkBox_051">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1943,10 +2096,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>51.furiusisomount</string>
+         <string>051.furiusisomount</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_52">
+       <widget class="QCheckBox" name="checkBox_052">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1956,10 +2109,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>52.ddrescue-gui</string>
+         <string>052.ddrescue-gui</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_53">
+       <widget class="QCheckBox" name="checkBox_053">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1969,10 +2122,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>53.unetbootin</string>
+         <string>053.unetbootin</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_54">
+       <widget class="QCheckBox" name="checkBox_054">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1982,10 +2135,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>54.manpages-es</string>
+         <string>054.manpages-es</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_55">
+       <widget class="QCheckBox" name="checkBox_055">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -1995,10 +2148,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>55.asterisk-on-cli-passwords</string>
+         <string>055.asterisk-on-cli-passwords</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_56">
+       <widget class="QCheckBox" name="checkBox_056">
         <property name="geometry">
          <rect>
           <x>390</x>
@@ -2008,7 +2161,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>56.disable-system-crash-reports</string>
+         <string>056.disable-system-crash-reports</string>
         </property>
        </widget>
        <widget class="QCheckBox" name="checkBox_130">
@@ -2047,7 +2200,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>Themes</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_57">
+       <widget class="QCheckBox" name="checkBox_057">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2057,10 +2210,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>57.vibrancy-colors</string>
+         <string>057.vibrancy-colors</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_58">
+       <widget class="QCheckBox" name="checkBox_058">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2070,7 +2223,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>58.flatabulous-theme</string>
+         <string>058.flatabulous-theme</string>
         </property>
        </widget>
       </widget>
@@ -2078,7 +2231,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>Lang. packages</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_59">
+       <widget class="QCheckBox" name="checkBox_059">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2088,10 +2241,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>59.aspell</string>
+         <string>059.aspell</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_60">
+       <widget class="QCheckBox" name="checkBox_060">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2101,7 +2254,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>60.myspell</string>
+         <string>060.myspell</string>
         </property>
        </widget>
       </widget>
@@ -2109,7 +2262,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>Security &amp; Privacy</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_61">
+       <widget class="QCheckBox" name="checkBox_061">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2119,7 +2272,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>61.gufw</string>
+         <string>061.gufw</string>
         </property>
        </widget>
       </widget>
@@ -2132,7 +2285,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>Photos &amp; Graphics</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_62">
+       <widget class="QCheckBox" name="checkBox_062">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2142,10 +2295,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>62.gimp</string>
+         <string>062.gimp</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_63">
+       <widget class="QCheckBox" name="checkBox_063">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2155,10 +2308,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>63.gimp-edge</string>
+         <string>063.gimp-edge</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_64">
+       <widget class="QCheckBox" name="checkBox_064">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2168,10 +2321,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>64.krita-testing</string>
+         <string>064.krita-testing</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_65">
+       <widget class="QCheckBox" name="checkBox_065">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2181,10 +2334,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>65.gnome-exe-thumbnailer</string>
+         <string>065.gnome-exe-thumbnailer</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_66">
+       <widget class="QCheckBox" name="checkBox_066">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2194,10 +2347,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>66.shutter</string>
+         <string>066.shutter</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_67">
+       <widget class="QCheckBox" name="checkBox_067">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2207,10 +2360,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>67.inkscape-stable</string>
+         <string>067.inkscape-stable</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_68">
+       <widget class="QCheckBox" name="checkBox_068">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2220,7 +2373,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>68.inkscape-trunk</string>
+         <string>068.inkscape-trunk</string>
         </property>
        </widget>
       </widget>
@@ -2228,7 +2381,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>Audio &amp; Music</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_69">
+       <widget class="QCheckBox" name="checkBox_069">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2238,7 +2391,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>69.qmmp</string>
+         <string>069.qmmp</string>
         </property>
        </widget>
       </widget>
@@ -2246,7 +2399,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>Videos &amp; Movies</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_70">
+       <widget class="QCheckBox" name="checkBox_070">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2256,10 +2409,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>70.kazam</string>
+         <string>070.kazam</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_71">
+       <widget class="QCheckBox" name="checkBox_071">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2269,10 +2422,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>71.sopcast</string>
+         <string>071.sopcast</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_72">
+       <widget class="QCheckBox" name="checkBox_072">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2282,10 +2435,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>72.smplayer</string>
+         <string>072.smplayer</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_73">
+       <widget class="QCheckBox" name="checkBox_073">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2295,7 +2448,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>73.handbrake</string>
+         <string>073.handbrake</string>
         </property>
        </widget>
       </widget>
@@ -2303,7 +2456,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>All multimedia content</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_74">
+       <widget class="QCheckBox" name="checkBox_074">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2313,10 +2466,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>74.ffmpeg</string>
+         <string>074.ffmpeg</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_75">
+       <widget class="QCheckBox" name="checkBox_075">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2326,10 +2479,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>75.vlc-stable</string>
+         <string>075.vlc-stable</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_76">
+       <widget class="QCheckBox" name="checkBox_076">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2339,7 +2492,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>76.vlc-daily</string>
+         <string>076.vlc-daily</string>
         </property>
        </widget>
       </widget>
@@ -2347,7 +2500,7 @@ apt-get -y clean</string>
        <attribute name="title">
         <string>Development</string>
        </attribute>
-       <widget class="QCheckBox" name="checkBox_77">
+       <widget class="QCheckBox" name="checkBox_077">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2357,10 +2510,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>77.notepadqq</string>
+         <string>077.notepadqq</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_78">
+       <widget class="QCheckBox" name="checkBox_078">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2370,10 +2523,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>78.openjdk-8</string>
+         <string>078.openjdk-8</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_79">
+       <widget class="QCheckBox" name="checkBox_079">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2383,10 +2536,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>79.openjdk-7</string>
+         <string>079.openjdk-7</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_80">
+       <widget class="QCheckBox" name="checkBox_080">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2396,10 +2549,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>80.meld</string>
+         <string>080.meld</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_81">
+       <widget class="QCheckBox" name="checkBox_081">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2409,10 +2562,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>81.dev-utils</string>
+         <string>081.dev-utils</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_82">
+       <widget class="QCheckBox" name="checkBox_082">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2422,10 +2575,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>82.git-stable</string>
+         <string>082.git-stable</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_83">
+       <widget class="QCheckBox" name="checkBox_083">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2435,10 +2588,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>83.smartgit</string>
+         <string>083.smartgit</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_84">
+       <widget class="QCheckBox" name="checkBox_084">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2448,10 +2601,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>84.flatpak</string>
+         <string>084.flatpak</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_85">
+       <widget class="QCheckBox" name="checkBox_085">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2461,10 +2614,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>85.dia</string>
+         <string>085.dia</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_86">
+       <widget class="QCheckBox" name="checkBox_086">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2474,10 +2627,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>86.blender</string>
+         <string>086.blender</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_87">
+       <widget class="QCheckBox" name="checkBox_087">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2487,10 +2640,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>87.fritzing</string>
+         <string>087.fritzing</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_88">
+       <widget class="QCheckBox" name="checkBox_088">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2500,10 +2653,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>88.uecide</string>
+         <string>088.uecide</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_89">
+       <widget class="QCheckBox" name="checkBox_089">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2513,10 +2666,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>89.arduino-ide</string>
+         <string>089.arduino-ide</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_90">
+       <widget class="QCheckBox" name="checkBox_090">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2526,10 +2679,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>90.arduino-studio</string>
+         <string>090.arduino-studio</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_91">
+       <widget class="QCheckBox" name="checkBox_091">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2539,10 +2692,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>91.git-rc</string>
+         <string>091.git-rc</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_92">
+       <widget class="QCheckBox" name="checkBox_092">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2552,10 +2705,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>92.git-gui</string>
+         <string>092.git-gui</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_93">
+       <widget class="QCheckBox" name="checkBox_093">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -2565,10 +2718,10 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>93.Qt-Linux</string>
+         <string>093.Qt-Linux</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_94">
+       <widget class="QCheckBox" name="checkBox_094">
         <property name="geometry">
          <rect>
           <x>200</x>
@@ -2578,7 +2731,7 @@ apt-get -y clean</string>
          </rect>
         </property>
         <property name="text">
-         <string>94.kicad</string>
+         <string>094.kicad</string>
         </property>
        </widget>
       </widget>

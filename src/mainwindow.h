@@ -87,6 +87,11 @@ private slots:
 
     //void on_actionAbout_clicked();
 
+    void on_upgradeLatestStableButton_clicked();
+
+    void on_upgradeLatestDevButton_clicked();
+
+    void on_installTemplatesButton_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### openjdk-8
+sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre openjdk-8-jre-headless

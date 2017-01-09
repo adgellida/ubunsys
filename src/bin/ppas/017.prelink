@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### prelink
+sudo apt-fast -y install prelink

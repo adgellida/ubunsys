@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### kubuntu-ci/unstable
+sudo add-apt-repository -y ppa:kubuntu-ci/unstable
+sudo apt-fast -y update
+sudo apt-fast -y upgrade

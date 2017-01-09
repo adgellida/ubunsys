@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### screenfetch
+sudo apt-fast -y install screenfetch

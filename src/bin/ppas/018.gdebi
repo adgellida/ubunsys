@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### gdebi
+sudo apt-fast -y install gdebi

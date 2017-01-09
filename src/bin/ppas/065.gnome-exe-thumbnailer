@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### gnome-exe-thumbnailer
+sudo apt-fast -y install gnome-exe-thumbnailer

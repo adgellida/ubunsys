@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### blender
+sudo add-apt-repository -y ppa:thomas-schiex/blender
+sudo apt-fast -y update
+sudo apt-fast -y install blender

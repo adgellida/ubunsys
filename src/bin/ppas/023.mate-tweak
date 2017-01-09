@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### mate-tweak
+sudo apt-fast -y install mate-tweak

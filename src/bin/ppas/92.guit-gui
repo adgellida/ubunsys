@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#### git-gui
-sudo apt-fast -y install git-gui #git-cola qgit 

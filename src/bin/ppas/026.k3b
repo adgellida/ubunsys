@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### krb
+sudo apt-fast -y install k3b

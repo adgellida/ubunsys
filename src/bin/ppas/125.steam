@@ -4,3 +4,6 @@
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 sudo dpkg -i steam.deb
 rm steam.deb
+
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B05498B7
+#sudo sh -c 'echo "deb http://repo.steampowered.com/steam/ precise steam" >> /etc/apt/sources.list.d/steam.list'

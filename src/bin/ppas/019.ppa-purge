@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### ppa-purge
+sudo apt-fast -y install ppa-purge

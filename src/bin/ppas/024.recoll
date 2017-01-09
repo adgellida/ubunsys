@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### recoll
+sudo apt-fast -y install recoll

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#### postinstallerf
+## latest version
+wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
+wget -c http://sourceforge.net/projects/postinstaller/files/fedora/releases/23/x86_64/postinstallerf-1.5-34.20150812gitdcdc05d.fc23.noarch.rpm
+sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+sudo apt-fast -y update
+sudo apt-fast -y install yad packagekit
+sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
+sudo apt-fast -y install alien dpkg-dev debhelper build-essential
+sudo alien postinstallerf-1.5-34.20150812gitdcdc05d.fc23.noarch.rpm
+sudo dpkg -i postinstallerf_1.5-35.20150812_all.deb 

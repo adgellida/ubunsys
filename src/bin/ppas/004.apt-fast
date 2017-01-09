@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### apt-fast
+#http://www.atareao.es/ubuntu/liberado-apt-fast-1-6-6-con-configuracion-y-desde-ppa-oficial/
+#http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
+##sudo add-apt-repository -y ppa:apt-fast/stable
+sudo add-apt-repository -y ppa:saiarcot895/myppa
+sudo apt-get -y update
+sudo apt-get -y install apt-fast

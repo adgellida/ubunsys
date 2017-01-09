@@ -5,100 +5,101 @@
 
 void MainWindow::on_unselectAllButton_clicked()
 {
-    ui->checkBox_01->setChecked(false);
-    ui->checkBox_02->setChecked(false);
-    ui->checkBox_03->setChecked(false);
-    ui->checkBox_04->setChecked(false);
-    ui->checkBox_05->setChecked(false);
-    ui->checkBox_06->setChecked(false);
-    ui->checkBox_07->setChecked(false);
-    ui->checkBox_08->setChecked(false);
-    ui->checkBox_09->setChecked(false);
-    ui->checkBox_10->setChecked(false);
-    ui->checkBox_11->setChecked(false);
-    ui->checkBox_12->setChecked(false);
-    ui->checkBox_13->setChecked(false);
-    ui->checkBox_14->setChecked(false);
-    ui->checkBox_15->setChecked(false);
-    ui->checkBox_16->setChecked(false);
-    ui->checkBox_17->setChecked(false);
-    ui->checkBox_18->setChecked(false);
-    ui->checkBox_19->setChecked(false);
-    ui->checkBox_20->setChecked(false);
-    ui->checkBox_21->setChecked(false);
-    ui->checkBox_22->setChecked(false);
-    ui->checkBox_23->setChecked(false);
-    ui->checkBox_24->setChecked(false);
-    ui->checkBox_25->setChecked(false);
-    ui->checkBox_26->setChecked(false);
-    ui->checkBox_27->setChecked(false);
-    ui->checkBox_28->setChecked(false);
-    ui->checkBox_29->setChecked(false);
-    ui->checkBox_30->setChecked(false);
-    ui->checkBox_31->setChecked(false);
-    ui->checkBox_32->setChecked(false);
-    ui->checkBox_33->setChecked(false);
-    ui->checkBox_34->setChecked(false);
-    ui->checkBox_35->setChecked(false);
-    ui->checkBox_36->setChecked(false);
-    ui->checkBox_37->setChecked(false);
-    ui->checkBox_38->setChecked(false);
-    ui->checkBox_39->setChecked(false);
-    ui->checkBox_40->setChecked(false);
-    ui->checkBox_41->setChecked(false);
-    ui->checkBox_42->setChecked(false);
-    ui->checkBox_43->setChecked(false);
-    ui->checkBox_44->setChecked(false);
-    ui->checkBox_45->setChecked(false);
-    ui->checkBox_46->setChecked(false);
-    ui->checkBox_47->setChecked(false);
-    ui->checkBox_48->setChecked(false);
-    ui->checkBox_49->setChecked(false);
-    ui->checkBox_50->setChecked(false);
-    ui->checkBox_51->setChecked(false);
-    ui->checkBox_52->setChecked(false);
-    ui->checkBox_53->setChecked(false);
-    ui->checkBox_54->setChecked(false);
-    ui->checkBox_55->setChecked(false);
-    ui->checkBox_56->setChecked(false);
-    ui->checkBox_57->setChecked(false);
-    ui->checkBox_58->setChecked(false);
-    ui->checkBox_59->setChecked(false);
-    ui->checkBox_60->setChecked(false);
-    ui->checkBox_61->setChecked(false);
-    ui->checkBox_62->setChecked(false);
-    ui->checkBox_63->setChecked(false);
-    ui->checkBox_64->setChecked(false);
-    ui->checkBox_65->setChecked(false);
-    ui->checkBox_66->setChecked(false);
-    ui->checkBox_67->setChecked(false);
-    ui->checkBox_68->setChecked(false);
-    ui->checkBox_69->setChecked(false);
-    ui->checkBox_70->setChecked(false);
-    ui->checkBox_71->setChecked(false);
-    ui->checkBox_72->setChecked(false);
-    ui->checkBox_73->setChecked(false);
-    ui->checkBox_74->setChecked(false);
-    ui->checkBox_75->setChecked(false);
-    ui->checkBox_76->setChecked(false);
-    ui->checkBox_77->setChecked(false);
-    ui->checkBox_78->setChecked(false);
-    ui->checkBox_79->setChecked(false);
-    ui->checkBox_80->setChecked(false);
-    ui->checkBox_81->setChecked(false);
-    ui->checkBox_82->setChecked(false);
-    ui->checkBox_83->setChecked(false);
-    ui->checkBox_84->setChecked(false);
-    ui->checkBox_85->setChecked(false);
-    ui->checkBox_86->setChecked(false);
-    ui->checkBox_87->setChecked(false);
-    ui->checkBox_88->setChecked(false);
-    ui->checkBox_89->setChecked(false);
-    ui->checkBox_90->setChecked(false);
-    ui->checkBox_91->setChecked(false);
-    ui->checkBox_92->setChecked(false);
-    ui->checkBox_93->setChecked(false);
-    ui->checkBox_94->setChecked(false);
+
+    ui->checkBox_001->setChecked(false);
+    ui->checkBox_002->setChecked(false);
+    ui->checkBox_003->setChecked(false);
+    ui->checkBox_004->setChecked(false);
+    ui->checkBox_005->setChecked(false);
+    ui->checkBox_006->setChecked(false);
+    ui->checkBox_007->setChecked(false);
+    ui->checkBox_008->setChecked(false);
+    ui->checkBox_009->setChecked(false);
+    ui->checkBox_010->setChecked(false);
+    ui->checkBox_011->setChecked(false);
+    ui->checkBox_012->setChecked(false);
+    ui->checkBox_013->setChecked(false);
+    ui->checkBox_014->setChecked(false);
+    ui->checkBox_015->setChecked(false);
+    ui->checkBox_016->setChecked(false);
+    ui->checkBox_017->setChecked(false);
+    ui->checkBox_018->setChecked(false);
+    ui->checkBox_019->setChecked(false);
+    ui->checkBox_020->setChecked(false);
+    ui->checkBox_021->setChecked(false);
+    ui->checkBox_022->setChecked(false);
+    ui->checkBox_023->setChecked(false);
+    ui->checkBox_024->setChecked(false);
+    ui->checkBox_025->setChecked(false);
+    ui->checkBox_026->setChecked(false);
+    ui->checkBox_027->setChecked(false);
+    ui->checkBox_028->setChecked(false);
+    ui->checkBox_029->setChecked(false);
+    ui->checkBox_030->setChecked(false);
+    ui->checkBox_031->setChecked(false);
+    ui->checkBox_032->setChecked(false);
+    ui->checkBox_033->setChecked(false);
+    ui->checkBox_034->setChecked(false);
+    ui->checkBox_035->setChecked(false);
+    ui->checkBox_036->setChecked(false);
+    ui->checkBox_037->setChecked(false);
+    ui->checkBox_038->setChecked(false);
+    ui->checkBox_039->setChecked(false);
+    ui->checkBox_040->setChecked(false);
+    ui->checkBox_041->setChecked(false);
+    ui->checkBox_042->setChecked(false);
+    ui->checkBox_043->setChecked(false);
+    ui->checkBox_044->setChecked(false);
+    ui->checkBox_045->setChecked(false);
+    ui->checkBox_046->setChecked(false);
+    ui->checkBox_047->setChecked(false);
+    ui->checkBox_048->setChecked(false);
+    ui->checkBox_049->setChecked(false);
+    ui->checkBox_050->setChecked(false);
+    ui->checkBox_051->setChecked(false);
+    ui->checkBox_052->setChecked(false);
+    ui->checkBox_053->setChecked(false);
+    ui->checkBox_054->setChecked(false);
+    ui->checkBox_055->setChecked(false);
+    ui->checkBox_056->setChecked(false);
+    ui->checkBox_057->setChecked(false);
+    ui->checkBox_058->setChecked(false);
+    ui->checkBox_059->setChecked(false);
+    ui->checkBox_060->setChecked(false);
+    ui->checkBox_061->setChecked(false);
+    ui->checkBox_062->setChecked(false);
+    ui->checkBox_063->setChecked(false);
+    ui->checkBox_064->setChecked(false);
+    ui->checkBox_065->setChecked(false);
+    ui->checkBox_066->setChecked(false);
+    ui->checkBox_067->setChecked(false);
+    ui->checkBox_068->setChecked(false);
+    ui->checkBox_069->setChecked(false);
+    ui->checkBox_070->setChecked(false);
+    ui->checkBox_071->setChecked(false);
+    ui->checkBox_072->setChecked(false);
+    ui->checkBox_073->setChecked(false);
+    ui->checkBox_074->setChecked(false);
+    ui->checkBox_075->setChecked(false);
+    ui->checkBox_076->setChecked(false);
+    ui->checkBox_077->setChecked(false);
+    ui->checkBox_078->setChecked(false);
+    ui->checkBox_079->setChecked(false);
+    ui->checkBox_080->setChecked(false);
+    ui->checkBox_081->setChecked(false);
+    ui->checkBox_082->setChecked(false);
+    ui->checkBox_083->setChecked(false);
+    ui->checkBox_084->setChecked(false);
+    ui->checkBox_085->setChecked(false);
+    ui->checkBox_086->setChecked(false);
+    ui->checkBox_087->setChecked(false);
+    ui->checkBox_088->setChecked(false);
+    ui->checkBox_089->setChecked(false);
+    ui->checkBox_090->setChecked(false);
+    ui->checkBox_091->setChecked(false);
+    ui->checkBox_092->setChecked(false);
+    ui->checkBox_093->setChecked(false);
+    ui->checkBox_094->setChecked(false);
     ui->checkBox_100->setChecked(false);
     ui->checkBox_101->setChecked(false);
     ui->checkBox_102->setChecked(false);
@@ -129,112 +130,104 @@ void MainWindow::on_unselectAllButton_clicked()
     ui->checkBox_130->setChecked(false);
     ui->checkBox_132->setChecked(false);
 
-    //ui->checkBox->setChecked(false);
-
-        //for(int i=1;i<52;i++)
-        //{
-            //ui->checkBox_i->setChecked(false);
-            //char variable = checkBox+i;
-            //qDebug() << variable;
-        //}
 }
 
 void MainWindow::on_selectAllButton_clicked()
 {
-    ui->checkBox_01->setChecked(true);
-    ui->checkBox_02->setChecked(true);
-    ui->checkBox_03->setChecked(true);
-    ui->checkBox_04->setChecked(true);
-    ui->checkBox_05->setChecked(true);
-    ui->checkBox_06->setChecked(true);
-    ui->checkBox_07->setChecked(true);
-    ui->checkBox_08->setChecked(true);
-    ui->checkBox_09->setChecked(true);
-    ui->checkBox_10->setChecked(true);
-    ui->checkBox_11->setChecked(true);
-    ui->checkBox_12->setChecked(true);
-    ui->checkBox_13->setChecked(true);
-    ui->checkBox_14->setChecked(true);
-    ui->checkBox_15->setChecked(true);
-    ui->checkBox_16->setChecked(true);
-    ui->checkBox_17->setChecked(true);
-    ui->checkBox_18->setChecked(true);
-    ui->checkBox_19->setChecked(true);
-    ui->checkBox_20->setChecked(true);
-    ui->checkBox_21->setChecked(true);
-    ui->checkBox_22->setChecked(true);
-    ui->checkBox_23->setChecked(true);
-    ui->checkBox_24->setChecked(true);
-    ui->checkBox_25->setChecked(true);
-    ui->checkBox_26->setChecked(true);
-    ui->checkBox_27->setChecked(true);
-    ui->checkBox_28->setChecked(true);
-    ui->checkBox_29->setChecked(true);
-    ui->checkBox_30->setChecked(true);
-    ui->checkBox_31->setChecked(true);
-    ui->checkBox_32->setChecked(true);
-    ui->checkBox_33->setChecked(true);
-    ui->checkBox_34->setChecked(true);
-    ui->checkBox_35->setChecked(true);
-    ui->checkBox_36->setChecked(true);
-    ui->checkBox_37->setChecked(true);
-    ui->checkBox_38->setChecked(true);
-    ui->checkBox_39->setChecked(true);
-    ui->checkBox_40->setChecked(true);
-    ui->checkBox_41->setChecked(true);
-    ui->checkBox_42->setChecked(true);
-    ui->checkBox_43->setChecked(true);
-    ui->checkBox_44->setChecked(true);
-    ui->checkBox_45->setChecked(true);
-    ui->checkBox_46->setChecked(true);
-    ui->checkBox_47->setChecked(true);
-    ui->checkBox_48->setChecked(true);
-    ui->checkBox_49->setChecked(true);
-    ui->checkBox_50->setChecked(true);
-    ui->checkBox_51->setChecked(true);
-    ui->checkBox_52->setChecked(true);
-    ui->checkBox_53->setChecked(true);
-    ui->checkBox_54->setChecked(true);
-    ui->checkBox_55->setChecked(true);
-    ui->checkBox_56->setChecked(true);
-    ui->checkBox_57->setChecked(true);
-    ui->checkBox_58->setChecked(true);
-    ui->checkBox_59->setChecked(true);
-    ui->checkBox_60->setChecked(true);
-    ui->checkBox_61->setChecked(true);
-    ui->checkBox_62->setChecked(true);
-    ui->checkBox_63->setChecked(true);
-    ui->checkBox_64->setChecked(true);
-    ui->checkBox_65->setChecked(true);
-    ui->checkBox_66->setChecked(true);
-    ui->checkBox_67->setChecked(true);
-    ui->checkBox_68->setChecked(true);
-    ui->checkBox_69->setChecked(true);
-    ui->checkBox_70->setChecked(true);
-    ui->checkBox_71->setChecked(true);
-    ui->checkBox_72->setChecked(true);
-    ui->checkBox_73->setChecked(true);
-    ui->checkBox_74->setChecked(true);
-    ui->checkBox_75->setChecked(true);
-    ui->checkBox_76->setChecked(true);
-    ui->checkBox_77->setChecked(true);
-    ui->checkBox_78->setChecked(true);
-    ui->checkBox_79->setChecked(true);
-    ui->checkBox_80->setChecked(true);
-    ui->checkBox_81->setChecked(true);
-    ui->checkBox_82->setChecked(true);
-    ui->checkBox_83->setChecked(true);
-    ui->checkBox_84->setChecked(true);
-    ui->checkBox_85->setChecked(true);
-    ui->checkBox_86->setChecked(true);
-    ui->checkBox_87->setChecked(true);
-    ui->checkBox_88->setChecked(true);
-    ui->checkBox_89->setChecked(true);
-    ui->checkBox_90->setChecked(true);
-    ui->checkBox_91->setChecked(true);
-    ui->checkBox_92->setChecked(true);
-    ui->checkBox_93->setChecked(true);
-    ui->checkBox_94->setChecked(true);
+    ui->checkBox_001->setChecked(true);
+    ui->checkBox_002->setChecked(true);
+    ui->checkBox_003->setChecked(true);
+    ui->checkBox_004->setChecked(true);
+    ui->checkBox_005->setChecked(true);
+    ui->checkBox_006->setChecked(true);
+    ui->checkBox_007->setChecked(true);
+    ui->checkBox_008->setChecked(true);
+    ui->checkBox_009->setChecked(true);
+    ui->checkBox_010->setChecked(true);
+    ui->checkBox_011->setChecked(true);
+    ui->checkBox_012->setChecked(true);
+    ui->checkBox_013->setChecked(true);
+    ui->checkBox_014->setChecked(true);
+    ui->checkBox_015->setChecked(true);
+    ui->checkBox_016->setChecked(true);
+    ui->checkBox_017->setChecked(true);
+    ui->checkBox_018->setChecked(true);
+    ui->checkBox_019->setChecked(true);
+    ui->checkBox_020->setChecked(true);
+    ui->checkBox_021->setChecked(true);
+    ui->checkBox_022->setChecked(true);
+    ui->checkBox_023->setChecked(true);
+    ui->checkBox_024->setChecked(true);
+    ui->checkBox_025->setChecked(true);
+    ui->checkBox_026->setChecked(true);
+    ui->checkBox_027->setChecked(true);
+    ui->checkBox_028->setChecked(true);
+    ui->checkBox_029->setChecked(true);
+    ui->checkBox_030->setChecked(true);
+    ui->checkBox_031->setChecked(true);
+    ui->checkBox_032->setChecked(true);
+    ui->checkBox_033->setChecked(true);
+    ui->checkBox_034->setChecked(true);
+    ui->checkBox_035->setChecked(true);
+    ui->checkBox_036->setChecked(true);
+    ui->checkBox_037->setChecked(true);
+    ui->checkBox_038->setChecked(true);
+    ui->checkBox_039->setChecked(true);
+    ui->checkBox_040->setChecked(true);
+    ui->checkBox_041->setChecked(true);
+    ui->checkBox_042->setChecked(true);
+    ui->checkBox_043->setChecked(true);
+    ui->checkBox_044->setChecked(true);
+    ui->checkBox_045->setChecked(true);
+    ui->checkBox_046->setChecked(true);
+    ui->checkBox_047->setChecked(true);
+    ui->checkBox_048->setChecked(true);
+    ui->checkBox_049->setChecked(true);
+    ui->checkBox_050->setChecked(true);
+    ui->checkBox_051->setChecked(true);
+    ui->checkBox_052->setChecked(true);
+    ui->checkBox_053->setChecked(true);
+    ui->checkBox_054->setChecked(true);
+    ui->checkBox_055->setChecked(true);
+    ui->checkBox_056->setChecked(true);
+    ui->checkBox_057->setChecked(true);
+    ui->checkBox_058->setChecked(true);
+    ui->checkBox_059->setChecked(true);
+    ui->checkBox_060->setChecked(true);
+    ui->checkBox_061->setChecked(true);
+    ui->checkBox_062->setChecked(true);
+    ui->checkBox_063->setChecked(true);
+    ui->checkBox_064->setChecked(true);
+    ui->checkBox_065->setChecked(true);
+    ui->checkBox_066->setChecked(true);
+    ui->checkBox_067->setChecked(true);
+    ui->checkBox_068->setChecked(true);
+    ui->checkBox_069->setChecked(true);
+    ui->checkBox_070->setChecked(true);
+    ui->checkBox_071->setChecked(true);
+    ui->checkBox_072->setChecked(true);
+    ui->checkBox_073->setChecked(true);
+    ui->checkBox_074->setChecked(true);
+    ui->checkBox_075->setChecked(true);
+    ui->checkBox_076->setChecked(true);
+    ui->checkBox_077->setChecked(true);
+    ui->checkBox_078->setChecked(true);
+    ui->checkBox_079->setChecked(true);
+    ui->checkBox_080->setChecked(true);
+    ui->checkBox_081->setChecked(true);
+    ui->checkBox_082->setChecked(true);
+    ui->checkBox_083->setChecked(true);
+    ui->checkBox_084->setChecked(true);
+    ui->checkBox_085->setChecked(true);
+    ui->checkBox_086->setChecked(true);
+    ui->checkBox_087->setChecked(true);
+    ui->checkBox_088->setChecked(true);
+    ui->checkBox_089->setChecked(true);
+    ui->checkBox_090->setChecked(true);
+    ui->checkBox_091->setChecked(true);
+    ui->checkBox_092->setChecked(true);
+    ui->checkBox_093->setChecked(true);
+    ui->checkBox_094->setChecked(true);
     ui->checkBox_100->setChecked(true);
     ui->checkBox_101->setChecked(true);
     ui->checkBox_102->setChecked(true);
@@ -264,6 +257,7 @@ void MainWindow::on_selectAllButton_clicked()
     ui->checkBox_126->setChecked(true);
     ui->checkBox_130->setChecked(true);
     ui->checkBox_132->setChecked(true);
+
 }
 
 void MainWindow::on_installSelectedPackagesButton_clicked()
@@ -284,34 +278,34 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //######## Backup & Sync
 
-    //01.freefilesync
+    //001.freefilesync
 
-    if (ui->checkBox_01->isChecked())
+    if (ui->checkBox_001->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/1.freefilesync"
+               "sudo /usr/bin/ppas/001.freefilesync"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //02.dropbox
+    //002.dropbox
 
-    if (ui->checkBox_02->isChecked())
+    if (ui->checkBox_002->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/2.dropbox"
+               "sudo /usr/bin/ppas/002.dropbox"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //03.megasync
+    //003.megasync
 
-    if (ui->checkBox_03->isChecked())
+    if (ui->checkBox_003->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/3.megasync"
+               "sudo /usr/bin/ppas/003.megasync"
                " && "
                "exit"
                "; exec bash'");
@@ -319,585 +313,585 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //Os Utilities
 
-    //04.apt-fast
+    //004.apt-fast
 
-    if (ui->checkBox_04->isChecked())
+    if (ui->checkBox_004->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/4.apt-fast"
+               "sudo /usr/bin/ppas/004.apt-fast"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //05.y-ppa-manager
+    //005.y-ppa-manager
 
-    if (ui->checkBox_05->isChecked())
+    if (ui->checkBox_005->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/5.y-ppa-manager"
+               "sudo /usr/bin/ppas/005.y-ppa-manager"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //06.getdeb
+    //006.getdeb
 
-    if (ui->checkBox_06->isChecked())
+    if (ui->checkBox_006->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/6.getdeb"
+               "sudo /usr/bin/ppas/006.getdeb"
                " && "
                "exit"
                "; exec bash'");
     }
 
 
-    //07.playdeb
+    //007.playdeb
 
-    if (ui->checkBox_07->isChecked())
+    if (ui->checkBox_007->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/7.playdeb"
+               "sudo /usr/bin/ppas/007.playdeb"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //08.mtp-support
+    //008.mtp-support
 
-    if (ui->checkBox_08->isChecked())
+    if (ui->checkBox_008->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/8.mtp-support"
+               "sudo /usr/bin/ppas/008.mtp-support"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //09.xorg-edgers
+    //009.xorg-edgers
 
-    if (ui->checkBox_09->isChecked())
+    if (ui->checkBox_009->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/9.xorg-edgers"
+               "sudo /usr/bin/ppas/009.xorg-edgers"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //10.oibaf
+    //010.oibaf
 
-    if (ui->checkBox_10->isChecked())
+    if (ui->checkBox_010->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/10.oibaf"
+               "sudo /usr/bin/ppas/010.oibaf"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //11.graphics-drivers-team
+    //011.graphics-drivers-team
 
-    if (ui->checkBox_11->isChecked())
+    if (ui->checkBox_011->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/11.graphics-drivers-team"
+               "sudo /usr/bin/ppas/011.graphics-drivers-team"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //12.keepassx
+    //012.keepassx
 
-    if (ui->checkBox_12->isChecked())
+    if (ui->checkBox_012->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/12.keepassx"
+               "sudo /usr/bin/ppas/012.keepassx"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //13.ubuntu-restricted-extras
+    //013.ubuntu-restricted-extras
 
-    if (ui->checkBox_13->isChecked())
+    if (ui->checkBox_013->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/13.ubuntu-restricted-extras"
+               "sudo /usr/bin/ppas/013.ubuntu-restricted-extras"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //14.ttf-ancient-fonts
+    //014.ttf-ancient-fonts
 
-    if (ui->checkBox_14->isChecked())
+    if (ui->checkBox_014->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/14.ttf-ancient-fonts"
+               "sudo /usr/bin/ppas/014.ttf-ancient-fonts"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //15.synaptic
+    //015.synaptic
 
-    if (ui->checkBox_15->isChecked())
+    if (ui->checkBox_015->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/15.synaptic"
+               "sudo /usr/bin/ppas/015.synaptic"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //16.preload
+    //016.preload
 
-    if (ui->checkBox_16->isChecked())
+    if (ui->checkBox_016->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/16.preload"
+               "sudo /usr/bin/ppas/016.preload"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //17.prelink
+    //017.prelink
 
-    if (ui->checkBox_17->isChecked())
+    if (ui->checkBox_017->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/17.prelink"
+               "sudo /usr/bin/ppas/017.prelink"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //18.gdebi
+    //018.gdebi
 
-    if (ui->checkBox_18->isChecked())
+    if (ui->checkBox_018->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/18.gdebi"
+               "sudo /usr/bin/ppas/018.gdebi"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //19.ppa-purge
+    //019.ppa-purge
 
-    if (ui->checkBox_19->isChecked())
+    if (ui->checkBox_019->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/19.ppa-purge"
+               "sudo /usr/bin/ppas/019.ppa-purge"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //20.gnome-disk-utility
+    //020.gnome-disk-utility
 
-    if (ui->checkBox_20->isChecked())
+    if (ui->checkBox_020->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/20.gnome-disk-utility"
+               "sudo /usr/bin/ppas/020.gnome-disk-utility"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //21.gparted
+    //021.gparted
 
-    if (ui->checkBox_21->isChecked())
+    if (ui->checkBox_021->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/21.gparted"
+               "sudo /usr/bin/ppas/021.gparted"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //22.gkrellm
+    //022.gkrellm
 
-    if (ui->checkBox_22->isChecked())
+    if (ui->checkBox_022->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/22.gkrellm"
+               "sudo /usr/bin/ppas/022.gkrellm"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //23.mate-tweak
+    //023.mate-tweak
 
-    if (ui->checkBox_23->isChecked())
+    if (ui->checkBox_023->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/23.mate-tweak"
+               "sudo /usr/bin/ppas/023.mate-tweak"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //24.recoll
+    //024.recoll
 
-    if (ui->checkBox_24->isChecked())
+    if (ui->checkBox_024->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/24.recoll"
+               "sudo /usr/bin/ppas/024.recoll"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //25.brasero
+    //025.brasero
 
-    if (ui->checkBox_25->isChecked())
+    if (ui->checkBox_025->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/25.brasero"
+               "sudo /usr/bin/ppas/025.brasero"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //26.k3b
+    //026.k3b
 
-    if (ui->checkBox_26->isChecked())
+    if (ui->checkBox_026->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/26.k3b"
+               "sudo /usr/bin/ppas/026.k3b"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //27.gtkorphan
+    //027.gtkorphan
 
-    if (ui->checkBox_27->isChecked())
+    if (ui->checkBox_027->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/27.gtkorphan"
+               "sudo /usr/bin/ppas/027.gtkorphan"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //28.byobu
+    //028.byobu
 
-    if (ui->checkBox_28->isChecked())
+    if (ui->checkBox_028->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/28.byobu"
+               "sudo /usr/bin/ppas/028.byobu"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //29.gsmartcontrol
+    //029.gsmartcontrol
 
-    if (ui->checkBox_29->isChecked())
+    if (ui->checkBox_029->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/29.gsmartcontrol"
+               "sudo /usr/bin/ppas/029.gsmartcontrol"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //30.software-center
+    //030.software-center
 
-    if (ui->checkBox_30->isChecked())
+    if (ui->checkBox_030->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/30.software-center"
+               "sudo /usr/bin/ppas/030.software-center"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //31.gnome-software
+    //031.gnome-software
 
-    if (ui->checkBox_31->isChecked())
+    if (ui->checkBox_031->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/31.gnome-software"
+               "sudo /usr/bin/ppas/031.gnome-software"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //32.test
+    //032.test
 
-    if (ui->checkBox_32->isChecked())
+    if (ui->checkBox_032->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/32.test"
+               "sudo /usr/bin/ppas/032.test"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //33.appgrid
+    //033.appgrid
 
-    if (ui->checkBox_33->isChecked())
+    if (ui->checkBox_033->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/33.appgrid"
+               "sudo /usr/bin/ppas/033.appgrid"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //34.mintStick
+    //034.mintStick
 
-    if (ui->checkBox_34->isChecked())
+    if (ui->checkBox_034->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/34.mintStick"
+               "sudo /usr/bin/ppas/034.mintStick"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //35.mate-dock-applet
+    //035.mate-dock-applet
 
-    if (ui->checkBox_35->isChecked())
+    if (ui->checkBox_035->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/35.mate-dock-applet"
+               "sudo /usr/bin/ppas/035.mate-dock-applet"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //36.extundelete
+    //036.extundelete
 
-    if (ui->checkBox_36->isChecked())
+    if (ui->checkBox_036->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/36.extundelete"
+               "sudo /usr/bin/ppas/036.extundelete"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //37.cairo-dock
+    //037.cairo-dock
 
-    if (ui->checkBox_37->isChecked())
+    if (ui->checkBox_037->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/37.cairo-dock"
+               "sudo /usr/bin/ppas/037.cairo-dock"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //38.ubuntu-after-install
+    //038.ubuntu-after-install
 
-    if (ui->checkBox_38->isChecked())
+    if (ui->checkBox_038->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/38.ubuntu-after-install"
+               "sudo /usr/bin/ppas/038.ubuntu-after-install"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //39.ubutricks
+    //039.ubutricks
 
-    if (ui->checkBox_39->isChecked())
+    if (ui->checkBox_039->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/39.ubutricks"
+               "sudo /usr/bin/ppas/039.ubutricks"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //40.postinstallerf
+    //040.postinstallerf
 
-    if (ui->checkBox_40->isChecked())
+    if (ui->checkBox_040->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/40.postinstallerf"
+               "sudo /usr/bin/ppas/040.postinstallerf"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //41.teamviewer
+    //041.teamviewer
 
-    if (ui->checkBox_41->isChecked())
+    if (ui->checkBox_041->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/41.teamviewer"
+               "sudo /usr/bin/ppas/041.teamviewer"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //42.converseen
+    //042.converseen
 
-    if (ui->checkBox_42->isChecked())
+    if (ui->checkBox_042->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/42.converseen"
+               "sudo /usr/bin/ppas/042.converseen"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //43.synapse
+    //043.synapse
 
-    if (ui->checkBox_43->isChecked())
+    if (ui->checkBox_043->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/43.synapse"
+               "sudo /usr/bin/ppas/043.synapse"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //44.grub-customizer
+    //044.grub-customizer
 
-    if (ui->checkBox_44->isChecked())
+    if (ui->checkBox_044->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/44.grub-customizer"
+               "sudo /usr/bin/ppas/044.grub-customizer"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //45.bleachbit
+    //045.bleachbit
 
-    if (ui->checkBox_45->isChecked())
+    if (ui->checkBox_045->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/45.bleachbit"
+               "sudo /usr/bin/ppas/045.bleachbit"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //46.clipit
+    //046.clipit
 
-    if (ui->checkBox_46->isChecked())
+    if (ui->checkBox_046->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/46.clipit"
+               "sudo /usr/bin/ppas/046.clipit"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //47.screenfetch
+    //047.screenfetch
 
-    if (ui->checkBox_47->isChecked())
+    if (ui->checkBox_047->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/47.screenfetch"
+               "sudo /usr/bin/ppas/047.screenfetch"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //48.i-nex
+    //048.i-nex
 
-    if (ui->checkBox_48->isChecked())
+    if (ui->checkBox_048->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/48.i-nex"
+               "sudo /usr/bin/ppas/048.i-nex"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //49.ANGRYsearch
+    //049.ANGRYsearch
 
-    if (ui->checkBox_49->isChecked())
+    if (ui->checkBox_049->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/49.ANGRYsearch"
+               "sudo /usr/bin/ppas/049.ANGRYsearch"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //50.fish-shell
+    //050.fish-shell
 
-    if (ui->checkBox_50->isChecked())
+    if (ui->checkBox_050->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/50.fish-shell"
+               "sudo /usr/bin/ppas/050.fish-shell"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //51.furiusisomount
+    //051.furiusisomount
 
-    if (ui->checkBox_51->isChecked())
+    if (ui->checkBox_051->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/51.furiusisomount"
+               "sudo /usr/bin/ppas/051.furiusisomount"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //52.ddrescue-gui
+    //052.ddrescue-gui
 
-    if (ui->checkBox_52->isChecked())
+    if (ui->checkBox_052->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/52.ddrescue-gui"
+               "sudo /usr/bin/ppas/052.ddrescue-gui"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //53.unetbootin
+    //053.unetbootin
 
-    if (ui->checkBox_53->isChecked())
+    if (ui->checkBox_053->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/53.unetbootin"
+               "sudo /usr/bin/ppas/053.unetbootin"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //54.manpages-es
+    //054.manpages-es
 
-    if (ui->checkBox_54->isChecked())
+    if (ui->checkBox_054->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/54.manpages-es"
+               "sudo /usr/bin/ppas/054.manpages-es"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //55.asterisk-on-cli-passwords
+    //055.asterisk-on-cli-passwords
 
-    if (ui->checkBox_55->isChecked())
+    if (ui->checkBox_055->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/55.asterisk-on-cli-passwords"
+               "sudo /usr/bin/ppas/055.asterisk-on-cli-passwords"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //56.disable-system-crash-reports
+    //056.disable-system-crash-reports
 
-    if (ui->checkBox_56->isChecked())
+    if (ui->checkBox_056->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/56.disable-system-crash-reports"
+               "sudo /usr/bin/ppas/056.disable-system-crash-reports"
                " && "
                "exit"
                "; exec bash'");
@@ -909,23 +903,23 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //######## Themes
 
-    //57.vibrancy-colors
+    //057.vibrancy-colors
 
-    if (ui->checkBox_57->isChecked())
+    if (ui->checkBox_057->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/57.vibrancy-colors"
+               "sudo /usr/bin/ppas/057.vibrancy-colors"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //58.flatabulous-theme
+    //058.flatabulous-theme
 
-    if (ui->checkBox_58->isChecked())
+    if (ui->checkBox_058->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/58.flatabulous-theme"
+               "sudo /usr/bin/ppas/058.flatabulous-theme"
                " && "
                "exit"
                "; exec bash'");
@@ -933,23 +927,23 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //######## Language packages
 
-    //59.aspell
+    //059.aspell
 
-    if (ui->checkBox_59->isChecked())
+    if (ui->checkBox_059->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/59.aspell"
+               "sudo /usr/bin/ppas/059.aspell"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //60.myspell
+    //060.myspell
 
-    if (ui->checkBox_60->isChecked())
+    if (ui->checkBox_060->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/60.msypell"
+               "sudo /usr/bin/ppas/060.msypell"
                " && "
                "exit"
                "; exec bash'");
@@ -957,12 +951,12 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //######## Security & Privacy
 
-    //61.gufw
+    //061.gufw
 
-    if (ui->checkBox_61->isChecked())
+    if (ui->checkBox_061->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/61.gufw"
+               "sudo /usr/bin/ppas/061.gufw"
                " && "
                "exit"
                "; exec bash'");
@@ -974,78 +968,78 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //######## Photos & Graphics
 
-    //62.gimp
+    //062.gimp
 
-    if (ui->checkBox_62->isChecked())
+    if (ui->checkBox_062->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/62.gimp"
+               "sudo /usr/bin/ppas/062.gimp"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //63.gimp-edge
+    //063.gimp-edge
 
-    if (ui->checkBox_63->isChecked())
+    if (ui->checkBox_063->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/63.gimp-edge"
+               "sudo /usr/bin/ppas/063.gimp-edge"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //64.krita-testing
+    //064.krita-testing
 
-    if (ui->checkBox_64->isChecked())
+    if (ui->checkBox_064->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/64.krita-testing"
+               "sudo /usr/bin/ppas/064.krita-testing"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //65.gnome-exe-thumbnailer
+    //065.gnome-exe-thumbnailer
 
-    if (ui->checkBox_65->isChecked())
+    if (ui->checkBox_065->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/65.gnome-exe-thumbnailer"
+               "sudo /usr/bin/ppas/065.gnome-exe-thumbnailer"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //66.shutter
+    //066.shutter
 
-    if (ui->checkBox_66->isChecked())
+    if (ui->checkBox_066->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/66.shutter"
+               "sudo /usr/bin/ppas/066.shutter"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //67.inkscape-stable
+    //067.inkscape-stable
 
-    if (ui->checkBox_67->isChecked())
+    if (ui->checkBox_067->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/67.inkscape-stable"
+               "sudo /usr/bin/ppas/067.inkscape-stable"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //68.inkscape-trunk
+    //068.inkscape-trunk
 
-    if (ui->checkBox_68->isChecked())
+    if (ui->checkBox_068->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/68.inkscape-trunk"
+               "sudo /usr/bin/ppas/068.inkscape-trunk"
                " && "
                "exit"
                "; exec bash'");
@@ -1053,12 +1047,12 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //######## Audio & Music
 
-    //69.qmmp
+    //069.qmmp
 
-    if (ui->checkBox_69->isChecked())
+    if (ui->checkBox_069->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/69.qmmp"
+               "sudo /usr/bin/ppas0/069.qmmp"
                " && "
                "exit"
                "; exec bash'");
@@ -1066,45 +1060,45 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //######## Videos & Movies
 
-    //70.kazam
+    //070.kazam
 
-    if (ui->checkBox_70->isChecked())
+    if (ui->checkBox_070->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/70.kazam"
+               "sudo /usr/bin/ppas/070.kazam"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //71.sopcast
+    //071.sopcast
 
-    if (ui->checkBox_71->isChecked())
+    if (ui->checkBox_071->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/71.sopcast"
+               "sudo /usr/bin/ppas/071.sopcast"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //72.smplayer
+    //072.smplayer
 
-    if (ui->checkBox_72->isChecked())
+    if (ui->checkBox_072->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/72.smplayer"
+               "sudo /usr/bin/ppas/072.smplayer"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //73.handbrake
+    //073.handbrake
 
-    if (ui->checkBox_73->isChecked())
+    if (ui->checkBox_073->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/73.handbrake"
+               "sudo /usr/bin/ppas/073.handbrake"
                " && "
                "exit"
                "; exec bash'");
@@ -1112,34 +1106,34 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //######## All multimedia content
 
-    //74.ffmpeg
+    //074.ffmpeg
 
-    if (ui->checkBox_74->isChecked())
+    if (ui->checkBox_074->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/74.ffmpeg"
+               "sudo /usr/bin/ppas/074.ffmpeg"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //75.vlc-stable
+    //075.vlc-stable
 
-    if (ui->checkBox_75->isChecked())
+    if (ui->checkBox_075->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/75.vlc-stable"
+               "sudo /usr/bin/ppas/075.vlc-stable"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //76.vlc-daily
+    //076.vlc-daily
 
-    if (ui->checkBox_76->isChecked())
+    if (ui->checkBox_076->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/76.vlc-daily"
+               "sudo /usr/bin/ppas/076.vlc-daily"
                " && "
                "exit"
                "; exec bash'");
@@ -1147,199 +1141,199 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     //######## Development
 
-    //77.notepadqq
+    //077.notepadqq
 
-    if (ui->checkBox_77->isChecked())
+    if (ui->checkBox_077->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/77.notepadqq"
+               "sudo /usr/bin/ppas/077.notepadqq"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //78.openjdk-8
+    //078.openjdk-8
 
-    if (ui->checkBox_78->isChecked())
+    if (ui->checkBox_078->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/78.openjdk-8"
+               "sudo /usr/bin/ppas/078.openjdk-8"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //79.openjdk-7
+    //079.openjdk-7
 
-    if (ui->checkBox_79->isChecked())
+    if (ui->checkBox_079->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/79.openjdk-7"
+               "sudo /usr/bin/ppas/079.openjdk-7"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //80.meld
+    //080.meld
 
-    if (ui->checkBox_80->isChecked())
+    if (ui->checkBox_080->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/80.meld"
+               "sudo /usr/bin/ppas/080.meld"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //81.dev-utils
+    //081.dev-utils
 
-    if (ui->checkBox_81->isChecked())
+    if (ui->checkBox_081->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/81.dev-utils"
+               "sudo /usr/bin/ppas/081.dev-utils"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //82.git-stable
+    //082.git-stable
 
-    if (ui->checkBox_82->isChecked())
+    if (ui->checkBox_082->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/82.git-stable"
+               "sudo /usr/bin/ppas/082.git-stable"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //83.smartgit
+    //083.smartgit
 
-    if (ui->checkBox_83->isChecked())
+    if (ui->checkBox_083->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/83.smartgit"
+               "sudo /usr/bin/ppas/083.smartgit"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //84.flatpak
+    //084.flatpak
 
-    if (ui->checkBox_84->isChecked())
+    if (ui->checkBox_084->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/84.flatpak"
+               "sudo /usr/bin/ppas/084.flatpak"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //85.dia
+    //085.dia
 
-    if (ui->checkBox_85->isChecked())
+    if (ui->checkBox_085->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/85.dia"
+               "sudo /usr/bin/ppas/085.dia"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //86.blender
+    //086.blender
 
-    if (ui->checkBox_86->isChecked())
+    if (ui->checkBox_086->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/86.blender"
+               "sudo /usr/bin/ppas/086.blender"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //87.fritzing
+    //087.fritzing
 
-    if (ui->checkBox_87->isChecked())
+    if (ui->checkBox_087->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/87.fritzing"
+               "sudo /usr/bin/ppas/087.fritzing"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //88.uecide
+    //088.uecide
 
-    if (ui->checkBox_88->isChecked())
+    if (ui->checkBox_088->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/88.uecide"
+               "sudo /usr/bin/ppas/088.uecide"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //89.arduino-ide
+    //089.arduino-ide
 
-    if (ui->checkBox_89->isChecked())
+    if (ui->checkBox_089->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/89.arduino-ide"
+               "sudo /usr/bin/ppas/089.arduino-ide"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //90.arduino-studio
+    //090.arduino-studio
 
-    if (ui->checkBox_90->isChecked())
+    if (ui->checkBox_090->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/90.arduino-studio"
+               "sudo /usr/bin/ppas/090.arduino-studio"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //91.git-rc
+    //091.git-rc
 
-    if (ui->checkBox_91->isChecked())
+    if (ui->checkBox_091->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/91.git-rc"
+               "sudo /usr/bin/ppas/091.git-rc"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //92.git-gui
+    //092.git-gui
 
-    if (ui->checkBox_92->isChecked())
+    if (ui->checkBox_092->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/92.git-gui"
+               "sudo /usr/bin/ppas/092.git-gui"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //93.Qt-Linux
+    //093.Qt-Linux
 
-    if (ui->checkBox_93->isChecked())
+    if (ui->checkBox_093->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/93.Qt-Linux"
+               "sudo /usr/bin/ppas/093.Qt-Linux"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //94.kicad
+    //094.kicad
 
-    if (ui->checkBox_94->isChecked())
+    if (ui->checkBox_094->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/94.kicad"
+               "sudo /usr/bin/ppas/094.kicad"
                " && "
                "exit"
                "; exec bash'");
@@ -1693,104 +1687,104 @@ void MainWindow::on_uninstallSelectedPackagesButton_clicked()
 void MainWindow::on_loadSelectionButton_clicked()
 {
 
-    qDebug() << "test13";
+    qDebug() << "load selection pushed";
 
     //First
 
-    ui->checkBox_01->setChecked(true);
-    ui->checkBox_02->setChecked(true);
-    ui->checkBox_03->setChecked(true);
-    ui->checkBox_04->setChecked(true);
-    ui->checkBox_05->setChecked(true);
-    ui->checkBox_06->setChecked(true);
-    ui->checkBox_07->setChecked(true);
-    ui->checkBox_08->setChecked(true);
-    ui->checkBox_09->setChecked(false);
-    ui->checkBox_10->setChecked(false);
-    ui->checkBox_11->setChecked(false);
-    ui->checkBox_12->setChecked(true);
-    ui->checkBox_13->setChecked(true);
-    ui->checkBox_14->setChecked(true);
-    ui->checkBox_15->setChecked(true);
-    ui->checkBox_16->setChecked(true);
-    ui->checkBox_17->setChecked(true);
-    ui->checkBox_18->setChecked(true);
-    ui->checkBox_19->setChecked(true);
-    ui->checkBox_20->setChecked(true);
-    ui->checkBox_21->setChecked(true);
-    ui->checkBox_22->setChecked(false);
-    ui->checkBox_23->setChecked(false);
-    ui->checkBox_24->setChecked(true);
-    ui->checkBox_25->setChecked(true);
-    ui->checkBox_26->setChecked(false);
-    ui->checkBox_27->setChecked(true);
-    ui->checkBox_28->setChecked(true);
-    ui->checkBox_29->setChecked(true);
-    ui->checkBox_30->setChecked(true);
-    ui->checkBox_31->setChecked(true);
-    ui->checkBox_32->setChecked(true);
-    ui->checkBox_33->setChecked(false);
-    ui->checkBox_34->setChecked(true);
-    ui->checkBox_35->setChecked(true);
-    ui->checkBox_36->setChecked(true);
-    ui->checkBox_37->setChecked(true);
-    ui->checkBox_38->setChecked(false);
-    ui->checkBox_39->setChecked(false);
-    ui->checkBox_40->setChecked(false);
-    ui->checkBox_41->setChecked(true);
-    ui->checkBox_42->setChecked(true);
-    ui->checkBox_43->setChecked(true);
-    ui->checkBox_44->setChecked(true);
-    ui->checkBox_45->setChecked(true);
-    ui->checkBox_46->setChecked(true);
-    ui->checkBox_47->setChecked(true);
-    ui->checkBox_48->setChecked(true);
-    ui->checkBox_49->setChecked(false);
-    ui->checkBox_50->setChecked(false);
-    ui->checkBox_51->setChecked(false);
-    ui->checkBox_52->setChecked(false);
-    ui->checkBox_53->setChecked(false);
-    ui->checkBox_54->setChecked(true);
-    ui->checkBox_55->setChecked(true);
-    ui->checkBox_56->setChecked(false);
-    ui->checkBox_57->setChecked(true);
-    ui->checkBox_58->setChecked(false);
-    ui->checkBox_59->setChecked(true);
-    ui->checkBox_60->setChecked(false);
-    ui->checkBox_61->setChecked(true);
-    ui->checkBox_62->setChecked(false);
-    ui->checkBox_63->setChecked(true);
-    ui->checkBox_64->setChecked(false);
-    ui->checkBox_65->setChecked(true);
-    ui->checkBox_66->setChecked(true);
-    ui->checkBox_67->setChecked(false);
-    ui->checkBox_68->setChecked(false);
-    ui->checkBox_69->setChecked(true);
-    ui->checkBox_70->setChecked(true);
-    ui->checkBox_71->setChecked(false);
-    ui->checkBox_72->setChecked(false);
-    ui->checkBox_73->setChecked(false);
-    ui->checkBox_74->setChecked(true);
-    ui->checkBox_75->setChecked(false);
-    ui->checkBox_76->setChecked(true);
-    ui->checkBox_77->setChecked(true);
-    ui->checkBox_78->setChecked(true);
-    ui->checkBox_79->setChecked(false);
-    ui->checkBox_80->setChecked(true);
-    ui->checkBox_81->setChecked(false);
-    ui->checkBox_82->setChecked(false);
-    ui->checkBox_83->setChecked(true);
-    ui->checkBox_84->setChecked(false);
-    ui->checkBox_85->setChecked(false);
-    ui->checkBox_86->setChecked(false);
-    ui->checkBox_87->setChecked(false);
-    ui->checkBox_88->setChecked(false);
-    ui->checkBox_89->setChecked(false);
-    ui->checkBox_90->setChecked(false);
-    ui->checkBox_91->setChecked(false);
-    ui->checkBox_92->setChecked(false);
-    ui->checkBox_93->setChecked(false);
-    ui->checkBox_94->setChecked(false);
+    ui->checkBox_001->setChecked(true);
+    ui->checkBox_002->setChecked(true);
+    ui->checkBox_003->setChecked(true);
+    ui->checkBox_004->setChecked(true);
+    ui->checkBox_005->setChecked(true);
+    ui->checkBox_006->setChecked(true);
+    ui->checkBox_007->setChecked(true);
+    ui->checkBox_008->setChecked(true);
+    ui->checkBox_009->setChecked(false);
+    ui->checkBox_010->setChecked(false);
+    ui->checkBox_011->setChecked(false);
+    ui->checkBox_012->setChecked(true);
+    ui->checkBox_013->setChecked(true);
+    ui->checkBox_014->setChecked(true);
+    ui->checkBox_015->setChecked(true);
+    ui->checkBox_016->setChecked(true);
+    ui->checkBox_017->setChecked(true);
+    ui->checkBox_018->setChecked(true);
+    ui->checkBox_019->setChecked(true);
+    ui->checkBox_020->setChecked(true);
+    ui->checkBox_021->setChecked(true);
+    ui->checkBox_022->setChecked(false);
+    ui->checkBox_023->setChecked(false);
+    ui->checkBox_024->setChecked(true);
+    ui->checkBox_025->setChecked(true);
+    ui->checkBox_026->setChecked(false);
+    ui->checkBox_027->setChecked(true);
+    ui->checkBox_028->setChecked(true);
+    ui->checkBox_029->setChecked(true);
+    ui->checkBox_030->setChecked(true);
+    ui->checkBox_031->setChecked(true);
+    ui->checkBox_032->setChecked(true);
+    ui->checkBox_033->setChecked(false);
+    ui->checkBox_034->setChecked(true);
+    ui->checkBox_035->setChecked(true);
+    ui->checkBox_036->setChecked(true);
+    ui->checkBox_037->setChecked(true);
+    ui->checkBox_038->setChecked(false);
+    ui->checkBox_039->setChecked(false);
+    ui->checkBox_040->setChecked(false);
+    ui->checkBox_041->setChecked(true);
+    ui->checkBox_042->setChecked(true);
+    ui->checkBox_043->setChecked(true);
+    ui->checkBox_044->setChecked(true);
+    ui->checkBox_045->setChecked(true);
+    ui->checkBox_046->setChecked(true);
+    ui->checkBox_047->setChecked(true);
+    ui->checkBox_048->setChecked(true);
+    ui->checkBox_049->setChecked(false);
+    ui->checkBox_050->setChecked(false);
+    ui->checkBox_051->setChecked(false);
+    ui->checkBox_052->setChecked(false);
+    ui->checkBox_053->setChecked(false);
+    ui->checkBox_054->setChecked(true);
+    ui->checkBox_055->setChecked(true);
+    ui->checkBox_056->setChecked(false);
+    ui->checkBox_057->setChecked(true);
+    ui->checkBox_058->setChecked(false);
+    ui->checkBox_059->setChecked(true);
+    ui->checkBox_060->setChecked(false);
+    ui->checkBox_061->setChecked(true);
+    ui->checkBox_062->setChecked(false);
+    ui->checkBox_063->setChecked(true);
+    ui->checkBox_064->setChecked(false);
+    ui->checkBox_065->setChecked(true);
+    ui->checkBox_066->setChecked(true);
+    ui->checkBox_067->setChecked(false);
+    ui->checkBox_068->setChecked(false);
+    ui->checkBox_069->setChecked(true);
+    ui->checkBox_070->setChecked(true);
+    ui->checkBox_071->setChecked(false);
+    ui->checkBox_072->setChecked(false);
+    ui->checkBox_073->setChecked(false);
+    ui->checkBox_074->setChecked(true);
+    ui->checkBox_075->setChecked(false);
+    ui->checkBox_076->setChecked(true);
+    ui->checkBox_077->setChecked(true);
+    ui->checkBox_078->setChecked(true);
+    ui->checkBox_079->setChecked(false);
+    ui->checkBox_080->setChecked(true);
+    ui->checkBox_081->setChecked(false);
+    ui->checkBox_082->setChecked(false);
+    ui->checkBox_083->setChecked(true);
+    ui->checkBox_084->setChecked(false);
+    ui->checkBox_085->setChecked(false);
+    ui->checkBox_086->setChecked(false);
+    ui->checkBox_087->setChecked(false);
+    ui->checkBox_088->setChecked(false);
+    ui->checkBox_089->setChecked(false);
+    ui->checkBox_090->setChecked(false);
+    ui->checkBox_091->setChecked(false);
+    ui->checkBox_092->setChecked(false);
+    ui->checkBox_093->setChecked(false);
+    ui->checkBox_094->setChecked(false);
     ui->checkBox_100->setChecked(false);
     ui->checkBox_101->setChecked(false);
     ui->checkBox_102->setChecked(true);

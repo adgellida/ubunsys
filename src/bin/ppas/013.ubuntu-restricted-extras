@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### ubuntu-restricted-extras
+sudo apt-fast -y install ubuntu-restricted-extras

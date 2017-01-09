@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### gimp
+sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
+sudo apt-fast -y update
+sudo apt-fast -y install gimp gimp-plugin-registry gimp-help-es

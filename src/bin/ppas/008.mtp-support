@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### mtp-support
+#sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
+#sudo apt-fast -y update & dist-upgrade
+sudo apt-fast -y install mtp-tools mtpfs

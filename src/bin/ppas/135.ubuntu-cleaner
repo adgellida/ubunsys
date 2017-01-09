@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#### ubuntu-cleaner - ppa not compatible yet, but usable wit deb
+#http://www.omgubuntu.co.uk/2016/12/free-space-ubuntu-cleaner-janitor-app
+
+wget https://launchpad.net/~gerardpuig/+archive/ubuntu/ppa/+files/ubuntu-cleaner_1.0.2-1_all.deb
+sudo gdebi ubuntu-cleaner*.deb
+rm ubuntu-cleaner*.deb
+
+#sudo add-apt-repository -y ppa:gerardpuig/ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install ubuntu-cleaner

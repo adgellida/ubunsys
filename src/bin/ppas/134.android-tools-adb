@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### android-tools-adb
+sudo apt-fast -y install android-tools-adb android-tools-fastboot

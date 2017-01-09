@@ -1,0 +1,17 @@
+#!/bin/bash
+
+##### stacer
+#http://blog.desdelinux.net/optimizar-debian-ubuntu-linux-mint-derivados-stacer/
+wget https://github.com/oguzhaninan/Stacer/releases/download/v1.0.0/stacer_1.0.0_amd64.deb
+sudo gdebi stacer*.deb
+rm stacer*.deb
+#/usr/share/stacer/Stacer - CHANGE
+
+######## do
+#[Desktop Entry] 
+#Comment=Stacer 
+#Terminal=false 
+#Name=Stacer 
+#Exec=/usr/share/stacer/Stacer 
+#Type=Application 
+#Categories=Network; 
