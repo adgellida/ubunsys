@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### telegram-purple
+#http://www.webupd8.org/2014/11/add-telegram-support-to-pidgin-with.html
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
+sudo apt-fast -y update
+sudo apt-fast -y install telegram-purple
+##sudo apt-fast dist-upgrade

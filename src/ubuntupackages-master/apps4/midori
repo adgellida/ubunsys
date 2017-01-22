@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### midori
+##sudo add-apt-repository -y ppa:midori/ppa
+sudo add-apt-repository -y ppa:midori/midori-dev
+sudo apt-fast -y update
+sudo apt-fast -y install midori

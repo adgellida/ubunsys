@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### tlp
+sudo add-apt-repository -y ppa:linrunner/tlp
+sudo apt-fast -y update
+sudo apt-fast -y install tlp tlp-rdw
+##sudo tlp start

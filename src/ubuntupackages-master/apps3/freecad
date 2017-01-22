@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### freecad
+#sudo add-apt-repository -y ppa:freecad-maintainers/freecad-stable
+sudo add-apt-repository -y ppa:freecad-maintainers/freecad-daily
+sudo apt-fast -y update
+sudo apt-fast -y install freecad

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### qterminal
+sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily
+sudo apt-fast -y update
+sudo apt-fast -y install qterminal

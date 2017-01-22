@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### sparkleshare
+#sudo apt-add-repository -y ppa:git-core/ppa
+sudo apt-add-repository -y ppa:rebuntu16/sparkleshare+unofficial
+sudo apt-fast -y update
+sudo apt-fast -y install sparkleshare

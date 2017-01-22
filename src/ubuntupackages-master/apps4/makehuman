@@ -1,0 +1,8 @@
+#!/bin/bash
+
+##### makehuman
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+sudo apt-fast -y update
+sudo apt-fast -y install makehuman

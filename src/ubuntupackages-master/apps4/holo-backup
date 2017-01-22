@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#### holo-backup
+sudo mkdir "/opt/Holo Backup"
+wget https://codeload.github.com/omegavesko/SimpleADBBackup/legacy.tar.gz/master -O "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa%20.tar.gz"
+tar xvfz "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa%20.tar.gz"
+sudo chmod +rwx "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux"
+sudo sh -c 'echo "[Desktop Entry]
+Type=Application
+Name=Holo Backup
+Comment=Backup your droid!
+Categories=System
+Exec="/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux"
+Icon='
+##sudo ln -s "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux" "~/Escritorio/Holo Backup"

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#### folder-color
+sudo add-apt-repository -y ppa:costales/folder-color
+sudo apt-fast -y update
+#### nautilus
+#sudo apt-fast -y install folder-color
+#nautilus -q
+#### nemo
+#sudo apt-fast -y install folder-color-nemo
+#nemo -q
+#### caja
+sudo apt-fast -y install folder-color-caja
+caja -q
+#fix if proceed
+sudo ln -s /usr/lib/x86_64-linux-gnu/girepository-1.0/Caja-2.0.typelib /usr/lib/girepository-1.0/Caja-2.0.typelib
+caja -q

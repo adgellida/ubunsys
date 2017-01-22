@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### pantheon-mail
+sudo add-apt-repository -y ppa:elementary-os/daily
+sudo apt-fast -y update
+sudo apt-fast -y install pantheon-mail

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### quiterss
+sudo add-apt-repository -y ppa:quiterss/quiterss
+sudo apt-fast -y update
+sudo apt-fast -y install quiterss

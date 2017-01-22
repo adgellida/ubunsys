@@ -123,7 +123,7 @@ void MainWindow::on_cleanKernelsButton_clicked()
     ui->statusBar->showMessage(tr("Kernels clean did it succesful. Now select another action."));
 }
 
-void MainWindow::on_upgradeLatestStable_clicked()
+void MainWindow::on_upgradeLatestStableButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing upgrade to Latest Stable Version. Then close the terminal window."));
 
@@ -134,7 +134,10 @@ void MainWindow::on_upgradeLatestStable_clicked()
     ui->statusBar->showMessage(tr("Upgrade to Latest Stable Version did it succesful. Now select another action."));
 }
 
-void MainWindow::on_upgradeLatestDev_clicked()
+
+//    Developer
+
+void MainWindow::on_upgradeLatestDevButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing upgrade to Latest Dev Version. Then close the terminal window."));
 
@@ -144,8 +147,3 @@ void MainWindow::on_upgradeLatestDev_clicked()
 
     ui->statusBar->showMessage(tr("Upgrade to Latest Dev Version did it succesful. Now select another action."));
 }
-
-
-//    Developer
-
-//...

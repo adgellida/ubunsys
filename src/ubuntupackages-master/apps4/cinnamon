@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### cinnamon
+#sudo add-apt-repository -y ppa:lestcape/cinnamon	#### stable for 14.04
+#sudo add-apt-repository -y ppa:tsvetko.tsvetkov/cinnamon	#### stable for 14.04 & 12.04
+sudo add-apt-repository -y ppa:gwendal-lebihan-dev/cinnamon-nightly		#### nightly for 14.10 & 14.04
+sudo apt-fast -y update
+sudo apt-fast -y install cinnamon

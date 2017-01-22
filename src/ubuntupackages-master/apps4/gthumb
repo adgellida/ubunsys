@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### gthumb
+sudo add-apt-repository -y ppa:webupd8team/gthumb
+sudo apt-fast -y update
+sudo apt-fast -y install gthumb

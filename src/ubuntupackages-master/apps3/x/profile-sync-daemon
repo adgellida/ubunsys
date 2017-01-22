@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#### profile-sync-daemon
+#http://www.webupd8.org/2013/02/keep-your-browser-profiles-in-tmpfs-ram.html
+sudo add-apt-repository -y ppa:graysky/utils
+sudo apt-fast -y update
+sudo apt-fast -y install profile-sync-daemon
+
+#notepadqq /home/usuario/.config/psd/psd.conf
+#USERS="andrew"
+
+#profile-sync-daemon parse
+
+sudo systemctl --user start psd.service
+systemctl --user stop psd.service
+systemctl --user enable psd.service
+systemctl --user disable psd.service
+systemctl --user status psd.service
+
+#sudo service psd start
+

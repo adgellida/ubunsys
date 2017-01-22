@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### spacefm
+#sudo add-apt-repository -y ppa:mati75/spacefm
+sudo add-apt-repository -y ppa:mati75/spacefm-unstable
+sudo apt-fast -y update
+sudo apt-fast -y install spacefm

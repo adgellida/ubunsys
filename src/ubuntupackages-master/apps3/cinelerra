@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### cinelerra
+sudo add-apt-repository -y ppa:cinelerra-ppa/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install cinelerra-cv

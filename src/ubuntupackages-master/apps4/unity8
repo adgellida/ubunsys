@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### unity8
+sudo add-apt-repository -y ppa:unity8-desktop-session-team/unity8-preview-lxc
+sudo apt-fast -y update
+sudo apt-fast -y upgrade
+sudo apt-fast -y install unity8-lxc
+sudo unity8-lxc-setup

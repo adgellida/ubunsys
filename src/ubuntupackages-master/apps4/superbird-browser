@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### superbird-browser - not working, needs a library
+wget http://superbird-browser.com/download/superbird-32-amd64.deb
+sudo dpkg -i superbird-32-amd64.deb

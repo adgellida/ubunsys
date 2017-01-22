@@ -1,0 +1,8 @@
+#!/bin/bash
+
+##### WhatsApp-Desktop
+wget https://github.com/Aluxian/WhatsApp-Desktop/releases/download/v1.1.0/UnofficialWhatsApp_linux64.deb
+sudo dpkg -i UnofficialWhatsApp_linux64.deb
+rm UnofficialWhatsApp_linux64.deb
+##another way https://rhoconlinux.wordpress.com/2015/06/27/whatsapp-en-ubuntu-como-instalarlo-y-configurarlo-super-facil/
+#cd /tmp/ && clear ; wget https://github.com/Aluxian/WhatsApp-Desktop/releases/download/v1.1.0/UnofficialWhatsApp_linux64.deb -O whatsapp.deb && sudo apt-get install gdebi -y ; sudo gdebi -n whatsapp.deb ; cd ; clear

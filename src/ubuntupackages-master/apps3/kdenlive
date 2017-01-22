@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### kdenlive - CAREFULL, a lot of kde packages
+sudo add-apt-repository -y ppa:sunab/kdenlive-svn
+sudo apt-fast -y update
+sudo apt-fast -y install kdenlive

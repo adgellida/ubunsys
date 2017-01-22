@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### paper-gtk-theme
+sudo add-apt-repository -y ppa:snwh/pulp
+sudo apt-fast -y update
+sudo apt-fast -y install paper-gtk-theme

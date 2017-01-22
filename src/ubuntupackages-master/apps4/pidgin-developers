@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### pidgin-developers
+sudo add-apt-repository -y ppa:pidgin-developers/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install pidgin pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
+##skype - FROM WEB OR http://www.noobslab.com/2014/01/skype-released-new-version-install-in.html

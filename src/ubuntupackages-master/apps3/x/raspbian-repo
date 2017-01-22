@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### raspbian-repo
+wget -q -O - https://archive.raspbian.org/raspbian.public.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/raspbian-repo.list || sudo sh -c 'echo "deb http://archive.raspbian.org/raspbian wheezy main contrib non-free" >> /etc/apt/sources.list.d/raspbian-repo.list'
+sudo apt-fast -y update

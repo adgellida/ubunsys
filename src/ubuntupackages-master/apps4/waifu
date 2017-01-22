@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### waifu
+wget http://www.waifu.ca/waifu-linux64.tar.gz
+#more...

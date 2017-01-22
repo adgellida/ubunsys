@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### lightworks
+wget http://www.lwks.com/dmpub/lwks-12.5.0-amd64.deb
+sudo dpkg -i lwks-12.5.0-amd64.deb
+rm lwks-12.5.0-amd64.deb

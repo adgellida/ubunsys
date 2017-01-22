@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### tribler
+wget https://github.com/Tribler/tribler/releases/download/v6.4.3/tribler_6.4.3_all.deb
+sudo dpkg -i tribler*.deb
+#rm tribler*.deb

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### utox
+sudo add-apt-repository -y ppa:i2p.packages/i2p
+sudo apt-fast -y update
+sudo apt-fast -y install utox

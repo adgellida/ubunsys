@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#### kodi-stable
+#http://askubuntu.com/questions/763364/how-to-watch-acestream-sopcast-ubuntu-16-04-lts
+sudo apt-get install software-properties-common
+sudo add-apt-repository -y ppa:team-xbmc/ppa
+#sudo add-apt-repository -y ppa:team-xbmc/unstable
+#sudo add-apt-repository -y ppa:team-xbmc/xbmc-nightly
+sudo apt-fast -y update
+sudo apt-fast -y install kodi kodi-pvr-iptvsimple kodi-audioencoder-*
+
+#acestreamengine --client-console

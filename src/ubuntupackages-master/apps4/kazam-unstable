@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### kazam-unstable
+#sudo add-apt-repository -y ppa:kazam-team/stable-series
+sudo add-apt-repository -y ppa:kazam-team/unstable-series
+sudo apt-fast -y update
+sudo apt-fast -y install kazam

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### go-for-it
+sudo add-apt-repository -y ppa:mank319/go-for-it
+sudo apt-fast -y update 
+sudo apt-get install -y go-for-it
+sudo sed -i "s/Exec=go-for-it/Exec=env\ LIBOVERLAY_SCROLLBAR=0\ go-for-it/g" /usr/share/applications/go-for-it.desktop

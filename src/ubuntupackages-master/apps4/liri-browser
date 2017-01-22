@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### liri-browser
+wget https://github.com/liri-browser/liri-browser/releases/download/v0.3/liri-browser_0.3-1.deb
+sudo dpkg -i liri-browser_0.3-1.deb

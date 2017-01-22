@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### ubuntu-touch-coreapps
+sudo add-apt-repository -y ppa:ubuntu-touch-coreapps-drivers/daily
+sudo apt-fast -y update
+#sudo apt-fast -y install calendar-app music-app help-app reminders-app ubuntu-clock-app ubuntu-docviewer-app ubuntu-rssreader-app ubuntu-terminal-app ubuntu-weather-app sudoku-app dropping-letters-app

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### peazip
+wget http://netix.dl.sourceforge.net/project/peazip/5.9.1/peazip_5.9.1.LINUX.GTK2-2_all.deb
+sudo dpkg -i peazip*.deb
+rm peazip*.deb
+sudo apt-fast -y install libgtk2.0-0:i386

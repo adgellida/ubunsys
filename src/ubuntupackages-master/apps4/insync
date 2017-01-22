@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### insync
+wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/insync.list || sudo sh -c 'echo "deb http://apt.insynchq.com/ubuntu trusty non-free contrib" >> /etc/apt/sources.list.d/insync.list'
+sudo apt-fast -y update
+sudo apt-fast -y install insync insync-caja
+##referal
+#https://www.insynchq.com/r/106908789160316075573

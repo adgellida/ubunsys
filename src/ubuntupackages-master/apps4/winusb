@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### winusb
+sudo add-apt-repository -y ppa:colingille/freshlight
+sudo apt-fast -y update
+sudo apt-fast -y install winusb

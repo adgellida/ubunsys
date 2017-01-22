@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### spideroak
+#http://www.rubynginx.com/index.php/2012/10/11/install-spideroak-on-ubuntu-12-04/
+#https://spideroak.com/faq/questions/65/what_are_the_apt_sources_lines_for_spideroak/
+wget -qO - https://spideroak.com/dist/spideroak-apt-2013.asc | sudo apt-key add -
+test -f /etc/apt/sources.list.d/spideroak.list || sudo sh -c 'echo "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted" >> /etc/apt/sources.list.d/spideroak.list'
+sudo apt-fast -y update
+sudo apt-fast -y install spideroak

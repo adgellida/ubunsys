@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#### wine-staging
+sudo apt-fast -y install wine
+sudo add-apt-repository -y ppa:pipelight/stable
+sudo apt-fast -y update
+sudo apt-fast -y install --install-recommends wine-staging
+sudo apt-fast -y install wine-staging-compat
+
+## Wine config
+#sudo apt-fast -y install q4wine winetricks
+#export WINEPREFIX=prefix32
+#export WINEARCH=win32
+#winecfg

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### wakeonlan
+sudo apt-fast -y install wakeonlan #gwakeonlan

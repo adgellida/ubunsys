@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### pogo
+sudo add-apt-repository -y ppa:pogo-dev/stable
+sudo apt-fast -y update
+sudo apt-fast -y install pogo

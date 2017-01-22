@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### conky-manager
+#http://bitelia.com/2014/09/administrar-conky-con-conky-manager
+sudo add-apt-repository -y ppa:teejee2008/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install conky-manager
+wget http://www.deviantart.com/download/426662366/conky_harmattan_by_zagortenay333-d720use.zip?token=9fd2773e70622067bb63125af9c3565e85317bfe&ts=1411158738 $ unzip conky_harmattan_by_zagortenay333-d720use.zip $ cp -R Harmattan/ ~/.conky

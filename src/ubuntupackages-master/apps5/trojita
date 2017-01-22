@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### trojita
+test -f /etc/apt/sources.list.d/trojita.list || sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/jkt-gentoo:/trojita/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/trojita.list"
+wget http://download.opensuse.org/repositories/home:jkt-gentoo:trojita/xUbuntu_14.10/Release.key
+sudo apt-key add - < Release.key
+sudo apt-fast -y update
+sudo apt-fast -y install trojita

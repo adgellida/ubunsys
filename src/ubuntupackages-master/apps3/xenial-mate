@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#### wily-mate
+sudo add-apt-repository -y ppa:ubuntu-mate-dev/xenial-mate
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade
+
+
+#sudo apt-fast -y install ppa-purge
+#sudo ppa-purge -y ppa:ubuntu-mate-dev/xenial-mate

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#### evolution-staging - not recommended
+###sudo add-apt-repository -y ppa:fta/gnome3
+##sudo add-apt-repository -y ppa:gnome3-team/gnome3
+sudo add-apt-repository -y ppa:gnome3-team/gnome3-staging
+sudo apt-fast -y update
+sudo apt-fast -y install evolution
+
+#remove
+#sudo ppa-purge gnome3-team/gnome3-staging
+#sudo ppa-purge gnome3-team/gnome3

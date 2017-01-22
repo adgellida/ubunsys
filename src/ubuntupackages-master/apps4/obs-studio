@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### obs-studio
+sudo add-apt-repository -y ppa:obsproject/obs-studio
+sudo apt-fast -y update
+sudo apt-fast -y install obs-studio

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#### spotify - ONLY FOR 64 BITS - TO USE 32 GO TO http://repository.spotify.com/pool/non-free/s/spotify/
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886
+test -f /etc/apt/sources.list.d/spotify.list || sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
+sudo apt-fast -y update
+sudo apt-fast -y install spotify-client
+#temporal solution
+wget http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.4-2ubuntu1.1_amd64.deb
+sudo dpkg -i libgcrypt11_1.5.4-2ubuntu1.1_amd64.deb

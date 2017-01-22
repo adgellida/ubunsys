@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### n1
+wget https://edgehill.nylas.com/download?platform=linux-deb -O n1.deb
+sudo dpkg -i n1.deb
+rm n1.deb

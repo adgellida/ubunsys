@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### teamviewer
+wget http://flavio.tordini.org/files/minitube/minitube64.deb
+sudo dpkg -i minitube64.deb
+rm minitube64.deb

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### pykaraoke
+wget http://heanet.dl.sourceforge.net/project/pykaraoke/pykaraoke/0.7.5/pykaraoke-0.7.5.zip
+unzip pykaraoke-0.7.5.zip
+sudo apt-fast -y install python-dev python-pygame libwxgtk-python libsdl-dev python-mutagen
+cd pykaraoke-0.7.5
+python setup.py install
+pykaraoke

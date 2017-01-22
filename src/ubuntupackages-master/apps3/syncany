@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### syncany
+#curl -sL https://get.syncany.org/debian/ | sh
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A3002F0613D342687D70AEEE3F6B7F13651D12BD
+sudo sh -c "echo deb http://get.syncany.org/apt/release/ release main > /etc/apt/sources.list.d/syncany.list"
+sudo apt-fast -y update
+sudo apt-fast -y install syncany

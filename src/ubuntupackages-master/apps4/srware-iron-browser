@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### srware-iron-browser - to add more steps
+wget http://www.srware.net/downloads/iron64.deb
+sudo dpkg -i iron64.deb

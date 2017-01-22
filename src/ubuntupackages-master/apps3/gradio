@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### bibletime
+sudo add-apt-repository -y ppa:haecker-felix/gradio-daily
+sudo apt-fast -y update
+sudo apt-fast -y install gradio

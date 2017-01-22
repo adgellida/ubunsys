@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#### qq international
+#add lines here on future...
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/qqinternational.desktop
+test -f ~/.config/autostart/qqinternational.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=/usr/bin/wine-qqintl
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=QQ International DELAYED
+Name=QQ International DELAYED
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/qqinternational.desktop'

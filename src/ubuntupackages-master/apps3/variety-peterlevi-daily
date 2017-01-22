@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### variety-peterlevi-daily
+#sudo add-apt-repository -y ppa:peterlevi/ppa
+#sudo add-apt-repository -y ppa:variety/next
+sudo add-apt-repository -y ppa:variety/daily
+sudo apt-fast -y update
+sudo apt-fast -y install variety

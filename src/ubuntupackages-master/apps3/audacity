@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### audacity
+#sudo add-apt-repository -y ppa:audacity-team/daily
+sudo add-apt-repository -y ppa:ubuntuhandbook1/audacity
+sudo apt-fast -y update
+sudo apt-fast -y upgrade
+sudo apt-fast -y install audacity

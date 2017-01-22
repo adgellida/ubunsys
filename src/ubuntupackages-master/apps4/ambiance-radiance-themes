@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### ambiance-radiance-themes
+sudo add-apt-repository -y ppa:ravefinity-project/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install ambiance-colors radiance-colors ubuntu-mono
+sudo apt-fast -y install ambiance-blackout-flat-colors
+sudo apt-fast -y install ambiance-flat-colors radiance-flat-colors

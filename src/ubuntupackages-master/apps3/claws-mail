@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### claws-mail
+#sudo add-apt-repository -y ppa:claws-mail/ppa
+sudo add-apt-repository -y ppa:ubuntuhandbook1/claws-mail
+sudo apt-fast -y update
+sudo apt-fast -y install claws-mail claws-mail-extra-plugins

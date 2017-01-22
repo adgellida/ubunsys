@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### bibletime
+sudo add-apt-repository -y ppa:unit193/crosswire
+sudo apt-fast -y update
+sudo apt-fast -y install xiphos bibletime #sword biblesync

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### albert
+sudo apt-add-repository -y ppa:nilarimogard/webupd8
+sudo apt-fast -y update
+sudo apt-fast -y install albert

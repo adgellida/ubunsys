@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### x-updates - only recommended for latest graphic cards drivers - less updated than ppa:xorg-edgers/ppa
+sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade

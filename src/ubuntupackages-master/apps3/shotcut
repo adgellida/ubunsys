@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### shotcut
+#http://media-opensource.blogspot.com.es/2015/04/install-shotcut-1504-video-editor-on.html
+#https://www.youtube.com/watch?v=cNGILOoadX0
+wget https://github.com/mltframework/shotcut/releases/download/v15.06/shotcut-debian7-x86_64-150601.tar.bz2
+tar -xjvf shotcut-debian7-x86_64-150601.tar.bz2
+sudo rm -rf /home/usuario/Shotcut
+sudo mv Shotcut /home/usuario

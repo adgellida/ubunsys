@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### customizer (u-customizer)
+#https://github.com/clearkimura/Customizer
+wget https://github.com/clearkimura/Customizer/archive/4.1.1.tar.gz
+tar xzvf 4.1.1.tar.gz
+sudo apt-fast -y install git build-essential fakeroot make binutils g++ python python-dev python-qt4 pyqt4-dev-tools squashfs-tools xorriso x11-xserver-utils xserver-xephyr qemu-kvm dpkg-dev debhelper qt4-dev-tools qt4-linguist-tools --no-install-recommends
+make && sudo make install
+sudo customizer-gui

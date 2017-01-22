@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### natron
+sudo apt-fast -y install libegl1-mesa
+wget -c https://sourceforge.net/projects/natron/files/Natron_Linux_x86-64bits_v1.2.1.tar.gz
+tar xzvf Natron_Linux_x86*
+./Natron_*

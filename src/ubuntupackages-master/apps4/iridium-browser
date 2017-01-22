@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### iridium-browser
+wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
+test -f /etc/apt/sources.list.d/iridium-browser.list || sudo sh -c 'echo "deb https://downloads.iridiumbrowser.de/ubuntu vivid main" >> /etc/apt/sources.list.d/iridium-browser.list'
+sudo apt-fast -y update
+sudo apt-fast -y install iridium-browser

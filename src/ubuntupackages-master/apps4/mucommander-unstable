@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### mucommander-unstable
+sudo wget -O - http://apt.mucommander.com/apt.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/mucommander.list || sudo sh -c 'echo "deb http://apt.mucommander.com unstable main non-free contrib " >> /etc/apt/sources.list.d/mucommander.list'
+sudo apt-fast -y update
+sudo apt-fast -y install mucommander

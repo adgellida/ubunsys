@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### hollywood
+sudo apt-add-repository -y ppa:hollywood/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install hollywood byobu

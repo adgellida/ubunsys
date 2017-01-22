@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### gnome-pie
+sudo add-apt-repository -y ppa:simonschneegans/testing
+sudo apt-fast -y update
+sudo apt-fast -y install gnome-pie

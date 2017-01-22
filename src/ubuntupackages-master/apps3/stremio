@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#stremio
+cd $HOME
+wget http://dl.strem.io/Stremio3.5.7.linux.tar.gz
+mkdir $HOME/Stremio
+tar zxvf $HOME/Stremio3.5.7.linux.tar.gz -C $HOME/Stremio
+rm $HOME/Stremio3.5.7.linux.tar.gz

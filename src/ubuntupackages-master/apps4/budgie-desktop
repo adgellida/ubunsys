@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### budgie-desktop
+#sudo add-apt-repository -y ppa:sukso96100/budgie-desktop
+sudo add-apt-repository -y ppa:evolve-os/ppa	#POSSIBLY LATEST
+sudo apt-fast -y update
+sudo apt-fast -y install budgie-desktop

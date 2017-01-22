@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### plank-testing - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
+##sudo add-apt-repository -y ppa:docky-core/stable
+sudo add-apt-repository -y ppa:ricotz/docky
+sudo apt-fast -y update
+sudo apt-fast -y install plank

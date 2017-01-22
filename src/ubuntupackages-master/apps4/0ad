@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### 0ad
+sudo add-apt-repository -y ppa:wfg/0ad
+sudo apt-fast -y update
+sudo apt-fast -y install 0ad

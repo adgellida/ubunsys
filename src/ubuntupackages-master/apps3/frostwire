@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##### frostwire
+#http://www.frostwire.com/
+wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.1.3.amd64.deb
+sudo dpkg -i frostwire*.deb
+#rm frostwire*.deb

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### nuvolaplayer3-devel
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 40554B8FA5FE6F6A
+##test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic stable" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
+test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic devel" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
+sudo apt-fast -y update
+sudo apt-fast -y install nuvolaplayer3

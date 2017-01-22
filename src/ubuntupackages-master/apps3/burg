@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#### burg - https://advancedpcusers.wordpress.com/2012/07/01/replace-grub-with-burg-graphical-boot-loader/
+##http://www.ubuntu-guia.com/2010/07/burg-manager-interfaz-grafica.html?showComment=1281043968113#c4291975126103992232
+##http://www.noobslab.com/2014/09/replace-grub-with-burg-to-beautify-boot.html
+sudo add-apt-repository -y ppa:n-muench/burg
+sudo apt-fast -y update
+sudo apt-fast -y install burg burg-themes
+
+#sudo burg-install "(hd0)"
+#sudo burg-install /dev/sda
+
+### After installation you can run burg-emu to choose theme and change resolution (You also can do it while you are in actual BURG). To change themes use F2 and to change resolution use F3
+##To revert back to GRUB enter following commands:
+##sudo apt-fast remove --purge burg burg-themes
+##sudo add-apt-repository -r ppa:n-muench/burg
+##sudo update-grub

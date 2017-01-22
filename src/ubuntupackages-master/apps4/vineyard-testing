@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### vineyard-testing
+sudo add-apt-repository -y ppa:cybolic/vineyard-testing
+sudo apt-fast -y update
+sudo apt-fast -y install vineyard

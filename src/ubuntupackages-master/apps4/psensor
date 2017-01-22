@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### psensor
+sudo add-apt-repository -y ppa:alexmurray/indicator-sensors
+sudo apt-fast -y update
+sudo apt-fast -y install psensor 

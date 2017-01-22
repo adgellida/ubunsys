@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### qt5ct
+sudo add-apt-repository -y ppa:ppa:nilarimogard/webupd8
+sudo apt-fast -y update
+sudo apt-fast -y qt5ct

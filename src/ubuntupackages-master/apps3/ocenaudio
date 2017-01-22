@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### ocenaudio
+wget http://www.ocenaudio.com.br/start_download/ocenaudio64.deb
+sudo dpkg -i ocenaudio64.deb
+#rm ocenaudio64.deb

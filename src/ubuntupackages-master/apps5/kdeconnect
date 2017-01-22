@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### kdeconnect
+sudo add-apt-repository -y ppa:vikoadi/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install indicator-kdeconnect kdeconnect

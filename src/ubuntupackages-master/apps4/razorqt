@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### razorqt
+sudo add-apt-repository -y ppa:razor-qt/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install razorqt razorqt-config

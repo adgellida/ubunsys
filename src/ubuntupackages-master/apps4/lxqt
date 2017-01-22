@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### lxqt
+#http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
+sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily
+sudo apt-fast -y update
+sudo apt-fast -y install lxqt-metapackage lxqt-panel gtk2-engines-qtcurve pcmanfm kdelibs5-plugins lxappearance lxappearance-obconf openbox

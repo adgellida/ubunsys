@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### sublime-text
+#http://www.webupd8.org/2013/07/sublime-text-3-ubuntu-ppa-now-available.html
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+sudo apt-fast -y update
+sudo apt-fast -y install sublime-text-installer

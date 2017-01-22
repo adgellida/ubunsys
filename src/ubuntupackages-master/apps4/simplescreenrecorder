@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### simplescreenrecorder
+sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
+sudo apt-fast -y update
+sudo apt-fast -y install simplescreenrecorder

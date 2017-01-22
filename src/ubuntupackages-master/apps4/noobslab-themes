@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### noobslab-themes
+sudo add-apt-repository -y ppa:noobslab/themes
+sudo apt-fast -y update
+sudo apt-fast -y install azure-gtk-theme lhun-magol-theme ambiance-grey ambiance-dark-blue ambiance-dark-red ultra-flat-theme

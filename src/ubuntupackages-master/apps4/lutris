@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### lutris
+#https://lutris.net/games/
+wget http://lutris.net/releases/lutris_0.3.6.3_all.deb
+sudo dpkg -i lutris*.deb
+rm lutris*.deb

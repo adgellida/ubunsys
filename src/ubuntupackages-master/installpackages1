@@ -1,0 +1,461 @@
+#!/bin/bash
+######## installpackages - Installs packages & necessary repos - script 1
+
+#### Remove all your repos
+#sudo rm -f -r /etc/apt/sources.list.d/*
+
+#### Upgrading system
+#sudo apt-fast -y update
+#sudo apt-fast -y upgrade
+##sudo apt-fast -y dist-upgrade
+##sudo apt-fast -y install xxx --no-remove --force-yes
+
+######## Backup & Sync
+
+#### 001.freefilesync - official repositories
+apps1/001.freefilesync
+
+#### 002.dropbox - deb
+apps1/002.dropbox
+
+#### 003.megasync - deb
+apps1/003.megasync
+
+######## OS & Utilities
+
+#### 004.apt-fast - ppa
+apps1/004.apt-fast
+
+#### 005.y-ppa-manager - ppa
+##(aunchpad-getkeys + missing gpg-keys + gpg badsig errors
+apps1/005.y-ppa-manager
+
+#### 006.getdeb - deb
+apps1/006.getdeb
+
+#### 007.playdeb - deb
+apps1/007.playdeb
+
+#### 008.mtp-support - official repositories
+apps1/008.mtp-support
+
+#### 009.xorg-edgers - ppa
+##Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
+#apps1/009.xorg-edgers
+
+#### 010.oibaf - ppa
+##Possibly Unstable
+#apps1/010.oibaf
+
+#### 011.graphics-drivers-team - ppa
+##Possibly Unstable
+#apps1/011.graphics-drivers-team
+
+#### 012.keepassx - official repositories
+#ppa:keepassx/daily - not updated
+apps1/012.keepassx
+
+#### 013.ubuntu-restricted-extras - official repositories
+apps1/013.ubuntu-restricted-extras
+
+#### 014.ttf-ancient-fonts - official repositories
+apps1/014.ttf-ancient-fonts
+
+#### 015.synaptic - official repositories
+apps1/015.synaptic
+
+#### 016.preload - official repositories
+apps1/016.preload
+
+#### 017.prelink - official repositories
+apps1/017.prelink
+
+#### 018.gdebi - official repositories
+apps1/018.gdebi
+
+#### 019.ppa-purge - official repositories
+apps1/019.ppa-purge
+
+#### 020.gnome-disk-utility - official repositories
+apps1/020.gnome-disk-utility
+
+#### 021.gparted - official repositories
+apps1/021.gparted
+
+#### 022.gkrellm - official repositories
+#apps1/022.gkrellm
+
+#### 023.mate-tweak - official repositories
+#apps1/023.mate-tweak
+
+#### 024.recoll - official repositories
+apps1/024.recoll
+
+#### 025.brasero - official repositories
+apps1/025.brasero
+
+#### 026.k3b - official repositories
+#apps1/026.k3b
+
+#### 027.gtkorphan - official repositories
+apps1/027.gtkorphan
+
+#### 028.byobu - official repositories
+## for remove old kernels:
+#byobu
+#sudo purge-old-kernels
+apps1/028.byobu
+
+#### 029.gsmartcontrol - official repositories
+apps1/029.gsmartcontrol
+
+#### 030.software-center - official repositories
+apps1/030.software-center
+
+#### 031.gnome-software - official repositories
+apps1/031.gnome-software
+
+#### 032.test
+#apps1/032.test
+
+#### 033.appgrid - ppa
+##error
+#apps1/033.appgrid
+
+#### 034.mintStick - deb
+apps1/034.mintStick
+
+#### 130.spaceview - ppa
+apps1/130.spaceview
+
+#### 132.ukku - deb
+apps1/132.ukku
+
+#### 035.mate-dock-applet - ppa
+apps1/035.mate-dock-applet
+
+#### 036.extundelete - official repositories
+##http://rootear.com/ubuntu-linux/recuperar-archivos-borrados-extundelete
+apps1/036.extundelete
+
+#### 037.cairo-dock - ppa
+#apps1/037.cairo-dock
+
+#### 038.ubuntu-after-install - ppa
+##error
+#apps1/038.ubuntu-after-install
+
+#### 039.ubutricks - sh
+#apps1/039.ubutricks
+
+#### 040.postinstallerf - deb
+#apps1/040.postinstallerf
+
+#### 041.teamviewer - deb
+apps1/041.teamviewer
+
+#### 042.converseen - ppa
+apps1/042.converseen
+
+#### 043.synapse - ppa
+apps1/043.synapse
+
+#### 044.grub-customizer - ppa
+apps1/044.grub-customizer
+
+#### 045.bleachbit - official repositories
+apps1/045.bleachbit
+
+#### 046.clipit - ppa
+apps1/046.clipit
+
+#### 047.screenfetch - official repositories
+apps1/047.screenfetch
+
+#### 048.i-nex - ppa
+##http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
+apps1/048.i-nex
+
+#### 049.ANGRYsearch - tar.gz
+#apps1/049.ANGRYsearch
+
+#### 050.fish-shell - ppa
+#apps1/050.fish-shell
+
+#### 051.furiusisomount - official repositories
+#apps1/051.furiusisomount
+
+#### 052.ddrescue-gui - ppa
+#apps1/052.ddrescue-gui
+
+#### 053.unetbootin - ppa
+#apps1/053.unetbootin
+
+#### 054.manpages-es - official repositories
+#http://ubunlog.com/poner-las-guias-man-espanol-ubuntu/?utm_source=feedburner&utm_medium=%24%7Bfeed%2C+email%7D&utm_campaign=Feed%3A+%24%7BUbunlog%7D+%28%24%7BUbunlog%7D%29
+apps1/054.manpages-es
+
+#### 055.asterisk-on-cli-passwords - config
+apps1/055.asterisk-on-cli-passwords
+
+#### 056.disable-system-crash-reports - config
+#apps1/056.disable-system-crash-reports
+
+######## Desktop Environment
+
+#
+
+######## Themes
+
+#### 057.vibrancy-colors icon theme - ppa
+apps1/057.vibrancy-colors
+
+#### 058.flatabulous theme - ppa
+## not working
+#apps1/058.flatabulous-theme
+
+######## Language packages - official repositories
+
+#### 059.aspell - official repositories
+apps1/059.aspell
+
+#### 060.myspell - official repositories
+#apps1/060.myspell
+
+######## Security & Privacy
+
+#### 061.gufw - official repositories
+apps1/061.gufw
+
+######## CD/DVD Tools
+
+#
+
+######## Photos & Graphics
+
+#### 062.gimp - ppa
+#apps1/062.gimp
+
+#### 063.gimp-edge - ppa
+apps1/063.gimp-edge
+
+#### 064.krita-testing - ppa
+##apps1/krita/krita.appimage
+apps1/064.krita-testing
+
+#### 065.gnome-exe-thumbnailer - official repositories
+apps1/065.gnome-exe-thumbnailer
+
+#### 066.shutter - official repositories
+apps1/066.shutter
+
+#### 067.inkscape-stable - ppa
+#apps1/067.inkscape-stable
+
+#### 068.inkscape-trunk - ppa
+#apps1/068.inkscape-trunk
+
+######## Audio & Music
+
+#### 069.qmmp - ppa
+apps1/069.qmmp
+
+######## Videos & Movies
+
+#### 070.kazam - official repositories
+apps1/070.kazam
+
+#### 071.sopcast - tar.gz
+#apps1/071.sopcast
+
+#### 072.smplayer + mpv support - ppa
+#apps1/072.smplayer
+
+#### 073.handbrake - official repositories
+#apps1/073.handbrake
+
+######## All multimedia content
+
+#### 074.ffmpeg - official repositories
+apps1/074.ffmpeg
+
+#### 075.vlc-stable - ppa
+#sudo apt-fast -y install vlc
+apps/075.vlc-stable
+
+#### 076.vlc-daily - ppa
+#apps1/076.vlc-daily
+
+######## Development
+
+#### 077.notepadqq - ppa
+apps1/077.notepadqq
+
+#### 078.openjdk-8 - official repositories
+apps1/078.openjdk-8
+
+#### 079. openjdk-7 - official repositories
+#apps1/079.openjdk-7
+
+#### 080.meld - official repositories
+apps1/080.meld
+
+#### 081.dev-utils - official repositories
+#apps1/081.dev-utils
+
+#### 082.git-stable - ppa
+#apps1/082.git-stable
+
+#### 083.smartgit - deb
+apps1/083.smartgit
+
+#### 084.flatpak - ppa
+#apps1/084.flatpak
+
+#### 085.dia - ppa
+#apps1/085.dia
+
+#### 086.blender - ppa
+#apps1/086.blender
+
+#### 087.fritzing - ppa
+#apps1/087.fritzing
+
+#### 088.uecide - ppa
+#apps1/088.uecide
+
+#### 089.arduino-ide - tar.xz
+#apps1/089.arduino-ide
+
+#### 090.arduino-studio - deb
+#apps1/090.arduino-studio
+
+#### 091.git-rc - ppa
+#apps1/091.git-rc
+
+#### 092.git-gui - official repositories
+#apps1/092.git-gui
+
+#### 093.Qt-Linux - run
+#apps1/093.Qt-Linux
+
+#### 094.kicad - ppa
+#apps1/094.kicad
+
+######## Web Browsers
+
+#### 100.vivaldi-browser - deb
+## in script pepperflash is added
+#apps1/100.vivaldi-browser
+
+#### 101.google-chrome-stable - ppa
+#apps1/101.google-chrome-stable
+
+#### 102.google-chrome-unstable - ppa
+apps1/102.google-chrome-unstable
+
+#### 103.chromium stable - official repositories
+#apps1/103.chromium
+
+#### 104.firefox - official repositories
+#apps1/104.firefox
+
+#### 105.firefox-trunk - ppa
+apps1/105.firefox-trunk
+
+#### 106.ubuntu-mozilla-security - ppa
+#apps1/106.ubuntu-mozilla-security
+
+#### 107.pepper-flash-for-chromium - official repositories
+## Not working
+##apps1/107.pepper-flash-for-chromium
+
+#### 108.pepper-flash-for-firefox - official repositories - ppa
+## Not working
+##apps1/108.pepper-flash-for-firefox
+
+#### 109.tor-browser - ppa
+#apps1/109.tor-browser
+
+######## Social
+
+#### 110.skype - deb
+#apps1/110.skype
+
+##### 111.mumble - ppa
+#apps1/111.mumble
+
+##### 112.wire - deb
+#apps1/112.wire
+
+##### 113.telegram - tar.xz
+## http://deshack.net/install-telegram-for-linux-as-an-application/
+apps1/113.telegram
+
+##### 114.Facebook-Messenger-Desktop - deb
+apps1/114.Facebook-Messenger-Desktop
+
+##### 115.Whatsie - ppa
+apps1/115.Whatsie
+
+######## File Management
+
+#### 116.compress-uncompress-utils - official repositories
+apps1/116.compress-uncompress-utils
+
+######## File Sharing
+
+#### 117.jdownloader-beta - ppa
+apps1/117.jdownloader-beta
+
+#### 118.jdownloader-stable - ppa
+#apps1/118.jdownloader-stable
+
+#### 119.peerflix - ppa
+#apps1/119.peerflix
+
+#### 120.samba - official repositories
+#apps1/120.samba
+
+######## News & Books
+
+#
+
+######## Office & Productivity
+
+#### 121.evolution - official repositories
+apps1/121.evolution
+
+#### 122.libreoffice - ppa
+apps1/122.libreoffice
+
+#### 123.qpdfview - official repositories
+#apps1/123.qpdfview
+
+##### 124.Thunderbird-nightly - tar.bz2
+#apps1/124.thunderbird-nightly
+
+######## Games
+
+##### 125.steam - deb
+#apps1/125.steam
+
+######## Extra
+
+#### 126.uninstallpackages
+apps1/126.uninstallpackages
+
+#### Repairing system 2/2
+sudo apt-fast -f -y install
+#sudo dpkg --configure -a
+#sudo apt-fast -y --fix-broken install
+
+#### Upgrading system
+#sudo apt-fast -y upgrade
+#sudo apt-fast -y dist-upgrade
+#sudo do-release-update
+
+#### Cleaning system
+sudo apt-fast -y autoremove
+#sudo apt-fast -y autoclean
+#sudo apt-fast -y clean

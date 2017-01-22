@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### unity-tweak-tool
+#sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily #14.04
+sudo apt-fast -y update
+sudo apt-fast -y install unity-tweak-tool

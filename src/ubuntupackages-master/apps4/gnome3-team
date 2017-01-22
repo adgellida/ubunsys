@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### gnome3-team
+sudo add-apt-repository -y ppa:gnome3-team/gnome3
+sudo apt-fast -y update

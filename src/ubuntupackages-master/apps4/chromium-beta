@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### chromium-beta
+sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
+sudo apt-fast -y update
+sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra

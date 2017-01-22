@@ -262,10 +262,38 @@ void MainWindow::on_selectAllButton_clicked()
 
 void MainWindow::on_installSelectedPackagesButton_clicked()
 {
+
+    ui->statusBar->showMessage(tr("Download latest scripts."));
+
+    system("xterm -e bash -c '"
+
+           "sudo rm -Rf ~/.ubunsys/downloads"
+           " && "
+           "mkdir -p ~/.ubunsys/downloads/scripts"
+           " && "
+           "wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/downloads/scripts/master.zip"
+           " && "
+           "unzip ~/.ubunsys/downloads/scripts/master.zip -d ~/.ubunsys/downloads/scripts"
+           " && "
+           "sudo chmod 777 -R ~/.ubunsys/downloads/scripts/ubuntuScripts-master"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Downloaded latest scripts."));
+
+    ui->statusBar->showMessage(tr("Download latest script ppas."));
+
+    system("xterm -e bash -c '"
+           "sudo ~/.ubunsys/downloads/scripts/ubuntuScripts-master/019.downloadLatestPPAS"
+           " && "
+           "exit"
+           "; exec bash'");
+
     ui->statusBar->showMessage(tr("Checking if apt-fast is installed and we install it if necessary."));
 
     system("xterm -e bash -c '"
-           "sudo /usr/bin/ppas/check_apt-fast_installed"
+           "sudo ~/.ubunsys/downloads/scripts/ubuntuScripts-master/020.check_apt-fast_installed"
            " && "
            "exit"
            "; exec bash'");
@@ -283,7 +311,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_001->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/001.freefilesync"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/001.freefilesync"
                " && "
                "exit"
                "; exec bash'");
@@ -294,7 +322,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_002->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/002.dropbox"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/002.dropbox"
                " && "
                "exit"
                "; exec bash'");
@@ -305,7 +333,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_003->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/003.megasync"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/003.megasync"
                " && "
                "exit"
                "; exec bash'");
@@ -318,7 +346,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_004->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/004.apt-fast"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/004.apt-fast"
                " && "
                "exit"
                "; exec bash'");
@@ -329,7 +357,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_005->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/005.y-ppa-manager"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/005.y-ppa-manager"
                " && "
                "exit"
                "; exec bash'");
@@ -340,7 +368,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_006->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/006.getdeb"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/006.getdeb"
                " && "
                "exit"
                "; exec bash'");
@@ -352,7 +380,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_007->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/007.playdeb"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/007.playdeb"
                " && "
                "exit"
                "; exec bash'");
@@ -363,7 +391,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_008->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/008.mtp-support"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/008.mtp-support"
                " && "
                "exit"
                "; exec bash'");
@@ -374,7 +402,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_009->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/009.xorg-edgers"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/009.xorg-edgers"
                " && "
                "exit"
                "; exec bash'");
@@ -385,7 +413,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_010->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/010.oibaf"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/010.oibaf"
                " && "
                "exit"
                "; exec bash'");
@@ -396,7 +424,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_011->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/011.graphics-drivers-team"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/011.graphics-drivers-team"
                " && "
                "exit"
                "; exec bash'");
@@ -407,7 +435,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_012->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/012.keepassx"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/012.keepassx"
                " && "
                "exit"
                "; exec bash'");
@@ -418,7 +446,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_013->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/013.ubuntu-restricted-extras"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/013.ubuntu-restricted-extras"
                " && "
                "exit"
                "; exec bash'");
@@ -429,7 +457,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_014->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/014.ttf-ancient-fonts"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/014.ttf-ancient-fonts"
                " && "
                "exit"
                "; exec bash'");
@@ -440,7 +468,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_015->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/015.synaptic"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/015.synaptic"
                " && "
                "exit"
                "; exec bash'");
@@ -451,7 +479,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_016->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/016.preload"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/016.preload"
                " && "
                "exit"
                "; exec bash'");
@@ -462,7 +490,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_017->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/017.prelink"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/017.prelink"
                " && "
                "exit"
                "; exec bash'");
@@ -473,7 +501,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_018->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/018.gdebi"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/018.gdebi"
                " && "
                "exit"
                "; exec bash'");
@@ -484,7 +512,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_019->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/019.ppa-purge"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/019.ppa-purge"
                " && "
                "exit"
                "; exec bash'");
@@ -495,7 +523,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_020->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/020.gnome-disk-utility"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/020.gnome-disk-utility"
                " && "
                "exit"
                "; exec bash'");
@@ -506,7 +534,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_021->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/021.gparted"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/021.gparted"
                " && "
                "exit"
                "; exec bash'");
@@ -517,7 +545,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_022->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/022.gkrellm"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/022.gkrellm"
                " && "
                "exit"
                "; exec bash'");
@@ -528,7 +556,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_023->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/023.mate-tweak"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/023.mate-tweak"
                " && "
                "exit"
                "; exec bash'");
@@ -539,7 +567,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_024->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/024.recoll"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/024.recoll"
                " && "
                "exit"
                "; exec bash'");
@@ -550,7 +578,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_025->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/025.brasero"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/025.brasero"
                " && "
                "exit"
                "; exec bash'");
@@ -561,7 +589,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_026->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/026.k3b"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/026.k3b"
                " && "
                "exit"
                "; exec bash'");
@@ -572,7 +600,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_027->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/027.gtkorphan"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/027.gtkorphan"
                " && "
                "exit"
                "; exec bash'");
@@ -583,7 +611,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_028->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/028.byobu"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/028.byobu"
                " && "
                "exit"
                "; exec bash'");
@@ -594,7 +622,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_029->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/029.gsmartcontrol"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/029.gsmartcontrol"
                " && "
                "exit"
                "; exec bash'");
@@ -605,7 +633,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_030->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/030.software-center"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/030.software-center"
                " && "
                "exit"
                "; exec bash'");
@@ -616,7 +644,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_031->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/031.gnome-software"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/031.gnome-software"
                " && "
                "exit"
                "; exec bash'");
@@ -627,7 +655,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_032->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/032.test"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/032.test"
                " && "
                "exit"
                "; exec bash'");
@@ -638,7 +666,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_033->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/033.appgrid"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/033.appgrid"
                " && "
                "exit"
                "; exec bash'");
@@ -649,7 +677,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_034->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/034.mintStick"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/034.mintStick"
                " && "
                "exit"
                "; exec bash'");
@@ -660,7 +688,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_035->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/035.mate-dock-applet"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/035.mate-dock-applet"
                " && "
                "exit"
                "; exec bash'");
@@ -671,7 +699,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_036->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/036.extundelete"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/036.extundelete"
                " && "
                "exit"
                "; exec bash'");
@@ -682,7 +710,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_037->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/037.cairo-dock"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/037.cairo-dock"
                " && "
                "exit"
                "; exec bash'");
@@ -693,7 +721,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_038->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/038.ubuntu-after-install"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/038.ubuntu-after-install"
                " && "
                "exit"
                "; exec bash'");
@@ -704,7 +732,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_039->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/039.ubutricks"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/039.ubutricks"
                " && "
                "exit"
                "; exec bash'");
@@ -715,7 +743,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_040->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/040.postinstallerf"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/040.postinstallerf"
                " && "
                "exit"
                "; exec bash'");
@@ -726,7 +754,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_041->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/041.teamviewer"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/041.teamviewer"
                " && "
                "exit"
                "; exec bash'");
@@ -737,7 +765,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_042->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/042.converseen"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/042.converseen"
                " && "
                "exit"
                "; exec bash'");
@@ -748,7 +776,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_043->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/043.synapse"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/043.synapse"
                " && "
                "exit"
                "; exec bash'");
@@ -759,7 +787,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_044->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/044.grub-customizer"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/044.grub-customizer"
                " && "
                "exit"
                "; exec bash'");
@@ -770,7 +798,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_045->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/045.bleachbit"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/045.bleachbit"
                " && "
                "exit"
                "; exec bash'");
@@ -781,7 +809,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_046->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/046.clipit"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/046.clipit"
                " && "
                "exit"
                "; exec bash'");
@@ -792,7 +820,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_047->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/047.screenfetch"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/047.screenfetch"
                " && "
                "exit"
                "; exec bash'");
@@ -803,7 +831,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_048->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/048.i-nex"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/048.i-nex"
                " && "
                "exit"
                "; exec bash'");
@@ -814,7 +842,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_049->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/049.ANGRYsearch"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/049.ANGRYsearch"
                " && "
                "exit"
                "; exec bash'");
@@ -825,7 +853,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_050->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/050.fish-shell"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/050.fish-shell"
                " && "
                "exit"
                "; exec bash'");
@@ -836,7 +864,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_051->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/051.furiusisomount"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/051.furiusisomount"
                " && "
                "exit"
                "; exec bash'");
@@ -847,7 +875,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_052->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/052.ddrescue-gui"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/052.ddrescue-gui"
                " && "
                "exit"
                "; exec bash'");
@@ -858,7 +886,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_053->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/053.unetbootin"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/053.unetbootin"
                " && "
                "exit"
                "; exec bash'");
@@ -869,7 +897,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_054->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/054.manpages-es"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/054.manpages-es"
                " && "
                "exit"
                "; exec bash'");
@@ -880,7 +908,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_055->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/055.asterisk-on-cli-passwords"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/055.asterisk-on-cli-passwords"
                " && "
                "exit"
                "; exec bash'");
@@ -891,7 +919,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_056->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/056.disable-system-crash-reports"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/056.disable-system-crash-reports"
                " && "
                "exit"
                "; exec bash'");
@@ -908,7 +936,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_057->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/057.vibrancy-colors"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/057.vibrancy-colors"
                " && "
                "exit"
                "; exec bash'");
@@ -919,7 +947,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_058->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/058.flatabulous-theme"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/058.flatabulous-theme"
                " && "
                "exit"
                "; exec bash'");
@@ -932,7 +960,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_059->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/059.aspell"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/059.aspell"
                " && "
                "exit"
                "; exec bash'");
@@ -943,7 +971,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_060->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/060.msypell"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/060.msypell"
                " && "
                "exit"
                "; exec bash'");
@@ -956,7 +984,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_061->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/061.gufw"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/061.gufw"
                " && "
                "exit"
                "; exec bash'");
@@ -973,7 +1001,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_062->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/062.gimp"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/062.gimp"
                " && "
                "exit"
                "; exec bash'");
@@ -984,7 +1012,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_063->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/063.gimp-edge"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/063.gimp-edge"
                " && "
                "exit"
                "; exec bash'");
@@ -995,7 +1023,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_064->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/064.krita-testing"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/064.krita-testing"
                " && "
                "exit"
                "; exec bash'");
@@ -1006,7 +1034,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_065->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/065.gnome-exe-thumbnailer"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/065.gnome-exe-thumbnailer"
                " && "
                "exit"
                "; exec bash'");
@@ -1017,7 +1045,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_066->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/066.shutter"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/066.shutter"
                " && "
                "exit"
                "; exec bash'");
@@ -1028,7 +1056,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_067->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/067.inkscape-stable"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/067.inkscape-stable"
                " && "
                "exit"
                "; exec bash'");
@@ -1039,7 +1067,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_068->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/068.inkscape-trunk"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/068.inkscape-trunk"
                " && "
                "exit"
                "; exec bash'");
@@ -1065,7 +1093,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_070->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/070.kazam"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/070.kazam"
                " && "
                "exit"
                "; exec bash'");
@@ -1076,7 +1104,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_071->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/071.sopcast"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/071.sopcast"
                " && "
                "exit"
                "; exec bash'");
@@ -1087,7 +1115,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_072->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/072.smplayer"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/072.smplayer"
                " && "
                "exit"
                "; exec bash'");
@@ -1098,7 +1126,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_073->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/073.handbrake"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/073.handbrake"
                " && "
                "exit"
                "; exec bash'");
@@ -1111,7 +1139,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_074->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/074.ffmpeg"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/074.ffmpeg"
                " && "
                "exit"
                "; exec bash'");
@@ -1122,7 +1150,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_075->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/075.vlc-stable"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/075.vlc-stable"
                " && "
                "exit"
                "; exec bash'");
@@ -1133,7 +1161,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_076->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/076.vlc-daily"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/076.vlc-daily"
                " && "
                "exit"
                "; exec bash'");
@@ -1146,7 +1174,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_077->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/077.notepadqq"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/077.notepadqq"
                " && "
                "exit"
                "; exec bash'");
@@ -1157,7 +1185,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_078->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/078.openjdk-8"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/078.openjdk-8"
                " && "
                "exit"
                "; exec bash'");
@@ -1168,7 +1196,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_079->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/079.openjdk-7"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/079.openjdk-7"
                " && "
                "exit"
                "; exec bash'");
@@ -1179,7 +1207,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_080->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/080.meld"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/080.meld"
                " && "
                "exit"
                "; exec bash'");
@@ -1190,7 +1218,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_081->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/081.dev-utils"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/081.dev-utils"
                " && "
                "exit"
                "; exec bash'");
@@ -1201,7 +1229,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_082->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/082.git-stable"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/082.git-stable"
                " && "
                "exit"
                "; exec bash'");
@@ -1212,7 +1240,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_083->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/083.smartgit"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/083.smartgit"
                " && "
                "exit"
                "; exec bash'");
@@ -1223,7 +1251,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_084->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/084.flatpak"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/084.flatpak"
                " && "
                "exit"
                "; exec bash'");
@@ -1234,7 +1262,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_085->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/085.dia"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/085.dia"
                " && "
                "exit"
                "; exec bash'");
@@ -1245,7 +1273,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_086->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/086.blender"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/086.blender"
                " && "
                "exit"
                "; exec bash'");
@@ -1256,7 +1284,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_087->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/087.fritzing"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/087.fritzing"
                " && "
                "exit"
                "; exec bash'");
@@ -1267,7 +1295,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_088->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/088.uecide"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/088.uecide"
                " && "
                "exit"
                "; exec bash'");
@@ -1278,7 +1306,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_089->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/089.arduino-ide"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/089.arduino-ide"
                " && "
                "exit"
                "; exec bash'");
@@ -1289,7 +1317,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_090->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/090.arduino-studio"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/090.arduino-studio"
                " && "
                "exit"
                "; exec bash'");
@@ -1300,7 +1328,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_091->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/091.git-rc"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/091.git-rc"
                " && "
                "exit"
                "; exec bash'");
@@ -1311,7 +1339,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_092->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/092.git-gui"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/092.git-gui"
                " && "
                "exit"
                "; exec bash'");
@@ -1322,7 +1350,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_093->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/093.Qt-Linux"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/093.Qt-Linux"
                " && "
                "exit"
                "; exec bash'");
@@ -1333,7 +1361,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_094->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/094.kicad"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/094.kicad"
                " && "
                "exit"
                "; exec bash'");
@@ -1346,7 +1374,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_100->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/100.vivaldi-browser"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/100.vivaldi-browser"
                " && "
                "exit"
                "; exec bash'");
@@ -1357,7 +1385,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_101->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/101.google-chrome-stable"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/101.google-chrome-stable"
                " && "
                "exit"
                "; exec bash'");
@@ -1368,7 +1396,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_102->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/102.google-chrome-unstable"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/102.google-chrome-unstable"
                " && "
                "exit"
                "; exec bash'");
@@ -1379,7 +1407,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_103->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/103.chromium"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/103.chromium"
                " && "
                "exit"
                "; exec bash'");
@@ -1390,7 +1418,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_104->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/104.firefox"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/104.firefox"
                " && "
                "exit"
                "; exec bash'");
@@ -1401,7 +1429,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_105->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/105.firefox-trunk"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/105.firefox-trunk"
                " && "
                "exit"
                "; exec bash'");
@@ -1412,7 +1440,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_106->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/106.ubuntu-mozilla-security"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/106.ubuntu-mozilla-security"
                " && "
                "exit"
                "; exec bash'");
@@ -1423,7 +1451,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_107->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/107.pepper-flash-for-chromium"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/107.pepper-flash-for-chromium"
                " && "
                "exit"
                "; exec bash'");
@@ -1434,7 +1462,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_108->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/108.pepper-flash-for-firefox"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/108.pepper-flash-for-firefox"
                " && "
                "exit"
                "; exec bash'");
@@ -1445,7 +1473,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_109->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/109.tor-browser"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/109.tor-browser"
                " && "
                "exit"
                "; exec bash'");
@@ -1458,7 +1486,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_110->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/110.skype"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/110.skype"
                " && "
                "exit"
                "; exec bash'");
@@ -1469,7 +1497,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_111->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/111.mumble"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/111.mumble"
                " && "
                "exit"
                "; exec bash'");
@@ -1480,7 +1508,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_112->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/112.wire"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/112.wire"
                " && "
                "exit"
                "; exec bash'");
@@ -1491,7 +1519,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_113->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/113.telegram"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/113.telegram"
                " && "
                "exit"
                "; exec bash'");
@@ -1502,7 +1530,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_114->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/114.Facebook-Messenger-Desktop"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/114.Facebook-Messenger-Desktop"
                " && "
                "exit"
                "; exec bash'");
@@ -1513,7 +1541,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_115->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/115.Whatsie"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/115.Whatsie"
                " && "
                "exit"
                "; exec bash'");
@@ -1526,7 +1554,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_116->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/116.compress-uncompress-utils"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/116.compress-uncompress-utils"
                " && "
                "exit"
                "; exec bash'");
@@ -1539,7 +1567,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_117->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/117.jdownloader-beta"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/117.jdownloader-beta"
                " && "
                "exit"
                "; exec bash'");
@@ -1550,7 +1578,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_118->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/118.jdownloader-stable"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/118.jdownloader-stable"
                " && "
                "exit"
                "; exec bash'");
@@ -1561,7 +1589,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_119->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/119.peerflix"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/119.peerflix"
                " && "
                "exit"
                "; exec bash'");
@@ -1572,7 +1600,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_120->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/120.samba"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/120.samba"
                " && "
                "exit"
                "; exec bash'");
@@ -1589,7 +1617,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_121->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/121.evolution"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/121.evolution"
                " && "
                "exit"
                "; exec bash'");
@@ -1600,7 +1628,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_122->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/122.libreoffice"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/122.libreoffice"
                " && "
                "exit"
                "; exec bash'");
@@ -1611,7 +1639,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_123->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/123.qpdfview"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/123.qpdfview"
                " && "
                "exit"
                "; exec bash'");
@@ -1622,7 +1650,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_124->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/124.thunderbird-nightly"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/124.thunderbird-nightly"
                " && "
                "exit"
                "; exec bash'");
@@ -1635,7 +1663,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_125->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/125.steam"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/125.steam"
                " && "
                "exit"
                "; exec bash'");
@@ -1646,7 +1674,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_126->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/126.uninstallpackages"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/126.uninstallpackages"
                " && "
                "exit"
                "; exec bash'");
@@ -1657,7 +1685,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_130->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/130.spaceview"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/130.spaceview"
                " && "
                "exit"
                "; exec bash'");
@@ -1668,7 +1696,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_132->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin/ppas/132.ukku"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/132.ukku"
                " && "
                "exit"
                "; exec bash'");

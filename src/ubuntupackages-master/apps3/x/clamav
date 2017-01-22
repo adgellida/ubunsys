@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### clamav
+sudo apt-fast -y install clamav clamav-daemon clamav-freshclam clamav-unofficial-sigs libclamunrar6 clamtk && freshclam && service clamav-daemon start

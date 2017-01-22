@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### indicator-systemtray-unity
+sudo apt-add-repository -y ppa:fixnix/indicator-systemtray-unity
+sudo apt-fast -y update
+sudo apt-get install indicator-systemtray-unity
+#sudo apt-get -y purge indicator-systemtray-unity

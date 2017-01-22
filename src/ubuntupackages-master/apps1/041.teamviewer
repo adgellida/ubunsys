@@ -14,4 +14,9 @@ sudo gdebi teamviewer_i386.deb
 rm teamviewer_i386.deb
 #sudo dpkg --remove-architecture i386
 
+##not working
+#sudo cp /opt/teamviewer/tv_bin/script/teamviewerd.service /etc/init.d/teamviewerd
+#sudo service teamviewerd start
+#sudo update-rc.d teamviewerd defaults
+
 ##wait a few moments, costs to init

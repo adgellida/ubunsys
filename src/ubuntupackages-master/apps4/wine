@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#### wine
+sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install wine
+
+## Wine config
+#sudo apt-fast -y install q4wine winetricks
+#export WINEPREFIX=prefix32
+#export WINEARCH=win32
+#winecfg

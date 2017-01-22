@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#### mate-desktop-environment (1)
+sudo apt-fast --yes --force-yes install mate-archive-keyring
+test -f /etc/apt/sources.list.d/MATE.list || sudo sh -c 'echo "deb http://packages.mate-desktop.org/repo/ubuntu raring main" >> /etc/apt/sources.list.d/MATE.list'
+sudo apt-fast -y update
+sudo apt-fast -y install mate-desktop-environment
+
+#### mate-desktop-environment (2) - http://wiki.mate-desktop.org/download - http://wiki.mate-desktop.org/replace_unity_by_mate
+#echo "deb http://repo.mate-desktop.org/archive/1.8/ubuntu $(lsb_release -cs) #main" | sudo tee /etc/apt/sources.list.d/mate-desktop.list
+#wget -qO - http://mirror1.mate-desktop.org/debian/mate-archive-keyring.gpg | sudo apt-key add -
+#sudo add-apt-repository -y ppa:ravefinity-project/ppa
+#sudo apt-fast -y update
+#sudo apt-fast install --no-install-recommends mate-desktop-environment mate-desktop-environment-extra caja-gksu caja-sendto mate-indicator-applet mate-icon-theme-faenza
+#sudo apt-fast install mate-notification-daemon mate-media-pulse mate-system-tools mate-system-tools-common mate-system-monitor-common
+#sudo apt-fast install ambiance-colors radiance-colors
+#sudo apt-fast remove gcalctool gnome-screenshot gedit file-roller eog gnome-system-monitor gnome-system-log baobab gnome-terminal gnome-applets gnome-media gnome-power-manager gnome-screensaver
+#sudo apt-fast remove gnome-calculator evince

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### mutate
+sudo apt-add-repository -y ppa:mutate/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install mutate

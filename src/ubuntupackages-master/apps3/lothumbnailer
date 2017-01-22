@@ -1,0 +1,11 @@
+#!/bin/bash
+
+##### lothumbnailer
+sudo add-apt-repository -y ppa:atareao/thumbnailers
+sudo apt-fast -y update
+sudo apt-fast -y install lothumbnailer
+
+rm ~/.cache/thumbnails/fail/gnome-thumbnail-factory/*
+rm ~/.cache/thumbnails/large/*
+rm ~/.cache/thumbnails/normal/*
+#killall nautilus

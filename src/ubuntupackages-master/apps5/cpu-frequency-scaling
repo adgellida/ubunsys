@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### cpu-frequency-scaling
+sudo add-apt-repository -y ppa:artfwo/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install indicator-multiload indicator-cpufreq

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### window-list_indicator-places - http://www.noobslab.com/2014/08/useful-panel-indicators-collection-for.html
+#http://askubuntu.com/questions/38505/how-can-i-see-a-list-of-all-open-windows-in-a-panel-in-unity
+#https://launchpad.net/~jwigley/+archive/ubuntu/window-list
+sudo add-apt-repository -y ppa:noobslab/indicators
+sudo apt-fast -y update
+sudo apt-fast -y install window-list indicator-places

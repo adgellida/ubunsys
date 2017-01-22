@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##### nemo
+sudo add-apt-repository -y ppa:webupd8team/nemo
+#sudo add-apt-repository -y ppa:noobslab/nemo
+sudo apt-fast -y update
+sudo apt-fast -y install nemo nemo-fileroller nemo-terminal python-nemo

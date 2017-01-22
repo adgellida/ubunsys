@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### pushbullet-indicator
+sudo add-apt-repository -y ppa:atareao/atareao
+sudo apt-fast -y update
+sudo apt-fast -y install pushbullet-indicator

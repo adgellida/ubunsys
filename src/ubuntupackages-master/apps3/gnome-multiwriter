@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#### gnome-multiwriter
+sudo apt-fast -y install gnome-common yelp-tools libcanberra-gtk3-dev libudisks2-dev gobject-introspection
+cd /tmp
+rm -rf GNOME_MULTI_WRITER*
+wget --no-check-certificate https://github.com/GNOME/gnome-multi-writer/tarball/master -O GNOME_MULTI_WRITER.tar.gz
+tar xzf GNOME_MULTI_WRITER.tar.gz
+cd gnome-multi-writer-GNOME_MULTI_WRITER_*
+##execute

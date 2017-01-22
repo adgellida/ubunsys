@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### qllauncher
+#http://www.webupd8.org/2014/12/qllauncher-quake-live-launcher-for-linux.html
+sudo add-apt-repository -y ppa:broken/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install qllauncher

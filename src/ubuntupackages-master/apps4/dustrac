@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### dustrac
+sudo add-apt-repository -y ppa:jussi-lind/dustrac
+sudo apt-fast -y update
+sudo apt-fast -y install dustrac

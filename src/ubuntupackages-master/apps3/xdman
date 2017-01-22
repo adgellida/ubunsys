@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### xdman
+sudo add-apt-repository -y ppa:noobslab/apps
+sudo apt-fast -y update
+sudo apt-fast -y install xdman

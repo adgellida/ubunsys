@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#### ubuntu-tweak
+#sudo add-apt-repository -y ppa:tualatrix/next #NEW
+#sudo add-apt-repository -y ppa:tualatrix/ppa #ANCIENT 2
+#sudo add-apt-repository -y ppa:freyja-dev/tualatrix #ANCIENT 1
+#sudo apt-fast -y update
+
+#### getdeb
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/getdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu vivid-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
+sudo apt-fast -y update
+
+sudo apt-fast -y install ubuntu-tweak

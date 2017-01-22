@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### blender
+sudo add-apt-repository -y ppa:otter-browser/daily
+sudo apt-fast -y update
+sudo apt-fast -y install otter-browser-git

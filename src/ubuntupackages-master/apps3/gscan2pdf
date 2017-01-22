@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### gscan2pdf
+sudo add-apt-repository -y ppa:jeffreyratcliffe/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install gscan2pdf tesseract-ocr tesseract-ocr-spa

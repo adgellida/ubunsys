@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#### DirSyncPro
+sudo mkdir /opt/DirSyncPro
+sudo wget http://netcologne.dl.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.51/DirSyncPro-1.51-Linux.tar.gz -O /opt/DirSyncPro/DirSyncPro-1.51-Linux.tar.gz
+sudo wget http://dirsyncpro.org/images/dirsyncpro.png -O /opt/DirSyncPro/dirsyncpro.png
+sudo tar -xf /opt/DirSyncPro/DirSyncPro-1.51-Linux.tar.gz -d /opt/DirSyncPro
+sudo rm /opt/DirSyncPro/DirSyncPro-1.51-Linux.tar.gz
+sudo chmod +rwx /opt/DirSyncPro/DirSyncPro-1.51-Linux/dirsyncpro.jar
+
+test -f /usr/share/applications/dirsyncpro.desktop || sudo sh -c 'echo "[Desktop Entry]
+Type=Application
+Name=DirSyncPro
+Comment=Sync your files!
+Categories=System
+Exec=/opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
+Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.desktop'
+##sudo ln -s /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar ~/Escritorio/DirSyncPro

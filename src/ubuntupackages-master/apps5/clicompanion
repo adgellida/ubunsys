@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### clicompanion
+#sudo add-apt-repository -y ppa:clicompanion-devs/clicompanion-nightlies
+#sudo apt-fast -y update
+#sudo apt-fast -y install clicompanion
+wget https://launchpad.net/~clicompanion-devs/+archive/ubuntu/clicompanion-nightlies/+files/clicompanion_1.1-6~bzr112%2Bp21~ubuntu12.04.1_all.deb
+sudo dpkg -i clicompanion*.deb

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### voice-commands
+#http://www.noobslab.com/2014/06/control-your-ubuntulinux-mint-system.html
+sudo add-apt-repository -y ppa:baitsart/voice-commands
+sudo apt-fast -y update
+sudo apt-fast -y install voice-commands

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### atom
+sudo add-apt-repository -y ppa:webupd8team/atom
+sudo apt-fast -y update
+sudo apt-fast -y install atom

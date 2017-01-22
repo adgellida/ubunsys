@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### hotot - May be in official repo
+sudo add-apt-repository -y ppa:jimmyxu/hotot
+sudo apt-fast -y update
+sudo apt-fast -y install hotot

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### zandronum
+test -f /etc/apt/sources.list.d/zandronum.list || sudo sh -c 'echo "deb http://debian.drdteam.org/ stable multiverse" >> /etc/apt/sources.list.d/zandronum.list'
+wget -O - http://debian.drdteam.org/drdteam.gpg | sudo apt-key add -
+sudo apt-fast -y update
+sudo apt-fast -y install zandronum doomseeker-zandronum
+#Install IWADs to ~/.zandronum/ -> http://zdoom.org/wiki/IWAD

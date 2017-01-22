@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### power-installer
+#sudo add-apt-repository -y ppa:donadigo/power-installer
+sudo add-apt-repository -y ppa:elementary-os/daily
+sudo apt-fast -y update
+sudo apt-fast -y install power-installer

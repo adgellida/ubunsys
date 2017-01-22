@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#### enlightenment
+##e20
+sudo add-apt-repository -y ppa:enlightenment-git/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install e20 terminology
+##e19
+#sudo add-apt-repository -y ppa:martinx/enlightenment
+#sudo apt-fast -y update
+#sudo apt-fast -y install enlightenment terminology

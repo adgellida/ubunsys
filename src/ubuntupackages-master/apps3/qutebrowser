@@ -1,0 +1,10 @@
+#!/bin/bash
+
+##### qutebrowser
+wget https://launchpadlibrarian.net/257527920/python3-pypeg2_2.15.2-0ubuntu1_all.deb
+sudo gdebi python3-pypeg2_2.15.2-0ubuntu1_all.deb.deb
+rm python3-pypeg2_2.15.2-0ubuntu1_all.deb.deb
+sudo apt-fast -y install python3-lxml python-tox python3-pyqt5 python3-pyqt5.qtwebkit python3-sip python3-jinja2 python3-pygments python3-yaml
+sudo gdebi https://github.com/The-Compiler/qutebrowser/releases/download/v0.8.1/qutebrowser_0.8.1-1_all.deb
+rm qutebrowser_0.8.1-1_all.deb
+#:adblock-update

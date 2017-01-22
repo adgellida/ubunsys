@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### timeShift
+#http://www.howtogeek.com/206491/how-to-restore-your-ubuntu-linux-system-to-its-previous-state/
+sudo add-apt-repository -y ppa:teejee2008/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install timeshift

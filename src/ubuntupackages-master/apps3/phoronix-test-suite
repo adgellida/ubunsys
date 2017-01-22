@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### phoronix-test-suite
+wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_6.4.0_all.deb
+sudo phoronix-test-suite_6.4.0_all.deb
+rm phoronix-test-suite_6.4.0_all.deb
