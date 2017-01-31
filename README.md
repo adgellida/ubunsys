@@ -1,9 +1,11 @@
-# ubunsys v2016.11.09
+# ubunsys
 =============================================
 
 <img src="http://dglibre.com/wp-content/subidas/2008/09/tux.png" width="80">
 
 Configurable app referent to packages, updates and configurations.
+
+Right now this repo is on stand by state. I won't update a new version in a lot of time. I'm sorry.
 
 <img src="http://i.imgur.com/4whZ4Vg.png" width="500">
 
