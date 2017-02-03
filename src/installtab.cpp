@@ -837,12 +837,12 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
                "; exec bash'");
     }
 
-    //049.ANGRYsearch
+    //049.angrysearch
 
     if (ui->checkBox_049->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/049.ANGRYsearch"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/049.angrysearch"
                " && "
                "exit"
                "; exec bash'");
@@ -1525,23 +1525,23 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
                "; exec bash'");
     }
 
-    //114.Facebook-Messenger-Desktop
+    //114.facebook-messenger-desktop
 
     if (ui->checkBox_114->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/114.Facebook-Messenger-Desktop"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/114.facebook-messenger-desktop"
                " && "
                "exit"
                "; exec bash'");
     }
 
-    //115.Whatsie
+    //115.whatsie
 
     if (ui->checkBox_115->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/115.Whatsie"
+               "sudo ~/.ubunsys/downloads/ppas/ubuntupackages-master/apps1/115.whatsie"
                " && "
                "exit"
                "; exec bash'");
