@@ -93,6 +93,16 @@ private slots:
 
     void on_installTemplatesButton_clicked();
 
+    void on_doVisibleAsterisksButton_clicked();
+
+    void on_doInvisibleAsterisksButton_clicked();
+
+    void on_openSourcesListDButton_clicked();
+
+    void on_enableHibernationButton_clicked();
+
+    void on_disableHibernationButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 

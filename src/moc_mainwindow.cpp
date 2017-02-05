@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[33];
-    char stringdata0[988];
+    QByteArrayData data[38];
+    char stringdata0[1167];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -61,7 +61,12 @@ QT_MOC_LITERAL(28, 821, 30), // "on_loadSelectionButton_clicked"
 QT_MOC_LITERAL(29, 852, 30), // "on_saveSelectionButton_clicked"
 QT_MOC_LITERAL(30, 883, 36), // "on_upgradeLatestStableButton_..."
 QT_MOC_LITERAL(31, 920, 33), // "on_upgradeLatestDevButton_cli..."
-QT_MOC_LITERAL(32, 954, 33) // "on_installTemplatesButton_cli..."
+QT_MOC_LITERAL(32, 954, 33), // "on_installTemplatesButton_cli..."
+QT_MOC_LITERAL(33, 988, 35), // "on_doVisibleAsterisksButton_c..."
+QT_MOC_LITERAL(34, 1024, 37), // "on_doInvisibleAsterisksButton..."
+QT_MOC_LITERAL(35, 1062, 33), // "on_openSourcesListDButton_cli..."
+QT_MOC_LITERAL(36, 1096, 34), // "on_enableHibernationButton_cl..."
+QT_MOC_LITERAL(37, 1131, 35) // "on_disableHibernationButton_c..."
 
     },
     "MainWindow\0on_actionNew_triggered\0\0"
@@ -93,7 +98,12 @@ QT_MOC_LITERAL(32, 954, 33) // "on_installTemplatesButton_cli..."
     "on_saveSelectionButton_clicked\0"
     "on_upgradeLatestStableButton_clicked\0"
     "on_upgradeLatestDevButton_clicked\0"
-    "on_installTemplatesButton_clicked"
+    "on_installTemplatesButton_clicked\0"
+    "on_doVisibleAsterisksButton_clicked\0"
+    "on_doInvisibleAsterisksButton_clicked\0"
+    "on_openSourcesListDButton_clicked\0"
+    "on_enableHibernationButton_clicked\0"
+    "on_disableHibernationButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -103,7 +113,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      31,   14, // methods
+      36,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -111,39 +121,49 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,  169,    2, 0x08 /* Private */,
-       3,    0,  170,    2, 0x08 /* Private */,
-       4,    0,  171,    2, 0x08 /* Private */,
-       5,    0,  172,    2, 0x08 /* Private */,
-       6,    0,  173,    2, 0x08 /* Private */,
-       7,    0,  174,    2, 0x08 /* Private */,
-       8,    0,  175,    2, 0x08 /* Private */,
-       9,    0,  176,    2, 0x08 /* Private */,
-      10,    0,  177,    2, 0x08 /* Private */,
-      11,    0,  178,    2, 0x08 /* Private */,
-      12,    0,  179,    2, 0x08 /* Private */,
-      13,    0,  180,    2, 0x08 /* Private */,
-      14,    0,  181,    2, 0x08 /* Private */,
-      15,    0,  182,    2, 0x08 /* Private */,
-      16,    0,  183,    2, 0x08 /* Private */,
-      17,    0,  184,    2, 0x08 /* Private */,
-      18,    0,  185,    2, 0x08 /* Private */,
-      19,    0,  186,    2, 0x08 /* Private */,
-      20,    0,  187,    2, 0x08 /* Private */,
-      21,    0,  188,    2, 0x08 /* Private */,
-      22,    0,  189,    2, 0x08 /* Private */,
-      23,    0,  190,    2, 0x08 /* Private */,
-      24,    0,  191,    2, 0x08 /* Private */,
-      25,    0,  192,    2, 0x08 /* Private */,
-      26,    0,  193,    2, 0x08 /* Private */,
-      27,    0,  194,    2, 0x08 /* Private */,
-      28,    0,  195,    2, 0x08 /* Private */,
-      29,    0,  196,    2, 0x08 /* Private */,
-      30,    0,  197,    2, 0x08 /* Private */,
-      31,    0,  198,    2, 0x08 /* Private */,
-      32,    0,  199,    2, 0x08 /* Private */,
+       1,    0,  194,    2, 0x08 /* Private */,
+       3,    0,  195,    2, 0x08 /* Private */,
+       4,    0,  196,    2, 0x08 /* Private */,
+       5,    0,  197,    2, 0x08 /* Private */,
+       6,    0,  198,    2, 0x08 /* Private */,
+       7,    0,  199,    2, 0x08 /* Private */,
+       8,    0,  200,    2, 0x08 /* Private */,
+       9,    0,  201,    2, 0x08 /* Private */,
+      10,    0,  202,    2, 0x08 /* Private */,
+      11,    0,  203,    2, 0x08 /* Private */,
+      12,    0,  204,    2, 0x08 /* Private */,
+      13,    0,  205,    2, 0x08 /* Private */,
+      14,    0,  206,    2, 0x08 /* Private */,
+      15,    0,  207,    2, 0x08 /* Private */,
+      16,    0,  208,    2, 0x08 /* Private */,
+      17,    0,  209,    2, 0x08 /* Private */,
+      18,    0,  210,    2, 0x08 /* Private */,
+      19,    0,  211,    2, 0x08 /* Private */,
+      20,    0,  212,    2, 0x08 /* Private */,
+      21,    0,  213,    2, 0x08 /* Private */,
+      22,    0,  214,    2, 0x08 /* Private */,
+      23,    0,  215,    2, 0x08 /* Private */,
+      24,    0,  216,    2, 0x08 /* Private */,
+      25,    0,  217,    2, 0x08 /* Private */,
+      26,    0,  218,    2, 0x08 /* Private */,
+      27,    0,  219,    2, 0x08 /* Private */,
+      28,    0,  220,    2, 0x08 /* Private */,
+      29,    0,  221,    2, 0x08 /* Private */,
+      30,    0,  222,    2, 0x08 /* Private */,
+      31,    0,  223,    2, 0x08 /* Private */,
+      32,    0,  224,    2, 0x08 /* Private */,
+      33,    0,  225,    2, 0x08 /* Private */,
+      34,    0,  226,    2, 0x08 /* Private */,
+      35,    0,  227,    2, 0x08 /* Private */,
+      36,    0,  228,    2, 0x08 /* Private */,
+      37,    0,  229,    2, 0x08 /* Private */,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -216,6 +236,11 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 28: _t->on_upgradeLatestStableButton_clicked(); break;
         case 29: _t->on_upgradeLatestDevButton_clicked(); break;
         case 30: _t->on_installTemplatesButton_clicked(); break;
+        case 31: _t->on_doVisibleAsterisksButton_clicked(); break;
+        case 32: _t->on_doInvisibleAsterisksButton_clicked(); break;
+        case 33: _t->on_openSourcesListDButton_clicked(); break;
+        case 34: _t->on_enableHibernationButton_clicked(); break;
+        case 35: _t->on_disableHibernationButton_clicked(); break;
         default: ;
         }
     }
@@ -247,13 +272,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 31)
+        if (_id < 36)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 31;
+        _id -= 36;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 31)
+        if (_id < 36)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 31;
+        _id -= 36;
     }
     return _id;
 }

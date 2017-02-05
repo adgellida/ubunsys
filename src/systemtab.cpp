@@ -47,13 +47,13 @@ void MainWindow::on_basicPackagesInstallButton_clicked()
     system("mkdir ~/.ubunsys");
     system("mkdir ~/.ubunsys/downloads");
 
-    system("wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/installpackages1 -O ~/.ubunsys/downloads/installpackages1");
+    system("wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/installpackages1-minimal -O ~/.ubunsys/downloads/installpackages1-minimal");
 
-//    system("pkexec chmod 777 ~/.ubunsys/downloads/installpackages1");
-    system("chmod +x ~/.ubunsys/downloads/installpackages1");
+//    system("pkexec chmod 777 ~/.ubunsys/downloads/installpackages1-minimal");
+    system("chmod +x ~/.ubunsys/downloads/installpackages1-minimal");
 
     system("xterm -e bash -c '"
-           "sudo ~/.ubunsys/downloads/installpackages1"
+           "sudo ~/.ubunsys/downloads/installpackages1-minimal"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Script executed succesful. Now select another action."));
