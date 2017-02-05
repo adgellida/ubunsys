@@ -1729,7 +1729,11 @@ void MainWindow::on_unselectAllButton_clicked()
     ui->checkBox_124->setChecked(false);
     ui->checkBox_125->setChecked(false);
     ui->checkBox_126->setChecked(false);
+    ui->checkBox_127->setChecked(false);
+    ui->checkBox_128->setChecked(false);
+    ui->checkBox_129->setChecked(false);
     ui->checkBox_130->setChecked(false);
+    ui->checkBox_131->setChecked(false);
     ui->checkBox_132->setChecked(false);
     ui->checkBox_133->setChecked(false);
     ui->checkBox_134->setChecked(false);
@@ -1748,6 +1752,7 @@ void MainWindow::on_unselectAllButton_clicked()
     ui->checkBox_147->setChecked(false);
     ui->checkBox_148->setChecked(false);
     ui->checkBox_149->setChecked(false);
+    ui->checkBox_150->setChecked(false);
 
 }
 
@@ -1874,7 +1879,11 @@ void MainWindow::on_selectAllButton_clicked()
     ui->checkBox_124->setChecked(true);
     ui->checkBox_125->setChecked(true);
     ui->checkBox_126->setChecked(true);
+    ui->checkBox_127->setChecked(true);
+    ui->checkBox_128->setChecked(true);
+    ui->checkBox_129->setChecked(true);
     ui->checkBox_130->setChecked(true);
+    ui->checkBox_131->setChecked(true);
     ui->checkBox_132->setChecked(true);
     ui->checkBox_133->setChecked(true);
     ui->checkBox_134->setChecked(true);
@@ -1893,6 +1902,7 @@ void MainWindow::on_selectAllButton_clicked()
     ui->checkBox_147->setChecked(true);
     ui->checkBox_148->setChecked(true);
     ui->checkBox_149->setChecked(true);
+    ui->checkBox_150->setChecked(true);
 
 }
 

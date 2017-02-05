@@ -41,13 +41,11 @@ private slots:
 
     void on_updateReposButton_clicked();
 
-    void on_upgradeButton_clicked();
+    void on_updateAndUpgradeButton_clicked();
 
     void on_upgradeReposButton_clicked();
 
     void on_dist_upgradeButton_clicked();
-
-    void on_upgradeKernelButton_clicked();
 
     void on_cleanKernelsButton_clicked();
 
@@ -102,6 +100,14 @@ private slots:
     void on_enableHibernationButton_clicked();
 
     void on_disableHibernationButton_clicked();
+
+    void on_enableSudoWithoutPassButton_clicked();
+
+    void on_disableSudoWithoutPassButton_clicked();
+
+    void on_openSudoersFileButton_clicked();
+
+    void on_backupSudoersFileButton_clicked();
 
 private:
     Ui::MainWindow *ui;

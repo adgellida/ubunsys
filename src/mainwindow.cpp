@@ -51,6 +51,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->statusBar->showMessage(tr("Checking if apt-fast is installed and we install it if necessary."));
 
     system("xterm -e bash -c '"
+           "echo Please wait"
+           " && "
+           "echo  "
+           " && "
+           "echo Checking if apt-fast installed to download more quick"
+           " && "
            "sudo ~/.ubunsys/downloads/ubuntuScripts-master/020.check_apt-fast_installed"
            " && "
            "exit"

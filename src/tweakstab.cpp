@@ -3,6 +3,63 @@
 
 ///////////////////////TWEAKS TAB///////////////////////
 
+
+//##Security & Passwords
+
+void MainWindow::on_enableSudoWithoutPassButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling sudo without pass."));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPass"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action."));
+}
+
+void MainWindow::on_disableSudoWithoutPassButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling sudo without pass."));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/026.disableSudoWithoutPass"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action."));
+}
+
+void MainWindow::on_openSudoersFileButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening sudoers."));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/027.openSudoersFile"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action."));
+}
+
+void MainWindow::on_backupSudoersFileButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Backuping sudoers."));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/028.backupSudoersFile"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action."));
+}
+
+//##Documents & Files
+
 void MainWindow::on_installTemplatesButton_clicked()
 {
     ui->statusBar->showMessage(tr("Installing templates."));
@@ -15,6 +72,8 @@ void MainWindow::on_installTemplatesButton_clicked()
 
     ui->statusBar->showMessage(tr("Templates installed succesful. Now select another action."));
 }
+
+//##Terminal
 
 void MainWindow::on_doVisibleAsterisksButton_clicked()
 {
@@ -42,6 +101,8 @@ void MainWindow::on_doInvisibleAsterisksButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action."));
 }
 
+//##Repositories
+
 void MainWindow::on_openSourcesListDButton_clicked()
 {
     ui->statusBar->showMessage(tr("Opening sources.list.d."));
@@ -49,11 +110,13 @@ void MainWindow::on_openSourcesListDButton_clicked()
     system("xterm -e bash -c '"
            "~/.ubunsys/downloads/ubuntuScripts-master/023.openSourcesListD"
            " && "
-           "exit"
+           "echo Close this window!"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Done. Now select another action."));
 }
+
+//##Power
 
 void MainWindow::on_enableHibernationButton_clicked()
 {
@@ -80,4 +143,3 @@ void MainWindow::on_disableHibernationButton_clicked()
 
     ui->statusBar->showMessage(tr("Done. Now select another action."));
 }
-

@@ -5,28 +5,28 @@
 
 //    Normal user
 
+void MainWindow::on_updateAndUpgradeButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Executing default update & upgrade system. Then close the terminal window."));
+
+    system("xterm -e bash -c '"
+           "sudo apt-fast -y update"
+           " && "
+           "sudo apt-fast -y upgrade"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Default update & upgrade system did it successful. Now select another action."));
+}
+
 void MainWindow::on_updateReposButton_clicked()
 {
     ui->statusBar->showMessage(tr("Updating repos. Then close the terminal window."));
 
     system("xterm -e bash -c '"
-           "sudo apt-get -y update"
+           "sudo apt-fast -y update"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Repos updated succesful. Now select another action."));
-}
-
-void MainWindow::on_upgradeButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Executing default update system. Then close the terminal window."));
-
-    system("xterm -e bash -c '"
-           "sudo apt-get -y update"
-           " && "
-           "sudo apt-get -y upgrade"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Default update system did it successful. Now select another action."));
 }
 
 void MainWindow::on_upgradeReposButton_clicked()
@@ -34,7 +34,7 @@ void MainWindow::on_upgradeReposButton_clicked()
     ui->statusBar->showMessage(tr("Upgrading repos. Then close the terminal window."));
 
     system("xterm -e bash -c '"
-           "sudo apt-get -y upgrade"
+           "sudo apt-fast -y upgrade"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Repos upgraded succesful. Now select another action."));
@@ -44,16 +44,8 @@ void MainWindow::on_basicPackagesInstallButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing normal user installation script. Then close the terminal window."));
 
-    system("mkdir ~/.ubunsys");
-    system("mkdir ~/.ubunsys/downloads");
-
-    system("wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/installpackages1-minimal -O ~/.ubunsys/downloads/installpackages1-minimal");
-
-//    system("pkexec chmod 777 ~/.ubunsys/downloads/installpackages1-minimal");
-    system("chmod +x ~/.ubunsys/downloads/installpackages1-minimal");
-
     system("xterm -e bash -c '"
-           "sudo ~/.ubunsys/downloads/installpackages1-minimal"
+           "sudo ~/.ubunsys/downloads/ubuntupackages-master/installpackages1-minimal"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Script executed succesful. Now select another action."));
@@ -83,31 +75,12 @@ void MainWindow::on_dist_upgradeButton_clicked()
     ui->statusBar->showMessage(tr("Executing smart system upgrade. Then close the terminal window."));
 
     system("xterm -e bash -c '"
-           "apt-get -y update"
+           "sudo apt-fast -y update"
            " && "
-           "apt-get dist-upgrade"
+           "sudo apt-fast -y dist-upgrade"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Smart system upgrade did it succesful. Now select another action."));
-}
-
-void MainWindow::on_upgradeKernelButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Executing mainline kernel update. Then close the terminal window."));
-
-    system("mkdir ~/.ubunsys");
-    system("mkdir ~/.ubunsys/downloads");
-
-    system("wget https://raw.githubusercontent.com/adgellida/ubuntuScripts/master/kernel%20scripts/install%20latest%20kernel%20updates/medigeek-kmp-downloader -O ~/.ubunsys/downloads/medigeek-kmp-downloader");
-
-//    system("pkexec chmod 777 ~/.ubunsys/downloads/medigeek-kmp-downloader");
-    system("chmod +x ~/.ubunsys/downloads/medigeek-kmp-downloader");
-
-    system("xterm -e bash -c '"
-           "sudo ~/.ubunsys/downloads/medigeek-kmp-downloader"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Script executed succesful. Now select another action."));
 }
 
 void MainWindow::on_cleanKernelsButton_clicked()

@@ -20,7 +20,7 @@ void MainWindow::on_repairNetworkButton_clicked()
     ui->statusBar->showMessage(tr("Repairing network. Put Please wait."));
 
     system("xterm -e bash -c '"
-           "service network-manager restart"
+           "sudo service network-manager restart"
            " && "
            "exit"
            "; exec bash'");
@@ -33,7 +33,7 @@ void MainWindow::on_repairGPGKeys_clicked()
     ui->statusBar->showMessage(tr("Repairing missed GPG keys. Please wait."));
 
     system("xterm -e bash -c '"
-           "sudo ./ppas/y-ppa-manager"
+           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/005.y-ppa-manager"
            " && "
            "sudo launchpad-getkeys"
            " && "
@@ -51,9 +51,9 @@ void MainWindow::on_fixBrokenPackagesButton_1_clicked()
     ui->statusBar->showMessage(tr("Executing package repair 1. Then close the terminal window."));
 
     system("xterm -e bash -c '"
-           "sudo apt-get -y update"
+           "sudo apt-fast -y update"
            " && "
-           "sudo apt-get -y upgrade"
+           "sudo apt-fast -y upgrade"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Reparation 1 executed succesful. Test if all is corrected."));
