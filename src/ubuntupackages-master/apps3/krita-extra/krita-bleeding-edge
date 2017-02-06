@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#### krita-bleeding-edge build - not use
-#http://xubuntugeek.blogspot.com.es/2013/12/how-to-install-lastest-krita-in-xubuntu.html
-#http://dimula73.blogspot.com.es/2013/05/krita-lime-ppa-always-fresh-versions.html
-sudo add-apt-repository -y ppa:dimula73/krita		
-sudo apt-fast -y update
-sudo apt-fast -y install krita-2.9
-sudo mv /usr/share/applications/kde4/krita.desktop /usr/share/applications/

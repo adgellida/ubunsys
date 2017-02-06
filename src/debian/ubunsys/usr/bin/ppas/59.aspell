@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#### aspell
-sudo apt-fast -y install aspell aspell-en aspell-es

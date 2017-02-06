@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### tomahawk
-sudo add-apt-repository -y ppa:tomahawk/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install tomahawk

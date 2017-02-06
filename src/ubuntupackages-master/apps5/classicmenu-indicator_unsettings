@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### classicmenu-indicator_unsettings
-sudo add-apt-repository -y ppa:diesch/testing
-sudo apt-fast -y update
-sudo apt-fast -y install classicmenu-indicator unsettings

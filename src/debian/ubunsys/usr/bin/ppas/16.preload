@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#### preload
-sudo apt-fast -y install preload

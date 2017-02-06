@@ -1,8 +1,0 @@
-#!/bin/bash
-
-#### i2p
-sudo add-apt-repository -y ppa:i2p-maintainers/i2p
-sudo apt-fast -y update
-sudo apt-fast -y install i2p i2p-router i2pd
-#i2prouter start
-#http://localhost:7657

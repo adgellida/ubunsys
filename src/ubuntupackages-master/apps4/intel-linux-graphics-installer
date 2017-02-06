@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#### intel-linux-graphics-installer - Official - Not compatible with 16.04 - Now 15.10
-#https://download.01.org/gfx/ubuntu/15.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.2.0-0intel1_amd64.deb
-wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
-wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
-test -f /etc/apt/sources.list.d/intellinuxgraphics.list || sudo sh -c 'echo "deb https://download.01.org/gfx/ubuntu/15.04/main/ utopic main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'

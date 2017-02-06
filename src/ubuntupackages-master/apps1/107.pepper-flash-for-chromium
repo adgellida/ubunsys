@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#### pepper-flash-for-chromium
-sudo apt-fast -y install pepperflashplugin-nonfree

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#### gnome-disk-utility
-sudo apt-fast -y install gnome-disk-utility

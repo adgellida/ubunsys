@@ -1,8 +1,0 @@
-#!/bin/bash
-
-#### ukku
-sudo add-apt-repository -y ppa:teejee2008/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install ukku
-
-#sudo ukuu-gtk

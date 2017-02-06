@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### systemback
-sudo apt-add-repository -y ppa:nemh/systemback
-sudo apt-fast -y update
-sudo apt-fast -y install systemback

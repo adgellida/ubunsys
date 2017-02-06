@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### smartgit
-wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-8_0_2.deb
-sudo dpkg -i smartgit-8_0_2.deb
-rm smartgit*.deb

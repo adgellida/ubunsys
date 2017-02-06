@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#### kazam
-sudo apt-fast -y install kazam

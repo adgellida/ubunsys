@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#### KeeWeb
-#http://packages.linuxmint.com/pool/main/m/mintstick/
-wget https://github.com/antelle/keeweb/releases/download/v1.1.4/KeeWeb.linux.x64.deb
-sudo KeeWeb.linux.x64.deb
-rm KeeWeb.linux.x64.deb

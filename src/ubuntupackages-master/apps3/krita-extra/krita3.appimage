@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#### krita3 - not use
-#http://files.kde.org/krita/3/linux/
-wget http://files.kde.org/krita/3/linux/krita-3.0-x86_64.appimage
-sudo chmod +x krita-3.0-x86_64.appimage
-./krita-3.0-x86_64.appimage

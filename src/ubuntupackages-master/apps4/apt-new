@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#### blockify
-#http://kuboosoft.blogspot.com.es/2015/01/quita-los-molestos-anuncios-de-spotify.html
-sudo apt-fast -y install python-pip python-wnck
-sudo pip install http://github.com/mikar/blockify/archive/v1.7.2.zip
-echo -e '[Desktop Entry]\nName=Blockify\nComment=Blocks Spotify commercials\nExec=blockify-ui\nIcon='$(python -c 'import pkg_resources; print pkg_resources.resource_filename("blockify", "data/icon-red-512.png")')'\nType=Application\nCategories=AudioVideo' | sudo tee /usr/share/applications/blockify.desktop

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#### extundelete
-sudo apt-fast -y install extundelete

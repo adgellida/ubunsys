@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#### byobu
-sudo apt-fast -y install byobu

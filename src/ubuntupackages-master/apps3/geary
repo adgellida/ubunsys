@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#### geary
-#sudo add-apt-repository -y ppa:yorba/daily-builds
-sudo add-apt-repository -y ppa:geary-team/releases
-sudo apt-fast -y update
-sudo apt-fast -y install geary
