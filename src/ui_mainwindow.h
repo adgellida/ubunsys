@@ -1140,7 +1140,7 @@ public:
         label_18->setFont(font);
         label_19 = new QLabel(tab_2);
         label_19->setObjectName(QStringLiteral("label_19"));
-        label_19->setGeometry(QRect(60, 140, 251, 16));
+        label_19->setGeometry(QRect(60, 140, 261, 16));
         label_19->setFont(font);
         label_20 = new QLabel(tab_2);
         label_20->setObjectName(QStringLiteral("label_20"));
@@ -1246,10 +1246,10 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(3);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(0);
-        toolBox->setCurrentIndex(1);
+        toolBox->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1597,7 +1597,7 @@ public:
         fixBrokenPackagesButton_6->setText(QString());
         fixBrokenPackagesButton_6->setShortcut(QString());
         label_18->setText(QApplication::translate("MainWindow", "shutdown -Fr now", 0));
-        label_19->setText(QApplication::translate("MainWindow", "apt-get -y update && apt-get -y upgrade", 0));
+        label_19->setText(QApplication::translate("MainWindow", "apt-fast -y update && apt-fast -y upgrade", 0));
         label_20->setText(QApplication::translate("MainWindow", "apt-get -y --fix-broken install", 0));
         label_21->setText(QApplication::translate("MainWindow", "rm /var/lib/apt/lists/* -vf && apt-get -y update", 0));
         label_22->setText(QApplication::translate("MainWindow", "apt-get -f install && apt-get -y autoremove && apt-get -y autoclean &&\n"
