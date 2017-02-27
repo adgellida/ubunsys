@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -145,7 +145,7 @@
          <rect>
           <x>10</x>
           <y>220</y>
-          <width>101</width>
+          <width>121</width>
           <height>23</height>
          </rect>
         </property>
@@ -197,7 +197,7 @@
          <rect>
           <x>10</x>
           <y>200</y>
-          <width>181</width>
+          <width>201</width>
           <height>23</height>
          </rect>
         </property>
@@ -275,7 +275,7 @@
          <rect>
           <x>10</x>
           <y>80</y>
-          <width>141</width>
+          <width>161</width>
           <height>23</height>
          </rect>
         </property>
@@ -379,7 +379,7 @@
          <rect>
           <x>210</x>
           <y>60</y>
-          <width>111</width>
+          <width>141</width>
           <height>23</height>
          </rect>
         </property>
@@ -431,7 +431,7 @@
          <rect>
           <x>210</x>
           <y>140</y>
-          <width>111</width>
+          <width>121</width>
           <height>23</height>
          </rect>
         </property>
@@ -457,7 +457,7 @@
          <rect>
           <x>210</x>
           <y>180</y>
-          <width>131</width>
+          <width>151</width>
           <height>23</height>
          </rect>
         </property>
@@ -470,7 +470,7 @@
          <rect>
           <x>210</x>
           <y>200</y>
-          <width>141</width>
+          <width>161</width>
           <height>23</height>
          </rect>
         </property>
@@ -483,7 +483,7 @@
          <rect>
           <x>210</x>
           <y>220</y>
-          <width>141</width>
+          <width>171</width>
           <height>23</height>
          </rect>
         </property>
@@ -548,7 +548,7 @@
          <rect>
           <x>210</x>
           <y>320</y>
-          <width>111</width>
+          <width>161</width>
           <height>23</height>
          </rect>
         </property>
@@ -561,7 +561,7 @@
          <rect>
           <x>210</x>
           <y>340</y>
-          <width>111</width>
+          <width>171</width>
           <height>23</height>
          </rect>
         </property>
@@ -600,7 +600,7 @@
          <rect>
           <x>390</x>
           <y>100</y>
-          <width>151</width>
+          <width>171</width>
           <height>23</height>
          </rect>
         </property>
@@ -626,7 +626,7 @@
          <rect>
           <x>390</x>
           <y>60</y>
-          <width>121</width>
+          <width>171</width>
           <height>23</height>
          </rect>
         </property>
@@ -730,7 +730,7 @@
          <rect>
           <x>390</x>
           <y>300</y>
-          <width>131</width>
+          <width>151</width>
           <height>23</height>
          </rect>
         </property>
@@ -769,7 +769,7 @@
          <rect>
           <x>390</x>
           <y>40</y>
-          <width>121</width>
+          <width>161</width>
           <height>23</height>
          </rect>
         </property>
@@ -782,7 +782,7 @@
          <rect>
           <x>210</x>
           <y>360</y>
-          <width>161</width>
+          <width>201</width>
           <height>23</height>
          </rect>
         </property>
@@ -795,7 +795,7 @@
          <rect>
           <x>390</x>
           <y>20</y>
-          <width>121</width>
+          <width>171</width>
           <height>23</height>
          </rect>
         </property>
@@ -1143,7 +1143,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>093.Qt-Linux</string>
+         <string>093.qtcreator</string>
         </property>
        </widget>
        <widget class="QCheckBox" name="checkBox_078">
@@ -1372,7 +1372,7 @@
          <rect>
           <x>350</x>
           <y>20</y>
-          <width>191</width>
+          <width>211</width>
           <height>23</height>
          </rect>
         </property>
@@ -1398,7 +1398,7 @@
          <rect>
           <x>350</x>
           <y>140</y>
-          <width>211</width>
+          <width>241</width>
           <height>23</height>
          </rect>
         </property>
@@ -1515,7 +1515,7 @@
          <rect>
           <x>350</x>
           <y>40</y>
-          <width>201</width>
+          <width>221</width>
           <height>23</height>
          </rect>
         </property>
@@ -1606,7 +1606,7 @@
          <rect>
           <x>350</x>
           <y>340</y>
-          <width>211</width>
+          <width>241</width>
           <height>23</height>
          </rect>
         </property>
@@ -1629,7 +1629,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>132.ukku</string>
+         <string>132.ukuu</string>
         </property>
        </widget>
        <widget class="QCheckBox" name="checkBox_130">
@@ -1767,7 +1767,7 @@
          <rect>
           <x>10</x>
           <y>300</y>
-          <width>161</width>
+          <width>181</width>
           <height>23</height>
          </rect>
         </property>
@@ -1832,7 +1832,7 @@
          <rect>
           <x>210</x>
           <y>20</y>
-          <width>161</width>
+          <width>191</width>
           <height>23</height>
          </rect>
         </property>
@@ -1975,7 +1975,7 @@
          <rect>
           <x>10</x>
           <y>240</y>
-          <width>181</width>
+          <width>201</width>
           <height>23</height>
          </rect>
         </property>
@@ -2378,8 +2378,8 @@ TO DO: Toggle button</string>
          <rect>
           <x>250</x>
           <y>40</y>
-          <width>431</width>
-          <height>41</height>
+          <width>191</width>
+          <height>51</height>
          </rect>
         </property>
         <property name="font">
@@ -2480,7 +2480,7 @@ Only usable if user=usuario</string>
        <widget class="QPushButton" name="openSudoersFileButton">
         <property name="geometry">
          <rect>
-          <x>420</x>
+          <x>450</x>
           <y>30</y>
           <width>221</width>
           <height>36</height>
@@ -2512,7 +2512,7 @@ Only usable if user=usuario</string>
        <widget class="QPushButton" name="backupSudoersFileButton">
         <property name="geometry">
          <rect>
-          <x>420</x>
+          <x>450</x>
           <y>70</y>
           <width>221</width>
           <height>36</height>
@@ -2636,15 +2636,15 @@ Only usable if user=usuario</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="page_3">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>631</width>
-         <height>287</height>
+         <width>98</width>
+         <height>28</height>
         </rect>
        </property>
        <attribute name="label">
@@ -2707,8 +2707,8 @@ Only usable if user=usuario</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>631</width>
-         <height>287</height>
+         <width>98</width>
+         <height>28</height>
         </rect>
        </property>
        <attribute name="label">
@@ -2875,7 +2875,7 @@ apt-fast -y dist-upgrade</string>
          <x>0</x>
          <y>0</y>
          <width>631</width>
-         <height>287</height>
+         <height>278</height>
         </rect>
        </property>
        <attribute name="label">
@@ -3057,7 +3057,7 @@ apt-fast -y upgrade</string>
           <x>290</x>
           <y>200</y>
           <width>161</width>
-          <height>61</height>
+          <height>81</height>
          </rect>
         </property>
         <property name="font">
@@ -3143,8 +3143,7 @@ apt-get -y clean</string>
          </font>
         </property>
         <property name="text">
-         <string>installs latest version of
-installpackages1-minimal of ubuntupackages on git.
+         <string>installpackages1-minimal of ubuntupackages on git.
 packages for normal users</string>
         </property>
        </widget>
@@ -3773,7 +3772,7 @@ apt-get -y clean</string>
      <x>0</x>
      <y>0</y>
      <width>711</width>
-     <height>19</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">

@@ -1047,12 +1047,12 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
                "; exec bash'");
     }
 
-    //093.Qt-Linux
+    //093.qtcreator
 
     if (ui->checkBox_093->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/093.Qt-Linux"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/093.qtcreator"
                " && "
                "exit"
                "; exec bash'");
@@ -1393,12 +1393,12 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
                "; exec bash'");
     }
 
-    //132.ukku
+    //132.ukuu
 
     if (ui->checkBox_132->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/132.ukku"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/132.ukuu"
                " && "
                "exit"
                "; exec bash'");
