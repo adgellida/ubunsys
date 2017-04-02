@@ -143,3 +143,29 @@ void MainWindow::on_disableHibernationButton_clicked()
 
     ui->statusBar->showMessage(tr("Done. Now select another action."));
 }
+
+void MainWindow::on_reduceTo5sShutdownTimeoutButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling sudo without pass."));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/029.reduceTo5sShutdownTimeout"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action."));
+}
+
+void MainWindow::on_setToDefaults90sShutdownTimeoutButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling sudo without pass."));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/030.setToDefaults90sShutdownTimeout"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action."));
+}

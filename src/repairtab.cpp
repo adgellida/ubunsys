@@ -37,7 +37,7 @@ void MainWindow::on_repairGPGKeys_clicked()
            " && "
            "sudo launchpad-getkeys"
            " && "
-           "sudo apt-get -y update"
+           "sudo apt-fast -y update"
            " && "
            "exit"
            "; exec bash'");
@@ -64,7 +64,7 @@ void MainWindow::on_fixBrokenPackagesButton_2_clicked()
     ui->statusBar->showMessage(tr("Executing package repair 2. Then close the terminal window."));
 
     system("xterm -e bash -c '"
-           "sudo apt-get -y --fix-broken install"
+           "sudo apt-fast -y --fix-broken install"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Reparation 2 executed succesful. Test if all is corrected."));
@@ -77,7 +77,7 @@ void MainWindow::on_fixBrokenPackagesButton_3_clicked()
     system("xterm -e bash -c '"
            "rm /var/lib/apt/lists/* -vf"
            " && "
-           "apt-get -y update"
+           "apt-fast -y update"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Reparation 3 executed succesful. Test if all is corrected."));
@@ -88,13 +88,13 @@ void MainWindow::on_fixBrokenPackagesButton_4_clicked()
     ui->statusBar->showMessage(tr("Executing package repair 4. Then close the terminal window."));
 
     system("xterm -e bash -c '"
-           "sudo apt-get -f install"
+           "sudo apt-fast -f install"
            " && "
-           "sudo apt-get -y autoremove"
+           "sudo apt-fast -y autoremove"
            " && "
-           "sudo apt-get -y autoclean"
+           "sudo apt-fast -y autoclean"
            " && "
-           "sudo apt-get -y clean"
+           "sudo apt-fast -y clean"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Reparation 4 executed succesful. Test if all is corrected."));
@@ -107,7 +107,7 @@ void MainWindow::on_fixBrokenPackagesButton_5_clicked()
     system("xterm -e bash -c '"
            "sudo dpkg --configure -a"
            " && "
-           "sudo apt-get -y update"
+           "sudo apt-fast -y update"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Reparation 5 executed succesful. Test if all is corrected."));

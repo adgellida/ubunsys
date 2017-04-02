@@ -45,6 +45,8 @@ void MainWindow::on_basicPackagesInstallButton_clicked()
     ui->statusBar->showMessage(tr("Executing normal user installation script. Then close the terminal window."));
 
     system("xterm -e bash -c '"
+           "cd ~/.ubunsys/downloads/ubuntupackages-master"
+           " && "
            "sudo ~/.ubunsys/downloads/ubuntupackages-master/installpackages1-minimal"
            "; exec bash'");
 

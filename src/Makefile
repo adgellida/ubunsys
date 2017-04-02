@@ -664,6 +664,7 @@ qrc_ubunsys.cpp: ubunsys.qrc \
 		images/update.png \
 		images/linux-icon.png \
 		images/shellscript-icon.png \
+		images/ubunsys.ico \
 		images/escoba.png \
 		images/red-number-1.jpg \
 		images/red-number-2.jpg \
@@ -1411,11 +1412,6 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenu \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenu.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenuBar \
@@ -1427,8 +1423,6 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QTabWidget \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBar \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbar.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBox \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbox.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
@@ -1684,11 +1678,6 @@ toolbartab.o: toolbartab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenu \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenu.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenuBar \
@@ -1700,8 +1689,6 @@ toolbartab.o: toolbartab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QTabWidget \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBar \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbar.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBox \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbox.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o toolbartab.o toolbartab.cpp
 
@@ -1957,11 +1944,6 @@ repairtab.o: repairtab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenu \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenu.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenuBar \
@@ -1973,8 +1955,6 @@ repairtab.o: repairtab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QTabWidget \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBar \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbar.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBox \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbox.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o repairtab.o repairtab.cpp
 
@@ -2230,11 +2210,6 @@ systemtab.o: systemtab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenu \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenu.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenuBar \
@@ -2246,8 +2221,6 @@ systemtab.o: systemtab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QTabWidget \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBar \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbar.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBox \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbox.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o systemtab.o systemtab.cpp
 
@@ -2503,11 +2476,6 @@ tweakstab.o: tweakstab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenu \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenu.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenuBar \
@@ -2519,8 +2487,6 @@ tweakstab.o: tweakstab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QTabWidget \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBar \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbar.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBox \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbox.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o tweakstab.o tweakstab.cpp
 
@@ -2776,11 +2742,6 @@ tweakstab-test.o: tweakstab-test.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenu \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenu.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenuBar \
@@ -2792,8 +2753,6 @@ tweakstab-test.o: tweakstab-test.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QTabWidget \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBar \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbar.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBox \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbox.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o tweakstab-test.o tweakstab-test.cpp
 
@@ -3049,11 +3008,6 @@ installtab.o: installtab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenu \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenu.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenuBar \
@@ -3065,8 +3019,6 @@ installtab.o: installtab.cpp mainwindow.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QTabWidget \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBar \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbar.h \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBox \
-		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbox.h \
 		../../../.Qt5.8.0/5.8/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o installtab.o installtab.cpp
 

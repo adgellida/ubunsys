@@ -16,7 +16,6 @@
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -24,7 +23,6 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QToolBar>
-#include <QtWidgets/QToolBox>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -200,18 +198,32 @@ public:
     QCheckBox *checkBox_128;
     QCheckBox *checkBox_129;
     QCheckBox *checkBox_150;
+    QCheckBox *checkBox_151;
+    QCheckBox *checkBox_152;
+    QCheckBox *checkBox_153;
+    QCheckBox *checkBox_154;
+    QCheckBox *checkBox_155;
+    QCheckBox *checkBox_156;
+    QCheckBox *checkBox_157;
+    QCheckBox *checkBox_158;
+    QCheckBox *checkBox_159;
+    QCheckBox *checkBox_160;
+    QCheckBox *checkBox_161;
+    QCheckBox *checkBox_162;
+    QCheckBox *checkBox_163;
+    QCheckBox *checkBox_164;
+    QCheckBox *checkBox_165;
+    QCheckBox *checkBox_166;
+    QCheckBox *checkBox_167;
+    QCheckBox *checkBox_168;
     QWidget *tab_3;
     QTabWidget *tabWidget_3;
     QWidget *tab_6;
-    QLabel *label_66;
     QPushButton *doInvisibleAsterisksButton;
-    QLabel *label_67;
     QLabel *label_6;
-    QLabel *label_63;
     QLabel *label_8;
     QLabel *label_7;
     QPushButton *openSourcesListDButton;
-    QLabel *label_64;
     QPushButton *disableHibernationButton;
     QPushButton *doVisibleAsterisksButton;
     QLabel *label_65;
@@ -222,57 +234,63 @@ public:
     QLabel *label_10;
     QPushButton *openSudoersFileButton;
     QPushButton *backupSudoersFileButton;
+    QPushButton *reduceTo5sShutdownTimeoutButton;
+    QPushButton *setToDefaults90sShutdownTimeoutButton;
+    QLabel *label_11;
     QWidget *tab_7;
     QPushButton *installTemplatesButton;
     QLabel *label_62;
     QLabel *label_5;
     QWidget *tab;
-    QToolBox *toolBox;
-    QWidget *page_3;
-    QLabel *label_61;
-    QPushButton *upgradeLatestDevButton;
-    QWidget *page;
+    QTabWidget *tabWidget_4;
+    QWidget *tab_8;
+    QLabel *label_16;
+    QPushButton *upgradeReposButton;
+    QLabel *label_15;
+    QPushButton *updateReposButton;
+    QLabel *label_31;
+    QLabel *label_14;
+    QPushButton *basicPackagesInstallButton;
+    QLabel *label_25;
+    QPushButton *updateAndUpgradeButton;
+    QPushButton *cleanButton;
+    QWidget *tab_9;
+    QLabel *label_60;
+    QPushButton *cleanKernelsButton;
     QPushButton *dist_upgradeButton;
     QLabel *label_17;
-    QPushButton *cleanKernelsButton;
     QLabel *label_59;
-    QLabel *label_60;
     QPushButton *upgradeLatestStableButton;
-    QWidget *page_2;
-    QPushButton *cleanButton;
-    QPushButton *updateAndUpgradeButton;
-    QPushButton *basicPackagesInstallButton;
-    QPushButton *updateReposButton;
-    QLabel *label_14;
-    QLabel *label_15;
-    QLabel *label_16;
-    QLabel *label_31;
-    QPushButton *upgradeReposButton;
-    QLabel *label_25;
+    QWidget *tab_10;
+    QLabel *label_61;
+    QPushButton *upgradeLatestDevButton;
     QWidget *tab_2;
-    QPushButton *integrityCheckButton;
+    QTabWidget *tabWidget_5;
+    QWidget *tab_13;
+    QLabel *label_28;
     QLabel *label_2;
+    QPushButton *integrityCheckButton;
+    QLabel *label_18;
+    QPushButton *repairNetworkButton;
+    QLabel *label_30;
+    QLabel *label_29;
+    QPushButton *repairGPGKeys;
+    QLabel *label_27;
+    QLabel *label_9;
+    QWidget *tab_14;
     QLabel *label_3;
+    QLabel *label_22;
+    QLabel *label_20;
     QPushButton *fixBrokenPackagesButton_1;
+    QLabel *label_21;
     QPushButton *fixBrokenPackagesButton_2;
+    QLabel *label_19;
     QPushButton *fixBrokenPackagesButton_3;
     QPushButton *fixBrokenPackagesButton_4;
+    QLabel *label_24;
     QPushButton *fixBrokenPackagesButton_5;
     QPushButton *fixBrokenPackagesButton_6;
-    QLabel *label_18;
-    QLabel *label_19;
-    QLabel *label_20;
-    QLabel *label_21;
-    QLabel *label_22;
     QLabel *label_23;
-    QLabel *label_24;
-    QLabel *label_9;
-    QPushButton *repairNetworkButton;
-    QLabel *label_27;
-    QPushButton *repairGPGKeys;
-    QLabel *label_28;
-    QLabel *label_29;
-    QLabel *label_30;
     QMenuBar *menuBar;
     QMenu *menuNuevo;
     QMenu *menuEdici_n;
@@ -285,9 +303,9 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(711, 549);
+        MainWindow->resize(711, 572);
         QIcon icon;
-        icon.addFile(QStringLiteral(":/images/linux-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/images/ubunsys.ico"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
         actionExit = new QAction(MainWindow);
         actionExit->setObjectName(QStringLiteral("actionExit"));
@@ -340,7 +358,7 @@ public:
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
         tabWidget->setEnabled(true);
-        tabWidget->setGeometry(QRect(9, 10, 691, 451));
+        tabWidget->setGeometry(QRect(10, 10, 691, 471));
         tab_4 = new QWidget();
         tab_4->setObjectName(QStringLiteral("tab_4"));
         unselectAllButton = new QPushButton(tab_4);
@@ -366,12 +384,12 @@ public:
         saveSelectionButton->setGeometry(QRect(600, 240, 81, 23));
         tabWidget_2 = new QTabWidget(tab_4);
         tabWidget_2->setObjectName(QStringLiteral("tabWidget_2"));
-        tabWidget_2->setGeometry(QRect(0, 0, 591, 411));
+        tabWidget_2->setGeometry(QRect(0, 0, 591, 441));
         tab_11 = new QWidget();
         tab_11->setObjectName(QStringLiteral("tab_11"));
         checkBox_012 = new QCheckBox(tab_11);
         checkBox_012->setObjectName(QStringLiteral("checkBox_012"));
-        checkBox_012->setGeometry(QRect(10, 220, 101, 23));
+        checkBox_012->setGeometry(QRect(10, 220, 121, 23));
         checkBox_013 = new QCheckBox(tab_11);
         checkBox_013->setObjectName(QStringLiteral("checkBox_013"));
         checkBox_013->setGeometry(QRect(10, 240, 201, 23));
@@ -383,7 +401,7 @@ public:
         checkBox_009->setGeometry(QRect(10, 160, 141, 23));
         checkBox_011 = new QCheckBox(tab_11);
         checkBox_011->setObjectName(QStringLiteral("checkBox_011"));
-        checkBox_011->setGeometry(QRect(10, 200, 181, 23));
+        checkBox_011->setGeometry(QRect(10, 200, 201, 23));
         checkBox_020 = new QCheckBox(tab_11);
         checkBox_020->setObjectName(QStringLiteral("checkBox_020"));
         checkBox_020->setGeometry(QRect(210, 0, 191, 23));
@@ -401,7 +419,7 @@ public:
         checkBox_015->setGeometry(QRect(10, 280, 191, 23));
         checkBox_005 = new QCheckBox(tab_11);
         checkBox_005->setObjectName(QStringLiteral("checkBox_005"));
-        checkBox_005->setGeometry(QRect(10, 80, 141, 23));
+        checkBox_005->setGeometry(QRect(10, 80, 161, 23));
         checkBox_016 = new QCheckBox(tab_11);
         checkBox_016->setObjectName(QStringLiteral("checkBox_016"));
         checkBox_016->setGeometry(QRect(10, 300, 191, 23));
@@ -425,7 +443,7 @@ public:
         checkBox_007->setGeometry(QRect(10, 120, 141, 23));
         checkBox_023 = new QCheckBox(tab_11);
         checkBox_023->setObjectName(QStringLiteral("checkBox_023"));
-        checkBox_023->setGeometry(QRect(210, 60, 111, 23));
+        checkBox_023->setGeometry(QRect(210, 60, 141, 23));
         checkBox_024 = new QCheckBox(tab_11);
         checkBox_024->setObjectName(QStringLiteral("checkBox_024"));
         checkBox_024->setGeometry(QRect(210, 80, 111, 23));
@@ -437,19 +455,19 @@ public:
         checkBox_026->setGeometry(QRect(210, 120, 111, 23));
         checkBox_027 = new QCheckBox(tab_11);
         checkBox_027->setObjectName(QStringLiteral("checkBox_027"));
-        checkBox_027->setGeometry(QRect(210, 140, 111, 23));
+        checkBox_027->setGeometry(QRect(210, 140, 121, 23));
         checkBox_028 = new QCheckBox(tab_11);
         checkBox_028->setObjectName(QStringLiteral("checkBox_028"));
         checkBox_028->setGeometry(QRect(210, 160, 111, 23));
         checkBox_029 = new QCheckBox(tab_11);
         checkBox_029->setObjectName(QStringLiteral("checkBox_029"));
-        checkBox_029->setGeometry(QRect(210, 180, 131, 23));
+        checkBox_029->setGeometry(QRect(210, 180, 151, 23));
         checkBox_030 = new QCheckBox(tab_11);
         checkBox_030->setObjectName(QStringLiteral("checkBox_030"));
-        checkBox_030->setGeometry(QRect(210, 200, 141, 23));
+        checkBox_030->setGeometry(QRect(210, 200, 161, 23));
         checkBox_031 = new QCheckBox(tab_11);
         checkBox_031->setObjectName(QStringLiteral("checkBox_031"));
-        checkBox_031->setGeometry(QRect(210, 220, 141, 23));
+        checkBox_031->setGeometry(QRect(210, 220, 171, 23));
         checkBox_032 = new QCheckBox(tab_11);
         checkBox_032->setObjectName(QStringLiteral("checkBox_032"));
         checkBox_032->setGeometry(QRect(210, 240, 111, 23));
@@ -464,10 +482,10 @@ public:
         checkBox_035->setGeometry(QRect(210, 300, 151, 23));
         checkBox_036 = new QCheckBox(tab_11);
         checkBox_036->setObjectName(QStringLiteral("checkBox_036"));
-        checkBox_036->setGeometry(QRect(210, 320, 111, 23));
+        checkBox_036->setGeometry(QRect(210, 320, 161, 23));
         checkBox_037 = new QCheckBox(tab_11);
         checkBox_037->setObjectName(QStringLiteral("checkBox_037"));
-        checkBox_037->setGeometry(QRect(210, 340, 111, 23));
+        checkBox_037->setGeometry(QRect(210, 340, 171, 23));
         checkBox_046 = new QCheckBox(tab_11);
         checkBox_046->setObjectName(QStringLiteral("checkBox_046"));
         checkBox_046->setGeometry(QRect(390, 140, 111, 23));
@@ -476,13 +494,13 @@ public:
         checkBox_045->setGeometry(QRect(390, 120, 111, 23));
         checkBox_044 = new QCheckBox(tab_11);
         checkBox_044->setObjectName(QStringLiteral("checkBox_044"));
-        checkBox_044->setGeometry(QRect(390, 100, 151, 23));
+        checkBox_044->setGeometry(QRect(390, 100, 171, 23));
         checkBox_043 = new QCheckBox(tab_11);
         checkBox_043->setObjectName(QStringLiteral("checkBox_043"));
         checkBox_043->setGeometry(QRect(390, 80, 111, 23));
         checkBox_042 = new QCheckBox(tab_11);
         checkBox_042->setObjectName(QStringLiteral("checkBox_042"));
-        checkBox_042->setGeometry(QRect(390, 60, 121, 23));
+        checkBox_042->setGeometry(QRect(390, 60, 171, 23));
         checkBox_047 = new QCheckBox(tab_11);
         checkBox_047->setObjectName(QStringLiteral("checkBox_047"));
         checkBox_047->setGeometry(QRect(390, 160, 131, 23));
@@ -503,10 +521,10 @@ public:
         checkBox_052->setGeometry(QRect(390, 260, 141, 23));
         checkBox_053 = new QCheckBox(tab_11);
         checkBox_053->setObjectName(QStringLiteral("checkBox_053"));
-        checkBox_053->setGeometry(QRect(390, 280, 111, 23));
+        checkBox_053->setGeometry(QRect(390, 280, 141, 23));
         checkBox_054 = new QCheckBox(tab_11);
         checkBox_054->setObjectName(QStringLiteral("checkBox_054"));
-        checkBox_054->setGeometry(QRect(390, 300, 131, 23));
+        checkBox_054->setGeometry(QRect(390, 300, 151, 23));
         checkBox_055 = new QCheckBox(tab_11);
         checkBox_055->setObjectName(QStringLiteral("checkBox_055"));
         checkBox_055->setGeometry(QRect(390, 320, 201, 23));
@@ -515,13 +533,13 @@ public:
         checkBox_056->setGeometry(QRect(390, 340, 211, 23));
         checkBox_041 = new QCheckBox(tab_11);
         checkBox_041->setObjectName(QStringLiteral("checkBox_041"));
-        checkBox_041->setGeometry(QRect(390, 40, 121, 23));
+        checkBox_041->setGeometry(QRect(390, 40, 161, 23));
         checkBox_038 = new QCheckBox(tab_11);
         checkBox_038->setObjectName(QStringLiteral("checkBox_038"));
-        checkBox_038->setGeometry(QRect(210, 360, 161, 23));
+        checkBox_038->setGeometry(QRect(210, 360, 201, 23));
         checkBox_040 = new QCheckBox(tab_11);
         checkBox_040->setObjectName(QStringLiteral("checkBox_040"));
-        checkBox_040->setGeometry(QRect(390, 20, 121, 23));
+        checkBox_040->setGeometry(QRect(390, 20, 171, 23));
         checkBox_039 = new QCheckBox(tab_11);
         checkBox_039->setObjectName(QStringLiteral("checkBox_039"));
         checkBox_039->setGeometry(QRect(390, 0, 111, 23));
@@ -656,13 +674,13 @@ public:
         checkBox_077->setGeometry(QRect(210, 0, 191, 23));
         checkBox_101 = new QCheckBox(tab_12);
         checkBox_101->setObjectName(QStringLiteral("checkBox_101"));
-        checkBox_101->setGeometry(QRect(350, 20, 191, 23));
+        checkBox_101->setGeometry(QRect(350, 20, 211, 23));
         checkBox_105 = new QCheckBox(tab_12);
         checkBox_105->setObjectName(QStringLiteral("checkBox_105"));
         checkBox_105->setGeometry(QRect(350, 100, 211, 23));
         checkBox_107 = new QCheckBox(tab_12);
         checkBox_107->setObjectName(QStringLiteral("checkBox_107"));
-        checkBox_107->setGeometry(QRect(350, 140, 211, 23));
+        checkBox_107->setGeometry(QRect(350, 140, 241, 23));
         checkBox_110 = new QCheckBox(tab_12);
         checkBox_110->setObjectName(QStringLiteral("checkBox_110"));
         checkBox_110->setGeometry(QRect(350, 200, 211, 23));
@@ -689,7 +707,7 @@ public:
         checkBox_111->setGeometry(QRect(350, 220, 211, 23));
         checkBox_102 = new QCheckBox(tab_12);
         checkBox_102->setObjectName(QStringLiteral("checkBox_102"));
-        checkBox_102->setGeometry(QRect(350, 40, 201, 23));
+        checkBox_102->setGeometry(QRect(350, 40, 221, 23));
         checkBox_115 = new QCheckBox(tab_12);
         checkBox_115->setObjectName(QStringLiteral("checkBox_115"));
         checkBox_115->setGeometry(QRect(350, 300, 211, 23));
@@ -710,7 +728,7 @@ public:
         checkBox_118->setGeometry(QRect(350, 360, 211, 23));
         checkBox_116 = new QCheckBox(tab_12);
         checkBox_116->setObjectName(QStringLiteral("checkBox_116"));
-        checkBox_116->setGeometry(QRect(350, 340, 211, 23));
+        checkBox_116->setGeometry(QRect(350, 340, 241, 23));
         tabWidget_2->addTab(tab_12, QString());
         tab_5 = new QWidget();
         tab_5->setObjectName(QStringLiteral("tab_5"));
@@ -749,7 +767,7 @@ public:
         checkBox_133->setGeometry(QRect(10, 280, 161, 23));
         checkBox_134 = new QCheckBox(tab_5);
         checkBox_134->setObjectName(QStringLiteral("checkBox_134"));
-        checkBox_134->setGeometry(QRect(10, 300, 161, 23));
+        checkBox_134->setGeometry(QRect(10, 300, 181, 23));
         checkBox_135 = new QCheckBox(tab_5);
         checkBox_135->setObjectName(QStringLiteral("checkBox_135"));
         checkBox_135->setGeometry(QRect(10, 320, 161, 23));
@@ -764,7 +782,7 @@ public:
         checkBox_138->setGeometry(QRect(210, 0, 161, 23));
         checkBox_139 = new QCheckBox(tab_5);
         checkBox_139->setObjectName(QStringLiteral("checkBox_139"));
-        checkBox_139->setGeometry(QRect(210, 20, 161, 23));
+        checkBox_139->setGeometry(QRect(210, 20, 191, 23));
         checkBox_140 = new QCheckBox(tab_5);
         checkBox_140->setObjectName(QStringLiteral("checkBox_140"));
         checkBox_140->setGeometry(QRect(210, 40, 161, 23));
@@ -797,7 +815,7 @@ public:
         checkBox_149->setGeometry(QRect(210, 220, 161, 23));
         checkBox_131 = new QCheckBox(tab_5);
         checkBox_131->setObjectName(QStringLiteral("checkBox_131"));
-        checkBox_131->setGeometry(QRect(10, 240, 181, 23));
+        checkBox_131->setGeometry(QRect(10, 240, 201, 23));
         checkBox_127 = new QCheckBox(tab_5);
         checkBox_127->setObjectName(QStringLiteral("checkBox_127"));
         checkBox_127->setGeometry(QRect(10, 160, 191, 23));
@@ -810,22 +828,73 @@ public:
         checkBox_150 = new QCheckBox(tab_5);
         checkBox_150->setObjectName(QStringLiteral("checkBox_150"));
         checkBox_150->setGeometry(QRect(210, 240, 161, 23));
+        checkBox_151 = new QCheckBox(tab_5);
+        checkBox_151->setObjectName(QStringLiteral("checkBox_151"));
+        checkBox_151->setGeometry(QRect(210, 260, 161, 23));
+        checkBox_152 = new QCheckBox(tab_5);
+        checkBox_152->setObjectName(QStringLiteral("checkBox_152"));
+        checkBox_152->setGeometry(QRect(210, 280, 161, 23));
+        checkBox_153 = new QCheckBox(tab_5);
+        checkBox_153->setObjectName(QStringLiteral("checkBox_153"));
+        checkBox_153->setGeometry(QRect(210, 300, 161, 23));
+        checkBox_154 = new QCheckBox(tab_5);
+        checkBox_154->setObjectName(QStringLiteral("checkBox_154"));
+        checkBox_154->setGeometry(QRect(210, 320, 161, 23));
+        checkBox_155 = new QCheckBox(tab_5);
+        checkBox_155->setObjectName(QStringLiteral("checkBox_155"));
+        checkBox_155->setGeometry(QRect(210, 340, 161, 23));
+        checkBox_156 = new QCheckBox(tab_5);
+        checkBox_156->setObjectName(QStringLiteral("checkBox_156"));
+        checkBox_156->setGeometry(QRect(210, 360, 161, 23));
+        checkBox_157 = new QCheckBox(tab_5);
+        checkBox_157->setObjectName(QStringLiteral("checkBox_157"));
+        checkBox_157->setGeometry(QRect(410, 0, 161, 23));
+        checkBox_158 = new QCheckBox(tab_5);
+        checkBox_158->setObjectName(QStringLiteral("checkBox_158"));
+        checkBox_158->setGeometry(QRect(410, 20, 161, 23));
+        checkBox_159 = new QCheckBox(tab_5);
+        checkBox_159->setObjectName(QStringLiteral("checkBox_159"));
+        checkBox_159->setGeometry(QRect(410, 40, 161, 23));
+        checkBox_160 = new QCheckBox(tab_5);
+        checkBox_160->setObjectName(QStringLiteral("checkBox_160"));
+        checkBox_160->setGeometry(QRect(410, 60, 161, 23));
+        checkBox_161 = new QCheckBox(tab_5);
+        checkBox_161->setObjectName(QStringLiteral("checkBox_161"));
+        checkBox_161->setGeometry(QRect(410, 80, 161, 23));
+        checkBox_162 = new QCheckBox(tab_5);
+        checkBox_162->setObjectName(QStringLiteral("checkBox_162"));
+        checkBox_162->setGeometry(QRect(410, 100, 161, 23));
+        checkBox_163 = new QCheckBox(tab_5);
+        checkBox_163->setObjectName(QStringLiteral("checkBox_163"));
+        checkBox_163->setGeometry(QRect(410, 120, 161, 23));
+        checkBox_164 = new QCheckBox(tab_5);
+        checkBox_164->setObjectName(QStringLiteral("checkBox_164"));
+        checkBox_164->setGeometry(QRect(410, 140, 161, 23));
+        checkBox_165 = new QCheckBox(tab_5);
+        checkBox_165->setObjectName(QStringLiteral("checkBox_165"));
+        checkBox_165->setGeometry(QRect(410, 160, 161, 23));
+        checkBox_166 = new QCheckBox(tab_5);
+        checkBox_166->setObjectName(QStringLiteral("checkBox_166"));
+        checkBox_166->setGeometry(QRect(410, 180, 161, 23));
+        checkBox_167 = new QCheckBox(tab_5);
+        checkBox_167->setObjectName(QStringLiteral("checkBox_167"));
+        checkBox_167->setGeometry(QRect(410, 200, 161, 23));
+        checkBox_168 = new QCheckBox(tab_5);
+        checkBox_168->setObjectName(QStringLiteral("checkBox_168"));
+        checkBox_168->setGeometry(QRect(410, 220, 161, 23));
         tabWidget_2->addTab(tab_5, QString());
         tabWidget->addTab(tab_4, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
         tabWidget_3 = new QTabWidget(tab_3);
         tabWidget_3->setObjectName(QStringLiteral("tabWidget_3"));
-        tabWidget_3->setGeometry(QRect(0, 0, 691, 431));
-        tab_6 = new QWidget();
-        tab_6->setObjectName(QStringLiteral("tab_6"));
-        label_66 = new QLabel(tab_6);
-        label_66->setObjectName(QStringLiteral("label_66"));
-        label_66->setGeometry(QRect(250, 360, 141, 31));
+        tabWidget_3->setGeometry(QRect(0, 0, 691, 441));
         QFont font;
         font.setBold(false);
         font.setWeight(50);
-        label_66->setFont(font);
+        tabWidget_3->setFont(font);
+        tab_6 = new QWidget();
+        tab_6->setObjectName(QStringLiteral("tab_6"));
         doInvisibleAsterisksButton = new QPushButton(tab_6);
         doInvisibleAsterisksButton->setObjectName(QStringLiteral("doInvisibleAsterisksButton"));
         doInvisibleAsterisksButton->setGeometry(QRect(10, 180, 221, 36));
@@ -834,10 +903,6 @@ public:
         doInvisibleAsterisksButton->setIcon(icon7);
         doInvisibleAsterisksButton->setIconSize(QSize(30, 30));
         doInvisibleAsterisksButton->setCheckable(false);
-        label_67 = new QLabel(tab_6);
-        label_67->setObjectName(QStringLiteral("label_67"));
-        label_67->setGeometry(QRect(250, 320, 141, 31));
-        label_67->setFont(font);
         label_6 = new QLabel(tab_6);
         label_6->setObjectName(QStringLiteral("label_6"));
         label_6->setGeometry(QRect(10, 120, 141, 16));
@@ -845,10 +910,6 @@ public:
         font1.setBold(true);
         font1.setWeight(75);
         label_6->setFont(font1);
-        label_63 = new QLabel(tab_6);
-        label_63->setObjectName(QStringLiteral("label_63"));
-        label_63->setGeometry(QRect(250, 140, 201, 31));
-        label_63->setFont(font);
         label_8 = new QLabel(tab_6);
         label_8->setObjectName(QStringLiteral("label_8"));
         label_8->setGeometry(QRect(10, 300, 141, 16));
@@ -863,10 +924,6 @@ public:
         openSourcesListDButton->setIcon(icon7);
         openSourcesListDButton->setIconSize(QSize(30, 30));
         openSourcesListDButton->setCheckable(false);
-        label_64 = new QLabel(tab_6);
-        label_64->setObjectName(QStringLiteral("label_64"));
-        label_64->setGeometry(QRect(250, 180, 201, 31));
-        label_64->setFont(font);
         disableHibernationButton = new QPushButton(tab_6);
         disableHibernationButton->setObjectName(QStringLiteral("disableHibernationButton"));
         disableHibernationButton->setGeometry(QRect(10, 360, 221, 36));
@@ -881,7 +938,7 @@ public:
         doVisibleAsterisksButton->setCheckable(false);
         label_65 = new QLabel(tab_6);
         label_65->setObjectName(QStringLiteral("label_65"));
-        label_65->setGeometry(QRect(250, 250, 221, 31));
+        label_65->setGeometry(QRect(240, 250, 251, 31));
         label_65->setFont(font);
         enableHibernationButton = new QPushButton(tab_6);
         enableHibernationButton->setObjectName(QStringLiteral("enableHibernationButton"));
@@ -891,11 +948,81 @@ public:
         enableHibernationButton->setCheckable(false);
         label_68 = new QLabel(tab_6);
         label_68->setObjectName(QStringLiteral("label_68"));
-        label_68->setGeometry(QRect(250, 40, 191, 51));
+        label_68->setGeometry(QRect(240, 40, 191, 61));
         label_68->setFont(font);
         enableSudoWithoutPassButton = new QPushButton(tab_6);
         enableSudoWithoutPassButton->setObjectName(QStringLiteral("enableSudoWithoutPassButton"));
         enableSudoWithoutPassButton->setGeometry(QRect(10, 30, 221, 36));
+        QPalette palette;
+        QBrush brush(QColor(0, 0, 0, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        QBrush brush1(QColor(239, 41, 41, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush1);
+        QBrush brush2(QColor(255, 147, 147, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Light, brush2);
+        QBrush brush3(QColor(247, 94, 94, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Midlight, brush3);
+        QBrush brush4(QColor(119, 20, 20, 255));
+        brush4.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Dark, brush4);
+        QBrush brush5(QColor(159, 27, 27, 255));
+        brush5.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Active, QPalette::Text, brush);
+        QBrush brush6(QColor(255, 255, 255, 255));
+        brush6.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush6);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Shadow, brush);
+        QBrush brush7(QColor(247, 148, 148, 255));
+        brush7.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::AlternateBase, brush7);
+        QBrush brush8(QColor(255, 255, 220, 255));
+        brush8.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Light, brush2);
+        palette.setBrush(QPalette::Inactive, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Inactive, QPalette::Dark, brush4);
+        palette.setBrush(QPalette::Inactive, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush6);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush7);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Light, brush2);
+        palette.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Disabled, QPalette::Dark, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Disabled, QPalette::Text, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
+        enableSudoWithoutPassButton->setPalette(palette);
+        QFont font2;
+        font2.setBold(true);
+        font2.setWeight(75);
+        font2.setStyleStrategy(QFont::PreferDefault);
+        enableSudoWithoutPassButton->setFont(font2);
         enableSudoWithoutPassButton->setIcon(icon7);
         enableSudoWithoutPassButton->setIconSize(QSize(30, 30));
         enableSudoWithoutPassButton->setCheckable(false);
@@ -921,6 +1048,22 @@ public:
         backupSudoersFileButton->setIcon(icon7);
         backupSudoersFileButton->setIconSize(QSize(30, 30));
         backupSudoersFileButton->setCheckable(false);
+        reduceTo5sShutdownTimeoutButton = new QPushButton(tab_6);
+        reduceTo5sShutdownTimeoutButton->setObjectName(QStringLiteral("reduceTo5sShutdownTimeoutButton"));
+        reduceTo5sShutdownTimeoutButton->setGeometry(QRect(450, 160, 221, 36));
+        reduceTo5sShutdownTimeoutButton->setIcon(icon7);
+        reduceTo5sShutdownTimeoutButton->setIconSize(QSize(30, 30));
+        reduceTo5sShutdownTimeoutButton->setCheckable(false);
+        setToDefaults90sShutdownTimeoutButton = new QPushButton(tab_6);
+        setToDefaults90sShutdownTimeoutButton->setObjectName(QStringLiteral("setToDefaults90sShutdownTimeoutButton"));
+        setToDefaults90sShutdownTimeoutButton->setGeometry(QRect(450, 200, 221, 36));
+        setToDefaults90sShutdownTimeoutButton->setIcon(icon7);
+        setToDefaults90sShutdownTimeoutButton->setIconSize(QSize(30, 30));
+        setToDefaults90sShutdownTimeoutButton->setCheckable(false);
+        label_11 = new QLabel(tab_6);
+        label_11->setObjectName(QStringLiteral("label_11"));
+        label_11->setGeometry(QRect(450, 120, 231, 41));
+        label_11->setFont(font1);
         tabWidget_3->addTab(tab_6, QString());
         tab_7 = new QWidget();
         tab_7->setObjectName(QStringLiteral("tab_7"));
@@ -932,7 +1075,7 @@ public:
         installTemplatesButton->setCheckable(false);
         label_62 = new QLabel(tab_7);
         label_62->setObjectName(QStringLiteral("label_62"));
-        label_62->setGeometry(QRect(250, 40, 251, 21));
+        label_62->setGeometry(QRect(250, 40, 281, 21));
         label_62->setFont(font);
         label_5 = new QLabel(tab_7);
         label_5->setObjectName(QStringLiteral("label_5"));
@@ -942,72 +1085,56 @@ public:
         tabWidget->addTab(tab_3, QString());
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
-        toolBox = new QToolBox(tab);
-        toolBox->setObjectName(QStringLiteral("toolBox"));
-        toolBox->setEnabled(true);
-        toolBox->setGeometry(QRect(10, 10, 631, 371));
-        page_3 = new QWidget();
-        page_3->setObjectName(QStringLiteral("page_3"));
-        page_3->setGeometry(QRect(0, 0, 631, 278));
-        label_61 = new QLabel(page_3);
-        label_61->setObjectName(QStringLiteral("label_61"));
-        label_61->setGeometry(QRect(250, 20, 141, 21));
-        label_61->setFont(font);
-        upgradeLatestDevButton = new QPushButton(page_3);
-        upgradeLatestDevButton->setObjectName(QStringLiteral("upgradeLatestDevButton"));
-        upgradeLatestDevButton->setGeometry(QRect(10, 10, 221, 36));
-        upgradeLatestDevButton->setIcon(icon7);
-        upgradeLatestDevButton->setIconSize(QSize(30, 30));
-        upgradeLatestDevButton->setCheckable(false);
-        toolBox->addItem(page_3, QStringLiteral("Developer"));
-        page = new QWidget();
-        page->setObjectName(QStringLiteral("page"));
-        page->setGeometry(QRect(0, 0, 100, 30));
-        dist_upgradeButton = new QPushButton(page);
-        dist_upgradeButton->setObjectName(QStringLiteral("dist_upgradeButton"));
-        dist_upgradeButton->setGeometry(QRect(10, 10, 221, 36));
+        tabWidget_4 = new QTabWidget(tab);
+        tabWidget_4->setObjectName(QStringLiteral("tabWidget_4"));
+        tabWidget_4->setGeometry(QRect(0, 0, 691, 441));
+        tab_8 = new QWidget();
+        tab_8->setObjectName(QStringLiteral("tab_8"));
+        label_16 = new QLabel(tab_8);
+        label_16->setObjectName(QStringLiteral("label_16"));
+        label_16->setGeometry(QRect(290, 200, 181, 81));
+        label_16->setFont(font);
+        upgradeReposButton = new QPushButton(tab_8);
+        upgradeReposButton->setObjectName(QStringLiteral("upgradeReposButton"));
+        upgradeReposButton->setEnabled(true);
+        upgradeReposButton->setGeometry(QRect(10, 110, 271, 36));
         QIcon icon8;
-        icon8.addFile(QStringLiteral(":/images/flecha_arriba.png"), QSize(), QIcon::Normal, QIcon::Off);
-        dist_upgradeButton->setIcon(icon8);
-        dist_upgradeButton->setIconSize(QSize(30, 30));
-        dist_upgradeButton->setCheckable(false);
-        label_17 = new QLabel(page);
-        label_17->setObjectName(QStringLiteral("label_17"));
-        label_17->setGeometry(QRect(250, 10, 281, 41));
-        label_17->setFont(font);
-        cleanKernelsButton = new QPushButton(page);
-        cleanKernelsButton->setObjectName(QStringLiteral("cleanKernelsButton"));
-        cleanKernelsButton->setGeometry(QRect(10, 60, 221, 36));
-        cleanKernelsButton->setIcon(icon7);
-        cleanKernelsButton->setIconSize(QSize(30, 30));
-        cleanKernelsButton->setCheckable(false);
-        label_59 = new QLabel(page);
-        label_59->setObjectName(QStringLiteral("label_59"));
-        label_59->setGeometry(QRect(250, 70, 221, 21));
-        label_59->setFont(font);
-        label_60 = new QLabel(page);
-        label_60->setObjectName(QStringLiteral("label_60"));
-        label_60->setGeometry(QRect(250, 120, 131, 21));
-        label_60->setFont(font);
-        upgradeLatestStableButton = new QPushButton(page);
-        upgradeLatestStableButton->setObjectName(QStringLiteral("upgradeLatestStableButton"));
-        upgradeLatestStableButton->setGeometry(QRect(10, 110, 221, 36));
-        upgradeLatestStableButton->setIcon(icon7);
-        upgradeLatestStableButton->setIconSize(QSize(30, 30));
-        upgradeLatestStableButton->setCheckable(false);
-        toolBox->addItem(page, QStringLiteral("Advanced user"));
-        page_2 = new QWidget();
-        page_2->setObjectName(QStringLiteral("page_2"));
-        page_2->setGeometry(QRect(0, 0, 100, 30));
-        cleanButton = new QPushButton(page_2);
-        cleanButton->setObjectName(QStringLiteral("cleanButton"));
-        cleanButton->setGeometry(QRect(10, 210, 271, 36));
+        icon8.addFile(QStringLiteral(":/images/update.png"), QSize(), QIcon::Normal, QIcon::Off);
+        upgradeReposButton->setIcon(icon8);
+        upgradeReposButton->setIconSize(QSize(30, 30));
+        upgradeReposButton->setCheckable(false);
+        label_15 = new QLabel(tab_8);
+        label_15->setObjectName(QStringLiteral("label_15"));
+        label_15->setGeometry(QRect(290, 10, 251, 41));
+        label_15->setFont(font);
+        updateReposButton = new QPushButton(tab_8);
+        updateReposButton->setObjectName(QStringLiteral("updateReposButton"));
+        updateReposButton->setEnabled(true);
+        updateReposButton->setGeometry(QRect(10, 60, 271, 36));
+        updateReposButton->setIcon(icon8);
+        updateReposButton->setIconSize(QSize(30, 30));
+        updateReposButton->setCheckable(false);
+        label_31 = new QLabel(tab_8);
+        label_31->setObjectName(QStringLiteral("label_31"));
+        label_31->setGeometry(QRect(290, 120, 251, 21));
+        label_31->setFont(font);
+        label_14 = new QLabel(tab_8);
+        label_14->setObjectName(QStringLiteral("label_14"));
+        label_14->setGeometry(QRect(290, 70, 251, 21));
+        label_14->setFont(font);
+        basicPackagesInstallButton = new QPushButton(tab_8);
+        basicPackagesInstallButton->setObjectName(QStringLiteral("basicPackagesInstallButton"));
+        basicPackagesInstallButton->setGeometry(QRect(10, 160, 271, 40));
         QIcon icon9;
-        icon9.addFile(QStringLiteral(":/images/escoba.png"), QSize(), QIcon::Normal, QIcon::Off);
-        cleanButton->setIcon(icon9);
-        cleanButton->setIconSize(QSize(30, 30));
-        cleanButton->setCheckable(false);
-        updateAndUpgradeButton = new QPushButton(page_2);
+        icon9.addFile(QStringLiteral(":/images/install.png"), QSize(), QIcon::Normal, QIcon::Off);
+        basicPackagesInstallButton->setIcon(icon9);
+        basicPackagesInstallButton->setIconSize(QSize(30, 30));
+        basicPackagesInstallButton->setCheckable(false);
+        label_25 = new QLabel(tab_8);
+        label_25->setObjectName(QStringLiteral("label_25"));
+        label_25->setGeometry(QRect(290, 150, 341, 61));
+        label_25->setFont(font);
+        updateAndUpgradeButton = new QPushButton(tab_8);
         updateAndUpgradeButton->setObjectName(QStringLiteral("updateAndUpgradeButton"));
         updateAndUpgradeButton->setGeometry(QRect(10, 10, 271, 36));
         QIcon icon10;
@@ -1015,55 +1142,80 @@ public:
         updateAndUpgradeButton->setIcon(icon10);
         updateAndUpgradeButton->setIconSize(QSize(30, 30));
         updateAndUpgradeButton->setCheckable(false);
-        basicPackagesInstallButton = new QPushButton(page_2);
-        basicPackagesInstallButton->setObjectName(QStringLiteral("basicPackagesInstallButton"));
-        basicPackagesInstallButton->setGeometry(QRect(10, 160, 271, 40));
+        cleanButton = new QPushButton(tab_8);
+        cleanButton->setObjectName(QStringLiteral("cleanButton"));
+        cleanButton->setGeometry(QRect(10, 210, 271, 36));
         QIcon icon11;
-        icon11.addFile(QStringLiteral(":/images/install.png"), QSize(), QIcon::Normal, QIcon::Off);
-        basicPackagesInstallButton->setIcon(icon11);
-        basicPackagesInstallButton->setIconSize(QSize(30, 30));
-        basicPackagesInstallButton->setCheckable(false);
-        updateReposButton = new QPushButton(page_2);
-        updateReposButton->setObjectName(QStringLiteral("updateReposButton"));
-        updateReposButton->setEnabled(true);
-        updateReposButton->setGeometry(QRect(10, 60, 271, 36));
+        icon11.addFile(QStringLiteral(":/images/escoba.png"), QSize(), QIcon::Normal, QIcon::Off);
+        cleanButton->setIcon(icon11);
+        cleanButton->setIconSize(QSize(30, 30));
+        cleanButton->setCheckable(false);
+        tabWidget_4->addTab(tab_8, QString());
+        tab_9 = new QWidget();
+        tab_9->setObjectName(QStringLiteral("tab_9"));
+        label_60 = new QLabel(tab_9);
+        label_60->setObjectName(QStringLiteral("label_60"));
+        label_60->setGeometry(QRect(250, 120, 241, 21));
+        label_60->setFont(font);
+        cleanKernelsButton = new QPushButton(tab_9);
+        cleanKernelsButton->setObjectName(QStringLiteral("cleanKernelsButton"));
+        cleanKernelsButton->setGeometry(QRect(10, 60, 221, 36));
+        cleanKernelsButton->setIcon(icon7);
+        cleanKernelsButton->setIconSize(QSize(30, 30));
+        cleanKernelsButton->setCheckable(false);
+        dist_upgradeButton = new QPushButton(tab_9);
+        dist_upgradeButton->setObjectName(QStringLiteral("dist_upgradeButton"));
+        dist_upgradeButton->setGeometry(QRect(10, 10, 221, 36));
         QIcon icon12;
-        icon12.addFile(QStringLiteral(":/images/update.png"), QSize(), QIcon::Normal, QIcon::Off);
-        updateReposButton->setIcon(icon12);
-        updateReposButton->setIconSize(QSize(30, 30));
-        updateReposButton->setCheckable(false);
-        label_14 = new QLabel(page_2);
-        label_14->setObjectName(QStringLiteral("label_14"));
-        label_14->setGeometry(QRect(290, 70, 251, 16));
-        label_14->setFont(font);
-        label_15 = new QLabel(page_2);
-        label_15->setObjectName(QStringLiteral("label_15"));
-        label_15->setGeometry(QRect(290, 10, 251, 31));
-        label_15->setFont(font);
-        label_16 = new QLabel(page_2);
-        label_16->setObjectName(QStringLiteral("label_16"));
-        label_16->setGeometry(QRect(290, 200, 161, 61));
-        label_16->setFont(font);
-        label_31 = new QLabel(page_2);
-        label_31->setObjectName(QStringLiteral("label_31"));
-        label_31->setGeometry(QRect(290, 120, 251, 16));
-        label_31->setFont(font);
-        upgradeReposButton = new QPushButton(page_2);
-        upgradeReposButton->setObjectName(QStringLiteral("upgradeReposButton"));
-        upgradeReposButton->setEnabled(true);
-        upgradeReposButton->setGeometry(QRect(10, 110, 271, 36));
-        upgradeReposButton->setIcon(icon12);
-        upgradeReposButton->setIconSize(QSize(30, 30));
-        upgradeReposButton->setCheckable(false);
-        label_25 = new QLabel(page_2);
-        label_25->setObjectName(QStringLiteral("label_25"));
-        label_25->setGeometry(QRect(290, 150, 321, 51));
-        label_25->setFont(font);
-        toolBox->addItem(page_2, QStringLiteral("Normal user"));
+        icon12.addFile(QStringLiteral(":/images/flecha_arriba.png"), QSize(), QIcon::Normal, QIcon::Off);
+        dist_upgradeButton->setIcon(icon12);
+        dist_upgradeButton->setIconSize(QSize(30, 30));
+        dist_upgradeButton->setCheckable(false);
+        label_17 = new QLabel(tab_9);
+        label_17->setObjectName(QStringLiteral("label_17"));
+        label_17->setGeometry(QRect(250, 10, 281, 41));
+        label_17->setFont(font);
+        label_59 = new QLabel(tab_9);
+        label_59->setObjectName(QStringLiteral("label_59"));
+        label_59->setGeometry(QRect(250, 70, 321, 21));
+        label_59->setFont(font);
+        upgradeLatestStableButton = new QPushButton(tab_9);
+        upgradeLatestStableButton->setObjectName(QStringLiteral("upgradeLatestStableButton"));
+        upgradeLatestStableButton->setGeometry(QRect(10, 110, 221, 36));
+        upgradeLatestStableButton->setIcon(icon7);
+        upgradeLatestStableButton->setIconSize(QSize(30, 30));
+        upgradeLatestStableButton->setCheckable(false);
+        tabWidget_4->addTab(tab_9, QString());
+        tab_10 = new QWidget();
+        tab_10->setObjectName(QStringLiteral("tab_10"));
+        label_61 = new QLabel(tab_10);
+        label_61->setObjectName(QStringLiteral("label_61"));
+        label_61->setGeometry(QRect(250, 20, 201, 21));
+        label_61->setFont(font);
+        upgradeLatestDevButton = new QPushButton(tab_10);
+        upgradeLatestDevButton->setObjectName(QStringLiteral("upgradeLatestDevButton"));
+        upgradeLatestDevButton->setGeometry(QRect(10, 10, 221, 36));
+        upgradeLatestDevButton->setIcon(icon7);
+        upgradeLatestDevButton->setIconSize(QSize(30, 30));
+        upgradeLatestDevButton->setCheckable(false);
+        tabWidget_4->addTab(tab_10, QString());
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
-        integrityCheckButton = new QPushButton(tab_2);
+        tabWidget_5 = new QTabWidget(tab_2);
+        tabWidget_5->setObjectName(QStringLiteral("tabWidget_5"));
+        tabWidget_5->setGeometry(QRect(0, 0, 691, 441));
+        tab_13 = new QWidget();
+        tab_13->setObjectName(QStringLiteral("tab_13"));
+        label_28 = new QLabel(tab_13);
+        label_28->setObjectName(QStringLiteral("label_28"));
+        label_28->setGeometry(QRect(60, 190, 171, 21));
+        label_28->setFont(font);
+        label_2 = new QLabel(tab_13);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(10, 10, 331, 16));
+        label_2->setFont(font1);
+        integrityCheckButton = new QPushButton(tab_13);
         integrityCheckButton->setObjectName(QStringLiteral("integrityCheckButton"));
         integrityCheckButton->setGeometry(QRect(10, 40, 40, 36));
         integrityCheckButton->setMaximumSize(QSize(40, 40));
@@ -1072,130 +1224,126 @@ public:
         integrityCheckButton->setIcon(icon13);
         integrityCheckButton->setIconSize(QSize(30, 30));
         integrityCheckButton->setCheckable(false);
-        label_2 = new QLabel(tab_2);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(10, 10, 331, 16));
-        label_2->setFont(font1);
-        label_3 = new QLabel(tab_2);
+        label_18 = new QLabel(tab_13);
+        label_18->setObjectName(QStringLiteral("label_18"));
+        label_18->setGeometry(QRect(60, 50, 141, 16));
+        label_18->setFont(font);
+        repairNetworkButton = new QPushButton(tab_13);
+        repairNetworkButton->setObjectName(QStringLiteral("repairNetworkButton"));
+        repairNetworkButton->setGeometry(QRect(10, 110, 40, 36));
+        repairNetworkButton->setMaximumSize(QSize(40, 40));
+        repairNetworkButton->setIcon(icon13);
+        repairNetworkButton->setIconSize(QSize(30, 30));
+        repairNetworkButton->setCheckable(false);
+        label_30 = new QLabel(tab_13);
+        label_30->setObjectName(QStringLiteral("label_30"));
+        label_30->setGeometry(QRect(60, 30, 251, 16));
+        label_30->setFont(font1);
+        label_29 = new QLabel(tab_13);
+        label_29->setObjectName(QStringLiteral("label_29"));
+        label_29->setGeometry(QRect(10, 150, 181, 16));
+        label_29->setFont(font1);
+        repairGPGKeys = new QPushButton(tab_13);
+        repairGPGKeys->setObjectName(QStringLiteral("repairGPGKeys"));
+        repairGPGKeys->setGeometry(QRect(10, 180, 40, 36));
+        repairGPGKeys->setMaximumSize(QSize(40, 40));
+        repairGPGKeys->setIcon(icon13);
+        repairGPGKeys->setIconSize(QSize(30, 30));
+        repairGPGKeys->setCheckable(false);
+        label_27 = new QLabel(tab_13);
+        label_27->setObjectName(QStringLiteral("label_27"));
+        label_27->setGeometry(QRect(60, 120, 271, 16));
+        label_27->setFont(font);
+        label_9 = new QLabel(tab_13);
+        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setGeometry(QRect(10, 80, 111, 16));
+        label_9->setFont(font1);
+        tabWidget_5->addTab(tab_13, QString());
+        tab_14 = new QWidget();
+        tab_14->setObjectName(QStringLiteral("tab_14"));
+        label_3 = new QLabel(tab_14);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(10, 100, 431, 16));
+        label_3->setGeometry(QRect(10, 10, 451, 16));
         label_3->setFont(font1);
-        fixBrokenPackagesButton_1 = new QPushButton(tab_2);
+        label_22 = new QLabel(tab_14);
+        label_22->setObjectName(QStringLiteral("label_22"));
+        label_22->setGeometry(QRect(60, 160, 491, 41));
+        label_22->setFont(font);
+        label_20 = new QLabel(tab_14);
+        label_20->setObjectName(QStringLiteral("label_20"));
+        label_20->setGeometry(QRect(60, 90, 251, 21));
+        label_20->setFont(font);
+        fixBrokenPackagesButton_1 = new QPushButton(tab_14);
         fixBrokenPackagesButton_1->setObjectName(QStringLiteral("fixBrokenPackagesButton_1"));
-        fixBrokenPackagesButton_1->setGeometry(QRect(10, 130, 40, 36));
+        fixBrokenPackagesButton_1->setGeometry(QRect(10, 40, 40, 36));
         fixBrokenPackagesButton_1->setMaximumSize(QSize(40, 40));
         QIcon icon14;
         icon14.addFile(QStringLiteral(":/images/red-number-1.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         fixBrokenPackagesButton_1->setIcon(icon14);
         fixBrokenPackagesButton_1->setIconSize(QSize(30, 30));
         fixBrokenPackagesButton_1->setCheckable(false);
-        fixBrokenPackagesButton_2 = new QPushButton(tab_2);
+        label_21 = new QLabel(tab_14);
+        label_21->setObjectName(QStringLiteral("label_21"));
+        label_21->setGeometry(QRect(60, 130, 321, 21));
+        label_21->setFont(font);
+        fixBrokenPackagesButton_2 = new QPushButton(tab_14);
         fixBrokenPackagesButton_2->setObjectName(QStringLiteral("fixBrokenPackagesButton_2"));
-        fixBrokenPackagesButton_2->setGeometry(QRect(10, 170, 40, 36));
+        fixBrokenPackagesButton_2->setGeometry(QRect(10, 80, 40, 36));
         fixBrokenPackagesButton_2->setMaximumSize(QSize(40, 40));
         QIcon icon15;
         icon15.addFile(QStringLiteral(":/images/red-number-2.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         fixBrokenPackagesButton_2->setIcon(icon15);
         fixBrokenPackagesButton_2->setIconSize(QSize(30, 30));
         fixBrokenPackagesButton_2->setCheckable(false);
-        fixBrokenPackagesButton_3 = new QPushButton(tab_2);
+        label_19 = new QLabel(tab_14);
+        label_19->setObjectName(QStringLiteral("label_19"));
+        label_19->setGeometry(QRect(60, 50, 281, 21));
+        label_19->setFont(font);
+        fixBrokenPackagesButton_3 = new QPushButton(tab_14);
         fixBrokenPackagesButton_3->setObjectName(QStringLiteral("fixBrokenPackagesButton_3"));
-        fixBrokenPackagesButton_3->setGeometry(QRect(10, 210, 40, 36));
+        fixBrokenPackagesButton_3->setGeometry(QRect(10, 120, 40, 36));
         fixBrokenPackagesButton_3->setMaximumSize(QSize(40, 40));
         QIcon icon16;
         icon16.addFile(QStringLiteral(":/images/red-number-3.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         fixBrokenPackagesButton_3->setIcon(icon16);
         fixBrokenPackagesButton_3->setIconSize(QSize(30, 30));
         fixBrokenPackagesButton_3->setCheckable(false);
-        fixBrokenPackagesButton_4 = new QPushButton(tab_2);
+        fixBrokenPackagesButton_4 = new QPushButton(tab_14);
         fixBrokenPackagesButton_4->setObjectName(QStringLiteral("fixBrokenPackagesButton_4"));
-        fixBrokenPackagesButton_4->setGeometry(QRect(10, 250, 40, 36));
+        fixBrokenPackagesButton_4->setGeometry(QRect(10, 160, 40, 36));
         fixBrokenPackagesButton_4->setMaximumSize(QSize(40, 40));
         QIcon icon17;
         icon17.addFile(QStringLiteral(":/images/red-number-4.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         fixBrokenPackagesButton_4->setIcon(icon17);
         fixBrokenPackagesButton_4->setIconSize(QSize(30, 30));
         fixBrokenPackagesButton_4->setCheckable(false);
-        fixBrokenPackagesButton_5 = new QPushButton(tab_2);
+        label_24 = new QLabel(tab_14);
+        label_24->setObjectName(QStringLiteral("label_24"));
+        label_24->setGeometry(QRect(60, 240, 211, 41));
+        label_24->setFont(font);
+        fixBrokenPackagesButton_5 = new QPushButton(tab_14);
         fixBrokenPackagesButton_5->setObjectName(QStringLiteral("fixBrokenPackagesButton_5"));
-        fixBrokenPackagesButton_5->setGeometry(QRect(10, 290, 40, 36));
+        fixBrokenPackagesButton_5->setGeometry(QRect(10, 200, 40, 36));
         fixBrokenPackagesButton_5->setMaximumSize(QSize(40, 40));
         QIcon icon18;
         icon18.addFile(QStringLiteral(":/images/red-number-5.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         fixBrokenPackagesButton_5->setIcon(icon18);
         fixBrokenPackagesButton_5->setIconSize(QSize(30, 30));
         fixBrokenPackagesButton_5->setCheckable(false);
-        fixBrokenPackagesButton_6 = new QPushButton(tab_2);
+        fixBrokenPackagesButton_6 = new QPushButton(tab_14);
         fixBrokenPackagesButton_6->setObjectName(QStringLiteral("fixBrokenPackagesButton_6"));
-        fixBrokenPackagesButton_6->setGeometry(QRect(10, 330, 40, 36));
+        fixBrokenPackagesButton_6->setGeometry(QRect(10, 240, 40, 36));
         fixBrokenPackagesButton_6->setMaximumSize(QSize(40, 40));
         QIcon icon19;
         icon19.addFile(QStringLiteral(":/images/red-number-6.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         fixBrokenPackagesButton_6->setIcon(icon19);
         fixBrokenPackagesButton_6->setIconSize(QSize(30, 30));
         fixBrokenPackagesButton_6->setCheckable(false);
-        label_18 = new QLabel(tab_2);
-        label_18->setObjectName(QStringLiteral("label_18"));
-        label_18->setGeometry(QRect(60, 50, 111, 16));
-        label_18->setFont(font);
-        label_19 = new QLabel(tab_2);
-        label_19->setObjectName(QStringLiteral("label_19"));
-        label_19->setGeometry(QRect(60, 140, 261, 16));
-        label_19->setFont(font);
-        label_20 = new QLabel(tab_2);
-        label_20->setObjectName(QStringLiteral("label_20"));
-        label_20->setGeometry(QRect(60, 180, 251, 16));
-        label_20->setFont(font);
-        label_21 = new QLabel(tab_2);
-        label_21->setObjectName(QStringLiteral("label_21"));
-        label_21->setGeometry(QRect(60, 220, 281, 16));
-        label_21->setFont(font);
-        label_22 = new QLabel(tab_2);
-        label_22->setObjectName(QStringLiteral("label_22"));
-        label_22->setGeometry(QRect(60, 250, 491, 31));
-        label_22->setFont(font);
-        label_23 = new QLabel(tab_2);
+        label_23 = new QLabel(tab_14);
         label_23->setObjectName(QStringLiteral("label_23"));
-        label_23->setGeometry(QRect(60, 300, 251, 16));
+        label_23->setGeometry(QRect(60, 210, 281, 21));
         label_23->setFont(font);
-        label_24 = new QLabel(tab_2);
-        label_24->setObjectName(QStringLiteral("label_24"));
-        label_24->setGeometry(QRect(60, 340, 331, 16));
-        label_24->setFont(font);
-        label_9 = new QLabel(tab_2);
-        label_9->setObjectName(QStringLiteral("label_9"));
-        label_9->setGeometry(QRect(350, 10, 111, 16));
-        label_9->setFont(font1);
-        repairNetworkButton = new QPushButton(tab_2);
-        repairNetworkButton->setObjectName(QStringLiteral("repairNetworkButton"));
-        repairNetworkButton->setGeometry(QRect(350, 40, 40, 36));
-        repairNetworkButton->setMaximumSize(QSize(40, 40));
-        repairNetworkButton->setIcon(icon13);
-        repairNetworkButton->setIconSize(QSize(30, 30));
-        repairNetworkButton->setCheckable(false);
-        label_27 = new QLabel(tab_2);
-        label_27->setObjectName(QStringLiteral("label_27"));
-        label_27->setGeometry(QRect(400, 50, 231, 16));
-        label_27->setFont(font);
-        repairGPGKeys = new QPushButton(tab_2);
-        repairGPGKeys->setObjectName(QStringLiteral("repairGPGKeys"));
-        repairGPGKeys->setGeometry(QRect(350, 170, 40, 36));
-        repairGPGKeys->setMaximumSize(QSize(40, 40));
-        repairGPGKeys->setIcon(icon13);
-        repairGPGKeys->setIconSize(QSize(30, 30));
-        repairGPGKeys->setCheckable(false);
-        label_28 = new QLabel(tab_2);
-        label_28->setObjectName(QStringLiteral("label_28"));
-        label_28->setGeometry(QRect(400, 180, 151, 16));
-        label_28->setFont(font);
-        label_29 = new QLabel(tab_2);
-        label_29->setObjectName(QStringLiteral("label_29"));
-        label_29->setGeometry(QRect(350, 140, 171, 16));
-        label_29->setFont(font1);
-        label_30 = new QLabel(tab_2);
-        label_30->setObjectName(QStringLiteral("label_30"));
-        label_30->setGeometry(QRect(60, 30, 241, 16));
-        label_30->setFont(font1);
+        tabWidget_5->addTab(tab_14, QString());
         tabWidget->addTab(tab_2, QString());
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
@@ -1248,8 +1396,9 @@ public:
 
         tabWidget->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(2);
-        tabWidget_3->setCurrentIndex(0);
-        toolBox->setCurrentIndex(0);
+        tabWidget_3->setCurrentIndex(1);
+        tabWidget_4->setCurrentIndex(0);
+        tabWidget_5->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1332,7 +1481,7 @@ public:
         checkBox_002->setText(QApplication::translate("MainWindow", "002.dropbox", Q_NULLPTR));
         checkBox_019->setText(QApplication::translate("MainWindow", "019.ppa-purge", Q_NULLPTR));
         checkBox_057->setText(QApplication::translate("MainWindow", "057.vibrancy-colors", Q_NULLPTR));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Tab 1", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/3", Q_NULLPTR));
         checkBox_058->setText(QApplication::translate("MainWindow", "058.flatabulous-theme", Q_NULLPTR));
         checkBox_060->setText(QApplication::translate("MainWindow", "060.myspell", Q_NULLPTR));
         checkBox_059->setText(QApplication::translate("MainWindow", "059.aspell", Q_NULLPTR));
@@ -1352,7 +1501,7 @@ public:
         checkBox_075->setText(QApplication::translate("MainWindow", "075.vlc-stable", Q_NULLPTR));
         checkBox_076->setText(QApplication::translate("MainWindow", "076.vlc-daily", Q_NULLPTR));
         checkBox_074->setText(QApplication::translate("MainWindow", "074.ffmpeg", Q_NULLPTR));
-        checkBox_093->setText(QApplication::translate("MainWindow", "093.Qt-Linux", Q_NULLPTR));
+        checkBox_093->setText(QApplication::translate("MainWindow", "093.qtcreator", Q_NULLPTR));
         checkBox_078->setText(QApplication::translate("MainWindow", "078.openjdk-8", Q_NULLPTR));
         checkBox_081->setText(QApplication::translate("MainWindow", "081.dev-utils", Q_NULLPTR));
         checkBox_085->setText(QApplication::translate("MainWindow", "085.dia", Q_NULLPTR));
@@ -1389,7 +1538,7 @@ public:
         checkBox_117->setText(QApplication::translate("MainWindow", "117.jdownloader-beta", Q_NULLPTR));
         checkBox_118->setText(QApplication::translate("MainWindow", "118.jdownloader-stable", Q_NULLPTR));
         checkBox_116->setText(QApplication::translate("MainWindow", "116.compress-uncompress-utils", Q_NULLPTR));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_12), QApplication::translate("MainWindow", "Tab 2", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_12), QApplication::translate("MainWindow", "Packages 2/3", Q_NULLPTR));
         checkBox_132->setText(QApplication::translate("MainWindow", "132.ukuu", Q_NULLPTR));
         checkBox_130->setText(QApplication::translate("MainWindow", "130.spaceview", Q_NULLPTR));
         checkBox_120->setText(QApplication::translate("MainWindow", "120.samba", Q_NULLPTR));
@@ -1422,19 +1571,33 @@ public:
         checkBox_128->setText(QApplication::translate("MainWindow", "128.indicator-diskman", Q_NULLPTR));
         checkBox_129->setText(QApplication::translate("MainWindow", "129.udisks-indicator", Q_NULLPTR));
         checkBox_150->setText(QApplication::translate("MainWindow", "150.spotify", Q_NULLPTR));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("MainWindow", "Tab 3", Q_NULLPTR));
+        checkBox_151->setText(QApplication::translate("MainWindow", "151.insync", Q_NULLPTR));
+        checkBox_152->setText(QApplication::translate("MainWindow", "152.discord-canary", Q_NULLPTR));
+        checkBox_153->setText(QApplication::translate("MainWindow", "153.discord-stable", Q_NULLPTR));
+        checkBox_154->setText(QApplication::translate("MainWindow", "154.green-recorder", Q_NULLPTR));
+        checkBox_155->setText(QApplication::translate("MainWindow", "155.slingscold", Q_NULLPTR));
+        checkBox_156->setText(QApplication::translate("MainWindow", "156.harmony", Q_NULLPTR));
+        checkBox_157->setText(QApplication::translate("MainWindow", "157.rm-protection", Q_NULLPTR));
+        checkBox_158->setText(QApplication::translate("MainWindow", "158.powershell", Q_NULLPTR));
+        checkBox_159->setText(QApplication::translate("MainWindow", "159.komorebi", Q_NULLPTR));
+        checkBox_160->setText(QApplication::translate("MainWindow", "160.scudcloud", Q_NULLPTR));
+        checkBox_161->setText(QApplication::translate("MainWindow", "161.krita-stable", Q_NULLPTR));
+        checkBox_162->setText(QApplication::translate("MainWindow", "162.caja-extensions1", Q_NULLPTR));
+        checkBox_163->setText(QApplication::translate("MainWindow", "163.caja-extensions2", Q_NULLPTR));
+        checkBox_164->setText(QApplication::translate("MainWindow", "164.terminix", Q_NULLPTR));
+        checkBox_165->setText(QApplication::translate("MainWindow", "165.i2p", Q_NULLPTR));
+        checkBox_166->setText(QApplication::translate("MainWindow", "166.fslint", Q_NULLPTR));
+        checkBox_167->setText(QApplication::translate("MainWindow", "167.qdirstat", Q_NULLPTR));
+        checkBox_168->setText(QApplication::translate("MainWindow", "168.debreate", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("MainWindow", "Packages 3/3", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Install packages", Q_NULLPTR));
-        label_66->setText(QApplication::translate("MainWindow", "TO DO: Toggle button", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         doInvisibleAsterisksButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         doInvisibleAsterisksButton->setText(QApplication::translate("MainWindow", "Do invisible asterisks\n"
 "Set to default", Q_NULLPTR));
         doInvisibleAsterisksButton->setShortcut(QString());
-        label_67->setText(QApplication::translate("MainWindow", "TO DO: Toggle button", Q_NULLPTR));
-        label_6->setText(QApplication::translate("MainWindow", "Terminal", Q_NULLPTR));
-        label_63->setText(QApplication::translate("MainWindow", "Make Password Asterisks Visible\n"
-"TO DO: Toggle button", Q_NULLPTR));
+        label_6->setText(QApplication::translate("MainWindow", "Terminal passwords", Q_NULLPTR));
         label_8->setText(QApplication::translate("MainWindow", "Power", Q_NULLPTR));
         label_7->setText(QApplication::translate("MainWindow", "Repositories", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
@@ -1442,8 +1605,6 @@ public:
 #endif // QT_NO_WHATSTHIS
         openSourcesListDButton->setText(QApplication::translate("MainWindow", "Open sources.list.d", Q_NULLPTR));
         openSourcesListDButton->setShortcut(QString());
-        label_64->setText(QApplication::translate("MainWindow", "Make Password Asterisks Visible\n"
-"TO DO: Toggle button", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         disableHibernationButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1461,8 +1622,8 @@ public:
         enableHibernationButton->setText(QApplication::translate("MainWindow", "Enable hibernation", Q_NULLPTR));
         enableHibernationButton->setShortcut(QString());
         label_68->setText(QApplication::translate("MainWindow", "Not recommended\n"
-"TO DO: Toggle button\n"
-"Only usable if user=usuario", Q_NULLPTR));
+"Very dangerous\n"
+"Backup sudoers file before", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         enableSudoWithoutPassButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1484,7 +1645,19 @@ public:
 #endif // QT_NO_WHATSTHIS
         backupSudoersFileButton->setText(QApplication::translate("MainWindow", "Backup sudoers file", Q_NULLPTR));
         backupSudoersFileButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tab 1", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        reduceTo5sShutdownTimeoutButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        reduceTo5sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Reduce to 5s", Q_NULLPTR));
+        reduceTo5sShutdownTimeoutButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        setToDefaults90sShutdownTimeoutButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        setToDefaults90sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Set to defaults 90s", Q_NULLPTR));
+        setToDefaults90sShutdownTimeoutButton->setShortcut(QString());
+        label_11->setText(QApplication::translate("MainWindow", "Reduce timeout when shutdown\n"
+"(experimental)", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/2", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         installTemplatesButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1492,15 +1665,50 @@ public:
         installTemplatesButton->setShortcut(QString());
         label_62->setText(QApplication::translate("MainWindow", "This adds content to New Doc Sub-Menu", Q_NULLPTR));
         label_5->setText(QApplication::translate("MainWindow", "Documents & Files ", Q_NULLPTR));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tab 2", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", Q_NULLPTR));
-        label_61->setText(QApplication::translate("MainWindow", "do-release-upgrade -d", Q_NULLPTR));
+        label_16->setText(QApplication::translate("MainWindow", "apt-fast -f install &&\n"
+"apt-fast -y autoremove &&\n"
+"apt-fast -y autoclean && \n"
+"apt-fast -y clean", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        upgradeLatestDevButton->setWhatsThis(QString());
+        upgradeReposButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        upgradeLatestDevButton->setText(QApplication::translate("MainWindow", "Upgrade to latest dev", Q_NULLPTR));
-        upgradeLatestDevButton->setShortcut(QString());
-        toolBox->setItemText(toolBox->indexOf(page_3), QApplication::translate("MainWindow", "Developer", Q_NULLPTR));
+        upgradeReposButton->setText(QApplication::translate("MainWindow", "Upgrade repos", Q_NULLPTR));
+        upgradeReposButton->setShortcut(QString());
+        label_15->setText(QApplication::translate("MainWindow", "apt-fast -y update &&\n"
+"apt-fast -y upgrade", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        updateReposButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        updateReposButton->setText(QApplication::translate("MainWindow", "Update repos", Q_NULLPTR));
+        updateReposButton->setShortcut(QString());
+        label_31->setText(QApplication::translate("MainWindow", "apt-fast -y upgrade", Q_NULLPTR));
+        label_14->setText(QApplication::translate("MainWindow", "apt-fast -y update", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        basicPackagesInstallButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        basicPackagesInstallButton->setText(QApplication::translate("MainWindow", "Exec normal user installation script", Q_NULLPTR));
+        basicPackagesInstallButton->setShortcut(QString());
+        label_25->setText(QApplication::translate("MainWindow", "installpackages1-minimal of ubuntupackages on\n"
+" git for normal users", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        updateAndUpgradeButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        updateAndUpgradeButton->setText(QApplication::translate("MainWindow", "Default update && upgrade system", Q_NULLPTR));
+        updateAndUpgradeButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        cleanButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        cleanButton->setText(QApplication::translate("MainWindow", "Clean system", Q_NULLPTR));
+        cleanButton->setShortcut(QString());
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "Normal user", Q_NULLPTR));
+        label_60->setText(QApplication::translate("MainWindow", "do-release-upgrade", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        cleanKernelsButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        cleanKernelsButton->setText(QApplication::translate("MainWindow", "Clean ancient kernels", Q_NULLPTR));
+        cleanKernelsButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         dist_upgradeButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1508,74 +1716,60 @@ public:
         dist_upgradeButton->setShortcut(QString());
         label_17->setText(QApplication::translate("MainWindow", "apt-fast -y update &&\n"
 "apt-fast -y dist-upgrade", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        cleanKernelsButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        cleanKernelsButton->setText(QApplication::translate("MainWindow", "Clean ancient kernels", Q_NULLPTR));
-        cleanKernelsButton->setShortcut(QString());
         label_59->setText(QApplication::translate("MainWindow", "Recover space from unused kernels", Q_NULLPTR));
-        label_60->setText(QApplication::translate("MainWindow", "do-release-upgrade", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         upgradeLatestStableButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         upgradeLatestStableButton->setText(QApplication::translate("MainWindow", "Upgrade to latest stable", Q_NULLPTR));
         upgradeLatestStableButton->setShortcut(QString());
-        toolBox->setItemText(toolBox->indexOf(page), QApplication::translate("MainWindow", "Advanced user", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", Q_NULLPTR));
+        label_61->setText(QApplication::translate("MainWindow", "do-release-upgrade -d", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        cleanButton->setWhatsThis(QString());
+        upgradeLatestDevButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        cleanButton->setText(QApplication::translate("MainWindow", "Clean system", Q_NULLPTR));
-        cleanButton->setShortcut(QString());
-#ifndef QT_NO_WHATSTHIS
-        updateAndUpgradeButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        updateAndUpgradeButton->setText(QApplication::translate("MainWindow", "Default update && upgrade system", Q_NULLPTR));
-        updateAndUpgradeButton->setShortcut(QString());
-#ifndef QT_NO_WHATSTHIS
-        basicPackagesInstallButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        basicPackagesInstallButton->setText(QApplication::translate("MainWindow", "Exec normal user installation script", Q_NULLPTR));
-        basicPackagesInstallButton->setShortcut(QString());
-#ifndef QT_NO_WHATSTHIS
-        updateReposButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        updateReposButton->setText(QApplication::translate("MainWindow", "Update repos", Q_NULLPTR));
-        updateReposButton->setShortcut(QString());
-        label_14->setText(QApplication::translate("MainWindow", "apt-fast -y update", Q_NULLPTR));
-        label_15->setText(QApplication::translate("MainWindow", "apt-fast -y update &&\n"
-"apt-fast -y upgrade", Q_NULLPTR));
-        label_16->setText(QApplication::translate("MainWindow", "apt-get -f install &&\n"
-"apt-get -y autoremove &&\n"
-"apt-get -y autoclean && \n"
-"apt-get -y clean", Q_NULLPTR));
-        label_31->setText(QApplication::translate("MainWindow", "apt-fast -y upgrade", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        upgradeReposButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        upgradeReposButton->setText(QApplication::translate("MainWindow", "Upgrade repos", Q_NULLPTR));
-        upgradeReposButton->setShortcut(QString());
-        label_25->setText(QApplication::translate("MainWindow", "installs latest version of\n"
-"installpackages1-minimal of ubuntupackages on git.\n"
-"packages for normal users", Q_NULLPTR));
-        toolBox->setItemText(toolBox->indexOf(page_2), QApplication::translate("MainWindow", "Normal user", Q_NULLPTR));
+        upgradeLatestDevButton->setText(QApplication::translate("MainWindow", "Upgrade to latest dev", Q_NULLPTR));
+        upgradeLatestDevButton->setShortcut(QString());
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "Developer", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "System", Q_NULLPTR));
+        label_28->setText(QApplication::translate("MainWindow", "sudo launchpad-getkeys", Q_NULLPTR));
+        label_2->setText(QApplication::translate("MainWindow", "Check system integrity", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         integrityCheckButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         integrityCheckButton->setText(QString());
         integrityCheckButton->setShortcut(QString());
-        label_2->setText(QApplication::translate("MainWindow", "Check system integrity", Q_NULLPTR));
+        label_18->setText(QApplication::translate("MainWindow", "shutdown -Fr now", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        repairNetworkButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        repairNetworkButton->setText(QString());
+        repairNetworkButton->setShortcut(QString());
+        label_30->setText(QApplication::translate("MainWindow", "Be careful, your system will reboot", Q_NULLPTR));
+        label_29->setText(QApplication::translate("MainWindow", "Repair missing GPG keys", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        repairGPGKeys->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        repairGPGKeys->setText(QString());
+        repairGPGKeys->setShortcut(QString());
+        label_27->setText(QApplication::translate("MainWindow", "sudo service network-manager restart", Q_NULLPTR));
+        label_9->setText(QApplication::translate("MainWindow", "Repair network", Q_NULLPTR));
+        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/2", Q_NULLPTR));
         label_3->setText(QApplication::translate("MainWindow", "Fix broken packages (click on each step and check if is solved)", Q_NULLPTR));
+        label_22->setText(QApplication::translate("MainWindow", "apt-fast -f install && apt-fast -y autoremove && apt-fast -y autoclean &&\n"
+"apt-fast -y clean", Q_NULLPTR));
+        label_20->setText(QApplication::translate("MainWindow", "apt-fast -y --fix-broken install", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_1->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_1->setText(QString());
         fixBrokenPackagesButton_1->setShortcut(QString());
+        label_21->setText(QApplication::translate("MainWindow", "rm /var/lib/apt/lists/* -vf && apt-fast -y update", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_2->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_2->setText(QString());
         fixBrokenPackagesButton_2->setShortcut(QString());
+        label_19->setText(QApplication::translate("MainWindow", "apt-fast -y update && apt-fast -y upgrade", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_3->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1586,6 +1780,8 @@ public:
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_4->setText(QString());
         fixBrokenPackagesButton_4->setShortcut(QString());
+        label_24->setText(QApplication::translate("MainWindow", "Open Ubuntu Software Center\n"
+" & click repair if proceed", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_5->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1596,29 +1792,8 @@ public:
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_6->setText(QString());
         fixBrokenPackagesButton_6->setShortcut(QString());
-        label_18->setText(QApplication::translate("MainWindow", "shutdown -Fr now", Q_NULLPTR));
-        label_19->setText(QApplication::translate("MainWindow", "apt-fast -y update && apt-fast -y upgrade", Q_NULLPTR));
-        label_20->setText(QApplication::translate("MainWindow", "apt-get -y --fix-broken install", Q_NULLPTR));
-        label_21->setText(QApplication::translate("MainWindow", "rm /var/lib/apt/lists/* -vf && apt-get -y update", Q_NULLPTR));
-        label_22->setText(QApplication::translate("MainWindow", "apt-get -f install && apt-get -y autoremove && apt-get -y autoclean &&\n"
-"apt-get -y clean", Q_NULLPTR));
-        label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-get -y update", Q_NULLPTR));
-        label_24->setText(QApplication::translate("MainWindow", "Open Ubuntu Software Center & click repair if proceed", Q_NULLPTR));
-        label_9->setText(QApplication::translate("MainWindow", "Repair network", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        repairNetworkButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        repairNetworkButton->setText(QString());
-        repairNetworkButton->setShortcut(QString());
-        label_27->setText(QApplication::translate("MainWindow", "sudo service network-manager restart", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        repairGPGKeys->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        repairGPGKeys->setText(QString());
-        repairGPGKeys->setShortcut(QString());
-        label_28->setText(QApplication::translate("MainWindow", "sudo launchpad-getkeys", Q_NULLPTR));
-        label_29->setText(QApplication::translate("MainWindow", "Repair missing GPG keys", Q_NULLPTR));
-        label_30->setText(QApplication::translate("MainWindow", "Be careful, your system will reboot", Q_NULLPTR));
+        label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
+        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
         menuNuevo->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));
         menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", Q_NULLPTR));

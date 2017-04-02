@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>711</width>
-    <height>549</height>
+    <height>572</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="ubunsys.qrc">
-    <normaloff>:/images/linux-icon.png</normaloff>:/images/linux-icon.png</iconset>
+    <normaloff>:/images/ubunsys.ico</normaloff>:/images/ubunsys.ico</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -24,10 +24,10 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>9</x>
+      <x>10</x>
       <y>10</y>
       <width>691</width>
-      <height>451</height>
+      <height>471</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -130,15 +130,15 @@
         <x>0</x>
         <y>0</y>
         <width>591</width>
-        <height>411</height>
+        <height>441</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_11">
        <attribute name="title">
-        <string>Tab 1</string>
+        <string>Packages 1/3</string>
        </attribute>
        <widget class="QCheckBox" name="checkBox_012">
         <property name="geometry">
@@ -717,7 +717,7 @@
          <rect>
           <x>390</x>
           <y>280</y>
-          <width>111</width>
+          <width>141</width>
           <height>23</height>
          </rect>
         </property>
@@ -884,7 +884,7 @@
       </widget>
       <widget class="QWidget" name="tab_12">
        <attribute name="title">
-        <string>Tab 2</string>
+        <string>Packages 2/3</string>
        </attribute>
        <widget class="QCheckBox" name="checkBox_058">
         <property name="geometry">
@@ -1617,7 +1617,7 @@
       </widget>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
-        <string>Tab 3</string>
+        <string>Packages 3/3</string>
        </attribute>
        <widget class="QCheckBox" name="checkBox_132">
         <property name="geometry">
@@ -2035,6 +2035,240 @@
          <string>150.spotify</string>
         </property>
        </widget>
+       <widget class="QCheckBox" name="checkBox_151">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>260</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>151.insync</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_152">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>280</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>152.discord-canary</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_153">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>300</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>153.discord-stable</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_154">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>320</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>154.green-recorder</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_155">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>340</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>155.slingscold</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_156">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>360</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>156.harmony</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_157">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>0</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>157.rm-protection</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_158">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>20</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>158.powershell</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_159">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>40</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>159.komorebi</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_160">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>60</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>160.scudcloud</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_161">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>80</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>161.krita-stable</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_162">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>100</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>162.caja-extensions1</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_163">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>120</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>163.caja-extensions2</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_164">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>140</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>164.terminix</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_165">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>160</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>165.i2p</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_166">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>180</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>166.fslint</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_167">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>200</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>167.qdirstat</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_168">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>220</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>168.debreate</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -2048,35 +2282,22 @@
         <x>0</x>
         <y>0</y>
         <width>691</width>
-        <height>431</height>
+        <height>441</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
-        <string>Tab 1</string>
+        <string>Tweaks 1/2</string>
        </attribute>
-       <widget class="QLabel" name="label_66">
-        <property name="geometry">
-         <rect>
-          <x>250</x>
-          <y>360</y>
-          <width>141</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>TO DO: Toggle button</string>
-        </property>
-       </widget>
        <widget class="QPushButton" name="doInvisibleAsterisksButton">
         <property name="geometry">
          <rect>
@@ -2110,25 +2331,6 @@ Set to default</string>
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QLabel" name="label_67">
-        <property name="geometry">
-         <rect>
-          <x>250</x>
-          <y>320</y>
-          <width>141</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>TO DO: Toggle button</string>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_6">
         <property name="geometry">
          <rect>
@@ -2145,27 +2347,7 @@ Set to default</string>
          </font>
         </property>
         <property name="text">
-         <string>Terminal</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_63">
-        <property name="geometry">
-         <rect>
-          <x>250</x>
-          <y>140</y>
-          <width>201</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Make Password Asterisks Visible
-TO DO: Toggle button</string>
+         <string>Terminal passwords</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_8">
@@ -2238,26 +2420,6 @@ TO DO: Toggle button</string>
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QLabel" name="label_64">
-        <property name="geometry">
-         <rect>
-          <x>250</x>
-          <y>180</y>
-          <width>201</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Make Password Asterisks Visible
-TO DO: Toggle button</string>
-        </property>
-       </widget>
        <widget class="QPushButton" name="disableHibernationButton">
         <property name="geometry">
          <rect>
@@ -2325,9 +2487,9 @@ TO DO: Toggle button</string>
        <widget class="QLabel" name="label_65">
         <property name="geometry">
          <rect>
-          <x>250</x>
+          <x>240</x>
           <y>250</y>
-          <width>221</width>
+          <width>251</width>
           <height>31</height>
          </rect>
         </property>
@@ -2376,10 +2538,10 @@ TO DO: Toggle button</string>
        <widget class="QLabel" name="label_68">
         <property name="geometry">
          <rect>
-          <x>250</x>
+          <x>240</x>
           <y>40</y>
           <width>191</width>
-          <height>51</height>
+          <height>61</height>
          </rect>
         </property>
         <property name="font">
@@ -2390,8 +2552,8 @@ TO DO: Toggle button</string>
         </property>
         <property name="text">
          <string>Not recommended
-TO DO: Toggle button
-Only usable if user=usuario</string>
+Very dangerous
+Backup sudoers file before</string>
         </property>
        </widget>
        <widget class="QPushButton" name="enableSudoWithoutPassButton">
@@ -2402,6 +2564,428 @@ Only usable if user=usuario</string>
           <width>221</width>
           <height>36</height>
          </rect>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>239</red>
+              <green>41</green>
+              <blue>41</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Light">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>147</green>
+              <blue>147</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Midlight">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>247</red>
+              <green>94</green>
+              <blue>94</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Dark">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>119</red>
+              <green>20</green>
+              <blue>20</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Mid">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>159</red>
+              <green>27</green>
+              <blue>27</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="BrightText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>239</red>
+              <green>41</green>
+              <blue>41</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Shadow">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="AlternateBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>247</red>
+              <green>148</green>
+              <blue>148</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>220</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>239</red>
+              <green>41</green>
+              <blue>41</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Light">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>147</green>
+              <blue>147</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Midlight">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>247</red>
+              <green>94</green>
+              <blue>94</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Dark">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>119</red>
+              <green>20</green>
+              <blue>20</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Mid">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>159</red>
+              <green>27</green>
+              <blue>27</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="BrightText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>239</red>
+              <green>41</green>
+              <blue>41</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Shadow">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="AlternateBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>247</red>
+              <green>148</green>
+              <blue>148</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>220</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>119</red>
+              <green>20</green>
+              <blue>20</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>239</red>
+              <green>41</green>
+              <blue>41</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Light">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>147</green>
+              <blue>147</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Midlight">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>247</red>
+              <green>94</green>
+              <blue>94</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Dark">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>119</red>
+              <green>20</green>
+              <blue>20</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Mid">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>159</red>
+              <green>27</green>
+              <blue>27</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>119</red>
+              <green>20</green>
+              <blue>20</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="BrightText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>119</red>
+              <green>20</green>
+              <blue>20</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>239</red>
+              <green>41</green>
+              <blue>41</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>239</red>
+              <green>41</green>
+              <blue>41</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Shadow">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="AlternateBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>239</red>
+              <green>41</green>
+              <blue>41</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>220</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
         </property>
         <property name="whatsThis">
          <string/>
@@ -2541,10 +3125,94 @@ Only usable if user=usuario</string>
          <bool>false</bool>
         </property>
        </widget>
+       <widget class="QPushButton" name="reduceTo5sShutdownTimeoutButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>160</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Reduce to 5s</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/kernel.jpg</normaloff>:/images/kernel.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="setToDefaults90sShutdownTimeoutButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>200</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Set to defaults 90s</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/kernel.jpg</normaloff>:/images/kernel.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>120</y>
+          <width>231</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Reduce timeout when shutdown
+(experimental)</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
-        <string>Tab 2</string>
+        <string>Tweaks 2/2</string>
        </attribute>
        <widget class="QPushButton" name="installTemplatesButton">
         <property name="geometry">
@@ -2583,7 +3251,7 @@ Only usable if user=usuario</string>
          <rect>
           <x>250</x>
           <y>40</y>
-          <width>251</width>
+          <width>281</width>
           <height>21</height>
          </rect>
         </property>
@@ -2623,39 +3291,140 @@ Only usable if user=usuario</string>
      <attribute name="title">
       <string>System</string>
      </attribute>
-     <widget class="QToolBox" name="toolBox">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
+     <widget class="QTabWidget" name="tabWidget_4">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>631</width>
-        <height>371</height>
+        <x>0</x>
+        <y>0</y>
+        <width>691</width>
+        <height>441</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
-      <widget class="QWidget" name="page_3">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>98</width>
-         <height>28</height>
-        </rect>
-       </property>
-       <attribute name="label">
-        <string>Developer</string>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Normal user</string>
        </attribute>
-       <widget class="QLabel" name="label_61">
+       <widget class="QLabel" name="label_16">
         <property name="geometry">
          <rect>
-          <x>250</x>
-          <y>20</y>
-          <width>141</width>
+          <x>290</x>
+          <y>200</y>
+          <width>181</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>apt-fast -f install &amp;&amp;
+apt-fast -y autoremove &amp;&amp;
+apt-fast -y autoclean &amp;&amp; 
+apt-fast -y clean</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="upgradeReposButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>271</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Upgrade repos</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/update.png</normaloff>:/images/update.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>10</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>apt-fast -y update &amp;&amp;
+apt-fast -y upgrade</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="updateReposButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>271</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Update repos</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/update.png</normaloff>:/images/update.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>120</y>
+          <width>251</width>
           <height>21</height>
          </rect>
         </property>
@@ -2666,14 +3435,173 @@ Only usable if user=usuario</string>
          </font>
         </property>
         <property name="text">
-         <string>do-release-upgrade -d</string>
+         <string>apt-fast -y upgrade</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="upgradeLatestDevButton">
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>70</y>
+          <width>251</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>apt-fast -y update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="basicPackagesInstallButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>271</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Exec normal user installation script</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/install.png</normaloff>:/images/install.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>150</y>
+          <width>341</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>installpackages1-minimal of ubuntupackages on
+ git for normal users</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="updateAndUpgradeButton">
         <property name="geometry">
          <rect>
           <x>10</x>
           <y>10</y>
+          <width>271</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Default update &amp;&amp; upgrade system</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/upgrade.png</normaloff>:/images/upgrade.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cleanButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>210</y>
+          <width>271</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Clean system</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/escoba.png</normaloff>:/images/escoba.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Advanced user</string>
+       </attribute>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>120</y>
+          <width>241</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>do-release-upgrade</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cleanKernelsButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
           <width>221</width>
           <height>36</height>
          </rect>
@@ -2682,7 +3610,7 @@ Only usable if user=usuario</string>
          <string/>
         </property>
         <property name="text">
-         <string>Upgrade to latest dev</string>
+         <string>Clean ancient kernels</string>
         </property>
         <property name="icon">
          <iconset resource="ubunsys.qrc">
@@ -2701,19 +3629,6 @@ Only usable if user=usuario</string>
          <bool>false</bool>
         </property>
        </widget>
-      </widget>
-      <widget class="QWidget" name="page">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>98</width>
-         <height>28</height>
-        </rect>
-       </property>
-       <attribute name="label">
-        <string>Advanced user</string>
-       </attribute>
        <widget class="QPushButton" name="dist_upgradeButton">
         <property name="geometry">
          <rect>
@@ -2766,44 +3681,12 @@ Only usable if user=usuario</string>
 apt-fast -y dist-upgrade</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="cleanKernelsButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>60</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Clean ancient kernels</string>
-        </property>
-        <property name="icon">
-         <iconset resource="ubunsys.qrc">
-          <normaloff>:/images/kernel.jpg</normaloff>:/images/kernel.jpg</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_59">
         <property name="geometry">
          <rect>
           <x>250</x>
           <y>70</y>
-          <width>221</width>
+          <width>321</width>
           <height>21</height>
          </rect>
         </property>
@@ -2815,25 +3698,6 @@ apt-fast -y dist-upgrade</string>
         </property>
         <property name="text">
          <string>Recover space from unused kernels</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_60">
-        <property name="geometry">
-         <rect>
-          <x>250</x>
-          <y>120</y>
-          <width>131</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>do-release-upgrade</string>
         </property>
        </widget>
        <widget class="QPushButton" name="upgradeLatestStableButton">
@@ -2869,56 +3733,35 @@ apt-fast -y dist-upgrade</string>
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_2">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>631</width>
-         <height>278</height>
-        </rect>
-       </property>
-       <attribute name="label">
-        <string>Normal user</string>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>Developer</string>
        </attribute>
-       <widget class="QPushButton" name="cleanButton">
+       <widget class="QLabel" name="label_61">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>210</y>
-          <width>271</width>
-          <height>36</height>
+          <x>250</x>
+          <y>20</y>
+          <width>201</width>
+          <height>21</height>
          </rect>
         </property>
-        <property name="whatsThis">
-         <string/>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
         </property>
         <property name="text">
-         <string>Clean system</string>
-        </property>
-        <property name="icon">
-         <iconset resource="ubunsys.qrc">
-          <normaloff>:/images/escoba.png</normaloff>:/images/escoba.png</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
+         <string>do-release-upgrade -d</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="updateAndUpgradeButton">
+       <widget class="QPushButton" name="upgradeLatestDevButton">
         <property name="geometry">
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>271</width>
+          <width>221</width>
           <height>36</height>
          </rect>
         </property>
@@ -2926,11 +3769,11 @@ apt-fast -y dist-upgrade</string>
          <string/>
         </property>
         <property name="text">
-         <string>Default update &amp;&amp; upgrade system</string>
+         <string>Upgrade to latest dev</string>
         </property>
         <property name="icon">
          <iconset resource="ubunsys.qrc">
-          <normaloff>:/images/upgrade.png</normaloff>:/images/upgrade.png</iconset>
+          <normaloff>:/images/kernel.jpg</normaloff>:/images/kernel.jpg</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -2943,208 +3786,6 @@ apt-fast -y dist-upgrade</string>
         </property>
         <property name="checkable">
          <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="basicPackagesInstallButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>160</y>
-          <width>271</width>
-          <height>40</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Exec normal user installation script</string>
-        </property>
-        <property name="icon">
-         <iconset resource="ubunsys.qrc">
-          <normaloff>:/images/install.png</normaloff>:/images/install.png</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="updateReposButton">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>60</y>
-          <width>271</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Update repos</string>
-        </property>
-        <property name="icon">
-         <iconset resource="ubunsys.qrc">
-          <normaloff>:/images/update.png</normaloff>:/images/update.png</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_14">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>70</y>
-          <width>251</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>apt-fast -y update</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_15">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>10</y>
-          <width>251</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>apt-fast -y update &amp;&amp;
-apt-fast -y upgrade</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_16">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>200</y>
-          <width>161</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>apt-get -f install &amp;&amp;
-apt-get -y autoremove &amp;&amp;
-apt-get -y autoclean &amp;&amp; 
-apt-get -y clean</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_31">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>120</y>
-          <width>251</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>apt-fast -y upgrade</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="upgradeReposButton">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>110</y>
-          <width>271</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Upgrade repos</string>
-        </property>
-        <property name="icon">
-         <iconset resource="ubunsys.qrc">
-          <normaloff>:/images/update.png</normaloff>:/images/update.png</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_25">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>150</y>
-          <width>321</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>installpackages1-minimal of ubuntupackages on git.
-packages for normal users</string>
         </property>
        </widget>
       </widget>
@@ -3154,614 +3795,638 @@ packages for normal users</string>
      <attribute name="title">
       <string>Repair</string>
      </attribute>
-     <widget class="QPushButton" name="integrityCheckButton">
+     <widget class="QTabWidget" name="tabWidget_5">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>40</y>
-        <width>40</width>
-        <height>36</height>
+        <x>0</x>
+        <y>0</y>
+        <width>691</width>
+        <height>441</height>
        </rect>
       </property>
-      <property name="maximumSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="ubunsys.qrc">
-        <normaloff>:/images/repair.png</normaloff>:/images/repair.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>331</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Check system integrity</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>100</y>
-        <width>431</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Fix broken packages (click on each step and check if is solved)</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="fixBrokenPackagesButton_1">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>130</y>
-        <width>40</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="ubunsys.qrc">
-        <normaloff>:/images/red-number-1.jpg</normaloff>:/images/red-number-1.jpg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="fixBrokenPackagesButton_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>170</y>
-        <width>40</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="ubunsys.qrc">
-        <normaloff>:/images/red-number-2.jpg</normaloff>:/images/red-number-2.jpg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="fixBrokenPackagesButton_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>210</y>
-        <width>40</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="ubunsys.qrc">
-        <normaloff>:/images/red-number-3.jpg</normaloff>:/images/red-number-3.jpg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="fixBrokenPackagesButton_4">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>250</y>
-        <width>40</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="ubunsys.qrc">
-        <normaloff>:/images/red-number-4.jpg</normaloff>:/images/red-number-4.jpg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="fixBrokenPackagesButton_5">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>290</y>
-        <width>40</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="ubunsys.qrc">
-        <normaloff>:/images/red-number-5.jpg</normaloff>:/images/red-number-5.jpg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="fixBrokenPackagesButton_6">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>330</y>
-        <width>40</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="ubunsys.qrc">
-        <normaloff>:/images/red-number-6.jpg</normaloff>:/images/red-number-6.jpg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_18">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>50</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>shutdown -Fr now</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_19">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>140</y>
-        <width>261</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>apt-fast -y update &amp;&amp; apt-fast -y upgrade</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_20">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>180</y>
-        <width>251</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>apt-get -y --fix-broken install</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_21">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>220</y>
-        <width>281</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>rm /var/lib/apt/lists/* -vf &amp;&amp; apt-get -y update</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_22">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>250</y>
-        <width>491</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>apt-get -f install &amp;&amp; apt-get -y autoremove &amp;&amp; apt-get -y autoclean &amp;&amp;
-apt-get -y clean</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_23">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>300</y>
-        <width>251</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>dpkg --configure -a &amp;&amp; apt-get -y update</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_24">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>340</y>
-        <width>331</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Open Ubuntu Software Center &amp; click repair if proceed</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_9">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>10</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Repair network</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="repairNetworkButton">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>40</y>
-        <width>40</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="ubunsys.qrc">
-        <normaloff>:/images/repair.png</normaloff>:/images/repair.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_27">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>50</y>
-        <width>231</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>sudo service network-manager restart</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="repairGPGKeys">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>170</y>
-        <width>40</width>
-        <height>36</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="ubunsys.qrc">
-        <normaloff>:/images/repair.png</normaloff>:/images/repair.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>30</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_28">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>180</y>
-        <width>151</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>sudo launchpad-getkeys</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_29">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>140</y>
-        <width>171</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Repair missing GPG keys</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_30">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>30</y>
-        <width>241</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Be careful, your system will reboot</string>
-      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_13">
+       <attribute name="title">
+        <string>Repair  1/2</string>
+       </attribute>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>190</y>
+          <width>171</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>sudo launchpad-getkeys</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>331</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Check system integrity</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="integrityCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/repair.png</normaloff>:/images/repair.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>50</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>shutdown -Fr now</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="repairNetworkButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/repair.png</normaloff>:/images/repair.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>30</y>
+          <width>251</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Be careful, your system will reboot</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>150</y>
+          <width>181</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Repair missing GPG keys</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="repairGPGKeys">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/repair.png</normaloff>:/images/repair.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>120</y>
+          <width>271</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>sudo service network-manager restart</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Repair network</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_14">
+       <attribute name="title">
+        <string>Repair 2/2</string>
+       </attribute>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>451</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Fix broken packages (click on each step and check if is solved)</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>160</y>
+          <width>491</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>apt-fast -f install &amp;&amp; apt-fast -y autoremove &amp;&amp; apt-fast -y autoclean &amp;&amp;
+apt-fast -y clean</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>90</y>
+          <width>251</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>apt-fast -y --fix-broken install</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="fixBrokenPackagesButton_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/red-number-1.jpg</normaloff>:/images/red-number-1.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>130</y>
+          <width>321</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>rm /var/lib/apt/lists/* -vf &amp;&amp; apt-fast -y update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="fixBrokenPackagesButton_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/red-number-2.jpg</normaloff>:/images/red-number-2.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>50</y>
+          <width>281</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>apt-fast -y update &amp;&amp; apt-fast -y upgrade</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="fixBrokenPackagesButton_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/red-number-3.jpg</normaloff>:/images/red-number-3.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="fixBrokenPackagesButton_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/red-number-4.jpg</normaloff>:/images/red-number-4.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>240</y>
+          <width>211</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Open Ubuntu Software Center
+ &amp; click repair if proceed</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="fixBrokenPackagesButton_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/red-number-5.jpg</normaloff>:/images/red-number-5.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="fixBrokenPackagesButton_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/red-number-6.jpg</normaloff>:/images/red-number-6.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>210</y>
+          <width>281</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>dpkg --configure -a &amp;&amp; apt-fast -y update</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
    </widget>

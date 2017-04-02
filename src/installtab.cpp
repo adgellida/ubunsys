@@ -1603,10 +1603,246 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
 
     ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
 
+    //151.insync
+
+    if (ui->checkBox_151->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/151.insync"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //152.discord-canary
+
+    if (ui->checkBox_152->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/152.discord-canary"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //153.discord
+
+    if (ui->checkBox_153->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/153.discord"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //154.green-recorder
+
+    if (ui->checkBox_154->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/154.green-recorder"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //155.slingscold
+
+    if (ui->checkBox_155->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/155.slingscold"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //156.harmony
+
+    if (ui->checkBox_156->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/156.harmony"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //157.rm-protection
+
+    if (ui->checkBox_157->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/157.rm-protection"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //158.powershell
+
+    if (ui->checkBox_158->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/158.powershell"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //159.komorebi
+
+    if (ui->checkBox_159->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/159.komorebi"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //160.scudcloud
+
+    if (ui->checkBox_160->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/160.scudcloud"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //161.krita-stable
+
+    if (ui->checkBox_161->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/161.krita-stable"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //162.caja-extensions1
+
+    if (ui->checkBox_162->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/162.caja-extensions1"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //163.caja-extensions1
+
+    if (ui->checkBox_163->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/163.caja-extensions2"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //164.terminix
+
+    if (ui->checkBox_164->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/164.terminix"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //165.i2p
+
+    if (ui->checkBox_165->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/165.i2p"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //166.fslint
+
+    if (ui->checkBox_166->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/166.fslint"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //167.qdirstat
+
+    if (ui->checkBox_167->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/167.qdirstat"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
+    //168.debreate
+
+    if (ui->checkBox_168->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/168.debreate"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+
 }
 
 void MainWindow::on_unselectAllButton_clicked()
 {
+
+    ui->statusBar->showMessage(tr("All packages unselected."));
 
     ui->checkBox_001->setChecked(false);
     ui->checkBox_002->setChecked(false);
@@ -1753,11 +1989,32 @@ void MainWindow::on_unselectAllButton_clicked()
     ui->checkBox_148->setChecked(false);
     ui->checkBox_149->setChecked(false);
     ui->checkBox_150->setChecked(false);
+    ui->checkBox_151->setChecked(false);
+    ui->checkBox_152->setChecked(false);
+    ui->checkBox_153->setChecked(false);
+    ui->checkBox_154->setChecked(false);
+    ui->checkBox_155->setChecked(false);
+    ui->checkBox_156->setChecked(false);
+    ui->checkBox_157->setChecked(false);
+    ui->checkBox_158->setChecked(false);
+    ui->checkBox_159->setChecked(false);
+    ui->checkBox_160->setChecked(false);
+    ui->checkBox_161->setChecked(false);
+    ui->checkBox_162->setChecked(false);
+    ui->checkBox_163->setChecked(false);
+    ui->checkBox_164->setChecked(false);
+    ui->checkBox_165->setChecked(false);
+    ui->checkBox_166->setChecked(false);
+    ui->checkBox_167->setChecked(false);
+    ui->checkBox_168->setChecked(false);
 
 }
 
 void MainWindow::on_selectAllButton_clicked()
 {
+
+    ui->statusBar->showMessage(tr("All packages selected."));
+
     ui->checkBox_001->setChecked(true);
     ui->checkBox_002->setChecked(true);
     ui->checkBox_003->setChecked(true);
@@ -1903,7 +2160,25 @@ void MainWindow::on_selectAllButton_clicked()
     ui->checkBox_148->setChecked(true);
     ui->checkBox_149->setChecked(true);
     ui->checkBox_150->setChecked(true);
-
+    ui->checkBox_150->setChecked(true);
+    ui->checkBox_151->setChecked(true);
+    ui->checkBox_152->setChecked(true);
+    ui->checkBox_153->setChecked(true);
+    ui->checkBox_154->setChecked(true);
+    ui->checkBox_155->setChecked(true);
+    ui->checkBox_156->setChecked(true);
+    ui->checkBox_157->setChecked(true);
+    ui->checkBox_158->setChecked(true);
+    ui->checkBox_159->setChecked(true);
+    ui->checkBox_160->setChecked(true);
+    ui->checkBox_161->setChecked(true);
+    ui->checkBox_162->setChecked(true);
+    ui->checkBox_163->setChecked(true);
+    ui->checkBox_164->setChecked(true);
+    ui->checkBox_165->setChecked(true);
+    ui->checkBox_166->setChecked(true);
+    ui->checkBox_167->setChecked(true);
+    ui->checkBox_168->setChecked(true);
 }
 
 void MainWindow::on_loadSelectionButton_clicked()
@@ -1911,10 +2186,12 @@ void MainWindow::on_loadSelectionButton_clicked()
 
     qDebug() << "load selection pushed";
 
+    ui->statusBar->showMessage(tr("Predefined selection loaded."));
+
     //First
 
     ui->checkBox_001->setChecked(true);
-    ui->checkBox_002->setChecked(true);
+    ui->checkBox_002->setChecked(false);
     ui->checkBox_003->setChecked(true);
     ui->checkBox_004->setChecked(true);
     ui->checkBox_005->setChecked(true);
@@ -1943,13 +2220,13 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_028->setChecked(true);
     ui->checkBox_029->setChecked(true);
     ui->checkBox_030->setChecked(true);
-    ui->checkBox_031->setChecked(true);
-    ui->checkBox_032->setChecked(true);
+    ui->checkBox_031->setChecked(false);
+    ui->checkBox_032->setChecked(false);
     ui->checkBox_033->setChecked(false);
     ui->checkBox_034->setChecked(true);
     ui->checkBox_035->setChecked(true);
     ui->checkBox_036->setChecked(true);
-    ui->checkBox_037->setChecked(true);
+    ui->checkBox_037->setChecked(false);
     ui->checkBox_038->setChecked(false);
     ui->checkBox_039->setChecked(false);
     ui->checkBox_040->setChecked(false);
@@ -1974,8 +2251,8 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_059->setChecked(true);
     ui->checkBox_060->setChecked(false);
     ui->checkBox_061->setChecked(true);
-    ui->checkBox_062->setChecked(false);
-    ui->checkBox_063->setChecked(true);
+    ui->checkBox_062->setChecked(true);
+    ui->checkBox_063->setChecked(false);
     ui->checkBox_064->setChecked(false);
     ui->checkBox_065->setChecked(true);
     ui->checkBox_066->setChecked(true);
@@ -1987,8 +2264,8 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_072->setChecked(false);
     ui->checkBox_073->setChecked(false);
     ui->checkBox_074->setChecked(true);
-    ui->checkBox_075->setChecked(false);
-    ui->checkBox_076->setChecked(true);
+    ui->checkBox_075->setChecked(true);
+    ui->checkBox_076->setChecked(false);
     ui->checkBox_077->setChecked(true);
     ui->checkBox_078->setChecked(true);
     ui->checkBox_079->setChecked(false);
@@ -2008,18 +2285,18 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_093->setChecked(false);
     ui->checkBox_094->setChecked(false);
     ui->checkBox_100->setChecked(false);
-    ui->checkBox_101->setChecked(false);
-    ui->checkBox_102->setChecked(true);
+    ui->checkBox_101->setChecked(true);
+    ui->checkBox_102->setChecked(false);
     ui->checkBox_103->setChecked(false);
     ui->checkBox_104->setChecked(false);
-    ui->checkBox_105->setChecked(true);
+    ui->checkBox_105->setChecked(false);
     ui->checkBox_106->setChecked(false);
     ui->checkBox_107->setChecked(false);
     ui->checkBox_108->setChecked(false);
     ui->checkBox_109->setChecked(false);
     ui->checkBox_110->setChecked(false);
     ui->checkBox_111->setChecked(false);
-    ui->checkBox_112->setChecked(true);
+    ui->checkBox_112->setChecked(false);
     ui->checkBox_113->setChecked(true);
     ui->checkBox_114->setChecked(true);
     ui->checkBox_115->setChecked(true);
@@ -2039,7 +2316,7 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_129->setChecked(false);
     ui->checkBox_130->setChecked(false);
     ui->checkBox_131->setChecked(false);
-    ui->checkBox_132->setChecked(false);
+    ui->checkBox_132->setChecked(true);
     ui->checkBox_133->setChecked(false);
     ui->checkBox_134->setChecked(false);
     ui->checkBox_135->setChecked(false);
@@ -2057,7 +2334,25 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_147->setChecked(false);
     ui->checkBox_148->setChecked(false);
     ui->checkBox_149->setChecked(false);
-
+    ui->checkBox_150->setChecked(false);
+    ui->checkBox_151->setChecked(true);
+    ui->checkBox_152->setChecked(false);
+    ui->checkBox_153->setChecked(false);
+    ui->checkBox_154->setChecked(false);
+    ui->checkBox_155->setChecked(false);
+    ui->checkBox_156->setChecked(false);
+    ui->checkBox_157->setChecked(false);
+    ui->checkBox_158->setChecked(false);
+    ui->checkBox_159->setChecked(false);
+    ui->checkBox_160->setChecked(false);
+    ui->checkBox_161->setChecked(true);
+    ui->checkBox_162->setChecked(false);
+    ui->checkBox_163->setChecked(false);
+    ui->checkBox_164->setChecked(false);
+    ui->checkBox_165->setChecked(false);
+    ui->checkBox_166->setChecked(false);
+    ui->checkBox_167->setChecked(false);
+    ui->checkBox_168->setChecked(false);
 }
 
 //not implemented yet

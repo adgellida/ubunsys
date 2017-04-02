@@ -109,6 +109,10 @@ private slots:
 
     void on_backupSudoersFileButton_clicked();
 
+    void on_reduceTo5sShutdownTimeoutButton_clicked();
+
+    void on_setToDefaults90sShutdownTimeoutButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 
