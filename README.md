@@ -1,7 +1,7 @@
 # ubunsys
 =============================================
 
-<img src="https://github.com/adgellida/ubunsys/blob/master/src/images/ubunsys.ico?raw=true" width="80">
+<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/ubunsys.ico" width="80">
 
 Configurable app referent to packages, updates and configurations.
 
