@@ -39,6 +39,8 @@ private slots:
 
     void on_actionAbout_triggered();
 
+    void on_actionTutorial_triggered();
+
     void on_updateReposButton_clicked();
 
     void on_updateAndUpgradeButton_clicked();
@@ -116,6 +118,12 @@ private slots:
     void on_enableFirewallButton_clicked();
 
     void on_disableFirewallButton_clicked();
+
+    void on_updateScriptsButton_clicked();
+
+    void on_updateAppButton_clicked();
+
+    void on_importSudoersFileButton_clicked();
 
 private:
     Ui::MainWindow *ui;

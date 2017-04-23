@@ -16,7 +16,7 @@ Configurable app referent to packages, updates and configurations.
 If you want to use PPA
 =============================================
 
-* Not updated to last version yet
+* Not updated to latest version yet
 
 sudo add-apt-repository -y ppa:adgellida/ubunsys
 

@@ -8,7 +8,7 @@ void MainWindow::on_integrityCheckButton_clicked()
 {
 //  Reboots and checks integrity system
 
-    ui->statusBar->showMessage(tr("Checking integrity system."));
+    ui->statusBar->showMessage(tr("Checking integrity system"));
 
     system("xterm -e bash -c '"
            "shutdown -Fr now"
@@ -17,7 +17,7 @@ void MainWindow::on_integrityCheckButton_clicked()
 
 void MainWindow::on_repairNetworkButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Repairing network. Put Please wait."));
+    ui->statusBar->showMessage(tr("Repairing network. Put Please wait"));
 
     system("xterm -e bash -c '"
            "sudo service network-manager restart"
@@ -25,15 +25,15 @@ void MainWindow::on_repairNetworkButton_clicked()
            "exit"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Network restarted or fix cancelled, check if ok now."));
+    ui->statusBar->showMessage(tr("Network restarted or fix cancelled, check if ok now"));
 }
 
 void MainWindow::on_repairGPGKeys_clicked()
 {
-    ui->statusBar->showMessage(tr("Repairing missed GPG keys. Please wait."));
+    ui->statusBar->showMessage(tr("Repairing missed GPG keys. Please wait"));
 
     system("xterm -e bash -c '"
-           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/005.y-ppa-manager"
+           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/004.y-ppa-manager"
            " && "
            "sudo launchpad-getkeys"
            " && "
@@ -42,13 +42,13 @@ void MainWindow::on_repairGPGKeys_clicked()
            "exit"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Missed GPG keys repaired or fix cancelled, check if ok now."));
+    ui->statusBar->showMessage(tr("Missed GPG keys repaired or fix cancelled, check if ok now"));
 
 }
 
 void MainWindow::on_fixBrokenPackagesButton_1_clicked()
 {
-    ui->statusBar->showMessage(tr("Executing package repair 1. Then close the terminal window."));
+    ui->statusBar->showMessage(tr("Executing package repair 1. Then close the terminal window"));
 
     system("xterm -e bash -c '"
            "sudo apt-fast -y update"
@@ -56,23 +56,23 @@ void MainWindow::on_fixBrokenPackagesButton_1_clicked()
            "sudo apt-fast -y upgrade"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Reparation 1 executed succesful. Test if all is corrected."));
+    ui->statusBar->showMessage(tr("Reparation 1 executed succesful. Test if all is corrected"));
 }
 
 void MainWindow::on_fixBrokenPackagesButton_2_clicked()
 {
-    ui->statusBar->showMessage(tr("Executing package repair 2. Then close the terminal window."));
+    ui->statusBar->showMessage(tr("Executing package repair 2. Then close the terminal window"));
 
     system("xterm -e bash -c '"
            "sudo apt-fast -y --fix-broken install"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Reparation 2 executed succesful. Test if all is corrected."));
+    ui->statusBar->showMessage(tr("Reparation 2 executed succesful. Test if all is corrected"));
 }
 
 void MainWindow::on_fixBrokenPackagesButton_3_clicked()
 {
-    ui->statusBar->showMessage(tr("Executing package repair 3. Then close the terminal window."));
+    ui->statusBar->showMessage(tr("Executing package repair 3. Then close the terminal window"));
 
     system("xterm -e bash -c '"
            "rm /var/lib/apt/lists/* -vf"
@@ -80,12 +80,12 @@ void MainWindow::on_fixBrokenPackagesButton_3_clicked()
            "apt-fast -y update"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Reparation 3 executed succesful. Test if all is corrected."));
+    ui->statusBar->showMessage(tr("Reparation 3 executed succesful. Test if all is corrected"));
 }
 
 void MainWindow::on_fixBrokenPackagesButton_4_clicked()
 {
-    ui->statusBar->showMessage(tr("Executing package repair 4. Then close the terminal window."));
+    ui->statusBar->showMessage(tr("Executing package repair 4. Then close the terminal window"));
 
     system("xterm -e bash -c '"
            "sudo apt-fast -f install"
@@ -97,12 +97,12 @@ void MainWindow::on_fixBrokenPackagesButton_4_clicked()
            "sudo apt-fast -y clean"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Reparation 4 executed succesful. Test if all is corrected."));
+    ui->statusBar->showMessage(tr("Reparation 4 executed succesful. Test if all is corrected"));
 }
 
 void MainWindow::on_fixBrokenPackagesButton_5_clicked()
 {
-    ui->statusBar->showMessage(tr("Executing package repair 5. Then close the terminal window."));
+    ui->statusBar->showMessage(tr("Executing package repair 5. Then close the terminal window"));
 
     system("xterm -e bash -c '"
            "sudo dpkg --configure -a"
@@ -110,10 +110,10 @@ void MainWindow::on_fixBrokenPackagesButton_5_clicked()
            "sudo apt-fast -y update"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Reparation 5 executed succesful. Test if all is corrected."));
+    ui->statusBar->showMessage(tr("Reparation 5 executed succesful. Test if all is corrected"));
 }
 
 void MainWindow::on_fixBrokenPackagesButton_6_clicked()
 {
-    system("xterm -e bash -c 'echo Open Ubuntu Software Center and if prompted to repair broken packages, click simply the repair button.; exec bash'");
+    system("xterm -e bash -c 'echo Open Ubuntu Software Center and if prompted to repair broken packages, click simply the repair button; exec bash'");
 }

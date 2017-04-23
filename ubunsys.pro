@@ -18,9 +18,10 @@ SOURCES += main.cpp\
     repairtab.cpp \
     systemtab.cpp \
     tweakstab.cpp \
-    tweakstab-test.cpp \
-    installtab.cpp \
-    about.cpp
+    updatezone.cpp \
+    packagestab.cpp \
+    about.cpp \
+    tutorial.cpp
 
 HEADERS  += mainwindow.h
 

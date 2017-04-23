@@ -12,63 +12,18 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
     qApp, SLOT(aboutQt()));
 
-    //######## PREPARING ENVIRONMENT
+    //another way to se tooltips
+    //ui->enableSudoWithoutPassButton->setToolTip("Almost no more questions\n about your password");
 
-    //######## Update ubuntuScripts
+    ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
-    ui->statusBar->showMessage(tr("Updating latest scripts. Please wait"));
+    //ui->statusBar->showMessage(tr("Recommendation: First 'Backup sudoers file' and then 'Enable sudo without pass' for more speed"));
 
     system("xterm -e bash -c '"
-           "sudo rm -Rf ~/.ubunsys"
-           " && "
-           "mkdir -p ~/.ubunsys/downloads"
-           " && "
-           "wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/downloads/master.zip"
-           " && "
-           "unzip ~/.ubunsys/downloads/master.zip -d ~/.ubunsys/downloads"
-           " && "
-           "sudo chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-master"
-           " && "
-           "rm ~/.ubunsys/downloads/master.zip"
+           "mkdir -p ~/.ubunsys/backups/sudoersFiles"
            " && "
            "exit"
            "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Downloaded latest scripts."));
-
-    ui->statusBar->showMessage(tr("Download latest ubuntupackages script."));
-
-    //######## Update ubuntupackages
-
-    system("xterm -e bash -c '"
-           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/019.downloadLatestUbuntupackages"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    //######## apt-fast checking
-
-    ui->statusBar->showMessage(tr("Checking if apt-fast is installed and we install it if necessary."));
-
-    system("xterm -e bash -c '"
-           "echo Please wait"
-           " && "
-           "echo  "
-           " && "
-           "echo Checking if apt-fast installed to download more quick"
-           " && "
-           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/020.check_apt-fast_installed"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("apt-fast is installed."));
-
-    ui->statusBar->showMessage(tr("Installing packages."));
-
-    //qDebug() << "test13";
-
-    ui->statusBar->showMessage(tr("Latest scripts updated ok. Please select an action"));
 
 }
 
