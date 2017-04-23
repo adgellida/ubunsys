@@ -1,7 +1,7 @@
 [DEBREATE-0.7.13]
 <<CTRL>>
 Package: ubunsys
-Version: 2017.04.08
+Version: 2017.04.24
 Maintainer: Antonio David Gellida Lavara <adgellida@gmail.com>
 Section: utils
 Source: https://github.com/adgellida/ubunsys
@@ -22,16 +22,16 @@ Description: Batch install apps and configure system
  .
  adgellida@gmail.com
  .
- https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys
- .
  https://github.com/adgellida/ubunsys
+ .
+ https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys
 
 <</CTRL>>
 <<FILES>>
 1
-/home/usuario/githubProjects/ubunsys/ubunsys* -> ubunsys -> /usr/bin
-/home/usuario/githubProjects/ubunsys/ubunsys.desktop* -> ubunsys.desktop -> /usr/share/applications
 /home/usuario/githubProjects/ubunsys/images/ubunsys.ico -> ubunsys.ico -> /usr/share/pixmaps
+/home/usuario/githubProjects/ubunsys/ubunsys.desktop* -> ubunsys.desktop -> /usr/share/applications
+/home/usuario/githubProjects/ubunsys/ubunsys* -> ubunsys -> /usr/bin
 <</FILES>>
 <<SCRIPTS>>
 <<PREINST>>
@@ -49,11 +49,15 @@ Description: Batch install apps and configure system
 <</SCRIPTS>>
 <<CHANGELOG>>
 <<DEST>>DEFAULT<</DEST>>
-ubunsys (2017.04.08) yakkety; urgency=medium
+ubunsys (2017.04.24) yakkety; urgency=medium
 
-  * Minor improvements
+  * You can update scripts at the moment you want
+  * Improved Sudoers section
+  * Tutorial with recommendations added
+  * UI improved
 
- -- Antonio David Gellida Lavara <adgellida@gmail.com>  Sat, 08 Apr 2017 20:21:08 +0200
+ -- Antonio David Gellida Lavara <adgellida@gmail.com>  Mon, 24 Apr 2017 00:44:19 +0200
+
 <</CHANGELOG>>
 <<COPYRIGHT>>
 GNU GENERAL PUBLIC LICENSE
@@ -400,7 +404,7 @@ Public License instead of this License.
 1
 Name=ubunsys
 Version=1.0
-Exec=gksudo /usr/bin/ubunsys
+Exec=/usr/bin/ubunsys
 Comment=Batch install apps and configure system
 Icon=/usr/share/pixmaps/ubunsys.ico
 Type=Application

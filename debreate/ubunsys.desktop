@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ubunsys
 Version=1.0
-Exec=gksudo /usr/bin/ubunsys
+Exec=/usr/bin/ubunsys
 Comment=Batch install apps and configure system
 Icon=/usr/share/pixmaps/ubunsys.ico
 Type=Application

@@ -37,6 +37,23 @@ If you want to help on this dev, say to me.
 
 If you need help about compilation and packaging I have basic notions, ask me.
 
+Tutorial
+=============================================
+
+Recommended steps:
+
+1. Push on 'Update scripts' button.
+
+Near the program version (green up arrow).
+
+2. Push on 'Backup sudoers file'.
+
+3. Then push on 'Enable sudo without pass'.
+
+This way you can execute commands without questioning your sudo pass each time. More quick so.
+
+You always can go to default pushing 'Import sudoers file' and selecting your backuped file before.
+
 TO DO
 =============================================
 

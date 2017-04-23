@@ -1,5 +1,5 @@
 Package: ubunsys
-Version: 2017.04.08
+Version: 2017.04.24
 Maintainer: Antonio David Gellida Lavara <adgellida@gmail.com>
 Section: utils
 Source: https://github.com/adgellida/ubunsys
@@ -20,6 +20,6 @@ Description: Batch install apps and configure system
  .
  adgellida@gmail.com
  .
- https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys
- .
  https://github.com/adgellida/ubunsys
+ .
+ https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys
