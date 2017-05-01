@@ -61,7 +61,7 @@ Implement code to generate new apps automatically to save a bunch of code lines.
 
 Load saved configurations of personalized user installations.
 
-Download updated database about ppas each time you open app independet of app version.
+Download updated database about ppas each time you open app independent of app version.
 
 Uninstall packages.
 
