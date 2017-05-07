@@ -18,11 +18,11 @@ If you want to use PPA
 
 * Not updated to latest version yet
 
-sudo add-apt-repository -y ppa:adgellida/ubunsys
+`sudo add-apt-repository -y ppa:adgellida/ubunsys`
 
-sudo apt-get -y update
+`sudo apt-get -y update`
 
-sudo apt-get -y install ubunsys
+`sudo apt-get -y install ubunsys`
 
 What this program do
 =============================================
@@ -57,15 +57,22 @@ You always can go to default pushing 'Import sudoers file' and selecting your ba
 TO DO
 =============================================
 
+Search box.
+
 Implement code to generate new apps automatically to save a bunch of code lines.
 
 Load saved configurations of personalized user installations.
 
-Download updated database about ppas each time you open app independent of app version.
+Snap, AppImage, PPA (updated).
 
 Uninstall packages.
 
 Regroup files to clean main directory.
+
+DONE
+=============================================
+
+Download updated database about ppas each time you open app independent of app version. You push "update scripts button" and it does it.
 
 Be care
 =============================================
