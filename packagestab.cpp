@@ -762,7 +762,7 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
     if (ui->checkBox_069->isChecked())
     {
         system("xterm -e bash -c '"
-               "sudo /usr/bin0/069.qmmp"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/069.qmmp"
                " && "
                "exit"
                "; exec bash'");

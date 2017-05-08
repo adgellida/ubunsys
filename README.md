@@ -5,6 +5,10 @@
 
 Configurable app referent to packages, updates and configurations.
 
+Built with Qt 5.7.1. This way it gets libraries from official repositories.
+
+Designed for Ubuntu 17.04 (zesty).
+
 <img src="http://i.imgur.com/1SJR6Af.png" width="500">
 
 <img src="http://i.imgur.com/VbZ6eeb.png" width="500">
@@ -68,6 +72,10 @@ TO DO
 * Load saved configurations of personalized user installations.
 
 * Snap, AppImage, PPA (updated).
+
+* Integer terminal on a widget. Recover mainwindows focus.
+
+* Put apps in alphabetical order.
 
 * Uninstall packages.
 
