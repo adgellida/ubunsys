@@ -59,6 +59,10 @@ TO DO
 
 * Search box.
 
+* Save selection.
+
+* When package selection installed, unselect all boxes or hold them? By now, hold. Unselection commented.
+
 * Implement code to generate new apps automatically to save a bunch of code lines.
 
 * Load saved configurations of personalized user installations.

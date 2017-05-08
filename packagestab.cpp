@@ -75,7 +75,6 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
                "; exec bash'");
     }
 
-
     //007.playdeb
 
     if (ui->checkBox_007->isChecked())
@@ -1787,8 +1786,9 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
                "; exec bash'");
     }
 
-    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
+    //MainWindow::on_unselectAllButton_clicked();
 
+    ui->statusBar->showMessage(tr("Packages installed succesful or with errors. Check it. Select another action"));
 
 }
 
