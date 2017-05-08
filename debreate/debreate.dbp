@@ -1,11 +1,11 @@
 [DEBREATE-0.7.13]
 <<CTRL>>
 Package: ubunsys
-Version: 2017.04.24
+Version: 2017.05.08
 Maintainer: Antonio David Gellida Lavara <adgellida@gmail.com>
 Section: utils
 Source: https://github.com/adgellida/ubunsys
-Homepage: https://www.adgellida.byethost11.com/proyectos/
+Homepage: http://www.adgellida.byethost11.com/proyectos/
 Architecture: all
 Priority: optional
 Depends: debhelper (>=9), qtbase5-dev, qtbase5-dev-tools
@@ -29,9 +29,9 @@ Description: Batch install apps and configure system
 <</CTRL>>
 <<FILES>>
 1
-/home/usuario/githubProjects/ubunsys/images/ubunsys.ico -> ubunsys.ico -> /usr/share/pixmaps
-/home/usuario/githubProjects/ubunsys/ubunsys.desktop* -> ubunsys.desktop -> /usr/share/applications
 /home/usuario/githubProjects/ubunsys/ubunsys* -> ubunsys -> /usr/bin
+/home/usuario/githubProjects/ubunsys/ubunsys.desktop* -> ubunsys.desktop -> /usr/share/applications
+/home/usuario/githubProjects/ubunsys/images/ubunsys.ico* -> ubunsys.ico -> /usr/share/pixmaps
 <</FILES>>
 <<SCRIPTS>>
 <<PREINST>>
@@ -49,14 +49,12 @@ Description: Batch install apps and configure system
 <</SCRIPTS>>
 <<CHANGELOG>>
 <<DEST>>DEFAULT<</DEST>>
-ubunsys (2017.04.24) yakkety; urgency=medium
+ubunsys (2017.05.08) zesty; urgency=medium
 
-  * You can update scripts at the moment you want
-  * Improved Sudoers section
-  * Tutorial with recommendations added
-  * UI improved
+  * Built with Qt 5.7.1. This way it gets libraries from official repositories.
+  * Designed for Ubuntu 17.04 (zesty)
 
- -- Antonio David Gellida Lavara <adgellida@gmail.com>  Mon, 24 Apr 2017 00:44:19 +0200
+ -- Antonio David Gellida Lavara <adgellida@gmail.com>  Mon, 08 May 2017 21:31:31 +0200
 
 <</CHANGELOG>>
 <<COPYRIGHT>>

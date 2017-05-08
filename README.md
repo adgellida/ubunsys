@@ -57,17 +57,19 @@ You always can go to default pushing 'Import sudoers file' and selecting your ba
 TO DO
 =============================================
 
-Search box.
+* Search box.
 
-Implement code to generate new apps automatically to save a bunch of code lines.
+* Implement code to generate new apps automatically to save a bunch of code lines.
 
-Load saved configurations of personalized user installations.
+* Load saved configurations of personalized user installations.
 
-Snap, AppImage, PPA (updated).
+* Snap, AppImage, PPA (updated).
 
-Uninstall packages.
+* Uninstall packages.
 
-Regroup files to clean main directory.
+* Regroup files to clean main directory.
+
+* First add all selected ppas. Then apt-fast -y update and finally install all selected packages. So, more quick.
 
 DONE
 =============================================
