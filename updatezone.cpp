@@ -12,6 +12,10 @@ void MainWindow::on_updateScriptsButton_clicked()
     ui->statusBar->showMessage(tr("Updating latest scripts. Please wait"));
 
     system("xterm -e bash -c '"
+           "echo Updating latest scripts. Please wait..."
+           " && "
+           "echo  "
+           " && "
            //"sudo rm -Rf ~/.ubunsys"
            "sudo rm -Rf ~/.ubunsys/downloads"
            " && "
@@ -35,6 +39,10 @@ void MainWindow::on_updateScriptsButton_clicked()
     //######## Update ubuntupackages
 
     system("xterm -e bash -c '"
+           "echo Updating ubuntupackages. Please wait..."
+           " && "
+           "echo  "
+           " && "
            "sudo ~/.ubunsys/downloads/ubuntuScripts-master/019.downloadLatestUbuntupackages"
            " && "
            "exit"
@@ -42,14 +50,16 @@ void MainWindow::on_updateScriptsButton_clicked()
 
     //######## apt-fast checking
 
-    ui->statusBar->showMessage(tr("Checking if apt-fast is installed and we install it if necessary"));
+    ui->statusBar->showMessage(tr("Checking if apt-fast is installed and we install it if necessary."));
 
     system("xterm -e bash -c '"
-           "echo Please wait"
+           "echo Please wait..."
            " && "
            "echo  "
            " && "
-           "echo Checking if apt-fast installed to download more quick"
+           "echo Checking if apt-fast installed to download more quick."
+           " && "
+           "echo  "
            " && "
            "sudo ~/.ubunsys/downloads/ubuntuScripts-master/020.check_apt-fast_installed"
            " && "

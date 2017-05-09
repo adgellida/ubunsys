@@ -109,6 +109,23 @@ void MainWindow::on_upgradeLatestStableButton_clicked()
     ui->statusBar->showMessage(tr("Upgrade to Latest Stable Version did it succesful. Now select another action"));
 }
 
+void MainWindow::on_installMainlineKernel_clicked()
+{
+    ui->statusBar->showMessage(tr("Checking if ukuu is installed and we install it if necessary"));
+
+    system("xterm -e bash -c '"
+           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/034.check_ukuu_installed"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Running ukuu..."));
+
+    system("ukuu-gtk");
+
+    ui->statusBar->showMessage(tr("ukuu closed. Select another action."));
+}
+
 
 //    Developer
 

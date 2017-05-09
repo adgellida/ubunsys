@@ -1,7 +1,7 @@
 [DEBREATE-0.7.13]
 <<CTRL>>
 Package: ubunsys
-Version: 2017.05.08
+Version: 2017.05.09
 Maintainer: Antonio David Gellida Lavara <adgellida@gmail.com>
 Section: utils
 Source: https://github.com/adgellida/ubunsys
@@ -49,13 +49,11 @@ Description: Batch install apps and configure system
 <</SCRIPTS>>
 <<CHANGELOG>>
 <<DEST>>DEFAULT<</DEST>>
-ubunsys (2017.05.08) zesty; urgency=medium
+ubunsys (2017.05.09) zesty; urgency=medium
 
-  * Built with Qt 5.7.1. This way it gets libraries from official repositories.
-  * Designed for Ubuntu 17.04 (zesty)
+  * Fixed minor bugs
 
- -- Antonio David Gellida Lavara <adgellida@gmail.com>  Mon, 08 May 2017 21:31:31 +0200
-
+ -- Antonio David Gellida Lavara <adgellida@gmail.com>  Tue, 09 May 2017 22:18:27 +0200
 <</CHANGELOG>>
 <<COPYRIGHT>>
 GNU GENERAL PUBLIC LICENSE

@@ -1759,8 +1759,6 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
                "; exec bash'");
     }
 
-    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
-
 
     //169.nylas
 
@@ -1773,14 +1771,34 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
                "; exec bash'");
     }
 
-    ui->statusBar->showMessage(tr("Packages installed succesful. Select another action"));
-
     //170.resetter
 
     if (ui->checkBox_170->isChecked())
     {
         system("xterm -e bash -c '"
                "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/170.resetter"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    //171.shotwell
+
+    if (ui->checkBox_170->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/171.shotwell"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    //172.acestream
+
+    if (ui->checkBox_170->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/172.acestream"
                " && "
                "exit"
                "; exec bash'");
@@ -1962,6 +1980,8 @@ void MainWindow::on_unselectAllButton_clicked()
     ui->checkBox_168->setChecked(false);
     ui->checkBox_169->setChecked(false);
     ui->checkBox_170->setChecked(false);
+    ui->checkBox_171->setChecked(false);
+    ui->checkBox_172->setChecked(false);
 }
 
 void MainWindow::on_selectAllButton_clicked()
@@ -2135,6 +2155,8 @@ void MainWindow::on_selectAllButton_clicked()
     ui->checkBox_168->setChecked(true);
     ui->checkBox_169->setChecked(true);
     ui->checkBox_170->setChecked(true);
+    ui->checkBox_171->setChecked(true);
+    ui->checkBox_172->setChecked(true);
 }
 
 void MainWindow::on_loadSelectionButton_clicked()
@@ -2175,7 +2197,7 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_027->setChecked(true);
     ui->checkBox_028->setChecked(true);
     ui->checkBox_029->setChecked(true);
-    ui->checkBox_030->setChecked(true);
+    ui->checkBox_030->setChecked(false);
     ui->checkBox_031->setChecked(false);
     ui->checkBox_032->setChecked(false);
     ui->checkBox_033->setChecked(false);
@@ -2226,7 +2248,7 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_078->setChecked(true);
     ui->checkBox_079->setChecked(false);
     ui->checkBox_080->setChecked(true);
-    ui->checkBox_081->setChecked(false);
+    ui->checkBox_081->setChecked(true);
     ui->checkBox_082->setChecked(false);
     ui->checkBox_083->setChecked(true);
     ui->checkBox_084->setChecked(false);
@@ -2254,8 +2276,8 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_111->setChecked(false);
     ui->checkBox_112->setChecked(false);
     ui->checkBox_113->setChecked(true);
-    ui->checkBox_114->setChecked(true);
-    ui->checkBox_115->setChecked(true);
+    ui->checkBox_114->setChecked(false);
+    ui->checkBox_115->setChecked(false);
     ui->checkBox_116->setChecked(true);
     ui->checkBox_117->setChecked(true);
     ui->checkBox_118->setChecked(false);
@@ -2272,9 +2294,9 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_129->setChecked(false);
     ui->checkBox_130->setChecked(false);
     ui->checkBox_131->setChecked(false);
-    ui->checkBox_132->setChecked(true);
+    ui->checkBox_132->setChecked(false);
     ui->checkBox_133->setChecked(false);
-    ui->checkBox_134->setChecked(false);
+    ui->checkBox_134->setChecked(true);
     ui->checkBox_135->setChecked(false);
     ui->checkBox_136->setChecked(false);
     ui->checkBox_137->setChecked(false);
@@ -2289,7 +2311,7 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_146->setChecked(false);
     ui->checkBox_147->setChecked(false);
     ui->checkBox_148->setChecked(false);
-    ui->checkBox_149->setChecked(false);
+    ui->checkBox_149->setChecked(true);
     ui->checkBox_150->setChecked(false);
     ui->checkBox_151->setChecked(true);
     ui->checkBox_152->setChecked(false);
@@ -2304,13 +2326,15 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_161->setChecked(true);
     ui->checkBox_162->setChecked(false);
     ui->checkBox_163->setChecked(false);
-    ui->checkBox_164->setChecked(false);
+    ui->checkBox_164->setChecked(true);
     ui->checkBox_165->setChecked(false);
     ui->checkBox_166->setChecked(false);
     ui->checkBox_167->setChecked(false);
-    ui->checkBox_168->setChecked(false);
+    ui->checkBox_168->setChecked(true);
     ui->checkBox_169->setChecked(false);
     ui->checkBox_170->setChecked(false);
+    ui->checkBox_171->setChecked(false);
+    ui->checkBox_172->setChecked(true);
 }
 
 //not implemented yet

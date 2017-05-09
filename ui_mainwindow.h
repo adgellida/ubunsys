@@ -219,6 +219,8 @@ public:
     QCheckBox *checkBox_168;
     QCheckBox *checkBox_169;
     QCheckBox *checkBox_170;
+    QCheckBox *checkBox_171;
+    QCheckBox *checkBox_172;
     QWidget *tab_3;
     QTabWidget *tabWidget_3;
     QWidget *tab_6;
@@ -267,6 +269,8 @@ public:
     QLabel *label_17;
     QLabel *label_59;
     QPushButton *upgradeLatestStableButton;
+    QLabel *label_26;
+    QPushButton *installMainlineKernel;
     QWidget *tab_10;
     QLabel *label_61;
     QPushButton *upgradeLatestDevButton;
@@ -735,13 +739,13 @@ public:
         checkBox_106->setGeometry(QRect(350, 120, 211, 23));
         checkBox_117 = new QCheckBox(tab_12);
         checkBox_117->setObjectName(QStringLiteral("checkBox_117"));
-        checkBox_117->setGeometry(QRect(350, 320, 211, 23));
+        checkBox_117->setGeometry(QRect(350, 340, 211, 23));
         checkBox_118 = new QCheckBox(tab_12);
         checkBox_118->setObjectName(QStringLiteral("checkBox_118"));
         checkBox_118->setGeometry(QRect(350, 360, 211, 23));
         checkBox_116 = new QCheckBox(tab_12);
         checkBox_116->setObjectName(QStringLiteral("checkBox_116"));
-        checkBox_116->setGeometry(QRect(350, 340, 241, 23));
+        checkBox_116->setGeometry(QRect(350, 320, 241, 23));
         tabWidget_2->addTab(tab_12, QString());
         tab_5 = new QWidget();
         tab_5->setObjectName(QStringLiteral("tab_5"));
@@ -901,6 +905,12 @@ public:
         checkBox_170 = new QCheckBox(tab_5);
         checkBox_170->setObjectName(QStringLiteral("checkBox_170"));
         checkBox_170->setGeometry(QRect(410, 260, 161, 23));
+        checkBox_171 = new QCheckBox(tab_5);
+        checkBox_171->setObjectName(QStringLiteral("checkBox_171"));
+        checkBox_171->setGeometry(QRect(410, 280, 161, 23));
+        checkBox_172 = new QCheckBox(tab_5);
+        checkBox_172->setObjectName(QStringLiteral("checkBox_172"));
+        checkBox_172->setGeometry(QRect(410, 300, 161, 23));
         tabWidget_2->addTab(tab_5, QString());
         tabWidget->addTab(tab_4, QString());
         tab_3 = new QWidget();
@@ -1205,6 +1215,16 @@ public:
         upgradeLatestStableButton->setIcon(icon9);
         upgradeLatestStableButton->setIconSize(QSize(30, 30));
         upgradeLatestStableButton->setCheckable(false);
+        label_26 = new QLabel(tab_9);
+        label_26->setObjectName(QStringLiteral("label_26"));
+        label_26->setGeometry(QRect(350, 20, 151, 21));
+        label_26->setFont(font);
+        installMainlineKernel = new QPushButton(tab_9);
+        installMainlineKernel->setObjectName(QStringLiteral("installMainlineKernel"));
+        installMainlineKernel->setGeometry(QRect(300, 10, 41, 36));
+        installMainlineKernel->setIcon(icon11);
+        installMainlineKernel->setIconSize(QSize(30, 30));
+        installMainlineKernel->setCheckable(false);
         tabWidget_4->addTab(tab_9, QString());
         tab_10 = new QWidget();
         tab_10->setObjectName(QStringLiteral("tab_10"));
@@ -1405,8 +1425,8 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(1);
-        tabWidget_2->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(2);
+        tabWidget_2->setCurrentIndex(2);
         tabWidget_3->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(1);
         tabWidget_5->setCurrentIndex(0);
@@ -1604,6 +1624,8 @@ public:
         checkBox_168->setText(QApplication::translate("MainWindow", "168.debreate", Q_NULLPTR));
         checkBox_169->setText(QApplication::translate("MainWindow", "169.nylas", Q_NULLPTR));
         checkBox_170->setText(QApplication::translate("MainWindow", "170.resetter", Q_NULLPTR));
+        checkBox_171->setText(QApplication::translate("MainWindow", "171.shotwell", Q_NULLPTR));
+        checkBox_172->setText(QApplication::translate("MainWindow", "172.acestream", Q_NULLPTR));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("MainWindow", "Packages 3/3", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Packages", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
@@ -1771,6 +1793,15 @@ public:
 #endif // QT_NO_WHATSTHIS
         upgradeLatestStableButton->setText(QString());
         upgradeLatestStableButton->setShortcut(QString());
+        label_26->setText(QApplication::translate("MainWindow", "Install mainline kernel", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        installMainlineKernel->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Install latest kernel with ukuu</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_WHATSTHIS
+        installMainlineKernel->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        installMainlineKernel->setText(QString());
+        installMainlineKernel->setShortcut(QString());
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", Q_NULLPTR));
         label_61->setText(QApplication::translate("MainWindow", "Upgrade to latest dev", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
@@ -1847,7 +1878,7 @@ public:
         label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.05.08", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.05.09", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP

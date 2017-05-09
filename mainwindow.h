@@ -125,6 +125,8 @@ private slots:
 
     void on_importSudoersFileButton_clicked();
 
+    void on_installMainlineKernel_clicked();
+
 private:
     Ui::MainWindow *ui;
 

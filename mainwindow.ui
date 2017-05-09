@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -134,7 +134,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_11">
        <attribute name="title">
@@ -1579,7 +1579,7 @@
         <property name="geometry">
          <rect>
           <x>350</x>
-          <y>320</y>
+          <y>340</y>
           <width>211</width>
           <height>23</height>
          </rect>
@@ -1605,7 +1605,7 @@
         <property name="geometry">
          <rect>
           <x>350</x>
-          <y>340</y>
+          <y>320</y>
           <width>241</width>
           <height>23</height>
          </rect>
@@ -2293,6 +2293,32 @@
         </property>
         <property name="text">
          <string>170.resetter</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_171">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>280</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>171.shotwell</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_172">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>300</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>172.acestream</string>
         </property>
        </widget>
       </widget>
@@ -3813,6 +3839,60 @@ Set to default</string>
          <bool>false</bool>
         </property>
        </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>20</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Install mainline kernel</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="installMainlineKernel">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>10</y>
+          <width>41</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Install latest kernel with ukuu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/flecha_arriba.png</normaloff>:/images/flecha_arriba.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_10">
        <attribute name="title">
@@ -4524,7 +4604,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.05.08</string>
+     <string>v2017.05.09</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">
