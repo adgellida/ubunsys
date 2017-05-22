@@ -7,13 +7,13 @@ Configurable app designed for Ubuntu 17.04 (zesty) referent to packages, updates
 
 Built with Qt 5.7.1. This way it gets libraries from official repositories.
 
-<img src="http://i.imgur.com/1SJR6Af.png" width="500">
+<img src="http://i.imgur.com/rOZY92b.png" width="500">
 
-<img src="http://i.imgur.com/VbZ6eeb.png" width="500">
+<img src="http://i.imgur.com/Wy6Tv4b.png" width="500">
 
-<img src="http://i.imgur.com/TPPM5vN.png" width="500">
+<img src="http://i.imgur.com/omnhGYV.png" width="500">
 
-<img src="http://i.imgur.com/SrJCFeE.png" width="500">
+<img src="http://i.imgur.com/rympo8x.png" width="500">
 
 If you want to use PPA
 =============================================
