@@ -60,13 +60,6 @@ to push this button when you don't need this security and want speed. Then disab
 
 * Check system integrity, repair network, missing GPG keys.
 
-
-Be careful! These initial versions has a lot of bugs and disabled functionalities.
-
-If you want to help on this dev, say to me.
-
-If you need help about compilation and packaging I have basic notions, ask me.
-
 Tutorial
 =============================================
 
@@ -138,6 +131,12 @@ DONE
 
 Be care
 =============================================
+
+Be careful! These initial versions has a lot of bugs and disabled functionalities.
+
+If you want to help on this dev, say to me.
+
+If you need help about compilation and packaging I have basic notions, ask me.
 
 I'm not a senior programmer, nor junior. I program as a hobby. So I'm not following professional coding practises.
 
