@@ -134,7 +134,7 @@ TO DO
 DONE
 =============================================
 
-Download updated database about ppas each time you open app independent of app version. You push "update scripts button" and it does it.
+* Download updated database about ppas each time you open app independent of app version. You push "update scripts button" and it does it.
 
 Be care
 =============================================
