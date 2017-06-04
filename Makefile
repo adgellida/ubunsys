@@ -568,7 +568,7 @@ distdir: FORCE
 	$(COPY_FILE) --parents mainwindow.h $(DISTDIR)/
 	$(COPY_FILE) --parents main.cpp mainwindow.cpp toolbartab.cpp repairtab.cpp systemtab.cpp tweakstab.cpp updatezone.cpp packagestab.cpp about.cpp tutorial.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents mainwindow.ui $(DISTDIR)/
-	$(COPY_FILE) --parents qrc:/languages/ubunsys_es_ES.ts $(DISTDIR)/
+	$(COPY_FILE) --parents languages/ubunsys_es_ES.ts $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -2639,7 +2639,9 @@ updatezone.o: updatezone.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/QDesktopServices \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qdesktopservices.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o updatezone.o updatezone.cpp
 
 packagestab.o: packagestab.cpp mainwindow.h \

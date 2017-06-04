@@ -34,5 +34,6 @@
 # Extra
 *.pro.user
 *.pro.user*
+wget-log*
 #Makefile
 #moc_mainwindow.cpp

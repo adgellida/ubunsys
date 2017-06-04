@@ -32,4 +32,4 @@ RESOURCES += \
 
 DISTFILES +=
 
-TRANSLATIONS += qrc:/languages/ubunsys_es_ES.ts
+TRANSLATIONS += languages/ubunsys_es_ES.ts
