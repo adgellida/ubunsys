@@ -41,6 +41,8 @@ public:
     QAction *actionCut;
     QAction *actionPreferences;
     QAction *actionTutorial;
+    QAction *actionEnglish;
+    QAction *actionSpanish;
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *tab_4;
@@ -242,6 +244,8 @@ public:
     QPushButton *disableFirewallButton;
     QPushButton *importSudoersFileButton;
     QLabel *label_13;
+    QLabel *label_32;
+    QPushButton *runGrubcustomizerButton;
     QWidget *tab_7;
     QPushButton *installTemplatesButton;
     QLabel *label_62;
@@ -249,6 +253,9 @@ public:
     QLabel *label_11;
     QPushButton *setToDefaults90sShutdownTimeoutButton;
     QPushButton *reduceTo5sShutdownTimeoutButton;
+    QLabel *label_33;
+    QPushButton *disableLockScrennButton;
+    QPushButton *enableLockScreenlButton;
     QWidget *tab;
     QTabWidget *tabWidget_4;
     QWidget *tab_8;
@@ -370,6 +377,10 @@ public:
         actionPreferences->setEnabled(false);
         actionTutorial = new QAction(MainWindow);
         actionTutorial->setObjectName(QStringLiteral("actionTutorial"));
+        actionEnglish = new QAction(MainWindow);
+        actionEnglish->setObjectName(QStringLiteral("actionEnglish"));
+        actionSpanish = new QAction(MainWindow);
+        actionSpanish->setObjectName(QStringLiteral("actionSpanish"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
@@ -931,7 +942,7 @@ public:
         doInvisibleAsterisksButton->setCheckable(false);
         label_6 = new QLabel(tab_6);
         label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setGeometry(QRect(10, 120, 141, 16));
+        label_6->setGeometry(QRect(10, 120, 211, 16));
         QFont font1;
         font1.setBold(true);
         font1.setWeight(75);
@@ -1046,7 +1057,7 @@ public:
         disableSudoWithoutPassButton->setCheckable(false);
         label_10 = new QLabel(tab_6);
         label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setGeometry(QRect(10, 10, 151, 16));
+        label_10->setGeometry(QRect(10, 10, 221, 16));
         label_10->setFont(font1);
         openSudoersFileButton = new QPushButton(tab_6);
         openSudoersFileButton->setObjectName(QStringLiteral("openSudoersFileButton"));
@@ -1081,6 +1092,15 @@ public:
         label_13->setObjectName(QStringLiteral("label_13"));
         label_13->setGeometry(QRect(450, 10, 61, 16));
         label_13->setFont(font1);
+        label_32 = new QLabel(tab_6);
+        label_32->setObjectName(QStringLiteral("label_32"));
+        label_32->setGeometry(QRect(450, 270, 141, 16));
+        label_32->setFont(font1);
+        runGrubcustomizerButton = new QPushButton(tab_6);
+        runGrubcustomizerButton->setObjectName(QStringLiteral("runGrubcustomizerButton"));
+        runGrubcustomizerButton->setGeometry(QRect(450, 290, 221, 36));
+        runGrubcustomizerButton->setIconSize(QSize(30, 30));
+        runGrubcustomizerButton->setCheckable(false);
         tabWidget_3->addTab(tab_6, QString());
         tab_7 = new QWidget();
         tab_7->setObjectName(QStringLiteral("tab_7"));
@@ -1095,11 +1115,11 @@ public:
         label_62->setFont(font);
         label_5 = new QLabel(tab_7);
         label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setGeometry(QRect(10, 10, 141, 16));
+        label_5->setGeometry(QRect(10, 10, 211, 16));
         label_5->setFont(font1);
         label_11 = new QLabel(tab_7);
         label_11->setObjectName(QStringLiteral("label_11"));
-        label_11->setGeometry(QRect(10, 70, 231, 41));
+        label_11->setGeometry(QRect(10, 70, 381, 41));
         label_11->setFont(font1);
         setToDefaults90sShutdownTimeoutButton = new QPushButton(tab_7);
         setToDefaults90sShutdownTimeoutButton->setObjectName(QStringLiteral("setToDefaults90sShutdownTimeoutButton"));
@@ -1111,6 +1131,20 @@ public:
         reduceTo5sShutdownTimeoutButton->setGeometry(QRect(10, 110, 221, 36));
         reduceTo5sShutdownTimeoutButton->setIconSize(QSize(30, 30));
         reduceTo5sShutdownTimeoutButton->setCheckable(false);
+        label_33 = new QLabel(tab_7);
+        label_33->setObjectName(QStringLiteral("label_33"));
+        label_33->setGeometry(QRect(10, 200, 211, 16));
+        label_33->setFont(font1);
+        disableLockScrennButton = new QPushButton(tab_7);
+        disableLockScrennButton->setObjectName(QStringLiteral("disableLockScrennButton"));
+        disableLockScrennButton->setGeometry(QRect(10, 260, 221, 36));
+        disableLockScrennButton->setIconSize(QSize(30, 30));
+        disableLockScrennButton->setCheckable(false);
+        enableLockScreenlButton = new QPushButton(tab_7);
+        enableLockScreenlButton->setObjectName(QStringLiteral("enableLockScreenlButton"));
+        enableLockScreenlButton->setGeometry(QRect(10, 220, 221, 36));
+        enableLockScreenlButton->setIconSize(QSize(30, 30));
+        enableLockScreenlButton->setCheckable(false);
         tabWidget_3->addTab(tab_7, QString());
         tabWidget->addTab(tab_3, QString());
         tab = new QWidget();
@@ -1122,7 +1156,7 @@ public:
         tab_8->setObjectName(QStringLiteral("tab_8"));
         label_16 = new QLabel(tab_8);
         label_16->setObjectName(QStringLiteral("label_16"));
-        label_16->setGeometry(QRect(60, 220, 91, 21));
+        label_16->setGeometry(QRect(60, 220, 161, 21));
         label_16->setFont(font);
         upgradeReposButton = new QPushButton(tab_8);
         upgradeReposButton->setObjectName(QStringLiteral("upgradeReposButton"));
@@ -1135,7 +1169,7 @@ public:
         upgradeReposButton->setCheckable(false);
         label_15 = new QLabel(tab_8);
         label_15->setObjectName(QStringLiteral("label_15"));
-        label_15->setGeometry(QRect(60, 20, 251, 20));
+        label_15->setGeometry(QRect(60, 20, 331, 20));
         label_15->setFont(font);
         updateReposButton = new QPushButton(tab_8);
         updateReposButton->setObjectName(QStringLiteral("updateReposButton"));
@@ -1146,11 +1180,11 @@ public:
         updateReposButton->setCheckable(false);
         label_31 = new QLabel(tab_8);
         label_31->setObjectName(QStringLiteral("label_31"));
-        label_31->setGeometry(QRect(60, 120, 111, 21));
+        label_31->setGeometry(QRect(60, 120, 221, 21));
         label_31->setFont(font);
         label_14 = new QLabel(tab_8);
         label_14->setObjectName(QStringLiteral("label_14"));
-        label_14->setGeometry(QRect(60, 70, 101, 21));
+        label_14->setGeometry(QRect(60, 70, 251, 21));
         label_14->setFont(font);
         basicPackagesInstallButton = new QPushButton(tab_8);
         basicPackagesInstallButton->setObjectName(QStringLiteral("basicPackagesInstallButton"));
@@ -1162,7 +1196,7 @@ public:
         basicPackagesInstallButton->setCheckable(false);
         label_25 = new QLabel(tab_8);
         label_25->setObjectName(QStringLiteral("label_25"));
-        label_25->setGeometry(QRect(60, 170, 241, 21));
+        label_25->setGeometry(QRect(60, 170, 351, 21));
         label_25->setFont(font);
         updateAndUpgradeButton = new QPushButton(tab_8);
         updateAndUpgradeButton->setObjectName(QStringLiteral("updateAndUpgradeButton"));
@@ -1185,7 +1219,7 @@ public:
         tab_9->setObjectName(QStringLiteral("tab_9"));
         label_60 = new QLabel(tab_9);
         label_60->setObjectName(QStringLiteral("label_60"));
-        label_60->setGeometry(QRect(60, 120, 171, 21));
+        label_60->setGeometry(QRect(60, 120, 331, 21));
         label_60->setFont(font);
         cleanKernelsButton = new QPushButton(tab_9);
         cleanKernelsButton->setObjectName(QStringLiteral("cleanKernelsButton"));
@@ -1203,11 +1237,11 @@ public:
         dist_upgradeButton->setCheckable(false);
         label_17 = new QLabel(tab_9);
         label_17->setObjectName(QStringLiteral("label_17"));
-        label_17->setGeometry(QRect(60, 20, 151, 21));
+        label_17->setGeometry(QRect(60, 20, 231, 21));
         label_17->setFont(font);
         label_59 = new QLabel(tab_9);
         label_59->setObjectName(QStringLiteral("label_59"));
-        label_59->setGeometry(QRect(60, 70, 151, 21));
+        label_59->setGeometry(QRect(60, 70, 231, 21));
         label_59->setFont(font);
         upgradeLatestStableButton = new QPushButton(tab_9);
         upgradeLatestStableButton->setObjectName(QStringLiteral("upgradeLatestStableButton"));
@@ -1217,7 +1251,7 @@ public:
         upgradeLatestStableButton->setCheckable(false);
         label_26 = new QLabel(tab_9);
         label_26->setObjectName(QStringLiteral("label_26"));
-        label_26->setGeometry(QRect(350, 20, 151, 21));
+        label_26->setGeometry(QRect(350, 20, 231, 21));
         label_26->setFont(font);
         installMainlineKernel = new QPushButton(tab_9);
         installMainlineKernel->setObjectName(QStringLiteral("installMainlineKernel"));
@@ -1230,7 +1264,7 @@ public:
         tab_10->setObjectName(QStringLiteral("tab_10"));
         label_61 = new QLabel(tab_10);
         label_61->setObjectName(QStringLiteral("label_61"));
-        label_61->setGeometry(QRect(60, 20, 151, 21));
+        label_61->setGeometry(QRect(60, 20, 311, 21));
         label_61->setFont(font);
         upgradeLatestDevButton = new QPushButton(tab_10);
         upgradeLatestDevButton->setObjectName(QStringLiteral("upgradeLatestDevButton"));
@@ -1249,7 +1283,7 @@ public:
         tab_13->setObjectName(QStringLiteral("tab_13"));
         label_28 = new QLabel(tab_13);
         label_28->setObjectName(QStringLiteral("label_28"));
-        label_28->setGeometry(QRect(60, 190, 171, 21));
+        label_28->setGeometry(QRect(60, 210, 171, 21));
         label_28->setFont(font);
         label_2 = new QLabel(tab_13);
         label_2->setObjectName(QStringLiteral("label_2"));
@@ -1266,44 +1300,44 @@ public:
         integrityCheckButton->setCheckable(false);
         label_18 = new QLabel(tab_13);
         label_18->setObjectName(QStringLiteral("label_18"));
-        label_18->setGeometry(QRect(60, 50, 141, 16));
+        label_18->setGeometry(QRect(60, 60, 141, 16));
         label_18->setFont(font);
         repairNetworkButton = new QPushButton(tab_13);
         repairNetworkButton->setObjectName(QStringLiteral("repairNetworkButton"));
-        repairNetworkButton->setGeometry(QRect(10, 110, 40, 36));
+        repairNetworkButton->setGeometry(QRect(10, 120, 40, 36));
         repairNetworkButton->setMaximumSize(QSize(40, 40));
         repairNetworkButton->setIcon(icon12);
         repairNetworkButton->setIconSize(QSize(30, 30));
         repairNetworkButton->setCheckable(false);
         label_30 = new QLabel(tab_13);
         label_30->setObjectName(QStringLiteral("label_30"));
-        label_30->setGeometry(QRect(60, 30, 251, 16));
+        label_30->setGeometry(QRect(60, 40, 251, 16));
         label_30->setFont(font1);
         label_29 = new QLabel(tab_13);
         label_29->setObjectName(QStringLiteral("label_29"));
-        label_29->setGeometry(QRect(10, 150, 181, 16));
+        label_29->setGeometry(QRect(10, 180, 321, 16));
         label_29->setFont(font1);
         repairGPGKeys = new QPushButton(tab_13);
         repairGPGKeys->setObjectName(QStringLiteral("repairGPGKeys"));
-        repairGPGKeys->setGeometry(QRect(10, 180, 40, 36));
+        repairGPGKeys->setGeometry(QRect(10, 200, 40, 36));
         repairGPGKeys->setMaximumSize(QSize(40, 40));
         repairGPGKeys->setIcon(icon12);
         repairGPGKeys->setIconSize(QSize(30, 30));
         repairGPGKeys->setCheckable(false);
         label_27 = new QLabel(tab_13);
         label_27->setObjectName(QStringLiteral("label_27"));
-        label_27->setGeometry(QRect(60, 120, 271, 16));
+        label_27->setGeometry(QRect(60, 130, 271, 16));
         label_27->setFont(font);
         label_9 = new QLabel(tab_13);
         label_9->setObjectName(QStringLiteral("label_9"));
-        label_9->setGeometry(QRect(10, 80, 111, 16));
+        label_9->setGeometry(QRect(10, 100, 111, 16));
         label_9->setFont(font1);
         tabWidget_5->addTab(tab_13, QString());
         tab_14 = new QWidget();
         tab_14->setObjectName(QStringLiteral("tab_14"));
         label_3 = new QLabel(tab_14);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(10, 10, 451, 16));
+        label_3->setGeometry(QRect(10, 10, 541, 16));
         label_3->setFont(font1);
         label_22 = new QLabel(tab_14);
         label_22->setObjectName(QStringLiteral("label_22"));
@@ -1359,7 +1393,7 @@ public:
         fixBrokenPackagesButton_4->setCheckable(false);
         label_24 = new QLabel(tab_14);
         label_24->setObjectName(QStringLiteral("label_24"));
-        label_24->setGeometry(QRect(60, 240, 211, 40));
+        label_24->setGeometry(QRect(60, 240, 441, 40));
         label_24->setFont(font);
         fixBrokenPackagesButton_5 = new QPushButton(tab_14);
         fixBrokenPackagesButton_5->setObjectName(QStringLiteral("fixBrokenPackagesButton_5"));
@@ -1425,10 +1459,10 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(2);
-        tabWidget_3->setCurrentIndex(0);
-        tabWidget_4->setCurrentIndex(1);
+        tabWidget_3->setCurrentIndex(1);
+        tabWidget_4->setCurrentIndex(0);
         tabWidget_5->setCurrentIndex(0);
 
 
@@ -1451,6 +1485,8 @@ public:
         actionCut->setIconText(QApplication::translate("MainWindow", "Cortar", Q_NULLPTR));
         actionPreferences->setText(QApplication::translate("MainWindow", "Preferences", Q_NULLPTR));
         actionTutorial->setText(QApplication::translate("MainWindow", "Tutorial", Q_NULLPTR));
+        actionEnglish->setText(QApplication::translate("MainWindow", "English", Q_NULLPTR));
+        actionSpanish->setText(QApplication::translate("MainWindow", "Spanish", Q_NULLPTR));
         unselectAllButton->setText(QApplication::translate("MainWindow", "Unselect All", Q_NULLPTR));
         selectAllButton->setText(QApplication::translate("MainWindow", "Select All", Q_NULLPTR));
         installSelectedPackagesButton->setText(QApplication::translate("MainWindow", "Install", Q_NULLPTR));
@@ -1698,6 +1734,12 @@ public:
         importSudoersFileButton->setText(QApplication::translate("MainWindow", "Import sudoers file", Q_NULLPTR));
         importSudoersFileButton->setShortcut(QString());
         label_13->setText(QApplication::translate("MainWindow", "Sudoers", Q_NULLPTR));
+        label_32->setText(QApplication::translate("MainWindow", "Dual boot", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        runGrubcustomizerButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Launches grub-customizer</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        runGrubcustomizerButton->setText(QApplication::translate("MainWindow", "Configure", Q_NULLPTR));
+        runGrubcustomizerButton->setShortcut(QString());
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/2", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         installTemplatesButton->setWhatsThis(QString());
@@ -1718,6 +1760,17 @@ public:
 #endif // QT_NO_WHATSTHIS
         reduceTo5sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Reduce to 5s", Q_NULLPTR));
         reduceTo5sShutdownTimeoutButton->setShortcut(QString());
+        label_33->setText(QApplication::translate("MainWindow", "Lock screen", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        disableLockScrennButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        disableLockScrennButton->setText(QApplication::translate("MainWindow", "Disable Lock screen", Q_NULLPTR));
+        disableLockScrennButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        enableLockScreenlButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        enableLockScreenlButton->setText(QApplication::translate("MainWindow", "Enable Lock screen", Q_NULLPTR));
+        enableLockScreenlButton->setShortcut(QString());
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", Q_NULLPTR));
         label_16->setText(QApplication::translate("MainWindow", "Clean system", Q_NULLPTR));
@@ -1729,7 +1782,7 @@ public:
 #endif // QT_NO_WHATSTHIS
         upgradeReposButton->setText(QString());
         upgradeReposButton->setShortcut(QString());
-        label_15->setText(QApplication::translate("MainWindow", "Default update & upgrade system", Q_NULLPTR));
+        label_15->setText(QApplication::translate("MainWindow", "Default update & upgrade packages", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateReposButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
@@ -1783,7 +1836,7 @@ public:
 #endif // QT_NO_WHATSTHIS
         dist_upgradeButton->setText(QString());
         dist_upgradeButton->setShortcut(QString());
-        label_17->setText(QApplication::translate("MainWindow", "Smart system update", Q_NULLPTR));
+        label_17->setText(QApplication::translate("MainWindow", "Smart packages update", Q_NULLPTR));
         label_59->setText(QApplication::translate("MainWindow", "Clean ancient kernels", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         upgradeLatestStableButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>do-release-upgrade</p></body></html>", Q_NULLPTR));
@@ -1878,7 +1931,7 @@ public:
         label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.05.09", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.06.04", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP

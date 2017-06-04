@@ -62,7 +62,7 @@ void MainWindow::on_backupSudoersFileButton_clicked()
            "exit"
            "; exec bash'");
 
-    QMessageBox::information(this,tr("File Name"),"Backuped OK on \n" + QDir::homePath() + "/.ubunsys/backups/sudoersFiles");
+    QMessageBox::information(this,tr("Notification"),tr("Backuped OK on \n\n") + QDir::homePath() + "/.ubunsys/backups/sudoersFiles");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
@@ -240,6 +240,47 @@ void MainWindow::on_disableFirewallButton_clicked()
            "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
            " && "
            "~/.ubunsys/downloads/ubuntuScripts-master/032.disableFirewall"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_runGrubcustomizerButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Installs/runs grub-customizer. Please wait"));
+
+    system("xterm -e bash -c '"
+           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/044.grub-customizer"
+           " && "
+           "sudo grub-customizer"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_enableLockScreenlButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling lock screen"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/036.enableLockScreen"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_disableLockScrennButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling lock screen"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
            " && "
            "exit"
            "; exec bash'");

@@ -127,6 +127,12 @@ private slots:
 
     void on_installMainlineKernel_clicked();
 
+    void on_runGrubcustomizerButton_clicked();
+
+    void on_enableLockScreenlButton_clicked();
+
+    void on_disableLockScrennButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 

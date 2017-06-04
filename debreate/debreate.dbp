@@ -1,7 +1,7 @@
 [DEBREATE-0.7.13]
 <<CTRL>>
 Package: ubunsys
-Version: 2017.05.09
+Version: 2017.06.04
 Maintainer: Antonio David Gellida Lavara <adgellida@gmail.com>
 Section: utils
 Source: https://github.com/adgellida/ubunsys
@@ -29,9 +29,9 @@ Description: Batch install apps and configure system
 <</CTRL>>
 <<FILES>>
 1
-/home/usuario/githubProjects/ubunsys/ubunsys* -> ubunsys -> /usr/bin
-/home/usuario/githubProjects/ubunsys/ubunsys.desktop* -> ubunsys.desktop -> /usr/share/applications
 /home/usuario/githubProjects/ubunsys/images/ubunsys.ico* -> ubunsys.ico -> /usr/share/pixmaps
+/home/usuario/githubProjects/ubunsys/ubunsys.desktop* -> ubunsys.desktop -> /usr/share/applications
+/home/usuario/githubProjects/ubunsys/ubunsys* -> ubunsys -> /usr/bin
 <</FILES>>
 <<SCRIPTS>>
 <<PREINST>>
@@ -49,11 +49,13 @@ Description: Batch install apps and configure system
 <</SCRIPTS>>
 <<CHANGELOG>>
 <<DEST>>DEFAULT<</DEST>>
-ubunsys (2017.05.09) zesty; urgency=medium
+ubunsys (2017.06.04) zesty; urgency=medium
 
-  * Fixed minor bugs
+  * Added spanish language . For now with no language selection.
+  * Added a few new functionalities
 
- -- Antonio David Gellida Lavara <adgellida@gmail.com>  Tue, 09 May 2017 22:18:27 +0200
+ -- Antonio David Gellida Lavara <adgellida@gmail.com>  Sun, 04 Jun 2017 11:11:10 +0200
+
 <</CHANGELOG>>
 <<COPYRIGHT>>
 GNU GENERAL PUBLIC LICENSE

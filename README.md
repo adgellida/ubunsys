@@ -84,11 +84,7 @@ You always can go to default pushing 'Import sudoers file' and selecting your ba
 TO DO
 =============================================
 
-* Disable lock session, keyring.
-
 * Search box.
-
-* Translate app to Spanish.
 
 * Improve ubuntu fonts.
 
@@ -110,8 +106,6 @@ TO DO
 
 * Backup user folder
 
-* Grub customizer launch button.
-
 * Run scripts selector.
 
 * Integer terminal on a widget. Recover mainwindows focus.
@@ -124,8 +118,16 @@ TO DO
 
 * First add all selected ppas. Then apt-fast -y update and finally install all selected packages. So, more quick.
 
+* Disable keyring.
+
 DONE
 =============================================
+
+* Disable lock session.
+
+* Grub customizer launch button.
+
+* Translate app to Spanish.
 
 * Download updated database about ppas each time you open app independent of app version. You push "update scripts button" and it does it.
 

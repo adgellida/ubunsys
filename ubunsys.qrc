@@ -23,5 +23,7 @@
         <file>images/red-number-5.jpg</file>
         <file>images/red-number-6.jpg</file>
         <file>images/ubunsys.ico</file>
+        <file>languages/ubunsys_es_ES.qm</file>
+        <file>languages/ubunsys_es_ES.ts</file>
     </qresource>
 </RCC>

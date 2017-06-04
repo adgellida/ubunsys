@@ -31,3 +31,5 @@ RESOURCES += \
     ubunsys.qrc
 
 DISTFILES +=
+
+TRANSLATIONS += qrc:/languages/ubunsys_es_ES.ts

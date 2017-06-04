@@ -568,6 +568,7 @@ distdir: FORCE
 	$(COPY_FILE) --parents mainwindow.h $(DISTDIR)/
 	$(COPY_FILE) --parents main.cpp mainwindow.cpp toolbartab.cpp repairtab.cpp systemtab.cpp tweakstab.cpp updatezone.cpp packagestab.cpp about.cpp tutorial.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents mainwindow.ui $(DISTDIR)/
+	$(COPY_FILE) --parents qrc:/languages/ubunsys_es_ES.ts $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -618,7 +619,9 @@ qrc_ubunsys.cpp: ubunsys.qrc \
 		images/save.png \
 		images/cut.png \
 		images/new.png \
-		images/install.png
+		images/install.png \
+		languages/ubunsys_es_ES.qm \
+		languages/ubunsys_es_ES.ts
 	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/rcc -name ubunsys ubunsys.qrc -o qrc_ubunsys.cpp
 
 compiler_moc_header_make_all: moc_mainwindow.cpp
@@ -1080,7 +1083,8 @@ main.o: main.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qapplication.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qguiapplication.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qinputmethod.h
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QTranslator
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 mainwindow.o: mainwindow.cpp mainwindow.h \
@@ -1298,7 +1302,47 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qaction.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QApplication \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qguiapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QCheckBox \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qframe.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvalidator.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QLabel \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenu \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenu.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenuBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenubar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QPushButton \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
 toolbartab.o: toolbartab.cpp mainwindow.h \
@@ -1516,7 +1560,47 @@ toolbartab.o: toolbartab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qaction.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QApplication \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qguiapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QCheckBox \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qframe.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvalidator.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QLabel \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenu \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenu.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenuBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenubar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QPushButton \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o toolbartab.o toolbartab.cpp
 
 repairtab.o: repairtab.cpp mainwindow.h \
@@ -1734,7 +1818,47 @@ repairtab.o: repairtab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qaction.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QApplication \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qguiapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QCheckBox \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qframe.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvalidator.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QLabel \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenu \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenu.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenuBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenubar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QPushButton \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o repairtab.o repairtab.cpp
 
 systemtab.o: systemtab.cpp mainwindow.h \
@@ -1952,7 +2076,47 @@ systemtab.o: systemtab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qaction.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QApplication \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qguiapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QCheckBox \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qframe.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvalidator.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QLabel \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenu \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenu.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenuBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenubar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QPushButton \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o systemtab.o systemtab.cpp
 
 tweakstab.o: tweakstab.cpp mainwindow.h \
@@ -2171,6 +2335,46 @@ tweakstab.o: tweakstab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
 		ui_mainwindow.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qaction.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QApplication \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qguiapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QCheckBox \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qframe.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvalidator.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QLabel \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenu \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenu.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenuBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenubar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QPushButton \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QFileDialog \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qfiledialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
@@ -2395,7 +2599,47 @@ updatezone.o: updatezone.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qaction.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QApplication \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qguiapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QCheckBox \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qframe.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvalidator.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QLabel \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenu \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenu.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenuBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenubar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QPushButton \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o updatezone.o updatezone.cpp
 
 packagestab.o: packagestab.cpp mainwindow.h \
@@ -2613,7 +2857,47 @@ packagestab.o: packagestab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qaction.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QApplication \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qguiapplication.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QCheckBox \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qframe.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvalidator.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QLabel \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenu \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenu.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMenuBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmenubar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QPushButton \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o packagestab.o packagestab.cpp
 
 about.o: about.cpp mainwindow.h \

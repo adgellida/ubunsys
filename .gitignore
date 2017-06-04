@@ -34,3 +34,5 @@
 # Extra
 *.pro.user
 *.pro.user*
+#Makefile
+#moc_mainwindow.cpp

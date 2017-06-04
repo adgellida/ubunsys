@@ -15,6 +15,9 @@ MainWindow::MainWindow(QWidget *parent) :
     //another way to se tooltips
     //ui->enableSudoWithoutPassButton->setToolTip("Almost no more questions\n about your password");
 
+    //Update scrips
+    on_updateScriptsButton_clicked();
+
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
     //ui->statusBar->showMessage(tr("Recommendation: First 'Backup sudoers file' and then 'Enable sudo without pass' for more speed"));
@@ -24,10 +27,13 @@ MainWindow::MainWindow(QWidget *parent) :
            " && "
            "exit"
            "; exec bash'");
-
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+
+
+
