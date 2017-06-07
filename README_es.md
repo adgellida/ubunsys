@@ -3,6 +3,8 @@
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/ubunsys.ico" width="80">
 
+**For English push [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
+
 App configurable diseñada para Ubuntu (17.04 zesty, por ahora) referente a paquetes, actualizaciones y configuraciones.
 
 Construido con Qt 5.7.1. De esta manera obtiene las librerias de los repositorios oficiales.
@@ -14,8 +16,6 @@ Construido con Qt 5.7.1. De esta manera obtiene las librerias de los repositorio
 <img src="http://i.imgur.com/omnhGYV.png" width="500">
 
 <img src="http://i.imgur.com/rympo8x.png" width="500">
-
-For English push [here](https://github.com/adgellida/ubunsys/blob/master/README.md)
 
 Descarga
 =============================================

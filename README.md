@@ -3,6 +3,8 @@
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/ubunsys.ico" width="80">
 
+**Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es.md)**
+
 Configurable app designed for Ubuntu (17.04 zesty for now) referent to packages, updates and configurations.
 
 Built with Qt 5.7.1. This way it gets libraries from official repositories.
@@ -14,8 +16,6 @@ Built with Qt 5.7.1. This way it gets libraries from official repositories.
 <img src="http://i.imgur.com/omnhGYV.png" width="500">
 
 <img src="http://i.imgur.com/rympo8x.png" width="500">
-
-Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es.md)
 
 Download
 =============================================
