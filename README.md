@@ -134,7 +134,7 @@ DONE
 If you want to use PPA
 =============================================
 
-* Not updated to latest version yet, don't use for now. It will be fixed when I know how.
+* Not updated to latest version yet, don't use for now. It will be fixed when I know how...
 
 `sudo add-apt-repository -y ppa:adgellida/ubunsys`
 
