@@ -1361,7 +1361,7 @@ apt-fast -y clean</source>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="4924"/>
-        <location filename="../tutorial.cpp" line="22"/>
+        <location filename="../tutorial.cpp" line="20"/>
         <source>Tutorial</source>
         <translation></translation>
     </message>
@@ -1765,19 +1765,18 @@ apt-fast -y clean</source>
     <message>
         <location filename="../updatezone.cpp" line="82"/>
         <source>For now launches to release page to update manually. Please wait.</source>
-        <translation type="unfinished">Por ahora lanza la página de versiones para actualizar manualmente. Espere por favor.</translation>
+        <translation>Por ahora lanza la página de versiones para actualizar manualmente. Espere por favor.</translation>
     </message>
     <message>
         <source>Function not implemented yet. May be an update is present</source>
         <translation type="vanished">Función no implementada aún. Puede que una actualización esté presente</translation>
     </message>
     <message>
-        <location filename="../tutorial.cpp" line="12"/>
         <source>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Recommended steps:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Push on &apos;Update scripts&apos; button&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Near the program version (green up arrow)&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Push on &apos;Backup sudoers file&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Then push on &apos;Enable sudo without pass&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;
 &lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;This way you can execute commands without questioning your sudo pass each time. More quick so.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;You always can go to default pushing &apos;Import sudoers file&apos; and selecting your backuped file before.&lt;/p&gt;&lt;/br&gt;</source>
         <oldsource>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Recommended steps:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Push on &apos;Update scripts&apos; button&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Near the program version (green up arrow)&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Push on &apos;Backup sudoers file&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Then push on &apos;Enable sudo without pass&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;
 &lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;This way you can execute commands without questioning your sudo pass each time. More quick so&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;You always can go to default pushing &apos;Import sudoers file&apos; and selecting your backuped file before&lt;/p&gt;&lt;/br&gt;</oldsource>
-        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pasos recomendados:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Pulsa en &apos;Actualizar scripts&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Al lado de la versión del programa (flecha hacia arriba verde)&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Pulsa en &apos;Hacer copia de seguridad del fichero sudoers&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Después pulsa en &apos;Habilitar sudo sin constraseña&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;
+        <translation type="vanished">&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pasos recomendados:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Pulsa en &apos;Actualizar scripts&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Al lado de la versión del programa (flecha hacia arriba verde)&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Pulsa en &apos;Hacer copia de seguridad del fichero sudoers&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Después pulsa en &apos;Habilitar sudo sin constraseña&apos;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;
 &lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;De esta manera puedes ejecutar comandos sin preguntarte la contraseña cada vez. Más rápido entonces.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Tú siempre puedes dejarlo como al principio pulsando en &apos;Importar fichero sudoers&apos; y seleccionando tu fichero sudoers salvado previamente.&lt;/p&gt;&lt;/br&gt;</translation>
     </message>
     <message>
@@ -1814,6 +1813,11 @@ Antonio David Gellida Lavara
 adgellida@gmail.com
 
 v2017.06.04</translation>
+    </message>
+    <message>
+        <location filename="../tutorial.cpp" line="12"/>
+        <source>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Recommended steps:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Push on &apos;Backup sudoers file&apos;.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Then push on &apos;Enable sudo without pass&apos;.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Install packages you want.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;4. Execute all tweaks, system actions or reparations you want.&lt;/p&gt;&lt;/br&gt;</source>
+        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Recommended steps:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pulsa en &apos;Copia de seguridad de archivo sudoers&apos;.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Después pulsa en &apos;Habilitar sudo sin contraseña&apos;.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Instala los paquetes que quieras.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;4. Ejecutar todas las mejoras, acciones del sistema y reparaciones que quieras.&lt;/p&gt;&lt;/br&gt;</translation>
     </message>
 </context>
 </TS>

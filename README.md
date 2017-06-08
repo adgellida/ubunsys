@@ -114,6 +114,10 @@ TO DO
 
 * First add all selected ppas. Then apt-fast -y update and finally install all selected packages. So, more quick.
 
+* Save user configuration for use it when you re-open app.
+
+* Create a category to personal scripts.
+
 * Disable keyring.
 
 DONE

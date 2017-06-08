@@ -3,7 +3,7 @@
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/ubunsys.ico" width="80">
 
-**For English push [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
+**For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
 
 App configurable diseñada para Ubuntu (17.04 zesty, por ahora) referente a paquetes, actualizaciones y configuraciones.
 
@@ -96,7 +96,7 @@ POR HACER
 
 * Añadir más sonidos al sistema.
 
-* Cargar configuraciones guardadas de instalaciones de instalaciones personalizadas de usuarios.
+* Cargar configuraciones guardadas de instalaciones personalizadas de usuarios.
 
 * Snap, AppImage, PPA (actualizado), flatpack.
 
@@ -113,6 +113,10 @@ POR HACER
 * Reagrupar ficheros para limpiar el directorio principal.
 
 * Primero añadir todas las ppas seleccionadas. Después apt-fast -y update y finalmente instalar los paquetes seleccionados. Por eso, más rápido.
+
+* Guardar la configuración del usuario para usarla cuando se reabra la app.
+
+* Crear apartado de scripts personales.
 
 * Deshabilitar depósito de claves.
 
