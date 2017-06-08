@@ -9,6 +9,11 @@ App configurable diseñada para Ubuntu (17.04 zesty, por ahora) referente a paqu
 
 Construido con Qt 5.7.1. De esta manera obtiene las librerias de los repositorios oficiales.
 
+Descarga
+=============================================
+
+* https://github.com/adgellida/ubunsys/releases
+
 <img src="http://i.imgur.com/rOZY92b.png" width="500">
 
 <img src="http://i.imgur.com/Wy6Tv4b.png" width="500">
@@ -16,11 +21,6 @@ Construido con Qt 5.7.1. De esta manera obtiene las librerias de los repositorio
 <img src="http://i.imgur.com/omnhGYV.png" width="500">
 
 <img src="http://i.imgur.com/rympo8x.png" width="500">
-
-Descarga
-=============================================
-
-* https://github.com/adgellida/ubunsys/releases
 
 Qué hace este programa
 =============================================
@@ -61,21 +61,17 @@ Tutorial
 
 Pasos recomendados:
 
-1. Pulsar en el botón de 'Actualizar scripts' cada vez que se abra la app. De esta manera tendrás la última versión de los scripts. Este paso ya no es necesario, esto se hace al iniciar el programa.
+1. Pulsa en 'Copia de seguridad de archivo sudoers'.
 
-Este botón está al lado de la versión del programa (flecha arriba verde).
+2. Después pulsa en 'Habilitar sudo sin contraseña'.
 
-2. Pulsa en 'Copia de seguridad de archivo sudoers'.
+De esta manera, puedes ejecutar comandos sin preguntar tu contraseña de sudo cada vez. Por ello ganas rapidez.
 
-3. Después pulsa en 'Habilitar sudo sin contraseña'.
+Puedes dejarlo como estaba pulsando en 'Importar fichero sudoers' y seleccionando tu fichero de copia de seguridad anterior.
 
-De esta manera, puedes ejecutar comandos sin preguntar tu contraseña de susdo cada vez. Más rápido entonces.
+3. Instala los paquetes que quieras.
 
-Tú siempre puedes ir a como estaba antes pulsando en 'Importar fichero sudoers' y seleccionando tu fichero de copia de seguridad anterior.
-
-4. Instala los paquetes que quieras.
-
-5. Ejecutar todas las mejoras, acciones del sistema y repaciones que tú quieras.
+4. Ejecutar todas las mejoras, acciones del sistema y reparaciones que quieras.
 
 POR HACER
 =============================================
@@ -161,8 +157,3 @@ Créditos y gracias a
 =============================================
 
 * [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) de Noun Project que creó de la app el [icono](https://thenounproject.com/term/terminal/715962/) usado aquí. Precioso!
-
-Notas de la versión
-=============================================
-
-Puedes comprobarlas [aquí](https://github.com/adgellida/ubunsys/releases)

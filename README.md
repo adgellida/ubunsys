@@ -3,11 +3,16 @@
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/ubunsys.ico" width="80">
 
-**Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es.md)**
+**Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
 
 Configurable app designed for Ubuntu (17.04 zesty for now) referent to packages, updates and configurations.
 
 Built with Qt 5.7.1. This way it gets libraries from official repositories.
+
+Download
+=============================================
+
+* https://github.com/adgellida/ubunsys/releases
 
 <img src="http://i.imgur.com/rOZY92b.png" width="500">
 
@@ -16,11 +21,6 @@ Built with Qt 5.7.1. This way it gets libraries from official repositories.
 <img src="http://i.imgur.com/omnhGYV.png" width="500">
 
 <img src="http://i.imgur.com/rympo8x.png" width="500">
-
-Download
-=============================================
-
-* https://github.com/adgellida/ubunsys/releases
 
 What this program do
 =============================================
@@ -61,21 +61,17 @@ Tutorial
 
 Recommended steps:
 
-1. Push on 'Update scripts' button each time you open app. This way you get the latest scripts version.
+1. Push on 'Backup sudoers file'.
 
-This button is near the program version (green up arrow).
-
-2. Push on 'Backup sudoers file'.
-
-3. Then push on 'Enable sudo without pass'.
+2. Then push on 'Enable sudo without pass'.
 
 This way you can execute commands without asking your sudo pass each time. More quick so.
 
 You always can go to default pushing 'Import sudoers file' and selecting your backuped file before.
 
-4. Install packages you want.
+3. Install packages you want.
 
-5. Execute all tweaks, system actions or reparations you want.
+4. Execute all tweaks, system actions or reparations you want.
 
 TO DO
 =============================================
@@ -161,8 +157,3 @@ Credits and thanks to
 =============================================
 
 [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) from Noun Project that creates the app [icon](https://thenounproject.com/term/terminal/715962/) used here. Beautiful!
-
-Release notes
-=============================================
-
-You can check it [here](https://github.com/adgellida/ubunsys/releases)
