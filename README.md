@@ -7,7 +7,7 @@
 
 Configurable app designed for Ubuntu referent to packages, updates and configurations.
 
-**Very dangerous app in any point, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
+**Very dangerous app in any points, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
 
 Built with Qt 5.7.1 for 17.04 zesty zapus.
 
