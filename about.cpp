@@ -11,7 +11,8 @@ void MainWindow::on_actionAbout_triggered()
     about.setTextFormat(Qt::RichText);   //this is what makes the links clickable
     about.setText(tr("<p align='left'><b>ubunsys</b></p></br>"
                   "<p align='left'>Configurable app referent to packages, updates and configurations</p></br>"
-                  "<p align='left'>Built with Qt 5.7.1."
+                  "<p align='left'>Built with Qt 5.7.1 for 17.04 zesty zapus."
+                  "<p align='left'>Built with Qt 5.5.1 for 16.04 xenial xerus."
                   "<p align='left'>Contains bugs. Alpha test status.</p></br>"
                   "<p align='left'>Credits to <a href='https://thenounproject.com/bernar.novalyi/'>Bernar Novalyi</a> from Noun Project "
                   "that creates the app <a href='https://thenounproject.com/term/terminal/715962/'>icon</a> used here. Beautiful!</p></br>"
