@@ -11,7 +11,7 @@ void MainWindow::on_actionAbout_triggered()
     about.setTextFormat(Qt::RichText);   //this is what makes the links clickable
     about.setText(tr("<p align='left'><b>ubunsys</b></p></br>"
                   "<p align='left'>Configurable app referent to packages, updates and configurations</p></br>"
-                  "<p align='left'>Built with Qt 5.7.1. Designed for Ubuntu 17.04."
+                  "<p align='left'>Built with Qt 5.7.1."
                   "<p align='left'>Contains bugs. Alpha test status.</p></br>"
                   "<p align='left'>Credits to <a href='https://thenounproject.com/bernar.novalyi/'>Bernar Novalyi</a> from Noun Project "
                   "that creates the app <a href='https://thenounproject.com/term/terminal/715962/'>icon</a> used here. Beautiful!</p></br>"
@@ -19,7 +19,7 @@ void MainWindow::on_actionAbout_triggered()
                   "<p align='left'><a href='https://github.com/adgellida/ubunsys'>Git Repo</a> - Updated</p></br>"));
 
     about.setInformativeText(tr("Copyright (c) 2017 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com"
-                             "\n\nv2017.06.04"));
+                             "\n\nv2017.06.11"));
 
     about.setWindowTitle(tr("About"));
 

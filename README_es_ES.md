@@ -5,9 +5,15 @@
 
 **For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
 
-App configurable diseñada para Ubuntu (17.04 zesty, por ahora) referente a paquetes, actualizaciones y configuraciones.
+App configurable diseñada para Ubuntu referente a paquetes, actualizaciones y configuraciones.
 
-Construido con Qt 5.7.1. De esta manera obtiene las librerias de los repositorios oficiales.
+**App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
+
+Construido con Qt 5.7.1. para 17.04 zesty zapus.
+
+Construido con Qt 5.5.1. para 16.04 xenial xerus.
+
+De esta manera obtiene las librerias de los repositorios oficiales.
 
 Descarga
 =============================================
@@ -34,7 +40,7 @@ Qué hace este programa
 ##### Mejoras
 
 * Habilitar-deshabilitar sudo sin contraseña. Por seguridad cuando ejecutas sudo una contraseña es preguntada, pero es todioso ponerla cada vez que ejecutas una acción de permisos elevados, por eso recomiendo
-pulsar este botón cuando no se necesita esta seguridad y se requiere velocidad. Después deshabilita esta función para restaurar la seguridad en tu sistema.
+pulsar este botón cuando no se necesita esta seguridad y se requiere velocidad. **Después deshabilita esta función para restaurar la seguridad en tu sistema.**
 
 * Habilitar-deshabilitar asteriscos cuando pones contraseña en un terminal, hibernación, firewall.
 
@@ -56,29 +62,27 @@ pulsar este botón cuando no se necesita esta seguridad y se requiere velocidad.
 
 * Comprobar la integridad del sistema, reparar la red, claves GPG perdidas.
 
+Y más...
+
 Tutorial
 =============================================
 
 Pasos recomendados:
 
-1. Pulsa en 'Copia de seguridad de archivo sudoers'.
-
-2. Después pulsa en 'Habilitar sudo sin contraseña'.
+1. Pulsa en 'Habilitar sudo sin contraseña'.
 
 De esta manera, puedes ejecutar comandos sin preguntar tu contraseña de sudo cada vez. Por ello ganas rapidez.
 
 Puedes dejarlo como estaba pulsando en 'Importar fichero sudoers' y seleccionando tu fichero de copia de seguridad anterior.
 
-3. Instala los paquetes que quieras.
+2. Instala los paquetes que quieras.
 
-4. Ejecutar todas las mejoras, acciones del sistema y reparaciones que quieras.
+3. Ejecutar todas las mejoras, acciones del sistema y reparaciones que quieras.
 
 POR HACER
 =============================================
 
-* Habilitar soporte a make install, 16.04.
-
-* Mostrar items ocultos de inicio, deshabilitar sonido de inicio.
+* Habilitar soporte a make install.
 
 * Caja de búsqueda.
 
@@ -122,6 +126,10 @@ POR HACER
 
 HECHO
 =============================================
+
+* Compatible con 16.04, pero no al 100%.
+
+* Mostrar items ocultos de inicio, deshabilitar sonido de inicio.
 
 * Deshabilitar bloqueo de sesión.
 

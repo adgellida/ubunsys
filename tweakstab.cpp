@@ -52,6 +52,19 @@ void MainWindow::on_openSudoersFileButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
+void MainWindow::on_openSudoersUbunsysModButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening sudoers modification"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/041.openSudoersMod"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
 void MainWindow::on_backupSudoersFileButton_clicked()
 {
     ui->statusBar->showMessage(tr("Backuping sudoers"));
@@ -281,6 +294,58 @@ void MainWindow::on_disableLockScrennButton_clicked()
 
     system("xterm -e bash -c '"
            "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_showHiddenStartupItemsButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Showing"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/038.showHiddenStartupItems"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_unshowHiddenStartupItemsButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Unshowing"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/037.unshowHiddenStartupItems"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_enableLoginSoundButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling login sound"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/039.enableLoginSound"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_disableLoginSoundButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling login sound"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/040.disableLoginSound"
            " && "
            "exit"
            "; exec bash'");

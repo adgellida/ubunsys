@@ -1804,6 +1804,28 @@ void MainWindow::on_installSelectedPackagesButton_clicked()
                "; exec bash'");
     }
 
+    //173.indicator-keylock
+
+    if (ui->checkBox_170->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/173.indicator-keylock"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    //174.katoolin
+
+    if (ui->checkBox_170->isChecked())
+    {
+        system("xterm -e bash -c '"
+               "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/174.katoolin"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
     //MainWindow::on_unselectAllButton_clicked();
 
     ui->statusBar->showMessage(tr("Packages installed succesful or with errors. Check it. Select another action"));
@@ -1982,6 +2004,8 @@ void MainWindow::on_unselectAllButton_clicked()
     ui->checkBox_170->setChecked(false);
     ui->checkBox_171->setChecked(false);
     ui->checkBox_172->setChecked(false);
+    ui->checkBox_173->setChecked(false);
+    ui->checkBox_174->setChecked(false);
 }
 
 void MainWindow::on_selectAllButton_clicked()
@@ -2157,6 +2181,8 @@ void MainWindow::on_selectAllButton_clicked()
     ui->checkBox_170->setChecked(true);
     ui->checkBox_171->setChecked(true);
     ui->checkBox_172->setChecked(true);
+    ui->checkBox_173->setChecked(true);
+    ui->checkBox_174->setChecked(true);
 }
 
 void MainWindow::on_loadSelectionButton_clicked()
@@ -2335,6 +2361,8 @@ void MainWindow::on_loadSelectionButton_clicked()
     ui->checkBox_170->setChecked(false);
     ui->checkBox_171->setChecked(false);
     ui->checkBox_172->setChecked(true);
+    ui->checkBox_173->setChecked(false);
+    ui->checkBox_174->setChecked(false);
 }
 
 //not implemented yet

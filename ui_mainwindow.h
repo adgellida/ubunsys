@@ -223,6 +223,8 @@ public:
     QCheckBox *checkBox_170;
     QCheckBox *checkBox_171;
     QCheckBox *checkBox_172;
+    QCheckBox *checkBox_173;
+    QCheckBox *checkBox_174;
     QWidget *tab_3;
     QTabWidget *tabWidget_3;
     QWidget *tab_6;
@@ -246,9 +248,9 @@ public:
     QLabel *label_13;
     QLabel *label_32;
     QPushButton *runGrubcustomizerButton;
+    QPushButton *openSudoersUbunsysModButton;
     QWidget *tab_7;
     QPushButton *installTemplatesButton;
-    QLabel *label_62;
     QLabel *label_5;
     QLabel *label_11;
     QPushButton *setToDefaults90sShutdownTimeoutButton;
@@ -256,6 +258,12 @@ public:
     QLabel *label_33;
     QPushButton *disableLockScrennButton;
     QPushButton *enableLockScreenlButton;
+    QPushButton *showHiddenStartupItemsButton;
+    QPushButton *unshowHiddenStartupItemsButton;
+    QLabel *label_34;
+    QLabel *label_35;
+    QPushButton *enableLoginSoundButton;
+    QPushButton *disableLoginSoundButton;
     QWidget *tab;
     QTabWidget *tabWidget_4;
     QWidget *tab_8;
@@ -922,6 +930,12 @@ public:
         checkBox_172 = new QCheckBox(tab_5);
         checkBox_172->setObjectName(QStringLiteral("checkBox_172"));
         checkBox_172->setGeometry(QRect(410, 300, 161, 23));
+        checkBox_173 = new QCheckBox(tab_5);
+        checkBox_173->setObjectName(QStringLiteral("checkBox_173"));
+        checkBox_173->setGeometry(QRect(410, 320, 161, 23));
+        checkBox_174 = new QCheckBox(tab_5);
+        checkBox_174->setObjectName(QStringLiteral("checkBox_174"));
+        checkBox_174->setGeometry(QRect(410, 340, 161, 23));
         tabWidget_2->addTab(tab_5, QString());
         tabWidget->addTab(tab_4, QString());
         tab_3 = new QWidget();
@@ -1071,16 +1085,16 @@ public:
         backupSudoersFileButton->setCheckable(false);
         enableFirewallButton = new QPushButton(tab_6);
         enableFirewallButton->setObjectName(QStringLiteral("enableFirewallButton"));
-        enableFirewallButton->setGeometry(QRect(450, 180, 221, 36));
+        enableFirewallButton->setGeometry(QRect(450, 220, 221, 36));
         enableFirewallButton->setIconSize(QSize(30, 30));
         enableFirewallButton->setCheckable(false);
         label_12 = new QLabel(tab_6);
         label_12->setObjectName(QStringLiteral("label_12"));
-        label_12->setGeometry(QRect(450, 160, 141, 16));
+        label_12->setGeometry(QRect(450, 200, 141, 16));
         label_12->setFont(font1);
         disableFirewallButton = new QPushButton(tab_6);
         disableFirewallButton->setObjectName(QStringLiteral("disableFirewallButton"));
-        disableFirewallButton->setGeometry(QRect(450, 220, 221, 36));
+        disableFirewallButton->setGeometry(QRect(450, 260, 221, 36));
         disableFirewallButton->setIconSize(QSize(30, 30));
         disableFirewallButton->setCheckable(false);
         importSudoersFileButton = new QPushButton(tab_6);
@@ -1094,13 +1108,18 @@ public:
         label_13->setFont(font1);
         label_32 = new QLabel(tab_6);
         label_32->setObjectName(QStringLiteral("label_32"));
-        label_32->setGeometry(QRect(450, 270, 141, 16));
+        label_32->setGeometry(QRect(450, 310, 141, 16));
         label_32->setFont(font1);
         runGrubcustomizerButton = new QPushButton(tab_6);
         runGrubcustomizerButton->setObjectName(QStringLiteral("runGrubcustomizerButton"));
-        runGrubcustomizerButton->setGeometry(QRect(450, 290, 221, 36));
+        runGrubcustomizerButton->setGeometry(QRect(450, 330, 221, 36));
         runGrubcustomizerButton->setIconSize(QSize(30, 30));
         runGrubcustomizerButton->setCheckable(false);
+        openSudoersUbunsysModButton = new QPushButton(tab_6);
+        openSudoersUbunsysModButton->setObjectName(QStringLiteral("openSudoersUbunsysModButton"));
+        openSudoersUbunsysModButton->setGeometry(QRect(450, 150, 221, 36));
+        openSudoersUbunsysModButton->setIconSize(QSize(30, 30));
+        openSudoersUbunsysModButton->setCheckable(false);
         tabWidget_3->addTab(tab_6, QString());
         tab_7 = new QWidget();
         tab_7->setObjectName(QStringLiteral("tab_7"));
@@ -1109,10 +1128,6 @@ public:
         installTemplatesButton->setGeometry(QRect(10, 30, 221, 36));
         installTemplatesButton->setIconSize(QSize(30, 30));
         installTemplatesButton->setCheckable(false);
-        label_62 = new QLabel(tab_7);
-        label_62->setObjectName(QStringLiteral("label_62"));
-        label_62->setGeometry(QRect(250, 40, 281, 21));
-        label_62->setFont(font);
         label_5 = new QLabel(tab_7);
         label_5->setObjectName(QStringLiteral("label_5"));
         label_5->setGeometry(QRect(10, 10, 211, 16));
@@ -1145,6 +1160,34 @@ public:
         enableLockScreenlButton->setGeometry(QRect(10, 220, 221, 36));
         enableLockScreenlButton->setIconSize(QSize(30, 30));
         enableLockScreenlButton->setCheckable(false);
+        showHiddenStartupItemsButton = new QPushButton(tab_7);
+        showHiddenStartupItemsButton->setObjectName(QStringLiteral("showHiddenStartupItemsButton"));
+        showHiddenStartupItemsButton->setGeometry(QRect(450, 30, 221, 36));
+        showHiddenStartupItemsButton->setIconSize(QSize(30, 30));
+        showHiddenStartupItemsButton->setCheckable(false);
+        unshowHiddenStartupItemsButton = new QPushButton(tab_7);
+        unshowHiddenStartupItemsButton->setObjectName(QStringLiteral("unshowHiddenStartupItemsButton"));
+        unshowHiddenStartupItemsButton->setGeometry(QRect(450, 70, 221, 36));
+        unshowHiddenStartupItemsButton->setIconSize(QSize(30, 30));
+        unshowHiddenStartupItemsButton->setCheckable(false);
+        label_34 = new QLabel(tab_7);
+        label_34->setObjectName(QStringLiteral("label_34"));
+        label_34->setGeometry(QRect(450, 10, 231, 16));
+        label_34->setFont(font1);
+        label_35 = new QLabel(tab_7);
+        label_35->setObjectName(QStringLiteral("label_35"));
+        label_35->setGeometry(QRect(450, 120, 231, 16));
+        label_35->setFont(font1);
+        enableLoginSoundButton = new QPushButton(tab_7);
+        enableLoginSoundButton->setObjectName(QStringLiteral("enableLoginSoundButton"));
+        enableLoginSoundButton->setGeometry(QRect(450, 140, 221, 36));
+        enableLoginSoundButton->setIconSize(QSize(30, 30));
+        enableLoginSoundButton->setCheckable(false);
+        disableLoginSoundButton = new QPushButton(tab_7);
+        disableLoginSoundButton->setObjectName(QStringLiteral("disableLoginSoundButton"));
+        disableLoginSoundButton->setGeometry(QRect(450, 180, 221, 36));
+        disableLoginSoundButton->setIconSize(QSize(30, 30));
+        disableLoginSoundButton->setCheckable(false);
         tabWidget_3->addTab(tab_7, QString());
         tabWidget->addTab(tab_3, QString());
         tab = new QWidget();
@@ -1459,9 +1502,9 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(2);
-        tabWidget_3->setCurrentIndex(1);
+        tabWidget_3->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(0);
         tabWidget_5->setCurrentIndex(0);
 
@@ -1662,6 +1705,8 @@ public:
         checkBox_170->setText(QApplication::translate("MainWindow", "170.resetter", Q_NULLPTR));
         checkBox_171->setText(QApplication::translate("MainWindow", "171.shotwell", Q_NULLPTR));
         checkBox_172->setText(QApplication::translate("MainWindow", "172.acestream", Q_NULLPTR));
+        checkBox_173->setText(QApplication::translate("MainWindow", "173.indicator-keylock", Q_NULLPTR));
+        checkBox_174->setText(QApplication::translate("MainWindow", "174.katoolin", Q_NULLPTR));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("MainWindow", "Packages 3/3", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Packages", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
@@ -1740,13 +1785,17 @@ public:
 #endif // QT_NO_WHATSTHIS
         runGrubcustomizerButton->setText(QApplication::translate("MainWindow", "Configure", Q_NULLPTR));
         runGrubcustomizerButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        openSudoersUbunsysModButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        openSudoersUbunsysModButton->setText(QApplication::translate("MainWindow", "Open sudoers ubunsys mod", Q_NULLPTR));
+        openSudoersUbunsysModButton->setShortcut(QString());
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/2", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         installTemplatesButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         installTemplatesButton->setText(QApplication::translate("MainWindow", "Install Templates", Q_NULLPTR));
         installTemplatesButton->setShortcut(QString());
-        label_62->setText(QApplication::translate("MainWindow", "This adds content to New Doc Sub-Menu", Q_NULLPTR));
         label_5->setText(QApplication::translate("MainWindow", "Documents & Files ", Q_NULLPTR));
         label_11->setText(QApplication::translate("MainWindow", "Reduce timeout when shutdown\n"
 "(experimental)", Q_NULLPTR));
@@ -1771,6 +1820,28 @@ public:
 #endif // QT_NO_WHATSTHIS
         enableLockScreenlButton->setText(QApplication::translate("MainWindow", "Enable Lock screen", Q_NULLPTR));
         enableLockScreenlButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        showHiddenStartupItemsButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        showHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Show", Q_NULLPTR));
+        showHiddenStartupItemsButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        unshowHiddenStartupItemsButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        unshowHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Unshow", Q_NULLPTR));
+        unshowHiddenStartupItemsButton->setShortcut(QString());
+        label_34->setText(QApplication::translate("MainWindow", "Hidden Startup Items", Q_NULLPTR));
+        label_35->setText(QApplication::translate("MainWindow", "Login sound", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        enableLoginSoundButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        enableLoginSoundButton->setText(QApplication::translate("MainWindow", "Enable", Q_NULLPTR));
+        enableLoginSoundButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        disableLoginSoundButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        disableLoginSoundButton->setText(QApplication::translate("MainWindow", "Disable", Q_NULLPTR));
+        disableLoginSoundButton->setShortcut(QString());
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", Q_NULLPTR));
         label_16->setText(QApplication::translate("MainWindow", "Clean system", Q_NULLPTR));
@@ -1931,7 +2002,7 @@ public:
         label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.06.04", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.06.11", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP

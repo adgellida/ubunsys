@@ -5,9 +5,15 @@
 
 **Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
 
-Configurable app designed for Ubuntu (17.04 zesty for now) referent to packages, updates and configurations.
+Configurable app designed for Ubuntu referent to packages, updates and configurations.
 
-Built with Qt 5.7.1. This way it gets libraries from official repositories.
+**Very dangerous app in any point, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
+
+Built with Qt 5.7.1 for 17.04 zesty zapus.
+
+Built with Qt 5.5.1 for 16.04 xenial xerus.
+
+This way it gets libraries from official repositories.
 
 Download
 =============================================
@@ -33,8 +39,8 @@ What this program do
 
 ##### Tweaks
 
-* Enable-disable sudo without pass. For security when you exec sudo a password is prompted, but is tedious to put pass each time you executed an elevated permission action, So I recommend
-to push this button when you don't need this security and want speed. Then disable this function to restore security on your system.
+* Enable-disable sudo without pass. For security when you exec sudo a password is prompted, but is tedious to put pass each time you executed an elevated permission action, so I recommend
+to push this button when you don't need this security and want speed. **Then disable this function to restore security on your system.**
 
 * Enable-disable asterisks when you put pass on terminal, hibernation, firewall.
 
@@ -56,29 +62,27 @@ to push this button when you don't need this security and want speed. Then disab
 
 * Check system integrity, repair network, missing GPG keys.
 
+And more...
+
 Tutorial
 =============================================
 
 Recommended steps:
 
-1. Push on 'Backup sudoers file'.
-
-2. Then push on 'Enable sudo without pass'.
+1. Push on 'Enable sudo without pass'.
 
 This way you can execute commands without asking your sudo pass each time. More quick so.
 
 You always can go to default pushing 'Import sudoers file' and selecting your backuped file before.
 
-3. Install packages you want.
+2. Install packages you want.
 
-4. Execute all tweaks, system actions or reparations you want.
+3. Execute all tweaks, system actions or reparations you want.
 
 TO DO
 =============================================
 
-* Support make install, 16.04.
-
-* Show hidden startup items, disable login sound.
+* Support make install.
 
 * Search box.
 
@@ -122,6 +126,10 @@ TO DO
 
 DONE
 =============================================
+
+* 16.04 compatible, but not 100%.
+
+* Show hidden startup items, disable login sound.
 
 * Disable lock session.
 

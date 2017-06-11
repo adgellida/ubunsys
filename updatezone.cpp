@@ -13,7 +13,7 @@ void MainWindow::on_updateScriptsButton_clicked()
     ui->statusBar->showMessage(tr("Updating latest scripts. Please wait"));
 
     system("xterm -e bash -c '"
-           "echo Updating latest scripts. Please wait..."
+           "echo Updating latest scripts. Please wait... Stage 1/3"
            " && "
            "echo  "
            " && "
@@ -30,35 +30,31 @@ void MainWindow::on_updateScriptsButton_clicked()
            " && "
            "rm ~/.ubunsys/downloads/master.zip"
            " && "
-           "exit"
-           "; exec bash'");
+    //     "exit"
+    //     "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Downloaded latest scripts"));
+    //ui->statusBar->showMessage(tr("Downloaded latest scripts"));
 
-    ui->statusBar->showMessage(tr("Download latest ubuntupackages script"));
+    //ui->statusBar->showMessage(tr("Download latest ubuntupackages script"));
 
     //######## Update ubuntupackages
 
-    system("xterm -e bash -c '"
-           "echo Updating ubuntupackages. Please wait..."
+    //system("xterm -e bash -c '"
+           "echo Updating ubuntupackages. Please wait... Stage 2/3"
            " && "
            "echo  "
            " && "
            "sudo ~/.ubunsys/downloads/ubuntuScripts-master/019.downloadLatestUbuntupackages"
            " && "
-           "exit"
-           "; exec bash'");
+    //     "exit"
+    //     "; exec bash'");
 
     //######## apt-fast checking
 
-    ui->statusBar->showMessage(tr("Checking if apt-fast is installed and we install it if necessary."));
+    // ui->statusBar->showMessage(tr("Checking if apt-fast is installed and we install it if necessary."));
 
-    system("xterm -e bash -c '"
-           "echo Please wait..."
-           " && "
-           "echo  "
-           " && "
-           "echo Checking if apt-fast installed to download more quick."
+    //system("xterm -e bash -c '"
+           "echo Checking if apt-fast installed. Please wait...Stage 3/3"
            " && "
            "echo  "
            " && "
@@ -67,9 +63,9 @@ void MainWindow::on_updateScriptsButton_clicked()
            "exit"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("apt-fast is installed"));
+    //ui->statusBar->showMessage(tr("apt-fast is installed"));
 
-    ui->statusBar->showMessage(tr("Installing packages"));
+    //ui->statusBar->showMessage(tr("Installing packages"));
 
     //qDebug() << "test13";
 

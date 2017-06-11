@@ -133,6 +133,16 @@ private slots:
 
     void on_disableLockScrennButton_clicked();
 
+    void on_showHiddenStartupItemsButton_clicked();
+
+    void on_unshowHiddenStartupItemsButton_clicked();
+
+    void on_enableLoginSoundButton_clicked();
+
+    void on_disableLoginSoundButton_clicked();
+
+    void on_openSudoersUbunsysModButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 
