@@ -19,8 +19,8 @@ void MainWindow::on_actionAbout_triggered()
                   "<p align='left'><a href='https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys'>Launchpad PPA</a> - Not updated</p></br>"
                   "<p align='left'><a href='https://github.com/adgellida/ubunsys'>Git Repo</a> - Updated</p></br>"));
 
-    about.setInformativeText(tr("Copyright (c) 2017 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com"
-                             "\n\nv2017.06.11"));
+    about.setInformativeText(tr("Copyright (c) 2017 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\n"
+                             "v2017.06.12"));
 
     about.setWindowTitle(tr("About"));
 

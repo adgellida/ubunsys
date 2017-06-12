@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -134,11 +134,11 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_11">
        <attribute name="title">
-        <string>Packages 1/3</string>
+        <string>Packages 1/4</string>
        </attribute>
        <widget class="QCheckBox" name="checkBox_012">
         <property name="geometry">
@@ -884,7 +884,7 @@
       </widget>
       <widget class="QWidget" name="tab_12">
        <attribute name="title">
-        <string>Packages 2/3</string>
+        <string>Packages 2/4</string>
        </attribute>
        <widget class="QCheckBox" name="checkBox_058">
         <property name="geometry">
@@ -1617,7 +1617,7 @@
       </widget>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
-        <string>Packages 3/3</string>
+        <string>Packages 3/4</string>
        </attribute>
        <widget class="QCheckBox" name="checkBox_132">
         <property name="geometry">
@@ -2343,8 +2343,48 @@
           <height>23</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Not recommended to use! May crash your system&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>174.katoolin</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_175">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>360</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>175.apt-select</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_15">
+       <attribute name="title">
+        <string>Packages 4/4</string>
+       </attribute>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Coming soon...</string>
         </property>
        </widget>
       </widget>
@@ -2427,7 +2467,7 @@ Set to default</string>
        <widget class="QLabel" name="label_8">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>450</x>
           <y>300</y>
           <width>141</width>
           <height>16</height>
@@ -2493,7 +2533,7 @@ Set to default</string>
        <widget class="QPushButton" name="disableHibernationButton">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>450</x>
           <y>360</y>
           <width>221</width>
           <height>36</height>
@@ -2549,7 +2589,7 @@ Set to default</string>
        <widget class="QPushButton" name="enableHibernationButton">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>450</x>
           <y>320</y>
           <width>221</width>
           <height>36</height>
@@ -3006,10 +3046,10 @@ Set to default</string>
          </font>
         </property>
         <property name="toolTip">
-         <string/>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="whatsThis">
-         <string/>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
          <string>Enable sudo without pass</string>
@@ -3255,8 +3295,8 @@ Set to default</string>
        <widget class="QLabel" name="label_32">
         <property name="geometry">
          <rect>
-          <x>450</x>
-          <y>310</y>
+          <x>10</x>
+          <y>340</y>
           <width>141</width>
           <height>16</height>
          </rect>
@@ -3274,8 +3314,8 @@ Set to default</string>
        <widget class="QPushButton" name="runGrubcustomizerButton">
         <property name="geometry">
          <rect>
-          <x>450</x>
-          <y>330</y>
+          <x>10</x>
+          <y>360</y>
           <width>221</width>
           <height>36</height>
          </rect>
@@ -3313,6 +3353,62 @@ Set to default</string>
         </property>
         <property name="text">
          <string>Open sudoers ubunsys mod</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="aptselect_US">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>101</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>apt-select US</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="aptselect_ES">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>290</y>
+          <width>101</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>apt-select ES</string>
         </property>
         <property name="iconSize">
          <size>
@@ -3697,7 +3793,7 @@ Set to default</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
@@ -4911,7 +5007,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.06.11</string>
+     <string>v2017.06.12</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">

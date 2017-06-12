@@ -352,3 +352,25 @@ void MainWindow::on_disableLoginSoundButton_clicked()
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+
+void MainWindow::on_aptselect_US_clicked()
+{
+    system("xterm -e bash -c '"
+           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/175.apt-select"
+           " && "
+           "apt-select --country US"
+           " && "
+           "exit"
+           "; exec bash'");
+}
+
+void MainWindow::on_aptselect_ES_clicked()
+{
+    system("xterm -e bash -c '"
+           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/175.apt-select"
+           " && "
+           "apt-select --country ES"
+           " && "
+           "exit"
+           "; exec bash'");
+}

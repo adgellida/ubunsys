@@ -12,6 +12,7 @@ void MainWindow::on_actionTutorial_triggered()
     information.setText(tr("<p align='left'><b>ubunsys</b></p></br>"
                   "<p align='left'>Recommended steps:</p></br>"
                   "<p align='left'>1. Push on 'Enable sudo without pass'.</p></br>"
+                  "<p align='left'>Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</p></br>"
                   "<p align='left'>2. Install packages you want.</p></br>"
                   //"<p align='left'>\n</p></br>"
                   "<p align='left'>3. Execute all tweaks, system actions or reparations you want.</p></br>"));

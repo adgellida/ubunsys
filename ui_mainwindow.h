@@ -225,6 +225,9 @@ public:
     QCheckBox *checkBox_172;
     QCheckBox *checkBox_173;
     QCheckBox *checkBox_174;
+    QCheckBox *checkBox_175;
+    QWidget *tab_15;
+    QLabel *label_36;
     QWidget *tab_3;
     QTabWidget *tabWidget_3;
     QWidget *tab_6;
@@ -249,6 +252,8 @@ public:
     QLabel *label_32;
     QPushButton *runGrubcustomizerButton;
     QPushButton *openSudoersUbunsysModButton;
+    QPushButton *aptselect_US;
+    QPushButton *aptselect_ES;
     QWidget *tab_7;
     QPushButton *installTemplatesButton;
     QLabel *label_5;
@@ -936,16 +941,26 @@ public:
         checkBox_174 = new QCheckBox(tab_5);
         checkBox_174->setObjectName(QStringLiteral("checkBox_174"));
         checkBox_174->setGeometry(QRect(410, 340, 161, 23));
+        checkBox_175 = new QCheckBox(tab_5);
+        checkBox_175->setObjectName(QStringLiteral("checkBox_175"));
+        checkBox_175->setGeometry(QRect(410, 360, 161, 23));
         tabWidget_2->addTab(tab_5, QString());
+        tab_15 = new QWidget();
+        tab_15->setObjectName(QStringLiteral("tab_15"));
+        label_36 = new QLabel(tab_15);
+        label_36->setObjectName(QStringLiteral("label_36"));
+        label_36->setGeometry(QRect(10, 10, 141, 16));
+        QFont font;
+        font.setBold(false);
+        font.setWeight(50);
+        label_36->setFont(font);
+        tabWidget_2->addTab(tab_15, QString());
         tabWidget->addTab(tab_4, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
         tabWidget_3 = new QTabWidget(tab_3);
         tabWidget_3->setObjectName(QStringLiteral("tabWidget_3"));
         tabWidget_3->setGeometry(QRect(0, 0, 691, 441));
-        QFont font;
-        font.setBold(false);
-        font.setWeight(50);
         tabWidget_3->setFont(font);
         tab_6 = new QWidget();
         tab_6->setObjectName(QStringLiteral("tab_6"));
@@ -963,7 +978,7 @@ public:
         label_6->setFont(font1);
         label_8 = new QLabel(tab_6);
         label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setGeometry(QRect(10, 300, 141, 16));
+        label_8->setGeometry(QRect(450, 300, 141, 16));
         label_8->setFont(font1);
         label_7 = new QLabel(tab_6);
         label_7->setObjectName(QStringLiteral("label_7"));
@@ -976,7 +991,7 @@ public:
         openSourcesListDButton->setCheckable(false);
         disableHibernationButton = new QPushButton(tab_6);
         disableHibernationButton->setObjectName(QStringLiteral("disableHibernationButton"));
-        disableHibernationButton->setGeometry(QRect(10, 360, 221, 36));
+        disableHibernationButton->setGeometry(QRect(450, 360, 221, 36));
         disableHibernationButton->setIconSize(QSize(30, 30));
         disableHibernationButton->setCheckable(false);
         doVisibleAsterisksButton = new QPushButton(tab_6);
@@ -986,7 +1001,7 @@ public:
         doVisibleAsterisksButton->setCheckable(false);
         enableHibernationButton = new QPushButton(tab_6);
         enableHibernationButton->setObjectName(QStringLiteral("enableHibernationButton"));
-        enableHibernationButton->setGeometry(QRect(10, 320, 221, 36));
+        enableHibernationButton->setGeometry(QRect(450, 320, 221, 36));
         enableHibernationButton->setIconSize(QSize(30, 30));
         enableHibernationButton->setCheckable(false);
         enableSudoWithoutPassButton = new QPushButton(tab_6);
@@ -1108,11 +1123,11 @@ public:
         label_13->setFont(font1);
         label_32 = new QLabel(tab_6);
         label_32->setObjectName(QStringLiteral("label_32"));
-        label_32->setGeometry(QRect(450, 310, 141, 16));
+        label_32->setGeometry(QRect(10, 340, 141, 16));
         label_32->setFont(font1);
         runGrubcustomizerButton = new QPushButton(tab_6);
         runGrubcustomizerButton->setObjectName(QStringLiteral("runGrubcustomizerButton"));
-        runGrubcustomizerButton->setGeometry(QRect(450, 330, 221, 36));
+        runGrubcustomizerButton->setGeometry(QRect(10, 360, 221, 36));
         runGrubcustomizerButton->setIconSize(QSize(30, 30));
         runGrubcustomizerButton->setCheckable(false);
         openSudoersUbunsysModButton = new QPushButton(tab_6);
@@ -1120,6 +1135,16 @@ public:
         openSudoersUbunsysModButton->setGeometry(QRect(450, 150, 221, 36));
         openSudoersUbunsysModButton->setIconSize(QSize(30, 30));
         openSudoersUbunsysModButton->setCheckable(false);
+        aptselect_US = new QPushButton(tab_6);
+        aptselect_US->setObjectName(QStringLiteral("aptselect_US"));
+        aptselect_US->setGeometry(QRect(10, 290, 101, 36));
+        aptselect_US->setIconSize(QSize(30, 30));
+        aptselect_US->setCheckable(false);
+        aptselect_ES = new QPushButton(tab_6);
+        aptselect_ES->setObjectName(QStringLiteral("aptselect_ES"));
+        aptselect_ES->setGeometry(QRect(130, 290, 101, 36));
+        aptselect_ES->setIconSize(QSize(30, 30));
+        aptselect_ES->setCheckable(false);
         tabWidget_3->addTab(tab_6, QString());
         tab_7 = new QWidget();
         tab_7->setObjectName(QStringLiteral("tab_7"));
@@ -1502,10 +1527,10 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(0);
-        tabWidget_2->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
+        tabWidget_2->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(0);
-        tabWidget_4->setCurrentIndex(0);
+        tabWidget_4->setCurrentIndex(1);
         tabWidget_5->setCurrentIndex(0);
 
 
@@ -1593,7 +1618,7 @@ public:
         checkBox_002->setText(QApplication::translate("MainWindow", "002.dropbox", Q_NULLPTR));
         checkBox_019->setText(QApplication::translate("MainWindow", "019.ppa-purge", Q_NULLPTR));
         checkBox_057->setText(QApplication::translate("MainWindow", "057.vibrancy-colors", Q_NULLPTR));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/3", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/4", Q_NULLPTR));
         checkBox_058->setText(QApplication::translate("MainWindow", "058.flatabulous-theme", Q_NULLPTR));
         checkBox_060->setText(QApplication::translate("MainWindow", "060.myspell", Q_NULLPTR));
         checkBox_059->setText(QApplication::translate("MainWindow", "059.aspell", Q_NULLPTR));
@@ -1650,7 +1675,7 @@ public:
         checkBox_117->setText(QApplication::translate("MainWindow", "117.jdownloader-beta", Q_NULLPTR));
         checkBox_118->setText(QApplication::translate("MainWindow", "118.jdownloader-stable", Q_NULLPTR));
         checkBox_116->setText(QApplication::translate("MainWindow", "116.compress-uncompress-utils", Q_NULLPTR));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_12), QApplication::translate("MainWindow", "Packages 2/3", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_12), QApplication::translate("MainWindow", "Packages 2/4", Q_NULLPTR));
         checkBox_132->setText(QApplication::translate("MainWindow", "132.ukuu", Q_NULLPTR));
         checkBox_130->setText(QApplication::translate("MainWindow", "130.spaceview", Q_NULLPTR));
         checkBox_120->setText(QApplication::translate("MainWindow", "120.samba", Q_NULLPTR));
@@ -1706,8 +1731,14 @@ public:
         checkBox_171->setText(QApplication::translate("MainWindow", "171.shotwell", Q_NULLPTR));
         checkBox_172->setText(QApplication::translate("MainWindow", "172.acestream", Q_NULLPTR));
         checkBox_173->setText(QApplication::translate("MainWindow", "173.indicator-keylock", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        checkBox_174->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Not recommended to use! May crash your system</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         checkBox_174->setText(QApplication::translate("MainWindow", "174.katoolin", Q_NULLPTR));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("MainWindow", "Packages 3/3", Q_NULLPTR));
+        checkBox_175->setText(QApplication::translate("MainWindow", "175.apt-select", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("MainWindow", "Packages 3/4", Q_NULLPTR));
+        label_36->setText(QApplication::translate("MainWindow", "Coming soon...", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_15), QApplication::translate("MainWindow", "Packages 4/4", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Packages", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         doInvisibleAsterisksButton->setWhatsThis(QString());
@@ -1739,10 +1770,10 @@ public:
         enableHibernationButton->setText(QApplication::translate("MainWindow", "Enable hibernation", Q_NULLPTR));
         enableHibernationButton->setShortcut(QString());
 #ifndef QT_NO_TOOLTIP
-        enableSudoWithoutPassButton->setToolTip(QString());
+        enableSudoWithoutPassButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        enableSudoWithoutPassButton->setWhatsThis(QString());
+        enableSudoWithoutPassButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         enableSudoWithoutPassButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass", Q_NULLPTR));
         enableSudoWithoutPassButton->setShortcut(QString());
@@ -1790,6 +1821,16 @@ public:
 #endif // QT_NO_WHATSTHIS
         openSudoersUbunsysModButton->setText(QApplication::translate("MainWindow", "Open sudoers ubunsys mod", Q_NULLPTR));
         openSudoersUbunsysModButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        aptselect_US->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        aptselect_US->setText(QApplication::translate("MainWindow", "apt-select US", Q_NULLPTR));
+        aptselect_US->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        aptselect_ES->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        aptselect_ES->setText(QApplication::translate("MainWindow", "apt-select ES", Q_NULLPTR));
+        aptselect_ES->setShortcut(QString());
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/2", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         installTemplatesButton->setWhatsThis(QString());
@@ -2002,7 +2043,7 @@ public:
         label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.06.11", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.06.12", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP

@@ -35,11 +35,3 @@ MainWindow::~MainWindow()
 }
 
 
-
-
-
-
-
-
-
-

@@ -143,6 +143,10 @@ private slots:
 
     void on_openSudoersUbunsysModButton_clicked();
 
+    void on_aptselect_US_clicked();
+
+    void on_aptselect_ES_clicked();
+
 private:
     Ui::MainWindow *ui;
 
