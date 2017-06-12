@@ -5,7 +5,9 @@
 
 **For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
 
-App configurable diseñada para Ubuntu referente a paquetes, actualizaciones y configuraciones.
+Software instalador de una lista de paquetes útiles, capaz de hacer cambios en la configuración del sistema, actualizaciones, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
+
+Específico para Ubuntu 16.04, 17.04 x64.
 
 **App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
 
@@ -14,6 +16,8 @@ Construido con Qt 5.7.1. para 17.04 zesty zapus.
 Construido con Qt 5.5.1. para 16.04 xenial xerus.
 
 De esta manera obtiene las librerias de los repositorios oficiales.
+
+Alimentado con [ubuntupackages](https://github.com/adgellida/ubuntupackages) y [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
 
 Descarga
 =============================================

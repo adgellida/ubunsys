@@ -5,7 +5,9 @@
 
 **Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
 
-Configurable app designed for Ubuntu referent to packages, updates and configurations.
+Software installer of a helpful package list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
+
+Ubuntu 16.04, 17.04 x64 specific.
 
 **Very dangerous app in any points, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
 
@@ -14,6 +16,8 @@ Built with Qt 5.7.1 for 17.04 zesty zapus.
 Built with Qt 5.5.1 for 16.04 xenial xerus.
 
 This way it gets libraries from official repositories.
+
+Feeded with [ubuntupackages](https://github.com/adgellida/ubuntupackages) and [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
 
 Download
 =============================================
