@@ -13,22 +13,13 @@ void MainWindow::on_updateScriptsButton_clicked()
     ui->statusBar->showMessage(tr("Updating latest scripts. Please wait"));
 
     system("xterm -e bash -c '"
-           "echo Updating latest scripts. Please wait... Stage 1/3"
+           "echo Trying to downloading and updating necessary files for ubunsys. Please wait... Stage 1/3"
            " && "
            "echo  "
            " && "
-           //"sudo rm -Rf ~/.ubunsys"
-           "rm -Rf ~/.ubunsys/downloads"
-           " && "
-           "mkdir -p ~/.ubunsys/downloads"
-           " && "
-           "wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/downloads/master.zip"
-           " && "
-           "unzip ~/.ubunsys/downloads/master.zip -d ~/.ubunsys/downloads"
-           " && "
-           "chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-master"
-           " && "
-           "rm ~/.ubunsys/downloads/master.zip"
+           "test -d ~/.ubunsys || mkdir -p ~/.ubunsys && test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && test -d ~/.ubunsys/downloads/ubuntuScripts-master || mkdir -p ~/.ubunsys/downloads/ubuntuScripts-master && wget https://raw.githubusercontent.com/adgellida/ubuntuScripts/master/044.downloadLatestUbuntuscripts -O ~/.ubunsys/downloads/ubuntuScripts-master/044.downloadLatestUbuntuscripts && chmod 777 ~/.ubunsys/downloads/ubuntuScripts-master/044.downloadLatestUbuntuscripts && ~/.ubunsys/downloads/ubuntuScripts-master/044.downloadLatestUbuntuscripts && echo ubuntuscripts downloaded ok. 1/3 ok || echo Error downloading ubuntuscripts. Holding your scripts. 1/3 fail && sleep 2"
+
+           //"test -f ~/.ubunsys || mkdir -p ~/.ubunsys && test -f ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/master.zip && rm -Rf ~/.ubunsys/downloads/ubuntuScripts-master && unzip ~/.ubunsys/master.zip -d ~/.ubunsys/downloads && chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-master && rm ~/.ubunsys/master.zip && echo \nubuntuscripts download ok\n. || echo \nError downloading ubuntuscripts\n. Holding your scripts. && sleep 2"
            " && "
     //     "exit"
     //     "; exec bash'");

@@ -147,6 +147,16 @@ private slots:
 
     void on_aptselect_ES_clicked();
 
+    void on_openSourcesListButton_clicked();
+
+    void on_backupSourcesListButton_clicked();
+
+    void on_importSourcesListButton_clicked();
+
+    void on_openMainBackupButton_clicked();
+
+    void on_openMainRestoreButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 

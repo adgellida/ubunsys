@@ -33,3 +33,6 @@ RESOURCES += \
 DISTFILES +=
 
 TRANSLATIONS += languages/ubunsys_es_ES.ts
+
+target.path = /usr/bin/
+INSTALLS += target
