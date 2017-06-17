@@ -143,10 +143,10 @@ DONE
 
 * Download updated database about ppas each time you open app independent of app version. You push "update scripts button" and it does it.
 
-If you want to use PPA
+If you want to use PPA - NOT UPDATED
 =============================================
 
-* Not updated to latest version yet, don't use for now. It will be fixed when I know how...
+* Not updated to latest version yet, don't use for now. It will be fixed when I know how... I need help for it.
 
 `sudo add-apt-repository -y ppa:adgellida/ubunsys`
 

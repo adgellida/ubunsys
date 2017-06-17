@@ -143,10 +143,10 @@ HECHO
 
 * Descarga de la base de datos actualizada de los PPAs cada vez que se abra la app independentemente del la versión de la app. Tú pulsas "botón de actualizar los scripts" y lo hace.
 
-Si quieres usar PPA
+Si quieres usar PPA - NO ACTUALIZADA
 =============================================
 
-* No actualizada a la última versón aún, no usar por ahora. Se reparará cuando se sepa como...
+* No actualizada a la última versón aún, no usar por ahora. Se reparará cuando se sepa como... Necesito ayuda.
 
 `sudo add-apt-repository -y ppa:adgellida/ubunsys`
 
