@@ -24,6 +24,15 @@ Descarga
 
 * https://github.com/adgellida/ubunsys/releases
 
+Si quieres usar PPA - ACTUALIZADA A LA ÚLTIMA! - NECESITA PERFECCIONAMIENTO
+=============================================
+
+`sudo add-apt-repository -y ppa:adgellida/ubunsys`
+
+`sudo apt-get -y update`
+
+`sudo apt-get -y install ubunsys`
+
 <img src="http://i.imgur.com/rOZY92b.png" width="500">
 
 <img src="http://i.imgur.com/Wy6Tv4b.png" width="500">
@@ -142,17 +151,6 @@ HECHO
 * Traducir app al Español.
 
 * Descarga de la base de datos actualizada de los PPAs cada vez que se abra la app independentemente del la versión de la app. Tú pulsas "botón de actualizar los scripts" y lo hace.
-
-Si quieres usar PPA - NO ACTUALIZADA
-=============================================
-
-* No actualizada a la última versón aún, no usar por ahora. Se reparará cuando se sepa como... Necesito ayuda.
-
-`sudo add-apt-repository -y ppa:adgellida/ubunsys`
-
-`sudo apt-get -y update`
-
-`sudo apt-get -y install ubunsys`
 
 Ten cuidado
 =============================================

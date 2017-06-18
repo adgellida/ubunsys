@@ -24,6 +24,15 @@ Download
 
 * https://github.com/adgellida/ubunsys/releases
 
+If you want to use PPA - UPDATED TO LATEST! - NEEDS IMPROVEMENT
+=============================================
+
+`sudo add-apt-repository -y ppa:adgellida/ubunsys`
+
+`sudo apt-get -y update`
+
+`sudo apt-get -y install ubunsys`
+
 <img src="http://i.imgur.com/rOZY92b.png" width="500">
 
 <img src="http://i.imgur.com/Wy6Tv4b.png" width="500">
@@ -142,17 +151,6 @@ DONE
 * Translate app to Spanish.
 
 * Download updated database about ppas each time you open app independent of app version. You push "update scripts button" and it does it.
-
-If you want to use PPA - NOT UPDATED
-=============================================
-
-* Not updated to latest version yet, don't use for now. It will be fixed when I know how... I need help for it.
-
-`sudo add-apt-repository -y ppa:adgellida/ubunsys`
-
-`sudo apt-get -y update`
-
-`sudo apt-get -y install ubunsys`
 
 Be care
 =============================================
