@@ -4,6 +4,11 @@ ubunsys
 <p align="center">
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=84KHR9VLK7XK8" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate with PayPal"></a>
   <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a>
+  <a href="https://github.com/adgellida/ubunsys/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/ubunsys.svg" alt="stars"></a>  
+  <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a>
+  <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.06.15/total.svg" alt="total downloads latest release"></a> 
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/release-v2017.06.15-blue.svg" alt="Release"></a>
 </p>
 
