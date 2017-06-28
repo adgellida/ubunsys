@@ -2641,8 +2641,7 @@ updatezone.o: updatezone.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/QDesktopServices \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qdesktopservices.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QTextStream
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qdesktopservices.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o updatezone.o updatezone.cpp
 
 packagestab.o: packagestab.cpp mainwindow.h \
