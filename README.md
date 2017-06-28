@@ -1,6 +1,8 @@
 ubunsys
 =============================================
 
+[![Join the chat at https://gitter.im/adgellida/ubunsys](https://badges.gitter.im/adgellida/ubunsys.svg)](https://gitter.im/adgellida/ubunsys?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 <p align="center">
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=84KHR9VLK7XK8" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate with PayPal"></a>
   <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a>
