@@ -31,12 +31,17 @@ Apps based on him:
 
 * [winsys](https://github.com/adgellida/winsys).
 
-Download
+Download from official sources - click on logo
 =============================================
 
-* https://github.com/adgellida/ubunsys/releases
+<p align="center">
+  <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a>
+  <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a>
+  <a href="https://www.linux-apps.com/p/1179908/" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a>
+  <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="80" alt="Launchpad"></a>
+</p>
 
-If you want to use PPA - UPDATED TO LATEST! - NEEDS IMPROVEMENT
+Launchpad PPA Method
 =============================================
 
 `sudo add-apt-repository -y ppa:adgellida/ubunsys`
@@ -46,11 +51,8 @@ If you want to use PPA - UPDATED TO LATEST! - NEEDS IMPROVEMENT
 `sudo apt-get -y install ubunsys`
 
 <img src="http://i.imgur.com/rOZY92b.png" width="500">
-
 <img src="http://i.imgur.com/Wy6Tv4b.png" width="500">
-
 <img src="http://i.imgur.com/omnhGYV.png" width="500">
-
 <img src="http://i.imgur.com/rympo8x.png" width="500">
 
 What this program do
