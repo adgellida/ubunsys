@@ -4,16 +4,15 @@
 #
 #-------------------------------------------------
 
-QT       += core gui\
-            #autoupdatercore\
-            #autoupdatergui
+QT       += core gui #autoupdatercore autoupdatergui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
 TARGET = ubunsys
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
+SOURCES += main.cpp \
            mainwindow.cpp \
            toolbartab.cpp \
            repairtab.cpp \
@@ -28,12 +27,18 @@ HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
 
-RESOURCES += \
-    ubunsys.qrc
+RESOURCES += ubunsys.qrc
 
 DISTFILES +=
 
 TRANSLATIONS += languages/ubunsys_es_ES.ts
 
 target.path = /usr/bin
-INSTALLS += target
+
+icon.path = /usr/share/pixmaps
+icon.files = $$PWD/images/ubunsys.ico
+
+desktop.path = /usr/share/applications
+desktop.files += ubunsys.desktop
+
+INSTALLS += target desktop icon

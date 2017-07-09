@@ -3362,9 +3362,29 @@ uninstall_target: FORCE
 	-$(DEL_DIR) $(INSTALL_ROOT)/usr/bin/ 
 
 
-install: install_target  FORCE
+install_desktop: first FORCE
+	@test -d $(INSTALL_ROOT)/usr/share/applications || mkdir -p $(INSTALL_ROOT)/usr/share/applications
+	-$(INSTALL_PROGRAM) /home/usuario/githubProjects/ubunsys/ubunsys.desktop $(INSTALL_ROOT)/usr/share/applications/
+	-strip $(INSTALL_ROOT)/usr/share/applications/ubunsys.desktop
 
-uninstall: uninstall_target  FORCE
+uninstall_desktop: FORCE
+	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/applications/ubunsys.desktop
+	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/applications/ 
+
+
+install_icon: first FORCE
+	@test -d $(INSTALL_ROOT)/usr/share/pixmaps || mkdir -p $(INSTALL_ROOT)/usr/share/pixmaps
+	-$(INSTALL_PROGRAM) /home/usuario/githubProjects/ubunsys/images/ubunsys.ico $(INSTALL_ROOT)/usr/share/pixmaps/
+	-strip $(INSTALL_ROOT)/usr/share/pixmaps/ubunsys.ico
+
+uninstall_icon: FORCE
+	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/pixmaps/ubunsys.ico
+	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/pixmaps/ 
+
+
+install: install_target install_desktop install_icon  FORCE
+
+uninstall: uninstall_target uninstall_desktop uninstall_icon  FORCE
 
 FORCE:
 
