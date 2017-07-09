@@ -11,6 +11,7 @@
 #include <QtCore>
 #include <QDebug>
 #include <QSettings>
+//#include <Updater>
 
 namespace Ui {
 class MainWindow;

@@ -4,24 +4,25 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui\
+            #autoupdatercore\
+            #autoupdatergui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
 TARGET = ubunsys
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    toolbartab.cpp \
-    repairtab.cpp \
-    systemtab.cpp \
-    tweakstab.cpp \
-    updatezone.cpp \
-    packagestab.cpp \
-    about.cpp \
-    tutorial.cpp
+           mainwindow.cpp \
+           toolbartab.cpp \
+           repairtab.cpp \
+           systemtab.cpp \
+           tweakstab.cpp \
+           updatezone.cpp \
+           packagestab.cpp \
+           about.cpp \
+           tutorial.cpp
 
 HEADERS  += mainwindow.h
 
@@ -34,5 +35,5 @@ DISTFILES +=
 
 TRANSLATIONS += languages/ubunsys_es_ES.ts
 
-target.path = /usr/bin/
+target.path = /usr/bin
 INSTALLS += target
