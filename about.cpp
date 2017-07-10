@@ -25,8 +25,8 @@ void MainWindow::on_actionAbout_triggered()
     about.setWindowTitle(tr("About"));
 
     about.setStandardButtons(QMessageBox::Ok);
-    about.setIconPixmap(QPixmap(":/images/ubunsys.ico"));
-    about.setWindowIcon(QIcon(":/images/ubunsys.ico"));
+    about.setIconPixmap(QPixmap(":/images/ubunsys.png"));
+    about.setWindowIcon(QIcon(":/images/ubunsys.png"));
     //about.setIcon(":/images/ubunsys.ico");
     about.setDefaultButton(QMessageBox::Ok);
 
