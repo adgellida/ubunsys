@@ -75,9 +75,9 @@ void MainWindow::on_fixBrokenPackagesButton_3_clicked()
     ui->statusBar->showMessage(tr("Executing package repair 3. Then close the terminal window"));
 
     system("xterm -e bash -c '"
-           "rm /var/lib/apt/lists/* -vf"
+           "sudo rm /var/lib/apt/lists/* -vf"
            " && "
-           "apt-fast -y update"
+           "sudo apt-fast -y update"
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Reparation 3 executed succesful. Test if all is corrected"));

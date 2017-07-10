@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -1593,414 +1593,414 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "ubunsys", 0));
-        actionExit->setText(QApplication::translate("MainWindow", "Exit", 0));
-        actionPaste->setText(QApplication::translate("MainWindow", "Paste", 0));
-        actionAbout->setText(QApplication::translate("MainWindow", "About", 0));
-        actionAbout_Qt->setText(QApplication::translate("MainWindow", "About Qt", 0));
-        actionSave_as->setText(QApplication::translate("MainWindow", "Save as...", 0));
-        actionNew->setText(QApplication::translate("MainWindow", "New", 0));
-        actionOpen->setText(QApplication::translate("MainWindow", "Open", 0));
-        actionSave->setText(QApplication::translate("MainWindow", "Save", 0));
-        actionCopy->setText(QApplication::translate("MainWindow", "Copy", 0));
-        actionCut->setText(QApplication::translate("MainWindow", "Cut", 0));
-        actionCut->setIconText(QApplication::translate("MainWindow", "Cortar", 0));
-        actionPreferences->setText(QApplication::translate("MainWindow", "Preferences", 0));
-        actionTutorial->setText(QApplication::translate("MainWindow", "Tutorial", 0));
-        actionEnglish->setText(QApplication::translate("MainWindow", "English", 0));
-        actionSpanish->setText(QApplication::translate("MainWindow", "Spanish", 0));
-        unselectAllButton->setText(QApplication::translate("MainWindow", "Unselect All", 0));
-        selectAllButton->setText(QApplication::translate("MainWindow", "Select All", 0));
-        installSelectedPackagesButton->setText(QApplication::translate("MainWindow", "Install", 0));
-        uninstallSelectedPackagesButton->setText(QApplication::translate("MainWindow", "Uninstall", 0));
-        loadSelectionButton->setText(QApplication::translate("MainWindow", "Load", 0));
-        saveSelectionButton->setText(QApplication::translate("MainWindow", "Save", 0));
-        checkBox_012->setText(QApplication::translate("MainWindow", "012.keepassx", 0));
-        checkBox_013->setText(QApplication::translate("MainWindow", "013.ubuntu-restricted-extras", 0));
-        checkBox_014->setText(QApplication::translate("MainWindow", "014.ttf-ancient fonts", 0));
-        checkBox_009->setText(QApplication::translate("MainWindow", "009.xorg-edgers", 0));
-        checkBox_011->setText(QApplication::translate("MainWindow", "011.graphics-drivers-team", 0));
-        checkBox_020->setText(QApplication::translate("MainWindow", "020.gnome-disk-utility", 0));
-        checkBox_010->setText(QApplication::translate("MainWindow", "010.oibaf", 0));
-        checkBox_021->setText(QApplication::translate("MainWindow", "021.gparted", 0));
-        checkBox_008->setText(QApplication::translate("MainWindow", "008.mtp-support", 0));
-        checkBox_015->setText(QApplication::translate("MainWindow", "015.synaptic", 0));
-        checkBox_005->setText(QApplication::translate("MainWindow", "005.y-ppa-manager", 0));
-        checkBox_016->setText(QApplication::translate("MainWindow", "016.preload", 0));
-        checkBox_017->setText(QApplication::translate("MainWindow", "017.prelink", 0));
-        checkBox_018->setText(QApplication::translate("MainWindow", "018.gdebi", 0));
-        checkBox_004->setText(QApplication::translate("MainWindow", "004.apt-fast", 0));
-        checkBox_006->setText(QApplication::translate("MainWindow", "006.getdeb", 0));
-        checkBox_022->setText(QApplication::translate("MainWindow", "022.gkrellm", 0));
-        checkBox_007->setText(QApplication::translate("MainWindow", "007.playdeb", 0));
-        checkBox_023->setText(QApplication::translate("MainWindow", "023.mate-tweak", 0));
-        checkBox_024->setText(QApplication::translate("MainWindow", "024.recoll", 0));
-        checkBox_025->setText(QApplication::translate("MainWindow", "025.brasero", 0));
-        checkBox_026->setText(QApplication::translate("MainWindow", "026.k3b", 0));
-        checkBox_027->setText(QApplication::translate("MainWindow", "027.gtkorphan", 0));
-        checkBox_028->setText(QApplication::translate("MainWindow", "028.byobu", 0));
-        checkBox_029->setText(QApplication::translate("MainWindow", "029.gsmartcontrol", 0));
-        checkBox_030->setText(QApplication::translate("MainWindow", "030.software-center", 0));
-        checkBox_031->setText(QApplication::translate("MainWindow", "031.gnome-software", 0));
-        checkBox_032->setText(QApplication::translate("MainWindow", "032.test", 0));
-        checkBox_033->setText(QApplication::translate("MainWindow", "033.appgrid", 0));
-        checkBox_034->setText(QApplication::translate("MainWindow", "034.mintStick", 0));
-        checkBox_035->setText(QApplication::translate("MainWindow", "035.mate-dock-applet", 0));
-        checkBox_036->setText(QApplication::translate("MainWindow", "036.extundelete", 0));
-        checkBox_037->setText(QApplication::translate("MainWindow", "037.cairo-dock", 0));
-        checkBox_046->setText(QApplication::translate("MainWindow", "046.clipit", 0));
-        checkBox_045->setText(QApplication::translate("MainWindow", "045.bleachbit", 0));
-        checkBox_044->setText(QApplication::translate("MainWindow", "044.grub-customizer", 0));
-        checkBox_043->setText(QApplication::translate("MainWindow", "043.synapse", 0));
-        checkBox_042->setText(QApplication::translate("MainWindow", "042.converseen", 0));
-        checkBox_047->setText(QApplication::translate("MainWindow", "047.screenfetch", 0));
-        checkBox_048->setText(QApplication::translate("MainWindow", "048.i-nex", 0));
-        checkBox_049->setText(QApplication::translate("MainWindow", "049.ANGRYsearch", 0));
-        checkBox_050->setText(QApplication::translate("MainWindow", "050.fish-shell", 0));
-        checkBox_051->setText(QApplication::translate("MainWindow", "051.furiusisomount", 0));
-        checkBox_052->setText(QApplication::translate("MainWindow", "052.ddrescue-gui", 0));
-        checkBox_053->setText(QApplication::translate("MainWindow", "053.unetbootin", 0));
-        checkBox_054->setText(QApplication::translate("MainWindow", "054.manpages-es", 0));
-        checkBox_055->setText(QApplication::translate("MainWindow", "055.asterisk-on-cli-passwords", 0));
-        checkBox_056->setText(QApplication::translate("MainWindow", "056.disable-system-crash-reports", 0));
-        checkBox_041->setText(QApplication::translate("MainWindow", "041.teamviewer", 0));
-        checkBox_038->setText(QApplication::translate("MainWindow", "038.ubuntu-after-install", 0));
-        checkBox_040->setText(QApplication::translate("MainWindow", "040.postinstallerf", 0));
-        checkBox_039->setText(QApplication::translate("MainWindow", "039.ubutricks", 0));
-        checkBox_003->setText(QApplication::translate("MainWindow", "003.megasync", 0));
-        checkBox_001->setText(QApplication::translate("MainWindow", "001.freefilesync", 0));
-        checkBox_002->setText(QApplication::translate("MainWindow", "002.dropbox", 0));
-        checkBox_019->setText(QApplication::translate("MainWindow", "019.ppa-purge", 0));
-        checkBox_057->setText(QApplication::translate("MainWindow", "057.vibrancy-colors", 0));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/4", 0));
-        checkBox_058->setText(QApplication::translate("MainWindow", "058.flatabulous-theme", 0));
-        checkBox_060->setText(QApplication::translate("MainWindow", "060.myspell", 0));
-        checkBox_059->setText(QApplication::translate("MainWindow", "059.aspell", 0));
-        checkBox_061->setText(QApplication::translate("MainWindow", "061.gufw", 0));
-        checkBox_065->setText(QApplication::translate("MainWindow", "065.gnome-exe-thumbnailer", 0));
-        checkBox_064->setText(QApplication::translate("MainWindow", "064.krita-testing", 0));
-        checkBox_063->setText(QApplication::translate("MainWindow", "063.gimp-edge", 0));
-        checkBox_066->setText(QApplication::translate("MainWindow", "066.shutter", 0));
-        checkBox_067->setText(QApplication::translate("MainWindow", "067.inkscape-stable", 0));
-        checkBox_062->setText(QApplication::translate("MainWindow", "062.gimp", 0));
-        checkBox_068->setText(QApplication::translate("MainWindow", "068.inkscape-trunk", 0));
-        checkBox_069->setText(QApplication::translate("MainWindow", "069.qmmp", 0));
-        checkBox_072->setText(QApplication::translate("MainWindow", "072.smplayer", 0));
-        checkBox_070->setText(QApplication::translate("MainWindow", "070.kazam", 0));
-        checkBox_073->setText(QApplication::translate("MainWindow", "073.handbrake", 0));
-        checkBox_071->setText(QApplication::translate("MainWindow", "071.sopcast", 0));
-        checkBox_075->setText(QApplication::translate("MainWindow", "075.vlc-stable", 0));
-        checkBox_076->setText(QApplication::translate("MainWindow", "076.vlc-daily", 0));
-        checkBox_074->setText(QApplication::translate("MainWindow", "074.ffmpeg", 0));
-        checkBox_093->setText(QApplication::translate("MainWindow", "093.qtcreator", 0));
-        checkBox_078->setText(QApplication::translate("MainWindow", "078.openjdk-8", 0));
-        checkBox_081->setText(QApplication::translate("MainWindow", "081.dev-utils", 0));
-        checkBox_085->setText(QApplication::translate("MainWindow", "085.dia", 0));
-        checkBox_094->setText(QApplication::translate("MainWindow", "094.kicad", 0));
-        checkBox_083->setText(QApplication::translate("MainWindow", "083.smartgit", 0));
-        checkBox_082->setText(QApplication::translate("MainWindow", "082.git-stable", 0));
-        checkBox_080->setText(QApplication::translate("MainWindow", "080.meld", 0));
-        checkBox_084->setText(QApplication::translate("MainWindow", "084.flatpak", 0));
-        checkBox_092->setText(QApplication::translate("MainWindow", "092.git-gui", 0));
-        checkBox_091->setText(QApplication::translate("MainWindow", "091.git-rc", 0));
-        checkBox_088->setText(QApplication::translate("MainWindow", "088.uecide", 0));
-        checkBox_087->setText(QApplication::translate("MainWindow", "087.fritzing", 0));
-        checkBox_090->setText(QApplication::translate("MainWindow", "090.arduino-studio", 0));
-        checkBox_089->setText(QApplication::translate("MainWindow", "089.arduino-ide", 0));
-        checkBox_079->setText(QApplication::translate("MainWindow", "079.openjdk-7", 0));
-        checkBox_086->setText(QApplication::translate("MainWindow", "086.blender", 0));
-        checkBox_077->setText(QApplication::translate("MainWindow", "077.notepadqq", 0));
-        checkBox_101->setText(QApplication::translate("MainWindow", "101.google-chrome-stable", 0));
-        checkBox_105->setText(QApplication::translate("MainWindow", "105.firefox-trunk", 0));
-        checkBox_107->setText(QApplication::translate("MainWindow", "107.pepper-flash-for-chromium", 0));
-        checkBox_110->setText(QApplication::translate("MainWindow", "110.skype", 0));
-        checkBox_108->setText(QApplication::translate("MainWindow", "108.pepper-flash-for-firefox", 0));
-        checkBox_100->setText(QApplication::translate("MainWindow", "100.vivaldi-browser", 0));
-        checkBox_113->setText(QApplication::translate("MainWindow", "113.telegram", 0));
-        checkBox_112->setText(QApplication::translate("MainWindow", "112.wire", 0));
-        checkBox_104->setText(QApplication::translate("MainWindow", "104.firefox", 0));
-        checkBox_109->setText(QApplication::translate("MainWindow", "109.tor-browser", 0));
-        checkBox_111->setText(QApplication::translate("MainWindow", "111.mumble", 0));
-        checkBox_102->setText(QApplication::translate("MainWindow", "102.google-chrome-unstable", 0));
-        checkBox_115->setText(QApplication::translate("MainWindow", "115.Whatsie", 0));
-        checkBox_114->setText(QApplication::translate("MainWindow", "114.Facebook-Messenger-Desktop", 0));
-        checkBox_103->setText(QApplication::translate("MainWindow", "103.chromium", 0));
-        checkBox_106->setText(QApplication::translate("MainWindow", "106.ubuntu-mozilla-security", 0));
-        checkBox_117->setText(QApplication::translate("MainWindow", "117.jdownloader-beta", 0));
-        checkBox_118->setText(QApplication::translate("MainWindow", "118.jdownloader-stable", 0));
-        checkBox_116->setText(QApplication::translate("MainWindow", "116.compress-uncompress-utils", 0));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_12), QApplication::translate("MainWindow", "Packages 2/4", 0));
-        checkBox_132->setText(QApplication::translate("MainWindow", "132.ukuu", 0));
-        checkBox_130->setText(QApplication::translate("MainWindow", "130.spaceview", 0));
-        checkBox_120->setText(QApplication::translate("MainWindow", "120.samba", 0));
-        checkBox_123->setText(QApplication::translate("MainWindow", "123.qpdfview", 0));
-        checkBox_122->setText(QApplication::translate("MainWindow", "122.libreoffice", 0));
-        checkBox_121->setText(QApplication::translate("MainWindow", "121.evolution", 0));
-        checkBox_126->setText(QApplication::translate("MainWindow", "126.uninstallpackages", 0));
-        checkBox_125->setText(QApplication::translate("MainWindow", "125.steam", 0));
-        checkBox_124->setText(QApplication::translate("MainWindow", "124.thunderbird-nightly", 0));
-        checkBox_119->setText(QApplication::translate("MainWindow", "119.peerflix", 0));
-        checkBox_133->setText(QApplication::translate("MainWindow", "133.ubunsys", 0));
-        checkBox_134->setText(QApplication::translate("MainWindow", "134.android-tools-adb", 0));
-        checkBox_135->setText(QApplication::translate("MainWindow", "135.ubuntu-cleaner", 0));
-        checkBox_136->setText(QApplication::translate("MainWindow", "136.stacer", 0));
-        checkBox_137->setText(QApplication::translate("MainWindow", "137.virtualbox", 0));
-        checkBox_138->setText(QApplication::translate("MainWindow", "138.playonlinux", 0));
-        checkBox_139->setText(QApplication::translate("MainWindow", "139.kubuntu-ci-unstable", 0));
-        checkBox_140->setText(QApplication::translate("MainWindow", "140.qt5ct", 0));
-        checkBox_141->setText(QApplication::translate("MainWindow", "141.wakeonlan", 0));
-        checkBox_142->setText(QApplication::translate("MainWindow", "142.youtube-dlg", 0));
-        checkBox_143->setText(QApplication::translate("MainWindow", "143.chaoticrage", 0));
-        checkBox_144->setText(QApplication::translate("MainWindow", "144.keepassxc", 0));
-        checkBox_145->setText(QApplication::translate("MainWindow", "145.ucare", 0));
-        checkBox_146->setText(QApplication::translate("MainWindow", "146.dekko", 0));
-        checkBox_147->setText(QApplication::translate("MainWindow", "147.cerebro", 0));
-        checkBox_148->setText(QApplication::translate("MainWindow", "148.rdesktop", 0));
-        checkBox_149->setText(QApplication::translate("MainWindow", "149.remmina", 0));
-        checkBox_131->setText(QApplication::translate("MainWindow", "131.ungoogled-chromium", 0));
-        checkBox_127->setText(QApplication::translate("MainWindow", "127.canonical-livepatch", 0));
-        checkBox_128->setText(QApplication::translate("MainWindow", "128.indicator-diskman", 0));
-        checkBox_129->setText(QApplication::translate("MainWindow", "129.udisks-indicator", 0));
-        checkBox_150->setText(QApplication::translate("MainWindow", "150.spotify", 0));
-        checkBox_151->setText(QApplication::translate("MainWindow", "151.insync", 0));
-        checkBox_152->setText(QApplication::translate("MainWindow", "152.discord-canary", 0));
-        checkBox_153->setText(QApplication::translate("MainWindow", "153.discord-stable", 0));
-        checkBox_154->setText(QApplication::translate("MainWindow", "154.green-recorder", 0));
-        checkBox_155->setText(QApplication::translate("MainWindow", "155.slingscold", 0));
-        checkBox_156->setText(QApplication::translate("MainWindow", "156.harmony", 0));
-        checkBox_157->setText(QApplication::translate("MainWindow", "157.rm-protection", 0));
-        checkBox_158->setText(QApplication::translate("MainWindow", "158.powershell", 0));
-        checkBox_159->setText(QApplication::translate("MainWindow", "159.komorebi", 0));
-        checkBox_160->setText(QApplication::translate("MainWindow", "160.scudcloud", 0));
-        checkBox_161->setText(QApplication::translate("MainWindow", "161.krita-stable", 0));
-        checkBox_162->setText(QApplication::translate("MainWindow", "162.caja-extensions1", 0));
-        checkBox_163->setText(QApplication::translate("MainWindow", "163.caja-extensions2", 0));
-        checkBox_164->setText(QApplication::translate("MainWindow", "164.tilix", 0));
-        checkBox_165->setText(QApplication::translate("MainWindow", "165.i2p", 0));
-        checkBox_166->setText(QApplication::translate("MainWindow", "166.fslint", 0));
-        checkBox_167->setText(QApplication::translate("MainWindow", "167.qdirstat", 0));
-        checkBox_168->setText(QApplication::translate("MainWindow", "168.debreate", 0));
-        checkBox_169->setText(QApplication::translate("MainWindow", "169.nylas", 0));
-        checkBox_170->setText(QApplication::translate("MainWindow", "170.resetter", 0));
-        checkBox_171->setText(QApplication::translate("MainWindow", "171.shotwell", 0));
-        checkBox_172->setText(QApplication::translate("MainWindow", "172.acestream", 0));
-        checkBox_173->setText(QApplication::translate("MainWindow", "173.indicator-keylock", 0));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "ubunsys", Q_NULLPTR));
+        actionExit->setText(QApplication::translate("MainWindow", "Exit", Q_NULLPTR));
+        actionPaste->setText(QApplication::translate("MainWindow", "Paste", Q_NULLPTR));
+        actionAbout->setText(QApplication::translate("MainWindow", "About", Q_NULLPTR));
+        actionAbout_Qt->setText(QApplication::translate("MainWindow", "About Qt", Q_NULLPTR));
+        actionSave_as->setText(QApplication::translate("MainWindow", "Save as...", Q_NULLPTR));
+        actionNew->setText(QApplication::translate("MainWindow", "New", Q_NULLPTR));
+        actionOpen->setText(QApplication::translate("MainWindow", "Open", Q_NULLPTR));
+        actionSave->setText(QApplication::translate("MainWindow", "Save", Q_NULLPTR));
+        actionCopy->setText(QApplication::translate("MainWindow", "Copy", Q_NULLPTR));
+        actionCut->setText(QApplication::translate("MainWindow", "Cut", Q_NULLPTR));
+        actionCut->setIconText(QApplication::translate("MainWindow", "Cortar", Q_NULLPTR));
+        actionPreferences->setText(QApplication::translate("MainWindow", "Preferences", Q_NULLPTR));
+        actionTutorial->setText(QApplication::translate("MainWindow", "Tutorial", Q_NULLPTR));
+        actionEnglish->setText(QApplication::translate("MainWindow", "English", Q_NULLPTR));
+        actionSpanish->setText(QApplication::translate("MainWindow", "Spanish", Q_NULLPTR));
+        unselectAllButton->setText(QApplication::translate("MainWindow", "Unselect All", Q_NULLPTR));
+        selectAllButton->setText(QApplication::translate("MainWindow", "Select All", Q_NULLPTR));
+        installSelectedPackagesButton->setText(QApplication::translate("MainWindow", "Install", Q_NULLPTR));
+        uninstallSelectedPackagesButton->setText(QApplication::translate("MainWindow", "Uninstall", Q_NULLPTR));
+        loadSelectionButton->setText(QApplication::translate("MainWindow", "Load", Q_NULLPTR));
+        saveSelectionButton->setText(QApplication::translate("MainWindow", "Save", Q_NULLPTR));
+        checkBox_012->setText(QApplication::translate("MainWindow", "012.keepassx", Q_NULLPTR));
+        checkBox_013->setText(QApplication::translate("MainWindow", "013.ubuntu-restricted-extras", Q_NULLPTR));
+        checkBox_014->setText(QApplication::translate("MainWindow", "014.ttf-ancient fonts", Q_NULLPTR));
+        checkBox_009->setText(QApplication::translate("MainWindow", "009.xorg-edgers", Q_NULLPTR));
+        checkBox_011->setText(QApplication::translate("MainWindow", "011.graphics-drivers-team", Q_NULLPTR));
+        checkBox_020->setText(QApplication::translate("MainWindow", "020.gnome-disk-utility", Q_NULLPTR));
+        checkBox_010->setText(QApplication::translate("MainWindow", "010.oibaf", Q_NULLPTR));
+        checkBox_021->setText(QApplication::translate("MainWindow", "021.gparted", Q_NULLPTR));
+        checkBox_008->setText(QApplication::translate("MainWindow", "008.mtp-support", Q_NULLPTR));
+        checkBox_015->setText(QApplication::translate("MainWindow", "015.synaptic", Q_NULLPTR));
+        checkBox_005->setText(QApplication::translate("MainWindow", "005.y-ppa-manager", Q_NULLPTR));
+        checkBox_016->setText(QApplication::translate("MainWindow", "016.preload", Q_NULLPTR));
+        checkBox_017->setText(QApplication::translate("MainWindow", "017.prelink", Q_NULLPTR));
+        checkBox_018->setText(QApplication::translate("MainWindow", "018.gdebi", Q_NULLPTR));
+        checkBox_004->setText(QApplication::translate("MainWindow", "004.apt-fast", Q_NULLPTR));
+        checkBox_006->setText(QApplication::translate("MainWindow", "006.getdeb", Q_NULLPTR));
+        checkBox_022->setText(QApplication::translate("MainWindow", "022.gkrellm", Q_NULLPTR));
+        checkBox_007->setText(QApplication::translate("MainWindow", "007.playdeb", Q_NULLPTR));
+        checkBox_023->setText(QApplication::translate("MainWindow", "023.mate-tweak", Q_NULLPTR));
+        checkBox_024->setText(QApplication::translate("MainWindow", "024.recoll", Q_NULLPTR));
+        checkBox_025->setText(QApplication::translate("MainWindow", "025.brasero", Q_NULLPTR));
+        checkBox_026->setText(QApplication::translate("MainWindow", "026.k3b", Q_NULLPTR));
+        checkBox_027->setText(QApplication::translate("MainWindow", "027.gtkorphan", Q_NULLPTR));
+        checkBox_028->setText(QApplication::translate("MainWindow", "028.byobu", Q_NULLPTR));
+        checkBox_029->setText(QApplication::translate("MainWindow", "029.gsmartcontrol", Q_NULLPTR));
+        checkBox_030->setText(QApplication::translate("MainWindow", "030.software-center", Q_NULLPTR));
+        checkBox_031->setText(QApplication::translate("MainWindow", "031.gnome-software", Q_NULLPTR));
+        checkBox_032->setText(QApplication::translate("MainWindow", "032.test", Q_NULLPTR));
+        checkBox_033->setText(QApplication::translate("MainWindow", "033.appgrid", Q_NULLPTR));
+        checkBox_034->setText(QApplication::translate("MainWindow", "034.mintStick", Q_NULLPTR));
+        checkBox_035->setText(QApplication::translate("MainWindow", "035.mate-dock-applet", Q_NULLPTR));
+        checkBox_036->setText(QApplication::translate("MainWindow", "036.extundelete", Q_NULLPTR));
+        checkBox_037->setText(QApplication::translate("MainWindow", "037.cairo-dock", Q_NULLPTR));
+        checkBox_046->setText(QApplication::translate("MainWindow", "046.clipit", Q_NULLPTR));
+        checkBox_045->setText(QApplication::translate("MainWindow", "045.bleachbit", Q_NULLPTR));
+        checkBox_044->setText(QApplication::translate("MainWindow", "044.grub-customizer", Q_NULLPTR));
+        checkBox_043->setText(QApplication::translate("MainWindow", "043.synapse", Q_NULLPTR));
+        checkBox_042->setText(QApplication::translate("MainWindow", "042.converseen", Q_NULLPTR));
+        checkBox_047->setText(QApplication::translate("MainWindow", "047.screenfetch", Q_NULLPTR));
+        checkBox_048->setText(QApplication::translate("MainWindow", "048.i-nex", Q_NULLPTR));
+        checkBox_049->setText(QApplication::translate("MainWindow", "049.ANGRYsearch", Q_NULLPTR));
+        checkBox_050->setText(QApplication::translate("MainWindow", "050.fish-shell", Q_NULLPTR));
+        checkBox_051->setText(QApplication::translate("MainWindow", "051.furiusisomount", Q_NULLPTR));
+        checkBox_052->setText(QApplication::translate("MainWindow", "052.ddrescue-gui", Q_NULLPTR));
+        checkBox_053->setText(QApplication::translate("MainWindow", "053.unetbootin", Q_NULLPTR));
+        checkBox_054->setText(QApplication::translate("MainWindow", "054.manpages-es", Q_NULLPTR));
+        checkBox_055->setText(QApplication::translate("MainWindow", "055.asterisk-on-cli-passwords", Q_NULLPTR));
+        checkBox_056->setText(QApplication::translate("MainWindow", "056.disable-system-crash-reports", Q_NULLPTR));
+        checkBox_041->setText(QApplication::translate("MainWindow", "041.teamviewer", Q_NULLPTR));
+        checkBox_038->setText(QApplication::translate("MainWindow", "038.ubuntu-after-install", Q_NULLPTR));
+        checkBox_040->setText(QApplication::translate("MainWindow", "040.postinstallerf", Q_NULLPTR));
+        checkBox_039->setText(QApplication::translate("MainWindow", "039.ubutricks", Q_NULLPTR));
+        checkBox_003->setText(QApplication::translate("MainWindow", "003.megasync", Q_NULLPTR));
+        checkBox_001->setText(QApplication::translate("MainWindow", "001.freefilesync", Q_NULLPTR));
+        checkBox_002->setText(QApplication::translate("MainWindow", "002.dropbox", Q_NULLPTR));
+        checkBox_019->setText(QApplication::translate("MainWindow", "019.ppa-purge", Q_NULLPTR));
+        checkBox_057->setText(QApplication::translate("MainWindow", "057.vibrancy-colors", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/4", Q_NULLPTR));
+        checkBox_058->setText(QApplication::translate("MainWindow", "058.flatabulous-theme", Q_NULLPTR));
+        checkBox_060->setText(QApplication::translate("MainWindow", "060.myspell", Q_NULLPTR));
+        checkBox_059->setText(QApplication::translate("MainWindow", "059.aspell", Q_NULLPTR));
+        checkBox_061->setText(QApplication::translate("MainWindow", "061.gufw", Q_NULLPTR));
+        checkBox_065->setText(QApplication::translate("MainWindow", "065.gnome-exe-thumbnailer", Q_NULLPTR));
+        checkBox_064->setText(QApplication::translate("MainWindow", "064.krita-testing", Q_NULLPTR));
+        checkBox_063->setText(QApplication::translate("MainWindow", "063.gimp-edge", Q_NULLPTR));
+        checkBox_066->setText(QApplication::translate("MainWindow", "066.shutter", Q_NULLPTR));
+        checkBox_067->setText(QApplication::translate("MainWindow", "067.inkscape-stable", Q_NULLPTR));
+        checkBox_062->setText(QApplication::translate("MainWindow", "062.gimp", Q_NULLPTR));
+        checkBox_068->setText(QApplication::translate("MainWindow", "068.inkscape-trunk", Q_NULLPTR));
+        checkBox_069->setText(QApplication::translate("MainWindow", "069.qmmp", Q_NULLPTR));
+        checkBox_072->setText(QApplication::translate("MainWindow", "072.smplayer", Q_NULLPTR));
+        checkBox_070->setText(QApplication::translate("MainWindow", "070.kazam", Q_NULLPTR));
+        checkBox_073->setText(QApplication::translate("MainWindow", "073.handbrake", Q_NULLPTR));
+        checkBox_071->setText(QApplication::translate("MainWindow", "071.sopcast", Q_NULLPTR));
+        checkBox_075->setText(QApplication::translate("MainWindow", "075.vlc-stable", Q_NULLPTR));
+        checkBox_076->setText(QApplication::translate("MainWindow", "076.vlc-daily", Q_NULLPTR));
+        checkBox_074->setText(QApplication::translate("MainWindow", "074.ffmpeg", Q_NULLPTR));
+        checkBox_093->setText(QApplication::translate("MainWindow", "093.qtcreator", Q_NULLPTR));
+        checkBox_078->setText(QApplication::translate("MainWindow", "078.openjdk-8", Q_NULLPTR));
+        checkBox_081->setText(QApplication::translate("MainWindow", "081.dev-utils", Q_NULLPTR));
+        checkBox_085->setText(QApplication::translate("MainWindow", "085.dia", Q_NULLPTR));
+        checkBox_094->setText(QApplication::translate("MainWindow", "094.kicad", Q_NULLPTR));
+        checkBox_083->setText(QApplication::translate("MainWindow", "083.smartgit", Q_NULLPTR));
+        checkBox_082->setText(QApplication::translate("MainWindow", "082.git-stable", Q_NULLPTR));
+        checkBox_080->setText(QApplication::translate("MainWindow", "080.meld", Q_NULLPTR));
+        checkBox_084->setText(QApplication::translate("MainWindow", "084.flatpak", Q_NULLPTR));
+        checkBox_092->setText(QApplication::translate("MainWindow", "092.git-gui", Q_NULLPTR));
+        checkBox_091->setText(QApplication::translate("MainWindow", "091.git-rc", Q_NULLPTR));
+        checkBox_088->setText(QApplication::translate("MainWindow", "088.uecide", Q_NULLPTR));
+        checkBox_087->setText(QApplication::translate("MainWindow", "087.fritzing", Q_NULLPTR));
+        checkBox_090->setText(QApplication::translate("MainWindow", "090.arduino-studio", Q_NULLPTR));
+        checkBox_089->setText(QApplication::translate("MainWindow", "089.arduino-ide", Q_NULLPTR));
+        checkBox_079->setText(QApplication::translate("MainWindow", "079.openjdk-7", Q_NULLPTR));
+        checkBox_086->setText(QApplication::translate("MainWindow", "086.blender", Q_NULLPTR));
+        checkBox_077->setText(QApplication::translate("MainWindow", "077.notepadqq", Q_NULLPTR));
+        checkBox_101->setText(QApplication::translate("MainWindow", "101.google-chrome-stable", Q_NULLPTR));
+        checkBox_105->setText(QApplication::translate("MainWindow", "105.firefox-trunk", Q_NULLPTR));
+        checkBox_107->setText(QApplication::translate("MainWindow", "107.pepper-flash-for-chromium", Q_NULLPTR));
+        checkBox_110->setText(QApplication::translate("MainWindow", "110.skype", Q_NULLPTR));
+        checkBox_108->setText(QApplication::translate("MainWindow", "108.pepper-flash-for-firefox", Q_NULLPTR));
+        checkBox_100->setText(QApplication::translate("MainWindow", "100.vivaldi-browser", Q_NULLPTR));
+        checkBox_113->setText(QApplication::translate("MainWindow", "113.telegram", Q_NULLPTR));
+        checkBox_112->setText(QApplication::translate("MainWindow", "112.wire", Q_NULLPTR));
+        checkBox_104->setText(QApplication::translate("MainWindow", "104.firefox", Q_NULLPTR));
+        checkBox_109->setText(QApplication::translate("MainWindow", "109.tor-browser", Q_NULLPTR));
+        checkBox_111->setText(QApplication::translate("MainWindow", "111.mumble", Q_NULLPTR));
+        checkBox_102->setText(QApplication::translate("MainWindow", "102.google-chrome-unstable", Q_NULLPTR));
+        checkBox_115->setText(QApplication::translate("MainWindow", "115.Whatsie", Q_NULLPTR));
+        checkBox_114->setText(QApplication::translate("MainWindow", "114.Facebook-Messenger-Desktop", Q_NULLPTR));
+        checkBox_103->setText(QApplication::translate("MainWindow", "103.chromium", Q_NULLPTR));
+        checkBox_106->setText(QApplication::translate("MainWindow", "106.ubuntu-mozilla-security", Q_NULLPTR));
+        checkBox_117->setText(QApplication::translate("MainWindow", "117.jdownloader-beta", Q_NULLPTR));
+        checkBox_118->setText(QApplication::translate("MainWindow", "118.jdownloader-stable", Q_NULLPTR));
+        checkBox_116->setText(QApplication::translate("MainWindow", "116.compress-uncompress-utils", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_12), QApplication::translate("MainWindow", "Packages 2/4", Q_NULLPTR));
+        checkBox_132->setText(QApplication::translate("MainWindow", "132.ukuu", Q_NULLPTR));
+        checkBox_130->setText(QApplication::translate("MainWindow", "130.spaceview", Q_NULLPTR));
+        checkBox_120->setText(QApplication::translate("MainWindow", "120.samba", Q_NULLPTR));
+        checkBox_123->setText(QApplication::translate("MainWindow", "123.qpdfview", Q_NULLPTR));
+        checkBox_122->setText(QApplication::translate("MainWindow", "122.libreoffice", Q_NULLPTR));
+        checkBox_121->setText(QApplication::translate("MainWindow", "121.evolution", Q_NULLPTR));
+        checkBox_126->setText(QApplication::translate("MainWindow", "126.uninstallpackages", Q_NULLPTR));
+        checkBox_125->setText(QApplication::translate("MainWindow", "125.steam", Q_NULLPTR));
+        checkBox_124->setText(QApplication::translate("MainWindow", "124.thunderbird-nightly", Q_NULLPTR));
+        checkBox_119->setText(QApplication::translate("MainWindow", "119.peerflix", Q_NULLPTR));
+        checkBox_133->setText(QApplication::translate("MainWindow", "133.ubunsys", Q_NULLPTR));
+        checkBox_134->setText(QApplication::translate("MainWindow", "134.android-tools-adb", Q_NULLPTR));
+        checkBox_135->setText(QApplication::translate("MainWindow", "135.ubuntu-cleaner", Q_NULLPTR));
+        checkBox_136->setText(QApplication::translate("MainWindow", "136.stacer", Q_NULLPTR));
+        checkBox_137->setText(QApplication::translate("MainWindow", "137.virtualbox", Q_NULLPTR));
+        checkBox_138->setText(QApplication::translate("MainWindow", "138.playonlinux", Q_NULLPTR));
+        checkBox_139->setText(QApplication::translate("MainWindow", "139.kubuntu-ci-unstable", Q_NULLPTR));
+        checkBox_140->setText(QApplication::translate("MainWindow", "140.qt5ct", Q_NULLPTR));
+        checkBox_141->setText(QApplication::translate("MainWindow", "141.wakeonlan", Q_NULLPTR));
+        checkBox_142->setText(QApplication::translate("MainWindow", "142.youtube-dlg", Q_NULLPTR));
+        checkBox_143->setText(QApplication::translate("MainWindow", "143.chaoticrage", Q_NULLPTR));
+        checkBox_144->setText(QApplication::translate("MainWindow", "144.keepassxc", Q_NULLPTR));
+        checkBox_145->setText(QApplication::translate("MainWindow", "145.ucare", Q_NULLPTR));
+        checkBox_146->setText(QApplication::translate("MainWindow", "146.dekko", Q_NULLPTR));
+        checkBox_147->setText(QApplication::translate("MainWindow", "147.cerebro", Q_NULLPTR));
+        checkBox_148->setText(QApplication::translate("MainWindow", "148.rdesktop", Q_NULLPTR));
+        checkBox_149->setText(QApplication::translate("MainWindow", "149.remmina", Q_NULLPTR));
+        checkBox_131->setText(QApplication::translate("MainWindow", "131.ungoogled-chromium", Q_NULLPTR));
+        checkBox_127->setText(QApplication::translate("MainWindow", "127.canonical-livepatch", Q_NULLPTR));
+        checkBox_128->setText(QApplication::translate("MainWindow", "128.indicator-diskman", Q_NULLPTR));
+        checkBox_129->setText(QApplication::translate("MainWindow", "129.udisks-indicator", Q_NULLPTR));
+        checkBox_150->setText(QApplication::translate("MainWindow", "150.spotify", Q_NULLPTR));
+        checkBox_151->setText(QApplication::translate("MainWindow", "151.insync", Q_NULLPTR));
+        checkBox_152->setText(QApplication::translate("MainWindow", "152.discord-canary", Q_NULLPTR));
+        checkBox_153->setText(QApplication::translate("MainWindow", "153.discord-stable", Q_NULLPTR));
+        checkBox_154->setText(QApplication::translate("MainWindow", "154.green-recorder", Q_NULLPTR));
+        checkBox_155->setText(QApplication::translate("MainWindow", "155.slingscold", Q_NULLPTR));
+        checkBox_156->setText(QApplication::translate("MainWindow", "156.harmony", Q_NULLPTR));
+        checkBox_157->setText(QApplication::translate("MainWindow", "157.rm-protection", Q_NULLPTR));
+        checkBox_158->setText(QApplication::translate("MainWindow", "158.powershell", Q_NULLPTR));
+        checkBox_159->setText(QApplication::translate("MainWindow", "159.komorebi", Q_NULLPTR));
+        checkBox_160->setText(QApplication::translate("MainWindow", "160.scudcloud", Q_NULLPTR));
+        checkBox_161->setText(QApplication::translate("MainWindow", "161.krita-stable", Q_NULLPTR));
+        checkBox_162->setText(QApplication::translate("MainWindow", "162.caja-extensions1", Q_NULLPTR));
+        checkBox_163->setText(QApplication::translate("MainWindow", "163.caja-extensions2", Q_NULLPTR));
+        checkBox_164->setText(QApplication::translate("MainWindow", "164.tilix", Q_NULLPTR));
+        checkBox_165->setText(QApplication::translate("MainWindow", "165.i2p", Q_NULLPTR));
+        checkBox_166->setText(QApplication::translate("MainWindow", "166.fslint", Q_NULLPTR));
+        checkBox_167->setText(QApplication::translate("MainWindow", "167.qdirstat", Q_NULLPTR));
+        checkBox_168->setText(QApplication::translate("MainWindow", "168.debreate", Q_NULLPTR));
+        checkBox_169->setText(QApplication::translate("MainWindow", "169.nylas", Q_NULLPTR));
+        checkBox_170->setText(QApplication::translate("MainWindow", "170.resetter", Q_NULLPTR));
+        checkBox_171->setText(QApplication::translate("MainWindow", "171.shotwell", Q_NULLPTR));
+        checkBox_172->setText(QApplication::translate("MainWindow", "172.acestream", Q_NULLPTR));
+        checkBox_173->setText(QApplication::translate("MainWindow", "173.indicator-keylock", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        checkBox_174->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Not recommended to use! May crash your system</p></body></html>", 0));
+        checkBox_174->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Not recommended to use! May crash your system</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        checkBox_174->setText(QApplication::translate("MainWindow", "174.katoolin", 0));
-        checkBox_175->setText(QApplication::translate("MainWindow", "175.apt-select", 0));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("MainWindow", "Packages 3/4", 0));
-        label_36->setText(QApplication::translate("MainWindow", "Coming soon...", 0));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_15), QApplication::translate("MainWindow", "Packages 4/4", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Packages", 0));
-        label_7->setText(QApplication::translate("MainWindow", "Repositories", 0));
+        checkBox_174->setText(QApplication::translate("MainWindow", "174.katoolin", Q_NULLPTR));
+        checkBox_175->setText(QApplication::translate("MainWindow", "175.apt-select", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("MainWindow", "Packages 3/4", Q_NULLPTR));
+        label_36->setText(QApplication::translate("MainWindow", "Coming soon...", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_15), QApplication::translate("MainWindow", "Packages 4/4", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Packages", Q_NULLPTR));
+        label_7->setText(QApplication::translate("MainWindow", "Repositories", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         openSourcesListDButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSourcesListDButton->setText(QApplication::translate("MainWindow", "Open sources.list.d", 0));
+        openSourcesListDButton->setText(QApplication::translate("MainWindow", "Open sources.list.d", Q_NULLPTR));
         openSourcesListDButton->setShortcut(QString());
 #ifndef QT_NO_TOOLTIP
-        enableSudoWithoutPassButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", 0));
+        enableSudoWithoutPassButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        enableSudoWithoutPassButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", 0));
+        enableSudoWithoutPassButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        enableSudoWithoutPassButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass", 0));
+        enableSudoWithoutPassButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass", Q_NULLPTR));
         enableSudoWithoutPassButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         disableSudoWithoutPassButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableSudoWithoutPassButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass", 0));
+        disableSudoWithoutPassButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass", Q_NULLPTR));
         disableSudoWithoutPassButton->setShortcut(QString());
-        label_10->setText(QApplication::translate("MainWindow", "Security & Passwords", 0));
+        label_10->setText(QApplication::translate("MainWindow", "Security & Passwords", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         openSudoersFileButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSudoersFileButton->setText(QApplication::translate("MainWindow", "Open default sudoers file", 0));
+        openSudoersFileButton->setText(QApplication::translate("MainWindow", "Open default sudoers file", Q_NULLPTR));
         openSudoersFileButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         backupSudoersFileButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        backupSudoersFileButton->setText(QApplication::translate("MainWindow", "Backup sudoers file", 0));
+        backupSudoersFileButton->setText(QApplication::translate("MainWindow", "Backup sudoers file", Q_NULLPTR));
         backupSudoersFileButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         importSudoersFileButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        importSudoersFileButton->setText(QApplication::translate("MainWindow", "Import sudoers file", 0));
+        importSudoersFileButton->setText(QApplication::translate("MainWindow", "Import sudoers file", Q_NULLPTR));
         importSudoersFileButton->setShortcut(QString());
-        label_13->setText(QApplication::translate("MainWindow", "Sudoers", 0));
+        label_13->setText(QApplication::translate("MainWindow", "Sudoers", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         openSudoersUbunsysModButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSudoersUbunsysModButton->setText(QApplication::translate("MainWindow", "Open sudoers ubunsys mod", 0));
+        openSudoersUbunsysModButton->setText(QApplication::translate("MainWindow", "Open sudoers ubunsys mod", Q_NULLPTR));
         openSudoersUbunsysModButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         aptselect_US->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        aptselect_US->setText(QApplication::translate("MainWindow", "apt-select US", 0));
+        aptselect_US->setText(QApplication::translate("MainWindow", "apt-select US", Q_NULLPTR));
         aptselect_US->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         aptselect_ES->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        aptselect_ES->setText(QApplication::translate("MainWindow", "apt-select ES", 0));
+        aptselect_ES->setText(QApplication::translate("MainWindow", "apt-select ES", Q_NULLPTR));
         aptselect_ES->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         importSourcesListButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        importSourcesListButton->setText(QApplication::translate("MainWindow", "Import sources.list", 0));
+        importSourcesListButton->setText(QApplication::translate("MainWindow", "Import sources.list", Q_NULLPTR));
         importSourcesListButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         openSourcesListButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSourcesListButton->setText(QApplication::translate("MainWindow", "Open sources.list", 0));
+        openSourcesListButton->setText(QApplication::translate("MainWindow", "Open sources.list", Q_NULLPTR));
         openSourcesListButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         backupSourcesListButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        backupSourcesListButton->setText(QApplication::translate("MainWindow", "Backup sources.list", 0));
+        backupSourcesListButton->setText(QApplication::translate("MainWindow", "Backup sources.list", Q_NULLPTR));
         backupSourcesListButton->setShortcut(QString());
-        label_37->setText(QApplication::translate("MainWindow", "Main backup & restore", 0));
+        label_37->setText(QApplication::translate("MainWindow", "Main backup & restore", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         openMainRestoreButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openMainRestoreButton->setText(QApplication::translate("MainWindow", "Main restore", 0));
+        openMainRestoreButton->setText(QApplication::translate("MainWindow", "Main restore", Q_NULLPTR));
         openMainRestoreButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
-        openMainBackupButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.</p></body></html>", 0));
+        openMainBackupButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        openMainBackupButton->setText(QApplication::translate("MainWindow", "Main backup", 0));
+        openMainBackupButton->setText(QApplication::translate("MainWindow", "Main backup", Q_NULLPTR));
         openMainBackupButton->setShortcut(QString());
         label_38->setText(QApplication::translate("MainWindow", "Files on Main backup:\n"
 "sources.list\n"
 "sudoers\n"
-"templates", 0));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/3", 0));
+"templates", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/3", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         installTemplatesButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        installTemplatesButton->setText(QApplication::translate("MainWindow", "Install Templates", 0));
+        installTemplatesButton->setText(QApplication::translate("MainWindow", "Install Templates", Q_NULLPTR));
         installTemplatesButton->setShortcut(QString());
-        label_5->setText(QApplication::translate("MainWindow", "Documents & Files ", 0));
+        label_5->setText(QApplication::translate("MainWindow", "Documents & Files ", Q_NULLPTR));
         label_11->setText(QApplication::translate("MainWindow", "Reduce timeout when shutdown\n"
-"(experimental)", 0));
+"(experimental)", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         setToDefaults90sShutdownTimeoutButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        setToDefaults90sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Set to defaults 90s", 0));
+        setToDefaults90sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Set to defaults 90s", Q_NULLPTR));
         setToDefaults90sShutdownTimeoutButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         reduceTo5sShutdownTimeoutButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        reduceTo5sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Reduce to 5s", 0));
+        reduceTo5sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Reduce to 5s", Q_NULLPTR));
         reduceTo5sShutdownTimeoutButton->setShortcut(QString());
-        label_33->setText(QApplication::translate("MainWindow", "Lock screen", 0));
+        label_33->setText(QApplication::translate("MainWindow", "Lock screen", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         disableLockScrennButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableLockScrennButton->setText(QApplication::translate("MainWindow", "Disable Lock screen", 0));
+        disableLockScrennButton->setText(QApplication::translate("MainWindow", "Disable Lock screen", Q_NULLPTR));
         disableLockScrennButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         enableLockScreenlButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableLockScreenlButton->setText(QApplication::translate("MainWindow", "Enable Lock screen", 0));
+        enableLockScreenlButton->setText(QApplication::translate("MainWindow", "Enable Lock screen", Q_NULLPTR));
         enableLockScreenlButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         showHiddenStartupItemsButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        showHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Show", 0));
+        showHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Show", Q_NULLPTR));
         showHiddenStartupItemsButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         unshowHiddenStartupItemsButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        unshowHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Unshow", 0));
+        unshowHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Unshow", Q_NULLPTR));
         unshowHiddenStartupItemsButton->setShortcut(QString());
-        label_34->setText(QApplication::translate("MainWindow", "Hidden Startup Items", 0));
-        label_35->setText(QApplication::translate("MainWindow", "Login sound", 0));
+        label_34->setText(QApplication::translate("MainWindow", "Hidden Startup Items", Q_NULLPTR));
+        label_35->setText(QApplication::translate("MainWindow", "Login sound", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         enableLoginSoundButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableLoginSoundButton->setText(QApplication::translate("MainWindow", "Enable", 0));
+        enableLoginSoundButton->setText(QApplication::translate("MainWindow", "Enable", Q_NULLPTR));
         enableLoginSoundButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         disableLoginSoundButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableLoginSoundButton->setText(QApplication::translate("MainWindow", "Disable", 0));
+        disableLoginSoundButton->setText(QApplication::translate("MainWindow", "Disable", Q_NULLPTR));
         disableLoginSoundButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         enableFirewallButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableFirewallButton->setText(QApplication::translate("MainWindow", "Enable firewall", 0));
+        enableFirewallButton->setText(QApplication::translate("MainWindow", "Enable firewall", Q_NULLPTR));
         enableFirewallButton->setShortcut(QString());
-        label_12->setText(QApplication::translate("MainWindow", "Security", 0));
+        label_12->setText(QApplication::translate("MainWindow", "Security", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         disableFirewallButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableFirewallButton->setText(QApplication::translate("MainWindow", "Disable firewall", 0));
+        disableFirewallButton->setText(QApplication::translate("MainWindow", "Disable firewall", Q_NULLPTR));
         disableFirewallButton->setShortcut(QString());
-        label_32->setText(QApplication::translate("MainWindow", "Dual boot", 0));
+        label_32->setText(QApplication::translate("MainWindow", "Dual boot", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        runGrubcustomizerButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Launches grub-customizer</p></body></html>", 0));
+        runGrubcustomizerButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Launches grub-customizer</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        runGrubcustomizerButton->setText(QApplication::translate("MainWindow", "Configure", 0));
+        runGrubcustomizerButton->setText(QApplication::translate("MainWindow", "Configure", Q_NULLPTR));
         runGrubcustomizerButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/3", 0));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/3", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         doInvisibleAsterisksButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         doInvisibleAsterisksButton->setText(QApplication::translate("MainWindow", "Do invisible asterisks\n"
-"Set to default", 0));
+"Set to default", Q_NULLPTR));
         doInvisibleAsterisksButton->setShortcut(QString());
-        label_6->setText(QApplication::translate("MainWindow", "Terminal passwords", 0));
+        label_6->setText(QApplication::translate("MainWindow", "Terminal passwords", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         doVisibleAsterisksButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        doVisibleAsterisksButton->setText(QApplication::translate("MainWindow", "Do visible asterisks", 0));
+        doVisibleAsterisksButton->setText(QApplication::translate("MainWindow", "Do visible asterisks", Q_NULLPTR));
         doVisibleAsterisksButton->setShortcut(QString());
-        label_8->setText(QApplication::translate("MainWindow", "Power", 0));
+        label_8->setText(QApplication::translate("MainWindow", "Power", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         disableHibernationButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableHibernationButton->setText(QApplication::translate("MainWindow", "Disable hibernation", 0));
+        disableHibernationButton->setText(QApplication::translate("MainWindow", "Disable hibernation", Q_NULLPTR));
         disableHibernationButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         enableHibernationButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableHibernationButton->setText(QApplication::translate("MainWindow", "Enable hibernation", 0));
+        enableHibernationButton->setText(QApplication::translate("MainWindow", "Enable hibernation", Q_NULLPTR));
         enableHibernationButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindow", "Tweaks 3/3", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", 0));
-        label_16->setText(QApplication::translate("MainWindow", "Clean system", 0));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindow", "Tweaks 3/3", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", Q_NULLPTR));
+        label_16->setText(QApplication::translate("MainWindow", "Clean system", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        upgradeReposButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y upgrade</p></body></html>", 0));
+        upgradeReposButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y upgrade</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         upgradeReposButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         upgradeReposButton->setText(QString());
         upgradeReposButton->setShortcut(QString());
-        label_15->setText(QApplication::translate("MainWindow", "Default update & upgrade packages", 0));
+        label_15->setText(QApplication::translate("MainWindow", "Default update & upgrade packages", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        updateReposButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p></body></html>", 0));
+        updateReposButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         updateReposButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         updateReposButton->setText(QString());
         updateReposButton->setShortcut(QString());
-        label_31->setText(QApplication::translate("MainWindow", "Upgrade repos", 0));
-        label_14->setText(QApplication::translate("MainWindow", "Update repos", 0));
+        label_31->setText(QApplication::translate("MainWindow", "Upgrade repos", Q_NULLPTR));
+        label_14->setText(QApplication::translate("MainWindow", "Update repos", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        basicPackagesInstallButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>installpackages1-minimal of ubuntupackages on git for normal users</p></body></html>", 0));
+        basicPackagesInstallButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>installpackages1-minimal of ubuntupackages on git for normal users</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         basicPackagesInstallButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         basicPackagesInstallButton->setText(QString());
         basicPackagesInstallButton->setShortcut(QString());
-        label_25->setText(QApplication::translate("MainWindow", "Exec normal user installation script", 0));
+        label_25->setText(QApplication::translate("MainWindow", "Exec normal user installation script", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        updateAndUpgradeButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p><p>apt-fast -y upgrade</p></body></html>", 0));
+        updateAndUpgradeButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p><p>apt-fast -y upgrade</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         updateAndUpgradeButton->setWhatsThis(QString());
@@ -2008,17 +2008,17 @@ public:
         updateAndUpgradeButton->setText(QString());
         updateAndUpgradeButton->setShortcut(QString());
 #ifndef QT_NO_TOOLTIP
-        cleanButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -f install</p><p>apt-fast -y autoremove</p><p>apt-fast -y autoclean</p><p>apt-fast -y clean</p></body></html>", 0));
+        cleanButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -f install</p><p>apt-fast -y autoremove</p><p>apt-fast -y autoclean</p><p>apt-fast -y clean</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         cleanButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         cleanButton->setText(QString());
         cleanButton->setShortcut(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "Normal user", 0));
-        label_60->setText(QApplication::translate("MainWindow", "Upgrade to latest stable", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "Normal user", Q_NULLPTR));
+        label_60->setText(QApplication::translate("MainWindow", "Upgrade to latest stable", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        cleanKernelsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Recover space from unused kernels</p></body></html>", 0));
+        cleanKernelsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Recover space from unused kernels</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         cleanKernelsButton->setWhatsThis(QString());
@@ -2026,87 +2026,87 @@ public:
         cleanKernelsButton->setText(QString());
         cleanKernelsButton->setShortcut(QString());
 #ifndef QT_NO_TOOLTIP
-        dist_upgradeButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p><p>apt-fast -y dist-upgrade</p></body></html>", 0));
+        dist_upgradeButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p><p>apt-fast -y dist-upgrade</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         dist_upgradeButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         dist_upgradeButton->setText(QString());
         dist_upgradeButton->setShortcut(QString());
-        label_17->setText(QApplication::translate("MainWindow", "Smart packages update", 0));
-        label_59->setText(QApplication::translate("MainWindow", "Clean ancient kernels", 0));
+        label_17->setText(QApplication::translate("MainWindow", "Smart packages update", Q_NULLPTR));
+        label_59->setText(QApplication::translate("MainWindow", "Clean ancient kernels", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        upgradeLatestStableButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>do-release-upgrade</p></body></html>", 0));
+        upgradeLatestStableButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>do-release-upgrade</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         upgradeLatestStableButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         upgradeLatestStableButton->setText(QString());
         upgradeLatestStableButton->setShortcut(QString());
-        label_26->setText(QApplication::translate("MainWindow", "Install mainline kernel", 0));
+        label_26->setText(QApplication::translate("MainWindow", "Install mainline kernel", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        installMainlineKernel->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Install latest kernel with ukuu</p></body></html>", 0));
+        installMainlineKernel->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Install latest kernel with ukuu</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         installMainlineKernel->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         installMainlineKernel->setText(QString());
         installMainlineKernel->setShortcut(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", 0));
-        label_61->setText(QApplication::translate("MainWindow", "Upgrade to latest dev", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", Q_NULLPTR));
+        label_61->setText(QApplication::translate("MainWindow", "Upgrade to latest dev", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        upgradeLatestDevButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>do-release-upgrade -d</p></body></html>", 0));
+        upgradeLatestDevButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>do-release-upgrade -d</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         upgradeLatestDevButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         upgradeLatestDevButton->setText(QString());
         upgradeLatestDevButton->setShortcut(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "Developer", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "System", 0));
-        label_28->setText(QApplication::translate("MainWindow", "sudo launchpad-getkeys", 0));
-        label_2->setText(QApplication::translate("MainWindow", "Check system integrity", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "Developer", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "System", Q_NULLPTR));
+        label_28->setText(QApplication::translate("MainWindow", "sudo launchpad-getkeys", Q_NULLPTR));
+        label_2->setText(QApplication::translate("MainWindow", "Check system integrity", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         integrityCheckButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         integrityCheckButton->setText(QString());
         integrityCheckButton->setShortcut(QString());
-        label_18->setText(QApplication::translate("MainWindow", "shutdown -Fr now", 0));
+        label_18->setText(QApplication::translate("MainWindow", "shutdown -Fr now", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         repairNetworkButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         repairNetworkButton->setText(QString());
         repairNetworkButton->setShortcut(QString());
-        label_30->setText(QApplication::translate("MainWindow", "Be careful, your system will reboot", 0));
-        label_29->setText(QApplication::translate("MainWindow", "Repair missing GPG keys", 0));
+        label_30->setText(QApplication::translate("MainWindow", "Be careful, your system will reboot", Q_NULLPTR));
+        label_29->setText(QApplication::translate("MainWindow", "Repair missing GPG keys", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         repairGPGKeys->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         repairGPGKeys->setText(QString());
         repairGPGKeys->setShortcut(QString());
-        label_27->setText(QApplication::translate("MainWindow", "sudo service network-manager restart", 0));
-        label_9->setText(QApplication::translate("MainWindow", "Repair network", 0));
+        label_27->setText(QApplication::translate("MainWindow", "sudo service network-manager restart", Q_NULLPTR));
+        label_9->setText(QApplication::translate("MainWindow", "Repair network", Q_NULLPTR));
         label_39->setText(QApplication::translate("MainWindow", "If you lost \"sudo\" function try with \"pkexec\" to fix crashes.\n"
 "Also you can enter in secure mode, exec \"mount -o remount,rw / \"\n"
-"and restore that you want with elevated permissions.", 0));
-        label_40->setText(QApplication::translate("MainWindow", "Repair tips", 0));
-        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/2", 0));
-        label_3->setText(QApplication::translate("MainWindow", "Fix broken packages (click on each step and check if is solved)", 0));
+"and restore that you want with elevated permissions.", Q_NULLPTR));
+        label_40->setText(QApplication::translate("MainWindow", "Repair tips", Q_NULLPTR));
+        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/2", Q_NULLPTR));
+        label_3->setText(QApplication::translate("MainWindow", "Fix broken packages (click on each step and check if is solved)", Q_NULLPTR));
         label_22->setText(QApplication::translate("MainWindow", "apt-fast -f install && apt-fast -y autoremove && apt-fast -y autoclean &&\n"
-"apt-fast -y clean", 0));
-        label_20->setText(QApplication::translate("MainWindow", "apt-fast -y --fix-broken install", 0));
+"apt-fast -y clean", Q_NULLPTR));
+        label_20->setText(QApplication::translate("MainWindow", "apt-fast -y --fix-broken install", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_1->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_1->setText(QString());
         fixBrokenPackagesButton_1->setShortcut(QString());
-        label_21->setText(QApplication::translate("MainWindow", "rm /var/lib/apt/lists/* -vf && apt-fast -y update", 0));
+        label_21->setText(QApplication::translate("MainWindow", "rm /var/lib/apt/lists/* -vf && apt-fast -y update", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_2->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_2->setText(QString());
         fixBrokenPackagesButton_2->setShortcut(QString());
-        label_19->setText(QApplication::translate("MainWindow", "apt-fast -y update && apt-fast -y upgrade", 0));
+        label_19->setText(QApplication::translate("MainWindow", "apt-fast -y update && apt-fast -y upgrade", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_3->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -2118,7 +2118,7 @@ public:
         fixBrokenPackagesButton_4->setText(QString());
         fixBrokenPackagesButton_4->setShortcut(QString());
         label_24->setText(QApplication::translate("MainWindow", "Open Ubuntu Software Center\n"
-" & click repair if proceed", 0));
+" & click repair if proceed", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_5->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -2129,21 +2129,21 @@ public:
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_6->setText(QString());
         fixBrokenPackagesButton_6->setShortcut(QString());
-        label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", 0));
-        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", 0));
-        label->setText(QApplication::translate("MainWindow", "v2017.06.15", 0));
+        label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
+        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.06.15", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", 0));
+        updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         updateAppButton->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts</p></body></html>", 0));
+        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         updateScriptsButton->setText(QString());
-        menuNuevo->setTitle(QApplication::translate("MainWindow", "File", 0));
-        menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", 0));
-        menuAyuda->setTitle(QApplication::translate("MainWindow", "Help", 0));
+        menuNuevo->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));
+        menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", Q_NULLPTR));
+        menuAyuda->setTitle(QApplication::translate("MainWindow", "Help", Q_NULLPTR));
     } // retranslateUi
 
 };

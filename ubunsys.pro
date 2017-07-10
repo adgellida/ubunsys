@@ -35,8 +35,8 @@ TRANSLATIONS += languages/ubunsys_es_ES.ts
 
 target.path = /usr/bin
 
-icon.path = /usr/share/pixmaps
-icon.files = $$PWD/images/ubunsys.ico
+icon.path = /usr/share/icons/hicolor/256x256/apps
+icon.files = $$PWD/images/ubunsys.png
 
 desktop.path = /usr/share/applications
 desktop.files += ubunsys.desktop
