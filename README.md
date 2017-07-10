@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/ubunsys.ico" width="80"> ubunsys
+<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/ubunsys.png" width="80"> ubunsys
 =============================================
 
 <p align="center">
