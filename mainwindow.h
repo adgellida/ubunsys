@@ -74,18 +74,6 @@ private slots:
 
     void on_repairGPGKeys_clicked();
 
-    void on_unselectAllButton_clicked();
-
-    void on_selectAllButton_clicked();
-
-    void on_installSelectedPackagesButton_clicked();
-
-    void on_uninstallSelectedPackagesButton_clicked();
-
-    void on_loadSelectionButton_clicked();
-
-    void on_saveSelectionButton_clicked();
-
     //void on_actionAbout_clicked();
 
     void on_upgradeLatestStableButton_clicked();
@@ -157,6 +145,8 @@ private slots:
     void on_openMainBackupButton_clicked();
 
     void on_openMainRestoreButton_clicked();
+
+    void on_runScriptsManager_clicked();
 
 private:
     Ui::MainWindow *ui;

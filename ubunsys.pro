@@ -11,7 +11,6 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = ubunsys
 TEMPLATE = app
 
-
 SOURCES += main.cpp \
            mainwindow.cpp \
            toolbartab.cpp \
@@ -21,11 +20,16 @@ SOURCES += main.cpp \
            updatezone.cpp \
            packagestab.cpp \
            about.cpp \
-           tutorial.cpp
+           tutorial.cpp \
+    packagesdialog.cpp \
+    rootfilesysproxymodel.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    packagesdialog.h \
+    rootfilesysproxymodel.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    packagesdialog.ui
 
 RESOURCES += ubunsys.qrc
 

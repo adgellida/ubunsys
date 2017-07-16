@@ -33,8 +33,3 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-
-
-
-
