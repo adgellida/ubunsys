@@ -48,6 +48,17 @@ Método Launchpad PPA
 
 `sudo apt-get -y install ubunsys`
 
+Compilación
+=============================================
+
+Dependencias de compilación:
+
+`apt install -y git g++ build-essential qt5-qmake qt5-default`
+
+Compilación e instalación:
+
+Ejecuta `qmake && make && sudo make install` en el directorio principal.
+
 Capturas de pantalla
 =============================================
 

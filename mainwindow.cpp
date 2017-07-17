@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //ui->enableSudoWithoutPassButton->setToolTip("Almost no more questions\n about your password");
 
     //Update scrips
-    on_updateScriptsButton_clicked();
+    //on_updateScriptsButton_clicked();
 
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 

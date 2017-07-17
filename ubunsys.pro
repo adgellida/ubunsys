@@ -21,15 +21,15 @@ SOURCES += main.cpp \
            packagestab.cpp \
            about.cpp \
            tutorial.cpp \
-    packagesdialog.cpp \
-    rootfilesysproxymodel.cpp
+           packagesdialog.cpp \
+           rootfilesysproxymodel.cpp
 
 HEADERS  += mainwindow.h \
-    packagesdialog.h \
-    rootfilesysproxymodel.h
+            packagesdialog.h \
+            rootfilesysproxymodel.h
 
 FORMS    += mainwindow.ui \
-    packagesdialog.ui
+            packagesdialog.ui
 
 RESOURCES += ubunsys.qrc
 

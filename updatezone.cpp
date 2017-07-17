@@ -18,7 +18,6 @@ void MainWindow::on_updateScriptsButton_clicked()
            "echo  "
            " && "
            "test -d ~/.ubunsys || mkdir -p ~/.ubunsys && test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && test -d ~/.ubunsys/downloads/ubuntuScripts-master || mkdir -p ~/.ubunsys/downloads/ubuntuScripts-master || mkdir -p ~/.ubunsys/files || mkdir -p ~/.ubunsys/backups/scriptsFiles && wget https://raw.githubusercontent.com/adgellida/ubuntuScripts/master/044.downloadLatestUbuntuscripts -O ~/.ubunsys/downloads/ubuntuScripts-master/044.downloadLatestUbuntuscripts && chmod 777 ~/.ubunsys/downloads/ubuntuScripts-master/044.downloadLatestUbuntuscripts && ~/.ubunsys/downloads/ubuntuScripts-master/044.downloadLatestUbuntuscripts && echo ubuntuscripts downloaded ok. 1/3 ok || echo Error downloading ubuntuscripts. Holding your scripts. 1/3 fail && sleep 2"
-
            //"test -f ~/.ubunsys || mkdir -p ~/.ubunsys && test -f ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/master.zip && rm -Rf ~/.ubunsys/downloads/ubuntuScripts-master && unzip ~/.ubunsys/master.zip -d ~/.ubunsys/downloads && chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-master && rm ~/.ubunsys/master.zip && echo \nubuntuscripts download ok\n. || echo \nError downloading ubuntuscripts\n. Holding your scripts. && sleep 2"
            " && "
     //     "exit"

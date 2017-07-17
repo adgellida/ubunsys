@@ -82,7 +82,7 @@ void PackagesDialog::on_selectOfficialReposButton_clicked()
 
 void PackagesDialog::on_selectUnofficialReposButton_clicked()
 {
-    fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "~", this);
+    fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath(), this);
     ui->treeView->setModel(fsModel);
     connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
 }
