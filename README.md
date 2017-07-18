@@ -9,8 +9,8 @@
   <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a>
   <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.06.15/total.svg" alt="total downloads latest release"></a> 
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/release-v2017.06.15-blue.svg" alt="Release"></a>
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.07.18/total.svg" alt="total downloads latest release"></a> 
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/release-v2017.07.18-blue.svg" alt="Release"></a>
 </p>
 
 **Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
@@ -108,13 +108,11 @@ Tutorial
 
 Recommended steps:
 
-1. Push on 'Enable sudo without pass'.
+1. Push on 'Enable sudo without pass all'.
 
 This way you can execute commands without asking your sudo pass each time. More quick so.
 
-You always can go to default pushing 'Import sudoers file' and selecting your backuped file before.
-
-2. Install packages you want.
+2. Execute Scripts Manager.
 
 3. Execute all tweaks, system actions or reparations you want.
 

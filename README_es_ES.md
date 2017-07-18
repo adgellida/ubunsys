@@ -9,8 +9,8 @@
   <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a>
   <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.06.15/total.svg" alt="total downloads latest release"></a> 
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/release-v2017.06.15-blue.svg" alt="Release"></a>
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.07.18/total.svg" alt="total downloads latest release"></a> 
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/release-v2017.07.18-blue.svg" alt="Release"></a>
 </p>
 
 **For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
@@ -112,9 +112,7 @@ Pasos recomendados:
 
 De esta manera, puedes ejecutar comandos sin preguntar tu contraseña de sudo cada vez. Por ello ganas rapidez.
 
-Puedes dejarlo como estaba pulsando en 'Importar fichero sudoers' y seleccionando tu fichero de copia de seguridad anterior.
-
-2. Instala los paquetes que quieras.
+2. Ejecuta el Gestor de Scripts.
 
 3. Ejecutar todas las mejoras, acciones del sistema y reparaciones que quieras.
 
