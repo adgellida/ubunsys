@@ -41,7 +41,7 @@ Descarga desde fuentes oficiales - pulsa en el logo
   <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
 </p>
 
-Método Launchpad PPA
+Método Launchpad PPA - Estado: NO ACTUALIZADO
 =============================================
 
 `sudo add-apt-repository -y ppa:adgellida/ubunsys`

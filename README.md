@@ -41,7 +41,7 @@ Download from official sources - click on logo
   <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
 </p>
 
-Launchpad PPA Method
+Launchpad PPA Method - State: NOT UP-TO-DATE
 =============================================
 
 `sudo add-apt-repository -y ppa:adgellida/ubunsys`
