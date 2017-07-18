@@ -27,9 +27,9 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="3" column="0">
-     <widget class="QPushButton" name="runSavedScriptButton">
+     <widget class="QPushButton" name="runSavedScriptListButton">
       <property name="text">
-       <string>Run saved script</string>
+       <string>Run saved script list</string>
       </property>
      </widget>
     </item>

@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[60];
-    char stringdata0[1941];
+    QByteArrayData data[64];
+    char stringdata0[2105];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -61,34 +61,38 @@ QT_MOC_LITERAL(28, 828, 37), // "on_doInvisibleAsterisksButton..."
 QT_MOC_LITERAL(29, 866, 33), // "on_openSourcesListDButton_cli..."
 QT_MOC_LITERAL(30, 900, 34), // "on_enableHibernationButton_cl..."
 QT_MOC_LITERAL(31, 935, 35), // "on_disableHibernationButton_c..."
-QT_MOC_LITERAL(32, 971, 38), // "on_enableSudoWithoutPassButto..."
-QT_MOC_LITERAL(33, 1010, 39), // "on_disableSudoWithoutPassButt..."
-QT_MOC_LITERAL(34, 1050, 32), // "on_openSudoersFileButton_clicked"
-QT_MOC_LITERAL(35, 1083, 34), // "on_backupSudoersFileButton_cl..."
-QT_MOC_LITERAL(36, 1118, 42), // "on_reduceTo5sShutdownTimeoutB..."
-QT_MOC_LITERAL(37, 1161, 48), // "on_setToDefaults90sShutdownTi..."
-QT_MOC_LITERAL(38, 1210, 31), // "on_enableFirewallButton_clicked"
-QT_MOC_LITERAL(39, 1242, 32), // "on_disableFirewallButton_clicked"
-QT_MOC_LITERAL(40, 1275, 30), // "on_updateScriptsButton_clicked"
-QT_MOC_LITERAL(41, 1306, 26), // "on_updateAppButton_clicked"
-QT_MOC_LITERAL(42, 1333, 34), // "on_importSudoersFileButton_cl..."
-QT_MOC_LITERAL(43, 1368, 32), // "on_installMainlineKernel_clicked"
-QT_MOC_LITERAL(44, 1401, 34), // "on_runGrubcustomizerButton_cl..."
-QT_MOC_LITERAL(45, 1436, 34), // "on_enableLockScreenlButton_cl..."
-QT_MOC_LITERAL(46, 1471, 34), // "on_disableLockScrennButton_cl..."
-QT_MOC_LITERAL(47, 1506, 39), // "on_showHiddenStartupItemsButt..."
-QT_MOC_LITERAL(48, 1546, 41), // "on_unshowHiddenStartupItemsBu..."
-QT_MOC_LITERAL(49, 1588, 33), // "on_enableLoginSoundButton_cli..."
-QT_MOC_LITERAL(50, 1622, 34), // "on_disableLoginSoundButton_cl..."
-QT_MOC_LITERAL(51, 1657, 38), // "on_openSudoersUbunsysModButto..."
-QT_MOC_LITERAL(52, 1696, 23), // "on_aptselect_US_clicked"
-QT_MOC_LITERAL(53, 1720, 23), // "on_aptselect_ES_clicked"
-QT_MOC_LITERAL(54, 1744, 32), // "on_openSourcesListButton_clicked"
-QT_MOC_LITERAL(55, 1777, 34), // "on_backupSourcesListButton_cl..."
-QT_MOC_LITERAL(56, 1812, 34), // "on_importSourcesListButton_cl..."
-QT_MOC_LITERAL(57, 1847, 31), // "on_openMainBackupButton_clicked"
-QT_MOC_LITERAL(58, 1879, 32), // "on_openMainRestoreButton_clicked"
-QT_MOC_LITERAL(59, 1912, 28) // "on_runScriptsManager_clicked"
+QT_MOC_LITERAL(32, 971, 41), // "on_enableSudoWithoutPassAllBu..."
+QT_MOC_LITERAL(33, 1013, 42), // "on_disableSudoWithoutPassAllB..."
+QT_MOC_LITERAL(34, 1056, 45), // "on_enableSudoWithoutPassUbuns..."
+QT_MOC_LITERAL(35, 1102, 46), // "on_disableSudoWithoutPassUbun..."
+QT_MOC_LITERAL(36, 1149, 32), // "on_openSudoersFileButton_clicked"
+QT_MOC_LITERAL(37, 1182, 34), // "on_backupSudoersFileButton_cl..."
+QT_MOC_LITERAL(38, 1217, 42), // "on_reduceTo5sShutdownTimeoutB..."
+QT_MOC_LITERAL(39, 1260, 48), // "on_setToDefaults90sShutdownTi..."
+QT_MOC_LITERAL(40, 1309, 31), // "on_enableFirewallButton_clicked"
+QT_MOC_LITERAL(41, 1341, 32), // "on_disableFirewallButton_clicked"
+QT_MOC_LITERAL(42, 1374, 30), // "on_updateScriptsButton_clicked"
+QT_MOC_LITERAL(43, 1405, 26), // "on_updateAppButton_clicked"
+QT_MOC_LITERAL(44, 1432, 34), // "on_importSudoersFileButton_cl..."
+QT_MOC_LITERAL(45, 1467, 32), // "on_installMainlineKernel_clicked"
+QT_MOC_LITERAL(46, 1500, 34), // "on_runGrubcustomizerButton_cl..."
+QT_MOC_LITERAL(47, 1535, 34), // "on_enableLockScreenlButton_cl..."
+QT_MOC_LITERAL(48, 1570, 34), // "on_disableLockScrennButton_cl..."
+QT_MOC_LITERAL(49, 1605, 39), // "on_showHiddenStartupItemsButt..."
+QT_MOC_LITERAL(50, 1645, 41), // "on_unshowHiddenStartupItemsBu..."
+QT_MOC_LITERAL(51, 1687, 33), // "on_enableLoginSoundButton_cli..."
+QT_MOC_LITERAL(52, 1721, 34), // "on_disableLoginSoundButton_cl..."
+QT_MOC_LITERAL(53, 1756, 34), // "on_openSudoersAllModButton_cl..."
+QT_MOC_LITERAL(54, 1791, 38), // "on_openSudoersUbunsysModButto..."
+QT_MOC_LITERAL(55, 1830, 23), // "on_aptselect_US_clicked"
+QT_MOC_LITERAL(56, 1854, 23), // "on_aptselect_ES_clicked"
+QT_MOC_LITERAL(57, 1878, 32), // "on_openSourcesListButton_clicked"
+QT_MOC_LITERAL(58, 1911, 34), // "on_backupSourcesListButton_cl..."
+QT_MOC_LITERAL(59, 1946, 34), // "on_importSourcesListButton_cl..."
+QT_MOC_LITERAL(60, 1981, 31), // "on_openMainBackupButton_clicked"
+QT_MOC_LITERAL(61, 2013, 32), // "on_openMainRestoreButton_clicked"
+QT_MOC_LITERAL(62, 2046, 28), // "on_runScriptsManager_clicked"
+QT_MOC_LITERAL(63, 2075, 29) // "on_openSudoersDButton_clicked"
 
     },
     "MainWindow\0on_actionNew_triggered\0\0"
@@ -120,8 +124,10 @@ QT_MOC_LITERAL(59, 1912, 28) // "on_runScriptsManager_clicked"
     "on_openSourcesListDButton_clicked\0"
     "on_enableHibernationButton_clicked\0"
     "on_disableHibernationButton_clicked\0"
-    "on_enableSudoWithoutPassButton_clicked\0"
-    "on_disableSudoWithoutPassButton_clicked\0"
+    "on_enableSudoWithoutPassAllButton_clicked\0"
+    "on_disableSudoWithoutPassAllButton_clicked\0"
+    "on_enableSudoWithoutPassUbunsysButton_clicked\0"
+    "on_disableSudoWithoutPassUbunsysButton_clicked\0"
     "on_openSudoersFileButton_clicked\0"
     "on_backupSudoersFileButton_clicked\0"
     "on_reduceTo5sShutdownTimeoutButton_clicked\0"
@@ -139,6 +145,7 @@ QT_MOC_LITERAL(59, 1912, 28) // "on_runScriptsManager_clicked"
     "on_unshowHiddenStartupItemsButton_clicked\0"
     "on_enableLoginSoundButton_clicked\0"
     "on_disableLoginSoundButton_clicked\0"
+    "on_openSudoersAllModButton_clicked\0"
     "on_openSudoersUbunsysModButton_clicked\0"
     "on_aptselect_US_clicked\0on_aptselect_ES_clicked\0"
     "on_openSourcesListButton_clicked\0"
@@ -146,7 +153,8 @@ QT_MOC_LITERAL(59, 1912, 28) // "on_runScriptsManager_clicked"
     "on_importSourcesListButton_clicked\0"
     "on_openMainBackupButton_clicked\0"
     "on_openMainRestoreButton_clicked\0"
-    "on_runScriptsManager_clicked"
+    "on_runScriptsManager_clicked\0"
+    "on_openSudoersDButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -156,7 +164,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      58,   14, // methods
+      62,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -164,66 +172,74 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,  304,    2, 0x08 /* Private */,
-       3,    0,  305,    2, 0x08 /* Private */,
-       4,    0,  306,    2, 0x08 /* Private */,
-       5,    0,  307,    2, 0x08 /* Private */,
-       6,    0,  308,    2, 0x08 /* Private */,
-       7,    0,  309,    2, 0x08 /* Private */,
-       8,    0,  310,    2, 0x08 /* Private */,
-       9,    0,  311,    2, 0x08 /* Private */,
-      10,    0,  312,    2, 0x08 /* Private */,
-      11,    0,  313,    2, 0x08 /* Private */,
-      12,    0,  314,    2, 0x08 /* Private */,
-      13,    0,  315,    2, 0x08 /* Private */,
-      14,    0,  316,    2, 0x08 /* Private */,
-      15,    0,  317,    2, 0x08 /* Private */,
-      16,    0,  318,    2, 0x08 /* Private */,
-      17,    0,  319,    2, 0x08 /* Private */,
-      18,    0,  320,    2, 0x08 /* Private */,
-      19,    0,  321,    2, 0x08 /* Private */,
-      20,    0,  322,    2, 0x08 /* Private */,
-      21,    0,  323,    2, 0x08 /* Private */,
-      22,    0,  324,    2, 0x08 /* Private */,
-      23,    0,  325,    2, 0x08 /* Private */,
-      24,    0,  326,    2, 0x08 /* Private */,
-      25,    0,  327,    2, 0x08 /* Private */,
-      26,    0,  328,    2, 0x08 /* Private */,
-      27,    0,  329,    2, 0x08 /* Private */,
-      28,    0,  330,    2, 0x08 /* Private */,
-      29,    0,  331,    2, 0x08 /* Private */,
-      30,    0,  332,    2, 0x08 /* Private */,
-      31,    0,  333,    2, 0x08 /* Private */,
-      32,    0,  334,    2, 0x08 /* Private */,
-      33,    0,  335,    2, 0x08 /* Private */,
-      34,    0,  336,    2, 0x08 /* Private */,
-      35,    0,  337,    2, 0x08 /* Private */,
-      36,    0,  338,    2, 0x08 /* Private */,
-      37,    0,  339,    2, 0x08 /* Private */,
-      38,    0,  340,    2, 0x08 /* Private */,
-      39,    0,  341,    2, 0x08 /* Private */,
-      40,    0,  342,    2, 0x08 /* Private */,
-      41,    0,  343,    2, 0x08 /* Private */,
-      42,    0,  344,    2, 0x08 /* Private */,
-      43,    0,  345,    2, 0x08 /* Private */,
-      44,    0,  346,    2, 0x08 /* Private */,
-      45,    0,  347,    2, 0x08 /* Private */,
-      46,    0,  348,    2, 0x08 /* Private */,
-      47,    0,  349,    2, 0x08 /* Private */,
-      48,    0,  350,    2, 0x08 /* Private */,
-      49,    0,  351,    2, 0x08 /* Private */,
-      50,    0,  352,    2, 0x08 /* Private */,
-      51,    0,  353,    2, 0x08 /* Private */,
-      52,    0,  354,    2, 0x08 /* Private */,
-      53,    0,  355,    2, 0x08 /* Private */,
-      54,    0,  356,    2, 0x08 /* Private */,
-      55,    0,  357,    2, 0x08 /* Private */,
-      56,    0,  358,    2, 0x08 /* Private */,
-      57,    0,  359,    2, 0x08 /* Private */,
-      58,    0,  360,    2, 0x08 /* Private */,
-      59,    0,  361,    2, 0x08 /* Private */,
+       1,    0,  324,    2, 0x08 /* Private */,
+       3,    0,  325,    2, 0x08 /* Private */,
+       4,    0,  326,    2, 0x08 /* Private */,
+       5,    0,  327,    2, 0x08 /* Private */,
+       6,    0,  328,    2, 0x08 /* Private */,
+       7,    0,  329,    2, 0x08 /* Private */,
+       8,    0,  330,    2, 0x08 /* Private */,
+       9,    0,  331,    2, 0x08 /* Private */,
+      10,    0,  332,    2, 0x08 /* Private */,
+      11,    0,  333,    2, 0x08 /* Private */,
+      12,    0,  334,    2, 0x08 /* Private */,
+      13,    0,  335,    2, 0x08 /* Private */,
+      14,    0,  336,    2, 0x08 /* Private */,
+      15,    0,  337,    2, 0x08 /* Private */,
+      16,    0,  338,    2, 0x08 /* Private */,
+      17,    0,  339,    2, 0x08 /* Private */,
+      18,    0,  340,    2, 0x08 /* Private */,
+      19,    0,  341,    2, 0x08 /* Private */,
+      20,    0,  342,    2, 0x08 /* Private */,
+      21,    0,  343,    2, 0x08 /* Private */,
+      22,    0,  344,    2, 0x08 /* Private */,
+      23,    0,  345,    2, 0x08 /* Private */,
+      24,    0,  346,    2, 0x08 /* Private */,
+      25,    0,  347,    2, 0x08 /* Private */,
+      26,    0,  348,    2, 0x08 /* Private */,
+      27,    0,  349,    2, 0x08 /* Private */,
+      28,    0,  350,    2, 0x08 /* Private */,
+      29,    0,  351,    2, 0x08 /* Private */,
+      30,    0,  352,    2, 0x08 /* Private */,
+      31,    0,  353,    2, 0x08 /* Private */,
+      32,    0,  354,    2, 0x08 /* Private */,
+      33,    0,  355,    2, 0x08 /* Private */,
+      34,    0,  356,    2, 0x08 /* Private */,
+      35,    0,  357,    2, 0x08 /* Private */,
+      36,    0,  358,    2, 0x08 /* Private */,
+      37,    0,  359,    2, 0x08 /* Private */,
+      38,    0,  360,    2, 0x08 /* Private */,
+      39,    0,  361,    2, 0x08 /* Private */,
+      40,    0,  362,    2, 0x08 /* Private */,
+      41,    0,  363,    2, 0x08 /* Private */,
+      42,    0,  364,    2, 0x08 /* Private */,
+      43,    0,  365,    2, 0x08 /* Private */,
+      44,    0,  366,    2, 0x08 /* Private */,
+      45,    0,  367,    2, 0x08 /* Private */,
+      46,    0,  368,    2, 0x08 /* Private */,
+      47,    0,  369,    2, 0x08 /* Private */,
+      48,    0,  370,    2, 0x08 /* Private */,
+      49,    0,  371,    2, 0x08 /* Private */,
+      50,    0,  372,    2, 0x08 /* Private */,
+      51,    0,  373,    2, 0x08 /* Private */,
+      52,    0,  374,    2, 0x08 /* Private */,
+      53,    0,  375,    2, 0x08 /* Private */,
+      54,    0,  376,    2, 0x08 /* Private */,
+      55,    0,  377,    2, 0x08 /* Private */,
+      56,    0,  378,    2, 0x08 /* Private */,
+      57,    0,  379,    2, 0x08 /* Private */,
+      58,    0,  380,    2, 0x08 /* Private */,
+      59,    0,  381,    2, 0x08 /* Private */,
+      60,    0,  382,    2, 0x08 /* Private */,
+      61,    0,  383,    2, 0x08 /* Private */,
+      62,    0,  384,    2, 0x08 /* Private */,
+      63,    0,  385,    2, 0x08 /* Private */,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -322,34 +338,38 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 27: _t->on_openSourcesListDButton_clicked(); break;
         case 28: _t->on_enableHibernationButton_clicked(); break;
         case 29: _t->on_disableHibernationButton_clicked(); break;
-        case 30: _t->on_enableSudoWithoutPassButton_clicked(); break;
-        case 31: _t->on_disableSudoWithoutPassButton_clicked(); break;
-        case 32: _t->on_openSudoersFileButton_clicked(); break;
-        case 33: _t->on_backupSudoersFileButton_clicked(); break;
-        case 34: _t->on_reduceTo5sShutdownTimeoutButton_clicked(); break;
-        case 35: _t->on_setToDefaults90sShutdownTimeoutButton_clicked(); break;
-        case 36: _t->on_enableFirewallButton_clicked(); break;
-        case 37: _t->on_disableFirewallButton_clicked(); break;
-        case 38: _t->on_updateScriptsButton_clicked(); break;
-        case 39: _t->on_updateAppButton_clicked(); break;
-        case 40: _t->on_importSudoersFileButton_clicked(); break;
-        case 41: _t->on_installMainlineKernel_clicked(); break;
-        case 42: _t->on_runGrubcustomizerButton_clicked(); break;
-        case 43: _t->on_enableLockScreenlButton_clicked(); break;
-        case 44: _t->on_disableLockScrennButton_clicked(); break;
-        case 45: _t->on_showHiddenStartupItemsButton_clicked(); break;
-        case 46: _t->on_unshowHiddenStartupItemsButton_clicked(); break;
-        case 47: _t->on_enableLoginSoundButton_clicked(); break;
-        case 48: _t->on_disableLoginSoundButton_clicked(); break;
-        case 49: _t->on_openSudoersUbunsysModButton_clicked(); break;
-        case 50: _t->on_aptselect_US_clicked(); break;
-        case 51: _t->on_aptselect_ES_clicked(); break;
-        case 52: _t->on_openSourcesListButton_clicked(); break;
-        case 53: _t->on_backupSourcesListButton_clicked(); break;
-        case 54: _t->on_importSourcesListButton_clicked(); break;
-        case 55: _t->on_openMainBackupButton_clicked(); break;
-        case 56: _t->on_openMainRestoreButton_clicked(); break;
-        case 57: _t->on_runScriptsManager_clicked(); break;
+        case 30: _t->on_enableSudoWithoutPassAllButton_clicked(); break;
+        case 31: _t->on_disableSudoWithoutPassAllButton_clicked(); break;
+        case 32: _t->on_enableSudoWithoutPassUbunsysButton_clicked(); break;
+        case 33: _t->on_disableSudoWithoutPassUbunsysButton_clicked(); break;
+        case 34: _t->on_openSudoersFileButton_clicked(); break;
+        case 35: _t->on_backupSudoersFileButton_clicked(); break;
+        case 36: _t->on_reduceTo5sShutdownTimeoutButton_clicked(); break;
+        case 37: _t->on_setToDefaults90sShutdownTimeoutButton_clicked(); break;
+        case 38: _t->on_enableFirewallButton_clicked(); break;
+        case 39: _t->on_disableFirewallButton_clicked(); break;
+        case 40: _t->on_updateScriptsButton_clicked(); break;
+        case 41: _t->on_updateAppButton_clicked(); break;
+        case 42: _t->on_importSudoersFileButton_clicked(); break;
+        case 43: _t->on_installMainlineKernel_clicked(); break;
+        case 44: _t->on_runGrubcustomizerButton_clicked(); break;
+        case 45: _t->on_enableLockScreenlButton_clicked(); break;
+        case 46: _t->on_disableLockScrennButton_clicked(); break;
+        case 47: _t->on_showHiddenStartupItemsButton_clicked(); break;
+        case 48: _t->on_unshowHiddenStartupItemsButton_clicked(); break;
+        case 49: _t->on_enableLoginSoundButton_clicked(); break;
+        case 50: _t->on_disableLoginSoundButton_clicked(); break;
+        case 51: _t->on_openSudoersAllModButton_clicked(); break;
+        case 52: _t->on_openSudoersUbunsysModButton_clicked(); break;
+        case 53: _t->on_aptselect_US_clicked(); break;
+        case 54: _t->on_aptselect_ES_clicked(); break;
+        case 55: _t->on_openSourcesListButton_clicked(); break;
+        case 56: _t->on_backupSourcesListButton_clicked(); break;
+        case 57: _t->on_importSourcesListButton_clicked(); break;
+        case 58: _t->on_openMainBackupButton_clicked(); break;
+        case 59: _t->on_openMainRestoreButton_clicked(); break;
+        case 60: _t->on_runScriptsManager_clicked(); break;
+        case 61: _t->on_openSudoersDButton_clicked(); break;
         default: ;
         }
     }
@@ -381,13 +401,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 58)
+        if (_id < 62)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 58;
+        _id -= 62;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 58)
+        if (_id < 62)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 58;
+        _id -= 62;
     }
     return _id;
 }

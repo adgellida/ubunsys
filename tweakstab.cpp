@@ -11,12 +11,12 @@
 
 //##Security & Passwords
 
-void MainWindow::on_enableSudoWithoutPassButton_clicked()
+void MainWindow::on_enableSudoWithoutPassAllButton_clicked()
 {
     ui->statusBar->showMessage(tr("Enabling sudo without pass"));
 
     system("xterm -e bash -c '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPass"
+           "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPassAll"
            " && "
            "exit"
            "; exec bash'");
@@ -24,12 +24,38 @@ void MainWindow::on_enableSudoWithoutPassButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-void MainWindow::on_disableSudoWithoutPassButton_clicked()
+void MainWindow::on_disableSudoWithoutPassAllButton_clicked()
 {
     ui->statusBar->showMessage(tr("Disabling sudo without pass"));
 
     system("xterm -e bash -c '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/026.disableSudoWithoutPass"
+           "~/.ubunsys/downloads/ubuntuScripts-master/026.disableSudoWithoutPassAll"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_enableSudoWithoutPassUbunsysButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling sudo without pass"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/049.enableSudoWithoutPassUbunsys"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_disableSudoWithoutPassUbunsysButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/050.disableSudoWithoutPassUbunsys"
            " && "
            "exit"
            "; exec bash'");
@@ -52,12 +78,25 @@ void MainWindow::on_openSudoersFileButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
+void MainWindow::on_openSudoersAllModButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening sudoers modification"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/041.openSudoersAllMod"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
 void MainWindow::on_openSudoersUbunsysModButton_clicked()
 {
     ui->statusBar->showMessage(tr("Opening sudoers modification"));
 
     system("xterm -e bash -c '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/041.openSudoersMod"
+           "~/.ubunsys/downloads/ubuntuScripts-master/048.openSudoersUbunsysMod"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -478,3 +517,15 @@ void MainWindow::on_openMainRestoreButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
+void MainWindow::on_openSudoersDButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening sudoers.d"));
+
+    system("xterm -e bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/051.openSudoersD"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}

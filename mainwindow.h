@@ -92,9 +92,13 @@ private slots:
 
     void on_disableHibernationButton_clicked();
 
-    void on_enableSudoWithoutPassButton_clicked();
+    void on_enableSudoWithoutPassAllButton_clicked();
 
-    void on_disableSudoWithoutPassButton_clicked();
+    void on_disableSudoWithoutPassAllButton_clicked();
+
+    void on_enableSudoWithoutPassUbunsysButton_clicked();
+
+    void on_disableSudoWithoutPassUbunsysButton_clicked();
 
     void on_openSudoersFileButton_clicked();
 
@@ -130,6 +134,8 @@ private slots:
 
     void on_disableLoginSoundButton_clicked();
 
+    void on_openSudoersAllModButton_clicked();
+
     void on_openSudoersUbunsysModButton_clicked();
 
     void on_aptselect_US_clicked();
@@ -147,6 +153,8 @@ private slots:
     void on_openMainRestoreButton_clicked();
 
     void on_runScriptsManager_clicked();
+
+    void on_openSudoersDButton_clicked();
 
 private:
     Ui::MainWindow *ui;

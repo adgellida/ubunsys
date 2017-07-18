@@ -30,7 +30,7 @@ class Ui_PackagesDialog
 public:
     QWidget *centralWidget;
     QGridLayout *gridLayout;
-    QPushButton *runSavedScriptButton;
+    QPushButton *runSavedScriptListButton;
     QPushButton *selectOfficialReposButton;
     QPushButton *exportListButton;
     QPushButton *selectUnofficialReposButton;
@@ -53,10 +53,10 @@ public:
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        runSavedScriptButton = new QPushButton(centralWidget);
-        runSavedScriptButton->setObjectName(QStringLiteral("runSavedScriptButton"));
+        runSavedScriptListButton = new QPushButton(centralWidget);
+        runSavedScriptListButton->setObjectName(QStringLiteral("runSavedScriptListButton"));
 
-        gridLayout->addWidget(runSavedScriptButton, 3, 0, 1, 1);
+        gridLayout->addWidget(runSavedScriptListButton, 3, 0, 1, 1);
 
         selectOfficialReposButton = new QPushButton(centralWidget);
         selectOfficialReposButton->setObjectName(QStringLiteral("selectOfficialReposButton"));
@@ -103,7 +103,7 @@ public:
     {
         PackagesDialog->setWindowTitle(QApplication::translate("PackagesDialog", "Packages Manager", Q_NULLPTR));
         PackagesDialog->setProperty("PackagesDialog", QVariant(QApplication::translate("PackagesDialog", "Dialog", Q_NULLPTR)));
-        runSavedScriptButton->setText(QApplication::translate("PackagesDialog", "Run saved script", Q_NULLPTR));
+        runSavedScriptListButton->setText(QApplication::translate("PackagesDialog", "Run saved script list", Q_NULLPTR));
         selectOfficialReposButton->setText(QApplication::translate("PackagesDialog", "Select only Official repos", Q_NULLPTR));
         exportListButton->setText(QApplication::translate("PackagesDialog", "Export list", Q_NULLPTR));
         selectUnofficialReposButton->setText(QApplication::translate("PackagesDialog", "Select only Unofficial repos", Q_NULLPTR));

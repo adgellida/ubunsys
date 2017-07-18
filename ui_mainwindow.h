@@ -54,14 +54,10 @@ public:
     QWidget *tab_6;
     QLabel *label_7;
     QPushButton *openSourcesListDButton;
-    QPushButton *enableSudoWithoutPassButton;
-    QPushButton *disableSudoWithoutPassButton;
-    QLabel *label_10;
     QPushButton *openSudoersFileButton;
     QPushButton *backupSudoersFileButton;
     QPushButton *importSudoersFileButton;
     QLabel *label_13;
-    QPushButton *openSudoersUbunsysModButton;
     QPushButton *aptselect_US;
     QPushButton *aptselect_ES;
     QPushButton *importSourcesListButton;
@@ -98,6 +94,15 @@ public:
     QLabel *label_8;
     QPushButton *disableHibernationButton;
     QPushButton *enableHibernationButton;
+    QWidget *tab_5;
+    QPushButton *enableSudoWithoutPassAllButton;
+    QPushButton *disableSudoWithoutPassAllButton;
+    QLabel *label_10;
+    QPushButton *openSudoersUbunsysModButton;
+    QPushButton *disableSudoWithoutPassUbunsysButton;
+    QPushButton *enableSudoWithoutPassUbunsysButton;
+    QPushButton *openSudoersAllModButton;
+    QPushButton *openSudoersDButton;
     QWidget *tab;
     QTabWidget *tabWidget_4;
     QWidget *tab_8;
@@ -265,97 +270,13 @@ public:
         tab_6->setObjectName(QStringLiteral("tab_6"));
         label_7 = new QLabel(tab_6);
         label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setGeometry(QRect(10, 120, 141, 16));
+        label_7->setGeometry(QRect(10, 10, 141, 16));
         label_7->setFont(font);
         openSourcesListDButton = new QPushButton(tab_6);
         openSourcesListDButton->setObjectName(QStringLiteral("openSourcesListDButton"));
-        openSourcesListDButton->setGeometry(QRect(10, 140, 221, 36));
+        openSourcesListDButton->setGeometry(QRect(10, 30, 221, 36));
         openSourcesListDButton->setIconSize(QSize(30, 30));
         openSourcesListDButton->setCheckable(false);
-        enableSudoWithoutPassButton = new QPushButton(tab_6);
-        enableSudoWithoutPassButton->setObjectName(QStringLiteral("enableSudoWithoutPassButton"));
-        enableSudoWithoutPassButton->setGeometry(QRect(10, 30, 221, 36));
-        QPalette palette;
-        QBrush brush(QColor(0, 0, 0, 255));
-        brush.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
-        QBrush brush1(QColor(239, 41, 41, 255));
-        brush1.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Button, brush1);
-        QBrush brush2(QColor(255, 147, 147, 255));
-        brush2.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Light, brush2);
-        QBrush brush3(QColor(247, 94, 94, 255));
-        brush3.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Midlight, brush3);
-        QBrush brush4(QColor(119, 20, 20, 255));
-        brush4.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Dark, brush4);
-        QBrush brush5(QColor(159, 27, 27, 255));
-        brush5.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Mid, brush5);
-        palette.setBrush(QPalette::Active, QPalette::Text, brush);
-        QBrush brush6(QColor(255, 255, 255, 255));
-        brush6.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::BrightText, brush6);
-        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
-        palette.setBrush(QPalette::Active, QPalette::Base, brush6);
-        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
-        palette.setBrush(QPalette::Active, QPalette::Shadow, brush);
-        QBrush brush7(QColor(247, 148, 148, 255));
-        brush7.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::AlternateBase, brush7);
-        QBrush brush8(QColor(255, 255, 220, 255));
-        brush8.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::ToolTipBase, brush8);
-        palette.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Button, brush1);
-        palette.setBrush(QPalette::Inactive, QPalette::Light, brush2);
-        palette.setBrush(QPalette::Inactive, QPalette::Midlight, brush3);
-        palette.setBrush(QPalette::Inactive, QPalette::Dark, brush4);
-        palette.setBrush(QPalette::Inactive, QPalette::Mid, brush5);
-        palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
-        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Base, brush6);
-        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
-        palette.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush7);
-        palette.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush8);
-        palette.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush4);
-        palette.setBrush(QPalette::Disabled, QPalette::Button, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::Light, brush2);
-        palette.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
-        palette.setBrush(QPalette::Disabled, QPalette::Dark, brush4);
-        palette.setBrush(QPalette::Disabled, QPalette::Mid, brush5);
-        palette.setBrush(QPalette::Disabled, QPalette::Text, brush4);
-        palette.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
-        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
-        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
-        palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        enableSudoWithoutPassButton->setPalette(palette);
-        QFont font2;
-        font2.setBold(true);
-        font2.setWeight(75);
-        font2.setStyleStrategy(QFont::PreferDefault);
-        enableSudoWithoutPassButton->setFont(font2);
-        enableSudoWithoutPassButton->setIconSize(QSize(30, 30));
-        enableSudoWithoutPassButton->setCheckable(false);
-        disableSudoWithoutPassButton = new QPushButton(tab_6);
-        disableSudoWithoutPassButton->setObjectName(QStringLiteral("disableSudoWithoutPassButton"));
-        disableSudoWithoutPassButton->setGeometry(QRect(10, 70, 221, 36));
-        disableSudoWithoutPassButton->setIconSize(QSize(30, 30));
-        disableSudoWithoutPassButton->setCheckable(false);
-        label_10 = new QLabel(tab_6);
-        label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setGeometry(QRect(10, 10, 221, 16));
-        label_10->setFont(font);
         openSudoersFileButton = new QPushButton(tab_6);
         openSudoersFileButton->setObjectName(QStringLiteral("openSudoersFileButton"));
         openSudoersFileButton->setGeometry(QRect(450, 30, 221, 36));
@@ -375,34 +296,29 @@ public:
         label_13->setObjectName(QStringLiteral("label_13"));
         label_13->setGeometry(QRect(450, 10, 61, 16));
         label_13->setFont(font);
-        openSudoersUbunsysModButton = new QPushButton(tab_6);
-        openSudoersUbunsysModButton->setObjectName(QStringLiteral("openSudoersUbunsysModButton"));
-        openSudoersUbunsysModButton->setGeometry(QRect(450, 150, 221, 36));
-        openSudoersUbunsysModButton->setIconSize(QSize(30, 30));
-        openSudoersUbunsysModButton->setCheckable(false);
         aptselect_US = new QPushButton(tab_6);
         aptselect_US->setObjectName(QStringLiteral("aptselect_US"));
-        aptselect_US->setGeometry(QRect(10, 180, 101, 36));
+        aptselect_US->setGeometry(QRect(10, 70, 101, 36));
         aptselect_US->setIconSize(QSize(30, 30));
         aptselect_US->setCheckable(false);
         aptselect_ES = new QPushButton(tab_6);
         aptselect_ES->setObjectName(QStringLiteral("aptselect_ES"));
-        aptselect_ES->setGeometry(QRect(130, 180, 101, 36));
+        aptselect_ES->setGeometry(QRect(130, 70, 101, 36));
         aptselect_ES->setIconSize(QSize(30, 30));
         aptselect_ES->setCheckable(false);
         importSourcesListButton = new QPushButton(tab_6);
         importSourcesListButton->setObjectName(QStringLiteral("importSourcesListButton"));
-        importSourcesListButton->setGeometry(QRect(10, 300, 221, 36));
+        importSourcesListButton->setGeometry(QRect(10, 190, 221, 36));
         importSourcesListButton->setIconSize(QSize(30, 30));
         importSourcesListButton->setCheckable(false);
         openSourcesListButton = new QPushButton(tab_6);
         openSourcesListButton->setObjectName(QStringLiteral("openSourcesListButton"));
-        openSourcesListButton->setGeometry(QRect(10, 220, 221, 36));
+        openSourcesListButton->setGeometry(QRect(10, 110, 221, 36));
         openSourcesListButton->setIconSize(QSize(30, 30));
         openSourcesListButton->setCheckable(false);
         backupSourcesListButton = new QPushButton(tab_6);
         backupSourcesListButton->setObjectName(QStringLiteral("backupSourcesListButton"));
-        backupSourcesListButton->setGeometry(QRect(10, 260, 221, 36));
+        backupSourcesListButton->setGeometry(QRect(10, 150, 221, 36));
         backupSourcesListButton->setIconSize(QSize(30, 30));
         backupSourcesListButton->setCheckable(false);
         label_37 = new QLabel(tab_6);
@@ -421,7 +337,7 @@ public:
         openMainBackupButton->setCheckable(false);
         label_38 = new QLabel(tab_6);
         label_38->setObjectName(QStringLiteral("label_38"));
-        label_38->setGeometry(QRect(450, 290, 231, 111));
+        label_38->setGeometry(QRect(450, 290, 161, 111));
         label_38->setFont(font1);
         tabWidget_3->addTab(tab_6, QString());
         tab_7 = new QWidget();
@@ -546,6 +462,123 @@ public:
         enableHibernationButton->setIconSize(QSize(30, 30));
         enableHibernationButton->setCheckable(false);
         tabWidget_3->addTab(tab_16, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QStringLiteral("tab_5"));
+        enableSudoWithoutPassAllButton = new QPushButton(tab_5);
+        enableSudoWithoutPassAllButton->setObjectName(QStringLiteral("enableSudoWithoutPassAllButton"));
+        enableSudoWithoutPassAllButton->setGeometry(QRect(10, 30, 251, 36));
+        QPalette palette;
+        QBrush brush(QColor(0, 0, 0, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        QBrush brush1(QColor(239, 41, 41, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush1);
+        QBrush brush2(QColor(255, 147, 147, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Light, brush2);
+        QBrush brush3(QColor(247, 94, 94, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Midlight, brush3);
+        QBrush brush4(QColor(119, 20, 20, 255));
+        brush4.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Dark, brush4);
+        QBrush brush5(QColor(159, 27, 27, 255));
+        brush5.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Active, QPalette::Text, brush);
+        QBrush brush6(QColor(255, 255, 255, 255));
+        brush6.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush6);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Shadow, brush);
+        QBrush brush7(QColor(247, 148, 148, 255));
+        brush7.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::AlternateBase, brush7);
+        QBrush brush8(QColor(255, 255, 220, 255));
+        brush8.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Light, brush2);
+        palette.setBrush(QPalette::Inactive, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Inactive, QPalette::Dark, brush4);
+        palette.setBrush(QPalette::Inactive, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush6);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush7);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Light, brush2);
+        palette.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Disabled, QPalette::Dark, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Disabled, QPalette::Text, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
+        enableSudoWithoutPassAllButton->setPalette(palette);
+        QFont font2;
+        font2.setBold(true);
+        font2.setWeight(75);
+        font2.setStyleStrategy(QFont::PreferDefault);
+        enableSudoWithoutPassAllButton->setFont(font2);
+        enableSudoWithoutPassAllButton->setIconSize(QSize(30, 30));
+        enableSudoWithoutPassAllButton->setCheckable(false);
+        disableSudoWithoutPassAllButton = new QPushButton(tab_5);
+        disableSudoWithoutPassAllButton->setObjectName(QStringLiteral("disableSudoWithoutPassAllButton"));
+        disableSudoWithoutPassAllButton->setGeometry(QRect(10, 70, 251, 36));
+        disableSudoWithoutPassAllButton->setIconSize(QSize(30, 30));
+        disableSudoWithoutPassAllButton->setCheckable(false);
+        label_10 = new QLabel(tab_5);
+        label_10->setObjectName(QStringLiteral("label_10"));
+        label_10->setGeometry(QRect(10, 10, 221, 16));
+        label_10->setFont(font);
+        openSudoersUbunsysModButton = new QPushButton(tab_5);
+        openSudoersUbunsysModButton->setObjectName(QStringLiteral("openSudoersUbunsysModButton"));
+        openSudoersUbunsysModButton->setGeometry(QRect(280, 130, 221, 36));
+        openSudoersUbunsysModButton->setIconSize(QSize(30, 30));
+        openSudoersUbunsysModButton->setCheckable(false);
+        disableSudoWithoutPassUbunsysButton = new QPushButton(tab_5);
+        disableSudoWithoutPassUbunsysButton->setObjectName(QStringLiteral("disableSudoWithoutPassUbunsysButton"));
+        disableSudoWithoutPassUbunsysButton->setGeometry(QRect(10, 170, 251, 36));
+        disableSudoWithoutPassUbunsysButton->setIconSize(QSize(30, 30));
+        disableSudoWithoutPassUbunsysButton->setCheckable(false);
+        enableSudoWithoutPassUbunsysButton = new QPushButton(tab_5);
+        enableSudoWithoutPassUbunsysButton->setObjectName(QStringLiteral("enableSudoWithoutPassUbunsysButton"));
+        enableSudoWithoutPassUbunsysButton->setGeometry(QRect(10, 130, 251, 36));
+        QFont font3;
+        font3.setBold(false);
+        font3.setWeight(50);
+        font3.setStyleStrategy(QFont::PreferDefault);
+        enableSudoWithoutPassUbunsysButton->setFont(font3);
+        enableSudoWithoutPassUbunsysButton->setIconSize(QSize(30, 30));
+        enableSudoWithoutPassUbunsysButton->setCheckable(false);
+        openSudoersAllModButton = new QPushButton(tab_5);
+        openSudoersAllModButton->setObjectName(QStringLiteral("openSudoersAllModButton"));
+        openSudoersAllModButton->setGeometry(QRect(280, 30, 221, 36));
+        openSudoersAllModButton->setIconSize(QSize(30, 30));
+        openSudoersAllModButton->setCheckable(false);
+        openSudoersDButton = new QPushButton(tab_5);
+        openSudoersDButton->setObjectName(QStringLiteral("openSudoersDButton"));
+        openSudoersDButton->setGeometry(QRect(10, 230, 221, 36));
+        openSudoersDButton->setIconSize(QSize(30, 30));
+        openSudoersDButton->setCheckable(false);
+        tabWidget_3->addTab(tab_5, QString());
         tabWidget->addTab(tab_3, QString());
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
@@ -867,7 +900,7 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(1);
@@ -909,20 +942,6 @@ public:
 #endif // QT_NO_WHATSTHIS
         openSourcesListDButton->setText(QApplication::translate("MainWindow", "Open sources.list.d", Q_NULLPTR));
         openSourcesListDButton->setShortcut(QString());
-#ifndef QT_NO_TOOLTIP
-        enableSudoWithoutPassButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_WHATSTHIS
-        enableSudoWithoutPassButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
-#endif // QT_NO_WHATSTHIS
-        enableSudoWithoutPassButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass", Q_NULLPTR));
-        enableSudoWithoutPassButton->setShortcut(QString());
-#ifndef QT_NO_WHATSTHIS
-        disableSudoWithoutPassButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        disableSudoWithoutPassButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass", Q_NULLPTR));
-        disableSudoWithoutPassButton->setShortcut(QString());
-        label_10->setText(QApplication::translate("MainWindow", "Security & Passwords", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         openSudoersFileButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -939,11 +958,6 @@ public:
         importSudoersFileButton->setText(QApplication::translate("MainWindow", "Import sudoers file", Q_NULLPTR));
         importSudoersFileButton->setShortcut(QString());
         label_13->setText(QApplication::translate("MainWindow", "Sudoers", Q_NULLPTR));
-#ifndef QT_NO_WHATSTHIS
-        openSudoersUbunsysModButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        openSudoersUbunsysModButton->setText(QApplication::translate("MainWindow", "Open sudoers ubunsys mod", Q_NULLPTR));
-        openSudoersUbunsysModButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         aptselect_US->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -984,7 +998,7 @@ public:
 "sources.list\n"
 "sudoers\n"
 "templates", Q_NULLPTR));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/3", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/4", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         installTemplatesButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1053,7 +1067,7 @@ public:
 #endif // QT_NO_WHATSTHIS
         runGrubcustomizerButton->setText(QApplication::translate("MainWindow", "Configure", Q_NULLPTR));
         runGrubcustomizerButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/3", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/4", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         doInvisibleAsterisksButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1077,7 +1091,50 @@ public:
 #endif // QT_NO_WHATSTHIS
         enableHibernationButton->setText(QApplication::translate("MainWindow", "Enable hibernation", Q_NULLPTR));
         enableHibernationButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindow", "Tweaks 3/3", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindow", "Tweaks 3/4", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        enableSudoWithoutPassAllButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_WHATSTHIS
+        enableSudoWithoutPassAllButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        enableSudoWithoutPassAllButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass all", Q_NULLPTR));
+        enableSudoWithoutPassAllButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        disableSudoWithoutPassAllButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        disableSudoWithoutPassAllButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass all", Q_NULLPTR));
+        disableSudoWithoutPassAllButton->setShortcut(QString());
+        label_10->setText(QApplication::translate("MainWindow", "Security & Passwords", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        openSudoersUbunsysModButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        openSudoersUbunsysModButton->setText(QApplication::translate("MainWindow", "Open 'sudoers ubunsys mod'", Q_NULLPTR));
+        openSudoersUbunsysModButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        disableSudoWithoutPassUbunsysButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        disableSudoWithoutPassUbunsysButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass ubunsys", Q_NULLPTR));
+        disableSudoWithoutPassUbunsysButton->setShortcut(QString());
+#ifndef QT_NO_TOOLTIP
+        enableSudoWithoutPassUbunsysButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_WHATSTHIS
+        enableSudoWithoutPassUbunsysButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        enableSudoWithoutPassUbunsysButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass ubunsys", Q_NULLPTR));
+        enableSudoWithoutPassUbunsysButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        openSudoersAllModButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        openSudoersAllModButton->setText(QApplication::translate("MainWindow", "Open 'sudoers all mod'", Q_NULLPTR));
+        openSudoersAllModButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        openSudoersDButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        openSudoersDButton->setText(QApplication::translate("MainWindow", "Open sudoers.d", Q_NULLPTR));
+        openSudoersDButton->setShortcut(QString());
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_5), QApplication::translate("MainWindow", "Tweaks 4/4", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", Q_NULLPTR));
         label_16->setText(QApplication::translate("MainWindow", "Clean system", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP

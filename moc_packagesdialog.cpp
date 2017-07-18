@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_PackagesDialog_t {
     QByteArrayData data[8];
-    char stringdata0[198];
+    char stringdata0[202];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,15 +35,15 @@ QT_MOC_LITERAL(2, 34, 0), // ""
 QT_MOC_LITERAL(3, 35, 26), // "on_runScriptButton_clicked"
 QT_MOC_LITERAL(4, 62, 36), // "on_selectOfficialReposButton_..."
 QT_MOC_LITERAL(5, 99, 38), // "on_selectUnofficialReposButto..."
-QT_MOC_LITERAL(6, 138, 31), // "on_runSavedScriptButton_clicked"
-QT_MOC_LITERAL(7, 170, 27) // "on_exportListButton_clicked"
+QT_MOC_LITERAL(6, 138, 35), // "on_runSavedScriptListButton_c..."
+QT_MOC_LITERAL(7, 174, 27) // "on_exportListButton_clicked"
 
     },
     "PackagesDialog\0onFileItemSelected\0\0"
     "on_runScriptButton_clicked\0"
     "on_selectOfficialReposButton_clicked\0"
     "on_selectUnofficialReposButton_clicked\0"
-    "on_runSavedScriptButton_clicked\0"
+    "on_runSavedScriptListButton_clicked\0"
     "on_exportListButton_clicked"
 };
 #undef QT_MOC_LITERAL
@@ -90,7 +90,7 @@ void PackagesDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 1: _t->on_runScriptButton_clicked(); break;
         case 2: _t->on_selectOfficialReposButton_clicked(); break;
         case 3: _t->on_selectUnofficialReposButton_clicked(); break;
-        case 4: _t->on_runSavedScriptButton_clicked(); break;
+        case 4: _t->on_runSavedScriptListButton_clicked(); break;
         case 5: _t->on_exportListButton_clicked(); break;
         default: ;
         }

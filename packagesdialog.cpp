@@ -16,6 +16,7 @@ PackagesDialog::PackagesDialog(QWidget *parent) :
       fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
       ui->treeView->setModel(fsModel);
       connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
+      ui->statusBar->showMessage(tr("Select your option"));
 }
 
 PackagesDialog::~PackagesDialog()
@@ -25,6 +26,9 @@ PackagesDialog::~PackagesDialog()
 
 void PackagesDialog::onFileItemSelected()
 {
+
+    ui->statusBar->showMessage(tr("Selecting items..."));
+
     QString filename = QDir::homePath() + "/.ubunsys/files/packagesToInstall.sh";
     QFile file(filename);
     QFile::remove(filename);
@@ -39,6 +43,11 @@ void PackagesDialog::onFileItemSelected()
               //stream << "#!/bin/bash\n\n" + fi.absoluteFilePath() << endl;
               stream << fi.absoluteFilePath() << endl;
               qDebug() << fi.absoluteFilePath();
+
+              //Assign Permissions on each selection to selected file
+              QString filenamePermissionsPath = fi.absoluteFilePath();
+              QFile filenamePermissions(filenamePermissionsPath);
+              filenamePermissions.setPermissions(QFile::ExeGroup | QFile::ExeGroup | QFile::ExeOther | QFile::ExeOwner | QFile::ExeUser | QFile::ReadGroup | QFile::ReadOther | QFile::ReadOwner | QFile::ReadUser | QFile::WriteGroup | QFile::WriteOther | QFile::WriteOwner | QFile::WriteUser);
           }
 
           file.close();
@@ -62,6 +71,7 @@ void PackagesDialog::on_runScriptButton_clicked()
               file.close();
          }
 */
+    ui->statusBar->showMessage(tr("Executing Scripts selected. Please wait..."));
 
     system("sed -i '1i #!/bin/bash' ~/.ubunsys/files/packagesToInstall.sh");
     system("xterm -e bash -c '"
@@ -78,6 +88,8 @@ void PackagesDialog::on_selectOfficialReposButton_clicked()
     fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
     ui->treeView->setModel(fsModel);
     connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
+
+    ui->statusBar->showMessage(tr("Official Repos selected"));
 }
 
 void PackagesDialog::on_selectUnofficialReposButton_clicked()
@@ -85,10 +97,14 @@ void PackagesDialog::on_selectUnofficialReposButton_clicked()
     fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath(), this);
     ui->treeView->setModel(fsModel);
     connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
+
+    ui->statusBar->showMessage(tr("Unofficial Repos selected"));
 }
 
-void PackagesDialog::on_runSavedScriptButton_clicked()
+void PackagesDialog::on_runSavedScriptListButton_clicked()
 {
+    ui->statusBar->showMessage(tr("Select your list"));
+
     // Get filename
 
     QString filename=QFileDialog::getOpenFileName(
@@ -97,7 +113,7 @@ void PackagesDialog::on_runSavedScriptButton_clicked()
                     QDir::homePath() + "/.ubunsys/backups/scriptsFiles",
                     //getenv("HOME"),
                     //"All files (*.*);;Bak files(*.bak)");
-                    "Bak files(*.bak)");
+                    "List files(*.list)");
 
     //QMessageBox::information(this,tr("File Name"),filename);
 
@@ -126,11 +142,13 @@ void PackagesDialog::on_runSavedScriptButton_clicked()
     //this would normally start the event loop, but is not needed for this
     //minimal example:
     //return app.exec();
+
+    ui->statusBar->showMessage(tr("Scripts executed with or without errors. Check it!"));
 }
 
 void PackagesDialog::on_exportListButton_clicked()
 {
-   // ui->statusBar->showMessage(tr("Backuping sudoers"));
+    ui->statusBar->showMessage(tr("Exporting list"));
 
     system("xterm -e bash -c '"
            "~/.ubunsys/downloads/ubuntuScripts-master/047.exportList"
