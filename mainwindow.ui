@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -3073,7 +3073,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.07.17</string>
+     <string>v2017.07.18</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">

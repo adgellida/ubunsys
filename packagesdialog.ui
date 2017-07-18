@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Packages Manager</string>
+   <string>Scripts Manager</string>
   </property>
   <property name="PackagesDialog" stdset="0">
    <string>Dialog</string>

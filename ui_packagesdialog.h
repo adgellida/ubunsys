@@ -101,7 +101,7 @@ public:
 
     void retranslateUi(QDialog *PackagesDialog)
     {
-        PackagesDialog->setWindowTitle(QApplication::translate("PackagesDialog", "Packages Manager", Q_NULLPTR));
+        PackagesDialog->setWindowTitle(QApplication::translate("PackagesDialog", "Scripts Manager", Q_NULLPTR));
         PackagesDialog->setProperty("PackagesDialog", QVariant(QApplication::translate("PackagesDialog", "Dialog", Q_NULLPTR)));
         runSavedScriptListButton->setText(QApplication::translate("PackagesDialog", "Run saved script list", Q_NULLPTR));
         selectOfficialReposButton->setText(QApplication::translate("PackagesDialog", "Select only Official repos", Q_NULLPTR));
