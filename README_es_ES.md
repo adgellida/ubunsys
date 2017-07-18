@@ -13,6 +13,8 @@
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/release-v2017.07.18-blue.svg" alt="Release"></a>
 </p>
 
+<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a>
+
 **For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
 
 Software instalador de una lista de paquetes útiles, capaz de hacer cambios en la configuración del sistema, actualizaciones, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
