@@ -10,7 +10,7 @@ void MainWindow::on_actionTutorial_triggered()
 
     information.setTextFormat(Qt::RichText);   //this is what makes the links clickable
     information.setText(tr("<p align='left'><b>ubunsys</b></p></br>"
-                  "<p align='left'>Pulsa <a href='https://github.com/adgellida/ubunsys/wiki/Tutorial_en'>aquí</a> para ir a la wiki."));
+                  "<p align='left'>Click <a href='https://github.com/adgellida/ubunsys/wiki/Tutorial_en'>here</a> to go to wiki."));
 
     //ui->statusBar->showMessage(tr("Checking integrity system"));
     information.setWindowTitle(tr("Tutorial"));
