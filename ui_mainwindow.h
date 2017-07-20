@@ -337,7 +337,7 @@ public:
         openMainBackupButton->setCheckable(false);
         label_38 = new QLabel(tab_6);
         label_38->setObjectName(QStringLiteral("label_38"));
-        label_38->setGeometry(QRect(450, 290, 161, 111));
+        label_38->setGeometry(QRect(450, 290, 221, 111));
         label_38->setFont(font1);
         tabWidget_3->addTab(tab_6, QString());
         tab_7 = new QWidget();
@@ -900,9 +900,9 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(0);
-        tabWidget_3->setCurrentIndex(0);
+        tabWidget_3->setCurrentIndex(1);
         tabWidget_4->setCurrentIndex(1);
         tabWidget_5->setCurrentIndex(0);
 

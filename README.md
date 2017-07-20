@@ -113,21 +113,13 @@ Push [here](https://github.com/adgellida/ubunsys/wiki/Tutorial_en) to go to wiki
 TO DO
 =============================================
 
-* Support make install.
-
 * Search box.
 
 * Improve ubuntu fonts.
 
-* Best server selection to download updates.
-
-* Save selection.
-
 * Put selector or slider.
 
 * When package selection installed, unselect all boxes or hold them? By now, hold. Unselection commented.
-
-* Implement code to generate new apps automatically to save a bunch of code lines.
 
 * Add more sounds to system.
 
@@ -136,8 +128,6 @@ TO DO
 * Snap, AppImage, PPA (updated), flatpack.
 
 * Backup user folder
-
-* Run scripts selector.
 
 * Integer terminal on a widget. Recover mainwindows focus.
 
@@ -151,12 +141,23 @@ TO DO
 
 * Save user configuration for use it when you re-open app.
 
-* Create a category to personal scripts.
 
 * Disable keyring.
 
 DONE
 =============================================
+
+* Run scripts selector.
+
+* Create a category to personal scripts.
+
+* Implement code to generate new apps automatically to save a bunch of code lines.
+
+* Save selection.
+
+* Best server selection to download updates.
+
+* Support make install.
 
 * 16.04 compatible, but not 100%.
 
@@ -182,8 +183,6 @@ If you need help about compilation and packaging I have basic notions, ask me.
 I'm not a senior programmer, nor junior. I program as a hobby. So I'm not following professional coding practises.
 
 I know that my code is horrifying and not good implemented. With patience I'll go to cleaning and improving it. 
-
-All experienced help are welcome.
 
 Credits and thanks to
 =============================================

@@ -113,21 +113,13 @@ Pulsa [aquí](https://github.com/adgellida/ubunsys/wiki/Tutorial_es) para ir a l
 POR HACER
 =============================================
 
-* Habilitar soporte a make install.
-
 * Caja de búsqueda.
 
 * Mejorar las fuentes de Ubuntu.
 
-* Mejor selección de servidor para descargar actualizaciones.
-
-* Guardar selección.
-
 * Poner un selector o "slider".
 
 * Cuando una selección de paquete está instalado, deseleccionar todas las cajas o mantenerlas? Por ahora, mantener. Deselección comentada.
-
-* Implementar códido para generar nuevas apps automáticamente para ahorrar un montón de líneas.
 
 * Añadir más sonidos al sistema.
 
@@ -136,8 +128,6 @@ POR HACER
 * Snap, AppImage, PPA (actualizado), flatpack.
 
 * Copia de seguridad de la carpeta de usuario.
-
-* Ejecutar selector de scripts.
 
 * Integrar terminal en un widget. Recuperar foco de las ventanas personales.
 
@@ -151,12 +141,22 @@ POR HACER
 
 * Guardar la configuración del usuario para usarla cuando se reabra la app.
 
-* Crear apartado de scripts personales.
-
 * Deshabilitar depósito de claves.
 
 HECHO
 =============================================
+
+* Ejecutar selector de scripts.
+
+* Crear apartado de scripts personales.
+
+* Implementar códido para generar nuevas apps automáticamente para ahorrar un montón de líneas.
+
+* Guardar selección.
+
+* Mejor selección de servidor para descargar actualizaciones.
+
+* Habilitar soporte a make install.
 
 * Compatible con 16.04, pero no al 100%.
 
@@ -177,13 +177,11 @@ Cuidado! Estas versiones iniciales tienen un montón de fallos y funcionalidades
 
 Si quieres ayudar en este desarrollo, dímelo.
 
-Si tú necesitas ayuda a cerca de compilar y empaquetar tengo nociones básicas, pregúntame.
+Si necesitas ayuda a cerca de compilar y empaquetar tengo nociones básicas, pregúntame.
 
 No soy un programador senior, ni junior. Programo como hobby. No estoy siguiendo prácticas de código profesionales.
 
 Sé que mi código es horrible y no está bien implementado. Con paciencia lo iré limpiando y mejorando. 
-
-Toda buena ayuda será bienvenida.
 
 Créditos y gracias a
 =============================================
