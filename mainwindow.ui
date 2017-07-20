@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -123,7 +123,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -499,7 +499,7 @@
          <rect>
           <x>450</x>
           <y>290</y>
-          <width>161</width>
+          <width>221</width>
           <height>111</height>
          </rect>
         </property>
