@@ -10,7 +10,7 @@
   <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.07.18/total.svg" alt="total downloads latest release"></a> 
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/lates release-v2017.07.18-blue.svg" alt="latest release"></a>
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.07.18-blue.svg" alt="latest release"></a>
 </p>
 
 <a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a>
@@ -108,15 +108,7 @@ Y más...
 Tutorial
 =============================================
 
-Pasos recomendados:
-
-1. Pulsa en 'Habilitar sudo sin contraseña'.
-
-De esta manera, puedes ejecutar comandos sin preguntar tu contraseña de sudo cada vez. Por ello ganas rapidez.
-
-2. Ejecuta el Gestor de Scripts.
-
-3. Ejecutar todas las mejoras, acciones del sistema y reparaciones que quieras.
+Pulsa [aquí](https://github.com/adgellida/ubunsys/wiki/Tutorial_es) para ir a la wiki.
 
 POR HACER
 =============================================

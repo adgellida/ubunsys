@@ -10,7 +10,7 @@
   <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.07.18/total.svg" alt="total downloads latest release"></a> 
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/lates release-v2017.07.18-blue.svg" alt="latest release"></a>
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.07.18-blue.svg" alt="latest release"></a>
 </p>
 
 <a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a>
@@ -108,15 +108,7 @@ And more...
 Tutorial
 =============================================
 
-Recommended steps:
-
-1. Push on 'Enable sudo without pass all'.
-
-This way you can execute commands without asking your sudo pass each time. More quick so.
-
-2. Execute Scripts Manager.
-
-3. Execute all tweaks, system actions or reparations you want.
+Push [here](https://github.com/adgellida/ubunsys/wiki/Tutorial_en) to go to wiki.
 
 TO DO
 =============================================
