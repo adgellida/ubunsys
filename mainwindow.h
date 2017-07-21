@@ -122,7 +122,7 @@ private slots:
 
     void on_runGrubcustomizerButton_clicked();
 
-    void on_enableLockScreenlButton_clicked();
+    void on_enableLockScreenButton_clicked();
 
     void on_disableLockScrennButton_clicked();
 

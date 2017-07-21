@@ -629,9 +629,8 @@ plantillas</translation>
         <translation>Reparar red</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3076"/>
         <source>v2017.07.18</source>
-        <translation>v2017.07.18</translation>
+        <translation type="vanished">v2017.07.18</translation>
     </message>
     <message>
         <source>If you lost &quot;sudo&quot; function try with &quot;pkexec&quot; to fix crashes</source>
@@ -678,6 +677,11 @@ apt-fast -y clean</source>
         <location filename="../mainwindow.ui" line="3059"/>
         <source>dpkg --configure -a &amp;&amp; apt-fast -y update</source>
         <translation></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="3076"/>
+        <source>v2017.07.21</source>
+        <translation>v2017.07.21</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3089"/>
@@ -764,7 +768,7 @@ apt-fast -y clean</source>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3271"/>
-        <location filename="../tutorial.cpp" line="20"/>
+        <location filename="../tutorial.cpp" line="16"/>
         <source>Tutorial</source>
         <translation></translation>
     </message>
@@ -1233,12 +1237,12 @@ apt-fast -y clean</source>
         <translation type="vanished">Instalando paquetes</translation>
     </message>
     <message>
-        <location filename="../updatezone.cpp" line="62"/>
+        <location filename="../updatezone.cpp" line="48"/>
         <source>Latest scripts updated ok. Please select an action</source>
         <translation>Últimos scripts actualizados ok. Por favor seleccione una acción</translation>
     </message>
     <message>
-        <location filename="../updatezone.cpp" line="68"/>
+        <location filename="../updatezone.cpp" line="54"/>
         <source>For now launches to release page to update manually. Please wait.</source>
         <translation>Por ahora lanza la página de versiones para actualizar manualmente. Espere por favor.</translation>
     </message>
@@ -1296,12 +1300,10 @@ v2017.06.04</translation>
         <translation type="vanished">&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Aplicación configurable referente a paquetes, actualizaciones y configuraciones&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Desarrollado con Qt 5.7.1.&lt;p align=&apos;left&apos;&gt;Contiene errores. Está en estado de testeo alpha.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Gracias a &lt;a href=&apos;https://thenounproject.com/bernar.novalyi/&apos;&gt;Bernar Novalyi&lt;/a&gt; de Noun Project que creó de la app el &lt;a href=&apos;https://thenounproject.com/term/terminal/715962/&apos;&gt;icono&lt;/a&gt; usado aquí. Precioso!&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys&apos;&gt;PPA de Launchpad&lt;/a&gt; - No actualizado&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://github.com/adgellida/ubunsys&apos;&gt;Repo Git&lt;/a&gt; - Actualizado&lt;/p&gt;&lt;/br&gt;</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="12"/>
         <source>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Configurable app referent to packages, updates and configurations&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Built with Qt 5.7.1 for 17.04 zesty zapus.&lt;p align=&apos;left&apos;&gt;Built with Qt 5.5.1 for 16.04 xenial xerus.&lt;p align=&apos;left&apos;&gt;Contains bugs. Alpha test status.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Credits to &lt;a href=&apos;https://thenounproject.com/bernar.novalyi/&apos;&gt;Bernar Novalyi&lt;/a&gt; from Noun Project that creates the app &lt;a href=&apos;https://thenounproject.com/term/terminal/715962/&apos;&gt;icon&lt;/a&gt; used here. Beautiful!&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys&apos;&gt;Launchpad PPA&lt;/a&gt; - Not updated&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://github.com/adgellida/ubunsys&apos;&gt;Git Repo&lt;/a&gt; - Updated&lt;/p&gt;&lt;/br&gt;</source>
-        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Aplicación configurable referente a paquetes, actualizaciones y configuraciones&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Desarrollado con Qt 5.7.1 para 17.04 zesty zapus.&lt;p align=&apos;left&apos;&gt;Desarrollado con Qt 5.5.1 para 16.04 xenial xerus.&lt;p align=&apos;left&apos;&gt;Contiene errores. Está en estado de testeo alpha.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Gracias a &lt;a href=&apos;https://thenounproject.com/bernar.novalyi/&apos;&gt;Bernar Novalyi&lt;/a&gt; de Noun Project que creó de la app el &lt;a href=&apos;https://thenounproject.com/term/terminal/715962/&apos;&gt;icono&lt;/a&gt; usado aquí. Precioso!&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys&apos;&gt;PPA de Launchpad&lt;/a&gt; - No actualizado&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://github.com/adgellida/ubunsys&apos;&gt;Repo Git&lt;/a&gt; - Actualizado&lt;/p&gt;&lt;/br&gt;</translation>
+        <translation type="vanished">&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Aplicación configurable referente a paquetes, actualizaciones y configuraciones&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Desarrollado con Qt 5.7.1 para 17.04 zesty zapus.&lt;p align=&apos;left&apos;&gt;Desarrollado con Qt 5.5.1 para 16.04 xenial xerus.&lt;p align=&apos;left&apos;&gt;Contiene errores. Está en estado de testeo alpha.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Gracias a &lt;a href=&apos;https://thenounproject.com/bernar.novalyi/&apos;&gt;Bernar Novalyi&lt;/a&gt; de Noun Project que creó de la app el &lt;a href=&apos;https://thenounproject.com/term/terminal/715962/&apos;&gt;icono&lt;/a&gt; usado aquí. Precioso!&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys&apos;&gt;PPA de Launchpad&lt;/a&gt; - No actualizado&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://github.com/adgellida/ubunsys&apos;&gt;Repo Git&lt;/a&gt; - Actualizado&lt;/p&gt;&lt;/br&gt;</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="22"/>
         <source>Copyright (c) 2017 all rights reserved
 
 GPL v2
@@ -1311,7 +1313,7 @@ Antonio David Gellida Lavara
 adgellida@gmail.com
 
 v2017.07.18</source>
-        <translation>Copyright (c) 2017 todos los derechos reservados
+        <translation type="vanished">Copyright (c) 2017 todos los derechos reservados
 
 GPL v2
 
@@ -1406,9 +1408,39 @@ v2017.06.11</translation>
         <translation type="vanished">&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pasos recomendados:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Pulsa en &apos;Habilitar sudo sin contraseña&apos;.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Instala los paquetes que quieras.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Ejecutar todas las mejoras, acciones del sistema y reparaciones que quieras.&lt;/p&gt;&lt;/br&gt;</translation>
     </message>
     <message>
-        <location filename="../tutorial.cpp" line="12"/>
         <source>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Recommended steps:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Push on &apos;Enable sudo without pass&apos;.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Install packages you want.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Execute all tweaks, system actions or reparations you want.&lt;/p&gt;&lt;/br&gt;</source>
-        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pasos recomendados:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Pulsa en &apos;Habilitar sudo sin contraseña&apos;.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Peligroso!! Pulsar solo si sabes lo que estás haciendo y deshabilitarlo tan pronto como sea posible. Recomendado sólo si estás usando esta app para no poner todo el rato la contraseña para acciones elevadas.&lt;/p&gt;&lt;/br&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Instala los paquetes que quieras.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Ejecutar todas las mejoras, acciones del sistema y reparaciones que quieras.&lt;/p&gt;&lt;/br&gt;</translation>
+        <translation type="vanished">&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pasos recomendados:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Pulsa en &apos;Habilitar sudo sin contraseña&apos;.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Peligroso!! Pulsar solo si sabes lo que estás haciendo y deshabilitarlo tan pronto como sea posible. Recomendado sólo si estás usando esta app para no poner todo el rato la contraseña para acciones elevadas.&lt;/p&gt;&lt;/br&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Instala los paquetes que quieras.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Ejecutar todas las mejoras, acciones del sistema y reparaciones que quieras.&lt;/p&gt;&lt;/br&gt;</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="12"/>
+        <source>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Configurable app referent to packages, updates and configurations&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Built with Qt 5.7.1 for 17.04 zesty zapus.&lt;p align=&apos;left&apos;&gt;Built with Qt 5.5.1 for 16.04 xenial xerus.&lt;p align=&apos;left&apos;&gt;Contains bugs. Alpha test status.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Credits to &lt;a href=&apos;https://thenounproject.com/bernar.novalyi/&apos;&gt;Bernar Novalyi&lt;/a&gt; from Noun Project that creates the app &lt;a href=&apos;https://thenounproject.com/term/terminal/715962/&apos;&gt;icon&lt;/a&gt; used here. Beautiful!&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys&apos;&gt;Launchpad PPA&lt;/a&gt; - Updated&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://github.com/adgellida/ubunsys&apos;&gt;Git Repo&lt;/a&gt; - Updated&lt;/p&gt;&lt;/br&gt;</source>
+        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Aplicación configurable referente a paquetes, actualizaciones y configuraciones&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Desarrollado con Qt 5.7.1 para 17.04 zesty zapus.&lt;p align=&apos;left&apos;&gt;Desarrollado con Qt 5.5.1 para 16.04 xenial xerus.&lt;p align=&apos;left&apos;&gt;Contiene errores. Está en estado de testeo alpha.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Gracias a &lt;a href=&apos;https://thenounproject.com/bernar.novalyi/&apos;&gt;Bernar Novalyi&lt;/a&gt; de Noun Project que creó de la app el &lt;a href=&apos;https://thenounproject.com/term/terminal/715962/&apos;&gt;icono&lt;/a&gt; usado aquí. Precioso!&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys&apos;&gt;PPA de Launchpad&lt;/a&gt; - Actualizado&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;&lt;a href=&apos;https://github.com/adgellida/ubunsys&apos;&gt;Repo Git&lt;/a&gt; - Actualizado&lt;/p&gt;&lt;/br&gt;</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="22"/>
+        <source>Copyright (c) 2017 all rights reserved
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.07.21</source>
+        <translation>Copyright (c) 2017 todos los derechos reservados
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.07.21</translation>
+    </message>
+    <message>
+        <location filename="../tutorial.cpp" line="12"/>
+        <source>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Click &lt;a href=&apos;https://github.com/adgellida/ubunsys/wiki/Tutorial_en&apos;&gt;here&lt;/a&gt; to go to wiki.</source>
+        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pulsa &lt;a href=&apos;https://github.com/adgellida/ubunsys/wiki/Tutorial_en&apos;&gt;aquí&lt;/a&gt; para ir a la wiki.</translation>
     </message>
 </context>
 <context>

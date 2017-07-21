@@ -74,7 +74,7 @@ void PackagesDialog::on_runScriptButton_clicked()
     ui->statusBar->showMessage(tr("Executing Scripts selected. Please wait..."));
 
     system("sed -i '1i #!/bin/bash' ~/.ubunsys/files/packagesToInstall.sh");
-    system("xterm -e bash -c '"
+    system("x-terminal-emulator -e bash -c '"
            "cd ~/.ubunsys/files && sudo chmod 777 ~/.ubunsys/files/packagesToInstall.sh && ~/.ubunsys/files/packagesToInstall.sh"
            " && "
            "exit"
@@ -131,7 +131,7 @@ void PackagesDialog::on_runSavedScriptListButton_clicked()
 
     // run script formed
 
-    system("xterm -e bash -c '"
+    system("x-terminal-emulator -e bash -c '"
            "sudo chmod 777 ~/.ubunsys/files/runImportedScript.sh"
            "&&"
            "sudo ~/.ubunsys/files/runImportedScript.sh"
@@ -150,7 +150,7 @@ void PackagesDialog::on_exportListButton_clicked()
 {
     ui->statusBar->showMessage(tr("Exporting list"));
 
-    system("xterm -e bash -c '"
+    system("x-terminal-emulator -e bash -c '"
            "~/.ubunsys/downloads/ubuntuScripts-master/047.exportList"
            " && "
            "exit"

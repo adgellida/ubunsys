@@ -75,7 +75,7 @@ public:
     QPushButton *reduceTo5sShutdownTimeoutButton;
     QLabel *label_33;
     QPushButton *disableLockScrennButton;
-    QPushButton *enableLockScreenlButton;
+    QPushButton *enableLockScreenButton;
     QPushButton *showHiddenStartupItemsButton;
     QPushButton *unshowHiddenStartupItemsButton;
     QLabel *label_34;
@@ -374,11 +374,11 @@ public:
         disableLockScrennButton->setGeometry(QRect(10, 260, 221, 36));
         disableLockScrennButton->setIconSize(QSize(30, 30));
         disableLockScrennButton->setCheckable(false);
-        enableLockScreenlButton = new QPushButton(tab_7);
-        enableLockScreenlButton->setObjectName(QStringLiteral("enableLockScreenlButton"));
-        enableLockScreenlButton->setGeometry(QRect(10, 220, 221, 36));
-        enableLockScreenlButton->setIconSize(QSize(30, 30));
-        enableLockScreenlButton->setCheckable(false);
+        enableLockScreenButton = new QPushButton(tab_7);
+        enableLockScreenButton->setObjectName(QStringLiteral("enableLockScreenButton"));
+        enableLockScreenButton->setGeometry(QRect(10, 220, 221, 36));
+        enableLockScreenButton->setIconSize(QSize(30, 30));
+        enableLockScreenButton->setCheckable(false);
         showHiddenStartupItemsButton = new QPushButton(tab_7);
         showHiddenStartupItemsButton->setObjectName(QStringLiteral("showHiddenStartupItemsButton"));
         showHiddenStartupItemsButton->setGeometry(QRect(450, 30, 221, 36));
@@ -902,8 +902,8 @@ public:
 
         tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(0);
-        tabWidget_3->setCurrentIndex(1);
-        tabWidget_4->setCurrentIndex(1);
+        tabWidget_3->setCurrentIndex(3);
+        tabWidget_4->setCurrentIndex(2);
         tabWidget_5->setCurrentIndex(0);
 
 
@@ -1024,10 +1024,10 @@ public:
         disableLockScrennButton->setText(QApplication::translate("MainWindow", "Disable Lock screen", Q_NULLPTR));
         disableLockScrennButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
-        enableLockScreenlButton->setWhatsThis(QString());
+        enableLockScreenButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableLockScreenlButton->setText(QApplication::translate("MainWindow", "Enable Lock screen", Q_NULLPTR));
-        enableLockScreenlButton->setShortcut(QString());
+        enableLockScreenButton->setText(QApplication::translate("MainWindow", "Enable Lock screen", Q_NULLPTR));
+        enableLockScreenButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         showHiddenStartupItemsButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1298,7 +1298,7 @@ public:
         label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.07.18", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.07.21", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP

@@ -12,16 +12,15 @@ void MainWindow::on_updateScriptsButton_clicked()
 
     ui->statusBar->showMessage(tr("Updating latest scripts. Please wait"));
 
-    system("xterm -e bash -c '"
+    system("x-terminal-emulator -e bash -c '"
+           "echo  "
+           " && "
            "echo Trying to downloading and updating necessary files for ubunsys. Please wait... Stage 1/3"
+           " && "
+           " sleep 2"
            " && "
            "echo  "
            " && "
-           "test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
-           "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
-           "test -d ~/.ubunsys/downloads/ubuntuScripts-master || mkdir -p ~/.ubunsys/downloads/ubuntuScripts-master && "
-           "test -d ~/.ubunsys/files || mkdir -p ~/.ubunsys/files && "
-           "test -d ~/.ubunsys/backups/scriptsFiles || mkdir -p ~/.ubunsys/backups/scriptsFiles && "
            "wget https://raw.githubusercontent.com/adgellida/ubuntuScripts/master/044.downloadLatestUbuntuscripts -O ~/.ubunsys/downloads/ubuntuScripts-master/044.downloadLatestUbuntuscripts && "
            "chmod 777 ~/.ubunsys/downloads/ubuntuScripts-master/044.downloadLatestUbuntuscripts && "
            "~/.ubunsys/downloads/ubuntuScripts-master/044.downloadLatestUbuntuscripts && "

@@ -123,7 +123,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -691,7 +691,7 @@ templates</string>
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QPushButton" name="enableLockScreenlButton">
+       <widget class="QPushButton" name="enableLockScreenButton">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -1819,7 +1819,7 @@ Set to default</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
@@ -3073,7 +3073,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.07.18</string>
+     <string>v2017.07.21</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">

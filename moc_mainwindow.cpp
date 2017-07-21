@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[64];
-    char stringdata0[2105];
+    char stringdata0[2104];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -76,23 +76,23 @@ QT_MOC_LITERAL(43, 1405, 26), // "on_updateAppButton_clicked"
 QT_MOC_LITERAL(44, 1432, 34), // "on_importSudoersFileButton_cl..."
 QT_MOC_LITERAL(45, 1467, 32), // "on_installMainlineKernel_clicked"
 QT_MOC_LITERAL(46, 1500, 34), // "on_runGrubcustomizerButton_cl..."
-QT_MOC_LITERAL(47, 1535, 34), // "on_enableLockScreenlButton_cl..."
-QT_MOC_LITERAL(48, 1570, 34), // "on_disableLockScrennButton_cl..."
-QT_MOC_LITERAL(49, 1605, 39), // "on_showHiddenStartupItemsButt..."
-QT_MOC_LITERAL(50, 1645, 41), // "on_unshowHiddenStartupItemsBu..."
-QT_MOC_LITERAL(51, 1687, 33), // "on_enableLoginSoundButton_cli..."
-QT_MOC_LITERAL(52, 1721, 34), // "on_disableLoginSoundButton_cl..."
-QT_MOC_LITERAL(53, 1756, 34), // "on_openSudoersAllModButton_cl..."
-QT_MOC_LITERAL(54, 1791, 38), // "on_openSudoersUbunsysModButto..."
-QT_MOC_LITERAL(55, 1830, 23), // "on_aptselect_US_clicked"
-QT_MOC_LITERAL(56, 1854, 23), // "on_aptselect_ES_clicked"
-QT_MOC_LITERAL(57, 1878, 32), // "on_openSourcesListButton_clicked"
-QT_MOC_LITERAL(58, 1911, 34), // "on_backupSourcesListButton_cl..."
-QT_MOC_LITERAL(59, 1946, 34), // "on_importSourcesListButton_cl..."
-QT_MOC_LITERAL(60, 1981, 31), // "on_openMainBackupButton_clicked"
-QT_MOC_LITERAL(61, 2013, 32), // "on_openMainRestoreButton_clicked"
-QT_MOC_LITERAL(62, 2046, 28), // "on_runScriptsManager_clicked"
-QT_MOC_LITERAL(63, 2075, 29) // "on_openSudoersDButton_clicked"
+QT_MOC_LITERAL(47, 1535, 33), // "on_enableLockScreenButton_cli..."
+QT_MOC_LITERAL(48, 1569, 34), // "on_disableLockScrennButton_cl..."
+QT_MOC_LITERAL(49, 1604, 39), // "on_showHiddenStartupItemsButt..."
+QT_MOC_LITERAL(50, 1644, 41), // "on_unshowHiddenStartupItemsBu..."
+QT_MOC_LITERAL(51, 1686, 33), // "on_enableLoginSoundButton_cli..."
+QT_MOC_LITERAL(52, 1720, 34), // "on_disableLoginSoundButton_cl..."
+QT_MOC_LITERAL(53, 1755, 34), // "on_openSudoersAllModButton_cl..."
+QT_MOC_LITERAL(54, 1790, 38), // "on_openSudoersUbunsysModButto..."
+QT_MOC_LITERAL(55, 1829, 23), // "on_aptselect_US_clicked"
+QT_MOC_LITERAL(56, 1853, 23), // "on_aptselect_ES_clicked"
+QT_MOC_LITERAL(57, 1877, 32), // "on_openSourcesListButton_clicked"
+QT_MOC_LITERAL(58, 1910, 34), // "on_backupSourcesListButton_cl..."
+QT_MOC_LITERAL(59, 1945, 34), // "on_importSourcesListButton_cl..."
+QT_MOC_LITERAL(60, 1980, 31), // "on_openMainBackupButton_clicked"
+QT_MOC_LITERAL(61, 2012, 32), // "on_openMainRestoreButton_clicked"
+QT_MOC_LITERAL(62, 2045, 28), // "on_runScriptsManager_clicked"
+QT_MOC_LITERAL(63, 2074, 29) // "on_openSudoersDButton_clicked"
 
     },
     "MainWindow\0on_actionNew_triggered\0\0"
@@ -139,7 +139,7 @@ QT_MOC_LITERAL(63, 2075, 29) // "on_openSudoersDButton_clicked"
     "on_importSudoersFileButton_clicked\0"
     "on_installMainlineKernel_clicked\0"
     "on_runGrubcustomizerButton_clicked\0"
-    "on_enableLockScreenlButton_clicked\0"
+    "on_enableLockScreenButton_clicked\0"
     "on_disableLockScrennButton_clicked\0"
     "on_showHiddenStartupItemsButton_clicked\0"
     "on_unshowHiddenStartupItemsButton_clicked\0"
@@ -353,7 +353,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 42: _t->on_importSudoersFileButton_clicked(); break;
         case 43: _t->on_installMainlineKernel_clicked(); break;
         case 44: _t->on_runGrubcustomizerButton_clicked(); break;
-        case 45: _t->on_enableLockScreenlButton_clicked(); break;
+        case 45: _t->on_enableLockScreenButton_clicked(); break;
         case 46: _t->on_disableLockScrennButton_clicked(); break;
         case 47: _t->on_showHiddenStartupItemsButton_clicked(); break;
         case 48: _t->on_unshowHiddenStartupItemsButton_clicked(); break;
