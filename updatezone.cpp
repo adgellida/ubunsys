@@ -12,7 +12,7 @@ void MainWindow::on_updateScriptsButton_clicked()
 
     ui->statusBar->showMessage(tr("Updating latest scripts. Please wait"));
 
-    system("x-terminal-emulator -e bash -c '"
+    system("x-terminal-emulator -e '"
            "echo  "
            " && "
            "echo Trying to downloading and updating necessary files for ubunsys. Please wait... Stage 1/3"

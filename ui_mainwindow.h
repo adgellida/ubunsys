@@ -900,10 +900,10 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(2);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(3);
-        tabWidget_4->setCurrentIndex(2);
+        tabWidget_4->setCurrentIndex(0);
         tabWidget_5->setCurrentIndex(0);
 
 
@@ -1298,7 +1298,7 @@ public:
         label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.07.21", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.07.22", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP

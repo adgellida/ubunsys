@@ -22,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Creating folders
 
-    system("x-terminal-emulator -e bash -c '"
+    system("x-terminal-emulator -e '"
            "test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
            "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
            "test -d ~/.ubunsys/downloads/ubuntuScripts-master || mkdir -p ~/.ubunsys/downloads/ubuntuScripts-master && "
