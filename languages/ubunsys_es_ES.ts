@@ -629,6 +629,11 @@ plantillas</translation>
         <translation>Reparar red</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="3076"/>
+        <source>v2017.07.22</source>
+        <translation>v2017.07.22</translation>
+    </message>
+    <message>
         <source>v2017.07.18</source>
         <translation type="vanished">v2017.07.18</translation>
     </message>
@@ -679,9 +684,8 @@ apt-fast -y clean</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3076"/>
         <source>v2017.07.21</source>
-        <translation>v2017.07.21</translation>
+        <translation type="vanished">v2017.07.21</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3089"/>
@@ -1426,8 +1430,28 @@ Antonio David Gellida Lavara
 
 adgellida@gmail.com
 
-v2017.07.21</source>
+v2017.07.22</source>
         <translation>Copyright (c) 2017 todos los derechos reservados
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.07.22</translation>
+    </message>
+    <message>
+        <source>Copyright (c) 2017 all rights reserved
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.07.21</source>
+        <translation type="vanished">Copyright (c) 2017 todos los derechos reservados
 
 GPL v2
 
