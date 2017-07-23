@@ -13,7 +13,11 @@
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.07.22-blue.svg" alt="latest release"></a>
 </p>
 
+<p align="left">
 <a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a>
+  <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for xenial-v5.7.1-green.svg" alt="qt version"></a>
+  <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for zesty-v5.5.1-green.svg" alt="qt version"></a>
+</p>
 
 **For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
 
