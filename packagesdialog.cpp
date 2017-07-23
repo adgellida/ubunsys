@@ -29,6 +29,8 @@ void PackagesDialog::onFileItemSelected()
 
     ui->statusBar->showMessage(tr("Selecting items..."));
 
+    //Preparing to install
+
     QString filename = QDir::homePath() + "/.ubunsys/files/packagesToInstall.sh";
     QFile file(filename);
     QFile::remove(filename);
@@ -52,6 +54,33 @@ void PackagesDialog::onFileItemSelected()
 
           file.close();
       }
+
+    //Preparing to watch
+
+    QString filename2 = QDir::homePath() + "/.ubunsys/files/packagesToWatch.sh";
+    QFile file2(filename2);
+    QFile::remove(filename2);
+
+    qDebug() << Q_FUNC_INFO;
+        foreach (QFileInfo fi, fsModel->checkedData())
+        {
+
+            if (file2.open(QIODevice::ReadWrite | QIODevice::Append)) {
+                QTextStream stream(&file2);
+
+                //stream << "#!/bin/bash\n\n" + fi.absoluteFilePath() << endl;
+                stream << "xdg-open " + fi.absoluteFilePath()<< endl;
+                qDebug() << "xdg-open " + fi.absoluteFilePath();
+
+                //Assign Permissions on each selection to selected file
+                QString filenamePermissionsPath = fi.absoluteFilePath();
+                QFile filenamePermissions(filenamePermissionsPath);
+                filenamePermissions.setPermissions(QFile::ExeGroup | QFile::ExeGroup | QFile::ExeOther | QFile::ExeOwner | QFile::ExeUser | QFile::ReadGroup | QFile::ReadOther | QFile::ReadOwner | QFile::ReadUser | QFile::WriteGroup | QFile::WriteOther | QFile::WriteOwner | QFile::WriteUser);
+            }
+
+            file2.close();
+        }
+
 }
 
 void PackagesDialog::on_runScriptButton_clicked()
@@ -157,6 +186,22 @@ void PackagesDialog::on_exportListButton_clicked()
            "; exec bash'");
 
     QMessageBox::information(this,tr("Notification"),tr("Backuped OK on \n\n") + QDir::homePath() + "/.ubunsys/backups/scriptsFiles");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void PackagesDialog::on_openInTextEditorButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening Scripts selected. Please wait..."));
+
+    system("sed -i '1i #!/bin/bash' ~/.ubunsys/files/packagesToWatch.sh");
+    system("x-terminal-emulator -e '"
+           "cd ~/.ubunsys/files && sudo chmod 777 ~/.ubunsys/files/packagesToWatch.sh && ~/.ubunsys/files/packagesToWatch.sh"
+           " && "
+           "echo Close this window!!"
+           " && "
+           "read"
+           "; exec bash'");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }

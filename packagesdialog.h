@@ -29,6 +29,7 @@ private slots:
     void on_selectUnofficialReposButton_clicked();
     void on_runSavedScriptListButton_clicked();
     void on_exportListButton_clicked();
+    void on_openInTextEditorButton_clicked();
 /////////
 
 private:
