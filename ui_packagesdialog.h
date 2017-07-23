@@ -16,6 +16,8 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
@@ -37,6 +39,8 @@ public:
     QPushButton *runScriptButton;
     QTreeView *treeView;
     QPushButton *openInTextEditorButton;
+    QLineEdit *txtFilter;
+    QLabel *label;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -57,27 +61,27 @@ public:
         runSavedScriptListButton = new QPushButton(centralWidget);
         runSavedScriptListButton->setObjectName(QStringLiteral("runSavedScriptListButton"));
 
-        gridLayout->addWidget(runSavedScriptListButton, 3, 0, 1, 1);
+        gridLayout->addWidget(runSavedScriptListButton, 4, 0, 1, 1);
 
         selectOfficialReposButton = new QPushButton(centralWidget);
         selectOfficialReposButton->setObjectName(QStringLiteral("selectOfficialReposButton"));
 
-        gridLayout->addWidget(selectOfficialReposButton, 2, 0, 1, 1);
+        gridLayout->addWidget(selectOfficialReposButton, 3, 0, 1, 1);
 
         exportListButton = new QPushButton(centralWidget);
         exportListButton->setObjectName(QStringLiteral("exportListButton"));
 
-        gridLayout->addWidget(exportListButton, 3, 1, 1, 1);
+        gridLayout->addWidget(exportListButton, 4, 1, 1, 1);
 
         selectUnofficialReposButton = new QPushButton(centralWidget);
         selectUnofficialReposButton->setObjectName(QStringLiteral("selectUnofficialReposButton"));
 
-        gridLayout->addWidget(selectUnofficialReposButton, 2, 1, 1, 1);
+        gridLayout->addWidget(selectUnofficialReposButton, 3, 1, 1, 1);
 
         runScriptButton = new QPushButton(centralWidget);
         runScriptButton->setObjectName(QStringLiteral("runScriptButton"));
 
-        gridLayout->addWidget(runScriptButton, 1, 0, 1, 1);
+        gridLayout->addWidget(runScriptButton, 2, 0, 1, 1);
 
         treeView = new QTreeView(centralWidget);
         treeView->setObjectName(QStringLiteral("treeView"));
@@ -87,7 +91,18 @@ public:
         openInTextEditorButton = new QPushButton(centralWidget);
         openInTextEditorButton->setObjectName(QStringLiteral("openInTextEditorButton"));
 
-        gridLayout->addWidget(openInTextEditorButton, 1, 1, 1, 1);
+        gridLayout->addWidget(openInTextEditorButton, 2, 1, 1, 1);
+
+        txtFilter = new QLineEdit(centralWidget);
+        txtFilter->setObjectName(QStringLiteral("txtFilter"));
+
+        gridLayout->addWidget(txtFilter, 1, 1, 1, 1);
+
+        label = new QLabel(centralWidget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setLayoutDirection(Qt::LeftToRight);
+
+        gridLayout->addWidget(label, 1, 0, 1, 1);
 
         menuBar = new QMenuBar(PackagesDialog);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -115,6 +130,7 @@ public:
         selectUnofficialReposButton->setText(QApplication::translate("PackagesDialog", "Select only Unofficial repos", Q_NULLPTR));
         runScriptButton->setText(QApplication::translate("PackagesDialog", "Run script", Q_NULLPTR));
         openInTextEditorButton->setText(QApplication::translate("PackagesDialog", "Open in text editor", Q_NULLPTR));
+        label->setText(QApplication::translate("PackagesDialog", "<html><head/><body><p align=\"right\">Filter:</p></body></html>", Q_NULLPTR));
     } // retranslateUi
 
 };

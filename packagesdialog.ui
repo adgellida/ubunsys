@@ -26,35 +26,35 @@
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="3" column="0">
+    <item row="4" column="0">
      <widget class="QPushButton" name="runSavedScriptListButton">
       <property name="text">
        <string>Run saved script list</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
+    <item row="3" column="0">
      <widget class="QPushButton" name="selectOfficialReposButton">
       <property name="text">
        <string>Select only Official repos</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="1">
+    <item row="4" column="1">
      <widget class="QPushButton" name="exportListButton">
       <property name="text">
        <string>Export list</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="3" column="1">
      <widget class="QPushButton" name="selectUnofficialReposButton">
       <property name="text">
        <string>Select only Unofficial repos</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
+    <item row="2" column="0">
      <widget class="QPushButton" name="runScriptButton">
       <property name="text">
        <string>Run script</string>
@@ -64,10 +64,23 @@
     <item row="0" column="0" colspan="2">
      <widget class="QTreeView" name="treeView"/>
     </item>
-    <item row="1" column="1">
+    <item row="2" column="1">
      <widget class="QPushButton" name="openInTextEditorButton">
       <property name="text">
        <string>Open in text editor</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="txtFilter"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Filter:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>

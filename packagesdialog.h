@@ -2,6 +2,7 @@
 #define PACKAGESDIALOG_H
 
 #include <QDialog>
+#include <QRegExp>
 
 namespace Ui {
 class PackagesDialog;
@@ -30,6 +31,7 @@ private slots:
     void on_runSavedScriptListButton_clicked();
     void on_exportListButton_clicked();
     void on_openInTextEditorButton_clicked();
+    void on_txtFilter_textChanged(const QString &arg1);
 /////////
 
 private:

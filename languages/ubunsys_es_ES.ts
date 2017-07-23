@@ -1464,7 +1464,7 @@ v2017.07.21</translation>
     <message>
         <location filename="../tutorial.cpp" line="12"/>
         <source>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Click &lt;a href=&apos;https://github.com/adgellida/ubunsys/wiki/Tutorial_en&apos;&gt;here&lt;/a&gt; to go to wiki.</source>
-        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pulsa &lt;a href=&apos;https://github.com/adgellida/ubunsys/wiki/Tutorial_en&apos;&gt;aquí&lt;/a&gt; para ir a la wiki.</translation>
+        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pulsa &lt;a href=&apos;https://github.com/adgellida/ubunsys/wiki/Tutorial_es&apos;&gt;aquí&lt;/a&gt; para ir a la wiki.</translation>
     </message>
 </context>
 <context>
@@ -1505,6 +1505,11 @@ v2017.07.21</translation>
         <translation>Ejecutar Script</translation>
     </message>
     <message>
+        <location filename="../packagesdialog.ui" line="70"/>
+        <source>Open in text editor</source>
+        <translation>Abrir en editor de textos</translation>
+    </message>
+    <message>
         <location filename="../packagesdialog.cpp" line="19"/>
         <source>Select your option</source>
         <translation>Selecciona tu opción</translation>
@@ -1515,57 +1520,63 @@ v2017.07.21</translation>
         <translation>Seleccionando items...</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="74"/>
+        <location filename="../packagesdialog.cpp" line="103"/>
         <source>Executing Scripts selected. Please wait...</source>
         <translation>Ejecutando Scripts seleccionados. Por favor espere...</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="83"/>
-        <location filename="../packagesdialog.cpp" line="146"/>
+        <location filename="../packagesdialog.cpp" line="112"/>
+        <location filename="../packagesdialog.cpp" line="175"/>
         <source>Scripts executed with or without errors. Check it!</source>
         <translation>Scripts ejecutados con o sin errores. Compruébalo!</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="92"/>
+        <location filename="../packagesdialog.cpp" line="121"/>
         <source>Official Repos selected</source>
         <translation>Repos Oficiales seleccionados</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="101"/>
+        <location filename="../packagesdialog.cpp" line="130"/>
         <source>Unofficial Repos selected</source>
         <translation>Repos No Oficiales seleccionados</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="106"/>
+        <location filename="../packagesdialog.cpp" line="135"/>
         <source>Select your list</source>
         <translation>Selecciona tu lista</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="112"/>
+        <location filename="../packagesdialog.cpp" line="141"/>
         <source>Import your script file here</source>
         <translation>Importa tu fichero de script aquí</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="151"/>
+        <location filename="../packagesdialog.cpp" line="180"/>
         <source>Exporting list</source>
         <translation>Exportando lista</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="159"/>
+        <location filename="../packagesdialog.cpp" line="188"/>
         <source>Notification</source>
         <translation>Notificación</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="159"/>
+        <location filename="../packagesdialog.cpp" line="188"/>
         <source>Backuped OK on 
 
 </source>
         <translation>Copia de seguridad realizada correctamente en</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="161"/>
+        <location filename="../packagesdialog.cpp" line="190"/>
+        <location filename="../packagesdialog.cpp" line="206"/>
         <source>Done. Now select another action</source>
         <translation>Hecho. Ahora selecciona otra acción</translation>
+    </message>
+    <message>
+        <location filename="../packagesdialog.cpp" line="195"/>
+        <source>Opening Scripts selected. Please wait...</source>
+        <translation>Abiendo Scripts seleccionados. Espere un momento...</translation>
     </message>
 </context>
 </TS>
