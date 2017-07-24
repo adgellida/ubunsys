@@ -34,6 +34,8 @@ private slots:
     void on_txtFilter_textChanged(const QString &arg1);
 /////////
 
+    void on_clearSelectionButton_clicked();
+
 private:
     Ui::PackagesDialog *ui;
 /////////

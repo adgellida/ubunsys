@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_PackagesDialog_t {
-    QByteArrayData data[11];
-    char stringdata0[266];
+    QByteArrayData data[12];
+    char stringdata0[298];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,7 +39,8 @@ QT_MOC_LITERAL(6, 138, 35), // "on_runSavedScriptListButton_c..."
 QT_MOC_LITERAL(7, 174, 27), // "on_exportListButton_clicked"
 QT_MOC_LITERAL(8, 202, 33), // "on_openInTextEditorButton_cli..."
 QT_MOC_LITERAL(9, 236, 24), // "on_txtFilter_textChanged"
-QT_MOC_LITERAL(10, 261, 4) // "arg1"
+QT_MOC_LITERAL(10, 261, 4), // "arg1"
+QT_MOC_LITERAL(11, 266, 31) // "on_clearSelectionButton_clicked"
 
     },
     "PackagesDialog\0onFileItemSelected\0\0"
@@ -49,7 +50,8 @@ QT_MOC_LITERAL(10, 261, 4) // "arg1"
     "on_runSavedScriptListButton_clicked\0"
     "on_exportListButton_clicked\0"
     "on_openInTextEditorButton_clicked\0"
-    "on_txtFilter_textChanged\0arg1"
+    "on_txtFilter_textChanged\0arg1\0"
+    "on_clearSelectionButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -59,7 +61,7 @@ static const uint qt_meta_data_PackagesDialog[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -67,14 +69,15 @@ static const uint qt_meta_data_PackagesDialog[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   54,    2, 0x08 /* Private */,
-       3,    0,   55,    2, 0x08 /* Private */,
-       4,    0,   56,    2, 0x08 /* Private */,
-       5,    0,   57,    2, 0x08 /* Private */,
-       6,    0,   58,    2, 0x08 /* Private */,
-       7,    0,   59,    2, 0x08 /* Private */,
-       8,    0,   60,    2, 0x08 /* Private */,
-       9,    1,   61,    2, 0x08 /* Private */,
+       1,    0,   59,    2, 0x08 /* Private */,
+       3,    0,   60,    2, 0x08 /* Private */,
+       4,    0,   61,    2, 0x08 /* Private */,
+       5,    0,   62,    2, 0x08 /* Private */,
+       6,    0,   63,    2, 0x08 /* Private */,
+       7,    0,   64,    2, 0x08 /* Private */,
+       8,    0,   65,    2, 0x08 /* Private */,
+       9,    1,   66,    2, 0x08 /* Private */,
+      11,    0,   69,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -85,6 +88,7 @@ static const uint qt_meta_data_PackagesDialog[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,   10,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -103,6 +107,7 @@ void PackagesDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 5: _t->on_exportListButton_clicked(); break;
         case 6: _t->on_openInTextEditorButton_clicked(); break;
         case 7: _t->on_txtFilter_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 8: _t->on_clearSelectionButton_clicked(); break;
         default: ;
         }
     }
@@ -133,13 +138,13 @@ int PackagesDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

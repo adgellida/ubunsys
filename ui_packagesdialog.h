@@ -41,6 +41,7 @@ public:
     QPushButton *openInTextEditorButton;
     QLineEdit *txtFilter;
     QLabel *label;
+    QPushButton *clearSelectionButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -104,9 +105,15 @@ public:
 
         gridLayout->addWidget(label, 1, 0, 1, 1);
 
+        clearSelectionButton = new QPushButton(centralWidget);
+        clearSelectionButton->setObjectName(QStringLiteral("clearSelectionButton"));
+
+        gridLayout->addWidget(clearSelectionButton, 5, 1, 1, 1);
+
         menuBar = new QMenuBar(PackagesDialog);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 403, 19));
+        menuBar->setEnabled(false);
+        menuBar->setGeometry(QRect(0, 0, 441, 19));
         mainToolBar = new QToolBar(PackagesDialog);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         mainToolBar->setGeometry(QRect(0, 0, 8, 17));
@@ -131,6 +138,7 @@ public:
         runScriptButton->setText(QApplication::translate("PackagesDialog", "Run script", Q_NULLPTR));
         openInTextEditorButton->setText(QApplication::translate("PackagesDialog", "Open in text editor", Q_NULLPTR));
         label->setText(QApplication::translate("PackagesDialog", "<html><head/><body><p align=\"right\">Filter:</p></body></html>", Q_NULLPTR));
+        clearSelectionButton->setText(QApplication::translate("PackagesDialog", "Clear selection", Q_NULLPTR));
     } // retranslateUi
 
 };

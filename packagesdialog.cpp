@@ -283,3 +283,16 @@ connect(ui->txtFilter, SIGNAL(textChanged(QString)), fsModel, SLOT(setFilterFixe
     fsModel.
 */
 }
+
+void PackagesDialog::on_clearSelectionButton_clicked()
+{
+    fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
+    ui->treeView->setModel(fsModel);
+    connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
+    ui->statusBar->showMessage(tr("Select your option"));
+    //fsModel->setFilterRegExp(QRegExp(".png", Qt::CaseInsensitive,QRegExp::FixedString));
+    //fsModel->setFilterKeyColumn(1);
+    ui->treeView->expandAll();
+    system("rm ~/.ubunsys/files/packagesToInstall.sh && ~/.ubunsys/files/packagesToWatch.sh");
+    ui->statusBar->showMessage(tr("Selection cleared"));
+}
