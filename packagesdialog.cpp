@@ -212,17 +212,18 @@ void PackagesDialog::on_openInTextEditorButton_clicked()
 
 void PackagesDialog::on_txtFilter_textChanged(const QString &arg1)
 {
-    ///fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
-    ///ui->treeView->setModel(fsModel);
+    fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
+    ui->treeView->setModel(fsModel);
 
-    //ui->treeView->expandAll();
+    ui->treeView->expandAll();
     //connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
 
-    connect(ui->txtFilter, SIGNAL(textChanged(QString)), fsModel, SLOT(setFilterRegExp(QString)));
-    //QRegExp regExp ("*.cpp", Qt::CaseInsensitive);
-    QRegExp regExp(arg1, Qt::CaseInsensitive,QRegExp::Wildcard);
+    //connect(ui->txtFilter, SIGNAL(textChanged(QString)), fsModel, SLOT(setFilterFiRegExp(QString)));
 
-    fsModel->setFilterRegExp(regExp);
+    //QRegExp regExp ("*.cpp", Qt::CaseInsensitive);
+    //QRegExp regExp(arg1, Qt::CaseInsensitive,QRegExp::Wildcard);
+    //fsModel->setFilterRegExp(regExp);
+    //fsModel->filterRegExp();
     //ui->treeView->setModel(fsModel);
 
     ui->statusBar->showMessage(tr("Filtering..."));
@@ -237,15 +238,29 @@ void PackagesDialog::on_txtFilter_textChanged(const QString &arg1)
     //fsModel.setNameFilters(filters);
     //fsModel.setNameFilterDisables(false);
 
-    ui->treeView->setModel( fsModel );
+    //ui->treeView->setModel( fsModel );
     /////////////
 
     qDebug() << arg1;
 
+////////
+    /*QStringList filters;
+    filters << "*.txt";
 
+    ui->treeView->setNameFilters(filters);
 
+    ui->treeView.setModel(&fsModel);
+    ui->treeView.show();
 
+    return app.exec();
+*/
+connect(ui->txtFilter, SIGNAL(textChanged(QString)), fsModel, SLOT(setFilterFixedString(QString)));
 
+///////////
+    //fsModel.setFilter(QDir.AllDirs | QDir.NoDotAndDotDot | QDir.AllEntries)
+           // fsModel.setNameFilters(filter);
+              // fsModel.setNameFilterDisables(0)
+               //fsModel.setRootPath(startDir)
 
     ///////////
 
