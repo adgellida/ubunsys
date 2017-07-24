@@ -96,11 +96,13 @@ public:
 
         txtFilter = new QLineEdit(centralWidget);
         txtFilter->setObjectName(QStringLiteral("txtFilter"));
+        txtFilter->setEnabled(false);
 
         gridLayout->addWidget(txtFilter, 1, 1, 1, 1);
 
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
+        label->setEnabled(false);
         label->setLayoutDirection(Qt::LeftToRight);
 
         gridLayout->addWidget(label, 1, 0, 1, 1);

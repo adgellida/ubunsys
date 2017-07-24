@@ -72,10 +72,17 @@
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QLineEdit" name="txtFilter"/>
+     <widget class="QLineEdit" name="txtFilter">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
     </item>
     <item row="1" column="0">
      <widget class="QLabel" name="label">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="layoutDirection">
        <enum>Qt::LeftToRight</enum>
       </property>
