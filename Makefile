@@ -956,6 +956,7 @@ moc_packagesdialog.cpp: ../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qfiledevice.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvector2d.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtouchdevice.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QRegExp \
 		packagesdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/bin/moc
 	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/moc $(DEFINES) -I/home/usuario/.Qt5.7.1/5.7/gcc_64/mkspecs/linux-g++ -I/home/usuario/githubProjects/ubunsys -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtWidgets -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtGui -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include packagesdialog.h -o moc_packagesdialog.cpp
@@ -3104,7 +3105,8 @@ packagestab.o: packagestab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
 		packagesdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QRegExp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o packagestab.o packagestab.cpp
 
 about.o: about.cpp mainwindow.h \
@@ -3815,12 +3817,19 @@ packagesdialog.o: packagesdialog.cpp ../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QD
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qfiledialog.h \
 		packagesdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QRegExp \
 		ui_packagesdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QGridLayout \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlayout.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlayoutitem.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QLineEdit \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlineedit.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QToolBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtoolbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTreeView \

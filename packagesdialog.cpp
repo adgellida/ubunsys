@@ -18,7 +18,7 @@ PackagesDialog::PackagesDialog(QWidget *parent) :
       connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
       ui->statusBar->showMessage(tr("Select your option"));
       //fsModel->setFilterRegExp(QRegExp(".png", Qt::CaseInsensitive,QRegExp::FixedString));
-      //fsModel->setFilterKeyColumn(1);
+      fsModel->setFilterKeyColumn(1);
       ui->treeView->expandAll();
 }
 
@@ -212,76 +212,7 @@ void PackagesDialog::on_openInTextEditorButton_clicked()
 
 void PackagesDialog::on_txtFilter_textChanged(const QString &arg1)
 {
-    fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
-    ui->treeView->setModel(fsModel);
-
-    ui->treeView->expandAll();
-    //connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
-
-    //connect(ui->txtFilter, SIGNAL(textChanged(QString)), fsModel, SLOT(setFilterFiRegExp(QString)));
-
-    //QRegExp regExp ("*.cpp", Qt::CaseInsensitive);
-    //QRegExp regExp(arg1, Qt::CaseInsensitive,QRegExp::Wildcard);
-    //fsModel->setFilterRegExp(regExp);
-    //fsModel->filterRegExp();
-    //ui->treeView->setModel(fsModel);
-
-    ui->statusBar->showMessage(tr("Filtering..."));
-
-    /////////////
-    //Filemodel = new QFileSystemModel(this)                      ;
-    //fsModel->set( QDir::NoDotAndDotDot | QDir::Files )  ;
-
-    //QStringList filters;
-    //filters << "*.txt";
-
-    //fsModel.setNameFilters(filters);
-    //fsModel.setNameFilterDisables(false);
-
-    //ui->treeView->setModel( fsModel );
-    /////////////
-
-    qDebug() << arg1;
-
-////////
-    /*QStringList filters;
-    filters << "*.txt";
-
-    ui->treeView->setNameFilters(filters);
-
-    ui->treeView.setModel(&fsModel);
-    ui->treeView.show();
-
-    return app.exec();
-*/
-connect(ui->txtFilter, SIGNAL(textChanged(QString)), fsModel, SLOT(setFilterFixedString(QString)));
-
-///////////
-    //fsModel.setFilter(QDir.AllDirs | QDir.NoDotAndDotDot | QDir.AllEntries)
-           // fsModel.setNameFilters(filter);
-              // fsModel.setNameFilterDisables(0)
-               //fsModel.setRootPath(startDir)
-
-    ///////////
-
-    //QRegExp::PatternSyntax syntax = QRegExp::PatternSyntax(filterSyntaxComboBox->itemData(filterSyntaxComboBox->currentIndex()).toInt());
-
-    //Qt::CaseSensitivity caseSensitivity = filterCaseSensitivityCheckBox->isChecked() ? Qt::CaseSensitive : Qt::CaseInsensitive;
-
-    //QRegExp regExp(filterPatternLineEdit->text(), caseSensitivity, syntax);
-    //fsModel->setFilterRegExp(regExp);
-
-
-        ///////////
-
-
-
-/*
-    //fsModel->clear();
-    ui->treeView->setModel(nullptr);
-    ui->treeView->
-    fsModel.
-*/
+///To implement yet
 }
 
 void PackagesDialog::on_clearSelectionButton_clicked()

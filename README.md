@@ -9,8 +9,8 @@
   <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a>
   <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.07.22/total.svg" alt="total downloads latest release"></a> 
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.07.22 alpha-blue.svg" alt="latest release"></a>
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.07.25/total.svg" alt="total downloads latest release"></a> 
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.07.25 alpha-blue.svg" alt="latest release"></a>
 </p>
 
 <p align="left">
@@ -124,8 +124,6 @@ TO DO
 
 * Put selector or slider.
 
-* When package selection installed, unselect all boxes or hold them? By now, hold. Unselection commented.
-
 * Add more sounds to system.
 
 * Load saved configurations of personalized user installations.
@@ -135,8 +133,6 @@ TO DO
 * Backup user folder
 
 * Integer terminal on a widget. Recover mainwindows focus.
-
-* Put apps in alphabetical order.
 
 * Uninstall packages.
 
@@ -151,6 +147,10 @@ TO DO
 
 DONE
 =============================================
+
+* Put apps in alphabetical order.
+
+* When package selection installed, it holds selection and you have option to unselect all.
 
 * Run scripts selector.
 

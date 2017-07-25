@@ -630,8 +630,12 @@ plantillas</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3076"/>
+        <source>v2017.07.25</source>
+        <translation>v2017.07.25</translation>
+    </message>
+    <message>
         <source>v2017.07.22</source>
-        <translation>v2017.07.22</translation>
+        <translation type="vanished">v2017.07.22</translation>
     </message>
     <message>
         <source>v2017.07.18</source>
@@ -1430,8 +1434,28 @@ Antonio David Gellida Lavara
 
 adgellida@gmail.com
 
-v2017.07.22</source>
+v2017.07.25</source>
         <translation>Copyright (c) 2017 todos los derechos reservados
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.07.25</translation>
+    </message>
+    <message>
+        <source>Copyright (c) 2017 all rights reserved
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.07.22</source>
+        <translation type="vanished">Copyright (c) 2017 todos los derechos reservados
 
 GPL v2
 
@@ -1510,73 +1534,98 @@ v2017.07.21</translation>
         <translation>Abrir en editor de textos</translation>
     </message>
     <message>
+        <location filename="../packagesdialog.ui" line="80"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search filter not implemented yet&lt;/p&gt;&lt;p&gt;Wait for future releases...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filtro de búsqueda no implementado todavía&lt;/p&gt;&lt;p&gt;Esperar a futuras versiones...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search filter not implemented yet.&lt;/p&gt;&lt;p&gt;Wait for future releases...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filtro de búsqueda no implementado todavía.&lt;/p&gt;&lt;p&gt;Wait for future releases...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../packagesdialog.ui" line="93"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Filter:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Filtro:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../packagesdialog.ui" line="100"/>
+        <source>Clear selection</source>
+        <translation>Borrar selección</translation>
+    </message>
+    <message>
         <location filename="../packagesdialog.cpp" line="19"/>
+        <location filename="../packagesdialog.cpp" line="223"/>
         <source>Select your option</source>
         <translation>Selecciona tu opción</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="30"/>
+        <location filename="../packagesdialog.cpp" line="33"/>
         <source>Selecting items...</source>
         <translation>Seleccionando items...</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="103"/>
+        <location filename="../packagesdialog.cpp" line="106"/>
         <source>Executing Scripts selected. Please wait...</source>
         <translation>Ejecutando Scripts seleccionados. Por favor espere...</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="112"/>
-        <location filename="../packagesdialog.cpp" line="175"/>
+        <location filename="../packagesdialog.cpp" line="115"/>
+        <location filename="../packagesdialog.cpp" line="179"/>
         <source>Scripts executed with or without errors. Check it!</source>
         <translation>Scripts ejecutados con o sin errores. Compruébalo!</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="121"/>
+        <location filename="../packagesdialog.cpp" line="125"/>
         <source>Official Repos selected</source>
         <translation>Repos Oficiales seleccionados</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="130"/>
+        <location filename="../packagesdialog.cpp" line="134"/>
         <source>Unofficial Repos selected</source>
         <translation>Repos No Oficiales seleccionados</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="135"/>
+        <location filename="../packagesdialog.cpp" line="139"/>
         <source>Select your list</source>
         <translation>Selecciona tu lista</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="141"/>
+        <location filename="../packagesdialog.cpp" line="145"/>
         <source>Import your script file here</source>
         <translation>Importa tu fichero de script aquí</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="180"/>
+        <location filename="../packagesdialog.cpp" line="184"/>
         <source>Exporting list</source>
         <translation>Exportando lista</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="188"/>
+        <location filename="../packagesdialog.cpp" line="192"/>
         <source>Notification</source>
         <translation>Notificación</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="188"/>
+        <location filename="../packagesdialog.cpp" line="192"/>
         <source>Backuped OK on 
 
 </source>
         <translation>Copia de seguridad realizada correctamente en</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="190"/>
-        <location filename="../packagesdialog.cpp" line="206"/>
+        <location filename="../packagesdialog.cpp" line="194"/>
+        <location filename="../packagesdialog.cpp" line="210"/>
         <source>Done. Now select another action</source>
         <translation>Hecho. Ahora selecciona otra acción</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="195"/>
+        <location filename="../packagesdialog.cpp" line="199"/>
         <source>Opening Scripts selected. Please wait...</source>
         <translation>Abiendo Scripts seleccionados. Espere un momento...</translation>
+    </message>
+    <message>
+        <location filename="../packagesdialog.cpp" line="228"/>
+        <source>Selection cleared</source>
+        <translation>Selección borrada</translation>
     </message>
 </context>
 </TS>

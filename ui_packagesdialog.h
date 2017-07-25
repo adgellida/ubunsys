@@ -139,6 +139,9 @@ public:
         selectUnofficialReposButton->setText(QApplication::translate("PackagesDialog", "Select only Unofficial repos", Q_NULLPTR));
         runScriptButton->setText(QApplication::translate("PackagesDialog", "Run script", Q_NULLPTR));
         openInTextEditorButton->setText(QApplication::translate("PackagesDialog", "Open in text editor", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        txtFilter->setToolTip(QApplication::translate("PackagesDialog", "<html><head/><body><p>Search filter not implemented yet</p><p>Wait for future releases...</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         label->setText(QApplication::translate("PackagesDialog", "<html><head/><body><p align=\"right\">Filter:</p></body></html>", Q_NULLPTR));
         clearSelectionButton->setText(QApplication::translate("PackagesDialog", "Clear selection", Q_NULLPTR));
     } // retranslateUi

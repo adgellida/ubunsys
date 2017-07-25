@@ -20,7 +20,7 @@ void MainWindow::on_actionAbout_triggered()
                   "<p align='left'><a href='https://github.com/adgellida/ubunsys'>Git Repo</a> - Updated</p></br>"));
 
     about.setInformativeText(tr("Copyright (c) 2017 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\n"
-                             "v2017.07.22"));
+                             "v2017.07.25"));
 
     about.setWindowTitle(tr("About"));
 

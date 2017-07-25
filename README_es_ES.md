@@ -9,8 +9,8 @@
   <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a>
   <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
   <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.07.22/total.svg" alt="total downloads latest release"></a> 
-  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.07.22 alpha-blue.svg" alt="latest release"></a>
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.07.25/total.svg" alt="total downloads latest release"></a> 
+  <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.07.25 alpha-blue.svg" alt="latest release"></a>
 </p>
 
 <p align="left">
@@ -124,8 +124,6 @@ POR HACER
 
 * Poner un selector o "slider".
 
-* Cuando una selección de paquete está instalado, deseleccionar todas las cajas o mantenerlas? Por ahora, mantener. Deselección comentada.
-
 * Añadir más sonidos al sistema.
 
 * Cargar configuraciones guardadas de instalaciones personalizadas de usuarios.
@@ -135,8 +133,6 @@ POR HACER
 * Copia de seguridad de la carpeta de usuario.
 
 * Integrar terminal en un widget. Recuperar foco de las ventanas personales.
-
-* Poner apps en orden alfabético.
 
 * Desinstalar paquetes.
 
@@ -150,6 +146,10 @@ POR HACER
 
 HECHO
 =============================================
+
+* Poner apps en orden alfabético.
+
+* Cuando una selección de paquete está instalado, se mantiene la selección y da opción de borrarla.
 
 * Ejecutar selector de scripts.
 

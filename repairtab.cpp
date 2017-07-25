@@ -33,7 +33,7 @@ void MainWindow::on_repairGPGKeys_clicked()
     ui->statusBar->showMessage(tr("Repairing missed GPG keys. Please wait"));
 
     system("x-terminal-emulator -e '"
-           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/004.y-ppa-manager"
+           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/y-ppa-manager"
            " && "
            "sudo launchpad-getkeys"
            " && "

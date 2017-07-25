@@ -304,7 +304,7 @@ void MainWindow::on_runGrubcustomizerButton_clicked()
     ui->statusBar->showMessage(tr("Installs/runs grub-customizer. Please wait"));
 
     system("x-terminal-emulator -e '"
-           "~/.ubunsys/downloads/ubuntupackages-master/apps1/044.grub-customizer"
+           "~/.ubunsys/downloads/ubuntupackages-master/apps1/grub-customizer"
            " && "
            "sudo grub-customizer"
            " && "
@@ -395,7 +395,7 @@ void MainWindow::on_disableLoginSoundButton_clicked()
 void MainWindow::on_aptselect_US_clicked()
 {
     system("x-terminal-emulator -e '"
-           "~/.ubunsys/downloads/ubuntupackages-master/apps1/175.apt-select"
+           "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
            " && "
            "apt-select --country US"
            " && "
@@ -410,7 +410,7 @@ void MainWindow::on_aptselect_US_clicked()
 void MainWindow::on_aptselect_ES_clicked()
 {
     system("x-terminal-emulator -e '"
-           "~/.ubunsys/downloads/ubuntupackages-master/apps1/175.apt-select"
+           "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
            " && "
            "apt-select --country ES"
            " && "
