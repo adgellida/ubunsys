@@ -23,6 +23,11 @@ int main(int argc, char *argv[])
 
     //language
 
+    //test
+    //UpdateScriptsDialog updateScriptsDialog2;
+    //updateScriptsDialog2.setModal(true);
+    //updateScriptsDialog2.exec();
+
     MainWindow w;
     w.show();
 

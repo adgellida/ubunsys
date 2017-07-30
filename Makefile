@@ -62,7 +62,8 @@ SOURCES       = main.cpp \
 		rootfilesysproxymodel.cpp qrc_ubunsys.cpp \
 		moc_mainwindow.cpp \
 		moc_packagesdialog.cpp \
-		moc_rootfilesysproxymodel.cpp
+		moc_rootfilesysproxymodel.cpp \
+		moc_updatescriptsdialog.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
 		toolbartab.o \
@@ -78,7 +79,8 @@ OBJECTS       = main.o \
 		qrc_ubunsys.o \
 		moc_mainwindow.o \
 		moc_packagesdialog.o \
-		moc_rootfilesysproxymodel.o
+		moc_rootfilesysproxymodel.o \
+		moc_updatescriptsdialog.o
 DIST          = ../../.Qt5.7.1/5.7/gcc_64/mkspecs/features/spec_pre.prf \
 		../../.Qt5.7.1/5.7/gcc_64/mkspecs/common/unix.conf \
 		../../.Qt5.7.1/5.7/gcc_64/mkspecs/common/linux.conf \
@@ -230,7 +232,8 @@ DIST          = ../../.Qt5.7.1/5.7/gcc_64/mkspecs/features/spec_pre.prf \
 		../../.Qt5.7.1/5.7/gcc_64/mkspecs/features/lex.prf \
 		ubunsys.pro mainwindow.h \
 		packagesdialog.h \
-		rootfilesysproxymodel.h main.cpp \
+		rootfilesysproxymodel.h \
+		updatescriptsdialog.h main.cpp \
 		mainwindow.cpp \
 		toolbartab.cpp \
 		repairtab.cpp \
@@ -250,7 +253,7 @@ TARGET        = ubunsys
 first: all
 ####### Build rules
 
-$(TARGET): ui_mainwindow.h ui_packagesdialog.h $(OBJECTS)  
+$(TARGET): ui_mainwindow.h ui_packagesdialog.h ui_updatescriptsdialog.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile: ubunsys.pro ../../.Qt5.7.1/5.7/gcc_64/mkspecs/linux-g++/qmake.conf ../../.Qt5.7.1/5.7/gcc_64/mkspecs/features/spec_pre.prf \
@@ -577,9 +580,9 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ubunsys.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents mainwindow.h packagesdialog.h rootfilesysproxymodel.h $(DISTDIR)/
+	$(COPY_FILE) --parents mainwindow.h packagesdialog.h rootfilesysproxymodel.h updatescriptsdialog.h $(DISTDIR)/
 	$(COPY_FILE) --parents main.cpp mainwindow.cpp toolbartab.cpp repairtab.cpp systemtab.cpp tweakstab.cpp updatezone.cpp packagestab.cpp about.cpp tutorial.cpp packagesdialog.cpp rootfilesysproxymodel.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents mainwindow.ui packagesdialog.ui $(DISTDIR)/
+	$(COPY_FILE) --parents mainwindow.ui packagesdialog.ui updatescriptsdialog.ui $(DISTDIR)/
 	$(COPY_FILE) --parents languages/ubunsys_es_ES.ts $(DISTDIR)/
 
 
@@ -637,9 +640,9 @@ qrc_ubunsys.cpp: ubunsys.qrc \
 		languages/ubunsys_es_ES.ts
 	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/rcc -name ubunsys ubunsys.qrc -o qrc_ubunsys.cpp
 
-compiler_moc_header_make_all: moc_mainwindow.cpp moc_packagesdialog.cpp moc_rootfilesysproxymodel.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_packagesdialog.cpp moc_rootfilesysproxymodel.cpp moc_updatescriptsdialog.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp moc_packagesdialog.cpp moc_rootfilesysproxymodel.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_packagesdialog.cpp moc_rootfilesysproxymodel.cpp moc_updatescriptsdialog.cpp
 moc_mainwindow.cpp: ../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMainWindow \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qwidget.h \
@@ -956,7 +959,6 @@ moc_packagesdialog.cpp: ../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qfiledevice.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvector2d.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtouchdevice.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QRegExp \
 		packagesdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/bin/moc
 	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/moc $(DEFINES) -I/home/usuario/.Qt5.7.1/5.7/gcc_64/mkspecs/linux-g++ -I/home/usuario/githubProjects/ubunsys -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtWidgets -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtGui -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include packagesdialog.h -o moc_packagesdialog.cpp
@@ -1058,11 +1060,113 @@ moc_rootfilesysproxymodel.cpp: ../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QAbstrac
 		../../.Qt5.7.1/5.7/gcc_64/bin/moc
 	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/moc $(DEFINES) -I/home/usuario/.Qt5.7.1/5.7/gcc_64/mkspecs/linux-g++ -I/home/usuario/githubProjects/ubunsys -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtWidgets -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtGui -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include rootfilesysproxymodel.h -o moc_rootfilesysproxymodel.cpp
 
+moc_updatescriptsdialog.cpp: ../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qwidget.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qwindowdefs.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qglobal.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qconfig.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qfeatures.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qsystemdetection.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qprocessordetection.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtypeinfo.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtypetraits.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qisenum.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qsysinfo.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qlogging.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qflags.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qatomic.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qbasicatomic.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qgenericatomic.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qatomic_msvc.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qglobalstatic.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qmutex.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qnumeric.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qversiontagging.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qobjectdefs.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qnamespace.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qobject.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qstring.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qchar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qbytearray.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qrefcount.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qarraydata.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qstringbuilder.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qlist.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qalgorithms.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qiterator.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qhashfunctions.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qpair.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qbytearraylist.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qstringlist.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qregexp.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qstringmatcher.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qcoreevent.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qscopedpointer.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qmetatype.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qobject_impl.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qmargins.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpaintdevice.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qrect.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qsize.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qpoint.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpalette.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qcolor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qrgb.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qrgba64.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qbrush.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qvector.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qmatrix.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpolygon.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qregion.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qdatastream.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qiodevice.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qline.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtransform.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpainterpath.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qimage.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpixelformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpixmap.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qsharedpointer.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qshareddata.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qhash.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qfont.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qfontmetrics.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qfontinfo.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qsizepolicy.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qkeysequence.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qevent.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qvariant.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qmap.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qdebug.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtextstream.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qlocale.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qset.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qurl.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qurlquery.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qfile.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qfiledevice.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qvector2d.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtouchdevice.h \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/bin/moc
+	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/moc $(DEFINES) -I/home/usuario/.Qt5.7.1/5.7/gcc_64/mkspecs/linux-g++ -I/home/usuario/githubProjects/ubunsys -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtWidgets -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtGui -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include updatescriptsdialog.h -o moc_updatescriptsdialog.cpp
+
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h ui_packagesdialog.h
+compiler_uic_make_all: ui_mainwindow.h ui_packagesdialog.h ui_updatescriptsdialog.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h ui_packagesdialog.h
+	-$(DEL_FILE) ui_mainwindow.h ui_packagesdialog.h ui_updatescriptsdialog.h
 ui_mainwindow.h: mainwindow.ui \
 		../../.Qt5.7.1/5.7/gcc_64/bin/uic
 	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/uic mainwindow.ui -o ui_mainwindow.h
@@ -1070,6 +1174,10 @@ ui_mainwindow.h: mainwindow.ui \
 ui_packagesdialog.h: packagesdialog.ui \
 		../../.Qt5.7.1/5.7/gcc_64/bin/uic
 	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/uic packagesdialog.ui -o ui_packagesdialog.h
+
+ui_updatescriptsdialog.h: updatescriptsdialog.ui \
+		../../.Qt5.7.1/5.7/gcc_64/bin/uic
+	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/uic updatescriptsdialog.ui -o ui_updatescriptsdialog.h
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -1557,7 +1665,25 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTextBrowser \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextedit.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextdocument.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
+		updatescriptsdialog.cpp \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
+		ui_updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QProgressBar \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qprogressbar.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QTextStream \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMessageBox \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
 toolbartab.o: toolbartab.cpp mainwindow.h \
@@ -1813,6 +1939,14 @@ toolbartab.o: toolbartab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTextBrowser \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextedit.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextdocument.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o toolbartab.o toolbartab.cpp
 
@@ -2069,6 +2203,14 @@ repairtab.o: repairtab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTextBrowser \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextedit.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextdocument.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o repairtab.o repairtab.cpp
 
@@ -2325,6 +2467,14 @@ systemtab.o: systemtab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTextBrowser \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextedit.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextdocument.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o systemtab.o systemtab.cpp
 
@@ -2581,6 +2731,14 @@ tweakstab.o: tweakstab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTextBrowser \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextedit.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextdocument.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QFileDialog \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qfiledialog.h \
@@ -2844,6 +3002,14 @@ updatezone.o: updatezone.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTextBrowser \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextedit.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextdocument.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/QDesktopServices \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qdesktopservices.h
@@ -3102,11 +3268,19 @@ packagestab.o: packagestab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTextBrowser \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextedit.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextdocument.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
 		packagesdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QRegExp
+		updatescriptsdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o packagestab.o packagestab.cpp
 
 about.o: about.cpp mainwindow.h \
@@ -3804,6 +3978,14 @@ packagesdialog.o: packagesdialog.cpp ../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QD
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QStatusBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTabWidget \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTextBrowser \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtextedit.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextdocument.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
 		rootfilesysproxymodel.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QAbstractProxyModel \
@@ -3817,7 +3999,6 @@ packagesdialog.o: packagesdialog.cpp ../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QD
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qfiledialog.h \
 		packagesdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QRegExp \
 		ui_packagesdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QGridLayout \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qgridlayout.h \
@@ -3826,10 +4007,6 @@ packagesdialog.o: packagesdialog.cpp ../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QD
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qboxlayout.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QLineEdit \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qlineedit.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextcursor.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextoption.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QToolBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qtoolbar.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QTreeView \
@@ -3944,6 +4121,9 @@ moc_packagesdialog.o: moc_packagesdialog.cpp
 moc_rootfilesysproxymodel.o: moc_rootfilesysproxymodel.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_rootfilesysproxymodel.o moc_rootfilesysproxymodel.cpp
 
+moc_updatescriptsdialog.o: moc_updatescriptsdialog.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_updatescriptsdialog.o moc_updatescriptsdialog.cpp
+
 ####### Install
 
 install_target: first FORCE
@@ -3975,9 +4155,39 @@ uninstall_icon: FORCE
 	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/icons/hicolor/256x256/apps/ 
 
 
-install: install_target install_desktop install_icon  FORCE
+install_apt-fastChecking: first FORCE
+	@test -d $(INSTALL_ROOT)/usr/share/ubunsys || mkdir -p $(INSTALL_ROOT)/usr/share/ubunsys
+	-$(INSTALL_PROGRAM) /home/usuario/githubProjects/ubunsys/scripts/apt-fastChecking.sh $(INSTALL_ROOT)/usr/share/ubunsys/
+	-strip $(INSTALL_ROOT)/usr/share/ubunsys/apt-fastChecking.sh
 
-uninstall: uninstall_target uninstall_desktop uninstall_icon  FORCE
+uninstall_apt-fastChecking: FORCE
+	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/ubunsys/apt-fastChecking.sh
+	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/ubunsys/ 
+
+
+install_updateUbuntupackages: first FORCE
+	@test -d $(INSTALL_ROOT)/usr/share/ubunsys || mkdir -p $(INSTALL_ROOT)/usr/share/ubunsys
+	-$(INSTALL_PROGRAM) /home/usuario/githubProjects/ubunsys/scripts/updateUbuntupackages.sh $(INSTALL_ROOT)/usr/share/ubunsys/
+	-strip $(INSTALL_ROOT)/usr/share/ubunsys/updateUbuntupackages.sh
+
+uninstall_updateUbuntupackages: FORCE
+	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/ubunsys/updateUbuntupackages.sh
+	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/ubunsys/ 
+
+
+install_updateUbuntuScripts: first FORCE
+	@test -d $(INSTALL_ROOT)/usr/share/ubunsys || mkdir -p $(INSTALL_ROOT)/usr/share/ubunsys
+	-$(INSTALL_PROGRAM) /home/usuario/githubProjects/ubunsys/scripts/updateUbuntuScripts.sh $(INSTALL_ROOT)/usr/share/ubunsys/
+	-strip $(INSTALL_ROOT)/usr/share/ubunsys/updateUbuntuScripts.sh
+
+uninstall_updateUbuntuScripts: FORCE
+	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/ubunsys/updateUbuntuScripts.sh
+	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/ubunsys/ 
+
+
+install: install_target install_desktop install_icon install_apt-fastChecking install_updateUbuntupackages install_updateUbuntuScripts  FORCE
+
+uninstall: uninstall_target uninstall_desktop uninstall_icon uninstall_apt-fastChecking uninstall_updateUbuntupackages uninstall_updateUbuntuScripts  FORCE
 
 FORCE:
 

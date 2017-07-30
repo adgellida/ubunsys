@@ -123,7 +123,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -423,7 +423,7 @@
         <property name="geometry">
          <rect>
           <x>450</x>
-          <y>200</y>
+          <y>160</y>
           <width>221</width>
           <height>16</height>
          </rect>
@@ -442,7 +442,7 @@
         <property name="geometry">
          <rect>
           <x>450</x>
-          <y>260</y>
+          <y>220</y>
           <width>221</width>
           <height>36</height>
          </rect>
@@ -470,7 +470,7 @@
         <property name="geometry">
          <rect>
           <x>450</x>
-          <y>220</y>
+          <y>180</y>
           <width>221</width>
           <height>36</height>
          </rect>
@@ -497,8 +497,8 @@
        <widget class="QLabel" name="label_38">
         <property name="geometry">
          <rect>
-          <x>450</x>
-          <y>290</y>
+          <x>10</x>
+          <y>310</y>
           <width>221</width>
           <height>111</height>
          </rect>
@@ -514,6 +514,35 @@
 sources.list
 sudoers
 templates</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>320</y>
+          <width>451</width>
+          <height>71</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>300</y>
+          <width>461</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Log silent update scripts check when app opens</string>
         </property>
        </widget>
       </widget>
@@ -589,6 +618,9 @@ templates</string>
         </property>
        </widget>
        <widget class="QPushButton" name="setToDefaults90sShutdownTimeoutButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -617,6 +649,9 @@ templates</string>
         </property>
        </widget>
        <widget class="QPushButton" name="reduceTo5sShutdownTimeoutButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -1653,6 +1688,9 @@ Set to default</string>
         </property>
        </widget>
        <widget class="QPushButton" name="openSudoersUbunsysModButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>280</x>
@@ -1681,6 +1719,9 @@ Set to default</string>
         </property>
        </widget>
        <widget class="QPushButton" name="disableSudoWithoutPassUbunsysButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -1709,6 +1750,9 @@ Set to default</string>
         </property>
        </widget>
        <widget class="QPushButton" name="enableSudoWithoutPassUbunsysButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -3073,7 +3117,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.07.25</string>
+     <string>v2017.07.30</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">
@@ -3106,7 +3150,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update scripts&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update scripts manually&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="text">
      <string/>

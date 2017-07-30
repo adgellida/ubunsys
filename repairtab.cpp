@@ -43,7 +43,6 @@ void MainWindow::on_repairGPGKeys_clicked()
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Missed GPG keys repaired or fix cancelled, check if ok now"));
-
 }
 
 void MainWindow::on_fixBrokenPackagesButton_1_clicked()

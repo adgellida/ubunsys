@@ -2,18 +2,14 @@
 #define PACKAGESDIALOG_H
 
 #include <QDialog>
-#include <QRegExp>
+//#include <QRegExp>
 
 namespace Ui {
 class PackagesDialog;
 }
 
-/////////
 class RootFileSysProxyModel;
-/////////
 
-/// \brief The PackagesDialog class
-///
 class PackagesDialog : public QDialog
 {
     Q_OBJECT
@@ -21,7 +17,7 @@ class PackagesDialog : public QDialog
 public:
     explicit PackagesDialog(QWidget *parent = 0);
     ~PackagesDialog();
-/////////
+
 private slots:
 
     void onFileItemSelected();
@@ -31,16 +27,13 @@ private slots:
     void on_runSavedScriptListButton_clicked();
     void on_exportListButton_clicked();
     void on_openInTextEditorButton_clicked();
-    void on_txtFilter_textChanged(const QString &arg1);
-/////////
-
     void on_clearSelectionButton_clicked();
+    ///To implement yet
+    void on_txtFilter_textChanged(const QString &arg1);
 
 private:
     Ui::PackagesDialog *ui;
-/////////
     RootFileSysProxyModel* fsModel ;
-/////////
 };
 
 #endif // PACKAGESDIALOG_H

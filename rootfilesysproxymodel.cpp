@@ -1,6 +1,5 @@
 #include "rootfilesysproxymodel.h"
 
-
 RootFileSysProxyModel::RootFileSysProxyModel(QFileSystemModel* model, const QString& rootAbsPath, QObject* parent):
 	QSortFilterProxyModel(parent),
 	fsm(model)

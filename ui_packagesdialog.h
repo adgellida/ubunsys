@@ -50,10 +50,10 @@ public:
     {
         if (PackagesDialog->objectName().isEmpty())
             PackagesDialog->setObjectName(QStringLiteral("PackagesDialog"));
-        PackagesDialog->resize(448, 403);
+        PackagesDialog->resize(448, 672);
         centralWidget = new QWidget(PackagesDialog);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        centralWidget->setGeometry(QRect(0, 0, 441, 371));
+        centralWidget->setGeometry(QRect(0, 0, 441, 651));
         gridLayout = new QGridLayout(centralWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
@@ -122,7 +122,7 @@ public:
         statusBar = new QStatusBar(PackagesDialog);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         statusBar->setEnabled(true);
-        statusBar->setGeometry(QRect(0, 380, 451, 21));
+        statusBar->setGeometry(QRect(0, 650, 451, 21));
 
         retranslateUi(PackagesDialog);
 

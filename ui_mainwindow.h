@@ -21,6 +21,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -67,6 +68,8 @@ public:
     QPushButton *openMainRestoreButton;
     QPushButton *openMainBackupButton;
     QLabel *label_38;
+    QTextBrowser *textBrowser;
+    QLabel *label_41;
     QWidget *tab_7;
     QPushButton *installTemplatesButton;
     QLabel *label_5;
@@ -323,22 +326,29 @@ public:
         backupSourcesListButton->setCheckable(false);
         label_37 = new QLabel(tab_6);
         label_37->setObjectName(QStringLiteral("label_37"));
-        label_37->setGeometry(QRect(450, 200, 221, 16));
+        label_37->setGeometry(QRect(450, 160, 221, 16));
         label_37->setFont(font);
         openMainRestoreButton = new QPushButton(tab_6);
         openMainRestoreButton->setObjectName(QStringLiteral("openMainRestoreButton"));
-        openMainRestoreButton->setGeometry(QRect(450, 260, 221, 36));
+        openMainRestoreButton->setGeometry(QRect(450, 220, 221, 36));
         openMainRestoreButton->setIconSize(QSize(30, 30));
         openMainRestoreButton->setCheckable(false);
         openMainBackupButton = new QPushButton(tab_6);
         openMainBackupButton->setObjectName(QStringLiteral("openMainBackupButton"));
-        openMainBackupButton->setGeometry(QRect(450, 220, 221, 36));
+        openMainBackupButton->setGeometry(QRect(450, 180, 221, 36));
         openMainBackupButton->setIconSize(QSize(30, 30));
         openMainBackupButton->setCheckable(false);
         label_38 = new QLabel(tab_6);
         label_38->setObjectName(QStringLiteral("label_38"));
-        label_38->setGeometry(QRect(450, 290, 221, 111));
+        label_38->setGeometry(QRect(10, 310, 221, 111));
         label_38->setFont(font1);
+        textBrowser = new QTextBrowser(tab_6);
+        textBrowser->setObjectName(QStringLiteral("textBrowser"));
+        textBrowser->setGeometry(QRect(220, 320, 451, 71));
+        label_41 = new QLabel(tab_6);
+        label_41->setObjectName(QStringLiteral("label_41"));
+        label_41->setGeometry(QRect(220, 300, 461, 16));
+        label_41->setFont(font);
         tabWidget_3->addTab(tab_6, QString());
         tab_7 = new QWidget();
         tab_7->setObjectName(QStringLiteral("tab_7"));
@@ -357,11 +367,13 @@ public:
         label_11->setFont(font);
         setToDefaults90sShutdownTimeoutButton = new QPushButton(tab_7);
         setToDefaults90sShutdownTimeoutButton->setObjectName(QStringLiteral("setToDefaults90sShutdownTimeoutButton"));
+        setToDefaults90sShutdownTimeoutButton->setEnabled(false);
         setToDefaults90sShutdownTimeoutButton->setGeometry(QRect(10, 150, 221, 36));
         setToDefaults90sShutdownTimeoutButton->setIconSize(QSize(30, 30));
         setToDefaults90sShutdownTimeoutButton->setCheckable(false);
         reduceTo5sShutdownTimeoutButton = new QPushButton(tab_7);
         reduceTo5sShutdownTimeoutButton->setObjectName(QStringLiteral("reduceTo5sShutdownTimeoutButton"));
+        reduceTo5sShutdownTimeoutButton->setEnabled(false);
         reduceTo5sShutdownTimeoutButton->setGeometry(QRect(10, 110, 221, 36));
         reduceTo5sShutdownTimeoutButton->setIconSize(QSize(30, 30));
         reduceTo5sShutdownTimeoutButton->setCheckable(false);
@@ -550,16 +562,19 @@ public:
         label_10->setFont(font);
         openSudoersUbunsysModButton = new QPushButton(tab_5);
         openSudoersUbunsysModButton->setObjectName(QStringLiteral("openSudoersUbunsysModButton"));
+        openSudoersUbunsysModButton->setEnabled(false);
         openSudoersUbunsysModButton->setGeometry(QRect(280, 130, 221, 36));
         openSudoersUbunsysModButton->setIconSize(QSize(30, 30));
         openSudoersUbunsysModButton->setCheckable(false);
         disableSudoWithoutPassUbunsysButton = new QPushButton(tab_5);
         disableSudoWithoutPassUbunsysButton->setObjectName(QStringLiteral("disableSudoWithoutPassUbunsysButton"));
+        disableSudoWithoutPassUbunsysButton->setEnabled(false);
         disableSudoWithoutPassUbunsysButton->setGeometry(QRect(10, 170, 251, 36));
         disableSudoWithoutPassUbunsysButton->setIconSize(QSize(30, 30));
         disableSudoWithoutPassUbunsysButton->setCheckable(false);
         enableSudoWithoutPassUbunsysButton = new QPushButton(tab_5);
         enableSudoWithoutPassUbunsysButton->setObjectName(QStringLiteral("enableSudoWithoutPassUbunsysButton"));
+        enableSudoWithoutPassUbunsysButton->setEnabled(false);
         enableSudoWithoutPassUbunsysButton->setGeometry(QRect(10, 130, 251, 36));
         QFont font3;
         font3.setBold(false);
@@ -902,7 +917,7 @@ public:
 
         tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(0);
-        tabWidget_3->setCurrentIndex(3);
+        tabWidget_3->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(0);
         tabWidget_5->setCurrentIndex(0);
 
@@ -998,6 +1013,7 @@ public:
 "sources.list\n"
 "sudoers\n"
 "templates", Q_NULLPTR));
+        label_41->setText(QApplication::translate("MainWindow", "Log silent update scripts check when app opens", Q_NULLPTR));
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/4", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         installTemplatesButton->setWhatsThis(QString());
@@ -1298,13 +1314,13 @@ public:
         label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.07.25", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.07.30", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         updateAppButton->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts</p></body></html>", Q_NULLPTR));
+        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts manually</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         updateScriptsButton->setText(QString());
         menuNuevo->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));

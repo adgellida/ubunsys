@@ -38,9 +38,9 @@ QT_MOC_LITERAL(5, 99, 38), // "on_selectUnofficialReposButto..."
 QT_MOC_LITERAL(6, 138, 35), // "on_runSavedScriptListButton_c..."
 QT_MOC_LITERAL(7, 174, 27), // "on_exportListButton_clicked"
 QT_MOC_LITERAL(8, 202, 33), // "on_openInTextEditorButton_cli..."
-QT_MOC_LITERAL(9, 236, 24), // "on_txtFilter_textChanged"
-QT_MOC_LITERAL(10, 261, 4), // "arg1"
-QT_MOC_LITERAL(11, 266, 31) // "on_clearSelectionButton_clicked"
+QT_MOC_LITERAL(9, 236, 31), // "on_clearSelectionButton_clicked"
+QT_MOC_LITERAL(10, 268, 24), // "on_txtFilter_textChanged"
+QT_MOC_LITERAL(11, 293, 4) // "arg1"
 
     },
     "PackagesDialog\0onFileItemSelected\0\0"
@@ -50,8 +50,8 @@ QT_MOC_LITERAL(11, 266, 31) // "on_clearSelectionButton_clicked"
     "on_runSavedScriptListButton_clicked\0"
     "on_exportListButton_clicked\0"
     "on_openInTextEditorButton_clicked\0"
-    "on_txtFilter_textChanged\0arg1\0"
-    "on_clearSelectionButton_clicked"
+    "on_clearSelectionButton_clicked\0"
+    "on_txtFilter_textChanged\0arg1"
 };
 #undef QT_MOC_LITERAL
 
@@ -76,8 +76,8 @@ static const uint qt_meta_data_PackagesDialog[] = {
        6,    0,   63,    2, 0x08 /* Private */,
        7,    0,   64,    2, 0x08 /* Private */,
        8,    0,   65,    2, 0x08 /* Private */,
-       9,    1,   66,    2, 0x08 /* Private */,
-      11,    0,   69,    2, 0x08 /* Private */,
+       9,    0,   66,    2, 0x08 /* Private */,
+      10,    1,   67,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -87,8 +87,8 @@ static const uint qt_meta_data_PackagesDialog[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,   10,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   11,
 
        0        // eod
 };
@@ -106,8 +106,8 @@ void PackagesDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 4: _t->on_runSavedScriptListButton_clicked(); break;
         case 5: _t->on_exportListButton_clicked(); break;
         case 6: _t->on_openInTextEditorButton_clicked(); break;
-        case 7: _t->on_txtFilter_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 8: _t->on_clearSelectionButton_clicked(); break;
+        case 7: _t->on_clearSelectionButton_clicked(); break;
+        case 8: _t->on_txtFilter_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         default: ;
         }
     }

@@ -34,7 +34,7 @@
         <translation type="vanished">Cargar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3231"/>
+        <location filename="../mainwindow.ui" line="3275"/>
         <location filename="../toolbartab.cpp" line="18"/>
         <source>Save</source>
         <translation>Guardar</translation>
@@ -92,52 +92,57 @@ sudoers
 plantillas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="997"/>
+        <location filename="../mainwindow.ui" line="545"/>
+        <source>Log silent update scripts check when app opens</source>
+        <translation>Log actualización silenciosa de scripts cuando la aplicación se abre</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1032"/>
         <source>Tweaks 3/4</source>
         <translation>Ajustes 3/4</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1153"/>
+        <location filename="../mainwindow.ui" line="1188"/>
         <source>Tweaks 4/4</source>
         <translation>Ajustes 4/4</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1593"/>
+        <location filename="../mainwindow.ui" line="1628"/>
         <source>Enable sudo without pass all</source>
         <translation>Habilitar sudo sin contras. - todo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1621"/>
+        <location filename="../mainwindow.ui" line="1656"/>
         <source>Disable sudo without pass all</source>
         <translation>Deshabilitar sudo sin contras. - todo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1668"/>
+        <location filename="../mainwindow.ui" line="1706"/>
         <source>Open &apos;sudoers ubunsys mod&apos;</source>
         <translation>Abrir mod sudoers ubunsys</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1696"/>
+        <location filename="../mainwindow.ui" line="1737"/>
         <source>Disable sudo without pass ubunsys</source>
         <translation>Deshabilitar sudo sin contras. - ubunsys</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1734"/>
+        <location filename="../mainwindow.ui" line="1778"/>
         <source>Enable sudo without pass ubunsys</source>
         <translation>Habilitar sudo sin contras. - ubunsys</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1762"/>
+        <location filename="../mainwindow.ui" line="1806"/>
         <source>Open &apos;sudoers all mod&apos;</source>
         <translation>Abrir mod sudoers todo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1790"/>
+        <location filename="../mainwindow.ui" line="1834"/>
         <source>Open sudoers.d</source>
         <translation>Abrir sudoers.d</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2670"/>
+        <location filename="../mainwindow.ui" line="2714"/>
         <source>If you lost &quot;sudo&quot; function try with &quot;pkexec&quot; to fix crashes.
 Also you can enter in secure mode, exec &quot;mount -o remount,rw / &quot;
 and restore that you want with elevated permissions.</source>
@@ -154,7 +159,7 @@ También puedes entrar en modo seguro, ejecutar &quot;mount -o remount,rw /&quot
 lo que quieras con permisos elevados.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2691"/>
+        <location filename="../mainwindow.ui" line="2735"/>
         <source>Repair tips</source>
         <translation>Consejos de reparación</translation>
     </message>
@@ -171,18 +176,18 @@ lo que quieras con permisos elevados.</translation>
         <translation type="vanished">Mejoras 1/2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1012"/>
+        <location filename="../mainwindow.ui" line="1047"/>
         <source>Do invisible asterisks
 Set to default</source>
         <translation>Hacerlos invisibles. Por defecto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1044"/>
+        <location filename="../mainwindow.ui" line="1079"/>
         <source>Terminal passwords</source>
         <translation>Contraseñas en terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1091"/>
+        <location filename="../mainwindow.ui" line="1126"/>
         <source>Power</source>
         <translation>Energia</translation>
     </message>
@@ -197,23 +202,23 @@ Set to default</source>
         <translation>Abrir sources.list.d</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1107"/>
+        <location filename="../mainwindow.ui" line="1142"/>
         <source>Disable hibernation</source>
         <translation>Deshabilitar hibernación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1060"/>
+        <location filename="../mainwindow.ui" line="1095"/>
         <source>Do visible asterisks</source>
         <translation>Hacer visibles los asteriscos</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1135"/>
+        <location filename="../mainwindow.ui" line="1170"/>
         <source>Enable hibernation</source>
         <translation>Habilitar hibernación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1587"/>
-        <location filename="../mainwindow.ui" line="1728"/>
+        <location filename="../mainwindow.ui" line="1622"/>
+        <location filename="../mainwindow.ui" line="1772"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Peligroso!! Pulsar solo si sabes lo que estás haciendo y deshabilitarlo tan pronto como sea posible. Recomendado sólo si estás usando esta app para no poner todo el rato la contraseña para acciones elevadas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -222,8 +227,8 @@ Set to default</source>
         <translation type="vanished">Mejoras 1/3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1590"/>
-        <location filename="../mainwindow.ui" line="1731"/>
+        <location filename="../mainwindow.ui" line="1625"/>
+        <location filename="../mainwindow.ui" line="1775"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
@@ -236,7 +241,7 @@ Set to default</source>
         <translation type="vanished">Deshabilitar sudo sin contraseña</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1652"/>
+        <location filename="../mainwindow.ui" line="1687"/>
         <source>Security &amp; Passwords</source>
         <translation>Seguridad y contraseñas</translation>
     </message>
@@ -320,17 +325,17 @@ plantillas</translation>
         <translation type="vanished">Mejoras 2/3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="885"/>
+        <location filename="../mainwindow.ui" line="920"/>
         <source>Enable firewall</source>
         <translation>Habilitar firewall</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="916"/>
+        <location filename="../mainwindow.ui" line="951"/>
         <source>Security</source>
         <translation>Seguridad</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="932"/>
+        <location filename="../mainwindow.ui" line="967"/>
         <source>Disable firewall</source>
         <translation>Deshabilitar firewall</translation>
     </message>
@@ -345,22 +350,22 @@ plantillas</translation>
         <translation>Sudoers</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="522"/>
+        <location filename="../mainwindow.ui" line="551"/>
         <source>Tweaks 2/4</source>
         <translation>Ajustes 2/4</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="963"/>
+        <location filename="../mainwindow.ui" line="998"/>
         <source>Dual boot</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="976"/>
+        <location filename="../mainwindow.ui" line="1011"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Launches grub-customizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lanza grub-customizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="979"/>
+        <location filename="../mainwindow.ui" line="1014"/>
         <source>Configure</source>
         <translation>Configurar</translation>
     </message>
@@ -383,7 +388,7 @@ plantillas</translation>
         <translation type="vanished">Mejoras 2/2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="537"/>
+        <location filename="../mainwindow.ui" line="566"/>
         <source>Install Templates</source>
         <translation>Instalar plantillas</translation>
     </message>
@@ -392,68 +397,68 @@ plantillas</translation>
         <translation type="vanished">Esto añade contendido al Sub-Menú de Nuevo Documento</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="568"/>
+        <location filename="../mainwindow.ui" line="597"/>
         <source>Documents &amp; Files </source>
         <translation>Documentos y ficheros</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="587"/>
+        <location filename="../mainwindow.ui" line="616"/>
         <source>Reduce timeout when shutdown
 (experimental)</source>
         <translation>Reducir el tiempo de espera al apagar (experimental)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="604"/>
+        <location filename="../mainwindow.ui" line="636"/>
         <source>Set to defaults 90s</source>
         <translation>Poner a los 90s por defecto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="632"/>
+        <location filename="../mainwindow.ui" line="667"/>
         <source>Reduce to 5s</source>
         <translation>Reducir a 5s</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="663"/>
+        <location filename="../mainwindow.ui" line="698"/>
         <source>Lock screen</source>
         <translation>Pantalla de bloqueo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="679"/>
+        <location filename="../mainwindow.ui" line="714"/>
         <source>Disable Lock screen</source>
         <translation>Deshabilitar pantalla de bloqueo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="707"/>
+        <location filename="../mainwindow.ui" line="742"/>
         <source>Enable Lock screen</source>
         <translation>Habilitar pantalla de bloqueo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="735"/>
+        <location filename="../mainwindow.ui" line="770"/>
         <source>Show</source>
         <translation>Enseñar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="763"/>
+        <location filename="../mainwindow.ui" line="798"/>
         <source>Unshow</source>
         <translation>Esconder</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="794"/>
+        <location filename="../mainwindow.ui" line="829"/>
         <source>Hidden Startup Items</source>
         <translation>Items de inicio escondidos</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="813"/>
+        <location filename="../mainwindow.ui" line="848"/>
         <source>Login sound</source>
         <translation>Sonido en el login</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="829"/>
+        <location filename="../mainwindow.ui" line="864"/>
         <source>Enable</source>
         <translation>Habilitar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="857"/>
+        <location filename="../mainwindow.ui" line="892"/>
         <source>Disable</source>
         <translation>Deshabilitar</translation>
     </message>
@@ -462,176 +467,185 @@ plantillas</translation>
         <translation type="vanished">Mejoras 3/3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1810"/>
+        <location filename="../mainwindow.ui" line="1854"/>
         <source>System</source>
         <translation>Sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1826"/>
+        <location filename="../mainwindow.ui" line="1870"/>
         <source>Normal user</source>
         <translation>Usuario normal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1844"/>
+        <location filename="../mainwindow.ui" line="1888"/>
         <source>Clean system</source>
         <translation>Limpiar sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1860"/>
+        <location filename="../mainwindow.ui" line="1904"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;apt-fast -y upgrade&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1901"/>
+        <location filename="../mainwindow.ui" line="1945"/>
         <source>Default update &amp; upgrade packages</source>
         <oldsource>Default update &amp; upgrade system</oldsource>
         <translation>Actualización de listado y paquetes por defecto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1917"/>
+        <location filename="../mainwindow.ui" line="1961"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;apt-fast -y update&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1958"/>
+        <location filename="../mainwindow.ui" line="2002"/>
         <source>Upgrade repos</source>
         <translation>Actualizar paquetes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1977"/>
+        <location filename="../mainwindow.ui" line="2021"/>
         <source>Update repos</source>
         <translation>Actualizar lista de paquetes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1990"/>
+        <location filename="../mainwindow.ui" line="2034"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;installpackages1-minimal of ubuntupackages on git for normal users&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;installpackages1-minimal de ubuntupackages en git para usuarios normales&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2031"/>
+        <location filename="../mainwindow.ui" line="2075"/>
         <source>Exec normal user installation script</source>
         <translation>Ejecutar instalación de script para usuario normal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2044"/>
+        <location filename="../mainwindow.ui" line="2088"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;apt-fast -y update&lt;/p&gt;&lt;p&gt;apt-fast -y upgrade&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2079"/>
+        <location filename="../mainwindow.ui" line="2123"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;apt-fast -f install&lt;/p&gt;&lt;p&gt;apt-fast -y autoremove&lt;/p&gt;&lt;p&gt;apt-fast -y autoclean&lt;/p&gt;&lt;p&gt;apt-fast -y clean&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2107"/>
+        <location filename="../mainwindow.ui" line="2151"/>
         <source>Advanced user</source>
         <translation>Usuario avanzado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2125"/>
+        <location filename="../mainwindow.ui" line="2169"/>
         <source>Upgrade to latest stable</source>
         <translation>Actualizar a la última versión estable del sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2138"/>
+        <location filename="../mainwindow.ui" line="2182"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Recover space from unused kernels&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Recuperar espacio de kernels no usados&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2173"/>
+        <location filename="../mainwindow.ui" line="2217"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;apt-fast -y update&lt;/p&gt;&lt;p&gt;apt-fast -y dist-upgrade&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2214"/>
+        <location filename="../mainwindow.ui" line="2258"/>
         <source>Smart packages update</source>
         <oldsource>Smart system update</oldsource>
         <translation>Actualización de paquetes inteligente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2233"/>
+        <location filename="../mainwindow.ui" line="2277"/>
         <source>Clean ancient kernels</source>
         <translation>Limpiar kernels antiguos</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2246"/>
+        <location filename="../mainwindow.ui" line="2290"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;do-release-upgrade&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2287"/>
+        <location filename="../mainwindow.ui" line="2331"/>
         <source>Install mainline kernel</source>
         <translation>Instalar kernel principal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2300"/>
+        <location filename="../mainwindow.ui" line="2344"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Install latest kernel with ukuu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Instalar último kernel con ukuu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2328"/>
+        <location filename="../mainwindow.ui" line="2372"/>
         <source>Developer</source>
         <translation>Desarrollador</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2346"/>
+        <location filename="../mainwindow.ui" line="2390"/>
         <source>Upgrade to latest dev</source>
         <translation>Actualizar a la última versión de desarrollador</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2359"/>
+        <location filename="../mainwindow.ui" line="2403"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;do-release-upgrade -d&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2389"/>
+        <location filename="../mainwindow.ui" line="2433"/>
         <source>Repair</source>
         <translation>Reparar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2405"/>
+        <location filename="../mainwindow.ui" line="2449"/>
         <source>Repair  1/2</source>
         <translation>Reparar 1/2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2423"/>
+        <location filename="../mainwindow.ui" line="2467"/>
         <source>sudo launchpad-getkeys</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2442"/>
+        <location filename="../mainwindow.ui" line="2486"/>
         <source>Check system integrity</source>
         <translation>Comprobar la integridad del sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2499"/>
+        <location filename="../mainwindow.ui" line="2543"/>
         <source>shutdown -Fr now</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2556"/>
+        <location filename="../mainwindow.ui" line="2600"/>
         <source>Be careful, your system will reboot</source>
         <translation>Cuidado, tu sistema se reiniciará</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2575"/>
+        <location filename="../mainwindow.ui" line="2619"/>
         <source>Repair missing GPG keys</source>
         <translation>Reparar las claves GPG no encontradas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2632"/>
+        <location filename="../mainwindow.ui" line="2676"/>
         <source>sudo service network-manager restart</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2651"/>
+        <location filename="../mainwindow.ui" line="2695"/>
         <source>Repair network</source>
         <translation>Reparar red</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3076"/>
+        <location filename="../mainwindow.ui" line="3120"/>
+        <source>v2017.07.30</source>
+        <translation>v2017.07.30</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="3153"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update scripts manually&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualizar scripts manualmente&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
         <source>v2017.07.25</source>
-        <translation>v2017.07.25</translation>
+        <translation type="vanished">v2017.07.25</translation>
     </message>
     <message>
         <source>v2017.07.22</source>
@@ -646,44 +660,44 @@ plantillas</translation>
         <translation type="vanished">Si pierdes &quot;sudo&quot; prueba con &quot;pkexec&quot; para arreglar si rompes algo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2697"/>
+        <location filename="../mainwindow.ui" line="2741"/>
         <source>Repair 2/2</source>
         <translation>Reparar 2/2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2715"/>
+        <location filename="../mainwindow.ui" line="2759"/>
         <source>Fix broken packages (click on each step and check if is solved)</source>
         <translation>Reparar paqueres rotos (clicka en cada paso y chequea si es resuelto)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2734"/>
+        <location filename="../mainwindow.ui" line="2778"/>
         <source>apt-fast -f install &amp;&amp; apt-fast -y autoremove &amp;&amp; apt-fast -y autoclean &amp;&amp;
 apt-fast -y clean</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2754"/>
+        <location filename="../mainwindow.ui" line="2798"/>
         <source>apt-fast -y --fix-broken install</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2811"/>
+        <location filename="../mainwindow.ui" line="2855"/>
         <source>rm /var/lib/apt/lists/* -vf &amp;&amp; apt-fast -y update</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2868"/>
+        <location filename="../mainwindow.ui" line="2912"/>
         <source>apt-fast -y update &amp;&amp; apt-fast -y upgrade</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2963"/>
+        <location filename="../mainwindow.ui" line="3007"/>
         <source>Open Ubuntu Software Center
  &amp; click repair if proceed</source>
         <translation>Abrir Ubuntu Software Center &amp; clicka reparar si procede</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3059"/>
+        <location filename="../mainwindow.ui" line="3103"/>
         <source>dpkg --configure -a &amp;&amp; apt-fast -y update</source>
         <translation></translation>
     </message>
@@ -692,106 +706,105 @@ apt-fast -y clean</source>
         <translation type="vanished">v2017.07.21</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3089"/>
+        <location filename="../mainwindow.ui" line="3133"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update program&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualizar programa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3109"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update scripts&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualizar scripts&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualizar scripts&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3131"/>
+        <location filename="../mainwindow.ui" line="3175"/>
         <source>File</source>
         <translation>Archivo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3139"/>
+        <location filename="../mainwindow.ui" line="3183"/>
         <source>Edit</source>
         <translation>Editar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3145"/>
+        <location filename="../mainwindow.ui" line="3189"/>
         <source>Help</source>
         <translation>Ayuda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3158"/>
+        <location filename="../mainwindow.ui" line="3202"/>
         <source>Exit</source>
         <translation>Salir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3173"/>
+        <location filename="../mainwindow.ui" line="3217"/>
         <source>Paste</source>
         <translation>Pegar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3178"/>
+        <location filename="../mainwindow.ui" line="3222"/>
         <location filename="../about.cpp" line="25"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3183"/>
+        <location filename="../mainwindow.ui" line="3227"/>
         <source>About Qt</source>
         <translation>Acerca de Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3195"/>
+        <location filename="../mainwindow.ui" line="3239"/>
         <source>Save as...</source>
         <translation>Guardar como...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3207"/>
+        <location filename="../mainwindow.ui" line="3251"/>
         <location filename="../toolbartab.cpp" line="8"/>
         <source>New</source>
         <translation>Nuevo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3219"/>
+        <location filename="../mainwindow.ui" line="3263"/>
         <location filename="../toolbartab.cpp" line="13"/>
         <source>Open</source>
         <translation>Open</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3243"/>
+        <location filename="../mainwindow.ui" line="3287"/>
         <source>Copy</source>
         <translation>Copiar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3255"/>
+        <location filename="../mainwindow.ui" line="3299"/>
         <source>Cut</source>
         <translation>Cortar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3258"/>
+        <location filename="../mainwindow.ui" line="3302"/>
         <source>Cortar</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3266"/>
+        <location filename="../mainwindow.ui" line="3310"/>
         <source>Preferences</source>
         <translation>Preferencias</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3271"/>
+        <location filename="../mainwindow.ui" line="3315"/>
         <location filename="../tutorial.cpp" line="16"/>
         <source>Tutorial</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3276"/>
+        <location filename="../mainwindow.ui" line="3320"/>
         <source>English</source>
         <translation>Inglés</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3281"/>
+        <location filename="../mainwindow.ui" line="3325"/>
         <source>Spanish</source>
         <translation>Español</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="21"/>
+        <location filename="../mainwindow.cpp" line="77"/>
         <source>Recommendation: Push Help -&gt; Tutorial</source>
         <translation>Recomendación: Pulsa Ayuda -&gt; Tutorial</translation>
     </message>
@@ -841,52 +854,52 @@ apt-fast -y clean</source>
         <translation>Claves GPG no encontrada reparadas o arreglo cancelado, compruebe si está bien ahora</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="51"/>
+        <location filename="../repairtab.cpp" line="50"/>
         <source>Executing package repair 1. Then close the terminal window</source>
         <translation>Ejecutando reparación de paquetes 1. Después cierre la ventana de la terminal</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="59"/>
+        <location filename="../repairtab.cpp" line="58"/>
         <source>Reparation 1 executed succesful. Test if all is corrected</source>
         <translation>Reparación 1 ejecutada correctamente. Comprueba si todo es correcto</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="64"/>
+        <location filename="../repairtab.cpp" line="63"/>
         <source>Executing package repair 2. Then close the terminal window</source>
         <translation>Ejecutando reparación de paquetes 2. Después cierre la ventana de la terminal</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="70"/>
+        <location filename="../repairtab.cpp" line="69"/>
         <source>Reparation 2 executed succesful. Test if all is corrected</source>
         <translation>Reparación 2 ejecutada correctamente. Comprueba si todo es correcto</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="75"/>
+        <location filename="../repairtab.cpp" line="74"/>
         <source>Executing package repair 3. Then close the terminal window</source>
         <translation>Ejecutando reparación de paquetes 3. Después cierre la ventana de la terminal</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="83"/>
+        <location filename="../repairtab.cpp" line="82"/>
         <source>Reparation 3 executed succesful. Test if all is corrected</source>
         <translation>Reparación 3 ejecutada correctamente. Comprueba si todo es correcto</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="88"/>
+        <location filename="../repairtab.cpp" line="87"/>
         <source>Executing package repair 4. Then close the terminal window</source>
         <translation>Ejecutando reparación de paquetes 4. Después cierre la ventana de la terminal</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="100"/>
+        <location filename="../repairtab.cpp" line="99"/>
         <source>Reparation 4 executed succesful. Test if all is corrected</source>
         <translation>Reparación 4 ejecutada correctamente. Comprueba si todo es correcto</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="105"/>
+        <location filename="../repairtab.cpp" line="104"/>
         <source>Executing package repair 5. Then close the terminal window</source>
         <translation>Ejecutando reparación de paquetes 5. Después cierre la ventana de la terminal</translation>
     </message>
     <message>
-        <location filename="../repairtab.cpp" line="113"/>
+        <location filename="../repairtab.cpp" line="112"/>
         <source>Reparation 5 executed succesful. Test if all is corrected</source>
         <translation>Reparación 5 ejecutada correctamente. Comprueba si todo es correcto</translation>
     </message>
@@ -1220,9 +1233,8 @@ apt-fast -y clean</source>
         <translation>Abriendo sudoers.d</translation>
     </message>
     <message>
-        <location filename="../updatezone.cpp" line="13"/>
         <source>Updating latest scripts. Please wait</source>
-        <translation>Actualizando últimos scripts. Espere un momento</translation>
+        <translation type="vanished">Actualizando últimos scripts. Espere un momento</translation>
     </message>
     <message>
         <source>Downloaded latest scripts</source>
@@ -1245,12 +1257,11 @@ apt-fast -y clean</source>
         <translation type="vanished">Instalando paquetes</translation>
     </message>
     <message>
-        <location filename="../updatezone.cpp" line="48"/>
         <source>Latest scripts updated ok. Please select an action</source>
-        <translation>Últimos scripts actualizados ok. Por favor seleccione una acción</translation>
+        <translation type="vanished">Últimos scripts actualizados ok. Por favor seleccione una acción</translation>
     </message>
     <message>
-        <location filename="../updatezone.cpp" line="54"/>
+        <location filename="../updatezone.cpp" line="14"/>
         <source>For now launches to release page to update manually. Please wait.</source>
         <translation>Por ahora lanza la página de versiones para actualizar manualmente. Espere por favor.</translation>
     </message>
@@ -1434,8 +1445,28 @@ Antonio David Gellida Lavara
 
 adgellida@gmail.com
 
-v2017.07.25</source>
+v2017.07.30</source>
         <translation>Copyright (c) 2017 todos los derechos reservados
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.07.30</translation>
+    </message>
+    <message>
+        <source>Copyright (c) 2017 all rights reserved
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.07.25</source>
+        <translation type="vanished">Copyright (c) 2017 todos los derechos reservados
 
 GPL v2
 
@@ -1554,78 +1585,130 @@ v2017.07.21</translation>
     </message>
     <message>
         <location filename="../packagesdialog.cpp" line="19"/>
-        <location filename="../packagesdialog.cpp" line="223"/>
+        <location filename="../packagesdialog.cpp" line="222"/>
         <source>Select your option</source>
         <translation>Selecciona tu opción</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="33"/>
+        <location filename="../packagesdialog.cpp" line="32"/>
         <source>Selecting items...</source>
         <translation>Seleccionando items...</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="106"/>
+        <location filename="../packagesdialog.cpp" line="105"/>
         <source>Executing Scripts selected. Please wait...</source>
         <translation>Ejecutando Scripts seleccionados. Por favor espere...</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="115"/>
-        <location filename="../packagesdialog.cpp" line="179"/>
+        <location filename="../packagesdialog.cpp" line="114"/>
+        <location filename="../packagesdialog.cpp" line="178"/>
         <source>Scripts executed with or without errors. Check it!</source>
         <translation>Scripts ejecutados con o sin errores. Compruébalo!</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="125"/>
+        <location filename="../packagesdialog.cpp" line="124"/>
         <source>Official Repos selected</source>
         <translation>Repos Oficiales seleccionados</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="134"/>
+        <location filename="../packagesdialog.cpp" line="133"/>
         <source>Unofficial Repos selected</source>
         <translation>Repos No Oficiales seleccionados</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="139"/>
+        <location filename="../packagesdialog.cpp" line="138"/>
         <source>Select your list</source>
         <translation>Selecciona tu lista</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="145"/>
+        <location filename="../packagesdialog.cpp" line="144"/>
         <source>Import your script file here</source>
         <translation>Importa tu fichero de script aquí</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="184"/>
+        <location filename="../packagesdialog.cpp" line="183"/>
         <source>Exporting list</source>
         <translation>Exportando lista</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="192"/>
+        <location filename="../packagesdialog.cpp" line="191"/>
         <source>Notification</source>
         <translation>Notificación</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="192"/>
+        <location filename="../packagesdialog.cpp" line="191"/>
         <source>Backuped OK on 
 
 </source>
         <translation>Copia de seguridad realizada correctamente en</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="194"/>
-        <location filename="../packagesdialog.cpp" line="210"/>
+        <location filename="../packagesdialog.cpp" line="193"/>
+        <location filename="../packagesdialog.cpp" line="209"/>
         <source>Done. Now select another action</source>
         <translation>Hecho. Ahora selecciona otra acción</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="199"/>
+        <location filename="../packagesdialog.cpp" line="198"/>
         <source>Opening Scripts selected. Please wait...</source>
         <translation>Abiendo Scripts seleccionados. Espere un momento...</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.cpp" line="228"/>
+        <location filename="../packagesdialog.cpp" line="227"/>
         <source>Selection cleared</source>
         <translation>Selección borrada</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateScriptsDialog</name>
+    <message>
+        <location filename="../updatescriptsdialog.ui" line="14"/>
+        <source>Manual check if scripts update is required...</source>
+        <translation>Comprobación manual de si actualización de scripts es requerida...</translation>
+    </message>
+    <message>
+        <location filename="../updatescriptsdialog.ui" line="39"/>
+        <source>Check</source>
+        <translation>Comprobar</translation>
+    </message>
+    <message>
+        <source>Push to check scripts version and updated if necessary.</source>
+        <translation type="vanished">Pulse para comprobar scripts y actualizados si fue necesario.</translation>
+    </message>
+    <message>
+        <location filename="../updatescriptsdialog.cpp" line="14"/>
+        <source>Push to check scripts version and update if necessary.</source>
+        <translation>Pulse para comprobar scripts y actualizarlos si es necesario.</translation>
+    </message>
+    <message>
+        <location filename="../updatescriptsdialog.cpp" line="25"/>
+        <source>Checking...</source>
+        <translation>Comprobando...</translation>
+    </message>
+    <message>
+        <location filename="../updatescriptsdialog.cpp" line="27"/>
+        <source>Checking your scripts version and updating if necessary. Please wait...</source>
+        <translation>Comprobando su versión de scripts y actualizando si es necesario. Por favor, espere...</translation>
+    </message>
+    <message>
+        <location filename="../updatescriptsdialog.cpp" line="32"/>
+        <source>Checking ubuntuscripts. Please wait...</source>
+        <translation>Comprobando ubuntuscripts. Por favor, espere...</translation>
+    </message>
+    <message>
+        <location filename="../updatescriptsdialog.cpp" line="37"/>
+        <source>Checking ubuntupackages. Please wait...</source>
+        <translation>Comprobando ubuntupackages. Por favor, espere...</translation>
+    </message>
+    <message>
+        <location filename="../updatescriptsdialog.cpp" line="42"/>
+        <source>Checking apt-fast. Please wait...</source>
+        <translation>Comprobando apt-fast. Por favor, espere...</translation>
+    </message>
+    <message>
+        <location filename="../updatescriptsdialog.cpp" line="47"/>
+        <source>Scripts version checked and updated if necessary. Close this window!</source>
+        <translation>Versión de scripts comprobada y actualizada si era necesario. Cierre la ventana!</translation>
     </message>
 </context>
 </TS>

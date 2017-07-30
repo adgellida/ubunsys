@@ -29,7 +29,6 @@ PackagesDialog::~PackagesDialog()
 
 void PackagesDialog::onFileItemSelected()
 {
-
     ui->statusBar->showMessage(tr("Selecting items..."));
 
     //Preparing to install
@@ -88,8 +87,8 @@ void PackagesDialog::onFileItemSelected()
 
 void PackagesDialog::on_runScriptButton_clicked()
 {
- /*   QString filename = QDir::homePath() + "/.ubunsys/files/scriptToInstall.sh";
-    QFile file(filename);
+/*    QString filename = QDir::homePath() + "/.ubunsys/files/scriptToInstall.sh";
+      QFile file(filename);
     //QFile::remove(filename);
 
           if (file.open(QIODevice::WriteOnly)) {

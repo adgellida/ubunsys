@@ -11,7 +11,6 @@
 #include <QtCore>
 #include <QDebug>
 #include <QSettings>
-//#include <Updater>
 
 namespace Ui {
 class MainWindow;
@@ -28,8 +27,8 @@ public:
 public slots:
 
 
-
 private slots:
+
     void on_actionNew_triggered();
 
     void on_actionOpen_triggered();
@@ -155,6 +154,8 @@ private slots:
     void on_runScriptsManager_clicked();
 
     void on_openSudoersDButton_clicked();
+
+    void on_runUpdateDialog_clicked();
 
 private:
     Ui::MainWindow *ui;
