@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'packagesdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.7.1
+** Created by: Qt User Interface Compiler version 5.5.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -131,19 +131,19 @@ public:
 
     void retranslateUi(QDialog *PackagesDialog)
     {
-        PackagesDialog->setWindowTitle(QApplication::translate("PackagesDialog", "Scripts Manager", Q_NULLPTR));
-        PackagesDialog->setProperty("PackagesDialog", QVariant(QApplication::translate("PackagesDialog", "Dialog", Q_NULLPTR)));
-        runSavedScriptListButton->setText(QApplication::translate("PackagesDialog", "Run saved script list", Q_NULLPTR));
-        selectOfficialReposButton->setText(QApplication::translate("PackagesDialog", "Select only Official repos", Q_NULLPTR));
-        exportListButton->setText(QApplication::translate("PackagesDialog", "Export list", Q_NULLPTR));
-        selectUnofficialReposButton->setText(QApplication::translate("PackagesDialog", "Select only Unofficial repos", Q_NULLPTR));
-        runScriptButton->setText(QApplication::translate("PackagesDialog", "Run script", Q_NULLPTR));
-        openInTextEditorButton->setText(QApplication::translate("PackagesDialog", "Open in text editor", Q_NULLPTR));
+        PackagesDialog->setWindowTitle(QApplication::translate("PackagesDialog", "Scripts Manager", 0));
+        PackagesDialog->setProperty("PackagesDialog", QVariant(QApplication::translate("PackagesDialog", "Dialog", 0)));
+        runSavedScriptListButton->setText(QApplication::translate("PackagesDialog", "Run saved script list", 0));
+        selectOfficialReposButton->setText(QApplication::translate("PackagesDialog", "Select only Official repos", 0));
+        exportListButton->setText(QApplication::translate("PackagesDialog", "Export list", 0));
+        selectUnofficialReposButton->setText(QApplication::translate("PackagesDialog", "Select only Unofficial repos", 0));
+        runScriptButton->setText(QApplication::translate("PackagesDialog", "Run script", 0));
+        openInTextEditorButton->setText(QApplication::translate("PackagesDialog", "Open in text editor", 0));
 #ifndef QT_NO_TOOLTIP
-        txtFilter->setToolTip(QApplication::translate("PackagesDialog", "<html><head/><body><p>Search filter not implemented yet</p><p>Wait for future releases...</p></body></html>", Q_NULLPTR));
+        txtFilter->setToolTip(QApplication::translate("PackagesDialog", "<html><head/><body><p>Search filter not implemented yet</p><p>Wait for future releases...</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
-        label->setText(QApplication::translate("PackagesDialog", "<html><head/><body><p align=\"right\">Filter:</p></body></html>", Q_NULLPTR));
-        clearSelectionButton->setText(QApplication::translate("PackagesDialog", "Clear selection", Q_NULLPTR));
+        label->setText(QApplication::translate("PackagesDialog", "<html><head/><body><p align=\"right\">Filter:</p></body></html>", 0));
+        clearSelectionButton->setText(QApplication::translate("PackagesDialog", "Clear selection", 0));
     } // retranslateUi
 
 };

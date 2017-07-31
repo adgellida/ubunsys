@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.7.1
+** Created by: Qt User Interface Compiler version 5.5.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -927,262 +927,262 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "ubunsys", Q_NULLPTR));
-        actionExit->setText(QApplication::translate("MainWindow", "Exit", Q_NULLPTR));
-        actionPaste->setText(QApplication::translate("MainWindow", "Paste", Q_NULLPTR));
-        actionAbout->setText(QApplication::translate("MainWindow", "About", Q_NULLPTR));
-        actionAbout_Qt->setText(QApplication::translate("MainWindow", "About Qt", Q_NULLPTR));
-        actionSave_as->setText(QApplication::translate("MainWindow", "Save as...", Q_NULLPTR));
-        actionNew->setText(QApplication::translate("MainWindow", "New", Q_NULLPTR));
-        actionOpen->setText(QApplication::translate("MainWindow", "Open", Q_NULLPTR));
-        actionSave->setText(QApplication::translate("MainWindow", "Save", Q_NULLPTR));
-        actionCopy->setText(QApplication::translate("MainWindow", "Copy", Q_NULLPTR));
-        actionCut->setText(QApplication::translate("MainWindow", "Cut", Q_NULLPTR));
-        actionCut->setIconText(QApplication::translate("MainWindow", "Cortar", Q_NULLPTR));
-        actionPreferences->setText(QApplication::translate("MainWindow", "Preferences", Q_NULLPTR));
-        actionTutorial->setText(QApplication::translate("MainWindow", "Tutorial", Q_NULLPTR));
-        actionEnglish->setText(QApplication::translate("MainWindow", "English", Q_NULLPTR));
-        actionSpanish->setText(QApplication::translate("MainWindow", "Spanish", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "ubunsys", 0));
+        actionExit->setText(QApplication::translate("MainWindow", "Exit", 0));
+        actionPaste->setText(QApplication::translate("MainWindow", "Paste", 0));
+        actionAbout->setText(QApplication::translate("MainWindow", "About", 0));
+        actionAbout_Qt->setText(QApplication::translate("MainWindow", "About Qt", 0));
+        actionSave_as->setText(QApplication::translate("MainWindow", "Save as...", 0));
+        actionNew->setText(QApplication::translate("MainWindow", "New", 0));
+        actionOpen->setText(QApplication::translate("MainWindow", "Open", 0));
+        actionSave->setText(QApplication::translate("MainWindow", "Save", 0));
+        actionCopy->setText(QApplication::translate("MainWindow", "Copy", 0));
+        actionCut->setText(QApplication::translate("MainWindow", "Cut", 0));
+        actionCut->setIconText(QApplication::translate("MainWindow", "Cortar", 0));
+        actionPreferences->setText(QApplication::translate("MainWindow", "Preferences", 0));
+        actionTutorial->setText(QApplication::translate("MainWindow", "Tutorial", 0));
+        actionEnglish->setText(QApplication::translate("MainWindow", "English", 0));
+        actionSpanish->setText(QApplication::translate("MainWindow", "Spanish", 0));
 #ifndef QT_NO_WHATSTHIS
         runScriptsManager->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        runScriptsManager->setText(QApplication::translate("MainWindow", "Scripts manager", Q_NULLPTR));
+        runScriptsManager->setText(QApplication::translate("MainWindow", "Scripts manager", 0));
         runScriptsManager->setShortcut(QString());
-        label_36->setText(QApplication::translate("MainWindow", "Managers", Q_NULLPTR));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/1", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Packages", Q_NULLPTR));
-        label_7->setText(QApplication::translate("MainWindow", "Repositories", Q_NULLPTR));
+        label_36->setText(QApplication::translate("MainWindow", "Managers", 0));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/1", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Packages", 0));
+        label_7->setText(QApplication::translate("MainWindow", "Repositories", 0));
 #ifndef QT_NO_WHATSTHIS
         openSourcesListDButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSourcesListDButton->setText(QApplication::translate("MainWindow", "Open sources.list.d", Q_NULLPTR));
+        openSourcesListDButton->setText(QApplication::translate("MainWindow", "Open sources.list.d", 0));
         openSourcesListDButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         openSudoersFileButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSudoersFileButton->setText(QApplication::translate("MainWindow", "Open default sudoers file", Q_NULLPTR));
+        openSudoersFileButton->setText(QApplication::translate("MainWindow", "Open default sudoers file", 0));
         openSudoersFileButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         backupSudoersFileButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        backupSudoersFileButton->setText(QApplication::translate("MainWindow", "Backup sudoers file", Q_NULLPTR));
+        backupSudoersFileButton->setText(QApplication::translate("MainWindow", "Backup sudoers file", 0));
         backupSudoersFileButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         importSudoersFileButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        importSudoersFileButton->setText(QApplication::translate("MainWindow", "Import sudoers file", Q_NULLPTR));
+        importSudoersFileButton->setText(QApplication::translate("MainWindow", "Import sudoers file", 0));
         importSudoersFileButton->setShortcut(QString());
-        label_13->setText(QApplication::translate("MainWindow", "Sudoers", Q_NULLPTR));
+        label_13->setText(QApplication::translate("MainWindow", "Sudoers", 0));
 #ifndef QT_NO_WHATSTHIS
         aptselect_US->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        aptselect_US->setText(QApplication::translate("MainWindow", "apt-select US", Q_NULLPTR));
+        aptselect_US->setText(QApplication::translate("MainWindow", "apt-select US", 0));
         aptselect_US->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         aptselect_ES->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        aptselect_ES->setText(QApplication::translate("MainWindow", "apt-select ES", Q_NULLPTR));
+        aptselect_ES->setText(QApplication::translate("MainWindow", "apt-select ES", 0));
         aptselect_ES->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         importSourcesListButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        importSourcesListButton->setText(QApplication::translate("MainWindow", "Import sources.list", Q_NULLPTR));
+        importSourcesListButton->setText(QApplication::translate("MainWindow", "Import sources.list", 0));
         importSourcesListButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         openSourcesListButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSourcesListButton->setText(QApplication::translate("MainWindow", "Open sources.list", Q_NULLPTR));
+        openSourcesListButton->setText(QApplication::translate("MainWindow", "Open sources.list", 0));
         openSourcesListButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         backupSourcesListButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        backupSourcesListButton->setText(QApplication::translate("MainWindow", "Backup sources.list", Q_NULLPTR));
+        backupSourcesListButton->setText(QApplication::translate("MainWindow", "Backup sources.list", 0));
         backupSourcesListButton->setShortcut(QString());
-        label_37->setText(QApplication::translate("MainWindow", "Main backup & restore", Q_NULLPTR));
+        label_37->setText(QApplication::translate("MainWindow", "Main backup & restore", 0));
 #ifndef QT_NO_WHATSTHIS
         openMainRestoreButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openMainRestoreButton->setText(QApplication::translate("MainWindow", "Main restore", Q_NULLPTR));
+        openMainRestoreButton->setText(QApplication::translate("MainWindow", "Main restore", 0));
         openMainRestoreButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
-        openMainBackupButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.</p></body></html>", Q_NULLPTR));
+        openMainBackupButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.</p></body></html>", 0));
 #endif // QT_NO_WHATSTHIS
-        openMainBackupButton->setText(QApplication::translate("MainWindow", "Main backup", Q_NULLPTR));
+        openMainBackupButton->setText(QApplication::translate("MainWindow", "Main backup", 0));
         openMainBackupButton->setShortcut(QString());
         label_38->setText(QApplication::translate("MainWindow", "Files on Main backup:\n"
 "sources.list\n"
 "sudoers\n"
-"templates", Q_NULLPTR));
-        label_41->setText(QApplication::translate("MainWindow", "Log silent update scripts check when app opens", Q_NULLPTR));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/4", Q_NULLPTR));
+"templates", 0));
+        label_41->setText(QApplication::translate("MainWindow", "Log silent update scripts check when app opens", 0));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/4", 0));
 #ifndef QT_NO_WHATSTHIS
         installTemplatesButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        installTemplatesButton->setText(QApplication::translate("MainWindow", "Install Templates", Q_NULLPTR));
+        installTemplatesButton->setText(QApplication::translate("MainWindow", "Install Templates", 0));
         installTemplatesButton->setShortcut(QString());
-        label_5->setText(QApplication::translate("MainWindow", "Documents & Files ", Q_NULLPTR));
+        label_5->setText(QApplication::translate("MainWindow", "Documents & Files ", 0));
         label_11->setText(QApplication::translate("MainWindow", "Reduce timeout when shutdown\n"
-"(experimental)", Q_NULLPTR));
+"(experimental)", 0));
 #ifndef QT_NO_WHATSTHIS
         setToDefaults90sShutdownTimeoutButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        setToDefaults90sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Set to defaults 90s", Q_NULLPTR));
+        setToDefaults90sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Set to defaults 90s", 0));
         setToDefaults90sShutdownTimeoutButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         reduceTo5sShutdownTimeoutButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        reduceTo5sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Reduce to 5s", Q_NULLPTR));
+        reduceTo5sShutdownTimeoutButton->setText(QApplication::translate("MainWindow", "Reduce to 5s", 0));
         reduceTo5sShutdownTimeoutButton->setShortcut(QString());
-        label_33->setText(QApplication::translate("MainWindow", "Lock screen", Q_NULLPTR));
+        label_33->setText(QApplication::translate("MainWindow", "Lock screen", 0));
 #ifndef QT_NO_WHATSTHIS
         disableLockScrennButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableLockScrennButton->setText(QApplication::translate("MainWindow", "Disable Lock screen", Q_NULLPTR));
+        disableLockScrennButton->setText(QApplication::translate("MainWindow", "Disable Lock screen", 0));
         disableLockScrennButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         enableLockScreenButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableLockScreenButton->setText(QApplication::translate("MainWindow", "Enable Lock screen", Q_NULLPTR));
+        enableLockScreenButton->setText(QApplication::translate("MainWindow", "Enable Lock screen", 0));
         enableLockScreenButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         showHiddenStartupItemsButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        showHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Show", Q_NULLPTR));
+        showHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Show", 0));
         showHiddenStartupItemsButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         unshowHiddenStartupItemsButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        unshowHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Unshow", Q_NULLPTR));
+        unshowHiddenStartupItemsButton->setText(QApplication::translate("MainWindow", "Unshow", 0));
         unshowHiddenStartupItemsButton->setShortcut(QString());
-        label_34->setText(QApplication::translate("MainWindow", "Hidden Startup Items", Q_NULLPTR));
-        label_35->setText(QApplication::translate("MainWindow", "Login sound", Q_NULLPTR));
+        label_34->setText(QApplication::translate("MainWindow", "Hidden Startup Items", 0));
+        label_35->setText(QApplication::translate("MainWindow", "Login sound", 0));
 #ifndef QT_NO_WHATSTHIS
         enableLoginSoundButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableLoginSoundButton->setText(QApplication::translate("MainWindow", "Enable", Q_NULLPTR));
+        enableLoginSoundButton->setText(QApplication::translate("MainWindow", "Enable", 0));
         enableLoginSoundButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         disableLoginSoundButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableLoginSoundButton->setText(QApplication::translate("MainWindow", "Disable", Q_NULLPTR));
+        disableLoginSoundButton->setText(QApplication::translate("MainWindow", "Disable", 0));
         disableLoginSoundButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         enableFirewallButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableFirewallButton->setText(QApplication::translate("MainWindow", "Enable firewall", Q_NULLPTR));
+        enableFirewallButton->setText(QApplication::translate("MainWindow", "Enable firewall", 0));
         enableFirewallButton->setShortcut(QString());
-        label_12->setText(QApplication::translate("MainWindow", "Security", Q_NULLPTR));
+        label_12->setText(QApplication::translate("MainWindow", "Security", 0));
 #ifndef QT_NO_WHATSTHIS
         disableFirewallButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableFirewallButton->setText(QApplication::translate("MainWindow", "Disable firewall", Q_NULLPTR));
+        disableFirewallButton->setText(QApplication::translate("MainWindow", "Disable firewall", 0));
         disableFirewallButton->setShortcut(QString());
-        label_32->setText(QApplication::translate("MainWindow", "Dual boot", Q_NULLPTR));
+        label_32->setText(QApplication::translate("MainWindow", "Dual boot", 0));
 #ifndef QT_NO_WHATSTHIS
-        runGrubcustomizerButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Launches grub-customizer</p></body></html>", Q_NULLPTR));
+        runGrubcustomizerButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Launches grub-customizer</p></body></html>", 0));
 #endif // QT_NO_WHATSTHIS
-        runGrubcustomizerButton->setText(QApplication::translate("MainWindow", "Configure", Q_NULLPTR));
+        runGrubcustomizerButton->setText(QApplication::translate("MainWindow", "Configure", 0));
         runGrubcustomizerButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/4", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/4", 0));
 #ifndef QT_NO_WHATSTHIS
         doInvisibleAsterisksButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         doInvisibleAsterisksButton->setText(QApplication::translate("MainWindow", "Do invisible asterisks\n"
-"Set to default", Q_NULLPTR));
+"Set to default", 0));
         doInvisibleAsterisksButton->setShortcut(QString());
-        label_6->setText(QApplication::translate("MainWindow", "Terminal passwords", Q_NULLPTR));
+        label_6->setText(QApplication::translate("MainWindow", "Terminal passwords", 0));
 #ifndef QT_NO_WHATSTHIS
         doVisibleAsterisksButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        doVisibleAsterisksButton->setText(QApplication::translate("MainWindow", "Do visible asterisks", Q_NULLPTR));
+        doVisibleAsterisksButton->setText(QApplication::translate("MainWindow", "Do visible asterisks", 0));
         doVisibleAsterisksButton->setShortcut(QString());
-        label_8->setText(QApplication::translate("MainWindow", "Power", Q_NULLPTR));
+        label_8->setText(QApplication::translate("MainWindow", "Power", 0));
 #ifndef QT_NO_WHATSTHIS
         disableHibernationButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableHibernationButton->setText(QApplication::translate("MainWindow", "Disable hibernation", Q_NULLPTR));
+        disableHibernationButton->setText(QApplication::translate("MainWindow", "Disable hibernation", 0));
         disableHibernationButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         enableHibernationButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableHibernationButton->setText(QApplication::translate("MainWindow", "Enable hibernation", Q_NULLPTR));
+        enableHibernationButton->setText(QApplication::translate("MainWindow", "Enable hibernation", 0));
         enableHibernationButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindow", "Tweaks 3/4", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindow", "Tweaks 3/4", 0));
 #ifndef QT_NO_TOOLTIP
-        enableSudoWithoutPassAllButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", Q_NULLPTR));
+        enableSudoWithoutPassAllButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        enableSudoWithoutPassAllButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+        enableSudoWithoutPassAllButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", 0));
 #endif // QT_NO_WHATSTHIS
-        enableSudoWithoutPassAllButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass all", Q_NULLPTR));
+        enableSudoWithoutPassAllButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass all", 0));
         enableSudoWithoutPassAllButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         disableSudoWithoutPassAllButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableSudoWithoutPassAllButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass all", Q_NULLPTR));
+        disableSudoWithoutPassAllButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass all", 0));
         disableSudoWithoutPassAllButton->setShortcut(QString());
-        label_10->setText(QApplication::translate("MainWindow", "Security & Passwords", Q_NULLPTR));
+        label_10->setText(QApplication::translate("MainWindow", "Security & Passwords", 0));
 #ifndef QT_NO_WHATSTHIS
         openSudoersUbunsysModButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSudoersUbunsysModButton->setText(QApplication::translate("MainWindow", "Open 'sudoers ubunsys mod'", Q_NULLPTR));
+        openSudoersUbunsysModButton->setText(QApplication::translate("MainWindow", "Open 'sudoers ubunsys mod'", 0));
         openSudoersUbunsysModButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         disableSudoWithoutPassUbunsysButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableSudoWithoutPassUbunsysButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass ubunsys", Q_NULLPTR));
+        disableSudoWithoutPassUbunsysButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass ubunsys", 0));
         disableSudoWithoutPassUbunsysButton->setShortcut(QString());
 #ifndef QT_NO_TOOLTIP
-        enableSudoWithoutPassUbunsysButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", Q_NULLPTR));
+        enableSudoWithoutPassUbunsysButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        enableSudoWithoutPassUbunsysButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+        enableSudoWithoutPassUbunsysButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", 0));
 #endif // QT_NO_WHATSTHIS
-        enableSudoWithoutPassUbunsysButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass ubunsys", Q_NULLPTR));
+        enableSudoWithoutPassUbunsysButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass ubunsys", 0));
         enableSudoWithoutPassUbunsysButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         openSudoersAllModButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSudoersAllModButton->setText(QApplication::translate("MainWindow", "Open 'sudoers all mod'", Q_NULLPTR));
+        openSudoersAllModButton->setText(QApplication::translate("MainWindow", "Open 'sudoers all mod'", 0));
         openSudoersAllModButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         openSudoersDButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSudoersDButton->setText(QApplication::translate("MainWindow", "Open sudoers.d", Q_NULLPTR));
+        openSudoersDButton->setText(QApplication::translate("MainWindow", "Open sudoers.d", 0));
         openSudoersDButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_5), QApplication::translate("MainWindow", "Tweaks 4/4", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", Q_NULLPTR));
-        label_16->setText(QApplication::translate("MainWindow", "Clean system", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_5), QApplication::translate("MainWindow", "Tweaks 4/4", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", 0));
+        label_16->setText(QApplication::translate("MainWindow", "Clean system", 0));
 #ifndef QT_NO_TOOLTIP
-        upgradeReposButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y upgrade</p></body></html>", Q_NULLPTR));
+        upgradeReposButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y upgrade</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         upgradeReposButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         upgradeReposButton->setText(QString());
         upgradeReposButton->setShortcut(QString());
-        label_15->setText(QApplication::translate("MainWindow", "Default update & upgrade packages", Q_NULLPTR));
+        label_15->setText(QApplication::translate("MainWindow", "Default update & upgrade packages", 0));
 #ifndef QT_NO_TOOLTIP
-        updateReposButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p></body></html>", Q_NULLPTR));
+        updateReposButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         updateReposButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         updateReposButton->setText(QString());
         updateReposButton->setShortcut(QString());
-        label_31->setText(QApplication::translate("MainWindow", "Upgrade repos", Q_NULLPTR));
-        label_14->setText(QApplication::translate("MainWindow", "Update repos", Q_NULLPTR));
+        label_31->setText(QApplication::translate("MainWindow", "Upgrade repos", 0));
+        label_14->setText(QApplication::translate("MainWindow", "Update repos", 0));
 #ifndef QT_NO_TOOLTIP
-        basicPackagesInstallButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>installpackages1-minimal of ubuntupackages on git for normal users</p></body></html>", Q_NULLPTR));
+        basicPackagesInstallButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>installpackages1-minimal of ubuntupackages on git for normal users</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         basicPackagesInstallButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         basicPackagesInstallButton->setText(QString());
         basicPackagesInstallButton->setShortcut(QString());
-        label_25->setText(QApplication::translate("MainWindow", "Exec normal user installation script", Q_NULLPTR));
+        label_25->setText(QApplication::translate("MainWindow", "Exec normal user installation script", 0));
 #ifndef QT_NO_TOOLTIP
-        updateAndUpgradeButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p><p>apt-fast -y upgrade</p></body></html>", Q_NULLPTR));
+        updateAndUpgradeButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p><p>apt-fast -y upgrade</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         updateAndUpgradeButton->setWhatsThis(QString());
@@ -1190,17 +1190,17 @@ public:
         updateAndUpgradeButton->setText(QString());
         updateAndUpgradeButton->setShortcut(QString());
 #ifndef QT_NO_TOOLTIP
-        cleanButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -f install</p><p>apt-fast -y autoremove</p><p>apt-fast -y autoclean</p><p>apt-fast -y clean</p></body></html>", Q_NULLPTR));
+        cleanButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -f install</p><p>apt-fast -y autoremove</p><p>apt-fast -y autoclean</p><p>apt-fast -y clean</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         cleanButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         cleanButton->setText(QString());
         cleanButton->setShortcut(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "Normal user", Q_NULLPTR));
-        label_60->setText(QApplication::translate("MainWindow", "Upgrade to latest stable", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "Normal user", 0));
+        label_60->setText(QApplication::translate("MainWindow", "Upgrade to latest stable", 0));
 #ifndef QT_NO_TOOLTIP
-        cleanKernelsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Recover space from unused kernels</p></body></html>", Q_NULLPTR));
+        cleanKernelsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Recover space from unused kernels</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         cleanKernelsButton->setWhatsThis(QString());
@@ -1208,87 +1208,87 @@ public:
         cleanKernelsButton->setText(QString());
         cleanKernelsButton->setShortcut(QString());
 #ifndef QT_NO_TOOLTIP
-        dist_upgradeButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p><p>apt-fast -y dist-upgrade</p></body></html>", Q_NULLPTR));
+        dist_upgradeButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>apt-fast -y update</p><p>apt-fast -y dist-upgrade</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         dist_upgradeButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         dist_upgradeButton->setText(QString());
         dist_upgradeButton->setShortcut(QString());
-        label_17->setText(QApplication::translate("MainWindow", "Smart packages update", Q_NULLPTR));
-        label_59->setText(QApplication::translate("MainWindow", "Clean ancient kernels", Q_NULLPTR));
+        label_17->setText(QApplication::translate("MainWindow", "Smart packages update", 0));
+        label_59->setText(QApplication::translate("MainWindow", "Clean ancient kernels", 0));
 #ifndef QT_NO_TOOLTIP
-        upgradeLatestStableButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>do-release-upgrade</p></body></html>", Q_NULLPTR));
+        upgradeLatestStableButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>do-release-upgrade</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         upgradeLatestStableButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         upgradeLatestStableButton->setText(QString());
         upgradeLatestStableButton->setShortcut(QString());
-        label_26->setText(QApplication::translate("MainWindow", "Install mainline kernel", Q_NULLPTR));
+        label_26->setText(QApplication::translate("MainWindow", "Install mainline kernel", 0));
 #ifndef QT_NO_TOOLTIP
-        installMainlineKernel->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Install latest kernel with ukuu</p></body></html>", Q_NULLPTR));
+        installMainlineKernel->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Install latest kernel with ukuu</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         installMainlineKernel->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         installMainlineKernel->setText(QString());
         installMainlineKernel->setShortcut(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", Q_NULLPTR));
-        label_61->setText(QApplication::translate("MainWindow", "Upgrade to latest dev", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", 0));
+        label_61->setText(QApplication::translate("MainWindow", "Upgrade to latest dev", 0));
 #ifndef QT_NO_TOOLTIP
-        upgradeLatestDevButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>do-release-upgrade -d</p></body></html>", Q_NULLPTR));
+        upgradeLatestDevButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>do-release-upgrade -d</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         upgradeLatestDevButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         upgradeLatestDevButton->setText(QString());
         upgradeLatestDevButton->setShortcut(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "Developer", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "System", Q_NULLPTR));
-        label_28->setText(QApplication::translate("MainWindow", "sudo launchpad-getkeys", Q_NULLPTR));
-        label_2->setText(QApplication::translate("MainWindow", "Check system integrity", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "Developer", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "System", 0));
+        label_28->setText(QApplication::translate("MainWindow", "sudo launchpad-getkeys", 0));
+        label_2->setText(QApplication::translate("MainWindow", "Check system integrity", 0));
 #ifndef QT_NO_WHATSTHIS
         integrityCheckButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         integrityCheckButton->setText(QString());
         integrityCheckButton->setShortcut(QString());
-        label_18->setText(QApplication::translate("MainWindow", "shutdown -Fr now", Q_NULLPTR));
+        label_18->setText(QApplication::translate("MainWindow", "shutdown -Fr now", 0));
 #ifndef QT_NO_WHATSTHIS
         repairNetworkButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         repairNetworkButton->setText(QString());
         repairNetworkButton->setShortcut(QString());
-        label_30->setText(QApplication::translate("MainWindow", "Be careful, your system will reboot", Q_NULLPTR));
-        label_29->setText(QApplication::translate("MainWindow", "Repair missing GPG keys", Q_NULLPTR));
+        label_30->setText(QApplication::translate("MainWindow", "Be careful, your system will reboot", 0));
+        label_29->setText(QApplication::translate("MainWindow", "Repair missing GPG keys", 0));
 #ifndef QT_NO_WHATSTHIS
         repairGPGKeys->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         repairGPGKeys->setText(QString());
         repairGPGKeys->setShortcut(QString());
-        label_27->setText(QApplication::translate("MainWindow", "sudo service network-manager restart", Q_NULLPTR));
-        label_9->setText(QApplication::translate("MainWindow", "Repair network", Q_NULLPTR));
+        label_27->setText(QApplication::translate("MainWindow", "sudo service network-manager restart", 0));
+        label_9->setText(QApplication::translate("MainWindow", "Repair network", 0));
         label_39->setText(QApplication::translate("MainWindow", "If you lost \"sudo\" function try with \"pkexec\" to fix crashes.\n"
 "Also you can enter in secure mode, exec \"mount -o remount,rw / \"\n"
-"and restore that you want with elevated permissions.", Q_NULLPTR));
-        label_40->setText(QApplication::translate("MainWindow", "Repair tips", Q_NULLPTR));
-        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/2", Q_NULLPTR));
-        label_3->setText(QApplication::translate("MainWindow", "Fix broken packages (click on each step and check if is solved)", Q_NULLPTR));
+"and restore that you want with elevated permissions.", 0));
+        label_40->setText(QApplication::translate("MainWindow", "Repair tips", 0));
+        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/2", 0));
+        label_3->setText(QApplication::translate("MainWindow", "Fix broken packages (click on each step and check if is solved)", 0));
         label_22->setText(QApplication::translate("MainWindow", "apt-fast -f install && apt-fast -y autoremove && apt-fast -y autoclean &&\n"
-"apt-fast -y clean", Q_NULLPTR));
-        label_20->setText(QApplication::translate("MainWindow", "apt-fast -y --fix-broken install", Q_NULLPTR));
+"apt-fast -y clean", 0));
+        label_20->setText(QApplication::translate("MainWindow", "apt-fast -y --fix-broken install", 0));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_1->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_1->setText(QString());
         fixBrokenPackagesButton_1->setShortcut(QString());
-        label_21->setText(QApplication::translate("MainWindow", "rm /var/lib/apt/lists/* -vf && apt-fast -y update", Q_NULLPTR));
+        label_21->setText(QApplication::translate("MainWindow", "rm /var/lib/apt/lists/* -vf && apt-fast -y update", 0));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_2->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_2->setText(QString());
         fixBrokenPackagesButton_2->setShortcut(QString());
-        label_19->setText(QApplication::translate("MainWindow", "apt-fast -y update && apt-fast -y upgrade", Q_NULLPTR));
+        label_19->setText(QApplication::translate("MainWindow", "apt-fast -y update && apt-fast -y upgrade", 0));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_3->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1300,7 +1300,7 @@ public:
         fixBrokenPackagesButton_4->setText(QString());
         fixBrokenPackagesButton_4->setShortcut(QString());
         label_24->setText(QApplication::translate("MainWindow", "Open Ubuntu Software Center\n"
-" & click repair if proceed", Q_NULLPTR));
+" & click repair if proceed", 0));
 #ifndef QT_NO_WHATSTHIS
         fixBrokenPackagesButton_5->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1311,21 +1311,21 @@ public:
 #endif // QT_NO_WHATSTHIS
         fixBrokenPackagesButton_6->setText(QString());
         fixBrokenPackagesButton_6->setShortcut(QString());
-        label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
-        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.07.30", Q_NULLPTR));
+        label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", 0));
+        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", 0));
+        label->setText(QApplication::translate("MainWindow", "v2017.07.30", 0));
 #ifndef QT_NO_TOOLTIP
-        updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
+        updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
         updateAppButton->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts manually</p></body></html>", Q_NULLPTR));
+        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts manually</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
         updateScriptsButton->setText(QString());
-        menuNuevo->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));
-        menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", Q_NULLPTR));
-        menuAyuda->setTitle(QApplication::translate("MainWindow", "Help", Q_NULLPTR));
+        menuNuevo->setTitle(QApplication::translate("MainWindow", "File", 0));
+        menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", 0));
+        menuAyuda->setTitle(QApplication::translate("MainWindow", "Help", 0));
     } // retranslateUi
 
 };
