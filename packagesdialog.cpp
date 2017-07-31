@@ -3,7 +3,9 @@
 #include "ui_mainwindow.h"
 #include "rootfilesysproxymodel.h"
 #include <QMessageBox>
+#include <QFile>
 #include <QFileDialog>
+#include <QTextStream>
 #include "packagesdialog.h"
 #include "ui_packagesdialog.h"
 
@@ -20,6 +22,26 @@ PackagesDialog::PackagesDialog(QWidget *parent) :
       //fsModel->setFilterRegExp(QRegExp(".png", Qt::CaseInsensitive,QRegExp::FixedString));
       fsModel->setFilterKeyColumn(1);
       ui->treeView->expandAll();
+
+      //Get and show number of packages
+
+      system("find ~/.ubunsys/downloads/ubuntupackages-master/apps1 -type f | wc -l >> ~/.ubunsys/files/packagesNumber");
+      system("echo  packages >> ~/.ubunsys/files/packagesNumber");
+
+      QFile file (QDir::homePath() + "/.ubunsys/files/packagesNumber");
+
+      if(!file.open(QIODevice::ReadOnly))
+          QMessageBox::information(0,"info",file.errorString());
+
+      QTextStream in (&file);
+
+      ui->statusBar->showMessage(in.readAll());
+
+      //ui->textBrowser->setText(in.readAll());
+
+      //ui->statusBar->showMessage(tr(in.readAll()));
+
+      system("rm -Rf ~/.ubunsys/files/packagesNumber");
 }
 
 PackagesDialog::~PackagesDialog()
