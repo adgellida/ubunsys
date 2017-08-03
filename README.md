@@ -117,6 +117,15 @@ Tutorial
 
 Push [here](https://github.com/adgellida/ubunsys/wiki/Tutorial_en) to go to wiki.
 
+Dependencies
+=============================================
+
+`libqt5gui5, libqt5widgets5, libqt5core5a, git`
+
+Through PPA:
+
+`apt-fast`
+
 TO DO
 =============================================
 
