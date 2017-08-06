@@ -10,8 +10,12 @@ UpdateScriptsDialog::UpdateScriptsDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->progressBar->setValue(0);
     ui->statusBar->showMessage(tr("Push to check scripts version and update if necessary."));
+
+    connect(ui->closeUpdateDialogButton, SIGNAL(clicked()),this, SIGNAL(CloseClicked()) );//////////
+
+    ui->textBrowser->setText(tr("Waiting selection..."));
+    ui->progressBar->setValue(0);
 }
 
 UpdateScriptsDialog::~UpdateScriptsDialog()
@@ -19,8 +23,11 @@ UpdateScriptsDialog::~UpdateScriptsDialog()
     delete ui;
 }
 
-void UpdateScriptsDialog::on_pushButton_clicked()
+void UpdateScriptsDialog::on_checkButton_clicked()
 {
+    system("rm -Rf ~/.ubunsys/updates/updateLog.log");
+    system("touch ~/.ubunsys/updates/updateLog.log");
+
     ui->textBrowser->clear();
     ui->textBrowser->setText(tr("Checking..."));
 
@@ -42,6 +49,11 @@ void UpdateScriptsDialog::on_pushButton_clicked()
     ui->statusBar->showMessage(tr("Checking apt-fast. Please wait..."));
     system("/usr/share/ubunsys/apt-fastChecking.sh");
 
+    //######## Update ubunsys
+    ui->progressBar->setValue(85);
+    ui->statusBar->showMessage(tr("Checking ubunsys. Please wait..."));
+    system("/usr/share/ubunsys/updateUbunsys.sh");
+
     ui->progressBar->setValue(100);
 
     ui->statusBar->showMessage(tr("Scripts version checked and updated if necessary. Close this window!"));
@@ -58,6 +70,15 @@ void UpdateScriptsDialog::on_pushButton_clicked()
     ui->textBrowser->setText(in.readAll());
 
     //QFile::remove(QDir::homePath() + "/.ubunsys/updates/updateLog.log");
-    system("rm -Rf ~/.ubunsys/updates/updateLog.log");
+    //system("rm -Rf ~/.ubunsys/updates/updateLog.log");
+    //system("touch ~/.ubunsys/updates/updateLog.log");
 
+}
+
+void UpdateScriptsDialog::on_closeUpdateDialogButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Push to check scripts version and update if necessary."));
+
+    ui->textBrowser->setText(tr("Waiting selection..."));
+    ui->progressBar->setValue(0);
 }

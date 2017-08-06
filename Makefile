@@ -81,7 +81,8 @@ OBJECTS       = main.o \
 		moc_packagesdialog.o \
 		moc_rootfilesysproxymodel.o \
 		moc_updatescriptsdialog.o
-DIST          = ../../.Qt5.7.1/5.7/gcc_64/mkspecs/features/spec_pre.prf \
+DIST          = scripts/updateUbunsys.sh \
+		../../.Qt5.7.1/5.7/gcc_64/mkspecs/features/spec_pre.prf \
 		../../.Qt5.7.1/5.7/gcc_64/mkspecs/common/unix.conf \
 		../../.Qt5.7.1/5.7/gcc_64/mkspecs/common/linux.conf \
 		../../.Qt5.7.1/5.7/gcc_64/mkspecs/common/sanitize.conf \
@@ -614,6 +615,7 @@ qrc_ubunsys.cpp: ubunsys.qrc \
 		../../.Qt5.7.1/5.7/gcc_64/bin/rcc \
 		images/flecha_arriba.png \
 		images/open.png \
+		images/orange-up-24.png \
 		images/kernel.jpg \
 		images/paste.png \
 		images/repair.png \
@@ -857,6 +859,9 @@ moc_mainwindow.cpp: ../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMainWindow \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/bin/moc
 	/home/usuario/.Qt5.7.1/5.7/gcc_64/bin/moc $(DEFINES) -I/home/usuario/.Qt5.7.1/5.7/gcc_64/mkspecs/linux-g++ -I/home/usuario/githubProjects/ubunsys -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtWidgets -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtGui -I/home/usuario/.Qt5.7.1/5.7/gcc_64/include/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
@@ -1404,6 +1409,9 @@ main.o: main.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QApplication \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qapplication.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
@@ -1627,6 +1635,9 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
@@ -1675,9 +1686,6 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
 		updatescriptsdialog.cpp \
-		updatescriptsdialog.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		ui_updatescriptsdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QProgressBar \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qprogressbar.h \
@@ -1901,6 +1909,9 @@ toolbartab.o: toolbartab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
@@ -2165,6 +2176,9 @@ repairtab.o: repairtab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
@@ -2429,6 +2443,9 @@ systemtab.o: systemtab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
@@ -2693,6 +2710,9 @@ tweakstab.o: tweakstab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
@@ -2742,7 +2762,6 @@ tweakstab.o: tweakstab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QFileDialog \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qfiledialog.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMessageBox \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QCoreApplication \
@@ -2964,6 +2983,9 @@ updatezone.o: updatezone.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
@@ -3230,6 +3252,9 @@ packagestab.o: packagestab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
@@ -3277,10 +3302,7 @@ packagestab.o: packagestab.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qtextformat.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/qpen.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QWidget \
-		packagesdialog.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
-		updatescriptsdialog.h
+		packagesdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o packagestab.o packagestab.cpp
 
 about.o: about.cpp mainwindow.h \
@@ -3498,9 +3520,11 @@ about.o: about.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMessageBox \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmessagebox.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o about.o about.cpp
 
@@ -3719,9 +3743,11 @@ tutorial.o: tutorial.cpp mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QDebug \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMessageBox \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmessagebox.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o tutorial.o tutorial.cpp
 
@@ -3940,6 +3966,9 @@ packagesdialog.o: packagesdialog.cpp ../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QD
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qxmlstream.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/qtcoreversion.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSettings \
+		updatescriptsdialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QVariant \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QAction \
@@ -3994,11 +4023,10 @@ packagesdialog.o: packagesdialog.cpp ../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QD
 		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QSortFilterProxyModel \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QMessageBox \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qmessagebox.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QFileDialog \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qfiledialog.h \
+		../../.Qt5.7.1/5.7/gcc_64/include/QtCore/QTextStream \
 		packagesdialog.h \
-		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QDialog \
 		ui_packagesdialog.h \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/QGridLayout \
 		../../.Qt5.7.1/5.7/gcc_64/include/QtWidgets/qgridlayout.h \

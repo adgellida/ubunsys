@@ -123,7 +123,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -520,9 +520,9 @@ templates</string>
         <property name="geometry">
          <rect>
           <x>200</x>
-          <y>320</y>
+          <y>310</y>
           <width>471</width>
-          <height>71</height>
+          <height>81</height>
          </rect>
         </property>
        </widget>
@@ -530,7 +530,7 @@ templates</string>
         <property name="geometry">
          <rect>
           <x>200</x>
-          <y>300</y>
+          <y>290</y>
           <width>471</width>
           <height>16</height>
          </rect>
@@ -542,7 +542,7 @@ templates</string>
          </font>
         </property>
         <property name="text">
-         <string>Log silent update scripts check when app opens</string>
+         <string>Log update scripts</string>
         </property>
        </widget>
       </widget>
@@ -3140,7 +3140,7 @@ apt-fast -y clean</string>
       <normaloff>:/images/flecha_arriba.png</normaloff>:/images/flecha_arriba.png</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="updateScriptsButton">
+   <widget class="QPushButton" name="manualUpdateDialogButton">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -3158,6 +3158,26 @@ apt-fast -y clean</string>
     <property name="icon">
      <iconset resource="ubunsys.qrc">
       <normaloff>:/images/upgrade.png</normaloff>:/images/upgrade.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="seeReleasesButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>40</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update program&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="ubunsys.qrc">
+      <normaloff>:/images/orange-up-24.png</normaloff>:/images/orange-up-24.png</iconset>
     </property>
    </widget>
   </widget>

@@ -36,7 +36,8 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += ubunsys.qrc
 
-DISTFILES +=
+DISTFILES += \
+    scripts/updateUbunsys.sh
 
 TRANSLATIONS += languages/ubunsys_es_ES.ts
 
@@ -56,5 +57,7 @@ updateUbuntupackages.path = /usr/share/ubunsys
 updateUbuntupackages.files = $$PWD/scripts/updateUbuntupackages.sh
 updateUbuntuScripts.path = /usr/share/ubunsys
 updateUbuntuScripts.files = $$PWD/scripts/updateUbuntuScripts.sh
+updateUbunsys.path = /usr/share/ubunsys
+updateUbunsys.files = $$PWD/scripts/updateUbunsys.sh
 
 INSTALLS += target desktop icon apt-fastChecking updateUbuntupackages updateUbuntuScripts

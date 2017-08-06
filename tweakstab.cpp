@@ -8,7 +8,6 @@
 
 ///////////////////////TWEAKS TAB///////////////////////
 
-
 //##Security & Passwords
 
 void MainWindow::on_enableSudoWithoutPassAllButton_clicked()
@@ -529,3 +528,5 @@ void MainWindow::on_openSudoersDButton_clicked()
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+
+

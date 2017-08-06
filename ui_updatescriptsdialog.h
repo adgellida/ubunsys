@@ -26,9 +26,10 @@ class Ui_UpdateScriptsDialog
 {
 public:
     QProgressBar *progressBar;
-    QPushButton *pushButton;
+    QPushButton *checkButton;
     QStatusBar *statusBar;
     QTextBrowser *textBrowser;
+    QPushButton *closeUpdateDialogButton;
 
     void setupUi(QDialog *UpdateScriptsDialog)
     {
@@ -39,16 +40,19 @@ public:
         progressBar->setObjectName(QStringLiteral("progressBar"));
         progressBar->setGeometry(QRect(140, 30, 201, 23));
         progressBar->setValue(0);
-        pushButton = new QPushButton(UpdateScriptsDialog);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(200, 70, 80, 22));
+        checkButton = new QPushButton(UpdateScriptsDialog);
+        checkButton->setObjectName(QStringLiteral("checkButton"));
+        checkButton->setGeometry(QRect(140, 70, 80, 22));
         statusBar = new QStatusBar(UpdateScriptsDialog);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         statusBar->setEnabled(true);
         statusBar->setGeometry(QRect(0, 190, 491, 21));
         textBrowser = new QTextBrowser(UpdateScriptsDialog);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
-        textBrowser->setGeometry(QRect(10, 110, 471, 71));
+        textBrowser->setGeometry(QRect(10, 110, 471, 81));
+        closeUpdateDialogButton = new QPushButton(UpdateScriptsDialog);
+        closeUpdateDialogButton->setObjectName(QStringLiteral("closeUpdateDialogButton"));
+        closeUpdateDialogButton->setGeometry(QRect(250, 70, 80, 22));
 
         retranslateUi(UpdateScriptsDialog);
 
@@ -58,7 +62,8 @@ public:
     void retranslateUi(QDialog *UpdateScriptsDialog)
     {
         UpdateScriptsDialog->setWindowTitle(QApplication::translate("UpdateScriptsDialog", "Manual check if scripts update is required...", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("UpdateScriptsDialog", "Check", Q_NULLPTR));
+        checkButton->setText(QApplication::translate("UpdateScriptsDialog", "Check", Q_NULLPTR));
+        closeUpdateDialogButton->setText(QApplication::translate("UpdateScriptsDialog", "Close", Q_NULLPTR));
     } // retranslateUi
 
 };

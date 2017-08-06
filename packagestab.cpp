@@ -12,9 +12,9 @@ void MainWindow::on_runScriptsManager_clicked()
     packagesDialog.exec();
 }
 
-void MainWindow::on_runUpdateDialog_clicked()
-{
-    UpdateScriptsDialog updateScriptsDialog;
-    updateScriptsDialog.setModal(true);
-    updateScriptsDialog.exec();
-}
+//void MainWindow::on_runUpdateDialog_clicked()
+//{
+//    UpdateScriptsDialog updateScriptsDialog;
+//    updateScriptsDialog.setModal(true);
+//    updateScriptsDialog.exec();
+//}

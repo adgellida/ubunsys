@@ -117,6 +117,11 @@ Tutorial
 
 Pulsa [aquí](https://github.com/adgellida/ubunsys/wiki/Tutorial_es) para ir a la wiki.
 
+Cómo puedo ayudar?
+=============================================
+
+Puedes crear un nuevo [asunto]https://github.com/adgellida/ubunsys/issues/new con un error, proponiendo nuevas funcinalidades, añadiendo nuevos paquetes, ayudando en el desarrollo, etc...
+
 Dependencias
 =============================================
 

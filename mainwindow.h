@@ -11,6 +11,7 @@
 #include <QtCore>
 #include <QDebug>
 #include <QSettings>
+#include <updatescriptsdialog.h>//////////
 
 namespace Ui {
 class MainWindow;
@@ -26,8 +27,11 @@ public:
 
 public slots:
 
+    void closeUpdateDialog();///////////////
 
 private slots:
+
+    void on_manualUpdateDialogButton_released();////////////
 
     void on_actionNew_triggered();
 
@@ -111,7 +115,7 @@ private slots:
 
     void on_disableFirewallButton_clicked();
 
-    void on_updateScriptsButton_clicked();
+    //void on_updateScriptsButton_clicked();
 
     void on_updateAppButton_clicked();
 
@@ -155,11 +159,13 @@ private slots:
 
     void on_openSudoersDButton_clicked();
 
-    void on_runUpdateDialog_clicked();
+    //void on_runUpdateDialog_clicked();
+
+    void on_seeReleasesButton_clicked();
 
 private:
     Ui::MainWindow *ui;
-
+    UpdateScriptsDialog *Dia;/////////////
 };
 
 #endif // MAINWINDOW_H

@@ -26,5 +26,6 @@
         <file>languages/ubunsys_es_ES.ts</file>
         <file>images/ubunsys.png</file>
         <file>images/ubunsys.ico</file>
+        <file>images/orange-up-24.png</file>
     </qresource>
 </RCC>

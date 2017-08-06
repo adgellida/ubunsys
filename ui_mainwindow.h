@@ -162,7 +162,8 @@ public:
     QLabel *label_23;
     QLabel *label;
     QPushButton *updateAppButton;
-    QPushButton *updateScriptsButton;
+    QPushButton *manualUpdateDialogButton;
+    QPushButton *seeReleasesButton;
     QMenuBar *menuBar;
     QMenu *menuNuevo;
     QMenu *menuEdici_n;
@@ -344,10 +345,10 @@ public:
         label_38->setFont(font1);
         textBrowser = new QTextBrowser(tab_6);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
-        textBrowser->setGeometry(QRect(200, 320, 471, 71));
+        textBrowser->setGeometry(QRect(200, 310, 471, 81));
         label_41 = new QLabel(tab_6);
         label_41->setObjectName(QStringLiteral("label_41"));
-        label_41->setGeometry(QRect(200, 300, 471, 16));
+        label_41->setGeometry(QRect(200, 290, 471, 16));
         label_41->setFont(font);
         tabWidget_3->addTab(tab_6, QString());
         tab_7 = new QWidget();
@@ -882,10 +883,16 @@ public:
         updateAppButton->setObjectName(QStringLiteral("updateAppButton"));
         updateAppButton->setGeometry(QRect(470, 10, 40, 23));
         updateAppButton->setIcon(icon11);
-        updateScriptsButton = new QPushButton(centralWidget);
-        updateScriptsButton->setObjectName(QStringLiteral("updateScriptsButton"));
-        updateScriptsButton->setGeometry(QRect(520, 10, 40, 23));
-        updateScriptsButton->setIcon(icon9);
+        manualUpdateDialogButton = new QPushButton(centralWidget);
+        manualUpdateDialogButton->setObjectName(QStringLiteral("manualUpdateDialogButton"));
+        manualUpdateDialogButton->setGeometry(QRect(520, 10, 40, 23));
+        manualUpdateDialogButton->setIcon(icon9);
+        seeReleasesButton = new QPushButton(centralWidget);
+        seeReleasesButton->setObjectName(QStringLiteral("seeReleasesButton"));
+        seeReleasesButton->setGeometry(QRect(420, 10, 40, 23));
+        QIcon icon19;
+        icon19.addFile(QStringLiteral(":/images/orange-up-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+        seeReleasesButton->setIcon(icon19);
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -917,7 +924,7 @@ public:
 
         tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(0);
-        tabWidget_3->setCurrentIndex(1);
+        tabWidget_3->setCurrentIndex(3);
         tabWidget_4->setCurrentIndex(0);
         tabWidget_5->setCurrentIndex(0);
 
@@ -1013,7 +1020,7 @@ public:
 "sources.list\n"
 "sudoers\n"
 "templates", Q_NULLPTR));
-        label_41->setText(QApplication::translate("MainWindow", "Log silent update scripts check when app opens", Q_NULLPTR));
+        label_41->setText(QApplication::translate("MainWindow", "Log update scripts", Q_NULLPTR));
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/4", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         installTemplatesButton->setWhatsThis(QString());
@@ -1320,9 +1327,13 @@ public:
 #endif // QT_NO_TOOLTIP
         updateAppButton->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts manually</p></body></html>", Q_NULLPTR));
+        manualUpdateDialogButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts manually</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        updateScriptsButton->setText(QString());
+        manualUpdateDialogButton->setText(QString());
+#ifndef QT_NO_TOOLTIP
+        seeReleasesButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        seeReleasesButton->setText(QString());
         menuNuevo->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));
         menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", Q_NULLPTR));
         menuAyuda->setTitle(QApplication::translate("MainWindow", "Help", Q_NULLPTR));

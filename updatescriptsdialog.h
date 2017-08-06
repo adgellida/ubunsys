@@ -15,8 +15,13 @@ public:
     explicit UpdateScriptsDialog(QWidget *parent = 0);
     ~UpdateScriptsDialog();
 
+signals:
+    void CloseClicked();///////////
+
 private slots:
-    void on_pushButton_clicked();
+    void on_checkButton_clicked();
+
+    void on_closeUpdateDialogButton_clicked();
 
 private:
     Ui::UpdateScriptsDialog *ui;
