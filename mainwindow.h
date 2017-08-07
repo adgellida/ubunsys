@@ -99,9 +99,9 @@ private slots:
 
     void on_disableSudoWithoutPassAllButton_clicked();
 
-    void on_enableSudoWithoutPassUbunsysButton_clicked();
+    void on_enableSudoWithoutPassSpecificButton_clicked();
 
-    void on_disableSudoWithoutPassUbunsysButton_clicked();
+    void on_disableSudoWithoutPassSpecificButton_clicked();
 
     void on_openSudoersFileButton_clicked();
 
@@ -136,10 +136,6 @@ private slots:
     void on_enableLoginSoundButton_clicked();
 
     void on_disableLoginSoundButton_clicked();
-
-    void on_openSudoersAllModButton_clicked();
-
-    void on_openSudoersUbunsysModButton_clicked();
 
     void on_aptselect_US_clicked();
 

@@ -2,6 +2,12 @@
 #
 # Project created by QtCreator 2014-12-17T12:13:28
 #
+# ubunsys
+#
+# Copyright (c) 2017 all rights reserved - GPL v2
+# Antonio David Gellida Lavara - adgellida@gmail.com
+# adgellida
+#
 #-------------------------------------------------
 
 QT       += core gui
@@ -36,8 +42,7 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += ubunsys.qrc
 
-DISTFILES += \
-    scripts/updateUbunsys.sh
+DISTFILES +=
 
 TRANSLATIONS += languages/ubunsys_es_ES.ts
 
@@ -60,4 +65,4 @@ updateUbuntuScripts.files = $$PWD/scripts/updateUbuntuScripts.sh
 updateUbunsys.path = /usr/share/ubunsys
 updateUbunsys.files = $$PWD/scripts/updateUbunsys.sh
 
-INSTALLS += target desktop icon apt-fastChecking updateUbuntupackages updateUbuntuScripts
+INSTALLS += target desktop icon apt-fastChecking updateUbuntupackages updateUbuntuScripts updateUbunsys

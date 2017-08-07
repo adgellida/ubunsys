@@ -1687,40 +1687,9 @@ Set to default</string>
          <string>Security &amp; Passwords</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="openSudoersUbunsysModButton">
+       <widget class="QPushButton" name="disableSudoWithoutPassSpecificButton">
         <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>130</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Open 'sudoers ubunsys mod'</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="disableSudoWithoutPassUbunsysButton">
-        <property name="enabled">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
         <property name="geometry">
          <rect>
@@ -1734,7 +1703,7 @@ Set to default</string>
          <string/>
         </property>
         <property name="text">
-         <string>Disable sudo without pass ubunsys</string>
+         <string>Disable sudo without pass specific</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1749,9 +1718,9 @@ Set to default</string>
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QPushButton" name="enableSudoWithoutPassUbunsysButton">
+       <widget class="QPushButton" name="enableSudoWithoutPassSpecificButton">
         <property name="enabled">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
         <property name="geometry">
          <rect>
@@ -1775,35 +1744,7 @@ Set to default</string>
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
-         <string>Enable sudo without pass ubunsys</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="openSudoersAllModButton">
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>30</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Open 'sudoers all mod'</string>
+         <string>Enable sudo without pass specific</string>
         </property>
         <property name="iconSize">
          <size>
@@ -3117,7 +3058,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.07.30</string>
+     <string>v2017.08.07</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">
@@ -3170,7 +3111,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update program&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;See releases&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="text">
      <string/>

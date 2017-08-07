@@ -101,10 +101,8 @@ public:
     QPushButton *enableSudoWithoutPassAllButton;
     QPushButton *disableSudoWithoutPassAllButton;
     QLabel *label_10;
-    QPushButton *openSudoersUbunsysModButton;
-    QPushButton *disableSudoWithoutPassUbunsysButton;
-    QPushButton *enableSudoWithoutPassUbunsysButton;
-    QPushButton *openSudoersAllModButton;
+    QPushButton *disableSudoWithoutPassSpecificButton;
+    QPushButton *enableSudoWithoutPassSpecificButton;
     QPushButton *openSudoersDButton;
     QWidget *tab;
     QTabWidget *tabWidget_4;
@@ -561,34 +559,23 @@ public:
         label_10->setObjectName(QStringLiteral("label_10"));
         label_10->setGeometry(QRect(10, 10, 221, 16));
         label_10->setFont(font);
-        openSudoersUbunsysModButton = new QPushButton(tab_5);
-        openSudoersUbunsysModButton->setObjectName(QStringLiteral("openSudoersUbunsysModButton"));
-        openSudoersUbunsysModButton->setEnabled(false);
-        openSudoersUbunsysModButton->setGeometry(QRect(280, 130, 221, 36));
-        openSudoersUbunsysModButton->setIconSize(QSize(30, 30));
-        openSudoersUbunsysModButton->setCheckable(false);
-        disableSudoWithoutPassUbunsysButton = new QPushButton(tab_5);
-        disableSudoWithoutPassUbunsysButton->setObjectName(QStringLiteral("disableSudoWithoutPassUbunsysButton"));
-        disableSudoWithoutPassUbunsysButton->setEnabled(false);
-        disableSudoWithoutPassUbunsysButton->setGeometry(QRect(10, 170, 251, 36));
-        disableSudoWithoutPassUbunsysButton->setIconSize(QSize(30, 30));
-        disableSudoWithoutPassUbunsysButton->setCheckable(false);
-        enableSudoWithoutPassUbunsysButton = new QPushButton(tab_5);
-        enableSudoWithoutPassUbunsysButton->setObjectName(QStringLiteral("enableSudoWithoutPassUbunsysButton"));
-        enableSudoWithoutPassUbunsysButton->setEnabled(false);
-        enableSudoWithoutPassUbunsysButton->setGeometry(QRect(10, 130, 251, 36));
+        disableSudoWithoutPassSpecificButton = new QPushButton(tab_5);
+        disableSudoWithoutPassSpecificButton->setObjectName(QStringLiteral("disableSudoWithoutPassSpecificButton"));
+        disableSudoWithoutPassSpecificButton->setEnabled(true);
+        disableSudoWithoutPassSpecificButton->setGeometry(QRect(10, 170, 251, 36));
+        disableSudoWithoutPassSpecificButton->setIconSize(QSize(30, 30));
+        disableSudoWithoutPassSpecificButton->setCheckable(false);
+        enableSudoWithoutPassSpecificButton = new QPushButton(tab_5);
+        enableSudoWithoutPassSpecificButton->setObjectName(QStringLiteral("enableSudoWithoutPassSpecificButton"));
+        enableSudoWithoutPassSpecificButton->setEnabled(true);
+        enableSudoWithoutPassSpecificButton->setGeometry(QRect(10, 130, 251, 36));
         QFont font3;
         font3.setBold(false);
         font3.setWeight(50);
         font3.setStyleStrategy(QFont::PreferDefault);
-        enableSudoWithoutPassUbunsysButton->setFont(font3);
-        enableSudoWithoutPassUbunsysButton->setIconSize(QSize(30, 30));
-        enableSudoWithoutPassUbunsysButton->setCheckable(false);
-        openSudoersAllModButton = new QPushButton(tab_5);
-        openSudoersAllModButton->setObjectName(QStringLiteral("openSudoersAllModButton"));
-        openSudoersAllModButton->setGeometry(QRect(280, 30, 221, 36));
-        openSudoersAllModButton->setIconSize(QSize(30, 30));
-        openSudoersAllModButton->setCheckable(false);
+        enableSudoWithoutPassSpecificButton->setFont(font3);
+        enableSudoWithoutPassSpecificButton->setIconSize(QSize(30, 30));
+        enableSudoWithoutPassSpecificButton->setCheckable(false);
         openSudoersDButton = new QPushButton(tab_5);
         openSudoersDButton->setObjectName(QStringLiteral("openSudoersDButton"));
         openSudoersDButton->setGeometry(QRect(10, 230, 221, 36));
@@ -1130,28 +1117,18 @@ public:
         disableSudoWithoutPassAllButton->setShortcut(QString());
         label_10->setText(QApplication::translate("MainWindow", "Security & Passwords", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
-        openSudoersUbunsysModButton->setWhatsThis(QString());
+        disableSudoWithoutPassSpecificButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openSudoersUbunsysModButton->setText(QApplication::translate("MainWindow", "Open 'sudoers ubunsys mod'", Q_NULLPTR));
-        openSudoersUbunsysModButton->setShortcut(QString());
-#ifndef QT_NO_WHATSTHIS
-        disableSudoWithoutPassUbunsysButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        disableSudoWithoutPassUbunsysButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass ubunsys", Q_NULLPTR));
-        disableSudoWithoutPassUbunsysButton->setShortcut(QString());
+        disableSudoWithoutPassSpecificButton->setText(QApplication::translate("MainWindow", "Disable sudo without pass specific", Q_NULLPTR));
+        disableSudoWithoutPassSpecificButton->setShortcut(QString());
 #ifndef QT_NO_TOOLTIP
-        enableSudoWithoutPassUbunsysButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", Q_NULLPTR));
+        enableSudoWithoutPassSpecificButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:400;\">Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.</span></p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        enableSudoWithoutPassUbunsysButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+        enableSudoWithoutPassSpecificButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
-        enableSudoWithoutPassUbunsysButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass ubunsys", Q_NULLPTR));
-        enableSudoWithoutPassUbunsysButton->setShortcut(QString());
-#ifndef QT_NO_WHATSTHIS
-        openSudoersAllModButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        openSudoersAllModButton->setText(QApplication::translate("MainWindow", "Open 'sudoers all mod'", Q_NULLPTR));
-        openSudoersAllModButton->setShortcut(QString());
+        enableSudoWithoutPassSpecificButton->setText(QApplication::translate("MainWindow", "Enable sudo without pass specific", Q_NULLPTR));
+        enableSudoWithoutPassSpecificButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
         openSudoersDButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1321,7 +1298,7 @@ public:
         label_23->setText(QApplication::translate("MainWindow", "dpkg --configure -a && apt-fast -y update", Q_NULLPTR));
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Repair 2/2", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.07.30", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.08.07", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
@@ -1331,7 +1308,7 @@ public:
 #endif // QT_NO_TOOLTIP
         manualUpdateDialogButton->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        seeReleasesButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
+        seeReleasesButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>See releases</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         seeReleasesButton->setText(QString());
         menuNuevo->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));

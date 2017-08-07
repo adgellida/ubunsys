@@ -81,8 +81,7 @@ OBJECTS       = main.o \
 		moc_packagesdialog.o \
 		moc_rootfilesysproxymodel.o \
 		moc_updatescriptsdialog.o
-DIST          = scripts/updateUbunsys.sh \
-		../../.Qt5.7.1/5.7/gcc_64/mkspecs/features/spec_pre.prf \
+DIST          = ../../.Qt5.7.1/5.7/gcc_64/mkspecs/features/spec_pre.prf \
 		../../.Qt5.7.1/5.7/gcc_64/mkspecs/common/unix.conf \
 		../../.Qt5.7.1/5.7/gcc_64/mkspecs/common/linux.conf \
 		../../.Qt5.7.1/5.7/gcc_64/mkspecs/common/sanitize.conf \
@@ -4213,9 +4212,19 @@ uninstall_updateUbuntuScripts: FORCE
 	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/ubunsys/ 
 
 
-install: install_target install_desktop install_icon install_apt-fastChecking install_updateUbuntupackages install_updateUbuntuScripts  FORCE
+install_updateUbunsys: first FORCE
+	@test -d $(INSTALL_ROOT)/usr/share/ubunsys || mkdir -p $(INSTALL_ROOT)/usr/share/ubunsys
+	-$(INSTALL_PROGRAM) /home/usuario/githubProjects/ubunsys/scripts/updateUbunsys.sh $(INSTALL_ROOT)/usr/share/ubunsys/
+	-strip $(INSTALL_ROOT)/usr/share/ubunsys/updateUbunsys.sh
 
-uninstall: uninstall_target uninstall_desktop uninstall_icon uninstall_apt-fastChecking uninstall_updateUbuntupackages uninstall_updateUbuntuScripts  FORCE
+uninstall_updateUbunsys: FORCE
+	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/ubunsys/updateUbunsys.sh
+	-$(DEL_DIR) $(INSTALL_ROOT)/usr/share/ubunsys/ 
+
+
+install: install_target install_desktop install_icon install_apt-fastChecking install_updateUbuntupackages install_updateUbuntuScripts install_updateUbunsys  FORCE
+
+uninstall: uninstall_target uninstall_desktop uninstall_icon uninstall_apt-fastChecking uninstall_updateUbuntupackages uninstall_updateUbuntuScripts uninstall_updateUbunsys  FORCE
 
 FORCE:
 

@@ -36,12 +36,12 @@ void MainWindow::on_disableSudoWithoutPassAllButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-void MainWindow::on_enableSudoWithoutPassUbunsysButton_clicked()
+void MainWindow::on_enableSudoWithoutPassSpecificButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Enabling sudo without pass"));
+    ui->statusBar->showMessage(tr("Enabling sudo without pass specific"));
 
     system("x-terminal-emulator -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/049.enableSudoWithoutPassUbunsys"
+           "~/.ubunsys/downloads/ubuntuScripts-master/052.enableSudoWithoutPassSpecific"
            " && "
            "exit"
            "; exec bash'");
@@ -49,12 +49,12 @@ void MainWindow::on_enableSudoWithoutPassUbunsysButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-void MainWindow::on_disableSudoWithoutPassUbunsysButton_clicked()
+void MainWindow::on_disableSudoWithoutPassSpecificButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
+    ui->statusBar->showMessage(tr("Disabling sudo without pass specific"));
 
     system("x-terminal-emulator -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/050.disableSudoWithoutPassUbunsys"
+           "~/.ubunsys/downloads/ubuntuScripts-master/053.disableSudoWithoutPassSpecific"
            " && "
            "exit"
            "; exec bash'");
@@ -70,32 +70,6 @@ void MainWindow::on_openSudoersFileButton_clicked()
 
     system("x-terminal-emulator -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/027.openSudoersFile"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_openSudoersAllModButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Opening sudoers modification"));
-
-    system("x-terminal-emulator -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/041.openSudoersAllMod"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_openSudoersUbunsysModButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Opening sudoers modification"));
-
-    system("x-terminal-emulator -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/048.openSudoersUbunsysMod"
            " && "
            "echo Close this window!"
            "; exec bash'");
