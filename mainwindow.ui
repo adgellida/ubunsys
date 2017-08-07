@@ -123,7 +123,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -475,6 +475,9 @@
           <height>36</height>
          </rect>
         </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Files on Main backup:&lt;/p&gt;&lt;p&gt;sources.list&lt;/p&gt;&lt;p&gt;sudoers&lt;/p&gt;&lt;p&gt;templates&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="whatsThis">
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
@@ -494,44 +497,22 @@
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QLabel" name="label_38">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>300</y>
-          <width>221</width>
-          <height>111</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Files on Main backup:
-sources.list
-sudoers
-templates</string>
-        </property>
-       </widget>
        <widget class="QTextBrowser" name="textBrowser">
         <property name="geometry">
          <rect>
-          <x>200</x>
-          <y>310</y>
-          <width>471</width>
-          <height>81</height>
+          <x>170</x>
+          <y>290</y>
+          <width>501</width>
+          <height>101</height>
          </rect>
         </property>
        </widget>
        <widget class="QLabel" name="label_41">
         <property name="geometry">
          <rect>
-          <x>200</x>
-          <y>290</y>
-          <width>471</width>
+          <x>170</x>
+          <y>270</y>
+          <width>501</width>
           <height>16</height>
          </rect>
         </property>
@@ -3128,7 +3109,7 @@ apt-fast -y clean</string>
      <x>0</x>
      <y>0</y>
      <width>719</width>
-     <height>19</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">
