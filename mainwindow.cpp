@@ -32,6 +32,8 @@ MainWindow::MainWindow(QWidget *parent) :
            "test -d ~/.ubunsys/updates/ubunsys_check_version || mkdir -p ~/.ubunsys/updates/ubunsys_check_version && "
            "test -d ~/.ubunsys/backups/scriptsFiles || mkdir -p ~/.ubunsys/backups/scriptsFiles && "
            "test -d ~/.ubunsys/backups/sudoersFiles || mkdir -p ~/.ubunsys/backups/sudoersFiles && "
+           "rm -Rf ~/.ubunsys/updates/updateLog.log && "
+           "touch ~/.ubunsys/updates/updateLog.log && "
            "exit"
            "; exec bash'");
 
