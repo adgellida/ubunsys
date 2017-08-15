@@ -36,7 +36,9 @@ debreate files
 *.pro.user
 *.pro.user*
 wget-log*
-#Makefile
-ubunsys
 moc_*
 ui_*
+qrc_*
+
+#Makefile
+/ubunsys
