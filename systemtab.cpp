@@ -109,7 +109,7 @@ void MainWindow::on_upgradeLatestStableButton_clicked()
     ui->statusBar->showMessage(tr("Upgrade to Latest Stable Version did it succesful. Now select another action"));
 }
 
-void MainWindow::on_installMainlineKernel_clicked()
+void MainWindow::on_installMainlineKernels_clicked()
 {
     ui->statusBar->showMessage(tr("Checking if ukuu is installed and we install it if necessary"));
 

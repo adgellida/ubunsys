@@ -134,3 +134,13 @@ void MainWindow::closeUpdateDialog()
 
     Dia->close();
 }
+
+void MainWindow::on_installMainlineKernels_2_clicked()
+{
+
+}
+
+void MainWindow::on_installMainlineKernels_3_clicked()
+{
+
+}

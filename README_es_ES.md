@@ -120,7 +120,7 @@ Pulsa [aquí](https://github.com/adgellida/ubunsys/wiki/Tutorial_es) para ir a l
 Cómo puedo ayudar?
 =============================================
 
-Puedes crear un nuevo [asunto]https://github.com/adgellida/ubunsys/issues/new con un error, proponiendo nuevas funcinalidades, añadiendo nuevos paquetes, ayudando en el desarrollo, etc...
+Puedes crear un nuevo [asunto](https://github.com/adgellida/ubunsys/issues/new) con un error, proponiendo nuevas funcionalidades, añadiendo nuevos paquetes, ayudando en el desarrollo, etc...
 
 Dependencias
 =============================================

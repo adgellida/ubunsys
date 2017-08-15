@@ -121,7 +121,7 @@ private slots:
 
     void on_importSudoersFileButton_clicked();
 
-    void on_installMainlineKernel_clicked();
+    void on_installMainlineKernels_clicked();
 
     void on_runGrubcustomizerButton_clicked();
 
@@ -158,6 +158,10 @@ private slots:
     //void on_runUpdateDialog_clicked();
 
     void on_seeReleasesButton_clicked();
+
+    void on_installMainlineKernels_2_clicked();
+
+    void on_installMainlineKernels_3_clicked();
 
 private:
     Ui::MainWindow *ui;
