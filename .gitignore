@@ -37,6 +37,6 @@ debreate files
 *.pro.user*
 wget-log*
 #Makefile
-#moc_mainwindow.cpp
 ubunsys
 moc_*
+ui_*
