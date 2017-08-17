@@ -12,7 +12,7 @@
     <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
     <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
     <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.08.07/total.svg" alt="total downloads latest release"></a> 
-    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.08.07 alpha-blue.svg" alt="latest release"></a>
+    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.08.07-blue.svg" alt="latest release"></a>
 </p>
 
 <p align="left">
@@ -20,7 +20,8 @@
     <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for xenial-v5.7.1-green.svg" alt="qt version"></a>
     <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for zesty-v5.5.1-green.svg" alt="qt version"></a>
     <a href="https://github.com/adgellida/ubunsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
-    <a href="https://github.com/terkelg/ramme/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
+    <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
+	<a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
 </p>
 
 **Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
