@@ -122,7 +122,7 @@ Push [here](https://github.com/adgellida/ubunsys/wiki/Tutorial_en) to go to wiki
 How can I help?
 =============================================
 
-You can create a new [issue]https://github.com/adgellida/ubunsys/issues/new with an error, proposing new funcitonalities, adding new packages, help on coding, etc...
+You can create a new [issue](https://github.com/adgellida/ubunsys/issues/new) with an error, proposing new funcitonalities, adding new packages, help on coding, etc...
 
 Dependencies
 =============================================
@@ -159,7 +159,6 @@ TO DO
 * First add all selected ppas. Then apt-fast -y update and finally install all selected packages. So, more quick.
 
 * Save user configuration for use it when you re-open app.
-
 
 * Disable keyring.
 
