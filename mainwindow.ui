@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -1785,7 +1785,7 @@ Set to default</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
@@ -2237,7 +2237,7 @@ Set to default</string>
        <widget class="QLabel" name="label_26">
         <property name="geometry">
          <rect>
-          <x>350</x>
+          <x>410</x>
           <y>20</y>
           <width>231</width>
           <height>21</height>
@@ -2256,14 +2256,14 @@ Set to default</string>
        <widget class="QPushButton" name="installMainlineKernels">
         <property name="geometry">
          <rect>
-          <x>300</x>
+          <x>360</x>
           <y>10</y>
           <width>41</width>
           <height>36</height>
          </rect>
         </property>
         <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Install latest kernel with ukuu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select kernels to install with ukuu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="whatsThis">
          <string/>
@@ -2291,14 +2291,14 @@ Set to default</string>
        <widget class="QPushButton" name="installMainlineKernels_2">
         <property name="geometry">
          <rect>
-          <x>300</x>
+          <x>360</x>
           <y>60</y>
           <width>41</width>
           <height>36</height>
          </rect>
         </property>
         <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'monospace'; font-size:12px; color:#333333; background-color:#ffffff;&quot;&gt;pre-release and test kernels&lt;/span&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'monospace'; font-size:12px; color:#333333; background-color:#ffffff;&quot;&gt;pre-release and test kernels. Also on &amp;quot;Scripts Manager&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="whatsThis">
          <string/>
@@ -2326,7 +2326,7 @@ Set to default</string>
        <widget class="QLabel" name="label_38">
         <property name="geometry">
          <rect>
-          <x>350</x>
+          <x>410</x>
           <y>60</y>
           <width>341</width>
           <height>41</height>
@@ -2339,21 +2339,21 @@ Set to default</string>
          </font>
         </property>
         <property name="text">
-         <string>Install latest kernel from
+         <string>Upgrade to latest kernel from
 &quot;PPA for Canonical Kernel Team&quot;</string>
         </property>
        </widget>
        <widget class="QPushButton" name="installMainlineKernels_3">
         <property name="geometry">
          <rect>
-          <x>300</x>
+          <x>360</x>
           <y>110</y>
           <width>41</width>
           <height>36</height>
          </rect>
         </property>
         <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'monospace'; font-size:12px; color:#333333; background-color:#ffffff;&quot;&gt;bootstrapping kernels&lt;/span&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'monospace'; font-size:12px; color:#333333; background-color:#ffffff;&quot;&gt;bootstrapping kernels. Also on &amp;quot;Scripts Manager&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="whatsThis">
          <string/>
@@ -2381,8 +2381,8 @@ Set to default</string>
        <widget class="QLabel" name="label_42">
         <property name="geometry">
          <rect>
-          <x>350</x>
-          <y>110</y>
+          <x>410</x>
+          <y>100</y>
           <width>341</width>
           <height>51</height>
          </rect>
@@ -2394,9 +2394,64 @@ Set to default</string>
          </font>
         </property>
         <property name="text">
-         <string>Install latest kernel from
+         <string>Upgrade to latest kernel from
 &quot;PPA for Canonical Kernel Team&quot;
 Bootstrap Kernels</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="installMainlineKernels_4">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>160</y>
+          <width>41</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'monospace'; font-size:12px; color:#333333; background-color:#ffffff;&quot;&gt;bootstrapping kernels. Also on &amp;quot;Scripts Manager&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/orange-up-24.png</normaloff>:/images/orange-up-24.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>150</y>
+          <width>341</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Purge latest kernel from
+&quot;PPA for Canonical Kernel Team&quot;</string>
         </property>
        </widget>
       </widget>

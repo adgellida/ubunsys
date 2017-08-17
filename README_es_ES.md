@@ -3,7 +3,9 @@
 
 <p align="center">
     <a href="https://gitter.im/adgellida/ubunsys" target="_blank"><img src="https://badges.gitter.im/adgellida/ubunsys.svg" alt="chat"></a>
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=84KHR9VLK7XK8" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate with PayPal"></a>
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=84KHR9VLK7XK8" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate to project"></a>
+    <a href="https://www.paypal.me/adgellida" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal.me-green.svg" alt="Donate to developer"></a>
+	<a href="https://www.bountysource.com/teams/ubunsys" target="_blank"><img src="https://img.shields.io/badge/Donate-Bountysource-green.svg" alt="Donate with Bountysource"></a>
     <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a>
     <a href="https://github.com/adgellida/ubunsys/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/ubunsys.svg" alt="stars"></a>  
     <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a>

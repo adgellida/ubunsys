@@ -619,6 +619,7 @@ qrc_ubunsys.cpp: ubunsys.qrc \
 		images/paste.png \
 		images/repair.png \
 		images/copy.png \
+		images/switch-on.png \
 		images/typografia.png \
 		images/ubunsys.png \
 		images/update.png \
@@ -634,6 +635,7 @@ qrc_ubunsys.cpp: ubunsys.qrc \
 		images/red-number-6.jpg \
 		images/upgrade.png \
 		images/save.png \
+		images/switch-off.png \
 		images/cut.png \
 		images/new.png \
 		images/install.png \
