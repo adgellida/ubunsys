@@ -2,26 +2,11 @@
 =============================================
 
 <p align="center">
-    <a href="https://gitter.im/adgellida/ubunsys" target="_blank"><img src="https://badges.gitter.im/adgellida/ubunsys.svg" alt="chat"></a>
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=84KHR9VLK7XK8" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate to project"></a>
-    <a href="https://www.paypal.me/adgellida" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal.me-green.svg" alt="Donate to developer"></a>
-	<a href="https://www.bountysource.com/teams/ubunsys" target="_blank"><img src="https://img.shields.io/bountysource/team/ubunsys/activity.svg" alt="Donate with Bountysource"></a>
-    <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a>
-    <a href="https://github.com/adgellida/ubunsys/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/ubunsys.svg" alt="stars"></a>  
-    <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a>
-    <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
-    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
-    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.08.07/total.svg" alt="total downloads latest release"></a> 
-    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.08.07-blue.svg" alt="latest release"></a>
+    <a href="https://gitter.im/adgellida/ubunsys" target="_blank"><img src="https://badges.gitter.im/adgellida/ubunsys.svg" alt="chat"></a> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=84KHR9VLK7XK8" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate to project"></a> <a href="https://www.paypal.me/adgellida" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal.me-green.svg" alt="Donate to developer"></a> <a href="https://www.bountysource.com/teams/ubunsys" target="_blank"><img src="https://img.shields.io/bountysource/team/ubunsys/activity.svg" alt="Donate with Bountysource"></a> <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a> <a href="https://github.com/adgellida/ubunsys/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/ubunsys.svg" alt="stars"></a> <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a> <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a> <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a> <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.09.03/total.svg" alt="total downloads latest release"></a> <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.09.03-blue.svg" alt="latest release"></a>
 </p>
 
 <p align="left">
-<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a>
-    <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for xenial-v5.7.1-green.svg" alt="qt version"></a>
-    <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for zesty-v5.5.1-green.svg" alt="qt version"></a>
-    <a href="https://github.com/adgellida/ubunsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
-    <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
-	<a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
+<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for xenial-v5.7.1-green.svg" alt="qt version"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for zesty-v5.5.1-green.svg" alt="qt version"></a> <a href="https://github.com/adgellida/ubunsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a> <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a> <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
 </p>
 
 **For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
@@ -44,11 +29,7 @@ Descarga desde fuentes oficiales - pulsa en el logo
 =============================================
 
 <p align="center">
-  <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a>
-  <a href="https://gitlab.com/adgellida/ubunsys/tags" target="_blank"><img src="https://about.gitlab.com/images/logo.png" width="80" alt="Gitlab"></a>
-  <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a>
-  <a href="https://www.linux-apps.com/p/1179908" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a>
-  <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
+  <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a> <a href="https://gitlab.com/adgellida/ubunsys/tags" target="_blank"><img src="https://about.gitlab.com/images/logo.png" width="80" alt="Gitlab"></a> <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a> <a href="https://www.linux-apps.com/p/1179908" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a> <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
 </p>
 
 Método Launchpad PPA - Estado: ACTUALIZADO

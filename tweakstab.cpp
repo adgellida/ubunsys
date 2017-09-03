@@ -121,6 +121,8 @@ void MainWindow::on_importSudoersFileButton_clicked()
            "&&"
            "sudo ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
            " && "
+           "sudo rm -Rf ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
+           " && "
            "exit"
            "; exec bash'");
 
@@ -435,8 +437,6 @@ void MainWindow::on_importSourcesListButton_clicked()
 
     //QMessageBox::information(this,tr("File Name"),filename);
 
-    ui->statusBar->showMessage(tr("Done. sources.list restored succesful"));
-
     // Create a new file
 
     QFile file (QDir::homePath() + "/.ubunsys/backups/sources.list/restoreSourcesListScript.sh");
@@ -452,12 +452,17 @@ void MainWindow::on_importSourcesListButton_clicked()
            "&&"
            "sudo ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh"
            " && "
+           "sudo rm -Rf ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh"
+           " && "
            "exit"
            "; exec bash'");
 
     //this would normally start the event loop, but is not needed for this
     //minimal example:
     //return app.exec();
+
+    ui->statusBar->showMessage(tr("Done. sources.list restored succesful"));
+
 }
 
 void MainWindow::on_openMainBackupButton_clicked()
@@ -502,5 +507,3 @@ void MainWindow::on_openSudoersDButton_clicked()
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
-
-

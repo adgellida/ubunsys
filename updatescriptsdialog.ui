@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>521</width>
-    <height>216</height>
+    <width>669</width>
+    <height>214</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <widget class="QProgressBar" name="progressBar">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>230</x>
      <y>20</y>
      <width>201</width>
      <height>23</height>
@@ -29,7 +29,7 @@
   <widget class="QPushButton" name="checkButton">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>230</x>
      <y>60</y>
      <width>80</width>
      <height>22</height>
@@ -47,7 +47,7 @@
     <rect>
      <x>0</x>
      <y>190</y>
-     <width>511</width>
+     <width>661</width>
      <height>21</height>
     </rect>
    </property>
@@ -57,7 +57,7 @@
     <rect>
      <x>10</x>
      <y>90</y>
-     <width>501</width>
+     <width>651</width>
      <height>101</height>
     </rect>
    </property>
@@ -65,7 +65,7 @@
   <widget class="QPushButton" name="closeUpdateDialogButton">
    <property name="geometry">
     <rect>
-     <x>280</x>
+     <x>350</x>
      <y>60</y>
      <width>80</width>
      <height>22</height>

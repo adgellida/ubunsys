@@ -500,9 +500,9 @@
        <widget class="QTextBrowser" name="textBrowser">
         <property name="geometry">
          <rect>
-          <x>170</x>
+          <x>20</x>
           <y>290</y>
-          <width>501</width>
+          <width>651</width>
           <height>101</height>
          </rect>
         </property>
@@ -510,10 +510,10 @@
        <widget class="QLabel" name="label_41">
         <property name="geometry">
          <rect>
-          <x>170</x>
+          <x>20</x>
           <y>270</y>
-          <width>501</width>
-          <height>16</height>
+          <width>651</width>
+          <height>20</height>
          </rect>
         </property>
         <property name="font">
@@ -2254,6 +2254,9 @@ Set to default</string>
         </property>
        </widget>
        <widget class="QPushButton" name="installMainlineKernels">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>360</x>
@@ -2289,6 +2292,9 @@ Set to default</string>
         </property>
        </widget>
        <widget class="QPushButton" name="installMainlineKernels_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>360</x>
@@ -2344,6 +2350,9 @@ Set to default</string>
         </property>
        </widget>
        <widget class="QPushButton" name="installMainlineKernels_3">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>360</x>
@@ -2400,6 +2409,9 @@ Bootstrap Kernels</string>
         </property>
        </widget>
        <widget class="QPushButton" name="installMainlineKernels_4">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>360</x>
@@ -3205,7 +3217,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.08.07</string>
+     <string>v2017.09.03</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">

@@ -48,14 +48,18 @@ TRANSLATIONS += languages/ubunsys_es_ES.ts
 
 #FILES
 
+#binary
 target.path = /usr/bin
 
+#icon
 icon.path = /usr/share/icons/hicolor/256x256/apps
 icon.files = $$PWD/images/ubunsys.png
 
+#desktop shortcut
 desktop.path = /usr/share/applications
 desktop.files += ubunsys.desktop
 
+#scripts
 apt-fastChecking.path = /usr/share/ubunsys
 apt-fastChecking.files = $$PWD/scripts/apt-fastChecking.sh
 updateUbuntupackages.path = /usr/share/ubunsys

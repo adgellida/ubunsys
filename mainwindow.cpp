@@ -9,9 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    Dia = new UpdateScriptsDialog ();//////////////
-    connect(Dia, SIGNAL(CloseClicked()), this , SLOT(closeUpdateDialog()));////////////////
-
     //ui->label->hide();
 
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
@@ -22,8 +19,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Creating folders
 
-    system("x-terminal-emulator -e '"
-           "test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
+    //system("x-terminal-emulator -e '"
+    system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
            "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
            "test -d ~/.ubunsys/downloads/ubuntuScripts-master || mkdir -p ~/.ubunsys/downloads/ubuntuScripts-master && "
            "test -d ~/.ubunsys/files || mkdir -p ~/.ubunsys/files && "
@@ -34,50 +31,28 @@ MainWindow::MainWindow(QWidget *parent) :
            "test -d ~/.ubunsys/backups/sudoersFiles || mkdir -p ~/.ubunsys/backups/sudoersFiles && "
            "rm -Rf ~/.ubunsys/updates/updateLog.log && "
            "touch ~/.ubunsys/updates/updateLog.log && "
-           "exit"
-           "; exec bash'");
-
-    //test
-    //on_pushButton_released();
-    //on_runUpdateDialog_clicked();
-    //on_updateScriptsButton_clicked();
-    //on_runScriptsManager_clicked();
-    //QDialog *gamatosdialog = new QDialog;
-    //gamatosdialog->show();
-
-
+           "exit");
+          // "; exec bash'");
 
     //Silent update
 
-    //ui->statusBar->showMessage(tr("Checking your scripts version and updating if necessary. Please wait..."));
-
     //######## Update ubuntuScripts
 
-    //ui->statusBar->showMessage(tr("Checking ubuntuscripts. Please wait..."));
     system("/usr/share/ubunsys/updateUbuntuScripts.sh");
 
     //######## Update ubuntupackages
 
-    //ui->statusBar->showMessage(tr("Checking ubuntupackages. Please wait..."));
     system("/usr/share/ubunsys/updateUbuntupackages.sh");
 
     //######## apt-fast checking
 
-    //ui->statusBar->showMessage(tr("Checking apt-fast. Please wait..."));
     system("/usr/share/ubunsys/apt-fastChecking.sh");
 
     //######## Update ubunsys
 
-    //ui->statusBar->showMessage(tr("Checking ubunsys. Please wait..."));
     system("/usr/share/ubunsys/updateUbunsys.sh");
 
-
-    //ui->statusBar->showMessage(tr("Scripts version checked and updated if necessary. Close this window!"));
-
-
-
-
-    //Show update output
+    //######## Show update output
 
     QFile file (QDir::homePath() + "/.ubunsys/updates/updateLog.log");
 
@@ -98,18 +73,35 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->tabWidget->setCurrentIndex(1);
     ui->tabWidget_3->setCurrentIndex(0);
+
+    //Create extra open on future dialogs
+
+    UpdateScriptsDialogUi = new UpdateScriptsDialog ();//////////////
+    connect(UpdateScriptsDialogUi, SIGNAL(CloseClicked()), this , SLOT(closeUpdateDialog()));////////////////
+
+    PackagesDialogUi = new PackagesDialog ();//////////////
+    //connect(PackagesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePackagesDialog()));////////////////
+
 }
 
 MainWindow::~MainWindow()
 {
-    delete Dia;////////////////
+    delete UpdateScriptsDialogUi;////////////////
+    delete PackagesDialogUi;////////////////
     delete ui;
 }
 
-void MainWindow::on_manualUpdateDialogButton_released()
+void MainWindow::on_manualUpdateDialogButton_released()//////////////////////
 {
     qDebug() << "dialogOpenned";
-    Dia->show();
+    UpdateScriptsDialogUi->show();
+    ui->textBrowser->setText(tr("Continue on the opened dialog..."));
+}
+
+void MainWindow::on_runScriptsManager_released()//////////////////////
+{
+    qDebug() << "dialogOpenned";
+    PackagesDialogUi->show();
     ui->textBrowser->setText(tr("Continue on the opened dialog..."));
 }
 
@@ -132,7 +124,7 @@ void MainWindow::closeUpdateDialog()
 
     qDebug() << "Close pushed";
 
-    Dia->close();
+    UpdateScriptsDialogUi->close();
 }
 
 void MainWindow::on_installMainlineKernels_2_clicked()

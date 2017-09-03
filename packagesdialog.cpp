@@ -15,8 +15,10 @@ PackagesDialog::PackagesDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    //connect(ui->closePackagesDialogButton, SIGNAL(clicked()),this, SIGNAL(CloseClicked()) );//////////
+
       fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
-      ui->treeView->setModel(fsModel);
+      ui->treeView->setModel(fsModel);           
       connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
       ui->statusBar->showMessage(tr("Select your option"));
       //fsModel->setFilterRegExp(QRegExp(".png", Qt::CaseInsensitive,QRegExp::FixedString));

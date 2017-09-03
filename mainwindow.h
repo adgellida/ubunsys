@@ -12,6 +12,7 @@
 #include <QDebug>
 #include <QSettings>
 #include <updatescriptsdialog.h>//////////
+#include <packagesdialog.h>//////////
 
 namespace Ui {
 class MainWindow;
@@ -28,10 +29,12 @@ public:
 public slots:
 
     void closeUpdateDialog();///////////////
+    //void closePackagesDialog();///////////////
 
 private slots:
 
     void on_manualUpdateDialogButton_released();////////////
+    void on_runScriptsManager_released();////////////
 
     void on_actionNew_triggered();
 
@@ -151,8 +154,6 @@ private slots:
 
     void on_openMainRestoreButton_clicked();
 
-    void on_runScriptsManager_clicked();
-
     void on_openSudoersDButton_clicked();
 
     //void on_runUpdateDialog_clicked();
@@ -165,7 +166,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    UpdateScriptsDialog *Dia;/////////////
+    UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////
+    PackagesDialog *PackagesDialogUi;/////////////
 };
 
 #endif // MAINWINDOW_H

@@ -5,12 +5,12 @@
 
 ///////////////////////PACKAGES TAB///////////////////////
 
-void MainWindow::on_runScriptsManager_clicked()
-{
-    PackagesDialog packagesDialog;
-    packagesDialog.setModal(true);
-    packagesDialog.exec();
-}
+//void MainWindow::on_runScriptsManager_clicked()
+//{
+//    PackagesDialog packagesDialog;
+//    packagesDialog.setModal(true);
+//    packagesDialog.exec();
+//}
 
 //void MainWindow::on_runUpdateDialog_clicked()
 //{

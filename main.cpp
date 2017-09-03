@@ -8,6 +8,8 @@ int main(int argc, char *argv[])
     app.setOrganizationName("adgellida");
     app.setApplicationName("ubunsys");
 
+    //QCoreApplication::addLibraryPath("usr/share/ubunsys/lib");
+
     //language
 
     QTranslator translator;
