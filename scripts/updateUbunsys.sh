@@ -3,6 +3,7 @@
 url=https://github.com/adgellida/ubunsys
 file1=~/.ubunsys/updates/ubunsys_check_version/latest_version.txt
 file2=~/.ubunsys/updates/ubunsys_check_version/installed_version.txt
+file3=~/.ubunsys/updates/ubunsys_check_version/latest_version2.txt
 message1="ubunsys are in the latest version. No updates required. 4/4 ok."
 message2="ubunsys outdated. Push upper red button to update it via PPA. 4/4 ok."
 
@@ -10,7 +11,9 @@ message2="ubunsys outdated. Push upper red button to update it via PPA. 4/4 ok."
 
 git ls-remote --tags "$url" | awk -F'/' '/[0-9].[0-9].[0-9].*/ { print $3}' | sort -nr | head -n1 > "$file1"
 
-sed 's/v//' "$file1" > "$file1"
+sed 's/v//' "$file1" > "$file3"
+rm "$file1"
+mv "$file3" "$file1"
 
 #Getting installed version
 

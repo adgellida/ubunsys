@@ -6,7 +6,7 @@
 #
 # Copyright (c) 2017 all rights reserved - GPL v2
 # Antonio David Gellida Lavara - adgellida@gmail.com
-# adgellida
+# https://github.com/adgellida/ubunsys
 #
 #-------------------------------------------------
 

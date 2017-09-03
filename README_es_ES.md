@@ -109,7 +109,7 @@ Puedes crear un nuevo [asunto](https://github.com/adgellida/ubunsys/issues/new) 
 Dependencias
 =============================================
 
-`libqt5gui5, libqt5widgets5, libqt5core5a, git`
+`libqt5gui5, libqt5widgets5, libqt5core5a, git, nano, wget, xdg-utils`
 
 A través de PPA:
 

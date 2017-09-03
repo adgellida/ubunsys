@@ -160,9 +160,11 @@ private slots:
 
     void on_seeReleasesButton_clicked();
 
-    void on_installMainlineKernels_2_clicked();
+    void on_upgradeLatestKernel_1_clicked();
 
-    void on_installMainlineKernels_3_clicked();
+    void on_upgradeLatestKernel_2_clicked();
+
+    void on_purgeMainlineKernels_clicked();
 
 private:
     Ui::MainWindow *ui;
