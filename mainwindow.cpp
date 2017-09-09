@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //system("x-terminal-emulator -e '"
     system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
+           "test -d ~/.ubunsys/scripts || mkdir -p ~/.ubunsys/downloads && "
            "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
            "test -d ~/.ubunsys/downloads/ubuntuScripts-master || mkdir -p ~/.ubunsys/downloads/ubuntuScripts-master && "
            "test -d ~/.ubunsys/files || mkdir -p ~/.ubunsys/files && "
@@ -38,19 +39,19 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //######## Update ubuntuScripts
 
-    system("/usr/share/ubunsys/updateUbuntuScripts.sh");
+    system("/usr/share/ubunsys/scripts/updateUbuntuScripts.sh");
 
     //######## Update ubuntupackages
 
-    system("/usr/share/ubunsys/updateUbuntupackages.sh");
+    system("/usr/share/ubunsys/scripts/updateUbuntupackages.sh");
 
     //######## apt-fast checking
 
-    system("/usr/share/ubunsys/apt-fastChecking.sh");
+    system("/usr/share/ubunsys/scripts/apt-fastChecking.sh");
 
     //######## Update ubunsys
 
-    system("/usr/share/ubunsys/updateUbunsys.sh");
+    system("/usr/share/ubunsys/scripts/updateUbunsys.sh");
 
     //######## Show update output
 
@@ -110,7 +111,6 @@ void MainWindow::closeUpdateDialog()
     //Show update output
 
     QFile file (QDir::homePath() + "/.ubunsys/updates/updateLog.log");
-
     if(!file.open(QIODevice::ReadOnly))
         QMessageBox::information(0,"info",file.errorString());
 

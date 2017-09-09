@@ -60,13 +60,13 @@ desktop.path = /usr/share/applications
 desktop.files += ubunsys.desktop
 
 #scripts
-apt-fastChecking.path = /usr/share/ubunsys
+apt-fastChecking.path = /usr/share/ubunsys/scripts
 apt-fastChecking.files = $$PWD/scripts/apt-fastChecking.sh
-updateUbuntupackages.path = /usr/share/ubunsys
+updateUbuntupackages.path = /usr/share/ubunsys/scripts
 updateUbuntupackages.files = $$PWD/scripts/updateUbuntupackages.sh
-updateUbuntuScripts.path = /usr/share/ubunsys
+updateUbuntuScripts.path = /usr/share/ubunsys/scripts
 updateUbuntuScripts.files = $$PWD/scripts/updateUbuntuScripts.sh
-updateUbunsys.path = /usr/share/ubunsys
+updateUbunsys.path = /usr/share/ubunsys/scripts
 updateUbunsys.files = $$PWD/scripts/updateUbunsys.sh
 
 INSTALLS += target desktop icon apt-fastChecking updateUbuntupackages updateUbuntuScripts updateUbunsys

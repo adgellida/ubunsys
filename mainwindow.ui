@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -189,7 +189,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Open default sudoers file</string>
+         <string>Open sudoers</string>
         </property>
         <property name="iconSize">
          <size>
@@ -692,7 +692,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Disable Lock screen</string>
+         <string>Disable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -720,7 +720,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Enable Lock screen</string>
+         <string>Enable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -889,7 +889,7 @@
         <property name="geometry">
          <rect>
           <x>450</x>
-          <y>240</y>
+          <y>250</y>
           <width>221</width>
           <height>36</height>
          </rect>
@@ -898,7 +898,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Enable firewall</string>
+         <string>Enable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -917,7 +917,7 @@
         <property name="geometry">
          <rect>
           <x>450</x>
-          <y>220</y>
+          <y>230</y>
           <width>141</width>
           <height>16</height>
          </rect>
@@ -929,14 +929,14 @@
          </font>
         </property>
         <property name="text">
-         <string>Security</string>
+         <string>Firewall</string>
         </property>
        </widget>
        <widget class="QPushButton" name="disableFirewallButton">
         <property name="geometry">
          <rect>
           <x>450</x>
-          <y>280</y>
+          <y>290</y>
           <width>221</width>
           <height>36</height>
          </rect>
@@ -945,7 +945,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Disable firewall</string>
+         <string>Disable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1025,7 +1025,7 @@
          <string/>
         </property>
         <property name="text">
-         <string>Do invisible asterisks
+         <string>Do invisible
 Set to default</string>
         </property>
         <property name="iconSize">
@@ -1046,7 +1046,7 @@ Set to default</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>211</width>
+          <width>321</width>
           <height>16</height>
          </rect>
         </property>
@@ -1057,7 +1057,7 @@ Set to default</string>
          </font>
         </property>
         <property name="text">
-         <string>Terminal passwords</string>
+         <string>Passwords asterisks on terminal</string>
         </property>
        </widget>
        <widget class="QPushButton" name="doVisibleAsterisksButton">
@@ -1073,7 +1073,7 @@ Set to default</string>
          <string/>
         </property>
         <property name="text">
-         <string>Do visible asterisks</string>
+         <string>Do visible</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1092,7 +1092,7 @@ Set to default</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>110</y>
+          <y>120</y>
           <width>141</width>
           <height>16</height>
          </rect>
@@ -1104,14 +1104,14 @@ Set to default</string>
          </font>
         </property>
         <property name="text">
-         <string>Power</string>
+         <string>Hibernation</string>
         </property>
        </widget>
        <widget class="QPushButton" name="disableHibernationButton">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>170</y>
+          <y>180</y>
           <width>221</width>
           <height>36</height>
          </rect>
@@ -1120,7 +1120,7 @@ Set to default</string>
          <string/>
         </property>
         <property name="text">
-         <string>Disable hibernation</string>
+         <string>Disable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1139,7 +1139,7 @@ Set to default</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>130</y>
+          <y>140</y>
           <width>221</width>
           <height>36</height>
          </rect>
@@ -1148,7 +1148,7 @@ Set to default</string>
          <string/>
         </property>
         <property name="text">
-         <string>Enable hibernation</string>
+         <string>Enable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1173,7 +1173,7 @@ Set to default</string>
          <rect>
           <x>10</x>
           <y>30</y>
-          <width>251</width>
+          <width>221</width>
           <height>36</height>
          </rect>
         </property>
@@ -1606,7 +1606,7 @@ Set to default</string>
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
-         <string>Enable sudo without pass all</string>
+         <string>Enable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1626,7 +1626,7 @@ Set to default</string>
          <rect>
           <x>10</x>
           <y>70</y>
-          <width>251</width>
+          <width>221</width>
           <height>36</height>
          </rect>
         </property>
@@ -1634,7 +1634,7 @@ Set to default</string>
          <string/>
         </property>
         <property name="text">
-         <string>Disable sudo without pass all</string>
+         <string>Disable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1665,7 +1665,7 @@ Set to default</string>
          </font>
         </property>
         <property name="text">
-         <string>Security &amp; Passwords</string>
+         <string>sudo without pass all</string>
         </property>
        </widget>
        <widget class="QPushButton" name="disableSudoWithoutPassSpecificButton">
@@ -1675,8 +1675,8 @@ Set to default</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>170</y>
-          <width>251</width>
+          <y>180</y>
+          <width>221</width>
           <height>36</height>
          </rect>
         </property>
@@ -1684,7 +1684,7 @@ Set to default</string>
          <string/>
         </property>
         <property name="text">
-         <string>Disable sudo without pass specific</string>
+         <string>Disable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1706,8 +1706,8 @@ Set to default</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>130</y>
-          <width>251</width>
+          <y>140</y>
+          <width>221</width>
           <height>36</height>
          </rect>
         </property>
@@ -1725,7 +1725,7 @@ Set to default</string>
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
-         <string>Enable sudo without pass specific</string>
+         <string>Enable</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1744,7 +1744,7 @@ Set to default</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>230</y>
+          <y>240</y>
           <width>221</width>
           <height>36</height>
          </rect>
@@ -1768,6 +1768,25 @@ Set to default</string>
          <bool>false</bool>
         </property>
        </widget>
+       <widget class="QLabel" name="label_44">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>271</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>sudo without pass specific</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -1785,7 +1804,7 @@ Set to default</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
@@ -3217,7 +3236,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.09.03</string>
+     <string>v2017.09.09</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">

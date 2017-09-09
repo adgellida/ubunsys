@@ -1,0 +1,14 @@
+Source: ubunsys
+Section: admin
+Priority: optional
+Maintainer: Antonio David Gellida Lavara <adgellida@gmail.com>
+Build-Depends: debhelper (>= 9), qtbase5-dev, qtbase5-dev-tools, qt5-qmake
+Standards-Version: 3.9.8
+Homepage: https://github.com/adgellida/ubunsys
+#Vcs-Git: git://anonscm.debian.org/collab-maint/ubunsys.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/ubunsys.git
+
+Package: ubunsys
+Architecture: amd64
+Depends: git, wget, xdg-utils, nano, ${shlibs:Depends}, ${misc:Depends}
+Description: Software installer of a helpful package list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.

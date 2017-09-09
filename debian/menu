@@ -1,0 +1,4 @@
+?package(ubunsys):needs="x11" \
+	section="Applications/admin" \
+	title="ubunsys" \
+	command="/usr/bin/ubunsys"

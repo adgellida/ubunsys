@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#DEBHELPER#
+rm -rf /usr/share/ubunsys

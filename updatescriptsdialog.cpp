@@ -37,22 +37,22 @@ void UpdateScriptsDialog::on_checkButton_clicked()
     //######## Update ubuntuScripts
     ui->progressBar->setValue(15);
     ui->statusBar->showMessage(tr("Checking ubuntuscripts. Please wait..."));
-    system("/usr/share/ubunsys/updateUbuntuScripts.sh");
+    system("/usr/share/ubunsys/scripts/updateUbuntuScripts.sh");
 
     //######## Update ubuntupackages
     ui->progressBar->setValue(40);
     ui->statusBar->showMessage(tr("Checking ubuntupackages. Please wait..."));
-    system("/usr/share/ubunsys/updateUbuntupackages.sh");
+    system("/usr/share/ubunsys/scripts/updateUbuntupackages.sh");
 
     //######## apt-fast checking
     ui->progressBar->setValue(65);
     ui->statusBar->showMessage(tr("Checking apt-fast. Please wait..."));
-    system("/usr/share/ubunsys/apt-fastChecking.sh");
+    system("/usr/share/ubunsys/scripts/apt-fastChecking.sh");
 
     //######## Update ubunsys
     ui->progressBar->setValue(85);
     ui->statusBar->showMessage(tr("Checking ubunsys. Please wait..."));
-    system("/usr/share/ubunsys/updateUbunsys.sh");
+    system("/usr/share/ubunsys/scripts/updateUbunsys.sh");
 
     ui->progressBar->setValue(100);
 
