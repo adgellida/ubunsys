@@ -46,7 +46,7 @@ Compilación
 
 Dependencias de compilación:
 
-`apt install -y git g++ build-essential qt5-qmake qt5-default`
+`sudo apt install -y git g++ build-essential qt5-qmake qt5-default`
 
 Compilación e instalación:
 
@@ -109,7 +109,7 @@ Puedes crear un nuevo [asunto](https://github.com/adgellida/ubunsys/issues/new) 
 Dependencias
 =============================================
 
-`libqt5gui5, libqt5widgets5, libqt5core5a, git, nano, wget, xdg-utils`
+`git, nano, wget, xdg-utils`
 
 A través de PPA:
 
