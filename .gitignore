@@ -32,7 +32,6 @@
 *.app
 
 # Extra
-debreate files
 *.pro.user
 *.pro.user*
 wget-log*
@@ -41,4 +40,4 @@ ui_*
 qrc_*
 
 #Makefile
-/ubunsys
+#/ubunsys
