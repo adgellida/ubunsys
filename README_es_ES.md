@@ -6,7 +6,7 @@
 </p>
 
 <p align="left">
-<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for AppImage-v5.9.1-green.svg" alt="qt version"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for all versions deb-v5.9.1-green.svg" alt="qt version"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for xenial deb-v5.7.1-green.svg" alt="qt version"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version for zesty deb-v5.5.1-green.svg" alt="qt version"></a> <a href="https://github.com/adgellida/ubunsys/commits/master" target="_blank">
+<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.9.1-green.svg" alt="qt version"></a>
 </p>
 
 **For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
