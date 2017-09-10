@@ -13,11 +13,11 @@
 
 Software instalador de una lista de paquetes útiles, capaz de hacer cambios en la configuración del sistema, actualizaciones, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
 
-Específico para Ubuntu 16.04, 17.04 x64.
+Teóricamente compatible con todas las versiones de 64 bits de Ubuntu. 17.04 x64 recomendado.
 
 **App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
 
-Construido con Qt 5.7.1. para 17.04 zesty zapus. Construido con Qt 5.5.1. para 16.04 xenial xerus. De esta manera obtiene las librerias de los repositorios oficiales.
+Construido con Qt 5.9.1.
 
 Alimentado con [ubuntupackages](https://github.com/adgellida/ubuntupackages) y [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
 
@@ -32,7 +32,7 @@ Descarga desde fuentes oficiales - pulsa en el logo
   <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a> <a href="https://gitlab.com/adgellida/ubunsys/tags" target="_blank"><img src="https://about.gitlab.com/images/logo.png" width="80" alt="Gitlab"></a> <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a> <a href="https://www.linux-apps.com/p/1179908" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a> <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
 </p>
 
-Método Launchpad PPA - Estado: ACTUALIZADO
+Método Launchpad PPA - Estado: NO ACTUALIZADO
 =============================================
 
 `sudo add-apt-repository -y ppa:adgellida/ubunsys`

@@ -13,11 +13,11 @@
 
 Software installer of a helpful package list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
 
-Ubuntu 16.04, 17.04 x64 specific.
+Theorically compatible with all Ubuntu versions. 17.04 x64 recommended.
 
 **Very dangerous app in any points, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
 
-Built with Qt 5.7.1 for 17.04 zesty zapus. Built with Qt 5.5.1 for 16.04 xenial xerus. This way it gets libraries from official repositories.
+Built with Qt 5.9.1.
 
 Feeded with [ubuntupackages](https://github.com/adgellida/ubuntupackages) and [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
 
@@ -32,7 +32,7 @@ Download from official sources - click on logo
   <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a> <a href="https://gitlab.com/adgellida/ubunsys/tags" target="_blank"><img src="https://about.gitlab.com/images/logo.png" width="80" alt="Gitlab"></a> <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a> <a href="https://www.linux-apps.com/p/1179908" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a> <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
 </p>
 
-Launchpad PPA Method - State: UP-TO-DATE
+Launchpad PPA Method - State: NOT UPDATED
 =============================================
 
 `sudo add-apt-repository -y ppa:adgellida/ubunsys`
