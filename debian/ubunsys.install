@@ -1,11 +1,11 @@
-bin/ubunsys usr/share/ubunsys
+ubunsys usr/share/ubunsys
 ubunsys.desktop usr/share/applications
 images/ubunsys.png usr/share/icons/hicolor/256x256/apps
 qt.conf usr/share/ubunsys
-scripts/apt-fastChecking.sh usr/share/ubunsys
-scripts/updateUbuntupackages.sh usr/share/ubunsys
-scripts/updateUbuntuScripts.sh usr/share/ubunsys
-scripts/updateUbunsys.sh usr/share/ubunsys
+scripts/apt-fastChecking.sh usr/share/ubunsys/scripts
+scripts/updateUbuntupackages.sh usr/share/ubunsys/scripts
+scripts/updateUbuntuScripts.sh usr/share/ubunsys/scripts
+scripts/updateUbunsys.sh usr/share/ubunsys/scripts
 lib/libdbus-1.so.3 usr/share/ubunsys/lib
 lib/libfreetype.so.6 usr/share/ubunsys/lib
 lib/libglapi.so.0 usr/share/ubunsys/lib
