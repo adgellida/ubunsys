@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Creating folders
 
-    //system("x-terminal-emulator -e '"
+    //system("xterm -e '"
     system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
            "test -d ~/.ubunsys/scripts || mkdir -p ~/.ubunsys/downloads && "
            "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
@@ -131,7 +131,7 @@ void MainWindow::on_upgradeLatestKernel_1_clicked()
 {
     ui->statusBar->showMessage(tr("Upgrading to latest kernel from PPA for Canonical Kernel Team"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/canonical-kernel-team-ppa"
            " && "
            "exit"
@@ -144,7 +144,7 @@ void MainWindow::on_upgradeLatestKernel_2_clicked()
 {
     ui->statusBar->showMessage(tr("Upgrading to latest kernel from PPA for Canonical Kernel Team - Bootstrap"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/bootstrap-kernels"
            " && "
            "exit"
@@ -155,7 +155,7 @@ void MainWindow::on_upgradeLatestKernel_2_clicked()
 
 void MainWindow::on_purgeMainlineKernels_clicked()
 {
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-fast -y install ppa-purge"
            " && "
            "sudo ppa-purge -y ppa:canonical-kernel-team/ppa"

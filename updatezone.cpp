@@ -12,7 +12,7 @@
 void MainWindow::on_updateAppButton_clicked()
 {
     ui->statusBar->showMessage(tr("Put sudo pass to try to update ubunsys through PPA"));
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntupackages-master/apps1/ubunsys"
            " && "
            "exit"

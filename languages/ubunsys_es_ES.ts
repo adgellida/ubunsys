@@ -119,7 +119,7 @@ Ajuste por defecto</translation>
     <message>
         <location filename="../mainwindow.ui" line="1107"/>
         <source>Hibernation</source>
-        <translation>Hiibernación</translation>
+        <translation type="unfinished">Hibernación</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1169"/>

@@ -109,7 +109,7 @@ You can create a new [issue](https://github.com/adgellida/ubunsys/issues/new) wi
 Dependencies
 =============================================
 
-`git, nano, wget, xdg-utils`
+`git, nano, wget, xdg-utils, xterm`
 
 Through PPA:
 

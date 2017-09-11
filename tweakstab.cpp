@@ -14,7 +14,7 @@ void MainWindow::on_enableSudoWithoutPassAllButton_clicked()
 {
     ui->statusBar->showMessage(tr("Enabling sudo without pass"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPassAll"
            " && "
            "exit"
@@ -27,7 +27,7 @@ void MainWindow::on_disableSudoWithoutPassAllButton_clicked()
 {
     ui->statusBar->showMessage(tr("Disabling sudo without pass"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/026.disableSudoWithoutPassAll"
            " && "
            "exit"
@@ -40,7 +40,7 @@ void MainWindow::on_enableSudoWithoutPassSpecificButton_clicked()
 {
     ui->statusBar->showMessage(tr("Enabling sudo without pass specific"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/052.enableSudoWithoutPassSpecific"
            " && "
            "exit"
@@ -53,7 +53,7 @@ void MainWindow::on_disableSudoWithoutPassSpecificButton_clicked()
 {
     ui->statusBar->showMessage(tr("Disabling sudo without pass specific"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/053.disableSudoWithoutPassSpecific"
            " && "
            "exit"
@@ -68,7 +68,7 @@ void MainWindow::on_openSudoersFileButton_clicked()
 {
     ui->statusBar->showMessage(tr("Opening sudoers"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/027.openSudoersFile"
            " && "
            "echo Close this window!"
@@ -81,7 +81,7 @@ void MainWindow::on_backupSudoersFileButton_clicked()
 {
     ui->statusBar->showMessage(tr("Backuping sudoers"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/028.backupSudoersFile"
            " && "
            "exit"
@@ -116,7 +116,7 @@ void MainWindow::on_importSudoersFileButton_clicked()
     // optional, as QFile destructor will already do it:
     file.close();
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo chmod 777 ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
            "&&"
            "sudo ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
@@ -153,7 +153,7 @@ void MainWindow::on_doVisibleAsterisksButton_clicked()
 {
     ui->statusBar->showMessage(tr("Doing visible asterisks"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/021.doVisibleAsterisks"
            " && "
            "exit"
@@ -166,7 +166,7 @@ void MainWindow::on_doInvisibleAsterisksButton_clicked()
 {
     ui->statusBar->showMessage(tr("Doing invisible asterisks"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
            " && "
            "exit"
@@ -181,7 +181,7 @@ void MainWindow::on_openSourcesListDButton_clicked()
 {
     ui->statusBar->showMessage(tr("Opening sources.list.d"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/023.openSourcesListD"
            " && "
            "echo Close this window!"
@@ -196,7 +196,7 @@ void MainWindow::on_enableHibernationButton_clicked()
 {
     ui->statusBar->showMessage(tr("Enabling hibernation"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/007.enableHibernation"
            " && "
            "exit"
@@ -209,7 +209,7 @@ void MainWindow::on_disableHibernationButton_clicked()
 {
     ui->statusBar->showMessage(tr("Disabling hibernation"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/024.disableHibernation"
            " && "
            "exit"
@@ -222,7 +222,7 @@ void MainWindow::on_reduceTo5sShutdownTimeoutButton_clicked()
 {
     ui->statusBar->showMessage(tr("Disabling sudo without pass"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/029.reduceTo5sShutdownTimeout"
            " && "
            "exit"
@@ -235,7 +235,7 @@ void MainWindow::on_setToDefaults90sShutdownTimeoutButton_clicked()
 {
     ui->statusBar->showMessage(tr("Disabling sudo without pass"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/030.setToDefaults90sShutdownTimeout"
            " && "
            "exit"
@@ -248,7 +248,7 @@ void MainWindow::on_enableFirewallButton_clicked()
 {
     ui->statusBar->showMessage(tr("Enabling firewall"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
            " && "
            "~/.ubunsys/downloads/ubuntuScripts-master/031.enableFirewall"
@@ -263,7 +263,7 @@ void MainWindow::on_disableFirewallButton_clicked()
 {
     ui->statusBar->showMessage(tr("Disabling firewall"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
            " && "
            "~/.ubunsys/downloads/ubuntuScripts-master/032.disableFirewall"
@@ -278,7 +278,7 @@ void MainWindow::on_runGrubcustomizerButton_clicked()
 {
     ui->statusBar->showMessage(tr("Installs/runs grub-customizer. Please wait"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntupackages-master/apps1/grub-customizer"
            " && "
            "sudo grub-customizer"
@@ -293,7 +293,7 @@ void MainWindow::on_enableLockScreenButton_clicked()
 {
     ui->statusBar->showMessage(tr("Enabling lock screen"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/036.enableLockScreen"
            " && "
            "exit"
@@ -306,7 +306,7 @@ void MainWindow::on_disableLockScrennButton_clicked()
 {
     ui->statusBar->showMessage(tr("Disabling lock screen"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
            " && "
            "exit"
@@ -319,7 +319,7 @@ void MainWindow::on_showHiddenStartupItemsButton_clicked()
 {
     ui->statusBar->showMessage(tr("Showing"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/038.showHiddenStartupItems"
            " && "
            "exit"
@@ -332,7 +332,7 @@ void MainWindow::on_unshowHiddenStartupItemsButton_clicked()
 {
     ui->statusBar->showMessage(tr("Unshowing"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/037.unshowHiddenStartupItems"
            " && "
            "exit"
@@ -345,7 +345,7 @@ void MainWindow::on_enableLoginSoundButton_clicked()
 {
     ui->statusBar->showMessage(tr("Enabling login sound"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/039.enableLoginSound"
            " && "
            "exit"
@@ -358,7 +358,7 @@ void MainWindow::on_disableLoginSoundButton_clicked()
 {
     ui->statusBar->showMessage(tr("Disabling login sound"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/040.disableLoginSound"
            " && "
            "exit"
@@ -369,7 +369,7 @@ void MainWindow::on_disableLoginSoundButton_clicked()
 
 void MainWindow::on_aptselect_US_clicked()
 {
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
            " && "
            "apt-select --country US"
@@ -384,7 +384,7 @@ void MainWindow::on_aptselect_US_clicked()
 
 void MainWindow::on_aptselect_ES_clicked()
 {
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
            " && "
            "apt-select --country ES"
@@ -401,7 +401,7 @@ void MainWindow::on_openSourcesListButton_clicked()
 {
     ui->statusBar->showMessage(tr("Opening Sources.list"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/042.openSourcesList"
            " && "
            "echo Close this window!"
@@ -414,7 +414,7 @@ void MainWindow::on_backupSourcesListButton_clicked()
 {
     ui->statusBar->showMessage(tr("Backuping sudoers"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/043.backupSourcesList"
            " && "
            "exit"
@@ -447,7 +447,7 @@ void MainWindow::on_importSourcesListButton_clicked()
     // optional, as QFile destructor will already do it:
     file.close();
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo chmod 777 ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh"
            "&&"
            "sudo ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh"
@@ -469,7 +469,7 @@ void MainWindow::on_openMainBackupButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing Main Backup"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/045.mainBackup"
            " && "
            "exit"
@@ -484,7 +484,7 @@ void MainWindow::on_openMainRestoreButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing Main Restore"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/046.mainRestore"
            " && "
            "exit"
@@ -499,7 +499,7 @@ void MainWindow::on_openSudoersDButton_clicked()
 {
     ui->statusBar->showMessage(tr("Opening sudoers.d"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/051.openSudoersD"
            " && "
            "echo Close this window!"

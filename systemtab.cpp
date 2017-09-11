@@ -9,7 +9,7 @@ void MainWindow::on_updateAndUpgradeButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing default update & upgrade system. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-fast -y update"
            " && "
            "sudo apt-fast -y upgrade"
@@ -22,7 +22,7 @@ void MainWindow::on_updateReposButton_clicked()
 {
     ui->statusBar->showMessage(tr("Updating repos. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-fast -y update"
            "; exec bash'");
 
@@ -33,7 +33,7 @@ void MainWindow::on_upgradeReposButton_clicked()
 {
     ui->statusBar->showMessage(tr("Upgrading repos. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-fast -y upgrade"
            "; exec bash'");
 
@@ -44,7 +44,7 @@ void MainWindow::on_basicPackagesInstallButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing normal user installation script. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "cd ~/.ubunsys/downloads/ubuntupackages-master"
            " && "
            "sudo ~/.ubunsys/downloads/ubuntupackages-master/installpackages1-minimal"
@@ -57,7 +57,7 @@ void MainWindow::on_cleanButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing system clean. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-get -f install"
            " && "
            "sudo apt-get -y autoremove"
@@ -76,7 +76,7 @@ void MainWindow::on_dist_upgradeButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing smart system upgrade. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-fast -y update"
            " && "
            "sudo apt-fast -y dist-upgrade"
@@ -89,7 +89,7 @@ void MainWindow::on_cleanKernelsButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing kernels clean. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-get -y install byobu"
            " && "
            "sudo purge-old-kernels"
@@ -102,7 +102,7 @@ void MainWindow::on_upgradeLatestStableButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing upgrade to Latest Stable Version. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo sudo do-release-upgrade"
            "; exec bash'");
 
@@ -113,7 +113,7 @@ void MainWindow::on_installMainlineKernels_clicked()
 {
     ui->statusBar->showMessage(tr("Checking if ukuu is installed and we install it if necessary"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo ~/.ubunsys/downloads/ubuntuScripts-master/034.check_ukuu_installed"
            " && "
            "exit"
@@ -133,7 +133,7 @@ void MainWindow::on_upgradeLatestDevButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing upgrade to Latest Dev Version. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo sudo do-release-upgrade -d"
            "; exec bash'");
 

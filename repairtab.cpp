@@ -10,7 +10,7 @@ void MainWindow::on_integrityCheckButton_clicked()
 
     ui->statusBar->showMessage(tr("Checking integrity system"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "shutdown -Fr now"
            "; exec bash'");
 }
@@ -19,7 +19,7 @@ void MainWindow::on_repairNetworkButton_clicked()
 {
     ui->statusBar->showMessage(tr("Repairing network. Put Please wait"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo service network-manager restart"
            " && "
            "exit"
@@ -32,7 +32,7 @@ void MainWindow::on_repairGPGKeys_clicked()
 {
     ui->statusBar->showMessage(tr("Repairing missed GPG keys. Please wait"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/y-ppa-manager"
            " && "
            "sudo launchpad-getkeys"
@@ -49,7 +49,7 @@ void MainWindow::on_fixBrokenPackagesButton_1_clicked()
 {
     ui->statusBar->showMessage(tr("Executing package repair 1. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-fast -y update"
            " && "
            "sudo apt-fast -y upgrade"
@@ -62,7 +62,7 @@ void MainWindow::on_fixBrokenPackagesButton_2_clicked()
 {
     ui->statusBar->showMessage(tr("Executing package repair 2. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-fast -y --fix-broken install"
            "; exec bash'");
 
@@ -73,7 +73,7 @@ void MainWindow::on_fixBrokenPackagesButton_3_clicked()
 {
     ui->statusBar->showMessage(tr("Executing package repair 3. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo rm /var/lib/apt/lists/* -vf"
            " && "
            "sudo apt-fast -y update"
@@ -86,7 +86,7 @@ void MainWindow::on_fixBrokenPackagesButton_4_clicked()
 {
     ui->statusBar->showMessage(tr("Executing package repair 4. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo apt-fast -f install"
            " && "
            "sudo apt-fast -y autoremove"
@@ -103,7 +103,7 @@ void MainWindow::on_fixBrokenPackagesButton_5_clicked()
 {
     ui->statusBar->showMessage(tr("Executing package repair 5. Then close the terminal window"));
 
-    system("x-terminal-emulator -e '"
+    system("xterm -e '"
            "sudo dpkg --configure -a"
            " && "
            "sudo apt-fast -y update"

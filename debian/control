@@ -10,5 +10,5 @@ Homepage: https://github.com/adgellida/ubunsys
 
 Package: ubunsys
 Architecture: amd64
-Depends: git, wget, xdg-utils, nano, ${shlibs:Depends}, ${misc:Depends}
+Depends: git, wget, xdg-utils, nano, xterm, ${shlibs:Depends}, ${misc:Depends}
 Description: Software installer of a helpful package list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
