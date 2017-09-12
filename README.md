@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-	<a href="https://t.me/ubunsys_app" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/td_logo.png" width="80" alt="telegram group"></a>
+	<a href="https://t.me/ubunsys_app" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/td_logo.png" width="25" alt="telegram group"></a>
 	<a href="https://twitter.com/ubunsys_app" target="_blank"><img src="https://img.shields.io/twitter/follow/ubunsys_app.svg?style=social&label=Follow" alt="twitter"></a>
 	<a href="https://gitter.im/adgellida/ubunsys" target="_blank"><img src="https://badges.gitter.im/adgellida/ubunsys.svg" alt="chat"></a>
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=84KHR9VLK7XK8" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate to project"></a> <a href="https://www.paypal.me/adgellida" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal.me-green.svg" alt="Donate to developer"></a>
