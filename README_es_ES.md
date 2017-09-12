@@ -109,7 +109,11 @@ Puedes crear un nuevo [asunto](https://github.com/adgellida/ubunsys/issues/new) 
 Dependencias
 =============================================
 
-`git, nano, wget, xdg-utils, xterm`
+`git, nano, wget, xdg-utils, xterm, ufw`
+
+Embebidas en el paquete de instalación:
+
+Librerías Qt.
 
 A través de PPA:
 

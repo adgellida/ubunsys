@@ -8,7 +8,7 @@ Source: https://github.com/adgellida/ubunsys
 Homepage: http://www.adgellida.byethost11.com/projects
 Architecture: amd64
 Priority: optional
-Depends: debhelper (>=9), git, wget, xdg-utils, nano, xterm
+Depends: debhelper (>=9), git, wget, xdg-utils, nano, xterm, ufw
 Description: Software installer of a helpful package list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
  **Very dangerous app in any points, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
  .
@@ -29,54 +29,54 @@ Description: Software installer of a helpful package list, able to do changes on
 <</CTRL>>
 <<FILES>>
 1
-/home/usuario/githubProjects/ubunsys/ubunsys* -> ubunsys -> /usr/share/ubunsys
-/home/usuario/githubProjects/ubunsys/ubunsys.desktop* -> ubunsys.desktop -> /usr/share/applications
-/home/usuario/githubProjects/ubunsys/images/ubunsys.png -> ubunsys.png -> /usr/share/icons/hicolor/256x256/apps
-/home/usuario/githubProjects/ubunsys/plugins/platforms/libqxcb.so* -> libqxcb.so -> /usr/share/ubunsys/plugins/platforms
-/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqwebp.so* -> libqwebp.so -> /usr/share/ubunsys/plugins/imageformats
-/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqwbmp.so* -> libqwbmp.so -> /usr/share/ubunsys/plugins/imageformats
-/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqtiff.so* -> libqtiff.so -> /usr/share/ubunsys/plugins/imageformats
-/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqtga.so* -> libqtga.so -> /usr/share/ubunsys/plugins/imageformats
-/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqjpeg.so* -> libqjpeg.so -> /usr/share/ubunsys/plugins/imageformats
-/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqjp2.so* -> libqjp2.so -> /usr/share/ubunsys/plugins/imageformats
-/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqico.so* -> libqico.so -> /usr/share/ubunsys/plugins/imageformats
-/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqicns.so* -> libqicns.so -> /usr/share/ubunsys/plugins/imageformats
-/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqgif.so* -> libqgif.so -> /usr/share/ubunsys/plugins/imageformats
-/home/usuario/githubProjects/ubunsys/lib/libxshmfence.so.1 -> libxshmfence.so.1 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libxcb-sync.so.1 -> libxcb-sync.so.1 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libxcb-present.so.0 -> libxcb-present.so.0 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libxcb-glx.so.0 -> libxcb-glx.so.0 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libxcb-dri3.so.0 -> libxcb-dri3.so.0 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libxcb-dri2.so.0 -> libxcb-dri2.so.0 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libpng12.so.0 -> libpng12.so.0 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libpcre.so.3 -> libpcre.so.3 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libjpeg.so.8 -> libjpeg.so.8 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libjasper.so.1 -> libjasper.so.1 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libicuuc.so.56* -> libicuuc.so.56 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libicui18n.so.56* -> libicui18n.so.56 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libicudata.so.56* -> libicudata.so.56 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libglapi.so.0 -> libglapi.so.0 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libfreetype.so.6 -> libfreetype.so.6 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libdbus-1.so.3 -> libdbus-1.so.3 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libXxf86vm.so.1 -> libXxf86vm.so.1 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libXi.so.6 -> libXi.so.6 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libXfixes.so.3 -> libXfixes.so.3 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libXext.so.6 -> libXext.so.6 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libXdmcp.so.6 -> libXdmcp.so.6 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libXdamage.so.1 -> libXdamage.so.1 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libXau.so.6 -> libXau.so.6 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libX11-xcb.so.1 -> libX11-xcb.so.1 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libQt5XcbQpa.so.5* -> libQt5XcbQpa.so.5 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libQt5Widgets.so.5* -> libQt5Widgets.so.5 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libQt5Gui.so.5* -> libQt5Gui.so.5 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libQt5DBus.so.5* -> libQt5DBus.so.5 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/lib/libQt5Core.so.5* -> libQt5Core.so.5 -> /usr/share/ubunsys/lib
-/home/usuario/githubProjects/ubunsys/scripts/updateUbuntupackages.sh* -> updateUbuntupackages.sh -> /usr/share/ubunsys/scripts
-/home/usuario/githubProjects/ubunsys/scripts/updateUbuntuScripts.sh* -> updateUbuntuScripts.sh -> /usr/share/ubunsys/scripts
-/home/usuario/githubProjects/ubunsys/scripts/updateUbunsys.sh* -> updateUbunsys.sh -> /usr/share/ubunsys/scripts
-/home/usuario/githubProjects/ubunsys/scripts/apt-fastChecking.sh* -> apt-fastChecking.sh -> /usr/share/ubunsys/scripts
 /home/usuario/githubProjects/ubunsys/qt.conf -> qt.conf -> /usr/share/ubunsys
+/home/usuario/githubProjects/ubunsys/scripts/apt-fastChecking.sh* -> apt-fastChecking.sh -> /usr/share/ubunsys/scripts
+/home/usuario/githubProjects/ubunsys/scripts/updateUbunsys.sh* -> updateUbunsys.sh -> /usr/share/ubunsys/scripts
+/home/usuario/githubProjects/ubunsys/scripts/updateUbuntuScripts.sh* -> updateUbuntuScripts.sh -> /usr/share/ubunsys/scripts
+/home/usuario/githubProjects/ubunsys/scripts/updateUbuntupackages.sh* -> updateUbuntupackages.sh -> /usr/share/ubunsys/scripts
+/home/usuario/githubProjects/ubunsys/lib/libQt5Core.so.5* -> libQt5Core.so.5 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libQt5DBus.so.5* -> libQt5DBus.so.5 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libQt5Gui.so.5* -> libQt5Gui.so.5 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libQt5Widgets.so.5* -> libQt5Widgets.so.5 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libQt5XcbQpa.so.5* -> libQt5XcbQpa.so.5 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libX11-xcb.so.1 -> libX11-xcb.so.1 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libXau.so.6 -> libXau.so.6 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libXdamage.so.1 -> libXdamage.so.1 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libXdmcp.so.6 -> libXdmcp.so.6 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libXext.so.6 -> libXext.so.6 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libXfixes.so.3 -> libXfixes.so.3 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libXi.so.6 -> libXi.so.6 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libXxf86vm.so.1 -> libXxf86vm.so.1 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libdbus-1.so.3 -> libdbus-1.so.3 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libfreetype.so.6 -> libfreetype.so.6 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libglapi.so.0 -> libglapi.so.0 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libicudata.so.56* -> libicudata.so.56 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libicui18n.so.56* -> libicui18n.so.56 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libicuuc.so.56* -> libicuuc.so.56 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libjasper.so.1 -> libjasper.so.1 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libjpeg.so.8 -> libjpeg.so.8 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libpcre.so.3 -> libpcre.so.3 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libpng12.so.0 -> libpng12.so.0 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libxcb-dri2.so.0 -> libxcb-dri2.so.0 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libxcb-dri3.so.0 -> libxcb-dri3.so.0 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libxcb-glx.so.0 -> libxcb-glx.so.0 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libxcb-present.so.0 -> libxcb-present.so.0 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libxcb-sync.so.1 -> libxcb-sync.so.1 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/lib/libxshmfence.so.1 -> libxshmfence.so.1 -> /usr/share/ubunsys/lib
+/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqgif.so* -> libqgif.so -> /usr/share/ubunsys/plugins/imageformats
+/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqicns.so* -> libqicns.so -> /usr/share/ubunsys/plugins/imageformats
+/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqico.so* -> libqico.so -> /usr/share/ubunsys/plugins/imageformats
+/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqjp2.so* -> libqjp2.so -> /usr/share/ubunsys/plugins/imageformats
+/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqjpeg.so* -> libqjpeg.so -> /usr/share/ubunsys/plugins/imageformats
+/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqtga.so* -> libqtga.so -> /usr/share/ubunsys/plugins/imageformats
+/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqtiff.so* -> libqtiff.so -> /usr/share/ubunsys/plugins/imageformats
+/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqwbmp.so* -> libqwbmp.so -> /usr/share/ubunsys/plugins/imageformats
+/home/usuario/githubProjects/ubunsys/plugins/imageformats/libqwebp.so* -> libqwebp.so -> /usr/share/ubunsys/plugins/imageformats
+/home/usuario/githubProjects/ubunsys/plugins/platforms/libqxcb.so* -> libqxcb.so -> /usr/share/ubunsys/plugins/platforms
+/home/usuario/githubProjects/ubunsys/images/ubunsys.png -> ubunsys.png -> /usr/share/icons/hicolor/256x256/apps
+/home/usuario/githubProjects/ubunsys/ubunsys.desktop* -> ubunsys.desktop -> /usr/share/applications
+/home/usuario/githubProjects/ubunsys/ubunsys* -> ubunsys -> /usr/share/ubunsys
 <</FILES>>
 <<SCRIPTS>>
 <<PREINST>>

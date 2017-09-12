@@ -109,7 +109,11 @@ You can create a new [issue](https://github.com/adgellida/ubunsys/issues/new) wi
 Dependencies
 =============================================
 
-`git, nano, wget, xdg-utils, xterm`
+`git, nano, wget, xdg-utils, xterm, ufw`
+
+Embedded in package:
+
+Qt libraries.
 
 Through PPA:
 
