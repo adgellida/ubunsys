@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -51,7 +51,7 @@
       </property>
       <widget class="QWidget" name="tab_11">
        <attribute name="title">
-        <string>Packages 1/1</string>
+        <string>Install</string>
        </attribute>
        <widget class="QPushButton" name="runScriptsManager">
         <property name="geometry">
@@ -123,11 +123,11 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
-        <string>Tweaks 1/4</string>
+        <string>Sources</string>
        </attribute>
        <widget class="QLabel" name="label_7">
         <property name="geometry">
@@ -174,109 +174,6 @@
         </property>
         <property name="checkable">
          <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="openSudoersFileButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>30</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Open sudoers</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="backupSudoersFileButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>70</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Backup sudoers file</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="importSudoersFileButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>110</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Import sudoers file</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_13">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>10</y>
-          <width>61</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Sudoers</string>
         </property>
        </widget>
        <widget class="QPushButton" name="aptselect_US">
@@ -419,84 +316,6 @@
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QLabel" name="label_37">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>160</y>
-          <width>221</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Main backup &amp; restore</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="openMainRestoreButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>220</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Main restore</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="openMainBackupButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>180</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Files on Main backup:&lt;/p&gt;&lt;p&gt;sources.list&lt;/p&gt;&lt;p&gt;sudoers&lt;/p&gt;&lt;p&gt;templates&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-        <property name="whatsThis">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-        <property name="text">
-         <string>Main backup</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
        <widget class="QTextBrowser" name="textBrowser">
         <property name="geometry">
          <rect>
@@ -527,646 +346,9 @@
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="tab_7">
-       <attribute name="title">
-        <string>Tweaks 2/4</string>
-       </attribute>
-       <widget class="QPushButton" name="installTemplatesButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>30</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Install Templates</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_5">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>211</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Documents &amp; Files </string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_11">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>70</y>
-          <width>381</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Reduce timeout when shutdown
-(experimental)</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="setToDefaults90sShutdownTimeoutButton">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>150</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Set to defaults 90s</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="reduceTo5sShutdownTimeoutButton">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>110</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Reduce to 5s</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_33">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>200</y>
-          <width>211</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Lock screen</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="disableLockScrennButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>260</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Disable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="enableLockScreenButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>220</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Enable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="showHiddenStartupItemsButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>30</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Show</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="unshowHiddenStartupItemsButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>70</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Unshow</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_34">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>10</y>
-          <width>231</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Hidden Startup Items</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_35">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>120</y>
-          <width>231</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Login sound</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="enableLoginSoundButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>140</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Enable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="disableLoginSoundButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>180</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Disable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="enableFirewallButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>250</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Enable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_12">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>230</y>
-          <width>141</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Firewall</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="disableFirewallButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>290</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Disable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_32">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>310</y>
-          <width>141</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Dual boot</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="runGrubcustomizerButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>330</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Launches grub-customizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-        <property name="text">
-         <string>Configure</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tab_16">
-       <attribute name="title">
-        <string>Tweaks 3/4</string>
-       </attribute>
-       <widget class="QPushButton" name="doInvisibleAsterisksButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>70</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Do invisible
-Set to default</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_6">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>321</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Passwords asterisks on terminal</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="doVisibleAsterisksButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>30</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Do visible</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_8">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>120</y>
-          <width>141</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Hibernation</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="disableHibernationButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>180</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Disable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="enableHibernationButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>221</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Enable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </widget>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
-        <string>Tweaks 4/4</string>
+        <string>Security</string>
        </attribute>
        <widget class="QPushButton" name="enableSudoWithoutPassAllButton">
         <property name="geometry">
@@ -1785,6 +967,824 @@ Set to default</string>
         </property>
         <property name="text">
          <string>sudo without pass specific</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="disableLockScrennButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>350</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Disable</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="disableFirewallButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>330</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Disable</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>270</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Firewall</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Lock screen</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="enableLockScreenButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>310</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Enable</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="enableFirewallButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>290</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Enable</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>10</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Sudoers</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="openSudoersFileButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>30</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Open sudoers</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="backupSudoersFileButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>70</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Backup sudoers file</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="importSudoersFileButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>110</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Import sudoers file</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>160</y>
+          <width>321</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Passwords asterisks on terminal</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="doInvisibleAsterisksButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>220</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Do invisible
+Set to default</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="doVisibleAsterisksButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>180</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Do visible</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_16">
+       <attribute name="title">
+        <string>Power</string>
+       </attribute>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Hibernation</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="disableHibernationButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Disable</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="enableHibernationButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Enable</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Extras</string>
+       </attribute>
+       <widget class="QPushButton" name="installTemplatesButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Install Templates</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Documents &amp; Files </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>381</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Reduce timeout when shutdown
+(experimental)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="setToDefaults90sShutdownTimeoutButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>150</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Set to defaults 90s</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="reduceTo5sShutdownTimeoutButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Reduce to 5s</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="showHiddenStartupItemsButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>30</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Show</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="unshowHiddenStartupItemsButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>70</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Unshow</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_34">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>10</y>
+          <width>231</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Hidden Startup Items</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_35">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>120</y>
+          <width>231</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Login sound</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="enableLoginSoundButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>140</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Enable</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="disableLoginSoundButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>180</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Disable</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="runGrubcustomizerButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>250</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Launches grub-customizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Configure</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>230</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Dual boot</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_37">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>221</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Main backup &amp; restore</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="openMainBackupButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Files on Main backup:&lt;/p&gt;&lt;p&gt;sources.list&lt;/p&gt;&lt;p&gt;sudoers&lt;/p&gt;&lt;p&gt;templates&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Main backup</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="openMainRestoreButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>260</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Main restore</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
         </property>
        </widget>
       </widget>
@@ -2565,7 +2565,7 @@ Bootstrap Kernels</string>
       </property>
       <widget class="QWidget" name="tab_13">
        <attribute name="title">
-        <string>Repair  1/2</string>
+        <string>General</string>
        </attribute>
        <widget class="QLabel" name="label_28">
         <property name="geometry">
@@ -2857,7 +2857,7 @@ and restore that you want with elevated permissions.</string>
       </widget>
       <widget class="QWidget" name="tab_14">
        <attribute name="title">
-        <string>Repair 2/2</string>
+        <string>Packages</string>
        </attribute>
        <widget class="QLabel" name="label_3">
         <property name="geometry">

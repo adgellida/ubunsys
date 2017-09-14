@@ -10,6 +10,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="38"/>
+        <location filename="../mainwindow.ui" line="2860"/>
         <source>Packages</source>
         <translation>Paquetes</translation>
     </message>
@@ -22,8 +23,9 @@
         <translation type="vanished">Selec. todo</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="54"/>
         <source>Install</source>
-        <translation type="vanished">Instalar</translation>
+        <translation>Instalar</translation>
     </message>
     <message>
         <source>Uninstall</source>
@@ -95,36 +97,34 @@ plantillas</translation>
         <translation type="vanished">Log actualización silenciosa de scripts cuando la aplicación se abre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1013"/>
         <source>Tweaks 3/4</source>
-        <translation>Ajustes 3/4</translation>
+        <translation type="vanished">Ajustes 3/4</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1028"/>
+        <location filename="../mainwindow.ui" line="1257"/>
         <source>Do invisible
 Set to default</source>
         <translation>Hacer invisible
 Ajuste por defecto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1060"/>
+        <location filename="../mainwindow.ui" line="1241"/>
         <source>Passwords asterisks on terminal</source>
         <translation>Asteriscos de contraseña en terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1076"/>
+        <location filename="../mainwindow.ui" line="1286"/>
         <source>Do visible</source>
         <translation>Hacer visible</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1107"/>
+        <location filename="../mainwindow.ui" line="1322"/>
         <source>Hibernation</source>
-        <translation type="unfinished">Hibernación</translation>
+        <translation>Hibernación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1169"/>
         <source>Tweaks 4/4</source>
-        <translation>Ajustes 4/4</translation>
+        <translation type="vanished">Ajustes 4/4</translation>
     </message>
     <message>
         <source>Enable sudo without pass all</source>
@@ -151,12 +151,12 @@ Ajuste por defecto</translation>
         <translation type="vanished">Abrir mod sudoers todo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1756"/>
+        <location filename="../mainwindow.ui" line="938"/>
         <source>Open sudoers.d</source>
         <translation>Abrir sudoers.d</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1787"/>
+        <location filename="../mainwindow.ui" line="969"/>
         <source>sudo without pass specific</source>
         <translation>sudo sin contraseña app específica</translation>
     </message>
@@ -176,7 +176,7 @@ Ajuste por defecto</translation>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:&apos;monospace&apos;; font-size:12px; color:#333333; background-color:#ffffff;&quot;&gt;kernels pre-release y test kernels. También en el &amp;quot;Gestor de Scripts&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1668"/>
+        <location filename="../mainwindow.ui" line="850"/>
         <source>sudo without pass all</source>
         <translation>sudo sin contraseña todas apps</translation>
     </message>
@@ -252,8 +252,9 @@ Set to default</source>
         <translation type="vanished">Contraseñas en terminal</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="1304"/>
         <source>Power</source>
-        <translation type="vanished">Energia</translation>
+        <translation>Energia</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="148"/>
@@ -278,8 +279,8 @@ Set to default</source>
         <translation type="vanished">Habilitar hibernación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1603"/>
-        <location filename="../mainwindow.ui" line="1722"/>
+        <location filename="../mainwindow.ui" line="785"/>
+        <location filename="../mainwindow.ui" line="904"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Peligroso!! Pulsar solo si sabes lo que estás haciendo y deshabilitarlo tan pronto como sea posible. Recomendado sólo si estás usando esta app para no poner todo el rato la contraseña para acciones elevadas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -288,8 +289,8 @@ Set to default</source>
         <translation type="vanished">Mejoras 1/3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1606"/>
-        <location filename="../mainwindow.ui" line="1725"/>
+        <location filename="../mainwindow.ui" line="788"/>
+        <location filename="../mainwindow.ui" line="907"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
@@ -310,9 +311,8 @@ Set to default</source>
         <translation type="vanished">Abrir archivo sudoers por defecto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="54"/>
         <source>Packages 1/1</source>
-        <translation>Paquetes 1/1</translation>
+        <translation type="vanished">Paquetes 1/1</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="69"/>
@@ -325,57 +325,66 @@ Set to default</source>
         <translation>Gestores</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="130"/>
         <source>Tweaks 1/4</source>
-        <translation>Ajustes 1/4</translation>
+        <translation type="vanished">Ajustes 1/4</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="192"/>
+        <location filename="../mainwindow.ui" line="1154"/>
         <source>Open sudoers</source>
         <translation>Abrir sudoers</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="220"/>
+        <location filename="../mainwindow.ui" line="1182"/>
         <source>Backup sudoers file</source>
         <translation>Copia de seguridad de sudoers</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="351"/>
+        <location filename="../mainwindow.ui" line="248"/>
         <source>Import sources.list</source>
         <translation>Importar sources.list</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="379"/>
+        <location filename="../mainwindow.ui" line="130"/>
+        <source>Sources</source>
+        <translation>Origen</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="276"/>
         <source>Open sources.list</source>
         <translation>Abrir sources.list</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="407"/>
+        <location filename="../mainwindow.ui" line="304"/>
         <source>Backup sources.list</source>
         <translation>Copia de seguridad sources.list</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="438"/>
+        <location filename="../mainwindow.ui" line="1384"/>
+        <source>Extras</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1728"/>
         <source>Main backup &amp; restore</source>
         <translation>Copia seg. y rest. principal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="454"/>
+        <location filename="../mainwindow.ui" line="1775"/>
         <source>Main restore</source>
         <translation>Restauración principal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="479"/>
+        <location filename="../mainwindow.ui" line="1741"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Files on Main backup:&lt;/p&gt;&lt;p&gt;sources.list&lt;/p&gt;&lt;p&gt;sudoers&lt;/p&gt;&lt;p&gt;templates&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Archivos en el backup principal:&lt;/p&gt;&lt;p&gt;sources.list&lt;/p&gt;&lt;p&gt;sudoers&lt;/p&gt;&lt;p&gt;plantillas&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="482"/>
+        <location filename="../mainwindow.ui" line="1744"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cada vez que pulsas, sources.list, sudoers y plantillas son copiadas en una carpeta, después puedes restaurarlos. Esto es útil cuando quieres restaurar después de romper algo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="485"/>
+        <location filename="../mainwindow.ui" line="1747"/>
         <source>Main backup</source>
         <translation>Copia seg. principal</translation>
     </message>
@@ -398,50 +407,50 @@ plantillas</translation>
         <translation type="vanished">Habilitar firewall</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="351"/>
         <source>Security</source>
-        <translation type="vanished">Seguridad</translation>
+        <translation>Seguridad</translation>
     </message>
     <message>
         <source>Disable firewall</source>
         <translation type="vanished">Deshabilitar firewall</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="248"/>
+        <location filename="../mainwindow.ui" line="1210"/>
         <source>Import sudoers file</source>
         <translation>Importar sudoers</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="279"/>
+        <location filename="../mainwindow.ui" line="1138"/>
         <source>Sudoers</source>
         <translation>Sudoers</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="526"/>
+        <location filename="../mainwindow.ui" line="345"/>
         <source>Log update scripts</source>
         <translation>Log de actualización de scripts</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="532"/>
         <source>Tweaks 2/4</source>
-        <translation>Ajustes 2/4</translation>
+        <translation type="vanished">Ajustes 2/4</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="932"/>
+        <location filename="../mainwindow.ui" line="1044"/>
         <source>Firewall</source>
         <translation>Cortafuegos</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="979"/>
+        <location filename="../mainwindow.ui" line="1709"/>
         <source>Dual boot</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="992"/>
+        <location filename="../mainwindow.ui" line="1675"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Launches grub-customizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lanza grub-customizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="995"/>
+        <location filename="../mainwindow.ui" line="1678"/>
         <source>Configure</source>
         <translation>Configurar</translation>
     </message>
@@ -450,12 +459,12 @@ plantillas</translation>
         <translation type="vanished">Abrir mod sudoers ubunsys</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="295"/>
+        <location filename="../mainwindow.ui" line="192"/>
         <source>apt-select US</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="323"/>
+        <location filename="../mainwindow.ui" line="220"/>
         <source>apt-select ES</source>
         <translation></translation>
     </message>
@@ -464,7 +473,7 @@ plantillas</translation>
         <translation type="vanished">Mejoras 2/2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="547"/>
+        <location filename="../mainwindow.ui" line="1399"/>
         <source>Install Templates</source>
         <translation>Instalar plantillas</translation>
     </message>
@@ -473,28 +482,28 @@ plantillas</translation>
         <translation type="vanished">Esto añade contendido al Sub-Menú de Nuevo Documento</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="578"/>
+        <location filename="../mainwindow.ui" line="1430"/>
         <source>Documents &amp; Files </source>
         <translation>Documentos y ficheros</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="597"/>
+        <location filename="../mainwindow.ui" line="1449"/>
         <source>Reduce timeout when shutdown
 (experimental)</source>
         <translation>Reducir el tiempo de espera al apagar (experimental)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="617"/>
+        <location filename="../mainwindow.ui" line="1469"/>
         <source>Set to defaults 90s</source>
         <translation>Poner a los 90s por defecto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="648"/>
+        <location filename="../mainwindow.ui" line="1500"/>
         <source>Reduce to 5s</source>
         <translation>Reducir a 5s</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="679"/>
+        <location filename="../mainwindow.ui" line="1063"/>
         <source>Lock screen</source>
         <translation>Pantalla de bloqueo</translation>
     </message>
@@ -507,42 +516,42 @@ plantillas</translation>
         <translation type="vanished">Habilitar pantalla de bloqueo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="751"/>
+        <location filename="../mainwindow.ui" line="1528"/>
         <source>Show</source>
         <translation>Enseñar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="779"/>
+        <location filename="../mainwindow.ui" line="1556"/>
         <source>Unshow</source>
         <translation>Esconder</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="810"/>
+        <location filename="../mainwindow.ui" line="1587"/>
         <source>Hidden Startup Items</source>
         <translation>Items de inicio escondidos</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="829"/>
+        <location filename="../mainwindow.ui" line="1606"/>
         <source>Login sound</source>
         <translation>Sonido en el login</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="723"/>
-        <location filename="../mainwindow.ui" line="845"/>
-        <location filename="../mainwindow.ui" line="901"/>
-        <location filename="../mainwindow.ui" line="1151"/>
-        <location filename="../mainwindow.ui" line="1609"/>
-        <location filename="../mainwindow.ui" line="1728"/>
+        <location filename="../mainwindow.ui" line="791"/>
+        <location filename="../mainwindow.ui" line="910"/>
+        <location filename="../mainwindow.ui" line="1079"/>
+        <location filename="../mainwindow.ui" line="1107"/>
+        <location filename="../mainwindow.ui" line="1366"/>
+        <location filename="../mainwindow.ui" line="1622"/>
         <source>Enable</source>
         <translation>Habilitar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="695"/>
-        <location filename="../mainwindow.ui" line="873"/>
-        <location filename="../mainwindow.ui" line="948"/>
-        <location filename="../mainwindow.ui" line="1123"/>
-        <location filename="../mainwindow.ui" line="1637"/>
-        <location filename="../mainwindow.ui" line="1687"/>
+        <location filename="../mainwindow.ui" line="819"/>
+        <location filename="../mainwindow.ui" line="869"/>
+        <location filename="../mainwindow.ui" line="985"/>
+        <location filename="../mainwindow.ui" line="1013"/>
+        <location filename="../mainwindow.ui" line="1338"/>
+        <location filename="../mainwindow.ui" line="1650"/>
         <source>Disable</source>
         <translation>Deshabilitar</translation>
     </message>
@@ -661,6 +670,11 @@ plantillas</translation>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:&apos;monospace&apos;; font-size:12px; color:#333333; background-color:#ffffff;&quot;&gt;Purga &amp;quot;PPA for Canonical Kernel Team&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:&apos;monospace&apos;; font-size:12px; color:#333333; background-color:#ffffff;&quot;&gt;y &amp;quot;PPA for Canonical Kernel Team&amp;quot; Bootstrap kernels&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="2568"/>
+        <source>General</source>
+        <translation></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="3239"/>
         <source>v2017.09.09</source>
         <translation>v2017.09.09</translation>
@@ -698,9 +712,8 @@ plantillas</translation>
         <translation>Reparar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2568"/>
         <source>Repair  1/2</source>
-        <translation>Reparar 1/2</translation>
+        <translation type="vanished">Reparar 1/2</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2586"/>
@@ -772,9 +785,8 @@ plantillas</translation>
         <translation type="vanished">Si pierdes &quot;sudo&quot; prueba con &quot;pkexec&quot; para arreglar si rompes algo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2860"/>
         <source>Repair 2/2</source>
-        <translation>Reparar 2/2</translation>
+        <translation type="vanished">Reparar 2/2</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2878"/>
