@@ -8,7 +8,8 @@
     <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
     <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
     <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2017.09.09/total.svg" alt="total downloads latest release"></a>
-    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.09.09-blue.svg" alt="latest release"></a> <img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
+    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.09.09-blue.svg" alt="latest release"></a>
+    <a href="https://github.com/adgellida/ubunsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
 </p>
@@ -18,11 +19,12 @@
 	<a href="https://twitter.com/ubunsys_app" target="_blank"><img src="https://img.shields.io/twitter/follow/ubunsys_app.svg?style=social&label=Follow" alt="twitter"></a>
 	<a href="https://gitter.im/adgellida/ubunsys" target="_blank"><img src="https://badges.gitter.im/adgellida/ubunsys.svg" alt="chat"></a>
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=84KHR9VLK7XK8" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate to project"></a> <a href="https://www.paypal.me/adgellida" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal.me-green.svg" alt="Donate to developer"></a>
-	<a href="https://www.bountysource.com/teams/ubunsys" target="_blank"><img src="https://img.shields.io/bountysource/team/ubunsys/activity.svg" alt="Donate with Bountysource"></a> 
+	<a href="https://www.bountysource.com/teams/ubunsys" target="_blank"><img src="https://img.shields.io/bountysource/team/ubunsys/activity.svg" alt="Donate with Bountysource"></a>
 </p>
 
 <p align="left">
-<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.9.1-green.svg" alt="qt version"></a>
+	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a>
+	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.9.1-green.svg" alt="qt version"></a>
 </p>
 
 **Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
