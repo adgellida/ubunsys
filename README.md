@@ -24,18 +24,18 @@
 
 <p align="left">
 	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a>
-	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.9.1-green.svg" alt="qt version"></a>
+	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.2.1-green.svg" alt="qt version"></a>
 </p>
 
 **Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
 
 Software installer of a helpful package list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
 
-Theorically compatible with all Ubuntu versions. 17.04 x64 recommended.
+Theorically compatible with all Ubuntu versions. 17.04 x64 recommended. 14.04 - 17.10.
 
 **Very dangerous app in any points, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
 
-Built with Qt 5.9.1.
+Built with Qt 5.2.1 for versioning compatibility.
 
 Feeded with [ubuntupackages](https://github.com/adgellida/ubuntupackages) and [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
 
@@ -50,7 +50,7 @@ Download from official sources - click on logo
   <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a> <a href="https://gitlab.com/adgellida/ubunsys/tags" target="_blank"><img src="https://about.gitlab.com/images/logo.png" width="80" alt="Gitlab"></a> <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a> <a href="https://www.linux-apps.com/p/1179908" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a> <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
 </p>
 
-Launchpad PPA Method - State: NOT UPDATED
+Launchpad PPA Method - State: UPDATED
 =============================================
 
 `sudo add-apt-repository -y ppa:adgellida/ubunsys`
@@ -58,6 +58,10 @@ Launchpad PPA Method - State: NOT UPDATED
 `sudo apt-get -y update`
 
 `sudo apt-get -y install ubunsys`
+
+Operative versions: 17.10, 17.04, 16.04, 15.04, 14.04.
+
+Obsolete versions: 16.10, 15.10, 14.10.
 
 Compilation
 =============================================

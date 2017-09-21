@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#DEBHELPER#
-ln -sf "/usr/share/ubunsys/ubunsys" "/usr/bin/ubunsys"

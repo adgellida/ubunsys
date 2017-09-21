@@ -166,6 +166,8 @@ private slots:
 
     void on_purgeMainlineKernels_clicked();
 
+    void on_purgeMainlineKernels_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////

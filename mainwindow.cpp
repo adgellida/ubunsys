@@ -160,10 +160,21 @@ void MainWindow::on_purgeMainlineKernels_clicked()
            " && "
            "sudo ppa-purge -y ppa:canonical-kernel-team/ppa"
            " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Purged"));
+}
+
+void MainWindow::on_purgeMainlineKernels_2_clicked()
+{
+    system("xterm -e '"
+           "sudo apt-fast -y install ppa-purge"
+           " && "
            "sudo ppa-purge -y ppa:canonical-kernel-team/bootstrap"
            " && "
            "exit"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Upgraded"));
+    ui->statusBar->showMessage(tr("Purged"));
 }
