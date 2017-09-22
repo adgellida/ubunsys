@@ -131,7 +131,7 @@ You can create a new [issue](https://github.com/adgellida/ubunsys/issues/new) wi
 Dependencies
 =============================================
 
-`git, nano, wget, xdg-utils, xterm, ufw`
+`git, nano, wget, xdg-utils, xterm, ufw, curl`
 
 Embedded in package:
 
