@@ -68,5 +68,7 @@ updateUbuntuScripts.path = /usr/share/ubunsys/scripts
 updateUbuntuScripts.files = $$PWD/scripts/updateUbuntuScripts.sh
 updateUbunsys.path = /usr/share/ubunsys/scripts
 updateUbunsys.files = $$PWD/scripts/updateUbunsys.sh
+updateForced.path = /usr/share/ubunsys/scripts
+updateForced.files = $$PWD/scripts/updateForced.sh
 
-INSTALLS += target desktop icon apt-fastChecking updateUbuntupackages updateUbuntuScripts updateUbunsys
+INSTALLS += target desktop icon apt-fastChecking updateUbuntupackages updateUbuntuScripts updateUbunsys updateForced

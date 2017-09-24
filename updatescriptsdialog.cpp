@@ -75,6 +75,33 @@ void UpdateScriptsDialog::on_checkButton_clicked()
 
 }
 
+void UpdateScriptsDialog::on_forceButton_clicked()
+{
+    system("rm -Rf ~/.ubunsys/updates/updateLog.log");
+    system("touch ~/.ubunsys/updates/updateLog.log");
+
+    ui->textBrowser->clear();
+    ui->textBrowser->setText(tr("Forcing only packages & scripts updates..."));
+
+    ui->statusBar->showMessage(tr("Updating forcedly. Please wait..."));
+    ui->progressBar->setValue(0);
+    system("/usr/share/ubunsys/scripts/updateForced.sh");
+    ui->progressBar->setValue(100);
+
+    ui->statusBar->showMessage(tr("Updated forcedly. Close this window!"));
+
+    //Show update output
+
+    QFile file (QDir::homePath() + "/.ubunsys/updates/updateLog.log");
+
+    if(!file.open(QIODevice::ReadOnly))
+        QMessageBox::information(0,"info",file.errorString());
+
+    QTextStream in (&file);
+
+    ui->textBrowser->setText(in.readAll());
+}
+
 void UpdateScriptsDialog::on_closeUpdateDialogButton_clicked()
 {
     ui->statusBar->showMessage(tr("Push to check scripts version and update if necessary."));
@@ -82,3 +109,5 @@ void UpdateScriptsDialog::on_closeUpdateDialogButton_clicked()
     ui->textBrowser->setText(tr("Waiting selection..."));
     ui->progressBar->setValue(0);
 }
+
+

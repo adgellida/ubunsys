@@ -23,6 +23,8 @@ private slots:
 
     void on_closeUpdateDialogButton_clicked();
 
+    void on_forceButton_clicked();
+
 private:
     Ui::UpdateScriptsDialog *ui;
 };

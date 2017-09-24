@@ -5,3 +5,4 @@ scripts/apt-fastChecking.sh usr/share/ubunsys
 scripts/updateUbuntupackages.sh usr/share/ubunsys
 scripts/updateUbuntuScripts.sh usr/share/ubunsys
 scripts/updateUbunsys.sh usr/share/ubunsys
+scripts/updateForced.sh usr/share/ubunsys

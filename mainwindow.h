@@ -168,6 +168,14 @@ private slots:
 
     void on_purgeMainlineKernels_2_clicked();
 
+    void on_enableUpdateNotificationButton_clicked();
+
+    void on_disableUpdateNotificationButton_clicked();
+
+
+
+    void on_openRCLocalButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////

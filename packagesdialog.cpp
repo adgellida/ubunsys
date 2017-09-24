@@ -69,8 +69,8 @@ void PackagesDialog::onFileItemSelected()
               QTextStream stream(&file);
 
               //stream << "#!/bin/bash\n\n" + fi.absoluteFilePath() << endl;
-              stream << fi.absoluteFilePath() << endl;
-              qDebug() << fi.absoluteFilePath();
+              stream << "'" + fi.absoluteFilePath() + "'" << endl;
+              qDebug() << "'" + fi.absoluteFilePath() + "'";
 
               //Assign Permissions on each selection to selected file
               QString filenamePermissionsPath = fi.absoluteFilePath();
@@ -95,8 +95,8 @@ void PackagesDialog::onFileItemSelected()
                 QTextStream stream(&file2);
 
                 //stream << "#!/bin/bash\n\n" + fi.absoluteFilePath() << endl;
-                stream << "xdg-open " + fi.absoluteFilePath()<< endl;
-                qDebug() << "xdg-open " + fi.absoluteFilePath();
+                stream << "xdg-open '" + fi.absoluteFilePath() + "'"<< endl;
+                qDebug() << "xdg-open '" + fi.absoluteFilePath() + "'";
 
                 //Assign Permissions on each selection to selected file
                 QString filenamePermissionsPath = fi.absoluteFilePath();

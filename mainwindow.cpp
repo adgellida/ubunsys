@@ -178,3 +178,38 @@ void MainWindow::on_purgeMainlineKernels_2_clicked()
 
     ui->statusBar->showMessage(tr("Purged"));
 }
+
+void MainWindow::on_enableUpdateNotificationButton_clicked()
+{
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/054.enableUpdateNotification"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Enabled"));
+}
+
+void MainWindow::on_disableUpdateNotificationButton_clicked()
+{
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/055.disableUpdateNotification"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Disabled"));
+}
+
+void MainWindow::on_openRCLocalButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening rc.local"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/056.openRCLocal"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
