@@ -83,6 +83,29 @@ MainWindow::MainWindow(QWidget *parent) :
     PackagesDialogUi = new PackagesDialog ();//////////////
     //connect(PackagesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePackagesDialog()));////////////////
 
+    ///Update message
+
+    QFile file2 (QDir::homePath() + "/.ubunsys/updates/updatePresent.txt");
+
+    if(file2.exists())
+    {
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("ubunsys app Update");
+        msgBox.setText("There's an update, would you like to install it?");
+        msgBox.setStandardButtons(QMessageBox::Yes);
+        msgBox.addButton(QMessageBox::No);
+        msgBox.setDefaultButton(QMessageBox::No);
+        if(msgBox.exec() == QMessageBox::Yes){
+            on_updateAppButton_clicked();
+        }else {
+          // do nothing
+        }
+    }
+    else
+    {
+      // do nothing
+    }
+
 }
 
 MainWindow::~MainWindow()

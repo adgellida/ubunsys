@@ -27,9 +27,10 @@ echo "$latest_version"
 if grep -q "$latest_version" "$file2"; then
 	echo "$message1"
 	echo "$message1" >> ~/.ubunsys/updates/updateLog.log
+	rm ~/.ubunsys/updates/updatePresent.txt
 else
-	echo "$message2"
-	echo "$message2" >> ~/.ubunsys/updates/updateLog.log
+	echo "$message2"	
+	echo "update present" > ~/.ubunsys/updates/updatePresent.txt
 fi
 
 #read
