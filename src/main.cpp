@@ -30,6 +30,20 @@ int main(int argc, char *argv[])
     //updateScriptsDialog2.setModal(true);
     //updateScriptsDialog2.exec();
 
+    //style
+
+    QFile f(":qdarkstyle/style.qss");
+    if (!f.exists())
+    {
+        printf("Unable to set stylesheet, file not found\n");
+    }
+    else
+    {
+        f.open(QFile::ReadOnly | QFile::Text);
+        QTextStream ts(&f);
+        qApp->setStyleSheet(ts.readAll());
+    }
+
     MainWindow w;
     w.show();
 

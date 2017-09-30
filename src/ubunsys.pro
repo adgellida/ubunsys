@@ -40,8 +40,8 @@ FORMS    += mainwindow.ui \
             packagesdialog.ui \
             updatescriptsdialog.ui
 
-RESOURCES += ubunsys.qrc
-
+RESOURCES += ubunsys.qrc \
+             qdarkstyle/style.qrc
 DISTFILES +=
 
 TRANSLATIONS += languages/ubunsys_es_ES.ts

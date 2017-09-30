@@ -218,3 +218,4 @@ Créditos y gracias a
 =============================================
 
 * [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) de Noun Project que creó de la app el [icono](https://thenounproject.com/term/terminal/715962/) usado aquí. Precioso!
+* [ColinDuquesnoy](https://github.com/ColinDuquesnoy) por hacer creado un [tema](https://github.com/ColinDuquesnoy/QDarkStyleSheet) tan bueno. Usado aquí. Demasido bello!
