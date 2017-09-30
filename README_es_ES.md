@@ -89,8 +89,6 @@ Qué hace este programa
 
 * Puedes seleccionar un montón de apps e instalarlas clickando sólo un botón.
 
-* Cargar una selección preconfigurada (en un futuro podrás cargar la tuya).
-
 ##### Mejoras
 
 * Habilitar-deshabilitar sudo sin contraseña. Por seguridad cuando ejecutas sudo una contraseña es preguntada, pero es todioso ponerla cada vez que ejecutas una acción de permisos elevados, por eso recomiendo
@@ -172,6 +170,8 @@ POR HACER
 
 HECHO
 =============================================
+
+* Cargar una selección preconfigurada de apps. No todas las apps están actualziadas debido a la política de los mantenedores de paquetes, en algunos casos no proporcionando una manera de actualización automática.
 
 * Poner apps en orden alfabético.
 

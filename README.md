@@ -87,9 +87,7 @@ What this program do
 
 ##### Packages
 
-* You can select a lot of apps and install them clicking only a button.
-
-* Load a preconfigured selection (on future you can select yours)
+* You can select a lot of apps and install them clicking only a button. Not all apps are updated due to package maintainers policy, in some cases not proporcionating an autoupdate way.
 
 ##### Tweaks
 
@@ -172,6 +170,8 @@ TO DO
 
 DONE
 =============================================
+
+* Load a preconfigured selection of apps.
 
 * Put apps in alphabetical order.
 
