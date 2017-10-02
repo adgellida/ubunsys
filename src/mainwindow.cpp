@@ -2,6 +2,8 @@
 #include "ui_mainwindow.h"
 #include "updatescriptsdialog.cpp"
 #include "updatescriptsdialog.h"
+#include "preferencesdialog.cpp"
+#include "preferencesdialog.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -83,6 +85,9 @@ MainWindow::MainWindow(QWidget *parent) :
     PackagesDialogUi = new PackagesDialog ();//////////////
     //connect(PackagesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePackagesDialog()));////////////////
 
+    PreferencesDialogUi = new PreferencesDialog ();//////////////
+    connect(PreferencesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePreferencesDialog()));////////////////
+
     ///Update message
 
     QFile file2 (QDir::homePath() + "/.ubunsys/updates/updatePresent.txt");
@@ -112,6 +117,7 @@ MainWindow::~MainWindow()
 {
     delete UpdateScriptsDialogUi;////////////////
     delete PackagesDialogUi;////////////////
+    delete PreferencesDialogUi;////////////////
     delete ui;
 }
 
@@ -235,4 +241,27 @@ void MainWindow::on_openRCLocalButton_clicked()
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//PREFERENCES
+
+void MainWindow::on_preferencesDialogButton_released()//////////////////////
+{
+    qDebug() << "dialogOpenned";
+    PreferencesDialogUi->show();
+    ui->textBrowser->setText(tr("Opened preferences dialog..."));
+}
+
+void MainWindow::closePreferencesDialog()//////////////////////
+{
+
+    qDebug() << "Close pushed";
+
+    PreferencesDialogUi->close();
+}
+
+void MainWindow::on_actionPreferences_triggered()
+{
+    qDebug() << "Preferences pushed";
+    PreferencesDialogUi->show();
 }

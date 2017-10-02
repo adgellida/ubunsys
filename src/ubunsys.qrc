@@ -27,5 +27,7 @@
         <file>images/ubunsys.png</file>
         <file>images/ubunsys.ico</file>
         <file>images/orange-up-24.png</file>
+        <file>images/settings-512.png</file>
+        <file>images/gtk-preferences.png</file>
     </qresource>
 </RCC>

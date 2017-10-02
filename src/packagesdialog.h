@@ -2,7 +2,6 @@
 #define PACKAGESDIALOG_H
 
 #include <QDialog>
-//#include <QRegExp>
 
 namespace Ui {
 class PackagesDialog;
@@ -29,7 +28,7 @@ private slots:
     void on_openInTextEditorButton_clicked();
     void on_clearSelectionButton_clicked();
     ///To implement yet
-    void on_txtFilter_textChanged(const QString &arg1);
+    //void on_txtFilter_textChanged(const QString &arg1);
 
 private:
     Ui::PackagesDialog *ui;

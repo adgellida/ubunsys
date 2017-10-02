@@ -233,10 +233,10 @@ void PackagesDialog::on_openInTextEditorButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-void PackagesDialog::on_txtFilter_textChanged(const QString &arg1)
-{
+//void PackagesDialog::on_txtFilter_textChanged(const QString &arg1)
+//{
 ///To implement yet
-}
+//}
 
 void PackagesDialog::on_clearSelectionButton_clicked()
 {

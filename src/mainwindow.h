@@ -13,6 +13,7 @@
 #include <QSettings>
 #include <updatescriptsdialog.h>//////////
 #include <packagesdialog.h>//////////
+#include <preferencesdialog.h>//////////
 
 namespace Ui {
 class MainWindow;
@@ -28,13 +29,15 @@ public:
 
 public slots:
 
-    void closeUpdateDialog();///////////////
     //void closePackagesDialog();///////////////
+    void closeUpdateDialog();///////////////
+    void closePreferencesDialog();///////////////
 
 private slots:
 
     void on_manualUpdateDialogButton_released();////////////
     void on_runScriptsManager_released();////////////
+    void on_preferencesDialogButton_released();////////////
 
     void on_actionNew_triggered();
 
@@ -47,6 +50,8 @@ private slots:
     void on_actionAbout_triggered();
 
     void on_actionTutorial_triggered();
+
+    void on_actionPreferences_triggered();
 
     void on_updateReposButton_clicked();
 
@@ -78,9 +83,7 @@ private slots:
 
     void on_repairNetworkButton_clicked();
 
-    void on_repairGPGKeys_clicked();
-
-    //void on_actionAbout_clicked();
+    void on_repairGPGKeys_clicked();    
 
     void on_upgradeLatestStableButton_clicked();
 
@@ -118,7 +121,9 @@ private slots:
 
     void on_disableFirewallButton_clicked();
 
+    //void on_actionAbout_clicked();
     //void on_updateScriptsButton_clicked();
+    //void on_runUpdateDialog_clicked();
 
     void on_updateAppButton_clicked();
 
@@ -156,8 +161,6 @@ private slots:
 
     void on_openSudoersDButton_clicked();
 
-    //void on_runUpdateDialog_clicked();
-
     void on_seeReleasesButton_clicked();
 
     void on_upgradeLatestKernel_1_clicked();
@@ -172,14 +175,13 @@ private slots:
 
     void on_disableUpdateNotificationButton_clicked();
 
-
-
     void on_openRCLocalButton_clicked();
 
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////
     PackagesDialog *PackagesDialogUi;/////////////
+    PreferencesDialog *PreferencesDialogUi;/////////////
 };
 
 #endif // MAINWINDOW_H

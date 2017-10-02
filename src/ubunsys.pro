@@ -29,16 +29,19 @@ SOURCES  += main.cpp \
             tutorial.cpp \
             packagesdialog.cpp \
             rootfilesysproxymodel.cpp \
-            updatescriptsdialog.cpp
+            updatescriptsdialog.cpp \
+            preferencesdialog.cpp
 
 HEADERS  += mainwindow.h \
             packagesdialog.h \
             rootfilesysproxymodel.h \
-            updatescriptsdialog.h
+            updatescriptsdialog.h \
+            preferencesdialog.h
 
 FORMS    += mainwindow.ui \
             packagesdialog.ui \
-            updatescriptsdialog.ui
+            updatescriptsdialog.ui \
+            preferencesdialog.ui
 
 RESOURCES += ubunsys.qrc \
              qdarkstyle/style.qrc
