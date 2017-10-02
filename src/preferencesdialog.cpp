@@ -83,12 +83,6 @@ PreferencesDialog::~PreferencesDialog()
 
 void PreferencesDialog::on_closePreferencesDialogButton_clicked()
 {
-    qDebug() << "Close pushed2";
-}
-
-void PreferencesDialog::on_SavePreferencesButton_clicked()
-{
-    qDebug() << "Save pushed2";
 
     QString language_selected = ui->comboBox_2->currentText();
     QString theme_selected = ui->comboBox_1->currentText();
@@ -110,4 +104,21 @@ void PreferencesDialog::on_SavePreferencesButton_clicked()
         QTextStream stream( &file_2 );
         stream << theme_selected << endl;
     }
+
 }
+
+void PreferencesDialog::closeEvent(QCloseEvent *event)
+{
+    // do what you need here
+    // then call parent's procedure
+
+    on_closePreferencesDialogButton_clicked();
+
+    QMessageBox::information(this,tr("Notification"),tr("Now app will restart with the last config setted"));
+
+    QProcess::startDetached(QApplication::applicationFilePath());
+    exit(12);
+
+    QWidget::closeEvent(event);
+}
+

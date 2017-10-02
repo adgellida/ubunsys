@@ -21,7 +21,7 @@ signals:
 private slots:
     void on_closePreferencesDialogButton_clicked();
 
-    void on_SavePreferencesButton_clicked();
+    void closeEvent(QCloseEvent *event);
 
 private:
     Ui::PreferencesDialog *ui;

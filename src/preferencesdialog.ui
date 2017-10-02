@@ -94,27 +94,14 @@
   <widget class="QPushButton" name="closePreferencesDialogButton">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>239</x>
      <y>250</y>
-     <width>80</width>
+     <width>141</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Close</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="SavePreferencesButton">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>250</y>
-     <width>80</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Save</string>
+    <string>Close and Restart</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_46">
@@ -133,8 +120,8 @@
     </font>
    </property>
    <property name="text">
-    <string>Only when you push &quot;Save&quot; the changes are saved.
-Then you have to restart app to see changes applied.</string>
+    <string>Clicking &quot;X&quot; close button of this window
+do the same if you click on &quot;Close and Restart&quot;</string>
    </property>
   </widget>
  </widget>

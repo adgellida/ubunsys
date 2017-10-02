@@ -4,16 +4,12 @@
 #include <QMessageBox>
 #include <QTextStream>
 #include <QFile>
-//#include "preferencesdialog.cpp"
-#include "preferencesdialog.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     app.setOrganizationName("adgellida");
     app.setApplicationName("ubunsys");
-
-    //QCoreApplication::addLibraryPath("usr/share/ubunsys/lib");
 
     //Creating folder configurations
 

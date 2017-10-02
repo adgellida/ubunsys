@@ -177,6 +177,8 @@ private slots:
 
     void on_openRCLocalButton_clicked();
 
+    void on_resetDconf_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////

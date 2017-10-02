@@ -14,13 +14,26 @@ void MainWindow::on_enableSudoWithoutPassAllButton_clicked()
 {
     ui->statusBar->showMessage(tr("Enabling sudo without pass"));
 
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPassAll"
-           " && "
-           "exit"
-           "; exec bash'");
+    QMessageBox::StandardButton reply;
+      reply = QMessageBox::question(this, "Warning", "Are you completely sure?",
+                                    QMessageBox::Yes|QMessageBox::No);
+      if (reply == QMessageBox::Yes) {
+        qDebug() << "Yes was clicked";
+        //QApplication::quit();
 
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPassAll"
+               " && "
+               "exit"
+               "; exec bash'");
+
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+      } else {
+        qDebug() << "Yes was *not* clicked";
+        ui->statusBar->showMessage(tr("Execution canceled"));
+      }
 }
 
 void MainWindow::on_disableSudoWithoutPassAllButton_clicked()
@@ -506,4 +519,31 @@ void MainWindow::on_openSudoersDButton_clicked()
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_resetDconf_clicked()
+{
+    ui->statusBar->showMessage(tr("Resetting dconf config"));
+
+    QMessageBox::StandardButton reply;
+      reply = QMessageBox::question(this, "Warning", "Are you completely sure?",
+                                    QMessageBox::Yes|QMessageBox::No);
+      if (reply == QMessageBox::Yes) {
+        qDebug() << "Yes was clicked";
+        //QApplication::quit();
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/057.resetDconf"
+               " && "
+               "echo Close this window!"
+               "; exec bash'");
+
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+      } else {
+        qDebug() << "Yes was *not* clicked";
+        ui->statusBar->showMessage(tr("Execution canceled"));
+      }
+
 }
