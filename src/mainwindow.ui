@@ -126,7 +126,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -2013,7 +2013,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Reset all apps that use dconf</string>
+         <string>Resets all apps that use dconf</string>
         </property>
        </widget>
        <widget class="QPushButton" name="resetDconf">
