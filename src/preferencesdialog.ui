@@ -117,6 +117,26 @@
     <string>Save</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_46">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>371</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Only when you push &quot;Save&quot; the changes are saved.
+Then you have to restart app to see changes applied.</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

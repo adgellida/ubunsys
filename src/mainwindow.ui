@@ -3511,7 +3511,7 @@ apt-fast -y clean</string>
    <widget class="QPushButton" name="updateAppButton">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>440</x>
       <y>10</y>
       <width>40</width>
       <height>23</height>
@@ -3531,7 +3531,7 @@ apt-fast -y clean</string>
    <widget class="QPushButton" name="manualUpdateDialogButton">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>490</x>
       <y>10</y>
       <width>40</width>
       <height>23</height>
@@ -3551,7 +3551,7 @@ apt-fast -y clean</string>
    <widget class="QPushButton" name="seeReleasesButton">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>390</x>
       <y>10</y>
       <width>40</width>
       <height>23</height>

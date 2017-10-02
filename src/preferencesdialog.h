@@ -21,6 +21,8 @@ signals:
 private slots:
     void on_closePreferencesDialogButton_clicked();
 
+    void on_SavePreferencesButton_clicked();
+
 private:
     Ui::PreferencesDialog *ui;
 

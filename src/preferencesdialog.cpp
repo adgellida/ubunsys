@@ -84,6 +84,11 @@ PreferencesDialog::~PreferencesDialog()
 void PreferencesDialog::on_closePreferencesDialogButton_clicked()
 {
     qDebug() << "Close pushed2";
+}
+
+void PreferencesDialog::on_SavePreferencesButton_clicked()
+{
+    qDebug() << "Save pushed2";
 
     QString language_selected = ui->comboBox_2->currentText();
     QString theme_selected = ui->comboBox_1->currentText();
@@ -105,5 +110,4 @@ void PreferencesDialog::on_closePreferencesDialogButton_clicked()
         QTextStream stream( &file_2 );
         stream << theme_selected << endl;
     }
-
 }
