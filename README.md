@@ -77,11 +77,11 @@ Run `qmake && make && sudo make install` in the main directory.
 Screenshots
 =============================================
 
-<img src="https://i.imgur.com/kh9l4VF.png" width="400">			<img src="https://i.imgur.com/J9ZTJ0A.png" width="400">
+<img src="https://i.imgur.com/kh9l4VF.png" width="425">			<img src="https://i.imgur.com/J9ZTJ0A.png" width="425">
 
-<img src="https://i.imgur.com/v71JsXg.png" width="400">			<img src="https://i.imgur.com/cKpSFza.png" width="400">
+<img src="https://i.imgur.com/v71JsXg.png" width="425">			<img src="https://i.imgur.com/cKpSFza.png" width="425">
 
-<img src="https://i.imgur.com/E9IB54J.png" width="400">
+<img src="https://i.imgur.com/E9IB54J.png" width="425">
 
 What this program do
 =============================================
