@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-	<a href="https://t.me/ubunsys_app" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/td_logo.png" width="25" alt="telegram group"></a>
+	<a href="https://t.me/ubunsys_app" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/td_logo.png" width="25" alt="telegram group"></a>
 	<a href="https://twitter.com/ubunsys_app" target="_blank"><img src="https://img.shields.io/twitter/follow/ubunsys_app.svg?style=social&label=Follow" alt="twitter"></a>
 	<a href="https://gitter.im/adgellida/ubunsys" target="_blank"><img src="https://badges.gitter.im/adgellida/ubunsys.svg" alt="chat"></a>
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=84KHR9VLK7XK8" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate to project"></a> <a href="https://www.paypal.me/adgellida" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal.me-green.svg" alt="Donate to developer"></a>
@@ -23,7 +23,7 @@
 </p>
 
 <p align="left">
-	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/made-with-qt.png" alt="forthebadge"></a>
+	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/made-with-qt.png" alt="forthebadge"></a>
 	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.2.1-green.svg" alt="qt version"></a>
 </p>
 
@@ -77,11 +77,11 @@ Run `qmake && make && sudo make install` in the main directory.
 Screenshots
 =============================================
 
-<img src="https://i.imgur.com/kh9l4VF.png" width="425">         <img src="https://i.imgur.com/J9ZTJ0A.png" width="425">
+<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/Scripts Manager_010.bmp" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_006.bmp" width="425">
 
-<img src="https://i.imgur.com/v71JsXg.png" width="425">         <img src="https://i.imgur.com/cKpSFza.png" width="425">
+<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_007.bmp" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_008.bmp" width="425">
 
-<img src="https://i.imgur.com/E9IB54J.png" width="425">
+<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_009.bmp" width="425">
 
 What this program do
 =============================================
