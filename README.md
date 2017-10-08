@@ -82,11 +82,11 @@ Run `qmake && make && sudo make install` in the main directory.
 Screenshots
 =============================================
 
-<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/Scripts Manager_010.bmp" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_006.bmp" width="425">
+<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_005.png" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_006.png" width="425">
 
-<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_007.bmp" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_008.bmp" width="425">
+<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_007.png" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_008.png" width="425">
 
-<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_009.bmp" width="425">
+<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_009.png" width="425">
 
 What this program do
 =============================================
