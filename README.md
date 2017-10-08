@@ -154,7 +154,7 @@ TO DO
 
 * Load saved configurations of personalized user installations.
 
-* Snap, AppImage, PPA (updated), flatpack.
+* Snap, flatpack.
 
 * Backup user folder
 

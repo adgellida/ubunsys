@@ -154,7 +154,7 @@ POR HACER
 
 * Cargar configuraciones guardadas de instalaciones personalizadas de usuarios.
 
-* Snap, AppImage, PPA (actualizado), flatpack.
+* Snap, flatpack.
 
 * Copia de seguridad de la carpeta de usuario.
 
