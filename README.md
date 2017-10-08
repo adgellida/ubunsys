@@ -53,15 +53,40 @@ Download from official sources - click on logo
 Launchpad PPA Method - State: UPDATED
 =============================================
 
-`sudo add-apt-repository -y ppa:adgellida/ubunsys`
+`#!/bin/bash`
 
-`sudo apt-get -y update`
+`#### ubunsys`
 
-`sudo apt-get -y install ubunsys`
+`#Installing depending supported or obsolete ubuntu version`
+
+`if [ `lsb_release -rs` == "17.10" ] || [ `lsb_release -rs` == "17.04" ] || [ `lsb_release -rs` == "16.04" ] || [ `lsb_release -rs` == "15.04" ] || [ `lsb_release -rs` == "14.04" ]`
+`then`
+
+`    sudo add-apt-repository -y ppa:adgellida/ubunsys`
+`    sudo apt-get -y update`
+`    sudo apt-get -y install ubunsys`
+
+`else`
+    
+`    sudo add-apt-repository -y ppa:adgellida/ubunsys`
+
+`    #Remove obsolete repo`
+
+`    sudo rm /etc/apt/sources.list.d/adgellida-ubuntu-ubunsys-*.list /etc/apt/sources.list.d/adgellida-ubuntu-ubunsys-*.list.save`
+
+`    #Creates operative repo`
+
+`    test -f /etc/apt/sources.list.d/adgellida-ubuntu-ubunsys-obsolete_version.list || sudo sh -c 'echo "deb http://ppa.launchpad.net/adgellida/ubunsys/ubuntu artful main" >> /etc/apt/sources.list.d/adgellida-ubuntu-ubunsys-obsolete_version.list'`
+    
+`    sudo apt-get -y update`
+`    sudo apt-get -y install ubunsys`
+
+`fi`
+
 
 Operative versions: 17.10, 17.04, 16.04, 15.04, 14.04.
 
-Obsolete versions: 16.10, 15.10, 14.10.
+Obsolete versions: 16.10, 15.10, 14.10. If you have this version artful version is installed.
 
 Compilation
 =============================================
