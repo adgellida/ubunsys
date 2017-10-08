@@ -65,7 +65,7 @@ Una línea:
 
 Versiones operativas: 17.10, 17.04, 16.04, 15.04, 14.04.
 
-Versiones obsoletas: 16.10, 15.10, 14.10. Si tienes una de estas versiones, la de artful será instalada para conseguir la instalación y actualizaciones futuras.
+Versiones obsoletas: 16.10, 15.10, 14.10. Si tienes una de estas versiones o menor, la de artful será instalada para conseguir la instalación y actualizaciones futuras.
 
 Compilación
 =============================================

@@ -65,7 +65,7 @@ One line:
 
 Operative versions: 17.10, 17.04, 16.04, 15.04, 14.04.
 
-Obsolete versions: 16.10, 15.10, 14.10. If you have one of these versions, artful version will be installed to get installation and future updates.
+Obsolete versions: 16.10, 15.10, 14.10. If you have one of these versions or lower, artful version will be installed to get installation and future updates.
 
 Compilation
 =============================================
