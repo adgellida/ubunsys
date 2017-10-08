@@ -53,6 +53,14 @@ Download from official sources - click on logo
 Launchpad PPA Method - State: UPDATED
 =============================================
 
+`wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys`
+
+`sudo chmod 777 ubunsys`
+
+`sudo ./ubunsys`
+
+One line:
+
 `wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys && sudo chmod 777 ubunsys && sudo ./ubunsys`
 
 Operative versions: 17.10, 17.04, 16.04, 15.04, 14.04.
