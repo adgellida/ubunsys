@@ -26,6 +26,7 @@
 <p align="left">
 	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/made-with-qt.png" alt="forthebadge"></a>
 	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.2.1-green.svg" alt="qt version"></a>
+	<a href="http://www.somsubhra.com/github-release-stats/?username=adgellida&repository=ubunsys" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/github-release-stats.png" alt="github release stats"></a>
 </p>
 
 **Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
