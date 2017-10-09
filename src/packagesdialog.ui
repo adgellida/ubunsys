@@ -2,12 +2,15 @@
 <ui version="4.0">
  <class>PackagesDialog</class>
  <widget class="QDialog" name="PackagesDialog">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>448</width>
-    <height>672</height>
+    <width>461</width>
+    <height>681</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,10 +22,10 @@
   <widget class="QWidget" name="centralWidget">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>10</x>
+     <y>20</y>
      <width>441</width>
-     <height>651</height>
+     <height>631</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -61,13 +64,17 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="0" colspan="2">
-     <widget class="QTreeView" name="treeView"/>
-    </item>
     <item row="2" column="1">
      <widget class="QPushButton" name="openInTextEditorButton">
       <property name="text">
        <string>Open in text editor</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="clearSelectionButton">
+      <property name="text">
+       <string>Clear selection</string>
       </property>
      </widget>
     </item>
@@ -94,37 +101,17 @@
       </property>
      </widget>
     </item>
-    <item row="5" column="1">
-     <widget class="QPushButton" name="clearSelectionButton">
-      <property name="text">
-       <string>Clear selection</string>
+    <item row="0" column="0" colspan="2">
+     <widget class="QTreeView" name="treeView">
+      <property name="enabled">
+       <bool>true</bool>
       </property>
+      <attribute name="headerVisible">
+       <bool>false</bool>
+      </attribute>
      </widget>
     </item>
    </layout>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>441</width>
-     <height>19</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>8</width>
-     <height>17</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusBar">
    <property name="enabled">
@@ -133,7 +120,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>650</y>
+     <y>660</y>
      <width>451</width>
      <height>21</height>
     </rect>
