@@ -49,28 +49,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //######## apt-fast checking
 
-    system("/usr/share/ubunsys/scripts/apt-fastChecking.sh");
+    system("/usr/share/ubunsys/scripts/apt-fastCheckingNotification.sh");
 
     //######## Update ubunsys
 
     system("/usr/share/ubunsys/scripts/updateUbunsys.sh");
-
-    //######## Show update output
-
-    QFile file (QDir::homePath() + "/.ubunsys/updates/updateLog.log");
-
-    if(!file.open(QIODevice::ReadOnly))
-        QMessageBox::information(0,"info",file.errorString());
-
-    QTextStream in (&file);
-
-    ui->textBrowser->setText(in.readAll());
-
-    //QFile::remove(QDir::homePath() + "/.ubunsys/updates/updateLog.log");
-    system("rm -Rf ~/.ubunsys/updates/updateLog.log");
-    system("touch ~/.ubunsys/updates/updateLog.log");
-
-    ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
     //Set main position
 
@@ -91,25 +74,59 @@ MainWindow::MainWindow(QWidget *parent) :
     ///Update message
 
     QFile file2 (QDir::homePath() + "/.ubunsys/updates/updatePresent.txt");
+    //QFile file2 (QDir::homePath() + "/.ubunsys/configurations/hola2.txt");
+    QFile file3 (QDir::homePath() + "/.ubunsys/configurations/apt-fastInstalled.txt");
 
     if(file2.exists())
     {
         QMessageBox msgBox;
-        msgBox.setWindowTitle("ubunsys app Update");
+        msgBox.setWindowTitle("ubunsys app update present");
         msgBox.setText("There's an update, would you like to install it?");
         msgBox.setStandardButtons(QMessageBox::Yes);
         msgBox.addButton(QMessageBox::No);
         msgBox.setDefaultButton(QMessageBox::No);
         if(msgBox.exec() == QMessageBox::Yes){
             on_updateAppButton_clicked();
-        }else {
+        }
+        else {
           // do nothing
         }
     }
-    else
+
+    if(!file3.exists())
     {
-      // do nothing
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Warning");
+        msgBox.setText("We need extra dependencies:\napt-fast, we go to install it");
+        msgBox.setStandardButtons(QMessageBox::Yes);
+        msgBox.addButton(QMessageBox::No);
+        msgBox.setDefaultButton(QMessageBox::No);
+        if(msgBox.exec() == QMessageBox::Yes){
+            // do nothing
+        }
+        else {
+          // do nothing
+        }
     }
+
+        system("/usr/share/ubunsys/scripts/apt-fastChecking.sh");
+
+        //######## Show update output
+
+        QFile file (QDir::homePath() + "/.ubunsys/updates/updateLog.log");
+
+        if(!file.open(QIODevice::ReadOnly))
+            QMessageBox::information(0,"info",file.errorString());
+
+        QTextStream in (&file);
+
+        ui->textBrowser->setText(in.readAll());
+
+        //QFile::remove(QDir::homePath() + "/.ubunsys/updates/updateLog.log");
+        system("rm -Rf ~/.ubunsys/updates/updateLog.log");
+        system("touch ~/.ubunsys/updates/updateLog.log");
+
+        ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
 }
 

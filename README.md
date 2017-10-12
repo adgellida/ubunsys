@@ -76,6 +76,12 @@ Compilation & install:
 
 Run `qmake && make && sudo make install` in the main directory.
 
+Developing
+=============================================
+
+* Install qt creator and open project
+* Copy an update versions of "scripts" folder in to "/usr/share/ubunsys/" if is not present yet.
+
 Screenshots
 =============================================
 

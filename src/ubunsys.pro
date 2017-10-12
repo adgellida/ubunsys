@@ -65,6 +65,8 @@ desktop.files += ubunsys.desktop
 #scripts
 apt-fastChecking.path = /usr/share/ubunsys/scripts
 apt-fastChecking.files = $$PWD/scripts/apt-fastChecking.sh
+apt-fastCheckingNotification.path = /usr/share/ubunsys/scripts
+apt-fastCheckingNotification.files = $$PWD/scripts/apt-fastCheckingNotification.sh
 updateUbuntupackages.path = /usr/share/ubunsys/scripts
 updateUbuntupackages.files = $$PWD/scripts/updateUbuntupackages.sh
 updateUbuntuScripts.path = /usr/share/ubunsys/scripts
@@ -74,4 +76,4 @@ updateUbunsys.files = $$PWD/scripts/updateUbunsys.sh
 updateForced.path = /usr/share/ubunsys/scripts
 updateForced.files = $$PWD/scripts/updateForced.sh
 
-INSTALLS += target desktop icon apt-fastChecking updateUbuntupackages updateUbuntuScripts updateUbunsys updateForced
+INSTALLS += target desktop icon apt-fastChecking apt-fastCheckingNotification updateUbuntupackages updateUbuntuScripts updateUbunsys updateForced
