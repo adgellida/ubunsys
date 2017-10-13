@@ -214,9 +214,9 @@ Be careful
 
 Be careful! The initial versions have a lot of bugs and disabled functions for a reason.
 
-If you want to help on this dev, please contact me.
+If you want to help with development on this software, please contact me.
 
-If you need help with compiling and packaging I have basic knowhow, ask me.
+If you need help with compiling and packaging I have basic knowhow, feel free to ask me.
 
 I'm not a senior programmer, nor junior. I program as a hobby. So I'm not following professional coding practices.
 
