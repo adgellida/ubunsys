@@ -31,7 +31,7 @@
 
 **Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
 
-Ubunsys is a piece of software that presents powerful options to toggle on and off in Ubuntu, it is able to change deep system configuration, updates, execute improvements, fixes, and more at the touch of a mouse click.
+Ubunsys is a piece of software that gives the user a powerful control center to toggle on and off many system settings in Ubuntu, it is able to change system configurations, system updates, executable improvements, small system fixes, and more at the touch of a button.
 
 It is Theoretically compatible with all Ubuntu versions.
 
