@@ -12,8 +12,7 @@
     <a href="https://github.com/adgellida/ubunsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
-    <a href="https://github.com/LewisVo/Awesome-Linux-Software"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/></a>
-</p>
+    <a href="https://github.com/LewisVo/Awesome-Linux-Software/#utilities"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/></a></p>
 
 <p align="center">
 	<a href="https://t.me/ubunsys_app" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/td_logo.png" width="25" alt="telegram group"></a>
@@ -31,21 +30,21 @@
 
 **Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
 
-Software installer of a helpful package list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
+Ubunsys is a piece of software that gives the user a powerful control center to toggle on and off many system settings in Ubuntu, it is able to change system configurations, system updates, executable improvements, small system fixes, and more at the touch of a button.
 
-Theorically compatible with all Ubuntu versions.
+It is Theoretically compatible with all Ubuntu versions.
 
-**Very dangerous app in any points, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
+**This is a very dangerous app, if you don't know what you are touching or how to fix it, don't do it. This software is for testing and knowledge purposes. It's unstable software.**
 
-Built with Qt 5.2.1 for versioning compatibility.
+Built with Qt 5.2.1 for version compatibility.
 
-Feeded with [ubuntupackages](https://github.com/adgellida/ubuntupackages) and [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
+This is a GUI for these scripts [ubuntupackages](https://github.com/adgellida/ubuntupackages) and [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
 
-Apps based on him:
+Other Apps based on this:
 
 * [winsys](https://github.com/adgellida/winsys).
 
-Download from official sources - click on logo
+To Download this app from official sources - Select a logo
 =============================================
 
 <p align="center">
@@ -76,7 +75,7 @@ Compilation & install:
 
 Run `qmake && make && sudo make install` in the main directory.
 
-Developing
+Development
 =============================================
 
 * Install qt creator and open project
@@ -91,49 +90,48 @@ Screenshots
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_009.png" width="425">
 
-What this program do
+What this program does
 =============================================
 
 ##### Packages
 
-* You can select a lot of apps and install them clicking only a button. Not all apps are updated due to package maintainers policy, in some cases not proporcionating an autoupdate way.
+* You can select a lot of apps and install them by only clicking a button.
 
 ##### Tweaks
 
-* Enable-disable sudo without pass. For security when you exec sudo a password is prompted, but is tedious to put pass each time you executed an elevated permission action, so I recommend
-to push this button when you don't need this security and want speed. **Then disable this function to restore security on your system.**
+* Enable-disable sudo without a password. This is usually for security when you execute the sudo command you are prompted for a password, but it can be tedious to put in a passwird each time you execute an elevated permission action, so I recommend to push this button when you don't need this security and want speed. **be sure once you are done to disable this function to restore security to your system.**
 
-* Enable-disable asterisks when you put pass on terminal, hibernation, firewall.
+* Enable-disable asterisks when you put password in for the terminal, hibernation, or firewall.
 
 * Open sources.list.d, sudoers file (backup and import).
 
-* Install more content on New Doc Sub-Menu (secondary mouse button).
+* Gives access to new content when right clicking.
 
-* Reduce timeout when shutdown, not recommended by now to use.
+* Reduce shutdown timer to less than the standard, it is not recommended to use this currently.
 
 ##### System
 
-* Default update & upgrade system, update & upgrade repos, exec normal user installation script from git, default clean system.
+* Change the fefault update & upgrade system, update & upgrade repos, exec normal user installation script from git, or default back to a clean system.
 
-* Smart system update, clean ancient kernels, upgrade to latest stable OS version, install mainline kernel (not recommended, possible incompatibilities)
+* Smart system update, clean out old kernels, upgrade to latest stable OS version, install mainline kernel (not recommended, due to possible incompatibilities).
 
-* Upgrade to latest unstable OS version (not recommended, bugs).
+* Upgrade to latest unstable OS version (not recommended, due to bugs).
 
 ##### Repair
 
-* Check system integrity, repair network, missing GPG keys.
+* Check system integrity, repair network, check missing GPG keys.
 
 And more...
 
 Tutorial
 =============================================
 
-Push [here](https://github.com/adgellida/ubunsys/wiki/Tutorial_en) to go to wiki.
+Push [here](https://github.com/adgellida/ubunsys/wiki/Tutorial_en) to go to the wiki.
 
 How can I help?
 =============================================
 
-You can create a new [issue](https://github.com/adgellida/ubunsys/issues/new) with an error, proposing new funcitonalities, adding new packages, help on coding, etc...
+You can create a new [issue](https://github.com/adgellida/ubunsys/issues/new) with an error, proposing new functionality, adding new packages, help on coding, etc...
 
 Dependencies
 =============================================
@@ -155,25 +153,25 @@ TO DO
 
 * Improve ubuntu fonts.
 
-* Put selector or slider.
+* code in a selector or slider.
 
-* Add more sounds to system.
+* Add more sounds to the system.
 
 * Load saved configurations of personalized user installations.
 
-* Snap, flatpack.
+* Snap, and flatpack packages.
 
-* Backup user folder
+* Backup user folder.
 
-* Integer terminal on a widget. Recover mainwindows focus.
+* Integer terminal on a widget. Recover main windows focus.
 
 * Uninstall packages.
 
 * Regroup files to clean main directory.
 
-* First add all selected ppas. Then apt-fast -y update and finally install all selected packages. So, more quick.
+* First add all selected ppas. Then apt-fast -y update and finally install all selected packages. This will be much faster than the standard commands.
 
-* Save user configuration for use it when you re-open app.
+* Save user configuration for later use, when you re-open the app.
 
 * Disable keyring.
 
@@ -210,21 +208,21 @@ DONE
 
 * Download updated database about ppas each time you open app independent of app version. You push "update scripts button" and it does it.
 
-Be care
+Be careful
 =============================================
 
-Be careful! These initial versions has a lot of bugs and disabled functionalities.
+Be careful! The initial versions have a lot of bugs and disabled functions for a reason.
 
-If you want to help on this dev, say to me.
+If you want to help with development on this software, please contact me.
 
-If you need help about compilation and packaging I have basic notions, ask me.
+If you need help with compiling and packaging I have basic knowhow, feel free to ask me.
 
-I'm not a senior programmer, nor junior. I program as a hobby. So I'm not following professional coding practises.
+I'm not a senior programmer, nor junior. I program as a hobby. So I'm not following professional coding practices.
 
-I know that my code is horrifying and not good implemented. With patience I'll go to cleaning and improving it. 
+I know that my code is horrifying and very well implemented. With patience and time I'll go to cleaning and improving it.
 
 Credits and thanks to
 =============================================
 
-* [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) from Noun Project that creates the app [icon](https://thenounproject.com/term/terminal/715962/) used here. Beautiful!
-* [ColinDuquesnoy](https://github.com/ColinDuquesnoy) for create a [theme](https://github.com/ColinDuquesnoy/QDarkStyleSheet) so good. Used here. Too beauty!
+* [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) from Noun Project that created the app [icon](https://thenounproject.com/term/terminal/715962/) used here. Beautiful!
+* [ColinDuquesnoy](https://github.com/ColinDuquesnoy) for creating a [theme](https://github.com/ColinDuquesnoy/QDarkStyleSheet) it's really good and I used it here. It like how it looks!
