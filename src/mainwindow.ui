@@ -3977,7 +3977,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.10.02</string>
+     <string>v2017.10.29</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">

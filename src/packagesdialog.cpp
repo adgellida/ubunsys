@@ -250,3 +250,13 @@ void PackagesDialog::on_clearSelectionButton_clicked()
     system("rm ~/.ubunsys/files/packagesToInstall.sh && ~/.ubunsys/files/packagesToWatch.sh");
     ui->statusBar->showMessage(tr("Selection cleared"));
 }
+
+void PackagesDialog::on_showCategoriesButton_clicked()
+{
+    fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1-categories", this);
+    ui->treeView->setModel(fsModel);
+    ui->treeView->expandAll();
+    connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
+
+    ui->statusBar->showMessage(tr("Categories enabled"));
+}

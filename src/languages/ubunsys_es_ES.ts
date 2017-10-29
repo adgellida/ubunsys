@@ -681,6 +681,11 @@ Bootstrap Kernels</translation>
         <translation></translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="3980"/>
+        <source>v2017.10.29</source>
+        <translation>v2017.10.29</translation>
+    </message>
+    <message>
         <source>v2017.09.09</source>
         <translation type="vanished">v2017.09.09</translation>
     </message>
@@ -995,9 +1000,8 @@ apt-fast -y clean</source>
         <translation>Ejecutar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3980"/>
         <source>v2017.10.02</source>
-        <translation>v2017.10.02</translation>
+        <translation type="vanished">v2017.10.02</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="4167"/>
@@ -1036,55 +1040,55 @@ apt-fast -y clean</source>
         <translation>Español</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="73"/>
+        <location filename="../mainwindow.cpp" line="129"/>
         <source>Recommendation: Push Help -&gt; Tutorial</source>
         <translation>Recomendación: Pulsa Ayuda -&gt; Tutorial</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="128"/>
-        <location filename="../mainwindow.cpp" line="135"/>
+        <location filename="../mainwindow.cpp" line="145"/>
+        <location filename="../mainwindow.cpp" line="152"/>
         <source>Continue on the opened dialog...</source>
         <translation>Continue en el dialogo que se abrió...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="161"/>
+        <location filename="../mainwindow.cpp" line="178"/>
         <source>Upgrading to latest kernel from PPA for Canonical Kernel Team</source>
         <translation>Actualzando al último kernel del PPA for Canonical Kernel Team</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="169"/>
-        <location filename="../mainwindow.cpp" line="182"/>
+        <location filename="../mainwindow.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="199"/>
         <source>Upgraded</source>
         <translation>Actualizado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
+        <location filename="../mainwindow.cpp" line="191"/>
         <source>Upgrading to latest kernel from PPA for Canonical Kernel Team - Bootstrap</source>
         <translation>Actualzando al último kernel del PPA for Canonical Kernel Team - Bootstrap</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="195"/>
-        <location filename="../mainwindow.cpp" line="208"/>
+        <location filename="../mainwindow.cpp" line="212"/>
+        <location filename="../mainwindow.cpp" line="225"/>
         <source>Purged</source>
         <translation>Purgado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="219"/>
+        <location filename="../mainwindow.cpp" line="236"/>
         <source>Enabled</source>
         <translation>Habilitado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="230"/>
+        <location filename="../mainwindow.cpp" line="247"/>
         <source>Disabled</source>
         <translation>Deshabilitado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Opening rc.local</source>
         <translation>Abriendo rc.local</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>Opened preferences dialog...</source>
         <translation>Diálogo de preferencias abierto...</translation>
     </message>
@@ -1299,7 +1303,7 @@ apt-fast -y clean</source>
         <translation>Habilitando sudo sin contraseña</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <location filename="../tweakstab.cpp" line="31"/>
         <location filename="../tweakstab.cpp" line="49"/>
         <location filename="../tweakstab.cpp" line="62"/>
@@ -1889,8 +1893,28 @@ Antonio David Gellida Lavara
 
 adgellida@gmail.com
 
-v2017.10.02</source>
+v2017.10.29</source>
         <translation>Copyright (c) 2017 todos los derechos reservados
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.10.29</translation>
+    </message>
+    <message>
+        <source>Copyright (c) 2017 all rights reserved
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.10.02</source>
+        <translation type="vanished">Copyright (c) 2017 todos los derechos reservados
 
 GPL v2
 
@@ -1944,61 +1968,66 @@ v2017.09.09</translation>
 <context>
     <name>PackagesDialog</name>
     <message>
-        <location filename="../packagesdialog.ui" line="14"/>
+        <location filename="../packagesdialog.ui" line="17"/>
         <source>Scripts Manager</source>
         <translation>Gestor de Scripts</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="17"/>
+        <location filename="../packagesdialog.ui" line="20"/>
         <source>Dialog</source>
         <translation>Diálogo</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="32"/>
+        <location filename="../packagesdialog.ui" line="35"/>
         <source>Run saved script list</source>
-        <translation>Ejecutar lista de scripts guardada</translation>
+        <translation>Ejecutar lista de scripts</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="39"/>
+        <location filename="../packagesdialog.ui" line="42"/>
         <source>Select only Official repos</source>
         <translation>Seleccionar Repos Oficiales</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="46"/>
+        <location filename="../packagesdialog.ui" line="49"/>
         <source>Export list</source>
         <translation>Exportar lista</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="53"/>
+        <location filename="../packagesdialog.ui" line="56"/>
         <source>Select only Unofficial repos</source>
         <translation>Seleccionar Repos No Oficiales</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="60"/>
+        <location filename="../packagesdialog.ui" line="63"/>
         <source>Run script</source>
         <translation>Ejecutar Script</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="70"/>
+        <location filename="../packagesdialog.ui" line="77"/>
         <source>Open in text editor</source>
         <translation>Abrir en editor de textos</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="80"/>
+        <location filename="../packagesdialog.ui" line="87"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search filter not implemented yet&lt;/p&gt;&lt;p&gt;Wait for future releases...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filtro de búsqueda no implementado todavía&lt;/p&gt;&lt;p&gt;Esperar a futuras versiones...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../packagesdialog.ui" line="117"/>
+        <source>Show categories</source>
+        <translation>Mostrar categorías</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search filter not implemented yet.&lt;/p&gt;&lt;p&gt;Wait for future releases...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filtro de búsqueda no implementado todavía.&lt;/p&gt;&lt;p&gt;Wait for future releases...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="93"/>
+        <location filename="../packagesdialog.ui" line="100"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Filter:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Filtro:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../packagesdialog.ui" line="100"/>
+        <location filename="../packagesdialog.ui" line="70"/>
         <source>Clear selection</source>
         <translation>Borrar selección</translation>
     </message>
@@ -2078,6 +2107,11 @@ v2017.09.09</translation>
         <location filename="../packagesdialog.cpp" line="251"/>
         <source>Selection cleared</source>
         <translation>Selección borrada</translation>
+    </message>
+    <message>
+        <location filename="../packagesdialog.cpp" line="261"/>
+        <source>Categories enabled</source>
+        <translation>Categorías habilitadas</translation>
     </message>
 </context>
 <context>

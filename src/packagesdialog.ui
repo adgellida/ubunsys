@@ -111,6 +111,13 @@
       </attribute>
      </widget>
     </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="showCategoriesButton">
+      <property name="text">
+       <string>Show categories</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QStatusBar" name="statusBar">
