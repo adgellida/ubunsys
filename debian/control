@@ -10,5 +10,5 @@ Homepage: <https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys>
 
 Package: ubunsys
 Architecture: amd64
-Depends: libqt5gui5, libqt5widgets5, libqt5core5a, git, wget, xdg-utils, nano, xterm, ufw, curl
+Depends: libqt5gui5, libqt5widgets5, libqt5core5a, git, wget, xdg-utils, nano, xterm, ufw, curl, sudo
 Description: Software installer of a helpful package list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
