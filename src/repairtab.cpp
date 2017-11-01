@@ -50,7 +50,7 @@ void MainWindow::on_unlock_var_lib_dpkg_lock_clicked()
     ui->statusBar->showMessage(tr("Unlocking /var/lib/dpkg/lock. Please wait"));
 
     system("xterm -e '"
-           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/058.can't_block_var_lib_dpkg_lock"
+           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/058.can_t_block_var_lib_dpkg_lock"
            " && "
            "exit"
            "; exec bash'");
