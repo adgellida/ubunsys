@@ -4143,11 +4143,8 @@ apt-fast -y clean</string>
    <addaction name="separator"/>
    <addaction name="actionManualUpdateDialog"/>
    <addaction name="separator"/>
+   <addaction name="separator"/>
    <addaction name="actionDefaultUpdateUpgradePackages"/>
-   <addaction name="separator"/>
-   <addaction name="actionAbout"/>
-   <addaction name="separator"/>
-   <addaction name="actionTutorial"/>
    <addaction name="separator"/>
   </widget>
   <action name="actionExit">
@@ -4321,7 +4318,7 @@ apt-fast -y clean</string>
      <normaloff>:/images/if_gtk-refresh_28464.png</normaloff>:/images/if_gtk-refresh_28464.png</iconset>
    </property>
    <property name="text">
-    <string>Default update &amp; upgrade packages</string>
+    <string>Default update &amp;&amp; upgrade packages</string>
    </property>
    <property name="toolTip">
     <string>Default update &amp; upgrade packages</string>

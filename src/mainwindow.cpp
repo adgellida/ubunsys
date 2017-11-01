@@ -287,11 +287,16 @@ void MainWindow::on_actionSeeReleases_triggered()
 void MainWindow::on_actionUpdateApp_triggered()
 {
     ui->statusBar->showMessage(tr("Put sudo pass to try to update ubunsys through PPA"));
+
+    //QProcess::startDetached("xterm -e \"~/.ubunsys/downloads/ubuntupackages-master/apps1/ubunsys && exit; exec bash\"");
+
+
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntupackages-master/apps1/ubunsys"
            " && "
            "exit"
            "; exec bash'");
+
 
     QMessageBox::information(this,tr("ubunsys app update"),tr("Now you have to close & reopen app \n") + tr("and check if update is ok."));
 
