@@ -4,6 +4,7 @@
 #include "updatescriptsdialog.h"
 #include "preferencesdialog.cpp"
 #include "preferencesdialog.h"
+#include <QDesktopServices>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -86,7 +87,7 @@ MainWindow::MainWindow(QWidget *parent) :
         msgBox.addButton(QMessageBox::No);
         msgBox.setDefaultButton(QMessageBox::No);
         if(msgBox.exec() == QMessageBox::Yes){
-            on_updateAppButton_clicked();
+            on_actionUpdateApp_triggered();
         }
         else {
           // do nothing
@@ -138,7 +139,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_manualUpdateDialogButton_released()//////////////////////
+void MainWindow::on_actionManualUpdateDialog_triggered()//////////////////////
 {
     qDebug() << "dialogOpenned";
     UpdateScriptsDialogUi->show();
@@ -262,9 +263,9 @@ void MainWindow::on_openRCLocalButton_clicked()
 
 //PREFERENCES
 
-void MainWindow::on_preferencesDialogButton_released()//////////////////////
+void MainWindow::on_actionPreferences_triggered()//////////////////////
 {
-    qDebug() << "dialogOpenned";
+    qDebug() << "Preferences pushed";
     PreferencesDialogUi->show();
     ui->textBrowser->setText(tr("Opened preferences dialog..."));
 }
@@ -277,8 +278,27 @@ void MainWindow::closePreferencesDialog()//////////////////////
     PreferencesDialogUi->close();
 }
 
-void MainWindow::on_actionPreferences_triggered()
+void MainWindow::on_actionSeeReleases_triggered()
 {
-    qDebug() << "Preferences pushed";
-    PreferencesDialogUi->show();
+    QDesktopServices::openUrl(QUrl("https://github.com/adgellida/ubunsys/releases", QUrl::TolerantMode));
+    ui->statusBar->showMessage(tr("Launches release page to update manually. Please wait."));
+}
+
+void MainWindow::on_actionUpdateApp_triggered()
+{
+    ui->statusBar->showMessage(tr("Put sudo pass to try to update ubunsys through PPA"));
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntupackages-master/apps1/ubunsys"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    QMessageBox::information(this,tr("ubunsys app update"),tr("Now you have to close & reopen app \n") + tr("and check if update is ok."));
+
+    ui->statusBar->showMessage(tr("Reopen app when terminal closes to check if ubunsys was updated to latest version."));
+}
+
+void MainWindow::on_actionDefaultUpdateUpgradePackages_triggered()
+{
+    on_updateAndUpgradeButton_clicked();
 }

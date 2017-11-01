@@ -35,9 +35,9 @@ public slots:
 
 private slots:
 
-    void on_manualUpdateDialogButton_released();////////////
+    void on_actionManualUpdateDialog_triggered();////////////
     void on_runScriptsManager_released();////////////
-    void on_preferencesDialogButton_released();////////////
+    void on_actionPreferences_triggered();////////////
 
     void on_actionNew_triggered();
 
@@ -49,9 +49,7 @@ private slots:
 
     void on_actionAbout_triggered();
 
-    void on_actionTutorial_triggered();
-
-    void on_actionPreferences_triggered();
+    void on_actionTutorial_triggered();    
 
     void on_updateReposButton_clicked();
 
@@ -125,8 +123,6 @@ private slots:
     //void on_updateScriptsButton_clicked();
     //void on_runUpdateDialog_clicked();
 
-    void on_updateAppButton_clicked();
-
     void on_importSudoersFileButton_clicked();
 
     void on_installMainlineKernels_clicked();
@@ -161,8 +157,6 @@ private slots:
 
     void on_openSudoersDButton_clicked();
 
-    void on_seeReleasesButton_clicked();
-
     void on_upgradeLatestKernel_1_clicked();
 
     void on_upgradeLatestKernel_2_clicked();
@@ -182,6 +176,12 @@ private slots:
     void on_unlock_var_lib_dpkg_lock_clicked();
 
     void on_openHostsButton_clicked();
+
+    void on_actionSeeReleases_triggered();
+
+    void on_actionUpdateApp_triggered();
+
+    void on_actionDefaultUpdateUpgradePackages_triggered();
 
 private:
     Ui::MainWindow *ui;
