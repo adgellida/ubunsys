@@ -126,7 +126,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -4148,8 +4148,6 @@ apt-fast -y clean</string>
    <addaction name="actionAbout"/>
    <addaction name="separator"/>
    <addaction name="actionTutorial"/>
-   <addaction name="separator"/>
-   <addaction name="actionAbout_Qt"/>
    <addaction name="separator"/>
   </widget>
   <action name="actionExit">

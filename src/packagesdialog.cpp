@@ -129,12 +129,15 @@ void PackagesDialog::on_runScriptButton_clicked()
     ui->statusBar->showMessage(tr("Executing Scripts selected. Please wait..."));
 
     system("sed -i '1i #!/bin/bash' ~/.ubunsys/files/packagesToInstall.sh");
+
+    QProcess::startDetached("xterm -e \"cd ~/.ubunsys/files && sudo chmod 777 ~/.ubunsys/files/packagesToInstall.sh && ~/.ubunsys/files/packagesToInstall.sh && exit; exec bash\"");
+/*
     system("xterm -e '"
            "cd ~/.ubunsys/files && sudo chmod 777 ~/.ubunsys/files/packagesToInstall.sh && ~/.ubunsys/files/packagesToInstall.sh"
            " && "
            "exit"
            "; exec bash'");
-
+*/
     ui->statusBar->showMessage(tr("Scripts executed with or without errors. Check it!"));
 }
 
@@ -187,6 +190,10 @@ void PackagesDialog::on_runSavedScriptListButton_clicked()
 
     // run script formed
 
+    QProcess::startDetached("xterm -e \"sudo chmod 777 ~/.ubunsys/files/runImportedScript.sh && sudo ~/.ubunsys/files/runImportedScript.sh && exit; exec bash\"");
+
+    /*
+
     system("xterm -e '"
            "sudo chmod 777 ~/.ubunsys/files/runImportedScript.sh"
            "&&"
@@ -194,6 +201,8 @@ void PackagesDialog::on_runSavedScriptListButton_clicked()
            " && "
            "exit"
            "; exec bash'");
+
+    */
 
     //this would normally start the event loop, but is not needed for this
     //minimal example:
@@ -222,6 +231,10 @@ void PackagesDialog::on_openInTextEditorButton_clicked()
     ui->statusBar->showMessage(tr("Opening Scripts selected. Please wait..."));
 
     system("sed -i '1i #!/bin/bash' ~/.ubunsys/files/packagesToWatch.sh");
+
+    QProcess::startDetached("xterm -e \"cd ~/.ubunsys/files && sudo chmod 777 ~/.ubunsys/files/packagesToWatch.sh && ~/.ubunsys/files/packagesToWatch.sh && echo Close this window!! && read; exec bash\"");
+
+/*
     system("xterm -e '"
            "cd ~/.ubunsys/files && sudo chmod 777 ~/.ubunsys/files/packagesToWatch.sh && ~/.ubunsys/files/packagesToWatch.sh"
            " && "
@@ -229,6 +242,7 @@ void PackagesDialog::on_openInTextEditorButton_clicked()
            " && "
            "read"
            "; exec bash'");
+*/
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
