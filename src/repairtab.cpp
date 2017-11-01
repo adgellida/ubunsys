@@ -45,6 +45,19 @@ void MainWindow::on_repairGPGKeys_clicked()
     ui->statusBar->showMessage(tr("Missed GPG keys repaired or fix cancelled, check if ok now"));
 }
 
+void MainWindow::on_unlock_var_lib_dpkg_lock_clicked()
+{
+    ui->statusBar->showMessage(tr("Unlocking /var/lib/dpkg/lock. Please wait"));
+
+    system("xterm -e '"
+           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/058.can't block _var_lib_dpkg_lock"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Missed GPG keys repaired or fix cancelled, check if ok now"));
+}
+
 void MainWindow::on_fixBrokenPackagesButton_1_clicked()
 {
     ui->statusBar->showMessage(tr("Executing package repair 1. Then close the terminal window"));

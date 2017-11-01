@@ -179,6 +179,10 @@ private slots:
 
     void on_resetDconf_clicked();
 
+    void on_unlock_var_lib_dpkg_lock_clicked();
+
+    void on_openHostsButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////

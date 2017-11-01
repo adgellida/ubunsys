@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>719</width>
-    <height>521</height>
+    <width>718</width>
+    <height>533</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,7 +31,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -126,7 +126,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -1384,6 +1384,53 @@
         </property>
         <property name="text">
          <string>sudoers.d</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_52">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>300</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>hosts</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="openHostsButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>320</y>
+          <width>221</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Edit</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
         </property>
        </widget>
       </widget>
@@ -3312,7 +3359,7 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>60</x>
-          <y>210</y>
+          <y>180</y>
           <width>171</width>
           <height>21</height>
          </rect>
@@ -3350,7 +3397,7 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>40</y>
+          <y>30</y>
           <width>40</width>
           <height>36</height>
          </rect>
@@ -3388,7 +3435,7 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>60</x>
-          <y>60</y>
+          <y>50</y>
           <width>141</width>
           <height>16</height>
          </rect>
@@ -3407,7 +3454,7 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>120</y>
+          <y>100</y>
           <width>40</width>
           <height>36</height>
          </rect>
@@ -3445,8 +3492,8 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>60</x>
-          <y>40</y>
-          <width>251</width>
+          <y>30</y>
+          <width>271</width>
           <height>16</height>
          </rect>
         </property>
@@ -3464,7 +3511,7 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>180</y>
+          <y>150</y>
           <width>321</width>
           <height>16</height>
          </rect>
@@ -3483,7 +3530,7 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>200</y>
+          <y>170</y>
           <width>40</width>
           <height>36</height>
          </rect>
@@ -3521,7 +3568,7 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>60</x>
-          <y>130</y>
+          <y>110</y>
           <width>271</width>
           <height>16</height>
          </rect>
@@ -3540,8 +3587,8 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>100</y>
-          <width>111</width>
+          <y>80</y>
+          <width>131</width>
           <height>16</height>
          </rect>
         </property>
@@ -3559,7 +3606,7 @@ Bootstrap Kernels</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>270</y>
+          <y>320</y>
           <width>691</width>
           <height>61</height>
          </rect>
@@ -3580,7 +3627,7 @@ and restore that you want with elevated permissions.</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>250</y>
+          <y>300</y>
           <width>171</width>
           <height>16</height>
          </rect>
@@ -3593,6 +3640,83 @@ and restore that you want with elevated permissions.</string>
         </property>
         <property name="text">
          <string>Repair tips</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_53">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>321</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Unlock /var/lib/dpkg/lock</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_54">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>240</y>
+          <width>191</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>sudo rm -f /var/lib/dpkg/lock
+sudo dpkg --configure -a</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="unlock_var_lib_dpkg_lock">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>40</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/repair.png</normaloff>:/images/repair.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
         </property>
        </widget>
       </widget>
@@ -4046,7 +4170,7 @@ apt-fast -y clean</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>719</width>
+     <width>718</width>
      <height>19</height>
     </rect>
    </property>

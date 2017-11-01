@@ -521,6 +521,15 @@ void MainWindow::on_openSudoersDButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
+void MainWindow::on_openHostsButton_clicked()
+{
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/060.openHosts"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+}
+
 void MainWindow::on_resetDconf_clicked()
 {
     ui->statusBar->showMessage(tr("Resetting dconf config"));

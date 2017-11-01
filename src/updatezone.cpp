@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDesktopServices>
+#include <QMessageBox>
 
 ///////////////////////UPDATE APP & SCRIPTS ZONE///////////////////////
 
@@ -17,6 +18,9 @@ void MainWindow::on_updateAppButton_clicked()
            " && "
            "exit"
            "; exec bash'");
+
+    QMessageBox::information(this,tr("ubunsys app update"),tr("Now you have to close & reopen app \n") + tr("and check if update is ok."));
+
     ui->statusBar->showMessage(tr("Reopen app when terminal closes to check if ubunsys was updated to latest version."));
 }
 
