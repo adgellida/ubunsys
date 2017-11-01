@@ -55,7 +55,7 @@ void MainWindow::on_unlock_var_lib_dpkg_lock_clicked()
            "exit"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Missed GPG keys repaired or fix cancelled, check if ok now"));
+    ui->statusBar->showMessage(tr("Unlocked /var/lib/dpkg/lock, check if ok now"));
 }
 
 void MainWindow::on_fixBrokenPackagesButton_1_clicked()
