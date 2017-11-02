@@ -1138,6 +1138,15 @@ apt-fast -y clean</source>
         <translation>Diálogo de preferencias abierto...</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="311"/>
+        <source>You are running the latest version, no update needed</source>
+        <translation>Estás ejecutando la última versión, actualización no necesaria</translation>
+    </message>
+    <message>
+        <source>You are running the latest version, no updates needed</source>
+        <translation type="obsolete">Estás ejecutando la última versión, actualizaciones</translation>
+    </message>
+    <message>
         <source>Installing selected packages. Please wait</source>
         <translation type="vanished">Instalando paquetes seleccionados. Espere un momento</translation>
     </message>
@@ -1426,6 +1435,7 @@ apt-fast -y clean</source>
         <translation>Haciendo copia de seguridad de sudoers</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="311"/>
         <location filename="../tweakstab.cpp" line="103"/>
         <location filename="../tweakstab.cpp" line="436"/>
         <location filename="../tweakstab.cpp" line="491"/>
@@ -1918,28 +1928,28 @@ v2017.07.21</translation>
         <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pulsa &lt;a href=&apos;https://github.com/adgellida/ubunsys/wiki/Tutorial_es&apos;&gt;aquí&lt;/a&gt; para ir a la wiki.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Put sudo pass to try to update ubunsys through PPA</source>
         <translation>Pon el password sudo para intentar actualizar ubunsys a través de PPA</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="301"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>ubunsys app update</source>
         <translation>Actualización app ubunsys</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="301"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>Now you have to close &amp; reopen app 
 </source>
-        <translation>Ahora tienes que cerrar y reabrir la app</translation>
+        <translation>Ahora tienes que cerrar y reabrir la app </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="301"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>and check if update is ok.</source>
         <translation>y comprobar si la actualización está bien.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="303"/>
+        <location filename="../mainwindow.cpp" line="306"/>
         <source>Reopen app when terminal closes to check if ubunsys was updated to latest version.</source>
         <translation>Reabrir app cuando la terminal se cierre para comprobar si ubunsys fue actualizado a la última versión.</translation>
     </message>
