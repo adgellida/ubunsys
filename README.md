@@ -81,6 +81,7 @@ Development
 * Go to your selected folder to dev.
 
 `git clone https://github.com/adgellida/ubunsys`
+
 `sudo cp -r ./ubunsys/src/scripts /usr/share/ubunsys`
 
 * Install qt creator and open project file located at 'YOURSELECTEDFOLDER/ubunsys/src/ubunsys.pro'
