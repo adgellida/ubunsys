@@ -4264,10 +4264,10 @@ apt-fast -y clean</string>
      <normaloff>:/images/if_gtk-refresh_28464.png</normaloff>:/images/if_gtk-refresh_28464.png</iconset>
    </property>
    <property name="text">
-    <string>Default update &amp;&amp; upgrade packages</string>
+    <string>Default update repos &amp;&amp; upgrade system</string>
    </property>
    <property name="toolTip">
-    <string>Default update &amp; upgrade packages</string>
+    <string>Default update repos &amp; upgrade system</string>
    </property>
   </action>
  </widget>

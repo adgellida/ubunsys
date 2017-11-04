@@ -193,6 +193,7 @@ Ajuste por defecto</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2602"/>
+        <location filename="../mainwindow.ui" line="4270"/>
         <source>Default update repos &amp; upgrade system</source>
         <translation>Actualización de repositorios y sistema por defecto</translation>
     </message>
@@ -591,10 +592,9 @@ plantillas</translation>
         <translation>Limpiar sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4270"/>
         <source>Default update &amp; upgrade packages</source>
         <oldsource>Default update &amp; upgrade system</oldsource>
-        <translation>Actualización de listado y paquetes por defecto</translation>
+        <translation type="vanished">Actualización de listado y paquetes por defecto</translation>
     </message>
     <message>
         <source>Upgrade repos</source>
@@ -711,9 +711,8 @@ sudo dpkg --configure -a</source>
         <translation>Actualizar scripts manualmente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4267"/>
         <source>Default update &amp;&amp; upgrade packages</source>
-        <translation>Actualización de listado y paquetes por defecto</translation>
+        <translation type="vanished">Actualización de listado y paquetes por defecto</translation>
     </message>
     <message>
         <source>v2017.10.29</source>
@@ -991,6 +990,11 @@ en terminal</translation>
         <location filename="../mainwindow.ui" line="4022"/>
         <source>v2017.11.04</source>
         <translation>v2017.11.04</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="4267"/>
+        <source>Default update repos &amp;&amp; upgrade system</source>
+        <translation>Actualización de repositorios y sistema por defecto</translation>
     </message>
     <message>
         <source>v2017.09.24</source>
