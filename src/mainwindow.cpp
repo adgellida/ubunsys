@@ -151,6 +151,7 @@ void MainWindow::on_runScriptsManager_released()//////////////////////
     qDebug() << "dialogOpenned";
     PackagesDialogUi->show();
     ui->textBrowser->setText(tr("Continue on the opened dialog..."));
+    ui->statusBar->showMessage(tr("Continue on the opened dialog..."));
 }
 
 void MainWindow::closeUpdateDialog()
@@ -308,7 +309,7 @@ void MainWindow::on_actionUpdateApp_triggered()
 
     else{
 
-    QMessageBox::information(this,tr("Notification"),tr("You are running the latest version, no update needed"));
+    QMessageBox::information(this,tr("Notification"),tr("You are running the latest version, no update needed. Remember that every time you open the app an update notification is shown if it exists."));
 
     }
 }

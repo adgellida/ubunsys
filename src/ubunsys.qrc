@@ -30,5 +30,13 @@
         <file>images/settings-512.png</file>
         <file>images/gtk-preferences.png</file>
         <file>images/if_gtk-refresh_28464.png</file>
+        <file>images/thin-071_file_document_code_binary-512.png</file>
+        <file>images/ethernet_on1600.png</file>
+        <file>images/key1600.png</file>
+        <file>images/paquete.png</file>
+        <file>images/upgrade2.png</file>
+        <file>images/control_panel-512.png</file>
+        <file>images/Refresh_reload_arrow_sync_repeat_update_arrows.png</file>
+        <file>images/install2.png</file>
     </qresource>
 </RCC>

@@ -22,32 +22,6 @@ void MainWindow::on_updateAndUpgradeButton_clicked()
     ui->statusBar->showMessage(tr("Default update & upgrade system did it successful. Now select another action"));
 }
 
-void MainWindow::on_updateReposButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Updating repos. Then close the terminal window"));
-
-    QProcess::startDetached("xterm -e \"sudo apt-fast -y update; exec bash\"");
-/*
-    system("xterm -e '"
-           "sudo apt-fast -y update"
-           "; exec bash'");
-*/
-    ui->statusBar->showMessage(tr("Repos updated succesful. Now select another action"));
-}
-
-void MainWindow::on_upgradeReposButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Upgrading repos. Then close the terminal window"));
-
-    QProcess::startDetached("xterm -e \"sudo apt-fast -y upgrade; exec bash\"");
-/*
-    system("xterm -e '"
-           "sudo apt-fast -y upgrade"
-           "; exec bash'");
-*/
-    ui->statusBar->showMessage(tr("Repos upgraded succesful. Now select another action"));
-}
-
 void MainWindow::on_basicPackagesInstallButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing normal user installation script. Then close the terminal window"));

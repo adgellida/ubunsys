@@ -51,11 +51,7 @@ private slots:
 
     void on_actionTutorial_triggered();    
 
-    void on_updateReposButton_clicked();
-
     void on_updateAndUpgradeButton_clicked();
-
-    void on_upgradeReposButton_clicked();
 
     void on_dist_upgradeButton_clicked();
 
