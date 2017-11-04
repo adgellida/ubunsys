@@ -78,8 +78,12 @@ Run `qmake && make && sudo make install` in the main directory.
 Development
 =============================================
 
-* Install qt creator and open project
-* Copy an update versions of "scripts" folder in to "/usr/share/ubunsys/" if is not present yet.
+* Go to your selected folder to dev.
+
+`git clone https://github.com/adgellida/ubunsys`
+`sudo cp -r ./ubunsys/src/scripts /usr/share/ubunsys`
+
+* Install qt creator and open project file located at 'YOURSELECTEDFOLDER/ubunsys/src/ubunsys.pro'
 
 Screenshots
 =============================================
