@@ -2805,7 +2805,7 @@ on terminal</string>
         </property>
         <property name="icon">
          <iconset resource="ubunsys.qrc">
-          <normaloff>:/images/if_gtk-refresh_28464.png</normaloff>:/images/if_gtk-refresh_28464.png</iconset>
+          <normaloff>:/images/128-128-76912453c14fc15ed016df244ce34b54.png</normaloff>:/images/128-128-76912453c14fc15ed016df244ce34b54.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -4092,6 +4092,8 @@ apt-fast -y clean</string>
    <addaction name="separator"/>
    <addaction name="actionDefaultUpdateUpgradePackages"/>
    <addaction name="separator"/>
+   <addaction name="actionDefaultUpdateUpgradeSmartPackages"/>
+   <addaction name="separator"/>
   </widget>
   <action name="actionExit">
    <property name="text">
@@ -4268,6 +4270,18 @@ apt-fast -y clean</string>
    </property>
    <property name="toolTip">
     <string>Default update repos &amp; upgrade system</string>
+   </property>
+  </action>
+  <action name="actionDefaultUpdateUpgradeSmartPackages">
+   <property name="icon">
+    <iconset resource="ubunsys.qrc">
+     <normaloff>:/images/128-128-76912453c14fc15ed016df244ce34b54.png</normaloff>:/images/128-128-76912453c14fc15ed016df244ce34b54.png</iconset>
+   </property>
+   <property name="text">
+    <string>Default update repos &amp;&amp; smart upgrade system</string>
+   </property>
+   <property name="toolTip">
+    <string>Default update repos &amp; smart upgrade system</string>
    </property>
   </action>
  </widget>

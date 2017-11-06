@@ -179,6 +179,8 @@ private slots:
 
     void on_actionDefaultUpdateUpgradePackages_triggered();
 
+    void on_actionDefaultUpdateUpgradeSmartPackages_triggered();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////

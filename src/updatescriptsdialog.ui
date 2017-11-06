@@ -29,9 +29,9 @@
   <widget class="QPushButton" name="checkButton">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>160</x>
      <y>51</y>
-     <width>80</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
@@ -65,9 +65,9 @@
   <widget class="QPushButton" name="closeUpdateDialogButton">
    <property name="geometry">
     <rect>
-     <x>390</x>
+     <x>400</x>
      <y>51</y>
-     <width>80</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
@@ -78,9 +78,9 @@
   <widget class="QPushButton" name="forceButton">
    <property name="geometry">
     <rect>
-     <x>290</x>
+     <x>280</x>
      <y>51</y>
-     <width>80</width>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>

@@ -48,13 +48,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
     system("/usr/share/ubunsys/scripts/updateUbuntupackages.sh");
 
-    //######## apt-fast checking
+    //######## apt-fast checking notification
 
     system("/usr/share/ubunsys/scripts/apt-fastCheckingNotification.sh");
-
-    //######## Update ubunsys
-
-    system("/usr/share/ubunsys/scripts/updateUbunsys.sh");
 
     //Set main position
 
@@ -109,8 +105,13 @@ MainWindow::MainWindow(QWidget *parent) :
           // do nothing
         }
     }
+        //######## apt-fast checking
 
         system("/usr/share/ubunsys/scripts/apt-fastChecking.sh");
+
+        //######## Update ubunsys
+
+        system("/usr/share/ubunsys/scripts/updateUbunsys.sh");
 
         //######## Show update output
 
@@ -317,4 +318,9 @@ void MainWindow::on_actionUpdateApp_triggered()
 void MainWindow::on_actionDefaultUpdateUpgradePackages_triggered()
 {
     on_updateAndUpgradeButton_clicked();
+}
+
+void MainWindow::on_actionDefaultUpdateUpgradeSmartPackages_triggered()
+{
+    on_dist_upgradeButton_clicked();
 }
