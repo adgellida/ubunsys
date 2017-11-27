@@ -37,7 +37,7 @@
         <translation type="vanished">Cargar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4171"/>
+        <location filename="../mainwindow.ui" line="4175"/>
         <location filename="../toolbartab.cpp" line="18"/>
         <source>Save</source>
         <translation>Guardar</translation>
@@ -193,12 +193,13 @@ Ajuste por defecto</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2602"/>
-        <location filename="../mainwindow.ui" line="4270"/>
+        <location filename="../mainwindow.ui" line="4274"/>
         <source>Default update repos &amp; upgrade system</source>
         <translation>Actualización de repositorios y sistema por defecto</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2839"/>
+        <location filename="../mainwindow.ui" line="4286"/>
         <source>Default update repos &amp; smart upgrade system</source>
         <translation>Actualización de repositorios y sistema inteligente por defecto</translation>
     </message>
@@ -695,18 +696,18 @@ sudo dpkg --configure -a</source>
         <translation type="vanished">v2017.11.01</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4237"/>
-        <location filename="../mainwindow.ui" line="4240"/>
+        <location filename="../mainwindow.ui" line="4241"/>
+        <location filename="../mainwindow.ui" line="4244"/>
         <source>See Releases</source>
         <translation>Mirar versiones</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4249"/>
+        <location filename="../mainwindow.ui" line="4253"/>
         <source>Update app</source>
         <translation>Actualizar app</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4258"/>
+        <location filename="../mainwindow.ui" line="4262"/>
         <source>Manually update scripts</source>
         <translation>Actualizar scripts manualmente</translation>
     </message>
@@ -988,11 +989,26 @@ en terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="4022"/>
-        <source>v2017.11.04</source>
-        <translation>v2017.11.04</translation>
+        <source>v2017.11.26</source>
+        <translation>v2017.11.26</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4267"/>
+        <location filename="../mainwindow.ui" line="4283"/>
+        <source>Default update repos &amp;&amp; smart upgrade system</source>
+        <translation>Actualización de repositorios y sistema inteligente por defecto</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="4295"/>
+        <location filename="../mainwindow.ui" line="4298"/>
+        <source>Go to Twitter</source>
+        <translation>Va a Twitter</translation>
+    </message>
+    <message>
+        <source>v2017.11.04</source>
+        <translation type="vanished">v2017.11.04</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="4271"/>
         <source>Default update repos &amp;&amp; upgrade system</source>
         <translation>Actualización de repositorios y sistema por defecto</translation>
     </message>
@@ -1011,33 +1027,33 @@ en terminal</translation>
         <translation>Barra de herramientas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4098"/>
+        <location filename="../mainwindow.ui" line="4102"/>
         <source>Exit</source>
         <translation>Salir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4113"/>
+        <location filename="../mainwindow.ui" line="4117"/>
         <source>Paste</source>
         <translation>Pegar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4118"/>
+        <location filename="../mainwindow.ui" line="4122"/>
         <location filename="../about.cpp" line="23"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4123"/>
+        <location filename="../mainwindow.ui" line="4127"/>
         <source>About Qt</source>
         <translation>Acerca de Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4135"/>
+        <location filename="../mainwindow.ui" line="4139"/>
         <source>Save as...</source>
         <translation>Guardar como...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4147"/>
+        <location filename="../mainwindow.ui" line="4151"/>
         <location filename="../toolbartab.cpp" line="8"/>
         <source>New</source>
         <translation>Nuevo</translation>
@@ -1046,7 +1062,7 @@ en terminal</translation>
         <location filename="../mainwindow.ui" line="109"/>
         <location filename="../mainwindow.ui" line="214"/>
         <location filename="../mainwindow.ui" line="1101"/>
-        <location filename="../mainwindow.ui" line="4159"/>
+        <location filename="../mainwindow.ui" line="4163"/>
         <location filename="../toolbartab.cpp" line="13"/>
         <source>Open</source>
         <translation>Abrir</translation>
@@ -1067,99 +1083,104 @@ en terminal</translation>
         <translation type="vanished">v2017.10.02</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4183"/>
+        <location filename="../mainwindow.ui" line="4187"/>
         <source>Copy</source>
         <translation>Copiar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4195"/>
+        <location filename="../mainwindow.ui" line="4199"/>
         <source>Cut</source>
         <translation>Cortar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4198"/>
+        <location filename="../mainwindow.ui" line="4202"/>
         <source>Cortar</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4210"/>
+        <location filename="../mainwindow.ui" line="4214"/>
         <source>Preferences</source>
         <translation>Preferencias</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4215"/>
+        <location filename="../mainwindow.ui" line="4219"/>
         <location filename="../tutorial.cpp" line="16"/>
         <source>Tutorial</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4220"/>
+        <location filename="../mainwindow.ui" line="4224"/>
         <source>English</source>
         <translation>Inglés</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4225"/>
+        <location filename="../mainwindow.ui" line="4229"/>
         <source>Spanish</source>
         <translation>Español</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="130"/>
+        <location filename="../mainwindow.cpp" line="131"/>
         <source>Recommendation: Push Help -&gt; Tutorial</source>
         <translation>Recomendación: Pulsa Ayuda -&gt; Tutorial</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="146"/>
-        <location filename="../mainwindow.cpp" line="153"/>
+        <location filename="../mainwindow.cpp" line="147"/>
         <location filename="../mainwindow.cpp" line="154"/>
+        <location filename="../mainwindow.cpp" line="155"/>
         <source>Continue on the opened dialog...</source>
         <translation>Continue en el dialogo que se abrió...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="180"/>
+        <location filename="../mainwindow.cpp" line="181"/>
         <source>Upgrading to latest kernel from PPA for Canonical Kernel Team</source>
         <translation>Actualzando al último kernel del PPA for Canonical Kernel Team</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="188"/>
-        <location filename="../mainwindow.cpp" line="201"/>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <location filename="../mainwindow.cpp" line="202"/>
         <source>Upgraded</source>
         <translation>Actualizado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
+        <location filename="../mainwindow.cpp" line="194"/>
         <source>Upgrading to latest kernel from PPA for Canonical Kernel Team - Bootstrap</source>
         <translation>Actualzando al último kernel del PPA for Canonical Kernel Team - Bootstrap</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="214"/>
-        <location filename="../mainwindow.cpp" line="227"/>
+        <location filename="../mainwindow.cpp" line="215"/>
+        <location filename="../mainwindow.cpp" line="228"/>
         <source>Purged</source>
         <translation>Purgado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="238"/>
+        <location filename="../mainwindow.cpp" line="239"/>
         <source>Enabled</source>
         <translation>Habilitado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="250"/>
         <source>Disabled</source>
         <translation>Deshabilitado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Opening rc.local</source>
         <translation>Abriendo rc.local</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="271"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Opened preferences dialog...</source>
         <translation>Diálogo de preferencias abierto...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="313"/>
         <source>You are running the latest version, no update needed. Remember that every time you open the app an update notification is shown if it exists.</source>
         <translation>Estás ejecutando la última versión, no es necesario actualizar. Recuerda que cada vez que abres la app una notificacion de actualización es mostrada si existe.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="331"/>
+        <source>Go to ubunsys twitter. Please wait.</source>
+        <translation>Va al twitter de ubunsys. Por favor espere.</translation>
     </message>
     <message>
         <source>You are running the latest version, no update needed</source>
@@ -1389,7 +1410,7 @@ en terminal</translation>
         <translation>Habilitando sudo sin contraseña</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <location filename="../tweakstab.cpp" line="31"/>
         <location filename="../tweakstab.cpp" line="49"/>
         <location filename="../tweakstab.cpp" line="62"/>
@@ -1454,7 +1475,7 @@ en terminal</translation>
         <translation>Haciendo copia de seguridad de sudoers</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="313"/>
         <location filename="../tweakstab.cpp" line="103"/>
         <location filename="../tweakstab.cpp" line="436"/>
         <location filename="../tweakstab.cpp" line="491"/>
@@ -1947,33 +1968,33 @@ v2017.07.21</translation>
         <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;ubunsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pulsa &lt;a href=&apos;https://github.com/adgellida/ubunsys/wiki/Tutorial_es&apos;&gt;aquí&lt;/a&gt; para ir a la wiki.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="296"/>
         <source>Put sudo pass to try to update ubunsys through PPA</source>
         <translation>Pon el password sudo para intentar actualizar ubunsys a través de PPA</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="306"/>
         <source>ubunsys app update</source>
         <translation>Actualización app ubunsys</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="306"/>
         <source>Now you have to close &amp; reopen app 
 </source>
         <translation>Ahora tienes que cerrar y reabrir la app </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="306"/>
         <source>and check if update is ok.</source>
         <translation>y comprobar si la actualización está bien.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="307"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>Reopen app when terminal closes to check if ubunsys was updated to latest version.</source>
         <translation>Reabrir app cuando la terminal se cierre para comprobar si ubunsys fue actualizado a la última versión.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="../mainwindow.cpp" line="286"/>
         <source>Launches release page to update manually. Please wait.</source>
         <translation>Lanza la página de versiones para actualizar manualmente. Por favor, espere.</translation>
     </message>
@@ -1996,8 +2017,28 @@ Antonio David Gellida Lavara
 
 adgellida@gmail.com
 
-v2017.11.04</source>
+v2017.11.26</source>
         <translation>Copyright (c) 2017 todos los derechos reservados
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.11.26</translation>
+    </message>
+    <message>
+        <source>Copyright (c) 2017 all rights reserved
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.11.04</source>
+        <translation type="vanished">Copyright (c) 2017 todos los derechos reservados
 
 GPL v2
 

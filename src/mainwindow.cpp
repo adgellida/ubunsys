@@ -324,3 +324,9 @@ void MainWindow::on_actionDefaultUpdateUpgradeSmartPackages_triggered()
 {
     on_dist_upgradeButton_clicked();
 }
+
+void MainWindow::on_actionTwitter_triggered()
+{
+    QDesktopServices::openUrl(QUrl("https://www.twitter.com/ubunsys_app", QUrl::TolerantMode));
+    ui->statusBar->showMessage(tr("Go to ubunsys twitter. Please wait."));
+}

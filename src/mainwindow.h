@@ -181,6 +181,8 @@ private slots:
 
     void on_actionDefaultUpdateUpgradeSmartPackages_triggered();
 
+    void on_actionTwitter_triggered();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////

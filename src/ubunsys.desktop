@@ -2,7 +2,7 @@
 Name=ubunsys
 Version=1.0
 Exec=/usr/bin/ubunsys
-Comment=Software installer of a helpful package list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
+Comment=Configure your Ubuntu!
 Icon=/usr/share/icons/hicolor/256x256/apps/ubunsys.png
 Type=Application
 Terminal=false

@@ -4019,7 +4019,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.11.19</string>
+     <string>v2017.11.26</string>
     </property>
    </widget>
   </widget>
@@ -4083,6 +4083,8 @@ apt-fast -y clean</string>
     <bool>false</bool>
    </attribute>
    <addaction name="actionPreferences"/>
+   <addaction name="separator"/>
+   <addaction name="actionTwitter"/>
    <addaction name="separator"/>
    <addaction name="actionSeeReleases"/>
    <addaction name="separator"/>
@@ -4282,6 +4284,18 @@ apt-fast -y clean</string>
    </property>
    <property name="toolTip">
     <string>Default update repos &amp; smart upgrade system</string>
+   </property>
+  </action>
+  <action name="actionTwitter">
+   <property name="icon">
+    <iconset resource="ubunsys.qrc">
+     <normaloff>:/images/Twitter-icon.png</normaloff>:/images/Twitter-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Go to Twitter</string>
+   </property>
+   <property name="toolTip">
+    <string>Go to Twitter</string>
    </property>
   </action>
  </widget>
