@@ -146,11 +146,11 @@ Puedes crear un nuevo [asunto](https://github.com/adgellida/ubunsys/issues/new) 
 Dependencias
 =============================================
 
+Instalables automáticamente desde repositorios oficiales:
+
 `git, nano, wget, xdg-utils, xterm, ufw, curl, sudo`
 
-Embebidas en el paquete de instalación:
-
-Librerías Qt.
+Y librerías Qt.
 
 A través de PPA:
 

@@ -141,11 +141,11 @@ You can create a new [issue](https://github.com/adgellida/ubunsys/issues/new) wi
 Dependencies
 =============================================
 
+Automatically installable through official repositories:
+
 `git, nano, wget, xdg-utils, xterm, ufw, curl, sudo`
 
-Embedded in package:
-
-Qt libraries.
+And Qt libraries.
 
 Through PPA:
 
