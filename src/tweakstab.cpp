@@ -8,187 +8,9 @@
 
 ///////////////////////TWEAKS TAB///////////////////////
 
-//##Security & Passwords
+////////////////////////////////SOURCES
 
-void MainWindow::on_enableSudoWithoutPassAllButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling sudo without pass"));
-
-    QMessageBox::StandardButton reply;
-      reply = QMessageBox::question(this, "Warning", "Are you completely sure?",
-                                    QMessageBox::Yes|QMessageBox::No);
-      if (reply == QMessageBox::Yes) {
-        qDebug() << "Yes was clicked";
-        //QApplication::quit();
-
-        system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPassAll"
-               " && "
-               "exit"
-               "; exec bash'");
-
-
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
-      } else {
-        qDebug() << "Yes was *not* clicked";
-        ui->statusBar->showMessage(tr("Execution canceled"));
-      }
-}
-
-void MainWindow::on_disableSudoWithoutPassAllButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/026.disableSudoWithoutPassAll"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_enableSudoWithoutPassSpecificButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling sudo without pass specific"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/052.enableSudoWithoutPassSpecific"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_disableSudoWithoutPassSpecificButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling sudo without pass specific"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/053.disableSudoWithoutPassSpecific"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-//##Sudoers
-
-void MainWindow::on_openSudoersFileButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Opening sudoers"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/027.openSudoersFile"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_backupSudoersFileButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Backuping sudoers"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/028.backupSudoersFile"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    QMessageBox::information(this,tr("Notification"),tr("Backuped OK on \n\n") + QDir::homePath() + "/.ubunsys/backups/sudoersFiles");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_importSudoersFileButton_clicked()
-{
-    QString filename=QFileDialog::getOpenFileName(
-                    this,
-                    tr("Import your sudoers file here"),
-                    QDir::homePath() + "/.ubunsys/backups/sudoersFiles",
-                    //getenv("HOME"),
-                    //"All files (*.*);;Bak files(*.bak)");
-                    "Bak files(*.bak)");
-
-    //QMessageBox::information(this,tr("File Name"),filename);
-
-    ui->statusBar->showMessage(tr("Done. sudoers file restored succesful"));
-
-    // Create a new file
-
-    QFile file (QDir::homePath() + "/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh");
-    file.open(QIODevice::WriteOnly | QIODevice::Text);
-    QTextStream out(&file);
-    out << "#!/bin/bash\n\nsudo cp " + filename + " /etc/sudoers";
-
-    // optional, as QFile destructor will already do it:
-    file.close();
-
-    system("xterm -e '"
-           "sudo chmod 777 ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
-           "&&"
-           "sudo ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
-           " && "
-           "sudo rm -Rf ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    //this would normally start the event loop, but is not needed for this
-    //minimal example:
-    //return app.exec();
-}
-
-
-//##Documents & Files
-
-void MainWindow::on_installTemplatesButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Installing templates"));
-
-    system("bash -c '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/018.installTemplates"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Templates installed succesful. Now select another action"));
-}
-
-//##Terminal
-
-void MainWindow::on_doVisibleAsterisksButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Doing visible asterisks"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/021.doVisibleAsterisks"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_doInvisibleAsterisksButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Doing invisible asterisks"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-//##Repositories
+//##sources.list.d
 
 void MainWindow::on_openSourcesListDButton_clicked()
 {
@@ -203,212 +25,7 @@ void MainWindow::on_openSourcesListDButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-//##Power
-
-void MainWindow::on_enableHibernationButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling hibernation"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/007.enableHibernation"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_disableHibernationButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling hibernation"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/024.disableHibernation"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_reduceTo5sShutdownTimeoutButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/029.reduceTo5sShutdownTimeout"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_setToDefaults90sShutdownTimeoutButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/030.setToDefaults90sShutdownTimeout"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_enableFirewallButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling firewall"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
-           " && "
-           "~/.ubunsys/downloads/ubuntuScripts-master/031.enableFirewall"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_disableFirewallButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling firewall"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
-           " && "
-           "~/.ubunsys/downloads/ubuntuScripts-master/032.disableFirewall"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_runGrubcustomizerButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Installs/runs grub-customizer. Please wait"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntupackages-master/apps1/grub-customizer"
-           " && "
-           "sudo grub-customizer"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_enableLockScreenButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling lock screen"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/036.enableLockScreen"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_disableLockScrennButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling lock screen"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_showHiddenStartupItemsButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Showing"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/038.showHiddenStartupItems"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_unshowHiddenStartupItemsButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Unshowing"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/037.unshowHiddenStartupItems"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_enableLoginSoundButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling login sound"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/039.enableLoginSound"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_disableLoginSoundButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling login sound"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/040.disableLoginSound"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_aptselect_US_clicked()
-{
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
-           " && "
-           "apt-select --country US"
-           " && "
-           "echo Push enter or close this terminal window"
-           " && "
-           "read"
-           " && "
-           "exit"
-           "; exec bash'");
-}
-
-void MainWindow::on_aptselect_ES_clicked()
-{
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
-           " && "
-           "apt-select --country ES"
-           " && "
-           "echo Push enter or close this terminal window"
-           " && "
-           "read"
-           " && "
-           "exit"
-           "; exec bash'");
-}
+//##sources.list
 
 void MainWindow::on_openSourcesListButton_clicked()
 {
@@ -478,6 +95,393 @@ void MainWindow::on_importSourcesListButton_clicked()
 
 }
 
+//##apt-select
+
+void MainWindow::on_aptselect_US_clicked()
+{
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
+           " && "
+           "apt-select --country US"
+           " && "
+           "echo Push enter or close this terminal window"
+           " && "
+           "read"
+           " && "
+           "exit"
+           "; exec bash'");
+}
+
+void MainWindow::on_aptselect_ES_clicked()
+{
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
+           " && "
+           "apt-select --country ES"
+           " && "
+           "echo Push enter or close this terminal window"
+           " && "
+           "read"
+           " && "
+           "exit"
+           "; exec bash'");
+}
+
+//##updateNotification
+
+void MainWindow::on_enableUpdateNotificationButton_clicked()
+{
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/054.enableUpdateNotification"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Enabled"));
+}
+
+void MainWindow::on_disableUpdateNotificationButton_clicked()
+{
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/055.disableUpdateNotification"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Disabled"));
+}
+
+////////////////////////////////SECURITY
+
+//##sudo without pass all
+
+void MainWindow::on_enableSudoWithoutPassAllButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling sudo without pass"));
+
+    QMessageBox::StandardButton reply;
+      reply = QMessageBox::question(this, "Warning", "Are you completely sure?",
+                                    QMessageBox::Yes|QMessageBox::No);
+      if (reply == QMessageBox::Yes) {
+        qDebug() << "Yes was clicked";
+        //QApplication::quit();
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPassAll"
+               " && "
+               "exit"
+               "; exec bash'");
+
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+      } else {
+        qDebug() << "Yes was *not* clicked";
+        ui->statusBar->showMessage(tr("Execution canceled"));
+      }
+}
+
+void MainWindow::on_disableSudoWithoutPassAllButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/026.disableSudoWithoutPassAll"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//##sudo without pass specific
+
+void MainWindow::on_enableSudoWithoutPassSpecificButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling sudo without pass specific"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/052.enableSudoWithoutPassSpecific"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_disableSudoWithoutPassSpecificButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling sudo without pass specific"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/053.disableSudoWithoutPassSpecific"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//##sudoers.d
+
+void MainWindow::on_openSudoersDButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening sudoers.d"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/051.openSudoersD"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//##hosts
+
+void MainWindow::on_openHostsButton_clicked()
+{
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/060.openHosts"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+}
+
+//##sudoers
+
+void MainWindow::on_openSudoersFileButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening sudoers"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/027.openSudoersFile"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_backupSudoersFileButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Backuping sudoers"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/028.backupSudoersFile"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    QMessageBox::information(this,tr("Notification"),tr("Backuped OK on \n\n") + QDir::homePath() + "/.ubunsys/backups/sudoersFiles");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_importSudoersFileButton_clicked()
+{
+    QString filename=QFileDialog::getOpenFileName(
+                    this,
+                    tr("Import your sudoers file here"),
+                    QDir::homePath() + "/.ubunsys/backups/sudoersFiles",
+                    //getenv("HOME"),
+                    //"All files (*.*);;Bak files(*.bak)");
+                    "Bak files(*.bak)");
+
+    //QMessageBox::information(this,tr("File Name"),filename);
+
+    ui->statusBar->showMessage(tr("Done. sudoers file restored succesful"));
+
+    // Create a new file
+
+    QFile file (QDir::homePath() + "/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh");
+    file.open(QIODevice::WriteOnly | QIODevice::Text);
+    QTextStream out(&file);
+    out << "#!/bin/bash\n\nsudo cp " + filename + " /etc/sudoers";
+
+    // optional, as QFile destructor will already do it:
+    file.close();
+
+    system("xterm -e '"
+           "sudo chmod 777 ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
+           "&&"
+           "sudo ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
+           " && "
+           "sudo rm -Rf ~/.ubunsys/backups/sudoersFiles/restoreSudoersScript.sh"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    //this would normally start the event loop, but is not needed for this
+    //minimal example:
+    //return app.exec();
+}
+
+//##asterisks
+
+void MainWindow::on_doVisibleAsterisksButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Doing visible asterisks"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/021.doVisibleAsterisks"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_doInvisibleAsterisksButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Doing invisible asterisks"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//##firewall
+
+void MainWindow::on_enableFirewallButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling firewall"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
+           " && "
+           "~/.ubunsys/downloads/ubuntuScripts-master/031.enableFirewall"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_disableFirewallButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling firewall"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
+           " && "
+           "~/.ubunsys/downloads/ubuntuScripts-master/032.disableFirewall"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+////////////////////////////////POWER
+
+//##hibernation
+
+void MainWindow::on_enableHibernationButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling hibernation"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/007.enableHibernation"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_disableHibernationButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling hibernation"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/024.disableHibernation"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//##LockScreen
+
+void MainWindow::on_enableLockScreenButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling lock screen"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/036.enableLockScreen"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_disableLockScreenButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling lock screen"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+////////////////////////////////EXTRAS
+
+//##Templates
+
+void MainWindow::on_installTemplatesButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Installing templates"));
+
+    system("bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/018.installTemplates"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Templates installed succesful. Now select another action"));
+}
+
+//##reduceTo5sShutdownTimeout
+
+void MainWindow::on_reduceTo5sShutdownTimeoutButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/029.reduceTo5sShutdownTimeout"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_setToDefaults90sShutdownTimeoutButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/030.setToDefaults90sShutdownTimeout"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//##MainBackup
+
 void MainWindow::on_openMainBackupButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing Main Backup"));
@@ -495,7 +499,40 @@ void MainWindow::on_openMainBackupButton_clicked()
 
 void MainWindow::on_openMainRestoreButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Executing Main Restore"));
+    QString filename=QFileDialog::getOpenFileName(
+                    this,
+                    tr("Import your main backup file here"),
+                    QDir::homePath() + "/.ubunsys/backups/lots",
+                    //getenv("HOME"),
+                    //"All files (*.*);;Bak files(*.bak)");
+                    "ZIP files(*.zip)");
+
+    //QMessageBox::information(this,tr("File Name"),filename);
+
+    ui->statusBar->showMessage(tr("Done. Main backup restored succesful"));
+
+    // Create a new file
+
+    QFile file (QDir::homePath() + "/.ubunsys/backups/lots/restoremainBackup.sh");
+    file.open(QIODevice::WriteOnly | QIODevice::Text);
+    QTextStream out(&file);
+    out << "#!/bin/bash\n\nsudo unzip -d ~/.ubunsys/backups/ " + filename;
+
+    // optional, as QFile destructor will already do it:
+    file.close();
+
+    system("xterm -e '"
+           "sudo chmod 777 ~/.ubunsys/backups/lots/restoremainBackup.sh"
+           "&&"
+           "sudo ~/.ubunsys/backups/lots/restoremainBackup.sh"
+           " && "
+           "sudo rm -Rf ~/.ubunsys/backups/lots/restoremainBackup.sh"
+           " && "
+           "exit"
+           "; exec bash'");
+
+
+//    ui->statusBar->showMessage(tr("Executing Main Restore"));
 
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/046.mainRestore"
@@ -508,12 +545,14 @@ void MainWindow::on_openMainRestoreButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-void MainWindow::on_openSudoersDButton_clicked()
+//##rc.local
+
+void MainWindow::on_openRCLocalButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Opening sudoers.d"));
+    ui->statusBar->showMessage(tr("Opening rc.local"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/051.openSudoersD"
+           "~/.ubunsys/downloads/ubuntuScripts-master/056.openRCLocal"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -521,14 +560,79 @@ void MainWindow::on_openSudoersDButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-void MainWindow::on_openHostsButton_clicked()
+//##HiddenStartupItems
+
+void MainWindow::on_showHiddenStartupItemsButton_clicked()
 {
+    ui->statusBar->showMessage(tr("Showing"));
+
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/060.openHosts"
+           "~/.ubunsys/downloads/ubuntuScripts-master/038.showHiddenStartupItems"
            " && "
-           "echo Close this window!"
+           "exit"
            "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+
+void MainWindow::on_unshowHiddenStartupItemsButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Unshowing"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/037.unshowHiddenStartupItems"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//##Login Sound
+
+void MainWindow::on_enableLoginSoundButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Enabling login sound"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/039.enableLoginSound"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_disableLoginSoundButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Disabling login sound"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/040.disableLoginSound"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//##dualBoot
+
+void MainWindow::on_runGrubcustomizerButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Installs/runs grub-customizer. Please wait"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntupackages-master/apps1/grub-customizer"
+           " && "
+           "sudo grub-customizer"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+//##resetDconf
 
 void MainWindow::on_resetDconf_clicked()
 {

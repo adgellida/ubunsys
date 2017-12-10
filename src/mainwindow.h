@@ -127,7 +127,7 @@ private slots:
 
     void on_enableLockScreenButton_clicked();
 
-    void on_disableLockScrennButton_clicked();
+    void on_disableLockScreenButton_clicked();
 
     void on_showHiddenStartupItemsButton_clicked();
 
@@ -182,6 +182,14 @@ private slots:
     void on_actionDefaultUpdateUpgradeSmartPackages_triggered();
 
     void on_actionTwitter_triggered();
+
+    void on_openCronButton_clicked();
+
+    void on_eraseCronButton_clicked();
+
+    void on_addUpdateButton_clicked();
+
+    void on_removeUpdateButton_clicked();
 
 private:
     Ui::MainWindow *ui;

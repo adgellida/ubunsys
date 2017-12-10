@@ -228,41 +228,6 @@ void MainWindow::on_purgeMainlineKernels_2_clicked()
     ui->statusBar->showMessage(tr("Purged"));
 }
 
-void MainWindow::on_enableUpdateNotificationButton_clicked()
-{
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/054.enableUpdateNotification"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Enabled"));
-}
-
-void MainWindow::on_disableUpdateNotificationButton_clicked()
-{
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/055.disableUpdateNotification"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Disabled"));
-}
-
-void MainWindow::on_openRCLocalButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Opening rc.local"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/056.openRCLocal"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
 //PREFERENCES
 
 void MainWindow::on_actionPreferences_triggered()//////////////////////
@@ -329,4 +294,56 @@ void MainWindow::on_actionTwitter_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://www.twitter.com/ubunsys_app", QUrl::TolerantMode));
     ui->statusBar->showMessage(tr("Go to ubunsys twitter. Please wait."));
+}
+
+void MainWindow::on_openCronButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening cron jobs"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/063.openCron"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_eraseCronButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Erasing cron jobs"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/064.eraseCron"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_addUpdateButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Adding update cron job"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/065.add_to_root_crontab"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_removeUpdateButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Erasing update cron job"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
