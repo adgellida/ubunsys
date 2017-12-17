@@ -33,6 +33,7 @@ MainWindow::MainWindow(QWidget *parent) :
            "test -d ~/.ubunsys/updates/ubunsys_check_version || mkdir -p ~/.ubunsys/updates/ubunsys_check_version && "
            "test -d ~/.ubunsys/backups/scriptsFiles || mkdir -p ~/.ubunsys/backups/scriptsFiles && "
            "test -d ~/.ubunsys/backups/sudoersFiles || mkdir -p ~/.ubunsys/backups/sudoersFiles && "
+           "test -d ~/.ubunsys/status || mkdir -p ~/.ubunsys/status && "
            "rm -Rf ~/.ubunsys/updates/updateLog.log && "
            "touch ~/.ubunsys/updates/updateLog.log && "
            "exit");
@@ -129,6 +130,49 @@ MainWindow::MainWindow(QWidget *parent) :
         system("touch ~/.ubunsys/updates/updateLog.log");
 
         ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
+
+        //######## Status
+
+        //system("~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus");
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus"
+               //"~/githubProjects/ubuntuScripts/067.checkFirewallStatus"
+               " && "
+               "echo Close this window!"
+               "; exec bash'");
+
+        QFile file23(QDir::homePath() + "/.ubunsys/status/firewall.txt");
+        //QLabel *testLabel= new QLabel;
+
+        QString line;
+        if (file23.open(QIODevice::ReadOnly | QIODevice::Text)){
+            QTextStream stream(&file23);
+            while (!stream.atEnd()){
+
+                //line.append(stream.readLine()+"\n");
+                line.append(stream.readLine());
+            }
+            ui->statusBar->showMessage(line);
+        }
+        file23.close();
+
+        QString line2 = "Status: active";
+
+        if (line == line2){
+
+            //ui->statusBar->showMessage(tr("Está activo"));
+            ui->checkBox_firewall->setChecked(true);
+        }
+
+        else{
+
+            //ui->statusBar->showMessage(tr("Está inactivo"));
+            ui->checkBox_firewall->setChecked(false);
+        }
+
+    qDebug() << line;
+    qDebug() << line2;
 
 }
 
@@ -347,3 +391,4 @@ void MainWindow::on_removeUpdateButton_clicked()
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+

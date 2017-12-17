@@ -173,7 +173,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -1140,34 +1140,6 @@ all</string>
 specific</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="disableFirewallButton">
-        <property name="geometry">
-         <rect>
-          <x>230</x>
-          <y>360</y>
-          <width>111</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Disable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_12">
         <property name="geometry">
          <rect>
@@ -1185,34 +1157,6 @@ specific</string>
         </property>
         <property name="text">
          <string>Firewall</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="enableFirewallButton">
-        <property name="geometry">
-         <rect>
-          <x>230</x>
-          <y>320</y>
-          <width>111</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Enable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
         </property>
        </widget>
        <widget class="QLabel" name="label_13">
@@ -1603,6 +1547,31 @@ on terminal</string>
          <string/>
         </property>
         <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_firewall">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="tristate">
          <bool>false</bool>
         </property>
        </widget>

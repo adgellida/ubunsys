@@ -62,6 +62,14 @@ int main(int argc, char *argv[])
 
     //theme
 
+    QFile f(":qdarkstyle/style.qss");
+    f.open(QFile::ReadOnly | QFile::Text);
+    QTextStream ts(&f);
+    qApp->setStyleSheet(ts.readAll());
+    qDebug() << "Dark loaded";
+
+    //theme change
+/*
     int checkTheme = 1;
 
     if (checkTheme == 1){
@@ -94,8 +102,9 @@ int main(int argc, char *argv[])
             }
 
         else qDebug() << "Light loaded";
-    }
 
+    }
+*/
     MainWindow w;
     w.show();
 

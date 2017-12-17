@@ -347,35 +347,43 @@ void MainWindow::on_doInvisibleAsterisksButton_clicked()
 
 //##firewall
 
-void MainWindow::on_enableFirewallButton_clicked()
+void MainWindow::on_checkBox_firewall_clicked(bool checked)
 {
-    ui->statusBar->showMessage(tr("Enabling firewall"));
+    if (checked != false){
+        qDebug() << checked;
 
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
-           " && "
-           "~/.ubunsys/downloads/ubuntuScripts-master/031.enableFirewall"
-           " && "
-           "exit"
-           "; exec bash'");
+        ui->statusBar->showMessage(tr("Enabling firewall"));
 
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
+               " && "
+               "~/.ubunsys/downloads/ubuntuScripts-master/031.enableFirewall"
+               " && "
+               "exit"
+               "; exec bash'");
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+    }
+
+    else if (checked == false){
+        qDebug() << checked;
+
+              ui->statusBar->showMessage(tr("Disabling firewall"));
+
+              system("xterm -e '"
+                     "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
+                     " && "
+                     "~/.ubunsys/downloads/ubuntuScripts-master/032.disableFirewall"
+                     " && "
+                     "exit"
+                     "; exec bash'");
+
+              ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+    }
 }
 
-void MainWindow::on_disableFirewallButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling firewall"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
-           " && "
-           "~/.ubunsys/downloads/ubuntuScripts-master/032.disableFirewall"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
 
 ////////////////////////////////POWER
 

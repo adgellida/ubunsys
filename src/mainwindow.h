@@ -111,10 +111,6 @@ private slots:
 
     void on_setToDefaults90sShutdownTimeoutButton_clicked();
 
-    void on_enableFirewallButton_clicked();
-
-    void on_disableFirewallButton_clicked();
-
     //void on_actionAbout_clicked();
     //void on_updateScriptsButton_clicked();
     //void on_runUpdateDialog_clicked();
@@ -190,6 +186,8 @@ private slots:
     void on_addUpdateButton_clicked();
 
     void on_removeUpdateButton_clicked();
+
+    void on_checkBox_firewall_clicked(bool checked);
 
 private:
     Ui::MainWindow *ui;

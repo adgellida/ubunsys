@@ -14,6 +14,9 @@
    <string>Preferences</string>
   </property>
   <widget class="QComboBox" name="comboBox_1">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>140</x>
