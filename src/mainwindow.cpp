@@ -207,6 +207,42 @@ MainWindow::MainWindow(QWidget *parent) :
     qDebug() << lineHidden1;
     qDebug() << lineHidden2;
 
+        //######## updateNotif
+
+            //######## Status
+
+            QFile fileUpdateNotif(QDir::homePath() + "/.ubunsys/status/updateNotif.txt");
+            //QLabel *testLabel= new QLabel;
+
+            QString lineUpdateNotif1;
+            if (fileUpdateNotif.open(QIODevice::ReadOnly | QIODevice::Text)){
+                QTextStream stream(&fileUpdateNotif);
+                while (!stream.atEnd()){
+
+                    //line.append(stream.readLine()+"\n");
+                    lineUpdateNotif1.append(stream.readLine());
+                }
+                //ui->statusBar->showMessage(line);
+            }
+            fileUpdateNotif.close();
+
+            QString lineUpdateNotif2 = "Disabled";
+
+            if (lineUpdateNotif1 == lineUpdateNotif2){
+
+                //ui->statusBar->showMessage(tr("Está activo"));
+                ui->checkBoxUpdateNotif->setChecked(true);
+            }
+
+            else{
+
+                //ui->statusBar->showMessage(tr("Está inactivo"));
+                ui->checkBoxUpdateNotif->setChecked(false);
+            }
+
+        qDebug() << lineUpdateNotif1;
+        qDebug() << lineUpdateNotif2;
+
 }
 
 MainWindow::~MainWindow()

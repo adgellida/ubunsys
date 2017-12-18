@@ -173,7 +173,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -458,70 +458,14 @@
          <string>Disable Update notification</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="enableUpdateNotificationButton">
-        <property name="geometry">
-         <rect>
-          <x>330</x>
-          <y>140</y>
-          <width>111</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Enable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="disableUpdateNotificationButton">
-        <property name="geometry">
-         <rect>
-          <x>330</x>
-          <y>180</y>
-          <width>111</width>
-          <height>36</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Disable</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-       </widget>
        <widget class="QCheckBox" name="checkBoxUpdateNotif">
         <property name="enabled">
          <bool>true</bool>
         </property>
         <property name="geometry">
          <rect>
-          <x>450</x>
-          <y>160</y>
+          <x>330</x>
+          <y>140</y>
           <width>51</width>
           <height>41</height>
          </rect>
@@ -1064,7 +1008,7 @@ all</string>
          <string/>
         </property>
         <property name="text">
-         <string>Disable</string>
+         <string>Remove</string>
         </property>
         <property name="iconSize">
          <size>
@@ -1105,7 +1049,7 @@ all</string>
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
-         <string>Enable</string>
+         <string>Add</string>
         </property>
         <property name="iconSize">
          <size>
