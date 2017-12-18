@@ -129,26 +129,68 @@ void MainWindow::on_aptselect_ES_clicked()
 
 //##updateNotification
 
-void MainWindow::on_enableUpdateNotificationButton_clicked()
+void MainWindow::on_checkBoxUpdateNotif_clicked(bool checked)
 {
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/054.enableUpdateNotification"
-           " && "
-           "exit"
-           "; exec bash'");
+    if (checked == false){
 
-    ui->statusBar->showMessage(tr("Enabled"));
-}
+        qDebug() << checked;
 
-void MainWindow::on_disableUpdateNotificationButton_clicked()
-{
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/055.disableUpdateNotification"
-           " && "
-           "exit"
-           "; exec bash'");
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/054.enableUpdateNotification"
+               " && "
+               "exit"
+               "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Disabled"));
+        ui->statusBar->showMessage(tr("Enabled"));
+    }
+
+    if (checked != false){
+
+        qDebug() << checked;
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/055.disableUpdateNotification"
+               " && "
+               "exit"
+               "; exec bash'");
+
+        ui->statusBar->showMessage(tr("Disabled"));
+    }
+
+    //######## Status
+
+    QFile fileUpdateNotif(QDir::homePath() + "/.ubunsys/status/updateNotif.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineUpdateNotif1;
+    if (fileUpdateNotif.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileUpdateNotif);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineUpdateNotif1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileUpdateNotif.close();
+
+    QString lineUpdateNotif2 = "Disabled";
+
+    if (lineUpdateNotif1 == lineUpdateNotif2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxUpdateNotif->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxUpdateNotif->setChecked(false);
+    }
+
+qDebug() << lineUpdateNotif1;
+qDebug() << lineUpdateNotif2;
+
 }
 
 ////////////////////////////////SECURITY
@@ -615,7 +657,6 @@ void MainWindow::on_checkBoxHiddenStartupItems_clicked(bool checked)
     if (checked != false){
         qDebug() << checked;
 
-
     ui->statusBar->showMessage(tr("Showing"));
 
     system("xterm -e '"
@@ -642,7 +683,6 @@ void MainWindow::on_checkBoxHiddenStartupItems_clicked(bool checked)
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 
     }
-
 
     //######## Status
 

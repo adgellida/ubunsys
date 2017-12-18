@@ -153,10 +153,6 @@ private slots:
 
     void on_purgeMainlineKernels_2_clicked();
 
-    void on_enableUpdateNotificationButton_clicked();
-
-    void on_disableUpdateNotificationButton_clicked();
-
     void on_openRCLocalButton_clicked();
 
     void on_resetDconf_clicked();
@@ -185,7 +181,7 @@ private slots:
 
     void on_checkBox_firewall_clicked(bool checked);
 
-    void on_checkBoxUpdateNotification_clicked(bool checked);
+    void on_checkBoxUpdateNotif_clicked(bool checked);
 
     void on_checkBoxSudoWOPass_clicked(bool checked);
 

@@ -426,10 +426,7 @@ void MainWindow::on_removeUpdateButton_clicked()
 }
 
 
-void MainWindow::on_checkBoxUpdateNotification_clicked(bool checked)
-{
 
-}
 
 void MainWindow::on_checkBoxSudoWOPass_clicked(bool checked)
 {

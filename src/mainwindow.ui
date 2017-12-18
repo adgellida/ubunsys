@@ -455,7 +455,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Update notification</string>
+         <string>Disable Update notification</string>
         </property>
        </widget>
        <widget class="QPushButton" name="enableUpdateNotificationButton">
@@ -514,9 +514,9 @@
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBoxUpdateNotification">
+       <widget class="QCheckBox" name="checkBoxUpdateNotif">
         <property name="enabled">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
         <property name="geometry">
          <rect>
