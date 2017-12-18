@@ -379,9 +379,52 @@ void MainWindow::on_checkBox_firewall_clicked(bool checked)
                      "exit"
                      "; exec bash'");
 
-              ui->statusBar->showMessage(tr("Done. Now select another action"));
+              ui->statusBar->showMessage(tr("Done. Now select another action"));         
 
     }
+
+    //######## Status
+
+    //system("~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus");
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus"
+           //"~/githubProjects/ubuntuScripts/067.checkFirewallStatus"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    QFile file23(QDir::homePath() + "/.ubunsys/status/firewall.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString line;
+    if (file23.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&file23);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            line.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    file23.close();
+
+    QString line2 = "Status: active";
+
+    if (line == line2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBox_firewall->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBox_firewall->setChecked(false);
+    }
+
+qDebug() << line;
+qDebug() << line2;
 }
 
 
@@ -570,8 +613,12 @@ void MainWindow::on_openRCLocalButton_clicked()
 
 //##HiddenStartupItems
 
-void MainWindow::on_showHiddenStartupItemsButton_clicked()
+void MainWindow::on_checkBoxHiddenStartupItems_clicked(bool checked)
 {
+    if (checked != false){
+        qDebug() << checked;
+
+
     ui->statusBar->showMessage(tr("Showing"));
 
     system("xterm -e '"
@@ -581,10 +628,12 @@ void MainWindow::on_showHiddenStartupItemsButton_clicked()
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
 
-void MainWindow::on_unshowHiddenStartupItemsButton_clicked()
-{
+    }
+
+    else if (checked == false){
+        qDebug() << checked;
+
     ui->statusBar->showMessage(tr("Unshowing"));
 
     system("xterm -e '"
@@ -594,6 +643,44 @@ void MainWindow::on_unshowHiddenStartupItemsButton_clicked()
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+    }
+
+
+    //######## Status
+
+    QFile file23(QDir::homePath() + "/.ubunsys/status/HiddenStartupItems.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString line;
+    if (file23.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&file23);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            line.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    file23.close();
+
+    QString line2 = "Show";
+
+    if (line == line2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxHiddenStartupItems->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxHiddenStartupItems->setChecked(false);
+    }
+
+qDebug() << line;
+qDebug() << line2;
+
 }
 
 //##Login Sound

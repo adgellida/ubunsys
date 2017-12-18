@@ -131,35 +131,34 @@ MainWindow::MainWindow(QWidget *parent) :
 
         ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
-        //######## Status
+        //###############################STATUS
 
-        //system("~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus");
+        //######## firewall
 
         system("xterm -e '"
                "~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus"
-               //"~/githubProjects/ubuntuScripts/067.checkFirewallStatus"
                " && "
                "echo Close this window!"
                "; exec bash'");
 
-        QFile file23(QDir::homePath() + "/.ubunsys/status/firewall.txt");
+        QFile fileFirewall(QDir::homePath() + "/.ubunsys/status/firewall.txt");
         //QLabel *testLabel= new QLabel;
 
-        QString line;
-        if (file23.open(QIODevice::ReadOnly | QIODevice::Text)){
-            QTextStream stream(&file23);
+        QString lineFirewall1;
+        if (fileFirewall.open(QIODevice::ReadOnly | QIODevice::Text)){
+            QTextStream stream(&fileFirewall);
             while (!stream.atEnd()){
 
                 //line.append(stream.readLine()+"\n");
-                line.append(stream.readLine());
+                lineFirewall1.append(stream.readLine());
             }
-            ui->statusBar->showMessage(line);
+            //ui->statusBar->showMessage(line);
         }
-        file23.close();
+        fileFirewall.close();
 
-        QString line2 = "Status: active";
+        QString lineFirewall2 = "Status: active";
 
-        if (line == line2){
+        if (lineFirewall1 == lineFirewall2){
 
             //ui->statusBar->showMessage(tr("Está activo"));
             ui->checkBox_firewall->setChecked(true);
@@ -171,8 +170,42 @@ MainWindow::MainWindow(QWidget *parent) :
             ui->checkBox_firewall->setChecked(false);
         }
 
-    qDebug() << line;
-    qDebug() << line2;
+        qDebug() << lineFirewall1;
+        qDebug() << lineFirewall2;
+
+        //######## HiddenStartupItems
+
+        QFile fileHidden(QDir::homePath() + "/.ubunsys/status/HiddenStartupItems.txt");
+        //QLabel *testLabel= new QLabel;
+
+        QString lineHidden1;
+        if (fileHidden.open(QIODevice::ReadOnly | QIODevice::Text)){
+            QTextStream stream(&fileHidden);
+            while (!stream.atEnd()){
+
+                //line.append(stream.readLine()+"\n");
+                lineHidden1.append(stream.readLine());
+            }
+            //ui->statusBar->showMessage(line);
+        }
+        fileHidden.close();
+
+        QString lineHidden2 = "Show";
+
+        if (lineHidden1 == lineHidden2){
+
+            //ui->statusBar->showMessage(tr("Está activo"));
+            ui->checkBoxHiddenStartupItems->setChecked(true);
+        }
+
+        else{
+
+            //ui->statusBar->showMessage(tr("Está inactivo"));
+            ui->checkBoxHiddenStartupItems->setChecked(false);
+        }
+
+    qDebug() << lineHidden1;
+    qDebug() << lineHidden2;
 
 }
 
@@ -392,3 +425,40 @@ void MainWindow::on_removeUpdateButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
+
+void MainWindow::on_checkBoxUpdateNotification_clicked(bool checked)
+{
+
+}
+
+void MainWindow::on_checkBoxSudoWOPass_clicked(bool checked)
+{
+
+}
+
+void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
+{
+
+}
+
+void MainWindow::on_checkBoxUpdateAuto_clicked(bool checked)
+{
+
+}
+
+void MainWindow::on_checkBoxHibernation_clicked(bool checked)
+{
+
+}
+
+void MainWindow::on_checkBoxLockScreen_clicked(bool checked)
+{
+
+}
+
+
+
+void MainWindow::on_checkBoxLoginSound_clicked(bool checked)
+{
+
+}

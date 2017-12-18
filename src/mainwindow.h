@@ -125,10 +125,6 @@ private slots:
 
     void on_disableLockScreenButton_clicked();
 
-    void on_showHiddenStartupItemsButton_clicked();
-
-    void on_unshowHiddenStartupItemsButton_clicked();
-
     void on_enableLoginSoundButton_clicked();
 
     void on_disableLoginSoundButton_clicked();
@@ -188,6 +184,22 @@ private slots:
     void on_removeUpdateButton_clicked();
 
     void on_checkBox_firewall_clicked(bool checked);
+
+    void on_checkBoxUpdateNotification_clicked(bool checked);
+
+    void on_checkBoxSudoWOPass_clicked(bool checked);
+
+    void on_checkBoxAsterisks_clicked(bool checked);
+
+    void on_checkBoxUpdateAuto_clicked(bool checked);
+
+    void on_checkBoxHibernation_clicked(bool checked);
+
+    void on_checkBoxLockScreen_clicked(bool checked);
+
+    void on_checkBoxHiddenStartupItems_clicked(bool checked);
+
+    void on_checkBoxLoginSound_clicked(bool checked);
 
 private:
     Ui::MainWindow *ui;
