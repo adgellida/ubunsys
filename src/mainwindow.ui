@@ -1011,7 +1011,7 @@ on terminal</string>
         <property name="geometry">
          <rect>
           <x>450</x>
-          <y>150</y>
+          <y>160</y>
           <width>51</width>
           <height>41</height>
          </rect>
