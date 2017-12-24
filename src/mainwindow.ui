@@ -173,7 +173,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -465,7 +465,7 @@
         <property name="geometry">
          <rect>
           <x>330</x>
-          <y>140</y>
+          <y>150</y>
           <width>51</width>
           <height>41</height>
          </rect>

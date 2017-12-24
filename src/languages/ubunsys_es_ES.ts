@@ -1107,7 +1107,8 @@ en terminal</translation>
     <message>
         <location filename="../mainwindow.ui" line="458"/>
         <source>Disable Update notification</source>
-        <translation>Deshabilitar notificación de actualización</translation>
+        <translation>Deshabilitar notificación
+de actualización</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="510"/>
