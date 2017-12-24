@@ -97,8 +97,6 @@ Capturas de pantalla
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_007.png" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_008.png" width="425">
 
-<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_009.png" width="425">
-
 Qué hace este programa
 =============================================
 
