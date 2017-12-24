@@ -197,16 +197,12 @@ qDebug() << lineUpdateNotif2;
 
 //##sudo without pass all
 
-void MainWindow::on_enableSudoWithoutPassAllButton_clicked()
+void MainWindow::on_checkBoxSudoWOPass_clicked(bool checked)
 {
-    ui->statusBar->showMessage(tr("Enabling sudo without pass"));
+    if (checked != false){
+        qDebug() << checked;
 
-    QMessageBox::StandardButton reply;
-      reply = QMessageBox::question(this, "Warning", "Are you completely sure?",
-                                    QMessageBox::Yes|QMessageBox::No);
-      if (reply == QMessageBox::Yes) {
-        qDebug() << "Yes was clicked";
-        //QApplication::quit();
+        ui->statusBar->showMessage(tr("Enabling sudo without pass"));
 
         system("xterm -e '"
                "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPassAll"
@@ -214,26 +210,57 @@ void MainWindow::on_enableSudoWithoutPassAllButton_clicked()
                "exit"
                "; exec bash'");
 
-
         ui->statusBar->showMessage(tr("Done. Now select another action"));
 
-      } else {
-        qDebug() << "Yes was *not* clicked";
-        ui->statusBar->showMessage(tr("Execution canceled"));
-      }
-}
+    }
 
-void MainWindow::on_disableSudoWithoutPassAllButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
+    else if (checked == false){
+        qDebug() << checked;
 
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/026.disableSudoWithoutPassAll"
-           " && "
-           "exit"
-           "; exec bash'");
+              ui->statusBar->showMessage(tr("Disabling sudo without pass"));
 
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
+              system("xterm -e '"
+                     "~/.ubunsys/downloads/ubuntuScripts-master/026.disableSudoWithoutPassAll"
+                     " && "
+                     "exit"
+                     "; exec bash'");
+
+              ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
+    //######## Status
+
+    QFile fileSudo(QDir::homePath() + "/.ubunsys/status/SudoWOPass.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineSudo1;
+    if (fileSudo.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileSudo);
+        while (!stream.atEnd()){
+
+            lineSudo1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileSudo.close();
+
+    QString lineSudo2 = "Enabled";
+
+    if (lineSudo1 == lineSudo2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxSudoWOPass->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxSudoWOPass->setChecked(false);
+    }
+
+    qDebug() << lineSudo1;
+    qDebug() << lineSudo2;
+
 }
 
 //##sudo without pass specific
@@ -359,33 +386,7 @@ void MainWindow::on_importSudoersFileButton_clicked()
     //return app.exec();
 }
 
-//##asterisks
 
-void MainWindow::on_doVisibleAsterisksButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Doing visible asterisks"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/021.doVisibleAsterisks"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_doInvisibleAsterisksButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Doing invisible asterisks"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
 
 //##firewall
 
@@ -469,61 +470,7 @@ void MainWindow::on_checkBox_firewall_clicked(bool checked)
 
 ////////////////////////////////POWER
 
-//##hibernation
 
-void MainWindow::on_enableHibernationButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling hibernation"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/007.enableHibernation"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_disableHibernationButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling hibernation"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/024.disableHibernation"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-//##LockScreen
-
-void MainWindow::on_enableLockScreenButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling lock screen"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/036.enableLockScreen"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_disableLockScreenButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling lock screen"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
 
 ////////////////////////////////EXTRAS
 
@@ -546,7 +493,7 @@ void MainWindow::on_installTemplatesButton_clicked()
 
 void MainWindow::on_reduceTo5sShutdownTimeoutButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
+    ui->statusBar->showMessage(tr("Enabling"));
 
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/029.reduceTo5sShutdownTimeout"
@@ -559,7 +506,7 @@ void MainWindow::on_reduceTo5sShutdownTimeoutButton_clicked()
 
 void MainWindow::on_setToDefaults90sShutdownTimeoutButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Disabling sudo without pass"));
+    ui->statusBar->showMessage(tr("Disabling"));
 
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/030.setToDefaults90sShutdownTimeout"
@@ -720,34 +667,6 @@ qDebug() << lineHidden2;
 
 }
 
-//##Login Sound
-
-void MainWindow::on_enableLoginSoundButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling login sound"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/039.enableLoginSound"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_disableLoginSoundButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling login sound"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/040.disableLoginSound"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
 //##dualBoot
 
 void MainWindow::on_runGrubcustomizerButton_clicked()
@@ -791,4 +710,344 @@ void MainWindow::on_resetDconf_clicked()
         ui->statusBar->showMessage(tr("Execution canceled"));
       }
 
+}
+
+//##asterisks
+
+void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
+{
+    if (checked != false){
+        qDebug() << checked;
+
+        ui->statusBar->showMessage(tr("Doing visible asterisks"));
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/021.doVisibleAsterisks"
+               " && "
+               "exit"
+               "; exec bash'");
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+    }
+
+    else if (checked == false){
+        qDebug() << checked;
+
+        ui->statusBar->showMessage(tr("Doing invisible asterisks"));
+
+          system("xterm -e '"
+                 "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
+                 " && "
+                 "exit"
+                 "; exec bash'");
+
+          ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
+  //######## Status
+
+  QFile fileAsterisks(QDir::homePath() + "/.ubunsys/status/asterisks.txt");
+  //QLabel *testLabel= new QLabel;
+
+  QString lineAsterisks1;
+      if (fileAsterisks.open(QIODevice::ReadOnly | QIODevice::Text)){
+      QTextStream stream(&fileAsterisks);
+      while (!stream.atEnd()){
+
+          //line.append(stream.readLine()+"\n");
+          lineAsterisks1.append(stream.readLine());
+      }
+      //ui->statusBar->showMessage(line);
+  }
+  fileAsterisks.close();
+
+  QString lineAsterisks2 = "Enabled";
+
+  if (lineAsterisks1 == lineAsterisks2){
+
+      //ui->statusBar->showMessage(tr("Está activo"));
+      ui->checkBoxAsterisks->setChecked(true);
+  }
+
+  else{
+
+      //ui->statusBar->showMessage(tr("Está inactivo"));
+      ui->checkBoxAsterisks->setChecked(false);
+  }
+
+  qDebug() << lineAsterisks1;
+  qDebug() << lineAsterisks2;
+
+  }
+
+//##updateAuto
+
+void MainWindow::on_checkBoxUpdateAuto_clicked(bool checked)
+{
+    if (checked != false){
+        qDebug() << checked;
+
+        ui->statusBar->showMessage(tr("Adding update auto"));
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/065.add_to_root_crontab"
+               " && "
+               "exit"
+               "; exec bash'");
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+    }
+
+    else if (checked == false){
+        qDebug() << checked;
+
+          ui->statusBar->showMessage(tr("Erasing update auto"));
+
+          system("xterm -e '"
+                 "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
+                 " && "
+                 "exit"
+                 "; exec bash'");
+
+          ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
+    //######## Status
+
+    QFile fileUA(QDir::homePath() + "/.ubunsys/status/updateAuto.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineUA1;
+        if (fileUA.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileUA);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineUA1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileUA.close();
+
+    QString lineUA2 = "Enabled";
+
+    if (lineUA1 == lineUA2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxUpdateAuto->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxUpdateAuto->setChecked(false);
+    }
+
+    qDebug() << lineUA1;
+    qDebug() << lineUA2;
+
+}
+
+//##hibernation
+
+void MainWindow::on_checkBoxHibernation_clicked(bool checked)
+{
+    if (checked != false){
+        qDebug() << checked;
+
+        ui->statusBar->showMessage(tr("Hibernation enabled"));
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/007.enableHibernation"
+               " && "
+               "exit"
+               "; exec bash'");
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+    }
+
+    else if (checked == false){
+        qDebug() << checked;
+
+          ui->statusBar->showMessage(tr("Hibernation disabled"));
+
+          system("xterm -e '"
+                 "~/.ubunsys/downloads/ubuntuScripts-master/024.disableHibernation"
+                 " && "
+                 "exit"
+                 "; exec bash'");
+
+          ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
+    //######## Status
+
+    QFile fileHibernation(QDir::homePath() + "/.ubunsys/status/hibernation.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineHibernation1;
+        if (fileHibernation.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileHibernation);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineHibernation1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileHibernation.close();
+
+    QString lineHibernation2 = "Disabled";
+
+    if (lineHibernation1 == lineHibernation2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxHibernation->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxHibernation->setChecked(false);
+    }
+
+    qDebug() << lineHibernation1;
+    qDebug() << lineHibernation2;
+}
+
+//##lock screen
+
+void MainWindow::on_checkBoxLockScreen_clicked(bool checked)
+{
+    if (checked != false){
+        qDebug() << checked;
+
+        ui->statusBar->showMessage(tr("Lock screen Enabled"));
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
+               " && "
+               "exit"
+               "; exec bash'");
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+    }
+
+    else if (checked == false){
+        qDebug() << checked;
+
+          ui->statusBar->showMessage(tr("Lock screen Disabled"));
+
+          system("xterm -e '"
+                 "~/.ubunsys/downloads/ubuntuScripts-master/036.enableLockScreen"
+                 " && "
+                 "exit"
+                 "; exec bash'");
+
+          ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
+    //######## Status
+
+    QFile fileLockScreen(QDir::homePath() + "/.ubunsys/status/LockScreen.txt");
+
+    QString lineLockScreen1;
+        if (fileLockScreen.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileLockScreen);
+        while (!stream.atEnd()){
+
+            lineLockScreen1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileLockScreen.close();
+
+    QString lineLockScreen2 = "Enabled";
+
+    if (lineLockScreen1 == lineLockScreen2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxLockScreen->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxLockScreen->setChecked(false);
+    }
+
+    qDebug() << lineLockScreen1;
+    qDebug() << lineLockScreen2;
+}
+
+//##login sound
+
+void MainWindow::on_checkBoxLoginSound_clicked(bool checked)
+{
+    if (checked != false){
+        qDebug() << checked;
+
+        ui->statusBar->showMessage(tr("Login Sound Enabled"));
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/039.enableLoginSound"
+               " && "
+               "exit"
+               "; exec bash'");
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+    }
+
+    else if (checked == false){
+        qDebug() << checked;
+
+          ui->statusBar->showMessage(tr("Login Sound Disabled"));
+
+          system("xterm -e '"
+                       "~/.ubunsys/downloads/ubuntuScripts-master/040.disableLoginSound"
+                 " && "
+                 "exit"
+                 "; exec bash'");
+
+          ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
+    //######## Status
+
+    QFile fileLoginSound(QDir::homePath() + "/.ubunsys/status/loginSound.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineLoginSound1;
+        if (fileLoginSound.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileLoginSound);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineLoginSound1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileLoginSound.close();
+
+    QString lineLoginSound2 = "Enabled";
+
+    if (lineLoginSound1 == lineLoginSound2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxLoginSound->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxLoginSound->setChecked(false);
+    }
+
+    qDebug() << lineLoginSound1;
+    qDebug() << lineLoginSound2;
 }

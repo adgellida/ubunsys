@@ -85,19 +85,7 @@ private slots:
 
     void on_installTemplatesButton_clicked();
 
-    void on_doVisibleAsterisksButton_clicked();
-
-    void on_doInvisibleAsterisksButton_clicked();
-
     void on_openSourcesListDButton_clicked();
-
-    void on_enableHibernationButton_clicked();
-
-    void on_disableHibernationButton_clicked();
-
-    void on_enableSudoWithoutPassAllButton_clicked();
-
-    void on_disableSudoWithoutPassAllButton_clicked();
 
     void on_enableSudoWithoutPassSpecificButton_clicked();
 
@@ -120,14 +108,6 @@ private slots:
     void on_installMainlineKernels_clicked();
 
     void on_runGrubcustomizerButton_clicked();
-
-    void on_enableLockScreenButton_clicked();
-
-    void on_disableLockScreenButton_clicked();
-
-    void on_enableLoginSoundButton_clicked();
-
-    void on_disableLoginSoundButton_clicked();
 
     void on_aptselect_US_clicked();
 
@@ -174,10 +154,6 @@ private slots:
     void on_openCronButton_clicked();
 
     void on_eraseCronButton_clicked();
-
-    void on_addUpdateButton_clicked();
-
-    void on_removeUpdateButton_clicked();
 
     void on_checkBox_firewall_clicked(bool checked);
 
