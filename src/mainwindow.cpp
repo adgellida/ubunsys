@@ -147,328 +147,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
-    //###############################STATUS
+    MainWindow::checkAllStatus();
 
-    //1.######## firewall
-    //######## Status
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
-
-    QFile fileFirewall(QDir::homePath() + "/.ubunsys/status/firewall.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineFirewall1;
-    if (fileFirewall.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileFirewall);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineFirewall1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileFirewall.close();
-
-    QString lineFirewall2 = "Status: active";
-
-    if (lineFirewall1 == lineFirewall2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBox_firewall->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBox_firewall->setChecked(false);
-    }
-
-    qDebug() << lineFirewall1;
-    qDebug() << lineFirewall2;
-
-    //2.######## HiddenStartupItems
-    //######## Status
-
-    QFile fileHidden(QDir::homePath() + "/.ubunsys/status/HiddenStartupItems.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineHidden1;
-    if (fileHidden.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileHidden);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineHidden1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileHidden.close();
-
-    QString lineHidden2 = "Show";
-
-    if (lineHidden1 == lineHidden2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBoxHiddenStartupItems->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBoxHiddenStartupItems->setChecked(false);
-    }
-
-    qDebug() << lineHidden1;
-    qDebug() << lineHidden2;
-
-    //3.######## updateNotif
-    //######## Status
-
-    QFile fileUpdateNotif(QDir::homePath() + "/.ubunsys/status/updateNotif.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineUpdateNotif1;
-    if (fileUpdateNotif.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileUpdateNotif);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineUpdateNotif1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileUpdateNotif.close();
-
-    QString lineUpdateNotif2 = "Disabled";
-
-    if (lineUpdateNotif1 == lineUpdateNotif2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBoxUpdateNotif->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBoxUpdateNotif->setChecked(false);
-    }
-
-    qDebug() << lineUpdateNotif1;
-    qDebug() << lineUpdateNotif2;
-
-    //4.######## sudoWithoutPass
-    //######## Status
-
-    QFile fileSudo(QDir::homePath() + "/.ubunsys/status/SudoWOPass.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineSudo1;
-    if (fileSudo.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileSudo);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineSudo1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileSudo.close();
-
-    QString lineSudo2 = "Enabled";
-
-    if (lineSudo1 == lineSudo2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBoxSudoWOPass->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBoxSudoWOPass->setChecked(false);
-    }
-
-    qDebug() << lineSudo1;
-    qDebug() << lineSudo2;
-
-    //5.######## asterisks
-    //######## Status
-
-    QFile fileAsterisks(QDir::homePath() + "/.ubunsys/status/asterisks.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineAsterisks1;
-        if (fileAsterisks.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileAsterisks);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineAsterisks1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileAsterisks.close();
-
-    QString lineAsterisks2 = "Enabled";
-
-    if (lineAsterisks1 == lineAsterisks2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBoxAsterisks->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBoxAsterisks->setChecked(false);
-    }
-
-    qDebug() << lineAsterisks1;
-    qDebug() << lineAsterisks2;
-
-    //6.######## updateAuto
-    //######## Status
-
-    QFile fileUA(QDir::homePath() + "/.ubunsys/status/updateAuto.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineUA1;
-        if (fileUA.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileUA);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineUA1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileUA.close();
-
-    QString lineUA2 = "Enabled";
-
-    if (lineUA1 == lineUA2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBoxUpdateAuto->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBoxUpdateAuto->setChecked(false);
-    }
-
-    qDebug() << lineUA1;
-    qDebug() << lineUA2;
-
-    //7.######## hibernation
-    //######## Status
-
-    QFile fileHibernation(QDir::homePath() + "/.ubunsys/status/hibernation.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineHibernation1;
-        if (fileHibernation.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileHibernation);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineHibernation1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileHibernation.close();
-
-    QString lineHibernation2 = "Disabled";
-
-    if (lineHibernation1 == lineHibernation2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBoxHibernation->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBoxHibernation->setChecked(false);
-    }
-
-    qDebug() << lineHibernation1;
-    qDebug() << lineHibernation2;
-
-    //8.######## LockScreen
-    //######## Status
-
-    QFile fileLockScreen(QDir::homePath() + "/.ubunsys/status/LockScreen.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineLockScreen1;
-        if (fileLockScreen.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileLockScreen);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineLockScreen1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileLockScreen.close();
-
-    QString lineLockScreen2 = "Enabled";
-
-    if (lineLockScreen1 == lineLockScreen2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBoxLockScreen->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBoxLockScreen->setChecked(false);
-    }
-
-    qDebug() << lineLockScreen1;
-    qDebug() << lineLockScreen2;
-
-    //9.######## LoginSound
-    //######## Status
-
-    QFile fileLoginSound(QDir::homePath() + "/.ubunsys/status/loginSound.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineLoginSound1;
-        if (fileLoginSound.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileLoginSound);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineLoginSound1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileLoginSound.close();
-
-    QString lineLoginSound2 = "Enabled";
-
-    if (lineLoginSound1 == lineLoginSound2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBoxLoginSound->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBoxLoginSound->setChecked(false);
-    }
-
-    qDebug() << lineLoginSound1;
-    qDebug() << lineLoginSound2;
 }
 
 MainWindow::~MainWindow()
@@ -659,4 +339,405 @@ void MainWindow::on_eraseCronButton_clicked()
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//1.########
+void MainWindow::checkFirewallStatus()
+{
+//1.######## firewall
+//######## Status
+
+system("xterm -e '"
+       "~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus"
+       " && "
+       "echo Close this window!"
+       "; exec bash'");
+
+QFile fileFirewall(QDir::homePath() + "/.ubunsys/status/firewall.txt");
+//QLabel *testLabel= new QLabel;
+
+QString lineFirewall1;
+if (fileFirewall.open(QIODevice::ReadOnly | QIODevice::Text)){
+    QTextStream stream(&fileFirewall);
+    while (!stream.atEnd()){
+
+        //line.append(stream.readLine()+"\n");
+        lineFirewall1.append(stream.readLine());
+    }
+    //ui->statusBar->showMessage(line);
+}
+fileFirewall.close();
+
+QString lineFirewall2 = "Status: active";
+
+if (lineFirewall1 == lineFirewall2){
+
+    //ui->statusBar->showMessage(tr("Está activo"));
+    ui->checkBox_firewall->setChecked(true);
+}
+
+else{
+
+    //ui->statusBar->showMessage(tr("Está inactivo"));
+    ui->checkBox_firewall->setChecked(false);
+}
+
+qDebug() << lineFirewall1;
+qDebug() << lineFirewall2;
+}
+
+
+//2.########
+void MainWindow::checkHiddenStartupItemsStatus()
+{
+    //2.######## HiddenStartupItems
+    //######## Status
+
+    QFile fileHidden(QDir::homePath() + "/.ubunsys/status/HiddenStartupItems.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineHidden1;
+    if (fileHidden.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileHidden);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineHidden1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileHidden.close();
+
+    QString lineHidden2 = "Show";
+
+    if (lineHidden1 == lineHidden2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxHiddenStartupItems->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxHiddenStartupItems->setChecked(false);
+    }
+
+    qDebug() << lineHidden1;
+    qDebug() << lineHidden2;
+
+}
+
+//3.########
+void MainWindow::checkupdateNotifStatus()
+{
+
+    //3.######## updateNotif
+    //######## Status
+
+    QFile fileUpdateNotif(QDir::homePath() + "/.ubunsys/status/updateNotif.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineUpdateNotif1;
+    if (fileUpdateNotif.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileUpdateNotif);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineUpdateNotif1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileUpdateNotif.close();
+
+    QString lineUpdateNotif2 = "Disabled";
+
+    if (lineUpdateNotif1 == lineUpdateNotif2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxUpdateNotif->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxUpdateNotif->setChecked(false);
+    }
+
+    qDebug() << lineUpdateNotif1;
+    qDebug() << lineUpdateNotif2;
+
+}
+
+//4.########
+void MainWindow::checkSudoWithoutPassStatus()
+{
+
+    //4.######## sudoWithoutPass
+    //######## Status
+
+    QFile fileSudo(QDir::homePath() + "/.ubunsys/status/SudoWOPass.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineSudo1;
+    if (fileSudo.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileSudo);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineSudo1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileSudo.close();
+
+    QString lineSudo2 = "Enabled";
+
+    if (lineSudo1 == lineSudo2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxSudoWOPass->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxSudoWOPass->setChecked(false);
+    }
+
+    qDebug() << lineSudo1;
+    qDebug() << lineSudo2;
+
+}
+
+//5.########
+
+void MainWindow::checkAsterisksStatus()
+{
+
+    //5.######## asterisks
+    //######## Status
+
+    QFile fileAsterisks(QDir::homePath() + "/.ubunsys/status/asterisks.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineAsterisks1;
+        if (fileAsterisks.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileAsterisks);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineAsterisks1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileAsterisks.close();
+
+    QString lineAsterisks2 = "Enabled";
+
+    if (lineAsterisks1 == lineAsterisks2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxAsterisks->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxAsterisks->setChecked(false);
+    }
+
+    qDebug() << lineAsterisks1;
+    qDebug() << lineAsterisks2;
+
+}
+
+//6.########
+
+void MainWindow::checkUpdateAutoStatus()
+{
+
+    //6.######## updateAuto
+    //######## Status
+
+    QFile fileUA(QDir::homePath() + "/.ubunsys/status/updateAuto.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineUA1;
+        if (fileUA.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileUA);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineUA1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileUA.close();
+
+    QString lineUA2 = "Enabled";
+
+    if (lineUA1 == lineUA2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxUpdateAuto->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxUpdateAuto->setChecked(false);
+    }
+
+    qDebug() << lineUA1;
+    qDebug() << lineUA2;
+
+}
+
+//7.########
+
+void MainWindow::checkHibernationStatus()
+{
+
+    //7.######## hibernation
+    //######## Status
+
+    QFile fileHibernation(QDir::homePath() + "/.ubunsys/status/hibernation.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineHibernation1;
+        if (fileHibernation.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileHibernation);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineHibernation1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileHibernation.close();
+
+    QString lineHibernation2 = "Disabled";
+
+    if (lineHibernation1 == lineHibernation2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxHibernation->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxHibernation->setChecked(false);
+    }
+
+    qDebug() << lineHibernation1;
+    qDebug() << lineHibernation2;
+
+}
+
+//8.########
+
+void MainWindow::checkLockScreenStatus()
+{
+
+    //8.######## LockScreen
+    //######## Status
+
+    QFile fileLockScreen(QDir::homePath() + "/.ubunsys/status/LockScreen.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineLockScreen1;
+        if (fileLockScreen.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileLockScreen);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineLockScreen1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileLockScreen.close();
+
+    QString lineLockScreen2 = "Enabled";
+
+    if (lineLockScreen1 == lineLockScreen2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxLockScreen->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxLockScreen->setChecked(false);
+    }
+
+    qDebug() << lineLockScreen1;
+    qDebug() << lineLockScreen2;
+
+}
+
+//9.########
+
+void MainWindow::checkLoginSoundStatus()
+{
+
+    //9.######## LoginSound
+    //######## Status
+
+    QFile fileLoginSound(QDir::homePath() + "/.ubunsys/status/loginSound.txt");
+    //QLabel *testLabel= new QLabel;
+
+    QString lineLoginSound1;
+        if (fileLoginSound.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileLoginSound);
+        while (!stream.atEnd()){
+
+            //line.append(stream.readLine()+"\n");
+            lineLoginSound1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileLoginSound.close();
+
+    QString lineLoginSound2 = "Enabled";
+
+    if (lineLoginSound1 == lineLoginSound2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBoxLoginSound->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBoxLoginSound->setChecked(false);
+    }
+
+    qDebug() << lineLoginSound1;
+    qDebug() << lineLoginSound2;
+
+}
+
+void MainWindow::checkAllStatus()
+{
+    //1.########
+    MainWindow::checkFirewallStatus();
+    //2.########
+    MainWindow::checkHiddenStartupItemsStatus();
+    //3.########
+    MainWindow::checkupdateNotifStatus();
+    //4.########
+    MainWindow::checkSudoWithoutPassStatus();
+    //5.########
+    MainWindow::checkAsterisksStatus();
+    //6.########
+    MainWindow::checkUpdateAutoStatus();
+    //7.########
+    MainWindow::checkHibernationStatus();
+    //8.########
+    MainWindow::checkLockScreenStatus();
+    //9.########
+    MainWindow::checkLoginSoundStatus();
+
 }

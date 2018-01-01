@@ -26,6 +26,26 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    //0.######## CHECK METHODS
+    void checkAllStatus();
+    //1.########
+    void checkFirewallStatus();
+    //2.########
+    void checkHiddenStartupItemsStatus();
+    //3.########
+    void checkupdateNotifStatus();
+    //4.########
+    void checkSudoWithoutPassStatus();
+    //5.########
+    void checkAsterisksStatus();
+    //6.########
+    void checkUpdateAutoStatus();
+    //7.########
+    void checkHibernationStatus();
+    //8.########
+    void checkLockScreenStatus();
+    //9.########
+    void checkLoginSoundStatus();
 
 public slots:
 
