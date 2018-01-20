@@ -52,8 +52,10 @@ To Download this app from official sources - Select a logo
   <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a> <a href="https://gitlab.com/adgellida/ubunsys/tags" target="_blank"><img src="https://about.gitlab.com/images/logo.png" width="80" alt="Gitlab"></a> <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a> <a href="https://www.linux-apps.com/p/1179908" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a> <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
 </p>
 
-Launchpad PPA Method - State: UPDATED
+Launchpad PPA Method - Status: UPDATED
 =============================================
+
+Line by line:
 
 `wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys`
 
@@ -65,28 +67,6 @@ One line:
 
 `wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys && sudo chmod 777 ubunsys && sudo ./ubunsys`
 
-Compilation
-=============================================
-
-Compilation Dependencies:
-
-`sudo apt install -y git g++ build-essential qt5-qmake qt5-default`
-
-Compilation & install:
-
-Run `qmake && make && sudo make install` in the main directory.
-
-Development
-=============================================
-
-* Go to your selected folder to dev.
-
-`git clone https://github.com/adgellida/ubunsys`
-
-`sudo cp -r ./ubunsys/src/scripts /usr/share/ubunsys`
-
-* Install qt creator and open project file located at 'YOURSELECTEDFOLDER/ubunsys/src/ubunsys.pro'
-
 Screenshots
 =============================================
 
@@ -94,123 +74,20 @@ Screenshots
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_007.png" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_008.png" width="425">
 
-What this program does
-=============================================
-
-##### Packages
-
-* You can select a lot of apps and install them by only clicking a button.
-
-##### Tweaks
-
-* Enable-disable sudo without a password. This is usually for security when you execute the sudo command you are prompted for a password, but it can be tedious to put in a passwird each time you execute an elevated permission action, so I recommend to push this button when you don't need this security and want speed. **be sure once you are done to disable this function to restore security to your system.**
-
-* Enable-disable asterisks when you put password in for the terminal, hibernation, or firewall.
-
-* Open sources.list.d, sudoers file (backup and import).
-
-* Gives access to new content when right clicking.
-
-* Reduce shutdown timer to less than the standard, it is not recommended to use this currently.
-
-##### System
-
-* Change the fefault update & upgrade system, update & upgrade repos, exec normal user installation script from git, or default back to a clean system.
-
-* Smart system update, clean out old kernels, upgrade to latest stable OS version, install mainline kernel (not recommended, due to possible incompatibilities).
-
-* Upgrade to latest unstable OS version (not recommended, due to bugs).
-
-##### Repair
-
-* Check system integrity, repair network, check missing GPG keys.
-
-And more...
-
 Tutorial
 =============================================
 
 Push [here](https://github.com/adgellida/ubunsys/wiki/Tutorial_en) to go to the wiki.
 
+More info
+=============================================
+
+Push [here](https://github.com/adgellida/ubunsys/wiki/More-info) to go to the wiki.
+
 How can I help?
 =============================================
 
 You can create a new [issue](https://github.com/adgellida/ubunsys/issues/new) with an error, proposing new functionality, adding new packages, help on coding, etc...
-
-Dependencies
-=============================================
-
-Automatically installable through official repositories:
-
-`git, nano, wget, xdg-utils, xterm, ufw, curl, sudo`
-
-And Qt libraries.
-
-Through PPA:
-
-`apt-fast`
-
-TO DO
-=============================================
-
-* Search box.
-
-* Improve ubuntu fonts.
-
-* code in a selector or slider.
-
-* Add more sounds to the system.
-
-* Load saved configurations of personalized user installations.
-
-* Snap, and flatpack packages.
-
-* Backup user folder.
-
-* Integer terminal on a widget. Recover main windows focus.
-
-* Uninstall packages.
-
-* Regroup files to clean main directory.
-
-* First add all selected ppas. Then apt-fast -y update and finally install all selected packages. This will be much faster than the standard commands.
-
-* Save user configuration for later use, when you re-open the app.
-
-* Disable keyring.
-
-DONE
-=============================================
-
-* Load a preconfigured selection of apps.
-
-* Put apps in alphabetical order.
-
-* When package selection installed, it holds selection and you have option to unselect all.
-
-* Run scripts selector.
-
-* Create a category to personal scripts.
-
-* Implement code to generate new apps automatically to save a bunch of code lines.
-
-* Save selection.
-
-* Best server selection to download updates.
-
-* Support make install.
-
-* 16.04 compatible, but not 100%.
-
-* Show hidden startup items, disable login sound.
-
-* Disable lock session.
-
-* Grub customizer launch button.
-
-* Translate app to Spanish.
-
-* Download updated database about ppas each time you open app independent of app version. You push "update scripts button" and it does it.
 
 Be careful
 =============================================

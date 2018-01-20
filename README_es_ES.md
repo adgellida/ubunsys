@@ -55,6 +55,8 @@ Descarga desde fuentes oficiales - pulsa en el logo
 Método Launchpad PPA - Estado: ACTUALIZADO
 =============================================
 
+Línea a línea:
+
 `wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys`
 
 `sudo chmod 777 ubunsys`
@@ -65,31 +67,6 @@ Una línea:
 
 `wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys && sudo chmod 777 ubunsys && sudo ./ubunsys`
 
-Compilación
-=============================================
-
-Dependencias de compilación:
-
-`sudo apt install -y git g++ build-essential qt5-qmake qt5-default`
-
-Compilación e instalación:
-
-Ejecuta `qmake && make && sudo make install` en el directorio principal.
-
-Desarrollo
-=============================================
-
-* Instalar qt creator y abrir el proyecto.
-* Copiar una versión actualizada de la carpeta "scripts" en "/usr/share/ubunsys/" si no está presente aún.
-
-* Ves a la carpeta seleccionada para desarrollar.
-
-`git clone https://github.com/adgellida/ubunsys`
-
-`sudo cp -r ./ubunsys/src/scripts /usr/share/ubunsys`
-
-* Instala qt creator y abre el fichero de proyecto localizado en 'TUCARPETASELECCIONADA/ubunsys/src/ubunsys.pro'
-
 Capturas de pantalla
 =============================================
 
@@ -97,124 +74,20 @@ Capturas de pantalla
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_007.png" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_008.png" width="425">
 
-Qué hace este programa
-=============================================
-
-##### Paquetes
-
-* Puedes seleccionar un montón de apps e instalarlas clickando sólo un botón.
-
-##### Mejoras
-
-* Habilitar-deshabilitar sudo sin contraseña. Por seguridad cuando ejecutas sudo una contraseña es preguntada, pero es todioso ponerla cada vez que ejecutas una acción de permisos elevados, por eso recomiendo
-pulsar este botón cuando no se necesita esta seguridad y se requiere velocidad. **Después deshabilita esta función para restaurar la seguridad en tu sistema.**
-
-* Habilitar-deshabilitar asteriscos cuando pones contraseña en un terminal, hibernación, firewall.
-
-* Abrir sources.list.d, arhivop sudoers (exportar e importar).
-
-* Instalar más contenido en Nuevo - Submenú de documento (botón secundario del ratón).
-
-* Reducir el tiempo de espera del pc cuando se apaga, no recomendado por ahora usarlo.
-
-##### Sistema
-
-* Actualización de listado de paquetes y actualización del sistema, actualizar listado y paquetes de repositorios, ejecutar script de instalación para usaurio normal de git, limpieza por defecto del sistema.
-
-* Actualización inteligente del sistema, limpiar kernels antiguos, actualizar a la último versión estable del SO., instalar último kernel principal (no recomendado, posibles incompatibilidades).
-
-* Actualizar a la última versión inestable del SO (no recomendado, errores).
-
-##### Reparar
-
-* Comprobar la integridad del sistema, reparar la red, claves GPG perdidas.
-
-Y más...
-
 Tutorial
 =============================================
 
 Pulsa [aquí](https://github.com/adgellida/ubunsys/wiki/Tutorial_es) para ir a la wiki.
 
+Más información
+=============================================
+
+Pulsa [aquí](https://github.com/adgellida/ubunsys/wiki/Mas-info) para ir a la wiki.
+
 Cómo puedo ayudar?
 =============================================
 
 Puedes crear un nuevo [asunto](https://github.com/adgellida/ubunsys/issues/new) con un error, proponiendo nuevas funcionalidades, añadiendo nuevos paquetes, ayudando en el desarrollo, etc...
-
-Dependencias
-=============================================
-
-Instalables automáticamente desde repositorios oficiales:
-
-`git, nano, wget, xdg-utils, xterm, ufw, curl, sudo`
-
-Y librerías Qt.
-
-A través de PPA:
-
-`apt-fast`
-
-POR HACER
-=============================================
-
-* Caja de búsqueda.
-
-* Mejorar las fuentes de Ubuntu.
-
-* Poner un selector o "slider".
-
-* Añadir más sonidos al sistema.
-
-* Cargar configuraciones guardadas de instalaciones personalizadas de usuarios.
-
-* Snap, flatpack.
-
-* Copia de seguridad de la carpeta de usuario.
-
-* Integrar terminal en un widget. Recuperar foco de las ventanas personales.
-
-* Desinstalar paquetes.
-
-* Reagrupar ficheros para limpiar el directorio principal.
-
-* Primero añadir todas las ppas seleccionadas. Después apt-fast -y update y finalmente instalar los paquetes seleccionados. Por eso, más rápido.
-
-* Guardar la configuración del usuario para usarla cuando se reabra la app.
-
-* Deshabilitar depósito de claves.
-
-HECHO
-=============================================
-
-* Cargar una selección preconfigurada de apps. No todas las apps están actualziadas debido a la política de los mantenedores de paquetes, en algunos casos no proporcionando una manera de actualización automática.
-
-* Poner apps en orden alfabético.
-
-* Cuando una selección de paquete está instalado, se mantiene la selección y da opción de borrarla.
-
-* Ejecutar selector de scripts.
-
-* Crear apartado de scripts personales.
-
-* Implementar códido para generar nuevas apps automáticamente para ahorrar un montón de líneas.
-
-* Guardar selección.
-
-* Mejor selección de servidor para descargar actualizaciones.
-
-* Habilitar soporte a make install.
-
-* Compatible con 16.04, pero no al 100%.
-
-* Mostrar items ocultos de inicio, deshabilitar sonido de inicio.
-
-* Deshabilitar bloqueo de sesión.
-
-* Botón que ejecute Grub customizer.
-
-* Traducir app al Español.
-
-* Descarga de la base de datos actualizada de los PPAs cada vez que se abra la app independentemente del la versión de la app. Tú pulsas "botón de actualizar los scripts" y lo hace.
 
 Ten cuidado
 =============================================
