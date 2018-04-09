@@ -741,3 +741,9 @@ void MainWindow::checkAllStatus()
     MainWindow::checkLoginSoundStatus();
 
 }
+
+
+
+
+
+

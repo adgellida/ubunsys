@@ -143,21 +143,51 @@ void PackagesDialog::on_runScriptButton_clicked()
 
 void PackagesDialog::on_selectOfficialReposButton_clicked()
 {
-    fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
+    /*fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
     ui->treeView->setModel(fsModel);
     ui->treeView->expandAll();
     connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
 
     ui->statusBar->showMessage(tr("Official Repos selected"));
+    */
 }
 
 void PackagesDialog::on_selectUnofficialReposButton_clicked()
 {
-    fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath(), this);
-    ui->treeView->setModel(fsModel);
-    connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
+   /*
+    QMessageBox msgBox;
+    msgBox.setWindowTitle("Select");
+    msgBox.setText("Select option");
+    //msgBox.setStandardButtons(QMessageBox::Yes);
+    QAbstractButton* pButtonRemote = msgBox.addButton(tr("Remote URL"), QMessageBox::YesRole);
+    QAbstractButton* pButtonLocal = msgBox.addButton(tr("Local folder"), QMessageBox::YesRole);
+    msgBox.exec();
 
-    ui->statusBar->showMessage(tr("Unofficial Repos selected"));
+    if (msgBox.clickedButton()==pButtonLocal) {
+        //on_actionUpdateApp_triggered();
+        qDebug() << "Local repo";
+        fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath(), this);
+        ui->treeView->setModel(fsModel);
+        connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
+
+        ui->statusBar->showMessage(tr("Local Repo selected"));
+
+    }
+    else {
+        //qDebug() << "Remote repo";
+        //QTextEdit *txt = new QTextEdit();
+        //txt->setText("Hello, world!");
+        //txt->append("Appending some text…");
+        //txt->show();
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/060.openHosts"
+               " && "
+               "echo Close this window!"
+               "; exec bash'");
+
+    }
+    */
 }
 
 void PackagesDialog::on_runSavedScriptListButton_clicked()

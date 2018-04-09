@@ -193,6 +193,12 @@ private slots:
 
     void on_checkBoxLoginSound_clicked(bool checked);
 
+    void on_restoreToDefaultsButton_clicked();
+
+    void on_enterUnofficialReposButton_clicked();
+
+    void on_saveReposButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////
