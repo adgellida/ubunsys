@@ -45,7 +45,7 @@ Apps basadas en él:
 
 * [winsys](https://github.com/adgellida/winsys).
 
-Descarga desde fuentes oficiales - pulsa en el logo
+Descarga desde fuentes oficiales
 =============================================
 
 <p align="center">

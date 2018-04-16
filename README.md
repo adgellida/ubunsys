@@ -45,7 +45,7 @@ Other Apps based on this:
 
 * [winsys](https://github.com/adgellida/winsys).
 
-To Download this app from official sources - Select a logo
+Download from official mirrors
 =============================================
 
 <p align="center">
