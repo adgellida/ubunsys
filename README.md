@@ -42,6 +42,8 @@ ubunsys is a piece of software that gives the user a powerful control center to 
 
 It is Theoretically compatible with all Ubuntu versions.
 
+Due to lack of time paused development.
+
 **This is a very dangerous app, if you don't know what you are touching or how to fix it, don't do it. This software is for testing and knowledge purposes. It's unstable software.**
 
 Built with Qt 5.2.1 for version compatibility.

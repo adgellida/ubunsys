@@ -42,6 +42,8 @@ Software instalador de una lista de paquetes útiles, capaz de hacer cambios en 
 
 Teóricamente compatible con todas las versiones de 64 bits de Ubuntu.
 
+Debido a falta de tiempo desarrollo pausado.
+
 **App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
 
 Construido con Qt 5.2.1 para compatibilidad de versiones.
