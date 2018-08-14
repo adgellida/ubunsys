@@ -20,9 +20,7 @@ signals:
 
 private slots:
     void on_checkButton_clicked();
-
     void on_closeUpdateDialogButton_clicked();
-
     void on_forceButton_clicked();
 
 private:

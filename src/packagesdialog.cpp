@@ -17,6 +17,18 @@ PackagesDialog::PackagesDialog(QWidget *parent) :
 
     //connect(ui->closePackagesDialogButton, SIGNAL(clicked()),this, SIGNAL(CloseClicked()) );//////////
 
+
+    //MainWindow *bdd = new MainWindow;
+    //QString location = bdd->returnMainRepo();
+
+    //MainWindow testObject;
+    //QString location = testObject.returnMainRepo();
+
+    //QString location = MainWindow::returnMainRepo();
+
+
+
+      //fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + location, this);
       fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
       ui->treeView->setModel(fsModel);           
       connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
@@ -143,18 +155,24 @@ void PackagesDialog::on_runScriptButton_clicked()
 
 void PackagesDialog::on_selectOfficialReposButton_clicked()
 {
-    /*fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
+
+    //MainWindow MainWindow;
+    //QString location = MainWindow.returnMainRepo();
+
+    //qDebug() << "La ruta es" + location;
+
+    //fsModel = new RootFileSysProxyModel(new QFileSystemModel, location, this);
+    fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
     ui->treeView->setModel(fsModel);
     ui->treeView->expandAll();
     connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
 
     ui->statusBar->showMessage(tr("Official Repos selected"));
-    */
 }
 
 void PackagesDialog::on_selectUnofficialReposButton_clicked()
 {
-   /*
+
     QMessageBox msgBox;
     msgBox.setWindowTitle("Select");
     msgBox.setText("Select option");
@@ -180,14 +198,14 @@ void PackagesDialog::on_selectUnofficialReposButton_clicked()
         //txt->append("Appending some text…");
         //txt->show();
 
-        system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/060.openHosts"
-               " && "
-               "echo Close this window!"
-               "; exec bash'");
-
+        //system("xterm -e '"
+        //       "~/.ubunsys/downloads/ubuntuScripts-master/060.openHosts"
+         //      " && "
+         //      "echo Close this window!"
+         //      "; exec bash'");
+    QMessageBox::information(this,"Info","Not yet implemented");
     }
-    */
+
 }
 
 void PackagesDialog::on_runSavedScriptListButton_clicked()

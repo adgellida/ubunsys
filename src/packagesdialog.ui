@@ -39,7 +39,7 @@
     <item row="3" column="0">
      <widget class="QPushButton" name="selectOfficialReposButton">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="text">
        <string>Select only Official repos</string>
@@ -56,7 +56,7 @@
     <item row="3" column="1">
      <widget class="QPushButton" name="selectUnofficialReposButton">
       <property name="enabled">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="text">
        <string>Select only Unofficial repos</string>

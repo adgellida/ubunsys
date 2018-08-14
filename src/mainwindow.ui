@@ -140,75 +140,19 @@
          <string>Scripts Manager</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_55">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>80</y>
-          <width>221</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Scripts Manager Repos</string>
-        </property>
-       </widget>
-       <widget class="QRadioButton" name="localRepoButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>130</y>
-          <width>21</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_56">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>110</y>
-          <width>141</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Local</string>
-        </property>
-       </widget>
-       <widget class="QRadioButton" name="remoteRepoButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>190</y>
-          <width>21</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>Disabled</string>
+       </attribute>
        <widget class="QLabel" name="label_57">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>170</y>
+          <y>180</y>
           <width>191</width>
           <height>16</height>
          </rect>
@@ -223,21 +167,36 @@
          <string>Remote</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineRemoteRepo1">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>190</y>
-          <width>511</width>
-          <height>31</height>
-         </rect>
+       <widget class="QLabel" name="label_62">
+        <property name="enabled">
+         <bool>false</bool>
         </property>
-       </widget>
-       <widget class="QPushButton" name="restoreToDefaultsButton">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>370</y>
+          <y>310</y>
+          <width>231</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Categories folder</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="restoreToDefaultsButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>380</y>
           <width>121</width>
           <height>41</height>
          </rect>
@@ -262,11 +221,81 @@
          <bool>false</bool>
         </property>
        </widget>
+       <widget class="QTextEdit" name="lineRepoMain">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>270</y>
+          <width>511</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_56">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Local</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="enterUnofficialReposButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>380</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Enter Unofficial
+Repos</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
        <widget class="QPushButton" name="saveReposButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>270</x>
-          <y>370</y>
+          <y>380</y>
           <width>121</width>
           <height>41</height>
          </rect>
@@ -290,17 +319,10 @@
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineRemoteRepo2">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>260</y>
-          <width>511</width>
-          <height>31</height>
-         </rect>
+       <widget class="QTextEdit" name="lineRepoCat">
+        <property name="enabled">
+         <bool>false</bool>
         </property>
-       </widget>
-       <widget class="QLineEdit" name="lineRemoteRepo3">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -310,11 +332,81 @@
          </rect>
         </property>
        </widget>
-       <widget class="QLabel" name="label_58">
+       <widget class="QLabel" name="label_55">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>240</y>
+          <y>90</y>
+          <width>221</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Scripts Manager Repos</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="localRepoButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="remoteRepoButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>21</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="lineRemoteRepo">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>200</y>
+          <width>511</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_58">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>250</y>
           <width>211</width>
           <height>16</height>
          </rect>
@@ -327,54 +419,6 @@
         </property>
         <property name="text">
          <string>Main folder</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_62">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>300</y>
-          <width>231</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Categories folder</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="enterUnofficialReposButton">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>370</y>
-          <width>121</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Enter Unofficial
-Repos</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="shortcut">
-         <string/>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
         </property>
        </widget>
       </widget>
@@ -3746,7 +3790,7 @@ apt-fast -y clean</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.12.24</string>
+     <string>v2018.08.14</string>
     </property>
    </widget>
   </widget>

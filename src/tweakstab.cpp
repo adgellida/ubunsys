@@ -426,7 +426,22 @@ void MainWindow::on_openMainBackupButton_clicked()
            "exit"
            "; exec bash'");
 
-    QMessageBox::information(this,tr("Notification"),tr("Backuped OK on \n\n") + QDir::homePath() + "/.ubunsys/backups/main");
+    QMessageBox::information(this,tr("Notification"),tr("Backuped OK on \n\n") + QDir::homePath() + "/.ubunsys/backups/lots");
+
+
+    QMessageBox::StandardButton reply;
+      reply = QMessageBox::question(this, "Question", "Open folder where located?",
+                                    QMessageBox::Yes|QMessageBox::No);
+      if (reply == QMessageBox::Yes) {
+
+
+          system("xterm -e '"
+                 "~/.ubunsys/downloads/ubuntuScripts-master/074.openLots"
+                 " && "
+                 "echo Close this window!"
+                 "; exec bash'");
+
+      }
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
@@ -440,6 +455,10 @@ void MainWindow::on_openMainRestoreButton_clicked()
                     //getenv("HOME"),
                     //"All files (*.*);;Bak files(*.bak)");
                     "ZIP files(*.zip)");
+
+    if (!filename.isNull()){
+       qDebug() << "No es cero";
+
 
     //QMessageBox::information(this,tr("File Name"),filename);
 
@@ -477,6 +496,8 @@ void MainWindow::on_openMainRestoreButton_clicked()
     QMessageBox::information(this,tr("Notification"),tr("Restored all OK"));
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
 }
 
 //##rc.local

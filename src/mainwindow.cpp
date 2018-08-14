@@ -341,49 +341,61 @@ void MainWindow::on_eraseCronButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-//1.########
+//1.######## firewall
 void MainWindow::checkFirewallStatus()
 {
-//1.######## firewall
-//######## Status
 
-system("xterm -e '"
-       "~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus"
-       " && "
-       "echo Close this window!"
-       "; exec bash'");
+    QFile disableShowFirewall(QDir::homePath() + "/.ubunsys/status/disableShowFirewall.txt");
 
-QFile fileFirewall(QDir::homePath() + "/.ubunsys/status/firewall.txt");
-//QLabel *testLabel= new QLabel;
+    if (disableShowFirewall.exists()){
+    qDebug() << "es verdadero";
 
-QString lineFirewall1;
-if (fileFirewall.open(QIODevice::ReadOnly | QIODevice::Text)){
-    QTextStream stream(&fileFirewall);
-    while (!stream.atEnd()){
-
-        //line.append(stream.readLine()+"\n");
-        lineFirewall1.append(stream.readLine());
+    system("~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus"
+           "exit");
     }
-    //ui->statusBar->showMessage(line);
-}
-fileFirewall.close();
 
-QString lineFirewall2 = "Status: active";
+    else{
 
-if (lineFirewall1 == lineFirewall2){
+    //######## Status
 
-    //ui->statusBar->showMessage(tr("Está activo"));
-    ui->checkBox_firewall->setChecked(true);
-}
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
 
-else{
+    QFile fileFirewall(QDir::homePath() + "/.ubunsys/status/firewall.txt");
+    //QLabel *testLabel= new QLabel;
 
-    //ui->statusBar->showMessage(tr("Está inactivo"));
-    ui->checkBox_firewall->setChecked(false);
-}
+    QString lineFirewall1;
+    if (fileFirewall.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&fileFirewall);
+        while (!stream.atEnd()){
 
-qDebug() << lineFirewall1;
-qDebug() << lineFirewall2;
+            //line.append(stream.readLine()+"\n");
+            lineFirewall1.append(stream.readLine());
+        }
+        //ui->statusBar->showMessage(line);
+    }
+    fileFirewall.close();
+
+    QString lineFirewall2 = "Status: active";
+
+    if (lineFirewall1 == lineFirewall2){
+
+        //ui->statusBar->showMessage(tr("Está activo"));
+        ui->checkBox_firewall->setChecked(true);
+    }
+
+    else{
+
+        //ui->statusBar->showMessage(tr("Está inactivo"));
+        ui->checkBox_firewall->setChecked(false);
+    }
+
+    qDebug() << lineFirewall1;
+    qDebug() << lineFirewall2;
+    }
 }
 
 
@@ -496,12 +508,19 @@ void MainWindow::checkSudoWithoutPassStatus()
 
         //ui->statusBar->showMessage(tr("Está activo"));
         ui->checkBoxSudoWOPass->setChecked(true);
+
+        QFile disableShowFirewall(QDir::homePath() + "/.ubunsys/status/disableShowFirewall.txt");
+        disableShowFirewall.open(QIODevice::WriteOnly | QIODevice::Truncate);
+        disableShowFirewall.close();
     }
 
     else{
 
         //ui->statusBar->showMessage(tr("Está inactivo"));
         ui->checkBoxSudoWOPass->setChecked(false);
+
+        QFile disableShowFirewall(QDir::homePath() + "/.ubunsys/status/disableShowFirewall.txt");
+        disableShowFirewall.remove();
     }
 
     qDebug() << lineSudo1;
