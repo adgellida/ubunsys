@@ -98,5 +98,5 @@ I know that my code is horrifying and very well implemented. With patience and t
 Credits and thanks to
 =============================================
 
-* [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) from Noun Project that created the app [icon](https://thenounproject.com/term/terminal/715962/) used here. Beautiful!
-* [ColinDuquesnoy](https://github.com/ColinDuquesnoy) for creating a [theme](https://github.com/ColinDuquesnoy/QDarkStyleSheet) it's really good and I used it here. It like how it looks!
+* [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) from Noun Project that created the [icon](https://thenounproject.com/term/terminal/715962/) and I used it as app icon. Beautiful!
+* [ColinDuquesnoy](https://github.com/ColinDuquesnoy) for creating a [theme](https://github.com/ColinDuquesnoy/QDarkStyleSheet) it's really good and I used it here. I like how it looks!

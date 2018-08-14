@@ -97,5 +97,5 @@ Sé que mi código es horrible y no está bien implementado. Con paciencia lo ir
 Créditos y gracias a
 =============================================
 
-* [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) de Noun Project que creó de la app el [icono](https://thenounproject.com/term/terminal/715962/) usado aquí. Precioso!
+* [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) de Noun Project que creó el [icono](https://thenounproject.com/term/terminal/715962/) y yo lo usé de icono de app. Precioso!
 * [ColinDuquesnoy](https://github.com/ColinDuquesnoy) por hacer creado un [tema](https://github.com/ColinDuquesnoy/QDarkStyleSheet) tan bueno. Usado aquí. Demasido bello!
