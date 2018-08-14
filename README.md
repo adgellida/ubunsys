@@ -58,16 +58,6 @@ Other Apps based on this:
 Launchpad PPA Method - Status: UPDATED
 =============================================
 
-Line by line:
-
-`wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys`
-
-`sudo chmod 777 ubunsys`
-
-`sudo ./ubunsys`
-
-One line:
-
 `wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys && sudo chmod 777 ubunsys && sudo ./ubunsys`
 
 Screenshots

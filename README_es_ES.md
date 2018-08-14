@@ -57,16 +57,6 @@ Apps basadas en él:
 Método Launchpad PPA - Estado: ACTUALIZADO
 =============================================
 
-Línea a línea:
-
-`wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys`
-
-`sudo chmod 777 ubunsys`
-
-`sudo ./ubunsys`
-
-Una línea:
-
 `wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys && sudo chmod 777 ubunsys && sudo ./ubunsys`
 
 Capturas de pantalla
