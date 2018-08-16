@@ -38,7 +38,7 @@ Descarga desde fuentes oficiales
 
 **For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
 
-Software instalador de una lista de paquetes útiles, capaz de hacer cambios en la configuración del sistema, actualizaciones, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
+Instalador de una lista de paquetes útiles, capaz de hacer cambios en la configuración del sistema, actualizaciones, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
 
 Teóricamente compatible con todas las versiones de 64 bits de Ubuntu.
 
