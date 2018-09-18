@@ -40,7 +40,7 @@ Download from official mirrors
 
 Gives the user a powerful control center to toggle on and off many system settings in Ubuntu, it is able to change system configurations, system updates, executable improvements, small system fixes, and more at the touch of a button.
 
-It is Theoretically compatible with all Ubuntu versions.
+It's theoretically compatible with all Ubuntu versions.
 
 Due to lack of time paused development.
 
@@ -53,7 +53,6 @@ This is a GUI for these scripts [ubuntupackages](https://github.com/adgellida/ub
 Other Apps based on this:
 
 * [winsys](https://github.com/adgellida/winsys).
-
 
 Launchpad PPA Method - Status: UPDATED
 =============================================
