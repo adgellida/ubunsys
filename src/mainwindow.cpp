@@ -12,6 +12,58 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    //Configure tabs
+
+    QTabWidget *tabw = ui->tabWidget;
+    tabw->setTabText(0, "");
+    tabw->setTabText(1, "");
+    tabw->setTabText(2, "");
+    tabw->setTabText(3, "");
+    tabw->setTabText(4, "");
+    tabw->setTabText(5, "");
+    tabw->setTabText(6, "");
+    tabw->setTabText(7, "");
+
+    QTabBar *tabbar = tabw->tabBar();
+
+    QLabel *lbl1 = new QLabel();
+    lbl1->setText("Packages");
+    tabbar->setTabButton(0, QTabBar::LeftSide, lbl1);
+
+    QLabel *lbl2 = new QLabel();
+    lbl2->setText("Sources");
+    tabbar->setTabButton(1, QTabBar::LeftSide, lbl2);
+
+    QLabel *lbl3 = new QLabel();
+    lbl3->setText("Updates");
+    tabbar->setTabButton(2, QTabBar::LeftSide, lbl3);
+
+    QLabel *lbl4 = new QLabel();
+    lbl4->setText("Fixes");
+    tabbar->setTabButton(3, QTabBar::LeftSide, lbl4);
+
+    QLabel *lbl5 = new QLabel();
+    lbl5->setText("Security");
+    tabbar->setTabButton(4, QTabBar::LeftSide, lbl5);
+
+    QLabel *lbl6 = new QLabel();
+    lbl6->setText("Power");
+    tabbar->setTabButton(5, QTabBar::LeftSide, lbl6);
+
+    QLabel *lbl7 = new QLabel();
+    lbl7->setText("Extras");
+    tabbar->setTabButton(6, QTabBar::LeftSide, lbl7);
+
+    //ui->tabWidget->setStyleSheet("QTabBar::tab { width: 10px ; height: 10px; }");
+    //ui->tabWidget_2->setStyleSheet("QTabBar::tab { width: 10px ; height: 50px; }");
+
+
+    //ui->tabWidget->setStyleSheet("QTabBar::tabWidget_5 { width: 50px ; height: 10px; }");
+    //ui->tabWidget->setStyleSheet("QTabBar::tabWidget { width: 10px ; height: 50px; }");
+
+    //ui->tabWidget->setTabText(index, "new text");
+
+
     //ui->label->hide();
 
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
