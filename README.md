@@ -20,6 +20,7 @@ Download from official mirrors
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
     <a href="https://github.com/LewisVo/Awesome-Linux-Software/#utilities"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/></a>
+	<a href="https://www.codacy.com/app/adgellida/ubunsys?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=adgellida/ubunsys&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/f33896b9ff894ab3a0862ada0835deaa"/></a>
 </p>
 
 <p align="center">
