@@ -142,6 +142,8 @@ private slots:
     void on_goMouseRateCheckerButton_clicked();
     void on_editGrubButton_clicked();
 
+    void on_updateGrubButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////

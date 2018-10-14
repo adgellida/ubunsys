@@ -4203,7 +4203,7 @@ on terminal</string>
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QPushButton" name="editGrubButton_2">
+       <widget class="QPushButton" name="updateGrubButton">
         <property name="geometry">
          <rect>
           <x>330</x>
