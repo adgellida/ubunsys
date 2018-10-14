@@ -4167,7 +4167,7 @@ on terminal</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2018.10.14</string>
+     <string>v2018.10.15</string>
     </property>
    </widget>
   </widget>
@@ -4177,7 +4177,7 @@ on terminal</string>
      <x>0</x>
      <y>0</y>
      <width>649</width>
-     <height>21</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">
