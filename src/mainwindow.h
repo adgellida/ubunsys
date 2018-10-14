@@ -139,10 +139,8 @@ private slots:
     void on_reenableReposButton_clicked();
     void on_restoreReposButton_clicked();
     void on_checkFirewallStatus_clicked();
-
-
-
     void on_goMouseRateCheckerButton_clicked();
+    void on_editGrubButton_clicked();
 
 private:
     Ui::MainWindow *ui;

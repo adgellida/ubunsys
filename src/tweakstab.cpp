@@ -576,6 +576,22 @@ void MainWindow::on_runGrubcustomizerButton_clicked()
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+
+//##grub
+
+void MainWindow::on_editGrubButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Edit grub"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/080.editGrub"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
 //##resetDconf
 
 void MainWindow::on_resetDconf_clicked()

@@ -3585,7 +3585,7 @@ on terminal</string>
         <property name="geometry">
          <rect>
           <x>330</x>
-          <y>200</y>
+          <y>270</y>
           <width>221</width>
           <height>16</height>
          </rect>
@@ -3604,7 +3604,7 @@ on terminal</string>
         <property name="geometry">
          <rect>
           <x>330</x>
-          <y>220</y>
+          <y>290</y>
           <width>111</width>
           <height>36</height>
          </rect>
@@ -4110,7 +4110,7 @@ on terminal</string>
         <property name="geometry">
          <rect>
           <x>330</x>
-          <y>290</y>
+          <y>360</y>
           <width>111</width>
           <height>36</height>
          </rect>
@@ -4138,7 +4138,7 @@ on terminal</string>
         <property name="geometry">
          <rect>
           <x>330</x>
-          <y>270</y>
+          <y>340</y>
           <width>141</width>
           <height>16</height>
          </rect>
@@ -4151,6 +4151,56 @@ on terminal</string>
         </property>
         <property name="text">
          <string>Mouse rate checker</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_64">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>200</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Apt uses this file to lists the 'sources' from which packages can be obtained.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>grub</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="editGrubButton">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>220</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Edit</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
         </property>
        </widget>
       </widget>
@@ -4177,7 +4227,7 @@ on terminal</string>
      <x>0</x>
      <y>0</y>
      <width>649</width>
-     <height>19</height>
+     <height>18</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">
