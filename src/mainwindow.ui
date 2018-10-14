@@ -1498,7 +1498,7 @@ Bootstrap Kernels</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_13">
        <attribute name="title">
@@ -3231,7 +3231,7 @@ on terminal</string>
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -4217,6 +4217,265 @@ on terminal</string>
         </property>
         <property name="text">
          <string>update-grub</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Fonts</string>
+       </attribute>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Specific infinality fonts</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OSX</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>IPAD</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UBUNTU</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LINUX</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>WINDOWS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>WINDOWS7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>WINDOWS7LIGHT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>VANILLA</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CUSTOM</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CLASSIC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NUDGE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PUSH</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHOVE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHARPENED</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>INFINALITY</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>DISABLED</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>170</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Infinality styles</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>140</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>General styles</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Infinality fonts</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="installInfinalityFontsButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Install</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="uninstallInfinalityFontsButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Uninstall</string>
         </property>
         <property name="iconSize">
          <size>

@@ -817,3 +817,31 @@ void MainWindow::on_checkBoxLoginSound_clicked(bool checked)
 
     MainWindow::checkLoginSoundStatus();
 }
+
+//##fonts
+
+void MainWindow::on_installInfinalityFontsButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Login Sound Disabled"));
+
+    system("xterm -e '"
+                 "~/.ubunsys/downloads/ubuntupackages-master-apps/infinality-fonts"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_uninstallInfinalityFontsButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Login Sound Disabled"));
+
+    system("xterm -e '"
+                 "~/.ubunsys/downloads/ubuntuScripts-master/082.uninstallInfinalityFonts"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}

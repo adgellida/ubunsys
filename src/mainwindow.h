@@ -144,6 +144,10 @@ private slots:
 
     void on_updateGrubButton_clicked();
 
+    void on_installInfinalityFontsButton_clicked();
+
+    void on_uninstallInfinalityFontsButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////
