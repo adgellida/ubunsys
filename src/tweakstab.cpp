@@ -577,7 +577,7 @@ void MainWindow::on_runGrubcustomizerButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-//##grub
+//##edit grub
 
 void MainWindow::on_editGrubButton_clicked()
 {
@@ -585,6 +585,21 @@ void MainWindow::on_editGrubButton_clicked()
 
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/080.editGrub"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+//##update grub
+
+void MainWindow::on_updateGrubButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Update grub"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/081.updatetGrub"
            " && "
            "echo Close this window!"
            "; exec bash'");

@@ -819,7 +819,3 @@ void MainWindow::on_checkFirewallStatus_clicked()
     MainWindow::checkFirewallStatus();
 }
 
-
-
-
-
