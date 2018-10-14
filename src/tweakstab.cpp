@@ -599,7 +599,7 @@ void MainWindow::on_updateGrubButton_clicked()
     ui->statusBar->showMessage(tr("Update grub"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/081.updatetGrub"
+           "~/.ubunsys/downloads/ubuntuScripts-master/081.updateGrub"
            " && "
            "echo Close this window!"
            "; exec bash'");
