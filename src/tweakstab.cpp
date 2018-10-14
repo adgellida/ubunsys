@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <QCoreApplication>
 #include <QTextStream>
+#include <QDesktopServices>
 
 ///////////////////////TWEAKS TAB///////////////////////
 
@@ -370,6 +371,12 @@ void MainWindow::on_checkBox_firewall_clicked(bool checked)
 
 
 ////////////////////////////////EXTRAS
+
+void MainWindow::on_goMouseRateCheckerButton_clicked()
+{
+    QDesktopServices::openUrl(QUrl("https://zowie.benq.com/en/support/mouse-rate-checker.html", QUrl::TolerantMode));
+    ui->statusBar->showMessage(tr("Go to mouse rate checker. Please wait."));
+}
 
 //##Templates
 

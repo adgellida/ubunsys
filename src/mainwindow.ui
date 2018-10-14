@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>6</number>
     </property>
     <property name="iconSize">
      <size>
@@ -63,7 +63,7 @@
     <widget class="QWidget" name="tab_4">
      <attribute name="icon">
       <iconset resource="ubunsys.qrc">
-       <normaloff>:/images/install2.png</normaloff>:/images/install2.png</iconset>
+       <normaloff>:/images/package-box-with-down-arrow.png</normaloff>:/images/package-box-with-down-arrow.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -769,8 +769,9 @@ Repos</string>
     </widget>
     <widget class="QWidget" name="tab">
      <attribute name="icon">
-      <iconset resource="ubunsys.qrc">
-       <normaloff>:/images/Refresh_reload_arrow_sync_repeat_update_arrows.png</normaloff>:/images/Refresh_reload_arrow_sync_repeat_update_arrows.png</iconset>
+      <iconset>
+       <normalon>:/images/update-arrows.png</normalon>
+      </iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -1479,7 +1480,7 @@ Bootstrap Kernels</string>
     <widget class="QWidget" name="tab_2">
      <attribute name="icon">
       <iconset resource="ubunsys.qrc">
-       <normaloff>:/images/repair.png</normaloff>:/images/repair.png</iconset>
+       <normaloff>:/images/repairing-service.png</normaloff>:/images/repairing-service.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -2235,6 +2236,135 @@ apt-fast -y clean</string>
          <string>dpkg --configure -a &amp;&amp; apt-fast -y update</string>
         </property>
        </widget>
+       <widget class="QPushButton" name="restoreReposButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>410</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Restore Backup</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>231</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Re-enable repos
+for unsupported realeases</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="reenableReposButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Files on Main backup:&lt;/p&gt;&lt;p&gt;sources.list.d&lt;/p&gt;&lt;p&gt;sources.list&lt;/p&gt;&lt;p&gt;sudoers.d&lt;/p&gt;&lt;p&gt;hosts&lt;/p&gt;&lt;p&gt;sudoers&lt;/p&gt;&lt;p&gt;templates&lt;/p&gt;&lt;p&gt;rc.local&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Re-enable</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="backupReposButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>330</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Files on Main backup:&lt;/p&gt;&lt;p&gt;sources.list.d&lt;/p&gt;&lt;p&gt;sources.list&lt;/p&gt;&lt;p&gt;sudoers.d&lt;/p&gt;&lt;p&gt;hosts&lt;/p&gt;&lt;p&gt;sudoers&lt;/p&gt;&lt;p&gt;templates&lt;/p&gt;&lt;p&gt;rc.local&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Each time you push, sources.list, sudoers and templates are copied on a folder, then you can restore them. This is ok if you want to return after crash.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Backup</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>330</y>
+          <width>191</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Do it for security</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -2704,10 +2834,13 @@ on terminal</string>
         </property>
        </widget>
        <widget class="QCheckBox" name="checkBox_firewall">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>230</x>
-          <y>260</y>
+          <y>310</y>
           <width>51</width>
           <height>41</height>
          </rect>
@@ -2902,9 +3035,37 @@ on terminal</string>
          <rect>
           <x>450</x>
           <y>290</y>
-          <width>118</width>
+          <width>91</width>
           <height>23</height>
          </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkFirewallStatus">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>270</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Check status</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
         </property>
        </widget>
       </widget>
@@ -3043,7 +3204,7 @@ on terminal</string>
     <widget class="QWidget" name="tab_3">
      <attribute name="icon">
       <iconset resource="ubunsys.qrc">
-       <normaloff>:/images/control_panel-512.png</normaloff>:/images/control_panel-512.png</iconset>
+       <normaloff>:/images/settings-5122.png</normaloff>:/images/settings-5122.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -3945,6 +4106,53 @@ on terminal</string>
          <bool>false</bool>
         </property>
        </widget>
+       <widget class="QPushButton" name="goMouseRateCheckerButton">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>290</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Launches grub-customizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Go</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>270</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Mouse rate checker</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -3959,7 +4167,7 @@ on terminal</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2018.08.14</string>
+     <string>v2018.10.14</string>
     </property>
    </widget>
   </widget>

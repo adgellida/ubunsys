@@ -12,7 +12,10 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //Configure tabs
+    connect(ui->actionAbout_Qt, SIGNAL(triggered()),
+    qApp, SLOT(aboutQt()));
+
+    //Configure tabs open
 
     QTabWidget *tabw = ui->tabWidget;
     tabw->setTabText(0, "");
@@ -57,17 +60,14 @@ MainWindow::MainWindow(QWidget *parent) :
     //ui->tabWidget->setStyleSheet("QTabBar::tab { width: 10px ; height: 10px; }");
     //ui->tabWidget_2->setStyleSheet("QTabBar::tab { width: 10px ; height: 50px; }");
 
-
     //ui->tabWidget->setStyleSheet("QTabBar::tabWidget_5 { width: 50px ; height: 10px; }");
     //ui->tabWidget->setStyleSheet("QTabBar::tabWidget { width: 10px ; height: 50px; }");
 
     //ui->tabWidget->setTabText(index, "new text");
 
-
     //ui->label->hide();
 
-    connect(ui->actionAbout_Qt, SIGNAL(triggered()),
-    qApp, SLOT(aboutQt()));
+    //Configure tabs close
 
     //another way to set tooltips
     //ui->enableSudoWithoutPassButton->setToolTip("Almost no more questions\n about your password");
@@ -448,6 +448,7 @@ void MainWindow::checkFirewallStatus()
     qDebug() << lineFirewall1;
     qDebug() << lineFirewall2;
     }
+    ui->checkBox_firewall->setEnabled(true);
 }
 
 
@@ -793,7 +794,7 @@ void MainWindow::checkLoginSoundStatus()
 void MainWindow::checkAllStatus()
 {
     //1.########
-    MainWindow::checkFirewallStatus();
+    //MainWindow::checkFirewallStatus();
     //2.########
     MainWindow::checkHiddenStartupItemsStatus();
     //3.########
@@ -813,7 +814,10 @@ void MainWindow::checkAllStatus()
 
 }
 
-
+void MainWindow::on_checkFirewallStatus_clicked()
+{
+    MainWindow::checkFirewallStatus();
+}
 
 
 

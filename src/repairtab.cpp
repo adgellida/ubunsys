@@ -129,3 +129,42 @@ void MainWindow::on_fixBrokenPackagesButton_6_clicked()
 {
     system("xterm -e bash -c 'echo Open Ubuntu Software Center and if prompted to repair broken packages, click simply the repair button; exec bash'");
 }
+
+void MainWindow::on_backupReposButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Installing templates"));
+
+    system("bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/077.backupReposUnsupportedReleases"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_reenableReposButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Installing templates"));
+
+    system("bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/078.re-enableReposUnsupportedReleases"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_restoreReposButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Installing templates"));
+
+    system("bash -c '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/079.restoreReposUnsupportedReleases"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}

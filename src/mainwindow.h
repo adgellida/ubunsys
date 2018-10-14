@@ -135,6 +135,14 @@ private slots:
     void on_restoreToDefaultsButton_clicked();
     void on_enterUnofficialReposButton_clicked();
     void on_saveReposButton_clicked();
+    void on_backupReposButton_clicked();
+    void on_reenableReposButton_clicked();
+    void on_restoreReposButton_clicked();
+    void on_checkFirewallStatus_clicked();
+
+
+
+    void on_goMouseRateCheckerButton_clicked();
 
 private:
     Ui::MainWindow *ui;

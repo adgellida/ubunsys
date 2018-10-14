@@ -1,5 +1,10 @@
 #include "preferencesdialog.h"
 #include "ui_preferencesdialog.h"
+#include <QDebug>
+#include <QFile>
+#include <QDir>
+#include <QMessageBox>
+#include <QProcess>
 
 PreferencesDialog::PreferencesDialog(QWidget *parent) :
     QDialog(parent),
@@ -121,4 +126,3 @@ void PreferencesDialog::closeEvent(QCloseEvent *event)
 
     QWidget::closeEvent(event);
 }
-
