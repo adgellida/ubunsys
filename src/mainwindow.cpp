@@ -30,30 +30,37 @@ MainWindow::MainWindow(QWidget *parent) :
     QTabBar *tabbar = tabw->tabBar();
 
     QLabel *lbl1 = new QLabel();
+    lbl1->setStyleSheet("QLabel { background:transparent }");
     lbl1->setText("Packages");
     tabbar->setTabButton(0, QTabBar::LeftSide, lbl1);
 
     QLabel *lbl2 = new QLabel();
+    lbl2->setStyleSheet("QLabel { background:transparent }");
     lbl2->setText("Sources");
     tabbar->setTabButton(1, QTabBar::LeftSide, lbl2);
 
     QLabel *lbl3 = new QLabel();
+    lbl3->setStyleSheet("QLabel { background:transparent }");
     lbl3->setText("Updates");
     tabbar->setTabButton(2, QTabBar::LeftSide, lbl3);
 
     QLabel *lbl4 = new QLabel();
+    lbl4->setStyleSheet("QLabel { background:transparent }");
     lbl4->setText("Fixes");
     tabbar->setTabButton(3, QTabBar::LeftSide, lbl4);
 
     QLabel *lbl5 = new QLabel();
+    lbl5->setStyleSheet("QLabel { background:transparent }");
     lbl5->setText("Security");
     tabbar->setTabButton(4, QTabBar::LeftSide, lbl5);
 
     QLabel *lbl6 = new QLabel();
+    lbl6->setStyleSheet("QLabel { background:transparent }");
     lbl6->setText("Power");
     tabbar->setTabButton(5, QTabBar::LeftSide, lbl6);
 
     QLabel *lbl7 = new QLabel();
+    lbl7->setStyleSheet("QLabel { background:transparent }");
     lbl7->setText("Extras");
     tabbar->setTabButton(6, QTabBar::LeftSide, lbl7);
 

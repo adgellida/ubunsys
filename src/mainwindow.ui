@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>0</number>
     </property>
     <property name="iconSize">
      <size>
@@ -4514,7 +4514,7 @@ on terminal</string>
      <x>0</x>
      <y>0</y>
      <width>649</width>
-     <height>19</height>
+     <height>18</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">
