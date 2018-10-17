@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="iconSize">
      <size>
@@ -72,6 +72,9 @@
       <string>Packages</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -2924,7 +2927,7 @@ on terminal</string>
         <property name="geometry">
          <rect>
           <x>450</x>
-          <y>160</y>
+          <y>150</y>
           <width>51</width>
           <height>41</height>
          </rect>
@@ -4504,7 +4507,7 @@ on terminal</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2018.10.15</string>
+     <string>v2018.10.18</string>
     </property>
    </widget>
   </widget>
@@ -4514,7 +4517,7 @@ on terminal</string>
      <x>0</x>
      <y>0</y>
      <width>649</width>
-     <height>18</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">

@@ -818,7 +818,6 @@ void MainWindow::checkAllStatus()
     MainWindow::checkLockScreenStatus();
     //9.########
     MainWindow::checkLoginSoundStatus();
-
 }
 
 void MainWindow::on_checkFirewallStatus_clicked()

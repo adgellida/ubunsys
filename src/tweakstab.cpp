@@ -23,6 +23,8 @@ void MainWindow::on_openSourcesListDButton_clicked()
            "echo Close this window!"
            "; exec bash'");
 
+    //QDesktopServices::openUrl(QUrl("file:///etc/apt/sources.list.d"));
+
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
@@ -756,7 +758,7 @@ void MainWindow::on_checkBoxLockScreen_clicked(bool checked)
         ui->statusBar->showMessage(tr("Lock screen Enabled"));
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
+               "~/.ubunsys/downloads/ubuntuScripts-master/036.enableLockScreen"
                " && "
                "exit"
                "; exec bash'");
@@ -771,7 +773,7 @@ void MainWindow::on_checkBoxLockScreen_clicked(bool checked)
           ui->statusBar->showMessage(tr("Lock screen Disabled"));
 
           system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntuScripts-master/036.enableLockScreen"
+                 "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
                  " && "
                  "exit"
                  "; exec bash'");
