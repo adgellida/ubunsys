@@ -47,7 +47,7 @@ Debido a falta de tiempo desarrollo pausado.
 
 **App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
 
-Construido con Qt 5.2.1 para compatibilidad.
+Se usa esta versión de Qt para máxima compatibilidad en repositorios antiguos.
 
 Alimentado con [ubuntupackages](https://github.com/adgellida/ubuntupackages) y [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
 

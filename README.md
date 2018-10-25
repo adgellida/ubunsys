@@ -47,7 +47,7 @@ Due to lack of time paused development.
 
 **This is a very dangerous app, if you don't know what you are touching or how to fix it, don't do it. This software is for testing and knowledge purposes. It's unstable software.**
 
-Built with Qt 5.2.1 for compatibility.
+It uses this Qt version for maximum compatibility on ancient repos.
 
 This is a GUI for these scripts [ubuntupackages](https://github.com/adgellida/ubuntupackages) and [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
 
