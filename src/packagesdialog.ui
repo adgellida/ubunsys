@@ -16,6 +16,10 @@
   <property name="windowTitle">
    <string>Scripts Manager</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="ubunsys.qrc">
+    <normaloff>:/images/Apps-Terminal-Pc-104-icon.png</normaloff>:/images/Apps-Terminal-Pc-104-icon.png</iconset>
+  </property>
   <property name="PackagesDialog" stdset="0">
    <string>Dialog</string>
   </property>
@@ -141,6 +145,8 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="ubunsys.qrc"/>
+ </resources>
  <connections/>
 </ui>
