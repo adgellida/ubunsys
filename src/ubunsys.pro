@@ -21,16 +21,15 @@ SOURCES  += main.cpp \
             mainwindow.cpp \
             toolbartab.cpp \
             repairtab.cpp \
-            systemtab.cpp \
             tweakstab.cpp \
-            updatezone.cpp \
             packagestab.cpp \
             about.cpp \
             tutorial.cpp \
             packagesdialog.cpp \
             rootfilesysproxymodel.cpp \
             updatescriptsdialog.cpp \
-            preferencesdialog.cpp
+            preferencesdialog.cpp \
+    updates.cpp
 
 HEADERS  += mainwindow.h \
             packagesdialog.h \

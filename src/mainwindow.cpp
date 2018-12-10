@@ -653,22 +653,30 @@ void MainWindow::checkUpdateAutoStatus()
     }
     fileUA.close();
 
-    QString lineUA2 = "Enabled";
+    //QString lineUA2 = "Disabled";
 
-    if (lineUA1 == lineUA2){
+    if (lineUA1 == "Disabled"){
 
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBoxUpdateAuto->setChecked(true);
+        ui->comboBoxUpdate->setCurrentText(lineUA1);
     }
 
-    else{
+    else if (lineUA1 == "Each hour"){
 
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBoxUpdateAuto->setChecked(false);
+        ui->comboBoxUpdate->setCurrentText(lineUA1);
+    }
+
+    else if (lineUA1 == "At boot"){
+
+        ui->comboBoxUpdate->setCurrentText(lineUA1);
+    }
+
+    else {
+
+        ui->comboBoxUpdate->setCurrentText("Disabled");
     }
 
     qDebug() << lineUA1;
-    qDebug() << lineUA2;
+    //qDebug() << lineUA2;
 
 }
 
@@ -824,4 +832,6 @@ void MainWindow::on_checkFirewallStatus_clicked()
 {
     MainWindow::checkFirewallStatus();
 }
+
+
 

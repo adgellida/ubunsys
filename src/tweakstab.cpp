@@ -675,42 +675,6 @@ void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
 
   }
 
-//##updateAuto
-
-void MainWindow::on_checkBoxUpdateAuto_clicked(bool checked)
-{
-    if (checked != false){
-        qDebug() << checked;
-
-        ui->statusBar->showMessage(tr("Adding update auto"));
-
-        system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/065.add_to_root_crontab"
-               " && "
-               "exit"
-               "; exec bash'");
-
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
-    }
-
-    else if (checked == false){
-        qDebug() << checked;
-
-          ui->statusBar->showMessage(tr("Erasing update auto"));
-
-          system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
-                 " && "
-                 "exit"
-                 "; exec bash'");
-
-          ui->statusBar->showMessage(tr("Done. Now select another action"));
-    }
-
-    MainWindow::checkUpdateAutoStatus();
-
-}
 
 //##hibernation
 

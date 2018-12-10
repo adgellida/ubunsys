@@ -127,7 +127,7 @@ private slots:
     void on_checkBoxUpdateNotif_clicked(bool checked);
     void on_checkBoxSudoWOPass_clicked(bool checked);
     void on_checkBoxAsterisks_clicked(bool checked);
-    void on_checkBoxUpdateAuto_clicked(bool checked);
+    //void on_checkBoxUpdateAuto_clicked(bool checked);
     void on_checkBoxHibernation_clicked(bool checked);
     void on_checkBoxLockScreen_clicked(bool checked);
     void on_checkBoxHiddenStartupItems_clicked(bool checked);
@@ -141,12 +141,11 @@ private slots:
     void on_checkFirewallStatus_clicked();
     void on_goMouseRateCheckerButton_clicked();
     void on_editGrubButton_clicked();
-
     void on_updateGrubButton_clicked();
-
     void on_installInfinalityFontsButton_clicked();
-
     void on_uninstallInfinalityFontsButton_clicked();
+
+    void on_comboBoxUpdate_currentIndexChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;

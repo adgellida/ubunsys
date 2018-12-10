@@ -1,7 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QDesktopServices>
+#include <QMessageBox>
 
-///////////////////////SYSTEM TAB///////////////////////
+///////////////////////UPDATES///////////////////////
+
+//void MainWindow::on_updateScriptsButton_clicked()
+//{
+//    on_runUpdateDialog_clicked();
+//}
 
 //    Normal user
 
@@ -122,6 +129,85 @@ void MainWindow::on_installMainlineKernels_clicked()
     //system("ukuu-gtk &&");
 
     ui->statusBar->showMessage(tr("ukuu opened. Select another action."));
+}
+
+//##updateAuto
+/*
+void MainWindow::on_checkBoxUpdateAuto_clicked(bool checked)
+{
+    if (checked != false){
+        qDebug() << checked;
+
+        ui->statusBar->showMessage(tr("Adding update auto"));
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/065.add_to_root_crontab"
+               " && "
+               "exit"
+               "; exec bash'");
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+    }
+
+    else if (checked == false){
+        qDebug() << checked;
+
+          ui->statusBar->showMessage(tr("Erasing update auto"));
+
+          system("xterm -e '"
+                 "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
+                 " && "
+                 "exit"
+                 "; exec bash'");
+
+          ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
+    MainWindow::checkUpdateAutoStatus();
+
+}
+*/
+void MainWindow::on_comboBoxUpdate_currentIndexChanged(const QString &arg1)
+{
+    if (arg1 == "Disabled"){
+
+        qDebug() << "Disabled";
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    else if (arg1 == "Each hour"){
+
+        qDebug() << "Each hour";
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
+               " && "
+               "~/.ubunsys/downloads/ubuntuScripts-master/065.add_to_root_crontab"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    else if (arg1 == "At boot"){
+
+        qDebug() << "At boot";
+
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
+               " && "
+               "~/.ubunsys/downloads/ubuntuScripts-master/083.add_to_root_crontab_at_boot"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
+
+    //MainWindow::checkUpdateAutoStatus();
 }
 
 //    Developer
