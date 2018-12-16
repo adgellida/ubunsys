@@ -579,6 +579,22 @@ void MainWindow::on_runGrubcustomizerButton_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
+//##Sync Time
+
+void MainWindow::on_runSyncTime_clicked()
+{
+    ui->statusBar->showMessage(tr("Edit grub"));
+
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-master/changeLinuxtoWindowsTime.sh"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+
 //##edit grub
 
 void MainWindow::on_editGrubButton_clicked()

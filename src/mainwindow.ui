@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>6</number>
     </property>
     <property name="iconSize">
      <size>
@@ -510,7 +510,7 @@ Repos</string>
        <widget class="QPushButton" name="aptselect_US">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>30</y>
           <width>111</width>
           <height>36</height>
@@ -538,7 +538,7 @@ Repos</string>
        <widget class="QPushButton" name="aptselect_ES">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>70</y>
           <width>111</width>
           <height>36</height>
@@ -679,7 +679,7 @@ Repos</string>
        <widget class="QLabel" name="label_49">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>10</y>
           <width>141</width>
           <height>16</height>
@@ -720,7 +720,7 @@ Repos</string>
        <widget class="QLabel" name="label_63">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>120</y>
           <width>231</width>
           <height>31</height>
@@ -742,7 +742,7 @@ Repos</string>
         </property>
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>150</y>
           <width>51</width>
           <height>41</height>
@@ -3293,7 +3293,7 @@ on terminal</string>
        <widget class="QLabel" name="label_34">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>10</y>
           <width>231</width>
           <height>16</height>
@@ -3312,7 +3312,7 @@ on terminal</string>
        <widget class="QLabel" name="label_35">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>70</y>
           <width>231</width>
           <height>16</height>
@@ -3331,10 +3331,10 @@ on terminal</string>
        <widget class="QPushButton" name="runGrubcustomizerButton">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>150</y>
           <width>111</width>
-          <height>36</height>
+          <height>41</height>
          </rect>
         </property>
         <property name="whatsThis">
@@ -3359,7 +3359,7 @@ on terminal</string>
        <widget class="QLabel" name="label_32">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>130</y>
           <width>141</width>
           <height>16</height>
@@ -3509,7 +3509,7 @@ on terminal</string>
        <widget class="QLabel" name="label_51">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>310</y>
           <width>221</width>
           <height>16</height>
@@ -3528,7 +3528,7 @@ on terminal</string>
        <widget class="QPushButton" name="resetDconf">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>330</y>
           <width>111</width>
           <height>36</height>
@@ -3981,7 +3981,7 @@ on terminal</string>
        <widget class="QCheckBox" name="checkBoxHiddenStartupItems">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>30</y>
           <width>51</width>
           <height>41</height>
@@ -4009,7 +4009,7 @@ on terminal</string>
         </property>
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>90</y>
           <width>51</width>
           <height>41</height>
@@ -4034,7 +4034,7 @@ on terminal</string>
        <widget class="QPushButton" name="goMouseRateCheckerButton">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>400</y>
           <width>111</width>
           <height>36</height>
@@ -4062,7 +4062,7 @@ on terminal</string>
        <widget class="QLabel" name="label_33">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>380</y>
           <width>141</width>
           <height>16</height>
@@ -4081,7 +4081,7 @@ on terminal</string>
        <widget class="QLabel" name="label_64">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>200</y>
           <width>141</width>
           <height>16</height>
@@ -4103,7 +4103,7 @@ on terminal</string>
        <widget class="QPushButton" name="editGrubButton">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>220</y>
           <width>111</width>
           <height>36</height>
@@ -4131,7 +4131,7 @@ on terminal</string>
        <widget class="QPushButton" name="updateGrubButton">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>300</x>
           <y>260</y>
           <width>111</width>
           <height>36</height>
@@ -4142,6 +4142,35 @@ on terminal</string>
         </property>
         <property name="text">
          <string>update-grub</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="runSyncTime">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>150</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Launches grub-customizer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Sync time
+Windows</string>
         </property>
         <property name="iconSize">
          <size>

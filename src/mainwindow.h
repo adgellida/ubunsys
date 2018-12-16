@@ -147,6 +147,8 @@ private slots:
 
     void on_comboBoxUpdate_currentIndexChanged(const QString &arg1);
 
+    void on_runSyncTime_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////
