@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>2</number>
     </property>
     <property name="iconSize">
      <size>
@@ -1128,7 +1128,7 @@ Repos</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>230</y>
+          <y>320</y>
           <width>91</width>
           <height>23</height>
          </rect>
@@ -1138,7 +1138,7 @@ Repos</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>160</y>
+          <y>260</y>
           <width>111</width>
           <height>31</height>
          </rect>
@@ -1157,7 +1157,7 @@ Repos</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>200</y>
+          <y>290</y>
           <width>79</width>
           <height>22</height>
          </rect>
@@ -1177,6 +1177,114 @@ Repos</string>
           <string>At boot</string>
          </property>
         </item>
+       </widget>
+       <widget class="QLabel" name="label_65">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>170</y>
+          <width>231</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>List upgradable packages</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="listUpgradablePackagesButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>41</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Recover space from unused kernels&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/Future-595b40b75ba036ed117d7e0d.svg</normaloff>:/images/Future-595b40b75ba036ed117d7e0d.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_66">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>220</y>
+          <width>231</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>List latest installed packages</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="listLatestInstalledPackagesButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>210</y>
+          <width>41</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Recover space from unused kernels&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ubunsys.qrc">
+          <normaloff>:/images/icons8-update-100.png</normaloff>:/images/icons8-update-100.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="tab_10">
@@ -4458,7 +4566,7 @@ Windows</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2018.10.18</string>
+     <string>v2018.12.19</string>
     </property>
    </widget>
   </widget>

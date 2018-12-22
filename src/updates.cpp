@@ -95,6 +95,28 @@ void MainWindow::on_cleanKernelsButton_clicked()
     ui->statusBar->showMessage(tr("Kernels clean did it succesful. Now select another action"));
 }
 
+void MainWindow::on_listUpgradablePackagesButton_clicked()
+{
+    system("xterm -e '"
+           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/listUpgradablePackages"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Missed GPG keys repaired or fix cancelled, check if ok now"));
+}
+
+void MainWindow::on_listLatestInstalledPackagesButton_clicked()
+{
+    system("xterm -e '"
+           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/listLatestInstalledPackages"
+           " && "
+           "exit"
+           "; exec bash'");
+
+    ui->statusBar->showMessage(tr("Missed GPG keys repaired or fix cancelled, check if ok now"));
+}
+
 void MainWindow::on_upgradeLatestStableButton_clicked()
 {
     ui->statusBar->showMessage(tr("Executing upgrade to Latest Stable Version. Then close the terminal window"));

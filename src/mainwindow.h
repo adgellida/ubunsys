@@ -149,6 +149,10 @@ private slots:
 
     void on_runSyncTime_clicked();
 
+    void on_listUpgradablePackagesButton_clicked();
+
+    void on_listLatestInstalledPackagesButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////

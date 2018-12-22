@@ -586,7 +586,7 @@ void MainWindow::on_runSyncTime_clicked()
     ui->statusBar->showMessage(tr("Edit grub"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/changeLinuxtoWindowsTime.sh"
+           "~/.ubunsys/downloads/ubuntuScripts-master/changeLinuxtoWindowsTime"
            " && "
            "echo Close this window!"
            "; exec bash'");
