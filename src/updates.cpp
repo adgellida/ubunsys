@@ -109,7 +109,7 @@ void MainWindow::on_listUpgradablePackagesButton_clicked()
 void MainWindow::on_listLatestInstalledPackagesButton_clicked()
 {
     system("xterm -e '"
-           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/listLatestInstalledPackages"
+           "~/.ubunsys/downloads/ubuntuScripts-master/listLatestInstalledPackages"
            " && "
            "exit"
            "; exec bash'");

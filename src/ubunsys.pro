@@ -10,7 +10,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -29,13 +29,15 @@ SOURCES  += main.cpp \
             rootfilesysproxymodel.cpp \
             updatescriptsdialog.cpp \
             preferencesdialog.cpp \
-    updates.cpp
+    updates.cpp \
+    dbmanager.cpp
 
 HEADERS  += mainwindow.h \
             packagesdialog.h \
             rootfilesysproxymodel.h \
             updatescriptsdialog.h \
-            preferencesdialog.h
+            preferencesdialog.h \
+    dbmanager.h
 
 FORMS    += mainwindow.ui \
             packagesdialog.ui \

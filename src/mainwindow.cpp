@@ -5,6 +5,7 @@
 #include "preferencesdialog.cpp"
 #include "preferencesdialog.h"
 #include <QDesktopServices>
+#include <dbmanager.h>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -592,42 +593,22 @@ void MainWindow::checkSudoWithoutPassStatus()
 
 void MainWindow::checkAsterisksStatus()
 {
-
     //5.######## asterisks
     //######## Status
 
-    QFile fileAsterisks(QDir::homePath() + "/.ubunsys/status/asterisks.txt");
-    //QLabel *testLabel= new QLabel;
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+    QString status = db.getStatus("asterisks");
 
-    QString lineAsterisks1;
-        if (fileAsterisks.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileAsterisks);
-        while (!stream.atEnd()){
+    if (status == "true"){
 
-            //line.append(stream.readLine()+"\n");
-            lineAsterisks1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileAsterisks.close();
-
-    QString lineAsterisks2 = "Enabled";
-
-    if (lineAsterisks1 == lineAsterisks2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
         ui->checkBoxAsterisks->setChecked(true);
     }
 
     else{
 
-        //ui->statusBar->showMessage(tr("Está inactivo"));
         ui->checkBoxAsterisks->setChecked(false);
     }
-
-    qDebug() << lineAsterisks1;
-    qDebug() << lineAsterisks2;
-
 }
 
 //6.########
@@ -832,5 +813,3 @@ void MainWindow::on_checkFirewallStatus_clicked()
 {
     MainWindow::checkFirewallStatus();
 }
-
-

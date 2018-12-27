@@ -5,6 +5,7 @@
 #include <QDir>
 #include <QMessageBox>
 #include <QProcess>
+#include <dbmanager.h>
 
 PreferencesDialog::PreferencesDialog(QWidget *parent) :
     QDialog(parent),
@@ -14,72 +15,44 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
 
     connect(ui->closePreferencesDialogButton, SIGNAL(clicked()),this, SIGNAL(CloseClicked()) );//////////
 
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+/*
+    //language begin
 
-    //language
+    QString languageSelected = db.getStatus("language");
 
-    QFile file (QDir::homePath() + "/.ubunsys/configurations/language.cfg");
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)){
+    if (languageSelected == "Spanish") ui->comboBox_2->setCurrentText("Spanish");
 
-        qDebug() << " Could not open the file for reading";
+    else if (languageSelected == "Español") ui->comboBox_2->setCurrentText("Español");
 
-        }
+    else if (languageSelected == "English") ui->comboBox_2->setCurrentText("English");
 
-    QTextStream in(&file);
-    QString myText = in.readLine();
-    qDebug() << myText;
-    file.close();
-    qDebug() << "File read";
+    else if (languageSelected == "Inglés")  ui->comboBox_2->setCurrentText("Inglés");
 
-    QString myText2 = "Spanish";
+    //language end
+*/
 
-    if (myText == myText2) {
+    //theme begin
 
-            QString myText2 = "Spanish";
-            ui->comboBox_2->setCurrentText(myText2);
+    QString themeSelected = db.getStatus("theme");
 
-        }
+    if (themeSelected == "Dark") ui->comboBox_1->setCurrentText("Dark");
 
-    else qDebug() << "English loaded";
+    else if (themeSelected == "Default") ui->comboBox_1->setCurrentText("Default");
 
-        //}
-
-    //else
-    //    translator.load("ubunsys_en_US.qm");
-
-    //app.installTranslator(&translator);
+    //theme end
 
 
-    //theme
+    //text editor begin
 
-    int checkTheme = 1;
+    QString actualTextEditorSelected = db.getStatus("textEditor");  //gets data from db
 
-    if (checkTheme == 1){
+    ui->textEditor->setText(actualTextEditorSelected);  //puts actual data on gui
 
-        QFile file (QDir::homePath() + "/.ubunsys/configurations/theme.cfg");
-        if (!file.open(QIODevice::ReadOnly | QIODevice::Text)){
+    //text editor end
 
-            qDebug() << " Could not open the file for reading";
 
-            }
-
-        QTextStream in(&file);
-        QString myText = in.readLine();
-        qDebug() << myText;
-        file.close();
-        qDebug() << "File read";
-
-        QString myText2 = "Dark";
-
-        if (myText == myText2) {
-
-            QString myText2 = "Dark";
-            ui->comboBox_1->setCurrentText(myText2);
-
-            }
-
-        else qDebug() << "Light loaded";
-
-    }
 }
 PreferencesDialog::~PreferencesDialog()
 {
@@ -89,26 +62,42 @@ PreferencesDialog::~PreferencesDialog()
 void PreferencesDialog::on_closePreferencesDialogButton_clicked()
 {
 
-    QString language_selected = ui->comboBox_2->currentText();
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    //language begin
+
+    //QString language_selected = ui->comboBox_2->currentText();
+    //db.updateStatus("language", language_selected);
+
+    //language end
+
+
+    //theme begin
+
     QString theme_selected = ui->comboBox_1->currentText();
-    qDebug() << language_selected;
-    qDebug() << theme_selected;
+    db.updateStatus("theme", theme_selected);
 
-    QString language (QDir::homePath() + "/.ubunsys/configurations/language.cfg");
-    QFile file_1( language );
-    if ( file_1.open(QIODevice::ReadWrite) )
+    //theme end
+
+
+    //textEditor begin
+
+    QString newTextEditorSelected = ui->textEditor->toPlainText();  //gets new data from gui
+
+    db.updateStatus("textEditor", newTextEditorSelected);   //puts into db
+
+    QFile file (QDir::homePath() + "/.ubunsys/configurations/newTextEditor.cfg");   //puts into new cfg file
+    if ( file.open(QIODevice::ReadWrite) )
     {
-        QTextStream stream( &file_1 );
-        stream << language_selected << endl;
+        QTextStream stream( &file );
+        stream << newTextEditorSelected << endl;
     }
 
-    QString theme (QDir::homePath() + "/.ubunsys/configurations/theme.cfg");
-    QFile file_2( theme );
-    if ( file_2.open(QIODevice::ReadWrite) )
-    {
-        QTextStream stream( &file_2 );
-        stream << theme_selected << endl;
-    }
+    system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && " //runs script to change textEditor
+           "exit");
+
+    //textEditor end
 
 }
 
@@ -125,4 +114,13 @@ void PreferencesDialog::closeEvent(QCloseEvent *event)
     exit(12);
 
     QWidget::closeEvent(event);
+}
+
+void PreferencesDialog::on_restoreDefaultTextEditorButton_clicked()
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+    db.updateStatus("textEditor", "nano");
+    ui->textEditor->setText("nano");
+
 }

@@ -47,8 +47,6 @@ public:
     //9.########
     void checkLoginSoundStatus();
 
-    QString returnMainRepo();
-
 public slots:
 
     //void closePackagesDialog();///////////////
@@ -90,8 +88,6 @@ private slots:
     void on_disableSudoWithoutPassSpecificButton_clicked();
     void on_openSudoersFileButton_clicked();
     void on_backupSudoersFileButton_clicked();
-    void on_reduceTo5sShutdownTimeoutButton_clicked();
-    void on_setToDefaults90sShutdownTimeoutButton_clicked();
 
     //void on_actionAbout_clicked();
     //void on_updateScriptsButton_clicked();
@@ -132,9 +128,6 @@ private slots:
     void on_checkBoxLockScreen_clicked(bool checked);
     void on_checkBoxHiddenStartupItems_clicked(bool checked);
     void on_checkBoxLoginSound_clicked(bool checked);
-    void on_restoreToDefaultsButton_clicked();
-    void on_enterUnofficialReposButton_clicked();
-    void on_saveReposButton_clicked();
     void on_backupReposButton_clicked();
     void on_reenableReposButton_clicked();
     void on_restoreReposButton_clicked();
@@ -144,13 +137,9 @@ private slots:
     void on_updateGrubButton_clicked();
     void on_installInfinalityFontsButton_clicked();
     void on_uninstallInfinalityFontsButton_clicked();
-
     void on_comboBoxUpdate_currentIndexChanged(const QString &arg1);
-
     void on_runSyncTime_clicked();
-
     void on_listUpgradablePackagesButton_clicked();
-
     void on_listLatestInstalledPackagesButton_clicked();
 
 private:

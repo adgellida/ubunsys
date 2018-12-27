@@ -15,19 +15,19 @@
   </property>
   <widget class="QComboBox" name="comboBox_1">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>130</y>
+     <y>60</y>
      <width>91</width>
      <height>31</height>
     </rect>
    </property>
    <item>
     <property name="text">
-     <string>Light</string>
+     <string>Default</string>
     </property>
    </item>
    <item>
@@ -37,10 +37,13 @@
    </item>
   </widget>
   <widget class="QComboBox" name="comboBox_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>70</y>
+     <y>10</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -60,7 +63,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>140</y>
+     <y>70</y>
      <width>101</width>
      <height>21</height>
     </rect>
@@ -79,7 +82,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>80</y>
+     <y>20</y>
      <width>101</width>
      <height>21</height>
     </rect>
@@ -125,6 +128,48 @@
    <property name="text">
     <string>Clicking &quot;X&quot; close button of this window
 do the same if you click on &quot;Close and Restart&quot;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_47">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Text editor</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEditor">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>110</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="restoreDefaultTextEditorButton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>110</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Restore Default</string>
    </property>
   </widget>
  </widget>

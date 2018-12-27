@@ -3,6 +3,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QMessageBox>
+#include <dbmanager.h>
 
 UpdateScriptsDialog::UpdateScriptsDialog(QWidget *parent) :
     QDialog(parent),
@@ -73,9 +74,28 @@ void UpdateScriptsDialog::on_checkButton_clicked()
     //system("rm -Rf ~/.ubunsys/updates/updateLog.log");
     //system("touch ~/.ubunsys/updates/updateLog.log");
 
+
+    //textEditor begin
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString actualTextEditorSelected = db.getStatus("textEditor");
+
+    QFile file2 (QDir::homePath() + "/.ubunsys/configurations/actualTextEditor.cfg");
+    if ( file2.open(QIODevice::ReadWrite) )
+    {
+        QTextStream stream( &file2 );
+        stream << actualTextEditorSelected << endl;
+    }
+
+    //system("~/.ubunsys/configurations/textEditorChange && "
+    system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && "
+           "exit");
+
+    //textEditor end
 }
 
-void UpdateScriptsDialog::on_forceButton_clicked()
+void UpdateScriptsDialog::on_forceButton_clicked()  //NOT WORKS OK, DISABLED
 {
     system("rm -Rf ~/.ubunsys/updates/updateLog.log");
     system("touch ~/.ubunsys/updates/updateLog.log");
@@ -100,6 +120,27 @@ void UpdateScriptsDialog::on_forceButton_clicked()
     QTextStream in (&file);
 
     ui->textBrowser->setText(in.readAll());
+
+
+    //textEditor begin
+
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString actualTextEditorSelected = db.getStatus("textEditor");
+
+    QFile file2 (QDir::homePath() + "/.ubunsys/configurations/actualTextEditor.cfg");
+    if ( file2.open(QIODevice::ReadWrite) )
+    {
+        QTextStream stream( &file2 );
+        stream << actualTextEditorSelected << endl;
+    }
+
+    system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && "
+           "exit");
+
+    //textEditor end
+
 }
 
 void UpdateScriptsDialog::on_closeUpdateDialogButton_clicked()

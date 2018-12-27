@@ -23,6 +23,8 @@ private slots:
 
     void closeEvent(QCloseEvent *event);
 
+    void on_restoreDefaultTextEditorButton_clicked();
+
 private:
     Ui::PreferencesDialog *ui;
 

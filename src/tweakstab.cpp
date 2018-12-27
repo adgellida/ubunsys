@@ -6,6 +6,10 @@
 #include <QCoreApplication>
 #include <QTextStream>
 #include <QDesktopServices>
+#include <dbmanager.h>
+
+//static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+//DbManager db(path);
 
 ///////////////////////TWEAKS TAB///////////////////////
 
@@ -395,34 +399,6 @@ void MainWindow::on_installTemplatesButton_clicked()
     ui->statusBar->showMessage(tr("Templates installed succesful. Now select another action"));
 }
 
-//##reduceTo5sShutdownTimeout
-
-void MainWindow::on_reduceTo5sShutdownTimeoutButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Enabling"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/029.reduceTo5sShutdownTimeout"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_setToDefaults90sShutdownTimeoutButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Disabling"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/030.setToDefaults90sShutdownTimeout"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
 //##MainBackup
 
 void MainWindow::on_openMainBackupButton_clicked()
@@ -583,7 +559,7 @@ void MainWindow::on_runGrubcustomizerButton_clicked()
 
 void MainWindow::on_runSyncTime_clicked()
 {
-    ui->statusBar->showMessage(tr("Edit grub"));
+    ui->statusBar->showMessage(tr("Sync Time"));
 
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-master/changeLinuxtoWindowsTime"
@@ -658,7 +634,29 @@ void MainWindow::on_resetDconf_clicked()
 
 void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
 {
-    if (checked != false){
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    if (db.isOpen())
+    {
+
+
+    //Compare if success is wrote
+
+    QFile file(QDir::homePath() + "/.ubunsys/configurations/ubunsys.log");
+
+    QString line1;
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text)){
+        QTextStream stream(&file);
+        while (!stream.atEnd()){
+            line1.append(stream.readLine());
+        }
+    }
+    file.close();
+
+    QString line2 = "success";
+
+    if (checked == true){
         qDebug() << checked;
 
         ui->statusBar->showMessage(tr("Doing visible asterisks"));
@@ -669,8 +667,14 @@ void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
                "exit"
                "; exec bash'");
 
+        if (line1 == line2) {
+            db.updateStatus("asterisks", "true");
+            qDebug() << "Debe star activado";
+        }
+
         ui->statusBar->showMessage(tr("Done. Now select another action"));
 
+        file.remove();
     }
 
     else if (checked == false){
@@ -678,19 +682,22 @@ void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
 
         ui->statusBar->showMessage(tr("Doing invisible asterisks"));
 
-          system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
-                 " && "
-                 "exit"
-                 "; exec bash'");
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
+               " && "
+               "exit"
+               "; exec bash'");
 
-          ui->statusBar->showMessage(tr("Done. Now select another action"));
+        if (line1 == line2) db.updateStatus("asterisks", "false");
+
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+        file.remove();
     }
-
+    }
   MainWindow::checkAsterisksStatus();
 
   }
-
 
 //##hibernation
 

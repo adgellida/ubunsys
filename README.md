@@ -98,5 +98,6 @@ I know that my code is horrifying and very well implemented. With patience and t
 Credits and thanks to
 =============================================
 
-* [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) from Noun Project that created the [icon](https://thenounproject.com/term/terminal/715962/) and I used it as app icon. Beautiful!
-* [ColinDuquesnoy](https://github.com/ColinDuquesnoy) for creating a [theme](https://github.com/ColinDuquesnoy/QDarkStyleSheet) it's really good and I used it here. I like how it looks!
+* Icon based on [this](https://thenounproject.com/term/terminal/715962/). Author [Bernar Novalyi](https://thenounproject.com/bernar.novalyi)
+* Theme got from [here](https://github.com/ColinDuquesnoy/QDarkStyleSheet). Author [ColinDuquesnoy](https://github.com/ColinDuquesnoy)
+* SQLite library based on [this] https://github.com/katecpp/sql_with_qt. Author [katecpp](https://github.com/katecpp)
