@@ -100,4 +100,4 @@ Créditos y gracias a
 
 * Icono basado en [este](https://thenounproject.com/term/terminal/715962/). Autor [Bernar Novalyi](https://thenounproject.com/bernar.novalyi)
 * Tema cogido de [aquí](https://github.com/ColinDuquesnoy/QDarkStyleSheet). Autor [ColinDuquesnoy](https://github.com/ColinDuquesnoy)
-* Librería SQLite basada en [esta] (https://github.com/katecpp/sql_with_qt). Autor [katecpp](https://github.com/katecpp)
+* Librería SQLite basada en [esta](https://github.com/katecpp/sql_with_qt). Autor [katecpp](https://github.com/katecpp)
