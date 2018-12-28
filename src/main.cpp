@@ -68,6 +68,16 @@ int main(int argc, char *argv[])
         db.addNameStatus("apt-fastInstalled", "false");
         //15.########
         db.addNameStatus("appUpdatePresent", "false");
+        //16.########
+        db.addNameStatus("ubuntuScripts_now_check_commit_version", "NULL");
+        //17.########
+        db.addNameStatus("ubuntuScripts_last_check_commit_version", "NULL");
+        //18.########
+        db.addNameStatus("ubunsys_latest_version", "NULL");
+        //19.########
+        db.addNameStatus("ubunsys_installed_version", "NULL");
+        //20.########
+        db.addNameStatus("ubunsys_latest_version2", "NULL");
 
         }
 

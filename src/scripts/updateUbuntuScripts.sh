@@ -1,8 +1,6 @@
 #!/bin/bash
 
 url=https://github.com/adgellida/ubuntuScripts
-file1=~/.ubunsys/updates/ubuntuScripts_check_version/ubuntuScripts_now_check_commit_version.txt
-file2=~/.ubunsys/updates/ubuntuScripts_check_version/ubuntuScripts_last_check_commit_version.txt
 message1="ubuntuScripts are in the latest version. No updates required. 1/4 ok."
 message2="Updating ubuntuscripts. Please wait... Stage 1/4."
 message3="ubuntuscripts was updated to latest version. 1/4 ok."
@@ -10,11 +8,24 @@ message4="Error downloading. Holding your ubuntuScripts version. 1/4 fail."
 
 #Getting commit version
 
-git ls-remote "$url" | head -1 | cut -f 1 > "$file1"
+actual_commit_version="$(git ls-remote "$url" | head -1 | cut -f 1)"
+
+#saving actual commit version
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "$actual_commit_version" WHERE name = "ubuntuScripts_now_check_commit_version";
+END_SQL
+
+#getting previous commit version
+
+last_commit_version=`sqlite3 ~/.ubunsys/configurations/config.db "SELECT status FROM config WHERE name = 'ubuntuScripts_last_check_commit_version'" `
+
+#echo $last_commit_version
 
 #Comparing and executing
 
-if diff "$file1" "$file2"
+if diff "$actual_commit_version" "$last_commit_version"
 then
     echo "$message1"
     echo "$message1" >> ~/.ubunsys/updates/updateLog.log
@@ -31,5 +42,11 @@ else
 
 fi
 
-#Rename file
-mv "$file1" "$file2"
+#Put actual commit version to last to compare next time
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "$actual_commit_version" WHERE name = "ubuntuScripts_last_check_commit_version";
+END_SQL
+
+read

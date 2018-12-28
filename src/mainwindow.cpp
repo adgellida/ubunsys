@@ -92,7 +92,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Creating folders end
 
-    //Silent update
+    //Silent updates
 
     //######## Update ubuntuScripts
 
@@ -106,7 +106,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     system("/usr/share/ubunsys/scripts/apt-fastCheckingNotification.sh");
 
-    //Set main position
+    //Set main GUI position
 
     ui->tabWidget->setCurrentIndex(1);
     ui->tabWidget_3->setCurrentIndex(0);

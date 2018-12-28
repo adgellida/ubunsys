@@ -9,15 +9,32 @@ message2="ubunsys outdated. Push upper red button to update it via PPA. 4/4 ok."
 
 #Getting remote version
 
-git ls-remote --tags "$url" | awk -F'/' '/[0-9].[0-9].[0-9].*/ { print $3}' | sort -nr | head -n1 > "$file1"
+remote_version_with_v="$(git ls-remote --tags "$url" | awk -F'/' '/[0-9].[0-9].[0-9].*/ { print $3}' | sort -nr | head -n1)"
 
-sed 's/v//' "$file1" > "$file3"
-rm "$file1"
-mv "$file3" "$file1"
+#We go to quit "v" from versionName
+
+remote_version_no_v=${remote_version_with_v/v/}
+
+remote_version=$remote_version_no_v
+
+#echo $remote_version_with_v
+#echo $remote_version_no_v
+#echo $remote_version
+#read
 
 #Getting installed version
 
-dpkg -s ubunsys | grep -i version > "$file2"
+installed_version="$(dpkg -s ubunsys | grep -i version)"
+
+#We go to quit latest characters from versionName
+
+installed_version_cleaned_characters1=${installed_version/~ubuntu*/}
+installed_version_cleaned_characters2=${installed_version_cleaned_characters1/Version: /}
+
+echo $installed_version
+echo $installed_version_cleaned_characters1
+echo $installed_version_cleaned_characters2
+read
 
 #Comparing
 
