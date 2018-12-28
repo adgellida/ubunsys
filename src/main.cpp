@@ -26,6 +26,9 @@ int main(int argc, char *argv[])
     {
         //db.removeAllNames();
 
+        //13.######## firstTimeCreationDB
+        //######## Selection
+
         QString firstTimeCreationDB = db.getStatus("firstTimeCreationDB");
 
         if(firstTimeCreationDB != "false"){
@@ -35,41 +38,36 @@ int main(int argc, char *argv[])
         db.createTable();   // Creates a table if it doens't exist. Otherwise, it will use existing table.
 
         //initializing values of database begin
-        //1
+        //1.########
         db.addNameStatus("firewallStatus", "Disabled");
-        //2
-        db.addNameStatus("checkHiddenStartupItemsStatus", "Disabled");
-        //3
+        //2.########
+        db.addNameStatus("HideStartupItems", "Disabled");
+        //3.########
         db.addNameStatus("updateNotif", "false");
-        //4
-        db.addNameStatus("SudoWOPass", "Disabled");
-        //5
+        //4.################################################
+        db.addNameStatus("sudoWOPass", "Disabled");
+        //5.################################################
         db.addNameStatus("textEditor", "nano");
-        //6
+        //6.########
         db.addNameStatus("asterisks", "Disabled");
-
-
-
-
-
-
-
-
-        db.addNameStatus("firstTimeCreationDB", "false");               //2
-
-        db.addNameStatus("apt-fastInstalled", "false");                 //2
-
-        db.addNameStatus("language", "English");                        //2
-
-        db.addNameStatus("theme", "Default");                           //2
-
-
-        db.addNameStatus("hibernation", "Disabled");                    //2
-        db.addNameStatus("lockScreen", "Enabled");                      //2
-        db.addNameStatus("loginSound", "Enabled");                      //2
-                             //2
-        db.addNameStatus("updateAuto", "Disabled");                     //2
-
+        //7.########
+        db.addNameStatus("updateAuto", "Disabled");
+        //8.########
+        db.addNameStatus("hibernation", "Disabled");
+        //9.########
+        db.addNameStatus("lockScreen", "Enabled");
+        //10.########
+        db.addNameStatus("loginSound", "Enabled");
+        //11.########
+        db.addNameStatus("language", "English");
+        //12.########
+        db.addNameStatus("theme", "Default");
+        //13.########
+        db.addNameStatus("firstTimeCreationDB", "false");
+        //14.########
+        db.addNameStatus("apt-fastInstalled", "false");
+        //15.########
+        db.addNameStatus("appUpdatePresent", "false");
 
         }
 
@@ -85,8 +83,10 @@ int main(int argc, char *argv[])
 
 
     //SETTINGS
+
+    //11.######## language
+    //######## Selection
 /*
-    //language begin
 
     QString languageSelected = db.getStatus("language");
 
@@ -104,10 +104,10 @@ int main(int argc, char *argv[])
         qDebug() << "English loaded";
     }
 
-    //language end
-
 */
-    //theme begin
+
+    //12.######## theme
+    //######## Selection
 
     QString themeSelected = db.getStatus("theme");
 
@@ -126,9 +126,6 @@ int main(int argc, char *argv[])
     }
 
     //theme end
-
-
-
 
     MainWindow w;
     w.show();

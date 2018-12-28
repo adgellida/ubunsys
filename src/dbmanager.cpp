@@ -121,7 +121,7 @@ QString DbManager::getStatus(const QString& name) const
         {
             status = query.value(0).toString();
             //int salary = query.value(1).toInt();
-            qDebug() << "El valor real es " + status;
+            //qDebug() << "El valor real es " + status;
             //Debug() << name << salary;
         }
     }

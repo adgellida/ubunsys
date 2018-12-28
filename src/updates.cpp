@@ -157,7 +157,7 @@ void MainWindow::on_comboBoxUpdate_currentIndexChanged(const QString &arg1)
 {
     if (arg1 == "Disabled"){
 
-        qDebug() << "Disabled";
+        qDebug() << "Auto update disabled";
 
         system("xterm -e '"
                "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"

@@ -122,14 +122,17 @@ MainWindow::MainWindow(QWidget *parent) :
     PreferencesDialogUi = new PreferencesDialog ();//////////////
     connect(PreferencesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePreferencesDialog()));////////////////
 
-    ///Update message
+    //Checks if ubunsys has an update and show message if proceed
 
-    QFile file2 (QDir::homePath() + "/.ubunsys/updates/updatePresent.txt");
-    //QFile file2 (QDir::homePath() + "/.ubunsys/configurations/hola2.txt");
-    QFile file3 (QDir::homePath() + "/.ubunsys/configurations/apt-fastInstalled.txt");
+    QString status = db.getStatus("appUpdatePresent");
 
-    if(file2.exists())
-    {
+    if (status == "false"){
+
+        // do nothing
+    }
+
+    else if (status == "true"){
+
         QMessageBox msgBox;
         msgBox.setWindowTitle("ubunsys app update present");
         msgBox.setText("There's an update, would you like to install it?");
@@ -144,22 +147,31 @@ MainWindow::MainWindow(QWidget *parent) :
         }
     }
 
-    if(!file3.exists())
-    {
+    //Checks if apt-fast is installed and show message if proceed
 
-    QMessageBox msgBox;
-    msgBox.setWindowTitle("Warning");
-    msgBox.setText("We need extra dependencies:\napt-fast, we go to install it");
-    msgBox.setStandardButtons(QMessageBox::Yes);
-    msgBox.addButton(QMessageBox::No);
-    msgBox.setDefaultButton(QMessageBox::No);
-    if(msgBox.exec() == QMessageBox::Yes){
+    QString status2 = db.getStatus("apt-fastInstalled");
+
+    if (status2 == "true"){
+
         // do nothing
     }
-    else {
-      // do nothing
+
+    else if (status2 == "false"){
+
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Warning");
+        msgBox.setText("We need extra dependencies:\napt-fast, we go to install it");
+        msgBox.setStandardButtons(QMessageBox::Yes);
+        msgBox.addButton(QMessageBox::No);
+        msgBox.setDefaultButton(QMessageBox::No);
+        if(msgBox.exec() == QMessageBox::Yes){
+            // do nothing
+        }
+        else {
+          // do nothing
+        }
     }
-}
+
     //######## apt-fast checking
 
     system("/usr/share/ubunsys/scripts/apt-fastChecking.sh");
@@ -179,11 +191,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->textBrowser->setText(in.readAll());
 
-    //QFile::remove(QDir::homePath() + "/.ubunsys/updates/updateLog.log");
     system("rm -Rf ~/.ubunsys/updates/updateLog.log");
     system("touch ~/.ubunsys/updates/updateLog.log");
 
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
+
+    //######## check All
 
     MainWindow::checkAllStatus();
 
@@ -411,40 +424,22 @@ void MainWindow::checkFirewallStatus()
 //2.########
 void MainWindow::checkHiddenStartupItemsStatus()
 {
-    //2.######## HiddenStartupItems
+    //2.######## HideStartupItems
     //######## Status
 
-    QFile fileHidden(QDir::homePath() + "/.ubunsys/status/HiddenStartupItems.txt");
-    //QLabel *testLabel= new QLabel;
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+    QString status = db.getStatus("HideStartupItems");
 
-    QString lineHidden1;
-    if (fileHidden.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileHidden);
-        while (!stream.atEnd()){
+    if (status == "Enabled"){
 
-            //line.append(stream.readLine()+"\n");
-            lineHidden1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileHidden.close();
-
-    QString lineHidden2 = "Show";
-
-    if (lineHidden1 == lineHidden2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
         ui->checkBoxHiddenStartupItems->setChecked(true);
     }
 
-    else{
+    else if (status == "Disabled"){
 
-        //ui->statusBar->showMessage(tr("Está inactivo"));
         ui->checkBoxHiddenStartupItems->setChecked(false);
     }
-
-    qDebug() << lineHidden1;
-    qDebug() << lineHidden2;
 
 }
 
@@ -496,7 +491,7 @@ void MainWindow::checkSudoWithoutPassStatus()
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
-    QString status = db.getStatus("SudoWOPass");
+    QString status = db.getStatus("sudoWOPass");
 
     if (status == "Enabled"){
 
@@ -516,18 +511,20 @@ void MainWindow::checkTextEditor()
 {
     //5.######## textEditor
     //######## Status
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
 
-QString actualTextEditorSelected = db.getStatus("textEditor");
+    QString actualTextEditorSelected = db.getStatus("textEditor");
 
-QFile file (QDir::homePath() + "/.ubunsys/configurations/actualTextEditor.cfg");
-if ( file.open(QIODevice::ReadWrite) )
-{
-    QTextStream stream( &file );
-    stream << actualTextEditorSelected << endl;
-}
+    QFile file (QDir::homePath() + "/.ubunsys/configurations/actualTextEditor.cfg");
+    if ( file.open(QIODevice::ReadWrite) )
+    {
+        QTextStream stream( &file );
+        stream << actualTextEditorSelected << endl;
+    }
 
-system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && "
-       "exit");
+    system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && "
+           "exit");
 
 }
 
@@ -535,7 +532,7 @@ system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && "
 
 void MainWindow::checkAsterisksStatus()
 {
-    //5.######## asterisks
+    //6.######## asterisks
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -557,7 +554,7 @@ void MainWindow::checkAsterisksStatus()
 
 void MainWindow::checkUpdateAutoStatus()
 {
-    //6.######## updateAuto
+    //7.######## updateAuto
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -585,7 +582,7 @@ void MainWindow::checkUpdateAutoStatus()
 
 void MainWindow::checkHibernationStatus()
 {
-    //7.######## hibernation
+    //8.######## hibernation
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -607,7 +604,7 @@ void MainWindow::checkHibernationStatus()
 
 void MainWindow::checkLockScreenStatus()
 {
-    //8.######## lockScreen
+    //9.######## lockScreen
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -630,7 +627,7 @@ void MainWindow::checkLockScreenStatus()
 
 void MainWindow::checkLoginSoundStatus()
 {
-    //9.######## loginSound
+    //10.######## loginSound
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");

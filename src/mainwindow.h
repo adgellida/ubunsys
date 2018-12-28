@@ -37,14 +37,16 @@ public:
     //4.########
     void checkSudoWithoutPassStatus();
     //5.########
-    void checkAsterisksStatus();
+    void checkTextEditor();
     //6.########
-    void checkUpdateAutoStatus();
+    void checkAsterisksStatus();
     //7.########
-    void checkHibernationStatus();
+    void checkUpdateAutoStatus();
     //8.########
-    void checkLockScreenStatus();
+    void checkHibernationStatus();
     //9.########
+    void checkLockScreenStatus();
+    //10.########
     void checkLoginSoundStatus();
 
 public slots:
