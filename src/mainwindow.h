@@ -96,8 +96,6 @@ private slots:
     void on_importSudoersFileButton_clicked();
     void on_installMainlineKernels_clicked();
     void on_runGrubcustomizerButton_clicked();
-    void on_aptselect_US_clicked();
-    void on_aptselect_ES_clicked();
     void on_openSourcesListButton_clicked();
     void on_backupSourcesListButton_clicked();
     void on_importSourcesListButton_clicked();
@@ -123,7 +121,6 @@ private slots:
     void on_checkBoxUpdateNotif_clicked(bool checked);
     void on_checkBoxSudoWOPass_clicked(bool checked);
     void on_checkBoxAsterisks_clicked(bool checked);
-    //void on_checkBoxUpdateAuto_clicked(bool checked);
     void on_checkBoxHibernation_clicked(bool checked);
     void on_checkBoxLockScreen_clicked(bool checked);
     void on_checkBoxHiddenStartupItems_clicked(bool checked);

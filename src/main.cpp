@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
            "test -d ~/.ubunsys/configurations || mkdir -p ~/.ubunsys/configurations && "
            "exit");
 
-    //Database initialization
+    //Database initialization begin
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
@@ -34,21 +34,43 @@ int main(int argc, char *argv[])
 
         db.createTable();   // Creates a table if it doens't exist. Otherwise, it will use existing table.
 
-        //initializing values of database
-
-        db.addNameStatus("firstTimeCreationDB", "false");
-        db.addNameStatus("apt-fastInstalled", "false");
-        db.addNameStatus("language", "English");
-        db.addNameStatus("theme", "Default");
+        //initializing values of database begin
+        //1
+        db.addNameStatus("firewallStatus", "Disabled");
+        //2
+        db.addNameStatus("checkHiddenStartupItemsStatus", "Disabled");
+        //3
+        db.addNameStatus("updateNotif", "false");
+        //4
+        db.addNameStatus("SudoWOPass", "Disabled");
+        //5
         db.addNameStatus("textEditor", "nano");
-        db.addNameStatus("asterisks", "false");
-        db.addNameStatus("hibernation", "false");
-        db.addNameStatus("LockScreen", "false");
-        db.addNameStatus("LoginSound", "false");
-        db.addNameStatus("SudoWOPass", "false");
-        db.addNameStatus("updateAuto", "false");
+        //6
+        db.addNameStatus("asterisks", "Disabled");
 
-        //initializing values of database
+
+
+
+
+
+
+
+        db.addNameStatus("firstTimeCreationDB", "false");               //2
+
+        db.addNameStatus("apt-fastInstalled", "false");                 //2
+
+        db.addNameStatus("language", "English");                        //2
+
+        db.addNameStatus("theme", "Default");                           //2
+
+
+        db.addNameStatus("hibernation", "Disabled");                    //2
+        db.addNameStatus("lockScreen", "Enabled");                      //2
+        db.addNameStatus("loginSound", "Enabled");                      //2
+                             //2
+        db.addNameStatus("updateAuto", "Disabled");                     //2
+
+
         }
 
         else qDebug() << "Database exists, no new is necessary";
@@ -58,6 +80,9 @@ int main(int argc, char *argv[])
     {
         qDebug() << "Database is not open!";
     }
+
+    //Database initialization end
+
 
     //SETTINGS
 /*
@@ -103,21 +128,7 @@ int main(int argc, char *argv[])
     //theme end
 
 
-    //textEditor begin
 
-    QString actualTextEditorSelected = db.getStatus("textEditor");
-
-    QFile file (QDir::homePath() + "/.ubunsys/configurations/actualTextEditor.cfg");
-    if ( file.open(QIODevice::ReadWrite) )
-    {
-        QTextStream stream( &file );
-        stream << actualTextEditorSelected << endl;
-    }
-
-    system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && "
-           "exit");
-
-    //textEditor end
 
     MainWindow w;
     w.show();

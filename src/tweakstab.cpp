@@ -102,38 +102,6 @@ void MainWindow::on_importSourcesListButton_clicked()
 
 }
 
-//##apt-select
-
-void MainWindow::on_aptselect_US_clicked()
-{
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
-           " && "
-           "apt-select --country US"
-           " && "
-           "echo Push enter or close this terminal window"
-           " && "
-           "read"
-           " && "
-           "exit"
-           "; exec bash'");
-}
-
-void MainWindow::on_aptselect_ES_clicked()
-{
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-select"
-           " && "
-           "apt-select --country ES"
-           " && "
-           "echo Push enter or close this terminal window"
-           " && "
-           "read"
-           " && "
-           "exit"
-           "; exec bash'");
-}
-
 //##updateNotification
 
 void MainWindow::on_checkBoxUpdateNotif_clicked(bool checked)
@@ -174,7 +142,7 @@ void MainWindow::on_checkBoxUpdateNotif_clicked(bool checked)
 
 void MainWindow::on_checkBoxSudoWOPass_clicked(bool checked)
 {
-    if (checked != false){
+    if (checked == true){
         qDebug() << checked;
 
         ui->statusBar->showMessage(tr("Enabling sudo without pass"));
@@ -640,70 +608,46 @@ void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
     if (db.isOpen())
     {
 
+        if (checked == true){
+            qDebug() << checked;
 
-    //Compare if success is wrote
+            ui->statusBar->showMessage(tr("Doing visible asterisks"));
 
-    QFile file(QDir::homePath() + "/.ubunsys/configurations/ubunsys.log");
+            system("xterm -e '"
+                   "~/.ubunsys/downloads/ubuntuScripts-master/021.doVisibleAsterisks"
+                   " && "
+                   "exit"
+                   "; exec bash'");
 
-    QString line1;
-    if (file.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&file);
-        while (!stream.atEnd()){
-            line1.append(stream.readLine());
-        }
-    }
-    file.close();
+            ui->statusBar->showMessage(tr("Done. Now select another action"));
 
-    QString line2 = "success";
-
-    if (checked == true){
-        qDebug() << checked;
-
-        ui->statusBar->showMessage(tr("Doing visible asterisks"));
-
-        system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/021.doVisibleAsterisks"
-               " && "
-               "exit"
-               "; exec bash'");
-
-        if (line1 == line2) {
-            db.updateStatus("asterisks", "true");
-            qDebug() << "Debe star activado";
         }
 
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
+        else if (checked == false){
+            qDebug() << checked;
 
-        file.remove();
+            ui->statusBar->showMessage(tr("Doing invisible asterisks"));
+
+            system("xterm -e '"
+                   "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
+                   " && "
+                   "exit"
+                   "; exec bash'");
+
+            ui->statusBar->showMessage(tr("Done. Now select another action"));
+
+        }
     }
 
-    else if (checked == false){
-        qDebug() << checked;
+    MainWindow::checkAsterisksStatus();
 
-        ui->statusBar->showMessage(tr("Doing invisible asterisks"));
-
-        system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
-               " && "
-               "exit"
-               "; exec bash'");
-
-        if (line1 == line2) db.updateStatus("asterisks", "false");
-
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
-        file.remove();
-    }
-    }
-  MainWindow::checkAsterisksStatus();
-
-  }
+}
 
 //##hibernation
 
 void MainWindow::on_checkBoxHibernation_clicked(bool checked)
 {
-    if (checked != false){
+    if (checked == true){
         qDebug() << checked;
 
         ui->statusBar->showMessage(tr("Hibernation enabled"));
@@ -739,7 +683,7 @@ void MainWindow::on_checkBoxHibernation_clicked(bool checked)
 
 void MainWindow::on_checkBoxLockScreen_clicked(bool checked)
 {
-    if (checked != false){
+    if (checked == true){
         qDebug() << checked;
 
         ui->statusBar->showMessage(tr("Lock screen Enabled"));
@@ -775,7 +719,7 @@ void MainWindow::on_checkBoxLockScreen_clicked(bool checked)
 
 void MainWindow::on_checkBoxLoginSound_clicked(bool checked)
 {
-    if (checked != false){
+    if (checked == true){
         qDebug() << checked;
 
         ui->statusBar->showMessage(tr("Login Sound Enabled"));

@@ -153,43 +153,6 @@ void MainWindow::on_installMainlineKernels_clicked()
     ui->statusBar->showMessage(tr("ukuu opened. Select another action."));
 }
 
-//##updateAuto
-/*
-void MainWindow::on_checkBoxUpdateAuto_clicked(bool checked)
-{
-    if (checked != false){
-        qDebug() << checked;
-
-        ui->statusBar->showMessage(tr("Adding update auto"));
-
-        system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/065.add_to_root_crontab"
-               " && "
-               "exit"
-               "; exec bash'");
-
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
-    }
-
-    else if (checked == false){
-        qDebug() << checked;
-
-          ui->statusBar->showMessage(tr("Erasing update auto"));
-
-          system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
-                 " && "
-                 "exit"
-                 "; exec bash'");
-
-          ui->statusBar->showMessage(tr("Done. Now select another action"));
-    }
-
-    MainWindow::checkUpdateAutoStatus();
-
-}
-*/
 void MainWindow::on_comboBoxUpdate_currentIndexChanged(const QString &arg1)
 {
     if (arg1 == "Disabled"){
@@ -210,7 +173,7 @@ void MainWindow::on_comboBoxUpdate_currentIndexChanged(const QString &arg1)
         system("xterm -e '"
                "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
                " && "
-               "~/.ubunsys/downloads/ubuntuScripts-master/065.add_to_root_crontab"
+               "~/.ubunsys/downloads/ubuntuScripts-master/065.add_to_root_crontab_each_hour"
                " && "
                "exit"
                "; exec bash'");
@@ -229,7 +192,7 @@ void MainWindow::on_comboBoxUpdate_currentIndexChanged(const QString &arg1)
                "; exec bash'");
     }
 
-    //MainWindow::checkUpdateAutoStatus();
+    MainWindow::checkUpdateAutoStatus();
 }
 
 //    Developer
