@@ -41,7 +41,7 @@ Download from official mirrors
 	<a href="http://www.somsubhra.com/github-release-stats/?username=adgellida&repository=ubunsys" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/github-release-stats.png" alt="github release stats"></a>
 </p>
 
-**Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/README_es_ES.md)**
+**Para Español pulsar [aqui](https://github.com/adgellida/ubunsys/blob/master/READMEesES.md)**
 
 Gives the user a powerful control center to toggle on and off many system settings in Ubuntu, it is able to change system configurations, system updates, executable improvements, small system fixes, and more at the touch of a button.
 

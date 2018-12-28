@@ -1,8 +1,8 @@
 #!/bin/bash
 
 url=https://github.com/adgellida/ubuntuScripts
-file1=~/.ubunsys/updates/ubuntuScripts_check_version/now_check_commit_version.txt
-file2=~/.ubunsys/updates/ubuntuScripts_check_version/last_check_commit_version.txt
+file1=~/.ubunsys/updates/ubuntuScripts_check_version/ubuntuScripts_now_check_commit_version.txt
+file2=~/.ubunsys/updates/ubuntuScripts_check_version/ubuntuScripts_last_check_commit_version.txt
 message1="ubuntuScripts are in the latest version. No updates required. 1/4 ok."
 message2="Updating ubuntuscripts. Please wait... Stage 1/4."
 message3="ubuntuscripts was updated to latest version. 1/4 ok."
