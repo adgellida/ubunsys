@@ -1,5 +1,5 @@
-At this moment ubunsys is out of service and not works correctly.
-When it works ok I'll notice here.
+At this moment ubunsys is out of service and not works correctly,
+when it works ok I'll notice here
 =============================================
 
 Download from official mirrors

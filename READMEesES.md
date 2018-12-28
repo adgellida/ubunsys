@@ -1,5 +1,5 @@
-En este momento ubunsys está fuera de servicio y no funciona correctamente.
-Cuando funcione se avisará por aquí.
+En este momento ubunsys está fuera de servicio y no funciona correctamente,
+cuando funcione se avisará por aquí
 =============================================
 
 Descarga desde fuentes oficiales
