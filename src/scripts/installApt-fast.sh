@@ -8,12 +8,11 @@ message3="apt-fast was already installed. No installation required. 3/4 ok."
 #sleep 2
 #echo " "
 
-if [ $(dpkg-query -W -f='${Status}' apt-fast 2>/dev/null | grep -c "ok installed") -eq 0 ]
-then
+if [ $(dpkg-query -W -f='${Status}' apt-fast 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
 
-sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
-.timeout 2000
-UPDATE config SET status = "false" WHERE name = "checkHiddenStartupItemsStatus";
+	sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+	.timeout 2000
+	UPDATE config SET status = "false" WHERE name = "apt-fastInstalled";
 END_SQL
 
 	echo "$message1"
@@ -31,7 +30,7 @@ END_SQL
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-UPDATE config SET status = "true" WHERE name = "checkHiddenStartupItemsStatus";
+UPDATE config SET status = "true" WHERE name = "apt-fastInstalled";
 END_SQL
 
 else
@@ -39,9 +38,9 @@ else
 	echo "$message3" >> ~/.ubunsys/updates/updateLog.log
 	#sleep 2
 
-sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
-.timeout 2000
-UPDATE config SET status = "true" WHERE name = "checkHiddenStartupItemsStatus";
+	sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+	.timeout 2000
+	UPDATE config SET status = "true" WHERE name = "apt-fastInstalled";
 END_SQL
 
 fi

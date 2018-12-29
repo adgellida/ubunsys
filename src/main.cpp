@@ -24,7 +24,6 @@ int main(int argc, char *argv[])
 
     if (db.isOpen())
     {
-        //db.removeAllNames();
 
         //13.######## firstTimeCreationDB
         //######## Selection
@@ -38,6 +37,7 @@ int main(int argc, char *argv[])
         db.createTable();   // Creates a table if it doens't exist. Otherwise, it will use existing table.
 
         //initializing values of database begin
+        //db.removeAllNames();
         //1.########
         db.addNameStatus("firewallStatus", "Disabled");
         //2.########
@@ -69,15 +69,13 @@ int main(int argc, char *argv[])
         //15.########
         db.addNameStatus("appUpdatePresent", "false");
         //16.########
-        db.addNameStatus("ubuntuScripts_now_check_commit_version", "NULL");
+        db.addNameStatus("ubuntupackages_remote_commit_version", "NULL");
         //17.########
-        db.addNameStatus("ubuntuScripts_last_check_commit_version", "NULL");
+        db.addNameStatus("ubuntupackages_previous_commit_version", "NULL");
         //18.########
-        db.addNameStatus("ubunsys_latest_version", "NULL");
+        db.addNameStatus("ubuntuScripts_remote_commit_version", "NULL");
         //19.########
-        db.addNameStatus("ubunsys_installed_version", "NULL");
-        //20.########
-        db.addNameStatus("ubunsys_latest_version2", "NULL");
+        db.addNameStatus("ubuntuScriptss_previous_commit_version", "NULL");
 
         }
 

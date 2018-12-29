@@ -21,7 +21,6 @@ MainWindow::MainWindow(QWidget *parent) :
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-
     //Configure tabs open begin
 
     QTabWidget *tabw = ui->tabWidget;
@@ -78,33 +77,14 @@ MainWindow::MainWindow(QWidget *parent) :
     system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
            "test -d ~/.ubunsys/scripts || mkdir -p ~/.ubunsys/downloads && "
            "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
-           "test -d ~/.ubunsys/downloads/ubuntuScripts-master || mkdir -p ~/.ubunsys/downloads/ubuntuScripts-master && "
            "test -d ~/.ubunsys/files || mkdir -p ~/.ubunsys/files && "
-           "test -d ~/.ubunsys/updates/ubuntupackages_check_version || mkdir -p ~/.ubunsys/updates/ubuntupackages_check_version && "
-           "test -d ~/.ubunsys/updates/ubuntuScripts_check_version || mkdir -p ~/.ubunsys/updates/ubuntuScripts_check_version && "
-           "test -d ~/.ubunsys/updates/ubunsys_check_version || mkdir -p ~/.ubunsys/updates/ubunsys_check_version && "
            "test -d ~/.ubunsys/backups/scriptsFiles || mkdir -p ~/.ubunsys/backups/scriptsFiles && "
            "test -d ~/.ubunsys/backups/sudoersFiles || mkdir -p ~/.ubunsys/backups/sudoersFiles && "
-           "test -d ~/.ubunsys/status || mkdir -p ~/.ubunsys/status && "
            "rm -Rf ~/.ubunsys/updates/updateLog.log && "
            "touch ~/.ubunsys/updates/updateLog.log && "
            "exit");
 
     //Creating folders end
-
-    //Silent updates
-
-    //######## Update ubuntuScripts
-
-    system("/usr/share/ubunsys/scripts/updateUbuntuScripts.sh");
-
-    //######## Update ubuntupackages
-
-    system("/usr/share/ubunsys/scripts/updateUbuntupackages.sh");
-
-    //######## apt-fast checking notification
-
-    system("/usr/share/ubunsys/scripts/apt-fastCheckingNotification.sh");
 
     //Set main GUI position
 
@@ -122,35 +102,24 @@ MainWindow::MainWindow(QWidget *parent) :
     PreferencesDialogUi = new PreferencesDialog ();//////////////
     connect(PreferencesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePreferencesDialog()));////////////////
 
-    //Checks if ubunsys has an update and show message if proceed
+    //Checks and updates at beginning
 
-    QString status = db.getStatus("appUpdatePresent");
+    //######## checkUpdateUbuntuScripts
 
-    if (status == "false"){
+    //system("/usr/share/ubunsys/scripts/checkUpdateUbuntuScripts.sh");
 
-        // do nothing
-    }
+    //######## checkUpdateUbuntupackages
 
-    else if (status == "true"){
+    //system("/usr/share/ubunsys/scripts/checkUpdateUbuntupackages.sh");
 
-        QMessageBox msgBox;
-        msgBox.setWindowTitle("ubunsys app update present");
-        msgBox.setText("There's an update, would you like to install it?");
-        msgBox.setStandardButtons(QMessageBox::Yes);
-        msgBox.addButton(QMessageBox::No);
-        msgBox.setDefaultButton(QMessageBox::No);
-        if(msgBox.exec() == QMessageBox::Yes){
-            on_actionUpdateApp_triggered();
-        }
-        else {
-          // do nothing
-        }
-    }
+    //######## checkApt-fastInstallation
+
+    system("/usr/share/ubunsys/scripts/checkApt-fastInstallation.sh");
 
     //Checks if apt-fast is installed and show message if proceed
 
     QString status2 = db.getStatus("apt-fastInstalled");
-
+     qDebug() << "ESTADOOOO" + status2;
     if (status2 == "true"){
 
         // do nothing
@@ -170,15 +139,41 @@ MainWindow::MainWindow(QWidget *parent) :
         else {
           // do nothing
         }
+        system("/usr/share/ubunsys/scripts/installApt-fast.sh");
     }
 
-    //######## apt-fast checking
+    //######## checkUbunsys
 
-    system("/usr/share/ubunsys/scripts/apt-fastChecking.sh");
+    system("/usr/share/ubunsys/scripts/checkUbunsys.sh");
 
-    //######## Update ubunsys
+    //Checks if ubunsys has an update and show message if proceed
 
-    system("/usr/share/ubunsys/scripts/updateUbunsys.sh");
+    QString status = db.getStatus("appUpdatePresent");
+
+    if (status == "false"){
+
+        // do nothing
+    }
+
+    else if (status == "true"){
+
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("ubunsys app update present");
+        msgBox.setText("There's an update, would you like to install it?");
+        msgBox.setStandardButtons(QMessageBox::Yes);
+        msgBox.addButton(QMessageBox::No);
+        msgBox.setDefaultButton(QMessageBox::No);
+        if(msgBox.exec() == QMessageBox::Yes){
+            on_actionUpdateApp_triggered();     //launch update ubunsys app
+        }
+        else {
+          // do nothing
+        }
+    }
+
+
+
+
 
     //######## Show update output
 
@@ -323,10 +318,18 @@ void MainWindow::on_actionSeeReleases_triggered()
 
 void MainWindow::on_actionUpdateApp_triggered()
 {
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
 
-    QFile file2 (QDir::homePath() + "/.ubunsys/updates/updatePresent.txt");
+    QString status = db.getStatus("appUpdatePresent");
 
-    if(file2.exists()){
+    if (status == "false"){
+
+        QMessageBox::information(this,tr("Notification"),tr("You are running the latest version, no update needed. Remember that every time you open the app an update notification is shown if it exists."));
+
+    }
+
+    else if (status == "true"){
 
         ui->statusBar->showMessage(tr("Put sudo pass to try to update ubunsys through PPA"));
 
@@ -336,17 +339,9 @@ void MainWindow::on_actionUpdateApp_triggered()
                 "exit"
                 "; exec bash'");
 
-        //QProcess::startDetached("xterm -e \"~/.ubunsys/downloads/ubuntupackages-master/apps1/ubunsys && exit; exec bash\"");
-
         QMessageBox::information(this,tr("ubunsys app update"),tr("Now you have to close & reopen app \n") + tr("and check if update is ok."));
 
         ui->statusBar->showMessage(tr("Reopen app when terminal closes to check if ubunsys was updated to latest version."));
-    }
-
-    else{
-
-    QMessageBox::information(this,tr("Notification"),tr("You are running the latest version, no update needed. Remember that every time you open the app an update notification is shown if it exists."));
-
     }
 }
 
