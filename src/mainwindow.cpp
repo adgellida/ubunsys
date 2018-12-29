@@ -16,61 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
     qApp, SLOT(aboutQt()));
 
-    //Database declarations
-
-    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
-    DbManager db(path);
-
-    //Configure tabs open begin
-
-    QTabWidget *tabw = ui->tabWidget;
-    tabw->setTabText(0, "");
-    tabw->setTabText(1, "");
-    tabw->setTabText(2, "");
-    tabw->setTabText(3, "");
-    tabw->setTabText(4, "");
-    tabw->setTabText(5, "");
-    tabw->setTabText(6, "");
-    tabw->setTabText(7, "");
-
-    QTabBar *tabbar = tabw->tabBar();
-
-    QLabel *lbl1 = new QLabel();
-    lbl1->setStyleSheet("QLabel { background:transparent }");
-    lbl1->setText("Packages");
-    tabbar->setTabButton(0, QTabBar::LeftSide, lbl1);
-
-    QLabel *lbl2 = new QLabel();
-    lbl2->setStyleSheet("QLabel { background:transparent }");
-    lbl2->setText("Sources");
-    tabbar->setTabButton(1, QTabBar::LeftSide, lbl2);
-
-    QLabel *lbl3 = new QLabel();
-    lbl3->setStyleSheet("QLabel { background:transparent }");
-    lbl3->setText("Updates");
-    tabbar->setTabButton(2, QTabBar::LeftSide, lbl3);
-
-    QLabel *lbl4 = new QLabel();
-    lbl4->setStyleSheet("QLabel { background:transparent }");
-    lbl4->setText("Fixes");
-    tabbar->setTabButton(3, QTabBar::LeftSide, lbl4);
-
-    QLabel *lbl5 = new QLabel();
-    lbl5->setStyleSheet("QLabel { background:transparent }");
-    lbl5->setText("Security");
-    tabbar->setTabButton(4, QTabBar::LeftSide, lbl5);
-
-    QLabel *lbl6 = new QLabel();
-    lbl6->setStyleSheet("QLabel { background:transparent }");
-    lbl6->setText("Power");
-    tabbar->setTabButton(5, QTabBar::LeftSide, lbl6);
-
-    QLabel *lbl7 = new QLabel();
-    lbl7->setStyleSheet("QLabel { background:transparent }");
-    lbl7->setText("Extras");
-    tabbar->setTabButton(6, QTabBar::LeftSide, lbl7);
-
-    //Configure tabs open end
+    MainWindow::initializeGUI();
 
     //Creating folders begin
 
@@ -85,11 +31,6 @@ MainWindow::MainWindow(QWidget *parent) :
            "exit");
 
     //Creating folders end
-
-    //Set main GUI position
-
-    ui->tabWidget->setCurrentIndex(1);
-    ui->tabWidget_3->setCurrentIndex(0);
 
     //Create extra open on future dialogs
 
@@ -106,74 +47,19 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //######## checkUpdateUbuntuScripts
 
-    //system("/usr/share/ubunsys/scripts/checkUpdateUbuntuScripts.sh");
+    system("/usr/share/ubunsys/scripts/checkUpdateUbuntuScripts.sh");
 
     //######## checkUpdateUbuntupackages
 
-    //system("/usr/share/ubunsys/scripts/checkUpdateUbuntupackages.sh");
+    system("/usr/share/ubunsys/scripts/checkUpdateUbuntupackages.sh");
 
-    //######## checkApt-fastInstallation
+    //######## checkaptfastInstalled
 
-    system("/usr/share/ubunsys/scripts/checkApt-fastInstallation.sh");
-
-    //Checks if apt-fast is installed and show message if proceed
-
-    QString status2 = db.getStatus("apt-fastInstalled");
-     qDebug() << "ESTADOOOO" + status2;
-    if (status2 == "true"){
-
-        // do nothing
-    }
-
-    else if (status2 == "false"){
-
-        QMessageBox msgBox;
-        msgBox.setWindowTitle("Warning");
-        msgBox.setText("We need extra dependencies:\napt-fast, we go to install it");
-        msgBox.setStandardButtons(QMessageBox::Yes);
-        msgBox.addButton(QMessageBox::No);
-        msgBox.setDefaultButton(QMessageBox::No);
-        if(msgBox.exec() == QMessageBox::Yes){
-            // do nothing
-        }
-        else {
-          // do nothing
-        }
-        system("/usr/share/ubunsys/scripts/installApt-fast.sh");
-    }
+    MainWindow::checkaptfastInstalled();
 
     //######## checkUbunsys
 
-    system("/usr/share/ubunsys/scripts/checkUbunsys.sh");
-
-    //Checks if ubunsys has an update and show message if proceed
-
-    QString status = db.getStatus("appUpdatePresent");
-
-    if (status == "false"){
-
-        // do nothing
-    }
-
-    else if (status == "true"){
-
-        QMessageBox msgBox;
-        msgBox.setWindowTitle("ubunsys app update present");
-        msgBox.setText("There's an update, would you like to install it?");
-        msgBox.setStandardButtons(QMessageBox::Yes);
-        msgBox.addButton(QMessageBox::No);
-        msgBox.setDefaultButton(QMessageBox::No);
-        if(msgBox.exec() == QMessageBox::Yes){
-            on_actionUpdateApp_triggered();     //launch update ubunsys app
-        }
-        else {
-          // do nothing
-        }
-    }
-
-
-
-
+    MainWindow::checkUbunsys();
 
     //######## Show update output
 
@@ -204,6 +90,8 @@ MainWindow::~MainWindow()
     delete PreferencesDialogUi;////////////////
     delete ui;
 }
+
+//#############FUNCTION DECLARATIONS
 
 void MainWindow::on_actionManualUpdateDialog_triggered()//////////////////////
 {
@@ -386,6 +274,98 @@ void MainWindow::on_eraseCronButton_clicked()
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+
+void MainWindow::checkUbunsys(){
+
+    system("/usr/share/ubunsys/scripts/checkUbunsys.sh");
+
+    //Checks if ubunsys has an update and show message if proceed
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("appUpdatePresent");
+
+    if (status == "false"){
+
+        // do nothing
+    }
+
+    else if (status == "true"){
+
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("ubunsys app update present");
+        msgBox.setText("There's an update, would you like to install it?");
+        msgBox.setStandardButtons(QMessageBox::Yes);
+        msgBox.addButton(QMessageBox::No);
+        msgBox.setDefaultButton(QMessageBox::No);
+        if(msgBox.exec() == QMessageBox::Yes){
+            on_actionUpdateApp_triggered();     //launch update ubunsys app
+        }
+        else {
+          // do nothing
+        }
+    }
+}
+
+void MainWindow::initializeGUI(){
+
+    //Configure tabs open begin
+
+    QTabWidget *tabw = ui->tabWidget;
+    tabw->setTabText(0, "");
+    tabw->setTabText(1, "");
+    tabw->setTabText(2, "");
+    tabw->setTabText(3, "");
+    tabw->setTabText(4, "");
+    tabw->setTabText(5, "");
+    tabw->setTabText(6, "");
+    tabw->setTabText(7, "");
+
+    QTabBar *tabbar = tabw->tabBar();
+
+    QLabel *lbl1 = new QLabel();
+    lbl1->setStyleSheet("QLabel { background:transparent }");
+    lbl1->setText("Packages");
+    tabbar->setTabButton(0, QTabBar::LeftSide, lbl1);
+
+    QLabel *lbl2 = new QLabel();
+    lbl2->setStyleSheet("QLabel { background:transparent }");
+    lbl2->setText("Sources");
+    tabbar->setTabButton(1, QTabBar::LeftSide, lbl2);
+
+    QLabel *lbl3 = new QLabel();
+    lbl3->setStyleSheet("QLabel { background:transparent }");
+    lbl3->setText("Updates");
+    tabbar->setTabButton(2, QTabBar::LeftSide, lbl3);
+
+    QLabel *lbl4 = new QLabel();
+    lbl4->setStyleSheet("QLabel { background:transparent }");
+    lbl4->setText("Fixes");
+    tabbar->setTabButton(3, QTabBar::LeftSide, lbl4);
+
+    QLabel *lbl5 = new QLabel();
+    lbl5->setStyleSheet("QLabel { background:transparent }");
+    lbl5->setText("Security");
+    tabbar->setTabButton(4, QTabBar::LeftSide, lbl5);
+
+    QLabel *lbl6 = new QLabel();
+    lbl6->setStyleSheet("QLabel { background:transparent }");
+    lbl6->setText("Power");
+    tabbar->setTabButton(5, QTabBar::LeftSide, lbl6);
+
+    QLabel *lbl7 = new QLabel();
+    lbl7->setStyleSheet("QLabel { background:transparent }");
+    lbl7->setText("Extras");
+    tabbar->setTabButton(6, QTabBar::LeftSide, lbl7);
+
+    //Configure tabs open end
+
+    //Set main GUI position
+
+    ui->tabWidget->setCurrentIndex(1);
+    ui->tabWidget_3->setCurrentIndex(0);
+}
+
 
 //1.########
 void MainWindow::checkFirewallStatus()
@@ -637,6 +617,36 @@ void MainWindow::checkLoginSoundStatus()
     else if (status == "Disabled"){
 
         ui->checkBoxLoginSound->setChecked(false);
+    }
+
+}
+
+//14.########
+
+void MainWindow::checkaptfastInstalled(){
+
+    //14.######## checkApt-fastInstallation
+    //######## Status
+    system("/usr/share/ubunsys/scripts/checkApt-fastInstallation.sh");
+
+    //Checks if apt-fast is installed and show message if proceed
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("apt-fastInstalled");
+
+    if (status == "true"){
+
+        // do nothing
+    }
+
+    else if (status == "false"){
+
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Warning");
+        msgBox.setText("We need extra dependencies:\napt-fast, we go to install it");
+        msgBox.exec();
+        system("/usr/share/ubunsys/scripts/installApt-fast.sh");
     }
 
 }

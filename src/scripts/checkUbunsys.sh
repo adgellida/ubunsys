@@ -26,18 +26,20 @@ installed_version=${installed_version_cleaned_characters1/Version: /}
 #Comparing
 
 if [ "$remote_version" == "$installed_version" ]; then
-	echo "$message1"
-	echo "$message1" >> ~/.ubunsys/updates/updateLog.log
-	sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
-	.timeout 2000
-	UPDATE config SET status = "false" WHERE name = "appUpdatePresent";
+	
+echo "$message1"
+echo "$message1" >> ~/.ubunsys/updates/updateLog.log
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "false" WHERE name = "appUpdatePresent";
 END_SQL
 
 else
-	echo "$message2"	
-	sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
-	timeout 2000
-	UPDATE config SET status = "true" WHERE name = "appUpdatePresent";
+
+echo "$message2"	
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+timeout 2000
+UPDATE config SET status = "true" WHERE name = "appUpdatePresent";
 END_SQL
 
 fi

@@ -26,6 +26,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+    void initializeGUI();
+    void checkUbunsys();
+
+
     //0.######## CHECK METHODS
     void checkAllStatus();
     //1.########
@@ -48,7 +53,8 @@ public:
     void checkLockScreenStatus();
     //10.########
     void checkLoginSoundStatus();
-
+    //14.########
+    void checkaptfastInstalled();
 public slots:
 
     //void closePackagesDialog();///////////////

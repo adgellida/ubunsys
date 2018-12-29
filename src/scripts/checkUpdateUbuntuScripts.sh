@@ -5,7 +5,6 @@ message1="ubuntuScripts are in the latest version. No updates required. 2/4 ok."
 message2="Updating ubuntuScripts. Please wait... Stage 2/4."
 message3="ubuntuScripts was updated to latest version. 2/4 ok."
 message4="Error downloading. Holding your ubuntuScripts version. 2/4 fail."
-updateStatus="NoIntentToInstallYet"
 
 #getting remote commit version
 
@@ -20,22 +19,26 @@ END_SQL
 
 #getting previous saved commit version
 
-previous_commit_version=`sqlite3 ~/.ubunsys/configurations/config.db "SELECT status FROM config WHERE name = 'ubuntuScripts_previous_commit_version'" `
+previous_commit_version="$(sqlite3 ~/.ubunsys/configurations/config.db "SELECT status FROM config WHERE name = 'ubuntuScripts_previous_commit_version')"
 
 #comparing and executing
 
 if [ "$previous_commit_version" == "$remote_commit_version" ]; then
-    echo "$message1"
-    echo "$message1" >> ~/.ubunsys/updates/updateLog.log
-else
-    test -d ~/.ubunsys || mkdir -p ~/.ubunsys
-	test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads
-	echo "$message2"
 
-	wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/master.zip &&
-	rm -Rf ~/.ubunsys/downloads/ubuntuScripts-master &&
-	unzip ~/.ubunsys/master.zip -d ~/.ubunsys/downloads &>/dev/null &&
-	chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-master &&
-	rm ~/.ubunsys/master.zip &&
-	echo "$message3" >> ~/.ubunsys/updates/updateLog.log || echo "$message4" >> ~/.ubunsys/updates/updateLog.log
+echo "$message1"
+echo "$message1" >> ~/.ubunsys/updates/updateLog.log
+
+else
+
+test -d ~/.ubunsys || mkdir -p ~/.ubunsys
+test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads
+echo "$message2"
+
+wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/master.zip &&
+rm -Rf ~/.ubunsys/downloads/ubuntuScripts-master &&
+unzip ~/.ubunsys/master.zip -d ~/.ubunsys/downloads &>/dev/null &&
+chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-master &&
+rm ~/.ubunsys/master.zip &&
+echo "$message3" >> ~/.ubunsys/updates/updateLog.log || echo "$message4" >> ~/.ubunsys/updates/updateLog.log
+
 fi
