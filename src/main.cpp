@@ -28,11 +28,11 @@ int main(int argc, char *argv[])
         //13.######## firstTimeCreationDB
         //######## Selection
 
-        //QString firstTimeCreationDB = db.getStatus("firstTimeCreationDB");
+        QString firstTimeCreationDB = db.getStatus("firstTimeCreationDB");
 
-        //if(firstTimeCreationDB == "true"){
+        if(firstTimeCreationDB == "true"){
 
-        //qDebug() << "Creating database for first use";
+        qDebug() << "Creating database for first use";
 
         db.createTable();   // Creates a table if it doens't exist. Otherwise, it will use existing table.
 
@@ -77,9 +77,9 @@ int main(int argc, char *argv[])
         //19.########
         db.addNameStatus("ubuntuScripts_previous_commit_version", "NULL");
 
-        //}
+        }
 
-        //else qDebug() << "Database exists, no new is necessary";
+        else qDebug() << "Database exists, no new is necessary";
 
     }
     else

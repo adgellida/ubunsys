@@ -37,18 +37,17 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Create extra open on future dialogs end
 
+    //######## showMessageAtInit
+
+    MainWindow::showMessageAtInit();
+
     //######## checkAllStatus
 
     MainWindow::checkAllStatus();
 
     //######## showUpdateOutput
 
-    MainWindow::showUpdateOutput();
-
-    //######## showMessageAtInit
-
-    MainWindow::showMessageAtInit();
-
+    //MainWindow::showUpdateOutput();
 }
 
 MainWindow::~MainWindow()
@@ -61,21 +60,11 @@ MainWindow::~MainWindow()
 
 //#############FUNCTION DECLARATIONS
 
-void MainWindow::showMessageAtInit()
-{
-
-    QMessageBox msgBox;
-    msgBox.setWindowTitle("Warning");
-    msgBox.setText("This version is alpha release.\nContains a lot of bugs.\nParticipate reporting them and demanding new functionalities.\nThanks.");
-    msgBox.exec();
-    system("/usr/share/ubunsys/scripts/installApt-fast.sh");
-
-}
 void MainWindow::checkAllStatus()
 {
+    MainWindow::checkaptfastInstalled();
     system("/usr/share/ubunsys/scripts/checkUpdateUbuntuScripts.sh");
     system("/usr/share/ubunsys/scripts/checkUpdateUbuntupackages.sh");
-    MainWindow::checkaptfastInstalled();
     MainWindow::checkUbunsys();
 
     //1.########
@@ -100,14 +89,24 @@ void MainWindow::checkAllStatus()
     MainWindow::checkLoginSoundStatus();
 }
 
+void MainWindow::showMessageAtInit()
+{
+    QMessageBox msgBox;
+    msgBox.setWindowTitle("Warning");
+    msgBox.setText("This version is alpha release.\nContains a lot of bugs.\nParticipate reporting them and demanding new functionalities.\nThanks.");
+    msgBox.exec();
+    system("/usr/share/ubunsys/scripts/installApt-fast.sh");
+}
+
 void MainWindow::createFoldersFiles()
 {
     system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
-           "test -d ~/.ubunsys/scripts || mkdir -p ~/.ubunsys/downloads && "
+           "test -d ~/.ubunsys/scripts || mkdir -p ~/.ubunsys/scripts && "
            "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
            "test -d ~/.ubunsys/files || mkdir -p ~/.ubunsys/files && "
            "test -d ~/.ubunsys/backups/scriptsFiles || mkdir -p ~/.ubunsys/backups/scriptsFiles && "
            "test -d ~/.ubunsys/backups/sudoersFiles || mkdir -p ~/.ubunsys/backups/sudoersFiles && "
+           "test -d ~/.ubunsys/updates || mkdir -p ~/.ubunsys/updates && "
            "rm -Rf ~/.ubunsys/updates/updateLog.log && "
            "touch ~/.ubunsys/updates/updateLog.log && "
            "exit");
@@ -674,7 +673,7 @@ void MainWindow::checkaptfastInstalled(){
 
     if (status == "true"){
 
-    system("echo apt-fast was already installed. No installation required. 3/4 ok. >> ~/.ubunsys/updates/updateLog.log");
+    system("echo apt-fast was already installed. No installation required. 1/4 ok. >> ~/.ubunsys/updates/updateLog.log");
 
     }
 

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 url=https://github.com/adgellida/ubuntuScripts
-message1="ubuntuScripts are in the latest version. No updates required. 1/4 ok."
-message2="Updating ubuntuScripts. Please wait... Stage 1/4."
-message3="ubuntuScripts was updated to latest version. 1/4 ok."
-message4="Error downloading. Holding your ubuntuScripts version. 1/4 fail."
+message1="ubuntuScripts are in the latest version. No updates required. 2/4 ok."
+message2="Updating ubuntuScripts. Please wait... Stage 2/4."
+message3="ubuntuScripts was updated to latest version. 2/4 ok."
+message4="Error downloading. Holding your ubuntuScripts version. 2/4 fail."
 
 #getting remote commit version
 

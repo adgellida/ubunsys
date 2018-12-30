@@ -1,10 +1,10 @@
 #!/bin/bash
 
 url=https://github.com/adgellida/ubuntupackages
-message1="ubuntupackages are in the latest version. No updates required. 2/4 ok."
-message2="Updating ubuntupackages. Please wait... Stage 2/4."
-message3="ubuntupackages was updated to latest version. 2/4 ok."
-message4="Error downloading. Holding your ubuntupackages version. 2/4 fail."
+message1="ubuntupackages are in the latest version. No updates required. 3/4 ok."
+message2="Updating ubuntupackages. Please wait... Stage 3/4."
+message3="ubuntupackages was updated to latest version. 3/4 ok."
+message4="Error downloading. Holding your ubuntupackages version. 3/4 fail."
 
 #getting remote commit version
 

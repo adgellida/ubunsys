@@ -1,8 +1,8 @@
 #!/bin/bash
 
-message1="apt-fast not installed, installing it... Stage 3/4."
-message2="apt-fast attempted to install, check if ok. 3/4 ok."
-message3="apt-fast was already installed. No installation required. 3/4 ok."
+message1="apt-fast not installed, installing it... Stage 1/4."
+message2="apt-fast attempted to install, check if ok. 1/4 ok."
+message3="apt-fast was already installed. No installation required. 1/4 ok."
 
 if [ $(dpkg-query -W -f='${Status}' apt-fast 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
 
