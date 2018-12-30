@@ -1,3 +1,7 @@
+v2018.12.30 can't use database connection,
+will fix soon
+=============================================
+
 Download from official mirrors
 =============================================
 

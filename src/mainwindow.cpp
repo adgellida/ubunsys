@@ -16,6 +16,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
     qApp, SLOT(aboutQt()));
 
+    //######## initializeGUI
+
     MainWindow::initializeGUI();
 
     //######## createFoldersFiles
