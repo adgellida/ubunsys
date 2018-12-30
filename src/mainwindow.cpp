@@ -18,21 +18,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     MainWindow::initializeGUI();
 
-    //Creating folders begin
+    //######## createFoldersFiles
 
-    system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
-           "test -d ~/.ubunsys/scripts || mkdir -p ~/.ubunsys/downloads && "
-           "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
-           "test -d ~/.ubunsys/files || mkdir -p ~/.ubunsys/files && "
-           "test -d ~/.ubunsys/backups/scriptsFiles || mkdir -p ~/.ubunsys/backups/scriptsFiles && "
-           "test -d ~/.ubunsys/backups/sudoersFiles || mkdir -p ~/.ubunsys/backups/sudoersFiles && "
-           "rm -Rf ~/.ubunsys/updates/updateLog.log && "
-           "touch ~/.ubunsys/updates/updateLog.log && "
-           "exit");
+    MainWindow::createFoldersFiles();
 
-    //Creating folders end
-
-    //Create extra open on future dialogs
+    //Create extra open on future dialogs begin
 
     UpdateScriptsDialogUi = new UpdateScriptsDialog ();//////////////
     connect(UpdateScriptsDialogUi, SIGNAL(CloseClicked()), this , SLOT(closeUpdateDialog()));////////////////
@@ -43,26 +33,86 @@ MainWindow::MainWindow(QWidget *parent) :
     PreferencesDialogUi = new PreferencesDialog ();//////////////
     connect(PreferencesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePreferencesDialog()));////////////////
 
-    //Checks and updates at beginning
+    //Create extra open on future dialogs end
 
-    //######## checkUpdateUbuntuScripts
+    //######## checkAllStatus
 
+    MainWindow::checkAllStatus();
+
+    //######## showUpdateOutput
+
+    MainWindow::showUpdateOutput();
+
+    //######## showMessageAtInit
+
+    MainWindow::showMessageAtInit();
+
+}
+
+MainWindow::~MainWindow()
+{
+    delete UpdateScriptsDialogUi;////////////////
+    delete PackagesDialogUi;////////////////
+    delete PreferencesDialogUi;////////////////
+    delete ui;
+}
+
+//#############FUNCTION DECLARATIONS
+
+void MainWindow::showMessageAtInit()
+{
+
+    QMessageBox msgBox;
+    msgBox.setWindowTitle("Warning");
+    msgBox.setText("This version is alpha release.\nContains a lot of bugs.\nParticipate reporting them and demanding new functionalities.\nThanks.");
+    msgBox.exec();
+    system("/usr/share/ubunsys/scripts/installApt-fast.sh");
+
+}
+void MainWindow::checkAllStatus()
+{
     system("/usr/share/ubunsys/scripts/checkUpdateUbuntuScripts.sh");
-
-    //######## checkUpdateUbuntupackages
-
     system("/usr/share/ubunsys/scripts/checkUpdateUbuntupackages.sh");
-
-    //######## checkaptfastInstalled
-
     MainWindow::checkaptfastInstalled();
-
-    //######## checkUbunsys
-
     MainWindow::checkUbunsys();
 
-    //######## Show update output
+    //1.########
+    //MainWindow::checkFirewallStatus();
+    //2.########
+    MainWindow::checkHiddenStartupItemsStatus();
+    //3.########
+    MainWindow::checkupdateNotifStatus();
+    //4.########
+    MainWindow::checkSudoWithoutPassStatus();
+    //5.########
+    MainWindow::checkTextEditor();
+    //6.########
+    MainWindow::checkAsterisksStatus();
+    //7.########
+    MainWindow::checkUpdateAutoStatus();
+    //8.########
+    MainWindow::checkHibernationStatus();
+    //9.########
+    MainWindow::checkLockScreenStatus();
+    //10.########
+    MainWindow::checkLoginSoundStatus();
+}
 
+void MainWindow::createFoldersFiles()
+{
+    system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
+           "test -d ~/.ubunsys/scripts || mkdir -p ~/.ubunsys/downloads && "
+           "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
+           "test -d ~/.ubunsys/files || mkdir -p ~/.ubunsys/files && "
+           "test -d ~/.ubunsys/backups/scriptsFiles || mkdir -p ~/.ubunsys/backups/scriptsFiles && "
+           "test -d ~/.ubunsys/backups/sudoersFiles || mkdir -p ~/.ubunsys/backups/sudoersFiles && "
+           "rm -Rf ~/.ubunsys/updates/updateLog.log && "
+           "touch ~/.ubunsys/updates/updateLog.log && "
+           "exit");
+}
+
+void MainWindow::showUpdateOutput()
+{
     QFile file (QDir::homePath() + "/.ubunsys/updates/updateLog.log");
 
     if(!file.open(QIODevice::ReadOnly))
@@ -76,22 +126,7 @@ MainWindow::MainWindow(QWidget *parent) :
     system("touch ~/.ubunsys/updates/updateLog.log");
 
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
-
-    //######## check All
-
-    MainWindow::checkAllStatus();
-
 }
-
-MainWindow::~MainWindow()
-{
-    delete UpdateScriptsDialogUi;////////////////
-    delete PackagesDialogUi;////////////////
-    delete PreferencesDialogUi;////////////////
-    delete ui;
-}
-
-//#############FUNCTION DECLARATIONS
 
 void MainWindow::on_actionManualUpdateDialog_triggered()//////////////////////
 {
@@ -637,7 +672,8 @@ void MainWindow::checkaptfastInstalled(){
 
     if (status == "true"){
 
-        // do nothing
+    system("echo apt-fast was already installed. No installation required. 3/4 ok. >> ~/.ubunsys/updates/updateLog.log");
+
     }
 
     else if (status == "false"){
@@ -649,30 +685,6 @@ void MainWindow::checkaptfastInstalled(){
         system("/usr/share/ubunsys/scripts/installApt-fast.sh");
     }
 
-}
-
-void MainWindow::checkAllStatus()
-{
-    //1.########
-    //MainWindow::checkFirewallStatus();
-    //2.########
-    MainWindow::checkHiddenStartupItemsStatus();
-    //3.########
-    MainWindow::checkupdateNotifStatus();
-    //4.########
-    MainWindow::checkSudoWithoutPassStatus();
-    //5.########    
-    MainWindow::checkTextEditor();
-    //6.########
-    MainWindow::checkAsterisksStatus();
-    //7.########
-    MainWindow::checkUpdateAutoStatus();
-    //8.########
-    MainWindow::checkHibernationStatus();
-    //9.########
-    MainWindow::checkLockScreenStatus();
-    //10.########
-    MainWindow::checkLoginSoundStatus();
 }
 
 void MainWindow::on_checkFirewallStatus_clicked()

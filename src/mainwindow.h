@@ -29,7 +29,9 @@ public:
 
     void initializeGUI();
     void checkUbunsys();
-
+    void showUpdateOutput();
+    void createFoldersFiles();
+    void showMessageAtInit();
 
     //0.######## CHECK METHODS
     void checkAllStatus();

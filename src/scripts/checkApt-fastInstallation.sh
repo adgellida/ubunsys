@@ -14,7 +14,7 @@ else
 	
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-PDATE config SET status = "true" WHERE name = "apt-fastInstalled";
+UPDATE config SET status = "true" WHERE name = "apt-fastInstalled";
 END_SQL
 echo "Ya instalado, no hacer nada"
 

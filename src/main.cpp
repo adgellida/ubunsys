@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 
         QString firstTimeCreationDB = db.getStatus("firstTimeCreationDB");
 
-        if(firstTimeCreationDB != "false"){
+        if(firstTimeCreationDB == "true"){
 
         qDebug() << "Creating database for first use";
 
@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
         //18.########
         db.addNameStatus("ubuntuScripts_remote_commit_version", "NULL");
         //19.########
-        db.addNameStatus("ubuntuScriptss_previous_commit_version", "NULL");
+        db.addNameStatus("ubuntuScripts_previous_commit_version", "NULL");
 
         }
 
