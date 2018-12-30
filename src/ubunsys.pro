@@ -64,17 +64,22 @@ desktop.path = /usr/share/applications
 desktop.files += ubunsys.desktop
 
 #scripts
-apt-fastChecking.path = /usr/share/ubunsys/scripts
-apt-fastChecking.files = $$PWD/scripts/apt-fastChecking.sh
-apt-fastCheckingNotification.path = /usr/share/ubunsys/scripts
-apt-fastCheckingNotification.files = $$PWD/scripts/apt-fastCheckingNotification.sh
-updateUbuntupackages.path = /usr/share/ubunsys/scripts
-updateUbuntupackages.files = $$PWD/scripts/updateUbuntupackages.sh
-updateUbuntuScripts.path = /usr/share/ubunsys/scripts
-updateUbuntuScripts.files = $$PWD/scripts/updateUbuntuScripts.sh
-updateUbunsys.path = /usr/share/ubunsys/scripts
-updateUbunsys.files = $$PWD/scripts/updateUbunsys.sh
+checkApt-fastInstallation.path = /usr/share/ubunsys/scripts
+checkApt-fastInstallation.files = $$PWD/scripts/checkApt-fastInstallation.sh
+
+checkUbunsys.path = /usr/share/ubunsys/scripts
+checkUbunsys.files = $$PWD/scripts/checkUbunsys.sh
+
+checkUpdateUbuntupackages.path = /usr/share/ubunsys/scripts
+checkUpdateUbuntupackages.files = $$PWD/scripts/checkUpdateUbuntupackages.sh
+
+checkUpdateUbuntuScripts.path = /usr/share/ubunsys/scripts
+checkUpdateUbuntuScripts.files = $$PWD/scripts/checkUpdateUbuntuScripts.sh
+
+installApt-fast.path = /usr/share/ubunsys/scripts
+installApt-fast.files = $$PWD/scripts/installApt-fast.sh
+
 updateForced.path = /usr/share/ubunsys/scripts
 updateForced.files = $$PWD/scripts/updateForced.sh
 
-INSTALLS += target desktop icon apt-fastChecking apt-fastCheckingNotification updateUbuntupackages updateUbuntuScripts updateUbunsys updateForced
+INSTALLS += target desktop icon checkApt-fastInstallation checkUbunsys checkUpdateUbuntupackages checkUpdateUbuntuScripts installApt-fast updateForced
