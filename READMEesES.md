@@ -1,7 +1,3 @@
-v2018.12.30 no puede usar la conexión con la base de datos,
-se arreglará pronto
-=============================================
-
 Descarga desde fuentes oficiales
 =============================================
 
