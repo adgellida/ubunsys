@@ -45,7 +45,7 @@ Teóricamente compatible con todas las versiones de 64 bits de Ubuntu.
 
 Debido a falta de tiempo desarrollo pausado.
 
-**Actualmente hay 2 ramas de desarrollo: **
+**Actualmente hay 2 ramas de desarrollo:**
 
 * [master](https://github.com/adgellida/ubunsys/tree/master) - Esta rama se queda congelada, incluye la versión más estable. Debido a que la próxima versión será tan diferente internamente es mejor crear una nueva y realizar varios test para pasarla a esta rama.
 * [dev](https://github.com/adgellida/ubunsys/tree/dev) - Esta rama está en desarrollo cuando hay tiempo libre. La próxima versión será publicada en esta rama.

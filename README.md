@@ -45,7 +45,7 @@ It's theoretically compatible with all Ubuntu versions.
 
 Due to lack of time paused development.
 
-** There are currently 2 branches of development: **
+** There are currently 2 branches of development:**
 
 * [master](https://github.com/adgellida/ubunsys/tree/master) - This branch stays frozen, includes the most stable version. Due that next version will be so different internally is better to create a new and perform several tests to pass it to this branch.
 * [dev](https://github.com/adgellida/ubunsys/tree/dev) - This branch is in development when there is free time. The next version will be published in this branch.
