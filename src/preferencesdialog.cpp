@@ -17,6 +17,7 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
+
 /*
     //language begin
 

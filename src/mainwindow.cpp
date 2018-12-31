@@ -47,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //######## showUpdateOutput
 
-    //MainWindow::showUpdateOutput();
+    MainWindow::showUpdateOutput();
 }
 
 MainWindow::~MainWindow()
@@ -72,7 +72,7 @@ void MainWindow::checkAllStatus()
     //2.########
     MainWindow::checkHiddenStartupItemsStatus();
     //3.########
-    MainWindow::checkupdateNotifStatus();
+    //MainWindow::checkupdateNotifStatus();
     //4.########
     MainWindow::checkSudoWithoutPassStatus();
     //5.########
@@ -401,7 +401,6 @@ void MainWindow::initializeGUI(){
     ui->tabWidget->setCurrentIndex(1);
     ui->tabWidget_3->setCurrentIndex(0);
 }
-
 
 //1.########
 void MainWindow::checkFirewallStatus()

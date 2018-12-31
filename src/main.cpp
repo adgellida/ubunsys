@@ -22,18 +22,8 @@ int main(int argc, char *argv[])
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-    if (db.isOpen())
-    {
-
-        //13.######## firstTimeCreationDB
-        //######## Selection
-
-        QString firstTimeCreationDB = db.getStatus("firstTimeCreationDB");
-
-        if(firstTimeCreationDB == "true"){
-
-        qDebug() << "Creating database for first use";
-
+   // if (db.isOpen())
+   // {
         db.createTable();   // Creates a table if it doens't exist. Otherwise, it will use existing table.
 
         //initializing values of database begin
@@ -77,15 +67,11 @@ int main(int argc, char *argv[])
         //19.########
         db.addNameStatus("ubuntuScripts_previous_commit_version", "NULL");
 
-        }
-
-        else qDebug() << "Database exists, no new is necessary";
-
-    }
-    else
-    {
-        qDebug() << "Database is not open!";
-    }
+  //  }
+  //  else
+   // {
+    //    qDebug() << "Database is not open!";
+   // }
 
     //Database initialization end
 

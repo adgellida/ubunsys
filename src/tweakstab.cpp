@@ -8,8 +8,8 @@
 #include <QDesktopServices>
 #include <dbmanager.h>
 
-//static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
-//DbManager db(path);
+static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+DbManager db(path);
 
 ///////////////////////TWEAKS TAB///////////////////////
 
