@@ -290,7 +290,7 @@ void MainWindow::on_openCronButton_clicked()
     ui->statusBar->showMessage(tr("Opening cron jobs"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/063.openCron"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/063.openCron"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -303,7 +303,7 @@ void MainWindow::on_eraseCronButton_clicked()
     ui->statusBar->showMessage(tr("Erasing cron jobs"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/064.eraseCron"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/064.eraseCron"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -409,7 +409,7 @@ void MainWindow::checkFirewallStatus()
     //######## Status
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/067.checkFirewallStatus"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/067.checkFirewallStatus"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -533,7 +533,7 @@ void MainWindow::checkTextEditor()
         stream << actualTextEditorSelected << endl;
     }
 
-    system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && "
+    system("~/.ubunsys/downloads/ubuntuScripts-dev/textEditorChange && "
            "exit");
 
 }

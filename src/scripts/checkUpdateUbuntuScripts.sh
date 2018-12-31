@@ -34,11 +34,11 @@ test -d ~/.ubunsys || mkdir -p ~/.ubunsys
 test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads
 echo "$message2"
 
-wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/master.zip &&
-rm -Rf ~/.ubunsys/downloads/ubuntuScripts-master &&
-unzip ~/.ubunsys/master.zip -d ~/.ubunsys/downloads &>/dev/null &&
-chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-master &&
-rm ~/.ubunsys/master.zip &&
+wget https://github.com/adgellida/ubuntuScripts/archive/dev.zip -O ~/.ubunsys/dev.zip &&
+rm -Rf ~/.ubunsys/downloads/ubuntuScripts-dev &&
+unzip ~/.ubunsys/dev.zip -d ~/.ubunsys/downloads &>/dev/null &&
+chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-dev &&
+rm ~/.ubunsys/dev.zip &&
 echo "$message3" >> ~/.ubunsys/updates/updateLog.log || echo "$message4" >> ~/.ubunsys/updates/updateLog.log
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL

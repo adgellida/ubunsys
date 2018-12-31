@@ -95,7 +95,7 @@ void PreferencesDialog::on_closePreferencesDialogButton_clicked()
         stream << newTextEditorSelected << endl;
     }
 
-    system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && " //runs script to change textEditor
+    system("~/.ubunsys/downloads/ubuntuScripts-dev/textEditorChange && " //runs script to change textEditor
            "exit");
 
     //textEditor end

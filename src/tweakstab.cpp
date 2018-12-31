@@ -22,7 +22,7 @@ void MainWindow::on_openSourcesListDButton_clicked()
     ui->statusBar->showMessage(tr("Opening sources.list.d"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/023.openSourcesListD"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/023.openSourcesListD"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -39,7 +39,7 @@ void MainWindow::on_openSourcesListButton_clicked()
     ui->statusBar->showMessage(tr("Opening Sources.list"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/042.openSourcesList"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/042.openSourcesList"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -52,7 +52,7 @@ void MainWindow::on_backupSourcesListButton_clicked()
     ui->statusBar->showMessage(tr("Backuping sudoers"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/043.backupSourcesList"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/043.backupSourcesList"
            " && "
            "exit"
            "; exec bash'");
@@ -111,7 +111,7 @@ void MainWindow::on_checkBoxUpdateNotif_clicked(bool checked)
         qDebug() << checked;
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/054.enableUpdateNotification"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/054.enableUpdateNotification"
                " && "
                "exit"
                "; exec bash'");
@@ -124,7 +124,7 @@ void MainWindow::on_checkBoxUpdateNotif_clicked(bool checked)
         qDebug() << checked;
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/055.disableUpdateNotification"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/055.disableUpdateNotification"
                " && "
                "exit"
                "; exec bash'");
@@ -148,7 +148,7 @@ void MainWindow::on_checkBoxSudoWOPass_clicked(bool checked)
         ui->statusBar->showMessage(tr("Enabling sudo without pass"));
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/025.enableSudoWithoutPassAll"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/025.enableSudoWithoutPassAll"
                " && "
                "exit"
                "; exec bash'");
@@ -163,7 +163,7 @@ void MainWindow::on_checkBoxSudoWOPass_clicked(bool checked)
               ui->statusBar->showMessage(tr("Disabling sudo without pass"));
 
               system("xterm -e '"
-                     "~/.ubunsys/downloads/ubuntuScripts-master/026.disableSudoWithoutPassAll"
+                     "~/.ubunsys/downloads/ubuntuScripts-dev/026.disableSudoWithoutPassAll"
                      " && "
                      "exit"
                      "; exec bash'");
@@ -182,7 +182,7 @@ void MainWindow::on_enableSudoWithoutPassSpecificButton_clicked()
     ui->statusBar->showMessage(tr("Enabling sudo without pass specific"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/052.enableSudoWithoutPassSpecific"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/052.enableSudoWithoutPassSpecific"
            " && "
            "exit"
            "; exec bash'");
@@ -195,7 +195,7 @@ void MainWindow::on_disableSudoWithoutPassSpecificButton_clicked()
     ui->statusBar->showMessage(tr("Disabling sudo without pass specific"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/053.disableSudoWithoutPassSpecific"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/053.disableSudoWithoutPassSpecific"
            " && "
            "exit"
            "; exec bash'");
@@ -210,7 +210,7 @@ void MainWindow::on_openSudoersDButton_clicked()
     ui->statusBar->showMessage(tr("Opening sudoers.d"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/051.openSudoersD"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/051.openSudoersD"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -223,7 +223,7 @@ void MainWindow::on_openSudoersDButton_clicked()
 void MainWindow::on_openHostsButton_clicked()
 {
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/060.openHosts"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/060.openHosts"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -236,7 +236,7 @@ void MainWindow::on_openSudoersFileButton_clicked()
     ui->statusBar->showMessage(tr("Opening sudoers"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/027.openSudoersFile"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/027.openSudoersFile"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -249,7 +249,7 @@ void MainWindow::on_backupSudoersFileButton_clicked()
     ui->statusBar->showMessage(tr("Backuping sudoers"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/028.backupSudoersFile"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/028.backupSudoersFile"
            " && "
            "exit"
            "; exec bash'");
@@ -308,9 +308,9 @@ void MainWindow::on_checkBox_firewall_clicked(bool checked)
         ui->statusBar->showMessage(tr("Enabling firewall"));
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/033.check_ufw_installed"
                " && "
-               "~/.ubunsys/downloads/ubuntuScripts-master/031.enableFirewall"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/031.enableFirewall"
                " && "
                "exit"
                "; exec bash'");
@@ -325,9 +325,9 @@ void MainWindow::on_checkBox_firewall_clicked(bool checked)
               ui->statusBar->showMessage(tr("Disabling firewall"));
 
               system("xterm -e '"
-                     "~/.ubunsys/downloads/ubuntuScripts-master/033.check_ufw_installed"
+                     "~/.ubunsys/downloads/ubuntuScripts-dev/033.check_ufw_installed"
                      " && "
-                     "~/.ubunsys/downloads/ubuntuScripts-master/032.disableFirewall"
+                     "~/.ubunsys/downloads/ubuntuScripts-dev/032.disableFirewall"
                      " && "
                      "exit"
                      "; exec bash'");
@@ -359,7 +359,7 @@ void MainWindow::on_installTemplatesButton_clicked()
     ui->statusBar->showMessage(tr("Installing templates"));
 
     system("bash -c '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/018.installTemplates"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/018.installTemplates"
            " && "
            "exit"
            "; exec bash'");
@@ -374,7 +374,7 @@ void MainWindow::on_openMainBackupButton_clicked()
     ui->statusBar->showMessage(tr("Executing Main Backup"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/045.mainBackup"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/045.mainBackup"
            " && "
            "exit"
            "; exec bash'");
@@ -389,7 +389,7 @@ void MainWindow::on_openMainBackupButton_clicked()
 
 
           system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntuScripts-master/074.openLots"
+                 "~/.ubunsys/downloads/ubuntuScripts-dev/074.openLots"
                  " && "
                  "echo Close this window!"
                  "; exec bash'");
@@ -441,7 +441,7 @@ void MainWindow::on_openMainRestoreButton_clicked()
 //    ui->statusBar->showMessage(tr("Executing Main Restore"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/046.mainRestore"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/046.mainRestore"
            " && "
            "exit"
            "; exec bash'");
@@ -460,7 +460,7 @@ void MainWindow::on_openRCLocalButton_clicked()
     ui->statusBar->showMessage(tr("Opening rc.local"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/056.openRCLocal"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/056.openRCLocal"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -478,7 +478,7 @@ void MainWindow::on_checkBoxHiddenStartupItems_clicked(bool checked)
     ui->statusBar->showMessage(tr("Showing"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/038.showHiddenStartupItems"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/038.showHiddenStartupItems"
            " && "
            "exit"
            "; exec bash'");
@@ -493,7 +493,7 @@ void MainWindow::on_checkBoxHiddenStartupItems_clicked(bool checked)
     ui->statusBar->showMessage(tr("Unshowing"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/037.unshowHiddenStartupItems"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/037.unshowHiddenStartupItems"
            " && "
            "exit"
            "; exec bash'");
@@ -530,7 +530,7 @@ void MainWindow::on_runSyncTime_clicked()
     ui->statusBar->showMessage(tr("Sync Time"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/changeLinuxtoWindowsTime"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/changeLinuxtoWindowsTime"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -546,7 +546,7 @@ void MainWindow::on_editGrubButton_clicked()
     ui->statusBar->showMessage(tr("Edit grub"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/080.editGrub"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/080.editGrub"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -561,7 +561,7 @@ void MainWindow::on_updateGrubButton_clicked()
     ui->statusBar->showMessage(tr("Update grub"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/081.updateGrub"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/081.updateGrub"
            " && "
            "echo Close this window!"
            "; exec bash'");
@@ -583,7 +583,7 @@ void MainWindow::on_resetDconf_clicked()
         //QApplication::quit();
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/057.resetDconf"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/057.resetDconf"
                " && "
                "echo Close this window!"
                "; exec bash'");
@@ -614,7 +614,7 @@ void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
             ui->statusBar->showMessage(tr("Doing visible asterisks"));
 
             system("xterm -e '"
-                   "~/.ubunsys/downloads/ubuntuScripts-master/021.doVisibleAsterisks"
+                   "~/.ubunsys/downloads/ubuntuScripts-dev/021.doVisibleAsterisks"
                    " && "
                    "exit"
                    "; exec bash'");
@@ -629,7 +629,7 @@ void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
             ui->statusBar->showMessage(tr("Doing invisible asterisks"));
 
             system("xterm -e '"
-                   "~/.ubunsys/downloads/ubuntuScripts-master/022.doInvisibleAsterisks"
+                   "~/.ubunsys/downloads/ubuntuScripts-dev/022.doInvisibleAsterisks"
                    " && "
                    "exit"
                    "; exec bash'");
@@ -653,7 +653,7 @@ void MainWindow::on_checkBoxHibernation_clicked(bool checked)
         ui->statusBar->showMessage(tr("Hibernation enabled"));
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/007.enableHibernation"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/007.enableHibernation"
                " && "
                "exit"
                "; exec bash'");
@@ -668,7 +668,7 @@ void MainWindow::on_checkBoxHibernation_clicked(bool checked)
           ui->statusBar->showMessage(tr("Hibernation disabled"));
 
           system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntuScripts-master/024.disableHibernation"
+                 "~/.ubunsys/downloads/ubuntuScripts-dev/024.disableHibernation"
                  " && "
                  "exit"
                  "; exec bash'");
@@ -689,7 +689,7 @@ void MainWindow::on_checkBoxLockScreen_clicked(bool checked)
         ui->statusBar->showMessage(tr("Lock screen Enabled"));
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/036.enableLockScreen"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/036.enableLockScreen"
                " && "
                "exit"
                "; exec bash'");
@@ -704,7 +704,7 @@ void MainWindow::on_checkBoxLockScreen_clicked(bool checked)
           ui->statusBar->showMessage(tr("Lock screen Disabled"));
 
           system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntuScripts-master/035.disableLockScreen"
+                 "~/.ubunsys/downloads/ubuntuScripts-dev/035.disableLockScreen"
                  " && "
                  "exit"
                  "; exec bash'");
@@ -725,7 +725,7 @@ void MainWindow::on_checkBoxLoginSound_clicked(bool checked)
         ui->statusBar->showMessage(tr("Login Sound Enabled"));
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/039.enableLoginSound"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/039.enableLoginSound"
                " && "
                "exit"
                "; exec bash'");
@@ -740,7 +740,7 @@ void MainWindow::on_checkBoxLoginSound_clicked(bool checked)
           ui->statusBar->showMessage(tr("Login Sound Disabled"));
 
           system("xterm -e '"
-                       "~/.ubunsys/downloads/ubuntuScripts-master/040.disableLoginSound"
+                       "~/.ubunsys/downloads/ubuntuScripts-dev/040.disableLoginSound"
                  " && "
                  "exit"
                  "; exec bash'");
@@ -771,7 +771,7 @@ void MainWindow::on_uninstallInfinalityFontsButton_clicked()
     ui->statusBar->showMessage(tr("Login Sound Disabled"));
 
     system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntuScripts-master/082.uninstallInfinalityFonts"
+                 "~/.ubunsys/downloads/ubuntuScripts-dev/082.uninstallInfinalityFonts"
            " && "
            "exit"
            "; exec bash'");

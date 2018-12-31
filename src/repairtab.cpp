@@ -50,7 +50,7 @@ void MainWindow::on_unlock_var_lib_dpkg_lock_clicked()
     ui->statusBar->showMessage(tr("Unlocking /var/lib/dpkg/lock. Please wait"));
 
     system("xterm -e '"
-           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/058.can_t_block_var_lib_dpkg_lock"
+           "sudo ~/.ubunsys/downloads/ubuntuScripts-dev/058.can_t_block_var_lib_dpkg_lock"
            " && "
            "exit"
            "; exec bash'");
@@ -135,7 +135,7 @@ void MainWindow::on_backupReposButton_clicked()
     ui->statusBar->showMessage(tr("Installing templates"));
 
     system("bash -c '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/077.backupReposUnsupportedReleases"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/077.backupReposUnsupportedReleases"
            " && "
            "exit"
            "; exec bash'");
@@ -148,7 +148,7 @@ void MainWindow::on_reenableReposButton_clicked()
     ui->statusBar->showMessage(tr("Installing templates"));
 
     system("bash -c '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/078.re-enableReposUnsupportedReleases"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/078.re-enableReposUnsupportedReleases"
            " && "
            "exit"
            "; exec bash'");
@@ -161,7 +161,7 @@ void MainWindow::on_restoreReposButton_clicked()
     ui->statusBar->showMessage(tr("Installing templates"));
 
     system("bash -c '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/079.restoreReposUnsupportedReleases"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/079.restoreReposUnsupportedReleases"
            " && "
            "exit"
            "; exec bash'");

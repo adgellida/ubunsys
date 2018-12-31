@@ -199,7 +199,7 @@ void PackagesDialog::on_selectUnofficialReposButton_clicked()
         //txt->show();
 
         //system("xterm -e '"
-        //       "~/.ubunsys/downloads/ubuntuScripts-master/060.openHosts"
+        //       "~/.ubunsys/downloads/ubuntuScripts-dev/060.openHosts"
          //      " && "
          //      "echo Close this window!"
          //      "; exec bash'");
@@ -264,7 +264,7 @@ void PackagesDialog::on_exportListButton_clicked()
     ui->statusBar->showMessage(tr("Exporting list"));
 
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/047.exportList"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/047.exportList"
            " && "
            "exit"
            "; exec bash'");

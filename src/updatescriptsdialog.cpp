@@ -89,7 +89,7 @@ void UpdateScriptsDialog::on_checkButton_clicked()
     }
 
     //system("~/.ubunsys/configurations/textEditorChange && "
-    system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && "
+    system("~/.ubunsys/downloads/ubuntuScripts-dev/textEditorChange && "
            "exit");
 
     //textEditor end
@@ -136,7 +136,7 @@ void UpdateScriptsDialog::on_forceButton_clicked()  //NOT WORKS OK, DISABLED
         stream << actualTextEditorSelected << endl;
     }
 
-    system("~/.ubunsys/downloads/ubuntuScripts-master/textEditorChange && "
+    system("~/.ubunsys/downloads/ubuntuScripts-dev/textEditorChange && "
            "exit");
 
     //textEditor end

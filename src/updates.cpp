@@ -98,7 +98,7 @@ void MainWindow::on_cleanKernelsButton_clicked()
 void MainWindow::on_listUpgradablePackagesButton_clicked()
 {
     system("xterm -e '"
-           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/listUpgradablePackages"
+           "sudo ~/.ubunsys/downloads/ubuntuScripts-dev/listUpgradablePackages"
            " && "
            "exit"
            "; exec bash'");
@@ -109,7 +109,7 @@ void MainWindow::on_listUpgradablePackagesButton_clicked()
 void MainWindow::on_listLatestInstalledPackagesButton_clicked()
 {
     system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-master/listLatestInstalledPackages"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/listLatestInstalledPackages"
            " && "
            "exit"
            "; exec bash'");
@@ -136,10 +136,10 @@ void MainWindow::on_installMainlineKernels_clicked()
 {
     ui->statusBar->showMessage(tr("Checking if ukuu is installed and we install it if necessary"));
 
-    QProcess::startDetached("xterm -e \"sudo ~/.ubunsys/downloads/ubuntuScripts-master/034.check_ukuu_installed && ukuu-gtk; exec bash\"");
+    QProcess::startDetached("xterm -e \"sudo ~/.ubunsys/downloads/ubuntuScripts-dev/034.check_ukuu_installed && ukuu-gtk; exec bash\"");
 /*
     system("xterm -e '"
-           "sudo ~/.ubunsys/downloads/ubuntuScripts-master/034.check_ukuu_installed"
+           "sudo ~/.ubunsys/downloads/ubuntuScripts-dev/034.check_ukuu_installed"
            " && "
            "exit"
            "; exec bash'");
@@ -160,7 +160,7 @@ void MainWindow::on_comboBoxUpdate_currentIndexChanged(const QString &arg1)
         qDebug() << "Auto update disabled";
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/066.remove_to_root_crontab"
                " && "
                "exit"
                "; exec bash'");
@@ -171,9 +171,9 @@ void MainWindow::on_comboBoxUpdate_currentIndexChanged(const QString &arg1)
         qDebug() << "Each hour";
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/066.remove_to_root_crontab"
                " && "
-               "~/.ubunsys/downloads/ubuntuScripts-master/065.add_to_root_crontab_each_hour"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/065.add_to_root_crontab_each_hour"
                " && "
                "exit"
                "; exec bash'");
@@ -184,9 +184,9 @@ void MainWindow::on_comboBoxUpdate_currentIndexChanged(const QString &arg1)
         qDebug() << "At boot";
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-master/066.remove_to_root_crontab"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/066.remove_to_root_crontab"
                " && "
-               "~/.ubunsys/downloads/ubuntuScripts-master/083.add_to_root_crontab_at_boot"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/083.add_to_root_crontab_at_boot"
                " && "
                "exit"
                "; exec bash'");
