@@ -56,7 +56,7 @@ Alimentado con [ubuntupackages](https://github.com/adgellida/ubuntupackages) y [
 
 Apps basadas en él:
 
-* [winsys](https://github.com/adgellida/winsys).
+* [winsys](https://github.com/adgellida/winsys)
 
 How to install
 =============================================

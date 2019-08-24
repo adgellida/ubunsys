@@ -56,7 +56,7 @@ This is a GUI for these scripts [ubuntupackages](https://github.com/adgellida/ub
 
 Other Apps based on this:
 
-* [winsys](https://github.com/adgellida/winsys).
+* [winsys](https://github.com/adgellida/winsys)
 
 How to install
 =============================================
