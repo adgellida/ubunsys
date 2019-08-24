@@ -81,7 +81,7 @@ LD_LIBRARY_PATH=/home/$USER/.Qt5.13/5.13/gcc_64/lib /usr/bin/ubunsys
 
 - Upgrade Ubuntu to latest release
 
-- Instalar este PPA especial con este [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
+- Installl this special PPA with this [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
 
 Screenshots
 =============================================
