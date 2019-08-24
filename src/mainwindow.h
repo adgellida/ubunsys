@@ -28,10 +28,11 @@ public:
     ~MainWindow();
 
     void initializeGUI();
-    void checkUbunsys();
+    void checkUbunsysUpdate();
     void showUpdateOutput();
     void createFoldersFiles();
     void showMessageAtInit();
+    void initializeDatabase();
 
     //0.######## CHECK METHODS
     void checkAllStatus();
@@ -40,7 +41,7 @@ public:
     //2.########
     void checkHiddenStartupItemsStatus();
     //3.########
-    void checkupdateNotifStatus();
+    void checkOfficialUpdateNotificationStatus();
     //4.########
     void checkSudoWithoutPassStatus();
     //5.########
@@ -128,7 +129,7 @@ private slots:
     void on_openCronButton_clicked();
     void on_eraseCronButton_clicked();
     void on_checkBox_firewall_clicked(bool checked);
-    void on_checkBoxUpdateNotif_clicked(bool checked);
+    void on_checkBoxOfficialUpdateNotification_clicked(bool checked);
     void on_checkBoxSudoWOPass_clicked(bool checked);
     void on_checkBoxAsterisks_clicked(bool checked);
     void on_checkBoxHibernation_clicked(bool checked);

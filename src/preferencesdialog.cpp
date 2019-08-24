@@ -18,29 +18,29 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-/*
+
     //language begin
 
     QString languageSelected = db.getStatus("language");
 
-    if (languageSelected == "Spanish") ui->comboBox_2->setCurrentText("Spanish");
+    if (languageSelected == "Spanish") ui->comboBox_language->setCurrentText("Spanish");
 
-    else if (languageSelected == "Español") ui->comboBox_2->setCurrentText("Español");
+    else if (languageSelected == "Español") ui->comboBox_language->setCurrentText("Español");
 
-    else if (languageSelected == "English") ui->comboBox_2->setCurrentText("English");
+    else if (languageSelected == "English") ui->comboBox_language->setCurrentText("English");
 
-    else if (languageSelected == "Inglés")  ui->comboBox_2->setCurrentText("Inglés");
+    else if (languageSelected == "Inglés")  ui->comboBox_language->setCurrentText("Inglés");
 
     //language end
-*/
+
 
     //theme begin
 
     QString themeSelected = db.getStatus("theme");
 
-    if (themeSelected == "Dark") ui->comboBox_1->setCurrentText("Dark");
+    if (themeSelected == "Dark") ui->comboBox_theme->setCurrentText("Oscuro");
 
-    else if (themeSelected == "Default") ui->comboBox_1->setCurrentText("Default");
+    else if (themeSelected == "Default") ui->comboBox_theme->setCurrentText("Por defecto");
 
     //theme end
 
@@ -68,15 +68,15 @@ void PreferencesDialog::on_closePreferencesDialogButton_clicked()
 
     //language begin
 
-    //QString language_selected = ui->comboBox_2->currentText();
-    //db.updateStatus("language", language_selected);
+    QString language_selected = ui->comboBox_language->currentText();
+    db.updateStatus("language", language_selected);
 
     //language end
 
 
     //theme begin
 
-    QString theme_selected = ui->comboBox_1->currentText();
+    QString theme_selected = ui->comboBox_theme->currentText();
     db.updateStatus("theme", theme_selected);
 
     //theme end

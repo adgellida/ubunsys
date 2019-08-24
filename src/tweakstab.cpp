@@ -8,9 +8,6 @@
 #include <QDesktopServices>
 #include <dbmanager.h>
 
-static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
-DbManager db(path);
-
 ///////////////////////TWEAKS TAB///////////////////////
 
 ////////////////////////////////SOURCES
@@ -102,16 +99,16 @@ void MainWindow::on_importSourcesListButton_clicked()
 
 }
 
-//##updateNotification
+//##OfficialUpdateNotification
 
-void MainWindow::on_checkBoxUpdateNotif_clicked(bool checked)
+void MainWindow::on_checkBoxOfficialUpdateNotification_clicked(bool checked)
 {
-    if (checked == false){
+    if (checked == true){
 
         qDebug() << checked;
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-dev/054.enableUpdateNotification"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/054.enableOfficialUpdateNotification"
                " && "
                "exit"
                "; exec bash'");
@@ -119,12 +116,12 @@ void MainWindow::on_checkBoxUpdateNotif_clicked(bool checked)
         ui->statusBar->showMessage(tr("Enabled"));
     }
 
-    if (checked != false){
+    if (checked == false){
 
         qDebug() << checked;
 
         system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-dev/055.disableUpdateNotification"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/055.disableOfficialUpdateNotification"
                " && "
                "exit"
                "; exec bash'");
@@ -132,7 +129,7 @@ void MainWindow::on_checkBoxUpdateNotif_clicked(bool checked)
         ui->statusBar->showMessage(tr("Disabled"));
     }
 
-    MainWindow::checkupdateNotifStatus();
+    MainWindow::checkOfficialUpdateNotificationStatus();
 
 }
 

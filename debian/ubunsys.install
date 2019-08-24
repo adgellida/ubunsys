@@ -2,7 +2,6 @@ bin/ubunsys usr/bin
 ubunsys.desktop usr/share/applications
 images/ubunsys.png usr/share/icons/hicolor/256x256/apps
 scripts/apt-fastChecking.sh usr/share/ubunsys/scripts
-scripts/apt-fastCheckingNotification.sh usr/share/ubunsys/scripts
 scripts/updateUbuntupackages.sh usr/share/ubunsys/scripts
 scripts/updateUbuntuScripts.sh usr/share/ubunsys/scripts
 scripts/updateUbunsys.sh usr/share/ubunsys/scripts

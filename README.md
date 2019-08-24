@@ -14,8 +14,8 @@ Download from official mirrors
     <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a>
     <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
     <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
-    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2018.10.18/total.svg" alt="total downloads latest release"></a>
-    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2018.10.18-blue.svg" alt="latest release"></a>
+    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2019.08.24/total.svg" alt="total downloads latest release"></a>
+    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2019.08.24-blue.svg" alt="latest release"></a>
     <a href="https://github.com/adgellida/ubunsys/commits/master" target="_blank"><img src="https://img.shields.io/badge/maintained-paused-orange.svg" alt="maintained"></a>
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
@@ -33,7 +33,7 @@ Download from official mirrors
 
 <p align="left">
 	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/made-with-qt.png" alt="forthebadge"></a>
-	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.2.1-green.svg" alt="qt version"></a>
+	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.13-green.svg" alt="qt version"></a>
 	<a href="http://www.somsubhra.com/github-release-stats/?username=adgellida&repository=ubunsys" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/github-release-stats.png" alt="github release stats"></a>
 </p>
 
@@ -52,18 +52,36 @@ Due to lack of time paused development.
 
 **This is a very dangerous app, if you don't know what you are touching or how to fix it, don't do it. This software is for testing and knowledge purposes. It's unstable software.**
 
-It uses this Qt version for maximum compatibility on ancient repos.
-
 This is a GUI for these scripts [ubuntupackages](https://github.com/adgellida/ubuntupackages) and [ubuntuScripts](https://github.com/adgellida/ubuntuScripts).
 
 Other Apps based on this:
 
 * [winsys](https://github.com/adgellida/winsys).
 
-Launchpad PPA Method - Status: UPDATED
+How to install
 =============================================
 
+Method 1 - Launchpad PPA - Status: UPDATED
+---------------------------------------------
+
 `wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys && sudo chmod 777 ubunsys && sudo ./ubunsys`
+
+Method 2 - Download deb package from official mirrors
+---------------------------------------------
+
+From upside
+
+Library error 
+---------------------------------------------
+If you don't have the correct version of libraries installed in your system, 5.13 version now on dev version i go to give you 3 possible solutions:
+
+- One solution is upgrade from official repositories or download latest from [qt.io](www.qt.io) and point to the directory installation this way:
+
+LD_LIBRARY_PATH=/home/$USER/.Qt5.13/5.13/gcc_64/lib /usr/bin/ubunsys
+
+- Upgrade Ubuntu to latest release
+
+- Instalar este PPA especial con este [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
 
 Screenshots
 =============================================

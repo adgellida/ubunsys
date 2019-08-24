@@ -4,6 +4,7 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include <dbmanager.h>
+#include <QDir>
 
 UpdateScriptsDialog::UpdateScriptsDialog(QWidget *parent) :
     QDialog(parent),

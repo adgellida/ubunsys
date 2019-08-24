@@ -40,7 +40,6 @@ public:
      * @return true - 'config' table created successfully, false - table not created
      */
     bool createTable();
-
     /**
      * @brief Add name data to db
      * @param name - name to add
