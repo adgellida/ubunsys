@@ -48,7 +48,7 @@ Due to lack of time paused development.
 **There are currently 2 branches of development:**
 
 * [master](https://github.com/adgellida/ubunsys/tree/master) - This branch stays frozen, includes the most stable version. Due that next version will be so different internally is better to create a new and perform several tests to pass it to this branch.
-* [dev](https://github.com/adgellida/ubunsys/tree/dev) - This branch is in development when there is free time. The next version will be published in this branch.
+* [dev](https://github.com/adgellida/ubunsys/tree/dev) - This branch is in development. The most updated version is here. 
 
 **This is a very dangerous app, if you don't know what you are touching or how to fix it, don't do it. This software is for testing and knowledge purposes. It's unstable software.**
 
@@ -81,7 +81,7 @@ LD_LIBRARY_PATH=/home/$USER/.Qt5.13/5.13/gcc_64/lib /usr/bin/ubunsys
 
 - Upgrade Ubuntu to latest release
 
-- Installl this special PPA with this [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
+- Install this special PPA with this [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
 
 Screenshots
 =============================================

@@ -48,7 +48,7 @@ Debido a falta de tiempo desarrollo pausado.
 **Actualmente hay 2 ramas de desarrollo:**
 
 * [master](https://github.com/adgellida/ubunsys/tree/master) - Esta rama se queda congelada, incluye la versión más estable. Debido a que la próxima versión será tan diferente internamente es mejor crear una nueva y realizar varios test para pasarla a esta rama.
-* [dev](https://github.com/adgellida/ubunsys/tree/dev) - Esta rama está en desarrollo cuando hay tiempo libre. La próxima versión será publicada en esta rama.
+* [dev](https://github.com/adgellida/ubunsys/tree/dev) - Esta rama está en desarrollo. La versión más actualizada está aquí.
 
 **App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
 
