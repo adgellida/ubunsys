@@ -75,13 +75,13 @@ Error de librería
 ---------------------------------------------
 Si no tiene la versión correcta de las librerías instaladas en su sistema, versión 5.13 ahora en la versión de desarrollador te voy a proporcionar 3 posibles soluciones:
 
-- Una solución es la actualización de los repositorios oficiales o descargar la última de [qt.io](www.qt.io) y apuntar a la instalación del directorio de esta manera:
+- Actualiza de los repositorios oficiales o descargar la última de [qt.io](www.qt.io) y apuntar a la instalación del directorio de esta manera:
 
 LD_LIBRARY_PATH=/home/$USER/.Qt5.13/5.13/gcc_64/lib /usr/bin/ubunsys
 
-- Upgrade Ubuntu to latest release
+- Actualiza Ubuntu a la última versión
 
-- Install special PPA with this [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
+- Instala las últimas o casi últimas librerías de qt en este especial PPA con este [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
 
 Capturas de pantalla
 =============================================

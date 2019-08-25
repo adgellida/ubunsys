@@ -73,15 +73,15 @@ From upside
 
 Library error 
 ---------------------------------------------
-If you don't have the correct version of libraries installed in your system, 5.13 version now on dev version i go to give you 3 possible solutions:
+If you don't have the correct version of libraries installed in your system, 5.13 version now on dev version I go to give you 3 possible solutions:
 
-- One solution is upgrade from official repositories or download latest from [qt.io](www.qt.io) and point to the directory installation this way:
+- Upgrade from official repositories or download latest from [qt.io](www.qt.io) and point to the directory installation this way:
 
 LD_LIBRARY_PATH=/home/$USER/.Qt5.13/5.13/gcc_64/lib /usr/bin/ubunsys
 
 - Upgrade Ubuntu to latest release
 
-- Install this special PPA with this [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
+- Install latest or nearly qt libraries on this special PPA with this [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
 
 Screenshots
 =============================================
