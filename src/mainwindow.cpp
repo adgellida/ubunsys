@@ -16,6 +16,12 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
     qApp, SLOT(aboutQt()));
 
+    //Creating folder configurations
+
+    system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
+           "test -d ~/.ubunsys/configurations || mkdir -p ~/.ubunsys/configurations && "
+           "exit");
+
     //######## initializeDatabase
 
     MainWindow::initializeDatabase();

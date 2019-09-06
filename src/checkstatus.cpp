@@ -7,11 +7,11 @@
 
 void MainWindow::checkAllStatus()
 {
-    MainWindow::checkaptfastInstalled();
-
     //First update ubuntuscripts and ubuntupackages always, no checks
     system("/usr/share/ubunsys/scripts/updateUbuntuScripts.sh");
     system("/usr/share/ubunsys/scripts/updateUbuntupackages.sh");
+
+    MainWindow::checkaptfastInstalled();
 
     MainWindow::checkUbunsysUpdate();
 

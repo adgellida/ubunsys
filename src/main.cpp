@@ -12,12 +12,6 @@ int main(int argc, char *argv[])
     app.setOrganizationName("adgellida");
     app.setApplicationName("ubunsys");
 
-    //Creating folder configurations
-
-    system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
-           "test -d ~/.ubunsys/configurations || mkdir -p ~/.ubunsys/configurations && "
-           "exit");
-
     //SETTINGS
 /*
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
