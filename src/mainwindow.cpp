@@ -106,58 +106,6 @@ void MainWindow::closeUpdateDialog()
     UpdateScriptsDialogUi->close();
 }
 
-void MainWindow::on_upgradeLatestKernel_1_clicked()
-{
-    ui->statusBar->showMessage(tr("Upgrading to latest kernel from PPA for Canonical Kernel Team"));
-
-    system("xterm -e '"
-           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/canonical-kernel-team-ppa"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Upgraded"));
-}
-
-void MainWindow::on_upgradeLatestKernel_2_clicked()
-{
-    ui->statusBar->showMessage(tr("Upgrading to latest kernel from PPA for Canonical Kernel Team - Bootstrap"));
-
-    system("xterm -e '"
-           "sudo ~/.ubunsys/downloads/ubuntupackages-master/apps1/bootstrap-kernels"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Upgraded"));
-}
-
-void MainWindow::on_purgeMainlineKernels_clicked()
-{
-    system("xterm -e '"
-           "sudo apt-fast -y install ppa-purge"
-           " && "
-           "sudo ppa-purge -y ppa:canonical-kernel-team/ppa"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Purged"));
-}
-
-void MainWindow::on_purgeMainlineKernels_2_clicked()
-{
-    system("xterm -e '"
-           "sudo apt-fast -y install ppa-purge"
-           " && "
-           "sudo ppa-purge -y ppa:canonical-kernel-team/bootstrap"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Purged"));
-}
-
 //PREFERENCES
 
 void MainWindow::on_actionPreferences_triggered()//////////////////////

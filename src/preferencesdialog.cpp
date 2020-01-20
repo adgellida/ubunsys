@@ -19,31 +19,22 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
     DbManager db(path);
 
 
-    //language begin
+    //language and theme begin
 
     QString languageSelected = db.getStatus("language");
-
-    if (languageSelected == "Spanish") ui->comboBox_language->setCurrentText("Spanish");
-
-    else if (languageSelected == "Español") ui->comboBox_language->setCurrentText("Español");
-
-    else if (languageSelected == "English") ui->comboBox_language->setCurrentText("English");
-
-    else if (languageSelected == "Inglés")  ui->comboBox_language->setCurrentText("Inglés");
-
-    //language end
-
-
-    //theme begin
-
     QString themeSelected = db.getStatus("theme");
 
-    if (themeSelected == "Dark") ui->comboBox_theme->setCurrentText("Oscuro");
+    if (languageSelected == "English") ui->comboBox_language->setCurrentText("English");
+    if (languageSelected == "Spanish") ui->comboBox_language->setCurrentText("Spanish");
+    if (languageSelected == "Español") ui->comboBox_language->setCurrentText("Español");
+    if (languageSelected == "Inglés") ui->comboBox_language->setCurrentText("Inglés");
 
-    else if (themeSelected == "Default") ui->comboBox_theme->setCurrentText("Por defecto");
+    if (themeSelected == "Dark") ui->comboBox_theme->setCurrentText("Dark");
+    if (themeSelected == "Oscuro") ui->comboBox_theme->setCurrentText("Oscuro");
+    if (themeSelected == "Por defecto") ui->comboBox_theme->setCurrentText("Por defecto");
+    if (themeSelected == "Default") ui->comboBox_theme->setCurrentText("Default");
 
-    //theme end
-
+    //language ant theme end
 
     //text editor begin
 
@@ -52,7 +43,6 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
     ui->textEditor->setText(actualTextEditorSelected);  //puts actual data on gui
 
     //text editor end
-
 
 }
 PreferencesDialog::~PreferencesDialog()
@@ -66,37 +56,68 @@ void PreferencesDialog::on_closePreferencesDialogButton_clicked()
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-    //language begin
+    //language and theme begin
 
-    QString language_selected = ui->comboBox_language->currentText();
-    db.updateStatus("language", language_selected);
+    QString languageSelected = ui->comboBox_language->currentText();
+    QString themeSelected = ui->comboBox_theme->currentText();
 
-    //language end
+    if ((languageSelected == "English") && (themeSelected == "Dark")){
+        db.updateStatus("language", "English");
+        db.updateStatus("theme", "Dark");
+    }
+
+    if ((languageSelected == "Spanish") && (themeSelected == "Dark")){
+        db.updateStatus("language", "Español");
+        db.updateStatus("theme", "Oscuro");
+    }
+
+    if ((languageSelected == "Inglés") && (themeSelected == "Oscuro")){
+        db.updateStatus("language", "English");
+        db.updateStatus("theme", "Dark");
+    }
+
+    if ((languageSelected == "Español") && (themeSelected == "Oscuro")){
+            db.updateStatus("language", "Español");
+            db.updateStatus("theme", "Oscuro");
+    }
+
+    /////
+
+    if ((languageSelected == "English") && (themeSelected == "Default")){
+        db.updateStatus("language", "English");
+        db.updateStatus("theme", "Default");
+    }
+
+    if ((languageSelected == "Spanish") && (themeSelected == "Default")){
+        db.updateStatus("language", "Español");
+        db.updateStatus("theme", "Por defecto");
+    }
+
+    if ((languageSelected == "Inglés") && (themeSelected == "Por defecto")){
+        db.updateStatus("language", "English");
+        db.updateStatus("theme", "Default");
+    }
+
+    if ((languageSelected == "Español") && (themeSelected == "Por defecto")){
+            db.updateStatus("language", "Español");
+            db.updateStatus("theme", "Por defecto");
+    }
 
 
-    //theme begin
 
-    QString theme_selected = ui->comboBox_theme->currentText();
-    db.updateStatus("theme", theme_selected);
 
-    //theme end
+
+
+
+
+
+    //language and theme end
 
 
     //textEditor begin
 
     QString newTextEditorSelected = ui->textEditor->toPlainText();  //gets new data from gui
-
     db.updateStatus("textEditor", newTextEditorSelected);   //puts into db
-
-    QFile file (QDir::homePath() + "/.ubunsys/configurations/newTextEditor.cfg");   //puts into new cfg file
-    if ( file.open(QIODevice::ReadWrite) )
-    {
-        QTextStream stream( &file );
-        stream << newTextEditorSelected << endl;
-    }
-
-    system("~/.ubunsys/downloads/ubuntuScripts-dev/textEditorChange && " //runs script to change textEditor
-           "exit");
 
     //textEditor end
 

@@ -13,62 +13,51 @@ int main(int argc, char *argv[])
     app.setApplicationName("ubunsys");
 
     //SETTINGS
-/*
+
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
     //11.######## language
     //######## Selection
 
-    if (db.isOpen())
-    {
-        QString languageSelected = db.getStatus("language");
+//    if (db.isOpen())
+//    {
+    QTranslator translator;
 
-        QTranslator translator;
+    QString languageSelected = db.getStatus("language");
 
-        if ((languageSelected == "Spanish") || (languageSelected == "Español")){
+    if ((languageSelected == "Spanish") || (languageSelected == "Español")){
 
-            translator.load(":/languages/ubunsys_es_ES.qm");
-            app.installTranslator(&translator);
-            qDebug() << "Spanish loaded";
-        }
-
-        else if ((languageSelected == "English") || (languageSelected == "Inglés")){
-
-            qDebug() << "English loaded";
-        }
-
-        else{
-
-            qDebug() << "English loaded";
-        }
+        translator.load(":/languages/ubunsys_es_ES.qm");
+        app.installTranslator(&translator);
+        qDebug() << "Spanish loaded";
     }
 
-*/
+//    }
+
     //12.######## theme
     //######## Selection
 
+    QString themeSelected = db.getStatus("theme");
 
-    //QString themeSelected = db.getStatus("theme");
-
-    //if ((themeSelected == "Dark") || (themeSelected == "Oscuro")){
+    if ((themeSelected == "Dark") || (themeSelected == "Oscuro")){
 
         QFile file(":qdarkstyle/style.qss");
         file.open(QFile::ReadOnly | QFile::Text);
         QTextStream ts(&file);
         qApp->setStyleSheet(ts.readAll());
         qDebug() << "Dark loaded";
-    //}
+    }
 
-    //else if ((themeSelected == "Default") || (themeSelected == "Por defecto")){
+    else if ((themeSelected == "Default") || (themeSelected == "Por defecto")){
 
-    //    qDebug() << "Default loaded";
-    //}
+        qDebug() << "Default loaded";
+    }
 
-    //else {
+    else {
 
-    //    qDebug() << "Default loaded";
-    //}
+        qDebug() << "Default loaded";
+    }
 
     //theme end
 

@@ -113,10 +113,6 @@ private slots:
     void on_openMainBackupButton_clicked();
     void on_openMainRestoreButton_clicked();
     void on_openSudoersDButton_clicked();
-    void on_upgradeLatestKernel_1_clicked();
-    void on_upgradeLatestKernel_2_clicked();
-    void on_purgeMainlineKernels_clicked();
-    void on_purgeMainlineKernels_2_clicked();
     void on_openRCLocalButton_clicked();
     void on_resetDconf_clicked();
     void on_unlock_var_lib_dpkg_lock_clicked();

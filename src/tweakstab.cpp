@@ -35,12 +35,12 @@ void MainWindow::on_openSourcesListButton_clicked()
 {
     ui->statusBar->showMessage(tr("Opening Sources.list"));
 
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/042.openSourcesList"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
 
+    QString status = db.getStatus("textEditor");
+
+    QProcess::startDetached("xterm -e \"sudo -i "+ status +" /etc/apt/sources.list && exit; exec bash\"");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
@@ -219,11 +219,16 @@ void MainWindow::on_openSudoersDButton_clicked()
 
 void MainWindow::on_openHostsButton_clicked()
 {
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/060.openHosts"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
+    ui->statusBar->showMessage(tr("Opening hosts"));
+
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("textEditor");
+
+    QProcess::startDetached("xterm -e \"sudo -i "+ status +" /etc/hosts && exit; exec bash\"");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 //##sudoers
@@ -456,11 +461,12 @@ void MainWindow::on_openRCLocalButton_clicked()
 {
     ui->statusBar->showMessage(tr("Opening rc.local"));
 
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/056.openRCLocal"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("textEditor");
+
+    QProcess::startDetached("xterm -e \"sudo -i "+ status +" /etc/rc.local && exit; exec bash\"");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
@@ -542,11 +548,12 @@ void MainWindow::on_editGrubButton_clicked()
 {
     ui->statusBar->showMessage(tr("Edit grub"));
 
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/080.editGrub"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("textEditor");
+
+    QProcess::startDetached("xterm -e \"sudo -i "+ status +" /etc/default/grub && exit; exec bash\"");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
