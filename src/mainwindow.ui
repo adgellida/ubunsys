@@ -383,7 +383,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
@@ -549,6 +549,19 @@
         </property>
         <property name="checkable">
          <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="showMessagePushButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>190</y>
+          <width>80</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Mostrar</string>
         </property>
        </widget>
       </widget>
@@ -736,7 +749,7 @@
          <rect>
           <x>10</x>
           <y>260</y>
-          <width>111</width>
+          <width>201</width>
           <height>31</height>
          </rect>
         </property>
@@ -747,7 +760,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Update auto</string>
+         <string>Update auto programmable</string>
         </property>
        </widget>
        <widget class="QComboBox" name="comboBoxUpdate">
@@ -889,7 +902,7 @@
         </property>
         <property name="geometry">
          <rect>
-          <x>140</x>
+          <x>240</x>
           <y>290</y>
           <width>51</width>
           <height>41</height>
@@ -914,7 +927,7 @@
        <widget class="QLabel" name="label_63">
         <property name="geometry">
          <rect>
-          <x>140</x>
+          <x>240</x>
           <y>260</y>
           <width>261</width>
           <height>31</height>
@@ -928,6 +941,53 @@
         </property>
         <property name="text">
          <string>Official Update notification</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_131">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Update auto at app begin</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBoxUpdateAutoAppBegin">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>400</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="tristate">
+         <bool>false</bool>
         </property>
        </widget>
       </widget>
@@ -3109,6 +3169,15 @@ on terminal</string>
              </color>
             </brush>
            </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
           </active>
           <inactive>
            <colorrole role="WindowText">
@@ -3246,6 +3315,15 @@ on terminal</string>
              </color>
             </brush>
            </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
           </inactive>
           <disabled>
            <colorrole role="WindowText">
@@ -3377,6 +3455,15 @@ on terminal</string>
            <colorrole role="ToolTipText">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
               <red>0</red>
               <green>0</green>
               <blue>0</blue>
@@ -3905,7 +3992,7 @@ Windows</string>
      <x>0</x>
      <y>0</y>
      <width>649</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">

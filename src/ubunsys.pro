@@ -46,6 +46,8 @@ FORMS    += mainwindow.ui \
             updatescriptsdialog.ui \
             preferencesdialog.ui
 
+RC_ICONS += images/ubunsys.png
+
 RESOURCES += ubunsys.qrc \
              qdarkstyle/style.qrc
 DISTFILES +=

@@ -6,12 +6,25 @@
 #include "preferencesdialog.h"
 #include <QDesktopServices>
 #include <dbmanager.h>
+#include <QSystemTrayIcon>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+
+    mSystemTrayIcon = new QSystemTrayIcon(this);
+
+    //mSystemTrayIcon->setIcon(QIcon(":/images/ubunsys.ico"));
+
+    mSystemTrayIcon = new QSystemTrayIcon(QIcon(":/images/ubunsys.png"));
+
+    //mSystemTrayIcon = new QSystemTrayIcon(QIcon(":/images/ubunsys.png"));
+
+    mSystemTrayIcon->setVisible(true);
+
 
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
     qApp, SLOT(aboutQt()));
@@ -198,4 +211,12 @@ void MainWindow::on_eraseCronButton_clicked()
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_showMessagePushButton_clicked()
+{
+    mSystemTrayIcon->showMessage(tr("Mensaje"),
+        tr("Mostrando un mensaje"));
+    //mSystemTrayIcon = new QSystemTrayIcon(QIcon(":/images/128-128-76912453c14fc15ed016df244ce34b54.png"));
+
 }

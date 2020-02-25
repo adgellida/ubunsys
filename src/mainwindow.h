@@ -19,6 +19,8 @@ namespace Ui {
 class MainWindow;
 }
 
+class QSystemTrayIcon;
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -146,11 +148,14 @@ private slots:
     void on_listUpgradablePackagesButton_clicked();
     void on_listLatestInstalledPackagesButton_clicked();
 
+    void on_showMessagePushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////
     PackagesDialog *PackagesDialogUi;/////////////
     PreferencesDialog *PreferencesDialogUi;/////////////
+    QSystemTrayIcon *mSystemTrayIcon;
 };
 
 #endif // MAINWINDOW_H

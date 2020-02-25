@@ -61,6 +61,8 @@ if (db.isOpen())
     //########
     db.addNameStatus("ubunsysInstalledVersion", "NULL");
     //########
+    db.addNameStatus("updateAutoAppBegin", "Enabled");
+    //########
     //db.addNameStatus("ubuntupackages_remote_commit_version", "NULL");
     //########
     //db.addNameStatus("ubuntupackages_previous_commit_version", "NULL");
