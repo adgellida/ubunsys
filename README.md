@@ -59,38 +59,6 @@ Other Apps based on this:
 
 * [winsys](https://github.com/adgellida/winsys)
 
-How to install
-=============================================
-
-Method 1 - Launchpad PPA - Status: UPDATED
----------------------------------------------
-
-`wget https://raw.githubusercontent.com/adgellida/ubuntupackages/master/apps1/ubunsys && sudo chmod 777 ubunsys && sudo ./ubunsys`
-
-Method 2 - Download deb package from official mirrors
----------------------------------------------
-
-From upside
-
-Library error 
----------------------------------------------
-If you don't have the correct version of libraries installed in your system, 5.13 version now on dev version I go to give you 3 possible solutions:
-
-- Upgrade from official repositories or download latest from [qt.io](www.qt.io) and point to the directory installation this way:
-
-LD_LIBRARY_PATH=/home/$USER/.Qt5.13/5.13/gcc_64/lib /usr/bin/ubunsys
-
-- Upgrade Ubuntu to latest release
-
-- Install latest or nearly qt libraries on this special PPA with this [script](https://github.com/adgellida/ubuntupackages/blob/master/last%20qt%20on%20ancient%20distros)
-
-Screenshots
-=============================================
-
-<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_005.png" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_006.png" width="425">
-
-<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_007.png" width="425">         <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/ubunsys_008.png" width="425">
-
 Tutorial
 =============================================
 
