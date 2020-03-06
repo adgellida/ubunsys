@@ -1,8 +1,5 @@
-Download from official mirrors
-=============================================
-
 <p align="center">
-  <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a> <a href="https://gitlab.com/adgellida/ubunsys/tags" target="_blank"><img src="https://about.gitlab.com/images/logo.png" width="80" alt="Gitlab"></a> <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a> <a href="https://www.linux-apps.com/p/1179908" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a> <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
+  <a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://www.linux-apps.com/images_sys/superstore/linux-apps-logo.png" width="250"></a><a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://i.imgur.com/c7JgyGJ.jpg" width="250" alt="Gitlab"></a>
 </p>
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/logo.png" width="80"> ubunsys
@@ -45,9 +42,13 @@ It's theoretically compatible with all Ubuntu versions.
 
 Due to lack of time paused development.
 
+<img src="https://i.imgur.com/0kxR5Vj.gif" width="450" height="450" />
+
+<img src="https://i.imgur.com/9jecSPE.gif" width="450" height="450" />
+
 **There are currently 2 branches of development:**
 
-* [master](https://github.com/adgellida/ubunsys/tree/master) - This branch stays frozen, includes the most stable version. Due that next version will be so different internally is better to create a new and perform several tests to pass it to this branch.
+* [master](https://github.com/adgellida/ubunsys/tree/master) - Includes the most stable version.
 * [dev](https://github.com/adgellida/ubunsys/tree/dev) - This branch is in development. The most updated version is here. 
 
 **This is a very dangerous app, if you don't know what you are touching or how to fix it, don't do it. This software is for testing and knowledge purposes. It's unstable software.**

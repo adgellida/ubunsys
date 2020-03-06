@@ -1,8 +1,5 @@
-Descarga desde fuentes oficiales
-=============================================
-
 <p align="center">
-  <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a> <a href="https://gitlab.com/adgellida/ubunsys/tags" target="_blank"><img src="https://about.gitlab.com/images/logo.png" width="80" alt="Gitlab"></a> <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a> <a href="https://www.linux-apps.com/p/1179908" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a> <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="110" alt="Launchpad"></a>
+  <a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://www.linux-apps.com/images_sys/superstore/linux-apps-logo.png" width="250"></a><a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://i.imgur.com/c7JgyGJ.jpg" width="250" alt="Gitlab"></a>
 </p>
 
 <img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/logo.png" width="80"> ubunsys
@@ -45,9 +42,13 @@ Teóricamente compatible con todas las versiones de 64 bits de Ubuntu.
 
 Debido a falta de tiempo desarrollo pausado.
 
+<img src="https://i.imgur.com/0kxR5Vj.gif" width="450" height="450" />
+
+<img src="https://i.imgur.com/9jecSPE.gif" width="450" height="450" />
+
 **Actualmente hay 2 ramas de desarrollo:**
 
-* [master](https://github.com/adgellida/ubunsys/tree/master) - Esta rama se queda congelada, incluye la versión más estable. Debido a que la próxima versión será tan diferente internamente es mejor crear una nueva y realizar varios test para pasarla a esta rama.
+* [master](https://github.com/adgellida/ubunsys/tree/master) - Incluye la versión más estable.
 * [dev](https://github.com/adgellida/ubunsys/tree/dev) - Esta rama está en desarrollo. La versión más actualizada está aquí.
 
 **App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
