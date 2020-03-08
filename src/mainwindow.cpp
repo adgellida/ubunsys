@@ -67,9 +67,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     //Create extra open on future dialogs end
 
-    //icon
-    connect(trayIcon, &QSystemTrayIcon::activated, this, &MainWindow::iconActivated);
-
     //######## showMessageAtInit
 
     MainWindow::showMessageAtInit();
@@ -86,22 +83,24 @@ MainWindow::MainWindow(QWidget *parent)
 QMenu* MainWindow::createMenu()
 {
   // App can exit via Quit menu
-  auto openAction = new QAction("&Quit", this);
-  connect(openAction, &QAction::triggered, qApp, &QCoreApplication::quit);
+
+  //auto update = new QAction(tr("&Update system"), this);
+  //connect(update, SIGNAL(triggered()), this, SLOT(MainWindow::on_updateAndUpgradeButton_clicked()));
 
   auto quitAction = new QAction("&Quit", this);
   connect(quitAction, &QAction::triggered, qApp, &QCoreApplication::quit);
 
   auto menu = new QMenu(this);
 
-
-  menu->addAction(openAction);
-  menu->addSeparator();
+  //menu->addAction(update);
+  //menu->addSeparator();
   menu->addAction(quitAction);
+
   return menu;
 }
 
 ///icon
+
 void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason_)
 {
   switch (reason_) {
@@ -112,6 +111,14 @@ void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason_)
     ;
   }
 }
+
+
+void MainWindow::trayIconClicked(QSystemTrayIcon::ActivationReason reason)
+{
+    if(reason == QSystemTrayIcon::Trigger)
+        this->show();
+}
+
 
 MainWindow::~MainWindow()
 {

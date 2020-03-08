@@ -67,7 +67,9 @@ public slots:
     //void closePackagesDialog();///////////////
     void closeUpdateDialog();///////////////
     void closePreferencesDialog();///////////////
+
     void iconActivated(QSystemTrayIcon::ActivationReason);///icon
+    void trayIconClicked(QSystemTrayIcon::ActivationReason);///icon
 
 private slots:
 
