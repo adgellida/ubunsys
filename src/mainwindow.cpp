@@ -31,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Interaction
     connect(trayIcon, &QSystemTrayIcon::activated, this, &MainWindow::iconActivated);
 
-    trayIcon->showMessage("ubunsys", "I'm opening... Please wait, downloading required scripts", appIcon, 6000);
+    //trayIcon->showMessage("ubunsys", "I'm opening... Please wait, downloading required scripts", appIcon, 6000);
 
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
     qApp, SLOT(aboutQt()));
