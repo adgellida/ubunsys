@@ -8,23 +8,30 @@
 #include <dbmanager.h>
 #include <QSystemTrayIcon>
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent)
+  : QMainWindow(parent)
+  , ui(new Ui::MainWindow)
+  , trayIcon(new QSystemTrayIcon(this))
+
 {
     ui->setupUi(this);
 
+    // Tray icon menu
+    auto menu = this->createMenu();
+    this->trayIcon->setContextMenu(menu);
 
-    mSystemTrayIcon = new QSystemTrayIcon(this);
+    // App icon
+    auto appIcon = QIcon(":/images/ubunsys.png");
+    this->trayIcon->setIcon(appIcon);
+    this->setWindowIcon(appIcon);
 
-    //mSystemTrayIcon->setIcon(QIcon(":/images/ubunsys.ico"));
+    // Displaying the tray icon
+    this->trayIcon->show();     // Note: without explicitly calling show(), QSystemTrayIcon::activated signal will never be emitted!
 
-    mSystemTrayIcon = new QSystemTrayIcon(QIcon(":/images/ubunsys.png"));
+    // Interaction
+    connect(trayIcon, &QSystemTrayIcon::activated, this, &MainWindow::iconActivated);
 
-    //mSystemTrayIcon = new QSystemTrayIcon(QIcon(":/images/ubunsys.png"));
-
-    mSystemTrayIcon->setVisible(true);
-
+    trayIcon->showMessage("ubunsys", "I'm opening... Please wait, downloading required scripts", appIcon, 6000);
 
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
     qApp, SLOT(aboutQt()));
@@ -60,6 +67,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Create extra open on future dialogs end
 
+    //icon
+    connect(trayIcon, &QSystemTrayIcon::activated, this, &MainWindow::iconActivated);
+
     //######## showMessageAtInit
 
     MainWindow::showMessageAtInit();
@@ -71,6 +81,36 @@ MainWindow::MainWindow(QWidget *parent) :
     //######## showUpdateOutput
 
     MainWindow::showUpdateOutput();
+}
+///icon
+QMenu* MainWindow::createMenu()
+{
+  // App can exit via Quit menu
+  auto openAction = new QAction("&Quit", this);
+  connect(openAction, &QAction::triggered, qApp, &QCoreApplication::quit);
+
+  auto quitAction = new QAction("&Quit", this);
+  connect(quitAction, &QAction::triggered, qApp, &QCoreApplication::quit);
+
+  auto menu = new QMenu(this);
+
+
+  menu->addAction(openAction);
+  menu->addSeparator();
+  menu->addAction(quitAction);
+  return menu;
+}
+
+///icon
+void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason_)
+{
+  switch (reason_) {
+  case QSystemTrayIcon::Trigger:
+    trayIcon->showMessage("Hello", "You clicked me!");
+    break;
+  default:
+    ;
+  }
 }
 
 MainWindow::~MainWindow()
@@ -211,12 +251,4 @@ void MainWindow::on_eraseCronButton_clicked()
            "; exec bash'");
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-void MainWindow::on_showMessagePushButton_clicked()
-{
-    mSystemTrayIcon->showMessage(tr("Mensaje"),
-        tr("Mostrando un mensaje"));
-    //mSystemTrayIcon = new QSystemTrayIcon(QIcon(":/images/128-128-76912453c14fc15ed016df244ce34b54.png"));
-
 }

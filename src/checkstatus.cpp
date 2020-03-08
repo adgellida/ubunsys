@@ -4,6 +4,7 @@
 #include "updatescriptsdialog.h"
 #include <QMessageBox>
 #include <dbmanager.h>
+#include <QDesktopServices>
 
 void MainWindow::checkAllStatus()
 {
@@ -343,7 +344,9 @@ void MainWindow::checkUbunsysUpdate(){
         msgBox.addButton(QMessageBox::No);
         msgBox.setDefaultButton(QMessageBox::No);
         if(msgBox.exec() == QMessageBox::Yes){
-            on_actionUpdateApp_triggered();     //launch update ubunsys app
+            //on_actionUpdateApp_triggered();     //launch update ubunsys app
+            QDesktopServices::openUrl(QUrl("https://www.pling.com/p/1179908", QUrl::TolerantMode));
+            ui->statusBar->showMessage(tr("Launches release page to update manually. Please wait."));
         }
         else {
           // do nothing

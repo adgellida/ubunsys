@@ -3169,15 +3169,6 @@ on terminal</string>
              </color>
             </brush>
            </colorrole>
-           <colorrole role="PlaceholderText">
-            <brush brushstyle="NoBrush">
-             <color alpha="128">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-             </color>
-            </brush>
-           </colorrole>
           </active>
           <inactive>
            <colorrole role="WindowText">
@@ -3315,15 +3306,6 @@ on terminal</string>
              </color>
             </brush>
            </colorrole>
-           <colorrole role="PlaceholderText">
-            <brush brushstyle="NoBrush">
-             <color alpha="128">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-             </color>
-            </brush>
-           </colorrole>
           </inactive>
           <disabled>
            <colorrole role="WindowText">
@@ -3455,15 +3437,6 @@ on terminal</string>
            <colorrole role="ToolTipText">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-             </color>
-            </brush>
-           </colorrole>
-           <colorrole role="PlaceholderText">
-            <brush brushstyle="NoBrush">
-             <color alpha="128">
               <red>0</red>
               <green>0</green>
               <blue>0</blue>
@@ -3982,7 +3955,7 @@ Windows</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2020.01.20</string>
+     <string>v2020.03.07</string>
     </property>
    </widget>
   </widget>
@@ -3992,7 +3965,7 @@ Windows</string>
      <x>0</x>
      <y>0</y>
      <width>649</width>
-     <height>22</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">

@@ -14,6 +14,8 @@
 #include <updatescriptsdialog.h>//////////
 #include <packagesdialog.h>//////////
 #include <preferencesdialog.h>//////////
+#include <QSystemTrayIcon>
+#include <QMenu>
 
 namespace Ui {
 class MainWindow;
@@ -65,7 +67,7 @@ public slots:
     //void closePackagesDialog();///////////////
     void closeUpdateDialog();///////////////
     void closePreferencesDialog();///////////////
-
+    void iconActivated(QSystemTrayIcon::ActivationReason);///icon
 
 private slots:
 
@@ -148,14 +150,16 @@ private slots:
     void on_listUpgradablePackagesButton_clicked();
     void on_listLatestInstalledPackagesButton_clicked();
 
-    void on_showMessagePushButton_clicked();
-
 private:
     Ui::MainWindow *ui;
     UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////
     PackagesDialog *PackagesDialogUi;/////////////
     PreferencesDialog *PreferencesDialogUi;/////////////
-    QSystemTrayIcon *mSystemTrayIcon;
+//icon begin
+    QSystemTrayIcon *trayIcon;
+    QMenu* trayIconMenu;
+    QMenu* createMenu();
+//icon end
 };
 
 #endif // MAINWINDOW_H

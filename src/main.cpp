@@ -4,6 +4,7 @@
 #include <QMessageBox>
 #include <QTextStream>
 #include <QFile>
+#include <QSystemTrayIcon>
 #include <dbmanager.h>
 
 

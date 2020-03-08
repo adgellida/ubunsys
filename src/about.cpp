@@ -34,12 +34,12 @@ void MainWindow::on_actionAbout_triggered()
 
                   "<p align='left'><a href='https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys' style='color:red'>Launchpad PPA</a> - Updated</p></br>"
 
-                  "<p align='left'><a href='https://www.linux-apps.com/p/1179908' style='color:red'>Linux-apps</a> - Updated</p></br>"
+                  "<p align='left'><a href='https://www.pling.com/p/1179908' style='color:red'>Linux-apps</a> - Updated</p></br>"
 
                   "<p align='left'><a href='' style='color:red'></a></p></br>"));
 
     about.setInformativeText(tr("Copyright (c) 2020 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\n"
-                             "v2020.01.20"));
+                             "v2020.03.07"));
 
     about.setWindowTitle(tr("About"));
 

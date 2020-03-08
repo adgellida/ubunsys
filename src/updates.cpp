@@ -18,13 +18,13 @@ void MainWindow::on_updateAndUpgradeButton_clicked()
 
     QProcess::startDetached("xterm -e \"sudo apt-fast -y update && sudo apt-fast -y upgrade && echo Close window if ok; exec bash\"");
 
-    /*
+/*
     system("xterm -e '"
            "sudo apt-fast -y update"
            " && "
            "sudo apt-fast -y upgrade"
            "; exec bash'");
-    */
+*/
 
     ui->statusBar->showMessage(tr("Default update & upgrade system did it successful. Now select another action"));
 }
