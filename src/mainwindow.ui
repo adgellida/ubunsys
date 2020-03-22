@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <property name="iconSize">
      <size>
@@ -383,7 +383,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
@@ -536,7 +536,7 @@
         </property>
         <property name="icon">
          <iconset resource="ubunsys.qrc">
-          <normaloff>:/images/escoba.png</normaloff>:/images/escoba.png</iconset>
+          <normaloff>:/images/broom2.png</normaloff>:/images/broom2.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -595,7 +595,7 @@
         </property>
         <property name="icon">
          <iconset resource="ubunsys.qrc">
-          <normaloff>:/images/escoba.png</normaloff>:/images/escoba.png</iconset>
+          <normaloff>:/images/broom2.png</normaloff>:/images/broom2.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -3942,7 +3942,7 @@ Windows</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2020.03.08</string>
+     <string>v2020.03.22</string>
     </property>
    </widget>
   </widget>

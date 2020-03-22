@@ -39,7 +39,7 @@ void MainWindow::on_actionAbout_triggered()
                   "<p align='left'><a href='' style='color:red'></a></p></br>"));
 
     about.setInformativeText(tr("Copyright (c) 2020 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\n"
-                             "v2020.03.08"));
+                             "v2020.03.22"));
 
     about.setWindowTitle(tr("About"));
 
