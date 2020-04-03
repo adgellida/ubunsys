@@ -1,5 +1,5 @@
-ubunsys (2020.03.08~ubuntu19.10) eoan; urgency=medium
+ubunsys (2020.04.03~ubuntu20.04) focal; urgency=medium
 
   * Added minor changes and applied bugfixes.
 
- -- Antonio David Gellida Lavara <adgellida@gmail.com>  Sun, 20 Mar 2020 05:30:00 +0200
+ -- Antonio David Gellida Lavara <adgellida@gmail.com>  Fri, 3 Apr 2020 12:30:00 +0200

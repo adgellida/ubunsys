@@ -1,14 +1,13 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ubunsys
-Source: <url://example.com>
+Source: https://github.com/adgellida/ubunsys
 
 Files: *
-Copyright: <years> <put author's name and email here>
-           <years> <likewise for another author>
+Copyright: 2020 Antonio David Gellida Lavara <adgellida@gmail.com>
 License: GPL-3.0+
 
 Files: debian/*
-Copyright: 2016 Antonio David Gellida Lavara <adgellida@gmail.com>
+Copyright: 2020 Antonio David Gellida Lavara <adgellida@gmail.com>
 License: GPL-3.0+
 
 License: GPL-3.0+

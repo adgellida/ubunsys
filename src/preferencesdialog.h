@@ -25,6 +25,8 @@ private slots:
 
     void on_restoreDefaultTextEditorButton_clicked();
 
+    void on_restoreDefaultTerminalButton_clicked();
+
 private:
     Ui::PreferencesDialog *ui;
 

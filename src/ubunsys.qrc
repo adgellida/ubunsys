@@ -55,5 +55,6 @@
         <file>images/icons8-update-100.png</file>
         <file>images/broom.png</file>
         <file>images/broom2.png</file>
+        <file>images/settings-4-128.png</file>
     </qresource>
 </RCC>

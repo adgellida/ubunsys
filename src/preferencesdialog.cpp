@@ -103,14 +103,6 @@ void PreferencesDialog::on_closePreferencesDialogButton_clicked()
             db.updateStatus("theme", "Por defecto");
     }
 
-
-
-
-
-
-
-
-
     //language and theme end
 
 
@@ -144,5 +136,10 @@ void PreferencesDialog::on_restoreDefaultTextEditorButton_clicked()
     DbManager db(path);
     db.updateStatus("textEditor", "nano");
     ui->textEditor->setText("nano");
+
+}
+
+void PreferencesDialog::on_restoreDefaultTerminalButton_clicked()
+{
 
 }

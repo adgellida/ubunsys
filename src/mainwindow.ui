@@ -3942,7 +3942,7 @@ Windows</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2020.03.22</string>
+     <string>v2020.04.03</string>
     </property>
    </widget>
   </widget>
@@ -3952,7 +3952,7 @@ Windows</string>
      <x>0</x>
      <y>0</y>
      <width>649</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">
@@ -4132,7 +4132,7 @@ Windows</string>
    </property>
    <property name="icon">
     <iconset resource="ubunsys.qrc">
-     <normaloff>:/images/gtk-preferences.png</normaloff>:/images/gtk-preferences.png</iconset>
+     <normaloff>:/images/settings-4-128.png</normaloff>:/images/settings-4-128.png</iconset>
    </property>
    <property name="text">
     <string>Preferences</string>
