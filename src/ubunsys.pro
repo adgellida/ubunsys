@@ -18,8 +18,8 @@ TARGET    = ubunsys
 TEMPLATE  = app
 
 SOURCES  += main.cpp \
-    checkstatus.cpp \
-    initializations.cpp \
+            checkstatus.cpp \
+            initializations.cpp \
             mainwindow.cpp \
             toolbartab.cpp \
             repairtab.cpp \
@@ -31,15 +31,15 @@ SOURCES  += main.cpp \
             rootfilesysproxymodel.cpp \
             updatescriptsdialog.cpp \
             preferencesdialog.cpp \
-    updates.cpp \
-    dbmanager.cpp
+            updates.cpp \
+            dbmanager.cpp
 
 HEADERS  += mainwindow.h \
             packagesdialog.h \
             rootfilesysproxymodel.h \
             updatescriptsdialog.h \
             preferencesdialog.h \
-    dbmanager.h
+            dbmanager.h
 
 FORMS    += mainwindow.ui \
             packagesdialog.ui \
@@ -85,3 +85,5 @@ updateForced.path = /usr/share/ubunsys/scripts
 updateForced.files = $$PWD/scripts/updateForced.sh
 
 INSTALLS += target desktop icon apt-fastChecking updateUbuntupackages updateUbuntuScripts updateUbunsys updateForced
+
+QMAKE_CXXFLAGS += "-fno-sized-deallocation"
