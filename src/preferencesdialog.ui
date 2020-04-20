@@ -100,8 +100,8 @@
   <widget class="QPushButton" name="closePreferencesDialogButton">
    <property name="geometry">
     <rect>
-     <x>239</x>
-     <y>250</y>
+     <x>250</x>
+     <y>260</y>
      <width>141</width>
      <height>31</height>
     </rect>
@@ -180,7 +180,7 @@ do the same if you click on &quot;Close and Restart&quot;</string>
   </widget>
   <widget class="QPushButton" name="restoreDefaultTerminalButton">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -215,7 +215,7 @@ do the same if you click on &quot;Close and Restart&quot;</string>
   </widget>
   <widget class="QTextEdit" name="terminal">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>

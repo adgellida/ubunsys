@@ -56,5 +56,8 @@
         <file>images/broom.png</file>
         <file>images/broom2.png</file>
         <file>images/settings-4-128.png</file>
+        <file>images/transparent-clipboard-clear-5.png</file>
+        <file>images/panda.png</file>
+        <file>images/ubunsys+panda.png</file>
     </qresource>
 </RCC>

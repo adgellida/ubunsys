@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "packagesdialog.h"
-#include "updatescriptsdialog.h"
 #include <QMessageBox>
 #include <dbmanager.h>
 #include <QDesktopServices>
@@ -13,35 +12,22 @@ void MainWindow::checkAllStatus()
     system("/usr/share/ubunsys/scripts/updateUbuntupackages.sh");
 
     MainWindow::checkaptfastInstalled();
-
     MainWindow::checkUbunsysUpdate();
-
-    //1.########
     //MainWindow::checkFirewallStatus();
-    //2.########
     MainWindow::checkHiddenStartupItemsStatus();
-    //3.########
     MainWindow::checkOfficialUpdateNotificationStatus();
-    //4.########
     MainWindow::checkSudoWithoutPassStatus();
-    //5.########
-    //MainWindow::checkTextEditor();
-    //6.########
     MainWindow::checkAsterisksStatus();
-    //7.########
     MainWindow::checkUpdateAutoStatus();
-    //8.########
     MainWindow::checkHibernationStatus();
-    //9.########
     MainWindow::checkLockScreenStatus();
-    //10.########
     MainWindow::checkLoginSoundStatus();
 }
 
-//1.########
+//########
 void MainWindow::checkFirewallStatus()
 {
-    //1.######## firewall
+    //######## firewall
     //######## Status
 
     system("xterm -e '"
@@ -67,20 +53,20 @@ void MainWindow::checkFirewallStatus()
     ui->checkBox_firewall->setEnabled(true);
 }
 
-//2.########
+//########
 
 void MainWindow::on_checkFirewallStatus_clicked()
 {
-    //2.######## HideStartupItems
+    //######## HideStartupItems
     //######## Status
 
     MainWindow::checkFirewallStatus();
 }
 
-//2.########
+//########
 void MainWindow::checkHiddenStartupItemsStatus()
 {
-    //2.######## HideStartupItems
+    //######## HideStartupItems
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -99,10 +85,10 @@ void MainWindow::checkHiddenStartupItemsStatus()
 
 }
 
-//3.########
+//########
 void MainWindow::checkOfficialUpdateNotificationStatus()
 {
-    //3.######## updateNotif
+    //########updateNotif
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -121,10 +107,10 @@ void MainWindow::checkOfficialUpdateNotificationStatus()
 
 }
 
-//4.########
+//########
 void MainWindow::checkSudoWithoutPassStatus()
 {
-    //4.######## sudoWithoutPass
+    //######## sudoWithoutPass
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -143,34 +129,11 @@ void MainWindow::checkSudoWithoutPassStatus()
 
 }
 
-//5.########
-
-void MainWindow::checkTextEditor()
-{
-    //5.######## textEditor
-    //######## Status
-    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
-    DbManager db(path);
-
-    QString actualTextEditorSelected = db.getStatus("textEditor");
-
-    QFile file (QDir::homePath() + "/.ubunsys/configurations/actualTextEditor.cfg");
-    if ( file.open(QIODevice::ReadWrite) )
-    {
-        QTextStream stream( &file );
-        stream << actualTextEditorSelected << endl;
-    }
-
-    system("~/.ubunsys/downloads/ubuntuScripts-dev/textEditorChange && "
-           "exit");
-
-}
-
-//6.########
+//########
 
 void MainWindow::checkAsterisksStatus()
 {
-    //6.######## asterisks
+    //######## asterisks
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -188,11 +151,11 @@ void MainWindow::checkAsterisksStatus()
     }
 }
 
-//7.########
+//########
 
 void MainWindow::checkUpdateAutoStatus()
 {
-    //7.######## updateAuto
+    //######## updateAuto
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -216,11 +179,11 @@ void MainWindow::checkUpdateAutoStatus()
 
 }
 
-//8.########
+//########
 
 void MainWindow::checkHibernationStatus()
 {
-    //8.######## hibernation
+    //######## hibernation
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -238,11 +201,11 @@ void MainWindow::checkHibernationStatus()
     }
 }
 
-//9.########
+//########
 
 void MainWindow::checkLockScreenStatus()
 {
-    //9.######## lockScreen
+    //######## lockScreen
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -261,11 +224,11 @@ void MainWindow::checkLockScreenStatus()
 
 }
 
-//10.########
+//########
 
 void MainWindow::checkLoginSoundStatus()
 {
-    //10.######## loginSound
+    //######## loginSound
     //######## Status
 
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -284,11 +247,11 @@ void MainWindow::checkLoginSoundStatus()
 
 }
 
-//14.########
+//########
 
 void MainWindow::checkaptfastInstalled(){
 
-    //14.######## checkApt-fastInstallation
+    //######## checkApt-fastInstallation
     //######## Status
     system("/usr/share/ubunsys/scripts/apt-fastChecking.sh");
 
@@ -329,6 +292,8 @@ void MainWindow::checkUbunsysUpdate(){
     DbManager db(path);
 
     QString status = db.getStatus("appUpdatePresent");
+    QString status2 = db.getStatus("ubunsysGithubVersion");
+
 
     if (status == "false"){
 
@@ -339,7 +304,7 @@ void MainWindow::checkUbunsysUpdate(){
 
         QMessageBox msgBox;
         msgBox.setWindowTitle("ubunsys app update present");
-        msgBox.setText("There's an update, would you like to install it?");
+        msgBox.setText("There's an update v" + status2 + ", would you like to install it?");
         msgBox.setStandardButtons(QMessageBox::Yes);
         msgBox.addButton(QMessageBox::No);
         msgBox.setDefaultButton(QMessageBox::No);
@@ -352,4 +317,55 @@ void MainWindow::checkUbunsysUpdate(){
           // do nothing
         }
     }
+}
+
+void MainWindow::checkUserInSudoers(){
+
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("sudoWOPass");
+
+    if (status == "Enabled"){
+
+        QMessageBox::information(this,tr("ubunsys needs privileges"),tr("Your user is in sudoers group.\nubunsys now will work correctly"));
+
+    }
+
+    else if (status == "Disabled"){
+
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("ubunsys needs privileges");
+        msgBox.setText("ubunsys needs your user in the sudoers group.\nDo you allow it?");
+        msgBox.setStandardButtons(QMessageBox::Yes);
+        msgBox.addButton(QMessageBox::No);
+        msgBox.setDefaultButton(QMessageBox::Yes);
+
+        if (msgBox.exec() == QMessageBox::Yes){
+
+            MainWindow::on_checkBoxSudoWOPass_clicked(true);
+
+            static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+            DbManager db(path);
+
+            QString status2 = db.getStatus("sudoWOPass");
+
+            if (status2 == "Enabled"){
+
+                QMessageBox::information(this,tr("ubunsys needs privileges"),tr("Your user is in sudoers group.\nubunsys now will work correctly"));
+            }
+
+            else{
+
+                QMessageBox::information(this,tr("ubunsys needs privileges"),tr("ubunsys wont' work correctly"));
+
+            }
+
+        }else {
+
+            QMessageBox::information(this,tr("ubunsys needs privileges"),tr("ubunsys wont' work correctly"));
+        }
+
+    }
+
 }

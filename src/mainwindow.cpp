@@ -1,12 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "updatescriptsdialog.cpp"
-#include "updatescriptsdialog.h"
 #include "preferencesdialog.cpp"
 #include "preferencesdialog.h"
 #include <QDesktopServices>
 #include <dbmanager.h>
 #include <QSystemTrayIcon>
+#include <QLayout>
+#include <QProcess>
 
 MainWindow::MainWindow(QWidget *parent)
   : QMainWindow(parent)
@@ -16,87 +16,48 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Tray icon menu
-    auto menu = this->createMenu();
-    this->trayIcon->setContextMenu(menu);
+    //ui->centralWidget->setVisible(false);
 
-    // App icon
-    auto appIcon = QIcon(":/images/ubunsys.png");
-    this->trayIcon->setIcon(appIcon);
-    this->setWindowIcon(appIcon);
-
-    // Displaying the tray icon
-    this->trayIcon->show();     // Note: without explicitly calling show(), QSystemTrayIcon::activated signal will never be emitted!
-
-    // Interaction
-    connect(trayIcon, &QSystemTrayIcon::activated, this, &MainWindow::iconActivated);
-
-    //trayIcon->showMessage("ubunsys", "I'm opening... Please wait, downloading required scripts", appIcon, 6000);
-
-    connect(ui->actionAbout_Qt, SIGNAL(triggered()),
-    qApp, SLOT(aboutQt()));
-
-    //Creating folder configurations
-
-    system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
-           "test -d ~/.ubunsys/configurations || mkdir -p ~/.ubunsys/configurations && "
-           "exit");
-
-    //######## initializeDatabase
-
-    MainWindow::initializeDatabase();
-
-    //######## initializeGUI
-
-    MainWindow::initializeGUI();
-
-    //######## createFoldersFiles
-
+    //######## INITIALIZATIONS
+    MainWindow::initializeTrayIcon();
     MainWindow::createFoldersFiles();
+    MainWindow::initializeDatabase();
+    MainWindow::initializeGUI();
+    MainWindow::initializeConsole();
+    MainWindow::showMessageAtInit();
+    MainWindow::checkUserInSudoers();
+    MainWindow::checkAllStatus();
+    //MainWindow::showUpdateOutput();
 
     //Create extra open on future dialogs begin
-
-    UpdateScriptsDialogUi = new UpdateScriptsDialog ();//////////////
-    connect(UpdateScriptsDialogUi, SIGNAL(CloseClicked()), this , SLOT(closeUpdateDialog()));////////////////
+    connect(ui->actionAbout_Qt, SIGNAL(triggered()),
+    qApp, SLOT(aboutQt()));
 
     PackagesDialogUi = new PackagesDialog ();//////////////
     //connect(PackagesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePackagesDialog()));////////////////
 
     PreferencesDialogUi = new PreferencesDialog ();//////////////
-    connect(PreferencesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePreferencesDialog()));////////////////
-
-    //Create extra open on future dialogs end
-
-    //######## showMessageAtInit
-
-    MainWindow::showMessageAtInit();
-
-    //######## checkAllStatus
-
-    MainWindow::checkAllStatus();
-
-    //######## showUpdateOutput
-
-    MainWindow::showUpdateOutput();
+    connect(PreferencesDialogUi, SIGNAL(CloseClicked()), this , SLOT(closePreferencesDialog()));////////////////  
 }
+
 ///icon
 QMenu* MainWindow::createMenu()
 {
-  // App can exit via Quit menu
+    // App can exit via Quit menu
 
-  //auto update = new QAction(tr("&Update system"), this);
-  //connect(update, SIGNAL(triggered()), this, SLOT(MainWindow::on_updateAndUpgradeButton_clicked()));
+    //auto update = new QAction(tr("&Update system"), this);
+    //connect(update, SIGNAL(triggered()), this, SLOT(MainWindow::on_updateAndUpgradeButton_clicked()));
 
-  auto quitAction = new QAction("&Quit", this);
-  connect(quitAction, &QAction::triggered, qApp, &QCoreApplication::quit);
+    auto quitAction = new QAction("&Quit", this);
+    connect(quitAction, &QAction::triggered, qApp, &QCoreApplication::quit);
 
-  auto menu = new QMenu(this);
+    auto menu = new QMenu(this);
 
-  //menu->addAction(update);
-  //menu->addSeparator();
-  menu->addAction(quitAction);
+    //menu->addAction(update);
+    //menu->addSeparator();
+    menu->addAction(quitAction);
 
-  return menu;
+    return menu;
 }
 
 ///icon
@@ -122,7 +83,6 @@ void MainWindow::trayIconClicked(QSystemTrayIcon::ActivationReason reason)
 
 MainWindow::~MainWindow()
 {
-    delete UpdateScriptsDialogUi;////////////////
     delete PackagesDialogUi;////////////////
     delete PreferencesDialogUi;////////////////
     delete ui;
@@ -130,40 +90,11 @@ MainWindow::~MainWindow()
 
 //#############FUNCTION DECLARATIONS
 
-void MainWindow::on_actionManualUpdateDialog_triggered()//////////////////////
-{
-    qDebug() << "dialogOpenned";
-    UpdateScriptsDialogUi->show();
-    ui->textBrowser->setText(tr("Continue on the opened dialog..."));
-}
-
 void MainWindow::on_runScriptsManager_released()//////////////////////
 {
     qDebug() << "dialogOpenned";
     PackagesDialogUi->show();
-    ui->textBrowser->setText(tr("Continue on the opened dialog..."));
     ui->statusBar->showMessage(tr("Continue on the opened dialog..."));
-}
-
-void MainWindow::closeUpdateDialog()
-{
-    //Show update output
-
-    QFile file (QDir::homePath() + "/.ubunsys/updates/updateLog.log");
-    if(!file.open(QIODevice::ReadOnly))
-        QMessageBox::information(0,"info",file.errorString());
-
-    QTextStream in (&file);
-
-    ui->textBrowser->setText(in.readAll());
-
-    //QFile::remove(QDir::homePath() + "/.ubunsys/updates/updateLog.log");
-    system("rm -Rf ~/.ubunsys/updates/updateLog.log");
-    system("touch ~/.ubunsys/updates/updateLog.log");
-
-    qDebug() << "Close pushed";
-
-    UpdateScriptsDialogUi->close();
 }
 
 //PREFERENCES
@@ -172,7 +103,7 @@ void MainWindow::on_actionPreferences_triggered()//////////////////////
 {
     qDebug() << "Preferences pushed";
     PreferencesDialogUi->show();
-    ui->textBrowser->setText(tr("Opened preferences dialog..."));
+    //ui->textBrowser->setText(tr("Opened preferences dialog..."));
 }
 
 void MainWindow::closePreferencesDialog()//////////////////////
@@ -236,26 +167,72 @@ void MainWindow::on_actionTwitter_triggered()
 
 void MainWindow::on_openCronButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Opening cron jobs"));
-
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-dev/063.openCron"
            " && "
            "echo Close this window!"
            "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 void MainWindow::on_eraseCronButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Erasing cron jobs"));
-
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-dev/064.eraseCron"
            " && "
            "echo Close this window!"
            "; exec bash'");
+}
 
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
+void MainWindow::on_actionCleanTerminal_triggered()
+{
+    console->clear();
+}
+
+void MainWindow::on_actionCleanSystem_triggered()
+{
+    MainWindow::on_cleanButton_clicked();
+}
+
+void MainWindow::on_openBashRCButton_clicked()
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+    QString status2 = db.getStatus("textEditor");
+
+    QProcess::startDetached(status + " -e \"sudo -i "+ status2 +" ~/.bashrc \" ");
+}
+
+//##CONSOLE
+
+void MainWindow::get_data()
+{
+    this->console->moveCursor(QTextCursor::End);
+    this->console->insertPlainText(process->readAll());
+    this->console->moveCursor(QTextCursor::End);
+    // this->console->setPlainText(process->readAllStandardError());
+}
+
+void MainWindow::add_text_completed()
+{
+    this->console->insertPlainText("\n\n===PROCESS FINISHED===\n\n");
+}
+
+//##
+
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("sudoWOPass");
+
+    if (status == "Enabled"){
+
+        MainWindow::on_checkBoxSudoWOPass_clicked(false);
+        QMessageBox::information(this,tr("sudoers group"),tr("For more security ubunsys has removed your user from sudoers group"));
+    }
+
+    QWidget::closeEvent(event);
 }

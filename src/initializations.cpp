@@ -1,12 +1,31 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "packagesdialog.h"
-#include "updatescriptsdialog.h"
 #include <QMessageBox>
 #include <dbmanager.h>
 
-void MainWindow::initializeDatabase()
-{
+void MainWindow::initializeTrayIcon(){
+
+    // Tray icon menu
+    auto menu = this->createMenu();
+    this->trayIcon->setContextMenu(menu);
+
+    // App icon
+    auto appIcon = QIcon(":/images/ubunsys.png");
+    this->trayIcon->setIcon(appIcon);
+    this->setWindowIcon(appIcon);
+
+    // Displaying the tray icon
+    this->trayIcon->show();     // Note: without explicitly calling show(), QSystemTrayIcon::activated signal will never be emitted!
+
+    // Interaction
+    connect(trayIcon, &QSystemTrayIcon::activated, this, &MainWindow::iconActivated);
+
+    //trayIcon->showMessage("ubunsys", "I'm opening... Please wait, downloading required scripts", appIcon, 6000);
+
+}
+
+void MainWindow::initializeDatabase(){
 
 //Database initialization begin
 static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -20,7 +39,6 @@ if (db.isOpen())
 
     if (out == false)   // If table not exists, we add variables and values
     {
-
     //initializing values of database begin
     db.createTable();   // Creates a table if it doens't exist. Otherwise, it will use existing table.
     //db.removeAllNames();
@@ -28,25 +46,25 @@ if (db.isOpen())
     db.addNameStatus("dataPresent", "Enabled");
     //#########
     db.addNameStatus("messageAtInit", "Enabled");
-    //1.#########
+    //#########
     db.addNameStatus("firewall", "Disabled");
-    //2.#########
+    //#########
     db.addNameStatus("hideStartupItems", "Disabled");
-    //3.#########
+    //#########
     db.addNameStatus("officialUpdateNotification", "Enabled");
-    //4.#########
+    //#########
     db.addNameStatus("sudoWOPass", "Disabled");
-    //5.#########
+    //#########
     db.addNameStatus("textEditor", "nano");
-    //6.#########
+    //#########
     db.addNameStatus("asterisks", "Disabled");
-    //7.#########
+    //#########
     db.addNameStatus("updateAuto", "Disabled");
-    //8.#########
+    //#########
     db.addNameStatus("hibernation", "Disabled");
-    //9.#########
+    //#########
     db.addNameStatus("lockScreen", "Enabled");
-    //10.########
+    //#########
     db.addNameStatus("loginSound", "Enabled");
     //########
     db.addNameStatus("language", "English");
@@ -62,15 +80,19 @@ if (db.isOpen())
     db.addNameStatus("ubunsysInstalledVersion", "NULL");
     //########
     db.addNameStatus("updateAutoAppBegin", "Enabled");
-    //########
-    //db.addNameStatus("ubuntupackages_remote_commit_version", "NULL");
-    //########
-    //db.addNameStatus("ubuntupackages_previous_commit_version", "NULL");
-    //########
-    //db.addNameStatus("ubuntuScripts_remote_commit_version", "NULL");
-    //########
-    //db.addNameStatus("ubuntuScripts_previous_commit_version", "NULL");
+    //#########
+    db.addNameStatus("terminal", "xterm");
     }
+
+    bool out2 = db.nameExists("terminal");
+    qDebug() << "Exists?";
+    qDebug() << out2;
+
+    if (out == false)   // If table not exists, we add variables and values
+    {
+    db.addNameStatus("terminal", "xterm");
+    }
+
 }
 else
 {
@@ -139,6 +161,31 @@ void MainWindow::initializeGUI(){
     ui->tabWidget_3->setCurrentIndex(0);
 }
 
+void MainWindow::initializeConsole(){
+
+    //this->setGeometry(333, 333, 355, 355);
+
+    QVBoxLayout *layout = new QVBoxLayout;
+
+    console = new QTextEdit;
+    process = new QProcess;
+
+    //console->setTextBackgroundColor("RED");
+
+    layout->addWidget(console);
+
+    process->setProcessChannelMode(QProcess::MergedChannels);
+
+    console->setStyleSheet("QTextEdit { background-color : black; color : green; }");
+    console->ensureCursorVisible();
+
+    ui->widget_3->setLayout(layout);
+    ui->widget_3->setGeometry(70, 550, 600, 200);
+
+    connect(process, SIGNAL(readyRead()), this, SLOT(get_data()));
+    connect(process, SIGNAL(finished(int)), this, SLOT(add_text_completed()));
+}
+
 void MainWindow::showMessageAtInit()
 {
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
@@ -161,6 +208,7 @@ void MainWindow::showMessageAtInit()
 void MainWindow::createFoldersFiles()
 {
     system("test -d ~/.ubunsys || mkdir -p ~/.ubunsys && "
+           "test -d ~/.ubunsys/configurations || mkdir -p ~/.ubunsys/configurations && "
            "test -d ~/.ubunsys/scripts || mkdir -p ~/.ubunsys/scripts && "
            "test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads && "
            "test -d ~/.ubunsys/files || mkdir -p ~/.ubunsys/files && "
@@ -174,6 +222,7 @@ void MainWindow::createFoldersFiles()
 
 void MainWindow::showUpdateOutput()
 {
+/*
     QFile file (QDir::homePath() + "/.ubunsys/updates/updateLog.log");
 
     if(!file.open(QIODevice::ReadOnly))
@@ -187,4 +236,5 @@ void MainWindow::showUpdateOutput()
     system("touch ~/.ubunsys/updates/updateLog.log");
 
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
+*/
 }

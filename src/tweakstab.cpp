@@ -12,52 +12,47 @@
 
 ////////////////////////////////SOURCES
 
-//##sources.list.d
+//##sources.list.d - no slider terminal
 
 void MainWindow::on_openSourcesListDButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Opening sources.list.d"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/023.openSourcesListD"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
-
-    //QDesktopServices::openUrl(QUrl("file:///etc/apt/sources.list.d"));
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-//##sources.list
-
-void MainWindow::on_openSourcesListButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Opening Sources.list"));
-
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-    QString status = db.getStatus("textEditor");
+    QString status = db.getStatus("terminal");
 
-    QProcess::startDetached("xterm -e \"sudo -i "+ status +" /etc/apt/sources.list && exit; exec bash\"");
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
+    QProcess::startDetached(status + " -e \" bash -c ~/.ubunsys/downloads/ubuntuScripts-dev/023.openSourcesListD \" ");
 }
+
+//##open sources.list - no slider terminal + texteditor
+
+void MainWindow::on_openSourcesListButton_clicked()
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+    QString status2 = db.getStatus("textEditor");
+
+    QProcess::startDetached(status + " -e \"sudo -i "+ status2 +" /etc/apt/sources.list \" ");
+}
+
+//##backup sources.list - no slider terminal
 
 void MainWindow::on_backupSourcesListButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Backuping sudoers"));
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
 
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/043.backupSourcesList"
-           " && "
-           "exit"
-           "; exec bash'");
+    QString status = db.getStatus("terminal");
+
+    QProcess::startDetached(status + " -e \" bash -c ~/.ubunsys/downloads/ubuntuScripts-dev/043.backupSourcesList \" ");
+    ui->statusBar->showMessage(tr("Done. sources.list restored succesful"));
 
     QMessageBox::information(this,tr("Notification"),tr("Backuped OK on \n\n") + QDir::homePath() + "/.ubunsys/backups/sources.list");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+
+//##import sources.list - no slider terminal
 
 void MainWindow::on_importSourcesListButton_clicked()
 {
@@ -81,37 +76,34 @@ void MainWindow::on_importSourcesListButton_clicked()
     // optional, as QFile destructor will already do it:
     file.close();
 
-    system("xterm -e '"
-           "sudo chmod 777 ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh"
-           "&&"
-           "sudo ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh"
-           " && "
-           "sudo rm -Rf ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh"
-           " && "
-           "exit"
-           "; exec bash'");
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
 
-    //this would normally start the event loop, but is not needed for this
-    //minimal example:
-    //return app.exec();
+    QString status = db.getStatus("terminal");
 
-    ui->statusBar->showMessage(tr("Done. sources.list restored succesful"));
+    QProcess::startDetached(status + " -e \" sudo chmod 777 ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh "
+                                    "&&"
+                                     " bash -c ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh "
+                                    "&&"
+                                     " -e \" sudo rm -Rf ~/.ubunsys/backups/sources.list/restoreSourcesListScript.sh \" ");
 
+    QMessageBox::information(this,tr("Notification"),tr("sources.list restored succesful"));
 }
 
-//##OfficialUpdateNotification
+//##OfficialUpdateNotification - slider
 
 void MainWindow::on_checkBoxOfficialUpdateNotification_clicked(bool checked)
 {
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+
     if (checked == true){
 
         qDebug() << checked;
 
-        system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-dev/054.enableOfficialUpdateNotification"
-               " && "
-               "exit"
-               "; exec bash'");
+        QProcess::startDetached(status + " -e \" bash -c ~/.ubunsys/downloads/ubuntuScripts-dev/054.enableOfficialUpdateNotification \" ");
 
         ui->statusBar->showMessage(tr("Enabled"));
     }
@@ -120,11 +112,7 @@ void MainWindow::on_checkBoxOfficialUpdateNotification_clicked(bool checked)
 
         qDebug() << checked;
 
-        system("xterm -e '"
-               "~/.ubunsys/downloads/ubuntuScripts-dev/055.disableOfficialUpdateNotification"
-               " && "
-               "exit"
-               "; exec bash'");
+        QProcess::startDetached(status + " -e \" bash -c ~/.ubunsys/downloads/ubuntuScripts-dev/055.disableOfficialUpdateNotification \" ");
 
         ui->statusBar->showMessage(tr("Disabled"));
     }
@@ -135,7 +123,7 @@ void MainWindow::on_checkBoxOfficialUpdateNotification_clicked(bool checked)
 
 ////////////////////////////////SECURITY
 
-//##sudo without pass all
+//##sudo without pass all - slider
 
 void MainWindow::on_checkBoxSudoWOPass_clicked(bool checked)
 {
@@ -150,8 +138,6 @@ void MainWindow::on_checkBoxSudoWOPass_clicked(bool checked)
                "exit"
                "; exec bash'");
 
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
     }
 
     else if (checked == false){
@@ -165,91 +151,73 @@ void MainWindow::on_checkBoxSudoWOPass_clicked(bool checked)
                      "exit"
                      "; exec bash'");
 
-              ui->statusBar->showMessage(tr("Done. Now select another action"));
     }
 
     MainWindow::checkSudoWithoutPassStatus();
 
 }
 
-//##sudo without pass specific
+//##enable sudo without pass specific - to verify
 
 void MainWindow::on_enableSudoWithoutPassSpecificButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Enabling sudo without pass specific"));
-
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-dev/052.enableSudoWithoutPassSpecific"
            " && "
            "exit"
            "; exec bash'");
 
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+
+//##disable sudo without pass specific - to verify
 
 void MainWindow::on_disableSudoWithoutPassSpecificButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Disabling sudo without pass specific"));
-
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-dev/053.disableSudoWithoutPassSpecific"
            " && "
            "exit"
            "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-//##sudoers.d
+//##sudoers.d - no slider terminal
 
 void MainWindow::on_openSudoersDButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Opening sudoers.d"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/051.openSudoersD"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-//##hosts
-
-void MainWindow::on_openHostsButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Opening hosts"));
-
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-    QString status = db.getStatus("textEditor");
+    QString status = db.getStatus("terminal");
 
-    QProcess::startDetached("xterm -e \"sudo -i "+ status +" /etc/hosts && exit; exec bash\"");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
+    QProcess::startDetached(status + " -e \" bash -c ~/.ubunsys/downloads/ubuntuScripts-dev/051.openSudoersD \" ");
 }
 
-//##sudoers
+//##hosts - no slider terminal + texteditor
+
+void MainWindow::on_openHostsButton_clicked()
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+    QString status2 = db.getStatus("textEditor");
+
+    QProcess::startDetached(status + " -e \"sudo -i "+ status2 +" /etc/hosts \" ");
+}
+
+//##sudoers - special
 
 void MainWindow::on_openSudoersFileButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Opening sudoers"));
-
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-dev/027.openSudoersFile"
            " && "
            "echo Close this window!"
            "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 void MainWindow::on_backupSudoersFileButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Backuping sudoers"));
-
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-dev/028.backupSudoersFile"
            " && "
@@ -257,9 +225,9 @@ void MainWindow::on_backupSudoersFileButton_clicked()
            "; exec bash'");
 
     QMessageBox::information(this,tr("Notification"),tr("Backuped OK on \n\n") + QDir::homePath() + "/.ubunsys/backups/sudoersFiles");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+
+//import Sudoers - to verify
 
 void MainWindow::on_importSudoersFileButton_clicked()
 {
@@ -300,7 +268,7 @@ void MainWindow::on_importSudoersFileButton_clicked()
     //return app.exec();
 }
 
-//##firewall
+//##firewall - slider
 
 void MainWindow::on_checkBox_firewall_clicked(bool checked)
 {
@@ -316,9 +284,6 @@ void MainWindow::on_checkBox_firewall_clicked(bool checked)
                " && "
                "exit"
                "; exec bash'");
-
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
     }
 
     else if (checked == false){
@@ -333,8 +298,6 @@ void MainWindow::on_checkBox_firewall_clicked(bool checked)
                      " && "
                      "exit"
                      "; exec bash'");
-
-              ui->statusBar->showMessage(tr("Done. Now select another action"));         
 
     }
 
@@ -354,22 +317,23 @@ void MainWindow::on_goMouseRateCheckerButton_clicked()
     ui->statusBar->showMessage(tr("Go to mouse rate checker. Please wait."));
 }
 
-//##Templates
+//##Templates - no slider terminal
 
 void MainWindow::on_installTemplatesButton_clicked()
 {
     ui->statusBar->showMessage(tr("Installing templates"));
 
-    system("bash -c '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/018.installTemplates"
-           " && "
-           "exit"
-           "; exec bash'");
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+
+    QProcess::startDetached(status + " -e \" bash -c ~/.ubunsys/downloads/ubuntuScripts-dev/018.installTemplates \" ");
 
     ui->statusBar->showMessage(tr("Templates installed succesful. Now select another action"));
 }
 
-//##MainBackup
+//##Main Backup - to verify
 
 void MainWindow::on_openMainBackupButton_clicked()
 {
@@ -397,9 +361,9 @@ void MainWindow::on_openMainBackupButton_clicked()
                  "; exec bash'");
 
       }
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
+
+//##Main Restore - to verify
 
 void MainWindow::on_openMainRestoreButton_clicked()
 {
@@ -449,136 +413,94 @@ void MainWindow::on_openMainRestoreButton_clicked()
            "; exec bash'");
 
     QMessageBox::information(this,tr("Notification"),tr("Restored all OK"));
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
     }
 
 }
 
-//##rc.local
+//##rc.local - no slider terminal + texteditor
 
 void MainWindow::on_openRCLocalButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Opening rc.local"));
-
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-    QString status = db.getStatus("textEditor");
+    QString status = db.getStatus("terminal");
+    QString status2 = db.getStatus("textEditor");
 
-    QProcess::startDetached("xterm -e \"sudo -i "+ status +" /etc/rc.local && exit; exec bash\"");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
+    QProcess::startDetached(status + " -e \"sudo -i "+ status2 +" /etc/rc.local \" ");
 }
 
-//##HiddenStartupItems
+//##HiddenStartupItems - slider
 
 void MainWindow::on_checkBoxHiddenStartupItems_clicked(bool checked)
 {
     if (checked != false){
         qDebug() << checked;
-
-    ui->statusBar->showMessage(tr("Showing"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/038.showHiddenStartupItems"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/038.showHiddenStartupItems"
+               " && "
+               "exit"
+               "; exec bash'");
     }
 
     else if (checked == false){
         qDebug() << checked;
-
-    ui->statusBar->showMessage(tr("Unshowing"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/037.unshowHiddenStartupItems"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/037.unshowHiddenStartupItems"
+               " && "
+               "exit"
+               "; exec bash'");
     }
 
     MainWindow::checkHiddenStartupItemsStatus();
 
 }
 
-//##dualBoot
+//##dualBoot - no slider terminal
 
 void MainWindow::on_runGrubcustomizerButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Installs/runs grub-customizer. Please wait"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntupackages-master/apps1/grub-customizer"
-           " && "
-           "sudo grub-customizer"
-           " && "
-           "exit"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
+    process->start("sh", QStringList() << "-c" << "~/.ubunsys/downloads/ubuntupackages-master/apps1/grub-customizer && sudo grub-customizer");
 }
 
-//##Sync Time
+//##Sync Time - no slider terminal
 
 void MainWindow::on_runSyncTime_clicked()
 {
-    ui->statusBar->showMessage(tr("Sync Time"));
-
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/changeLinuxtoWindowsTime"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
-
-
-//##edit grub
-
-void MainWindow::on_editGrubButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Edit grub"));
-
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-    QString status = db.getStatus("textEditor");
+    QString status = db.getStatus("terminal");
 
-    QProcess::startDetached("xterm -e \"sudo -i "+ status +" /etc/default/grub && exit; exec bash\"");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
+    QProcess::startDetached(status + " -e \" bash -c ~/.ubunsys/downloads/ubuntuScripts-dev/changeLinuxtoWindowsTime \" ");
 }
 
-//##update grub
+
+//##edit grub - no slider terminal + texteditor
+
+void MainWindow::on_editGrubButton_clicked()
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+    QString status2 = db.getStatus("textEditor");
+
+    QProcess::startDetached(status + " -e \"sudo -i "+ status2 +" /etc/default/grub \" ");
+}
+
+//##update grub - no slider terminal
 
 void MainWindow::on_updateGrubButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Update grub"));
+    process->start("sh", QStringList() << "-c" << "~/.ubunsys/downloads/ubuntuScripts-dev/081.updateGrub");
 
-    system("xterm -e '"
-           "~/.ubunsys/downloads/ubuntuScripts-dev/081.updateGrub"
-           " && "
-           "echo Close this window!"
-           "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
-//##resetDconf
+//##resetDconf - reserved
 
 void MainWindow::on_resetDconf_clicked()
 {
-    ui->statusBar->showMessage(tr("Resetting dconf config"));
-
     QMessageBox::StandardButton reply;
       reply = QMessageBox::question(this, "Warning", "Are you completely sure?",
                                     QMessageBox::Yes|QMessageBox::No);
@@ -591,194 +513,131 @@ void MainWindow::on_resetDconf_clicked()
                " && "
                "echo Close this window!"
                "; exec bash'");
-
-
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
       } else {
         qDebug() << "Yes was *not* clicked";
-        ui->statusBar->showMessage(tr("Execution canceled"));
       }
 
 }
 
-//##asterisks
+//##asterisks - slider
 
 void MainWindow::on_checkBoxAsterisks_clicked(bool checked)
 {
-    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
-    DbManager db(path);
+    if (checked == true){
+        qDebug() << checked;
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/021.doVisibleAsterisks"
+               " && "
+               "exit"
+               "; exec bash'");
+    }
 
-    if (db.isOpen())
-    {
-
-        if (checked == true){
-            qDebug() << checked;
-
-            ui->statusBar->showMessage(tr("Doing visible asterisks"));
-
-            system("xterm -e '"
-                   "~/.ubunsys/downloads/ubuntuScripts-dev/021.doVisibleAsterisks"
-                   " && "
-                   "exit"
-                   "; exec bash'");
-
-            ui->statusBar->showMessage(tr("Done. Now select another action"));
-
-        }
-
-        else if (checked == false){
-            qDebug() << checked;
-
-            ui->statusBar->showMessage(tr("Doing invisible asterisks"));
-
-            system("xterm -e '"
-                   "~/.ubunsys/downloads/ubuntuScripts-dev/022.doInvisibleAsterisks"
-                   " && "
-                   "exit"
-                   "; exec bash'");
-
-            ui->statusBar->showMessage(tr("Done. Now select another action"));
-
-        }
+    else if (checked == false){
+        qDebug() << checked;
+        system("xterm -e '"
+               "~/.ubunsys/downloads/ubuntuScripts-dev/022.doInvisibleAsterisks"
+               " && "
+               "exit"
+               "; exec bash'");
     }
 
     MainWindow::checkAsterisksStatus();
 
 }
 
-//##hibernation
+//##hibernation - slider
 
 void MainWindow::on_checkBoxHibernation_clicked(bool checked)
 {
     if (checked == true){
         qDebug() << checked;
-
-        ui->statusBar->showMessage(tr("Hibernation enabled"));
-
         system("xterm -e '"
                "~/.ubunsys/downloads/ubuntuScripts-dev/007.enableHibernation"
                " && "
                "exit"
                "; exec bash'");
-
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
     }
 
     else if (checked == false){
         qDebug() << checked;
-
-          ui->statusBar->showMessage(tr("Hibernation disabled"));
-
           system("xterm -e '"
                  "~/.ubunsys/downloads/ubuntuScripts-dev/024.disableHibernation"
                  " && "
                  "exit"
                  "; exec bash'");
-
-          ui->statusBar->showMessage(tr("Done. Now select another action"));
     }
 
      MainWindow::checkHibernationStatus();
 }
 
-//##lock screen
+//##lock screen - slider
 
 void MainWindow::on_checkBoxLockScreen_clicked(bool checked)
 {
     if (checked == true){
         qDebug() << checked;
-
-        ui->statusBar->showMessage(tr("Lock screen Enabled"));
-
         system("xterm -e '"
                "~/.ubunsys/downloads/ubuntuScripts-dev/036.enableLockScreen"
                " && "
                "exit"
                "; exec bash'");
-
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
     }
 
     else if (checked == false){
         qDebug() << checked;
-
-          ui->statusBar->showMessage(tr("Lock screen Disabled"));
-
           system("xterm -e '"
                  "~/.ubunsys/downloads/ubuntuScripts-dev/035.disableLockScreen"
                  " && "
                  "exit"
                  "; exec bash'");
-
-          ui->statusBar->showMessage(tr("Done. Now select another action"));
     }
 
     MainWindow::checkLockScreenStatus();
 }
 
-//##login sound
+//##login sound - slider
 
 void MainWindow::on_checkBoxLoginSound_clicked(bool checked)
 {
     if (checked == true){
         qDebug() << checked;
 
-        ui->statusBar->showMessage(tr("Login Sound Enabled"));
-
         system("xterm -e '"
                "~/.ubunsys/downloads/ubuntuScripts-dev/039.enableLoginSound"
                " && "
                "exit"
                "; exec bash'");
-
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-
     }
 
     else if (checked == false){
         qDebug() << checked;
-
-          ui->statusBar->showMessage(tr("Login Sound Disabled"));
 
           system("xterm -e '"
                        "~/.ubunsys/downloads/ubuntuScripts-dev/040.disableLoginSound"
                  " && "
                  "exit"
                  "; exec bash'");
-
-          ui->statusBar->showMessage(tr("Done. Now select another action"));
     }
 
     MainWindow::checkLoginSoundStatus();
 }
 
-//##fonts
+//##fonts - to implement
 
 void MainWindow::on_installInfinalityFontsButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Login Sound Disabled"));
-
     system("xterm -e '"
                  "~/.ubunsys/downloads/ubuntupackages-master-apps/infinality-fonts"
            " && "
            "exit"
            "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 void MainWindow::on_uninstallInfinalityFontsButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Login Sound Disabled"));
-
     system("xterm -e '"
                  "~/.ubunsys/downloads/ubuntuScripts-dev/082.uninstallInfinalityFonts"
            " && "
            "exit"
            "; exec bash'");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }

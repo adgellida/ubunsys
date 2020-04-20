@@ -44,6 +44,14 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
 
     //text editor end
 
+    //terminal begin
+
+    QString actualTerminalSelected = db.getStatus("terminal");  //gets data from db
+
+    ui->terminal->setText(actualTerminalSelected);  //puts actual data on gui
+
+    //terminal end
+
 }
 PreferencesDialog::~PreferencesDialog()
 {
@@ -113,6 +121,13 @@ void PreferencesDialog::on_closePreferencesDialogButton_clicked()
 
     //textEditor end
 
+    //terminal begin
+
+    QString newTerminalSelected = ui->terminal->toPlainText();  //gets new data from gui
+    db.updateStatus("terminal", newTerminalSelected);   //puts into db
+
+    //terminal end
+
 }
 
 void PreferencesDialog::closeEvent(QCloseEvent *event)
@@ -141,5 +156,8 @@ void PreferencesDialog::on_restoreDefaultTextEditorButton_clicked()
 
 void PreferencesDialog::on_restoreDefaultTerminalButton_clicked()
 {
-
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+    db.updateStatus("terminal", "xterm");
+    ui->terminal->setText("xterm");
 }

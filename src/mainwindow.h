@@ -11,11 +11,12 @@
 #include <QtCore>
 #include <QDebug>
 #include <QSettings>
-#include <updatescriptsdialog.h>//////////
 #include <packagesdialog.h>//////////
 #include <preferencesdialog.h>//////////
 #include <QSystemTrayIcon>
 #include <QMenu>
+#include <QVBoxLayout>
+#include <QTextEdit>
 
 namespace Ui {
 class MainWindow;
@@ -31,41 +32,40 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-    void initializeGUI();
-    void checkUbunsysUpdate();
-    void showUpdateOutput();
+    //######## CONSOLE
+    QVBoxLayout *layout;
+    QTextEdit *console;
+    //########
+    void initializeTrayIcon();
     void createFoldersFiles();
-    void showMessageAtInit();
     void initializeDatabase();
+    void showMessageAtInit();
+    void initializeGUI();
+    void initializeConsole();
+    void checkUbunsysUpdate();
+    void checkUserInSudoers();
+    void showUpdateOutput();        //######## DISABLED
 
-    //0.######## CHECK METHODS
+    //######## CHECK METHODS
     void checkAllStatus();
-    //1.########
     void checkFirewallStatus();
-    //2.########
     void checkHiddenStartupItemsStatus();
-    //3.########
     void checkOfficialUpdateNotificationStatus();
-    //4.########
     void checkSudoWithoutPassStatus();
-    //5.########
-    void checkTextEditor();
-    //6.########
     void checkAsterisksStatus();
-    //7.########
     void checkUpdateAutoStatus();
-    //8.########
     void checkHibernationStatus();
-    //9.########
     void checkLockScreenStatus();
-    //10.########
     void checkLoginSoundStatus();
-    //14.########
     void checkaptfastInstalled();
+
 public slots:
 
+    //######## CONSOLE
+    void add_text_completed();
+    //########
+
     //void closePackagesDialog();///////////////
-    void closeUpdateDialog();///////////////
     void closePreferencesDialog();///////////////
 
     void iconActivated(QSystemTrayIcon::ActivationReason);///icon
@@ -73,7 +73,10 @@ public slots:
 
 private slots:
 
-    void on_actionManualUpdateDialog_triggered();////////////
+    //######## CONSOLE
+    void get_data();
+    //########
+
     void on_runScriptsManager_released();////////////
     void on_actionPreferences_triggered();////////////
 
@@ -151,17 +154,26 @@ private slots:
     void on_runSyncTime_clicked();
     void on_listUpgradablePackagesButton_clicked();
     void on_listLatestInstalledPackagesButton_clicked();
+    void on_actionCleanTerminal_triggered();
+    void on_actionCleanSystem_triggered();
+    void on_openBashRCButton_clicked();
+    void closeEvent(QCloseEvent *event);
 
 private:
     Ui::MainWindow *ui;
-    UpdateScriptsDialog *UpdateScriptsDialogUi;/////////////
     PackagesDialog *PackagesDialogUi;/////////////
     PreferencesDialog *PreferencesDialogUi;/////////////
+
 //icon begin
     QSystemTrayIcon *trayIcon;
     QMenu* trayIconMenu;
     QMenu* createMenu();
 //icon end
+
+    //######## CONSOLE
+    QProcess *process;
+    //########
+
 };
 
 #endif // MAINWINDOW_H

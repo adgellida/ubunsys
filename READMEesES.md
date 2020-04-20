@@ -11,8 +11,8 @@
     <a href="https://github.com/adgellida/ubunsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubunsys.svg" alt="forks"></a>
     <a href="https://github.com/adgellida/ubunsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubunsys.svg" alt="open issues"></a>
     <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/total.svg" alt="total downloads"></a>
-    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2020.04.04/total.svg" alt="total downloads latest release"></a>
-    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2020.04.04-blue.svg" alt="latest release"></a>
+    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubunsys/v2020.04.20/total.svg" alt="total downloads latest release"></a>
+    <a href="https://github.com/adgellida/ubunsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2020.04.20-blue.svg" alt="latest release"></a>
     <a href="https://github.com/adgellida/ubunsys/commits/master" target="_blank"><img src="https://img.shields.io/badge/maintained-paused-orange.svg" alt="maintained"></a>
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
     <a href="https://github.com/adgellida/ubunsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
@@ -48,8 +48,8 @@ Debido a falta de tiempo desarrollo pausado.
 
 **Actualmente hay 2 ramas de desarrollo:**
 
-* [master](https://github.com/adgellida/ubunsys/tree/master) - Incluye la versión más estable.
-* [dev](https://github.com/adgellida/ubunsys/tree/dev) - Esta rama está en desarrollo. La versión más actualizada está aquí.
+* [master](https://github.com/adgellida/ubunsys/tree/master) - Incluye la versión más estable y reciente.
+* [dev](https://github.com/adgellida/ubunsys/tree/dev) - Esta rama está en desuso, sólo para experimentos.
 
 **App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
 

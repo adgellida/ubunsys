@@ -261,8 +261,6 @@ void PackagesDialog::on_runSavedScriptListButton_clicked()
 
 void PackagesDialog::on_exportListButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Exporting list"));
-
     system("xterm -e '"
            "~/.ubunsys/downloads/ubuntuScripts-dev/047.exportList"
            " && "
@@ -270,29 +268,13 @@ void PackagesDialog::on_exportListButton_clicked()
            "; exec bash'");
 
     QMessageBox::information(this,tr("Notification"),tr("Backuped OK on \n\n") + QDir::homePath() + "/.ubunsys/backups/scriptsFiles");
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 void PackagesDialog::on_openInTextEditorButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Opening Scripts selected. Please wait..."));
-
     system("sed -i '1i #!/bin/bash' ~/.ubunsys/files/packagesToWatch.sh");
 
     QProcess::startDetached("xterm -e \"cd ~/.ubunsys/files && sudo chmod 777 ~/.ubunsys/files/packagesToWatch.sh && ~/.ubunsys/files/packagesToWatch.sh && echo Close this window!! && read; exec bash\"");
-
-/*
-    system("xterm -e '"
-           "cd ~/.ubunsys/files && sudo chmod 777 ~/.ubunsys/files/packagesToWatch.sh && ~/.ubunsys/files/packagesToWatch.sh"
-           " && "
-           "echo Close this window!!"
-           " && "
-           "read"
-           "; exec bash'");
-*/
-
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 //void PackagesDialog::on_txtFilter_textChanged(const QString &arg1)

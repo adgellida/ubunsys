@@ -7,7 +7,6 @@
 #include <QSystemTrayIcon>
 #include <dbmanager.h>
 
-
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
@@ -19,8 +18,7 @@ int main(int argc, char *argv[])
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-    //11.######## language
-    //######## Selection
+    //######## Language selection
 
 //    if (db.isOpen())
 //    {
@@ -37,8 +35,7 @@ int main(int argc, char *argv[])
 
 //    }
 
-    //12.######## theme
-    //######## Selection
+    //######## Theme selection
 
     QString themeSelected = db.getStatus("theme");
 
@@ -65,6 +62,7 @@ int main(int argc, char *argv[])
 
     MainWindow w;
     w.show();
-
+    //Widget o;
+    //o.show();
     return app.exec();
 }

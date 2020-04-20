@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include <QMessageBox>
 #include <QPixmap>
+#include <QMovie>
+#include <QLabel>
 
 ///////////////////////ABOUT///////////////////////
 
@@ -11,12 +13,16 @@ void MainWindow::on_actionAbout_triggered()
     about.setTextFormat(Qt::RichText);   //this is what makes the links clickable
     about.setText(tr("<p align='left'><b>ubunsys</b></p></br>"
                   "<p align='left'>Configurable app referent to packages, updates and configurations</p></br>"
-                  "<p align='left'>Contains bugs. Alpha test status.</p></br>"
+                  "<p align='left'>Contains bugs. Alpha status.</p></br>"
+                  "<p align='left'>.</p></br>"
 
-                  "<p align='left'>Credits to:</p></br>"
+                  "<p align='left'><b>Credits to:</b></p></br>"
+
+                  "<p align='left'>Art by "
+                  "<a href='https://www.instagram.com/napafau/'>napafau</a></p></br>"
 
                   "<p align='left'>Icon based on <a href='https://thenounproject.com/term/terminal/715962/'>this</a> Author "
-                  "<a href='https://thenounproject.com/bernar.novalyi'>Bernar Novalyi</a></p></br>"
+                  "<a href='https://thenounproject.com/bernar.novalyi'>Bernar Novalyi</a></p></br>"                    
 
                   "<p align='left'>Theme got from <a href='https://thenounproject.com/term/terminal/715962/'>here</a> Author "
                   "<a href='https://github.com/ColinDuquesnoy'>ColinDuquesnoyi</a></p></br>"
@@ -24,7 +30,9 @@ void MainWindow::on_actionAbout_triggered()
                   "<p align='left'>SQLite library based on <a href='https://github.com/katecpp/sql_with_qt'>this</a> Author "
                   "<a href='https://github.com/katecpp'>katecpp</a></p></br>"
 
-                  "<p align='left'>Sources:</p></br>"
+                  "<p align='left'>.</p></br>"
+
+                  "<p align='left'><b>Sources:</b></p></br>"
 
                   "<p align='left'><a href='https://github.com/adgellida/ubunsys' style='color:red'>Github Repo </a> - Updated</p></br>"
 
@@ -38,13 +46,14 @@ void MainWindow::on_actionAbout_triggered()
 
                   "<p align='left'><a href='' style='color:red'></a></p></br>"));
 
-    about.setInformativeText(tr("Copyright (c) 2020 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\n"
-                             "v2020.04.04"));
+    about.setInformativeText(tr("Copyright (c) 2020 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\nv2020.04.20"));
 
     about.setWindowTitle(tr("About"));
 
     about.setStandardButtons(QMessageBox::Ok);
-    about.setIconPixmap(QPixmap(":/images/ubunsys.png"));
+    //about.setIconPixmap(QPixmap(":/images/panda.png"));
+
+    about.setIconPixmap(QPixmap(":/images/ubunsys+panda.png"));
     about.setWindowIcon(QIcon(":/images/ubunsys.png"));
     //about.setIcon(":/images/ubunsys.png");
     about.setDefaultButton(QMessageBox::Ok);

@@ -22,28 +22,25 @@ SOURCES  += main.cpp \
             initializations.cpp \
             mainwindow.cpp \
             toolbartab.cpp \
-            repairtab.cpp \
             tweakstab.cpp \
             packagestab.cpp \
             about.cpp \
             tutorial.cpp \
             packagesdialog.cpp \
             rootfilesysproxymodel.cpp \
-            updatescriptsdialog.cpp \
             preferencesdialog.cpp \
             updates.cpp \
-            dbmanager.cpp
+            dbmanager.cpp \
+    fixes.cpp
 
 HEADERS  += mainwindow.h \
             packagesdialog.h \
             rootfilesysproxymodel.h \
-            updatescriptsdialog.h \
             preferencesdialog.h \
             dbmanager.h
 
 FORMS    += mainwindow.ui \
             packagesdialog.ui \
-            updatescriptsdialog.ui \
             preferencesdialog.ui
 
 RC_ICONS += images/ubunsys.png
