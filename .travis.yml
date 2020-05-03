@@ -32,7 +32,7 @@ script:
  - qmake CONFIG+=release PREFIX=/usr ../src/ubunsys.pro
  - make -j$(nproc)
  - INSTALL_ROOT=${PWD}/AppDir make install
- #- cp icons/mystiq.svg AppDir/usr/share/icons
+ - cp ../src/images/ubunsys.png AppDir/usr/share/icons
  - export VERSION="$TRAVIS_BRANCH-$(git describe --tags --exact-match HEAD 2> /dev/null)-$TRAVIS_BUILD_NUMBER"
  - appimage-builder --skip-test
 
