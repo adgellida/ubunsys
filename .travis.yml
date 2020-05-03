@@ -12,7 +12,7 @@ install:
     - source /opt/qt*/bin/qt*-env.sh
 
 script:
-  - qmake PREFIX=/usr
+  - qmake CONFIG+=release PREFIX=/usr ../src/ubunsys.pro
   - make -j$(nproc)
   - make INSTALL_ROOT=appdir install ; find appdir/
 
