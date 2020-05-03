@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>4</number>
     </property>
     <property name="iconSize">
      <size>
@@ -2124,9 +2124,9 @@ all</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>90</y>
+          <y>80</y>
           <width>181</width>
-          <height>31</height>
+          <height>41</height>
          </rect>
         </property>
         <property name="font">
@@ -2542,6 +2542,69 @@ on terminal</string>
         </property>
         <property name="checkable">
          <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="configAutologinButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>380</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Dangerous!! Push only if you know what are you doing and disable this asap. Recommended only if you are using this app to not put all the time the pass.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Config</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_132">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>360</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Maps hostnames to IP addresses.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>autologin</string>
         </property>
        </widget>
       </widget>
@@ -3139,6 +3202,15 @@ on terminal</string>
              </color>
             </brush>
            </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
           </active>
           <inactive>
            <colorrole role="WindowText">
@@ -3276,6 +3348,15 @@ on terminal</string>
              </color>
             </brush>
            </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
           </inactive>
           <disabled>
            <colorrole role="WindowText">
@@ -3407,6 +3488,15 @@ on terminal</string>
            <colorrole role="ToolTipText">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
               <red>0</red>
               <green>0</green>
               <blue>0</blue>
@@ -4011,7 +4101,7 @@ Windows</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2020.04.20</string>
+     <string>v2020.05.03</string>
     </property>
    </widget>
   </widget>

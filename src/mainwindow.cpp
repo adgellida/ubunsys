@@ -25,7 +25,6 @@ MainWindow::MainWindow(QWidget *parent)
     MainWindow::initializeGUI();
     MainWindow::initializeConsole();
     MainWindow::showMessageAtInit();
-    MainWindow::checkUserInSudoers();
     MainWindow::checkAllStatus();
     //MainWindow::showUpdateOutput();
 
@@ -236,3 +235,5 @@ void MainWindow::closeEvent(QCloseEvent *event)
 
     QWidget::closeEvent(event);
 }
+
+

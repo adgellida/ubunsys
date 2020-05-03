@@ -304,6 +304,14 @@ void MainWindow::on_checkBox_firewall_clicked(bool checked)
     MainWindow::checkFirewallStatus();
 }
 
+void MainWindow::on_configAutologinButton_clicked()
+{
+    system("xterm -e '"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/configAutologin"
+           " && "
+           "exit"
+           "; exec bash'");
+}
 
 ////////////////////////////////POWER
 

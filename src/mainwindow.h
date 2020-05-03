@@ -159,6 +159,8 @@ private slots:
     void on_openBashRCButton_clicked();
     void closeEvent(QCloseEvent *event);
 
+    void on_configAutologinButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     PackagesDialog *PackagesDialogUi;/////////////

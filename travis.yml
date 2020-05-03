@@ -1,0 +1,18 @@
+﻿language: cpp
+compiler: gcc
+sudo: require
+dist: bionic
+before_install:
+- sudo add-apt-repository ppa:beineri/opt-qt-5.14.2-bionic
+- sudo apt-get update -qq
+install:
+- sudo apt-get -y -qq install cmake
+- sudo apt-get -y -qq install libgl1-mesa-dev qt514base qt514imageformats qt514svg qt514charts-no-lgpl qt514tools
+- source /opt/qt*/bin/qt*-env.sh
+before_script:
+- mkdir build && cd build
+- cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_PREFIX_PATH=$QTDIR/bin ..
+script:
+- make -j $(nproc)
+- lupdate ../src/ubunsys.pro -no-obsolete
+- lrelease ../src/ubunsys.pro

@@ -10,7 +10,7 @@ void MainWindow::checkAllStatus()
     //First update ubuntuscripts and ubuntupackages always, no checks
     system("/usr/share/ubunsys/scripts/updateUbuntuScripts.sh");
     system("/usr/share/ubunsys/scripts/updateUbuntupackages.sh");
-
+    MainWindow::checkUserInSudoers();
     MainWindow::checkaptfastInstalled();
     MainWindow::checkUbunsysUpdate();
     //MainWindow::checkFirewallStatus();

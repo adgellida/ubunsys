@@ -31,7 +31,7 @@ SOURCES  += main.cpp \
             preferencesdialog.cpp \
             updates.cpp \
             dbmanager.cpp \
-    fixes.cpp
+            fixes.cpp
 
 HEADERS  += mainwindow.h \
             packagesdialog.h \
