@@ -1,52 +1,26 @@
-﻿# language target
-language: cpp
+﻿language: cpp
 compiler: gcc
+sudo: require
+dist: trusty
 
-# main build matrix
-matrix:
-  include:
-    - name: "Bionic Ubuntu Linux"
-      os: linux
-      dist: bionic
-      sudo: required
+before_install:
+    - sudo add-apt-repository ppa:beineri/opt-qt59-trusty -y
+    - sudo apt-get update -qq
+    
+install: 
+    - sudo apt-get -y install qt59base
+    - source /opt/qt*/bin/qt*-env.sh
 
-
-install:
-  - curl https://origin.archive.neon.kde.org/public.key | sudo apt-key add -
-  - echo "deb http://archive.neon.kde.org/user bionic main" | sudo tee -a /etc/apt/sources.list.d/neon.list
-  - sudo apt update -y
-  - sudo apt install -y build-essential g++ qt5-default libqt5opengl5-dev qtdeclarative5-dev qtmultimedia5-dev libqt5multimedia5-plugins
-  - sudo apt install -y libqt5gui5 libqt5widgets5 libqt5core5a libqt5sql5 git wget xdg-utils nano xterm ufw curl sqlite3 sudo ${misc:Depends}
-  
-  # Install appimage-builder toolchain
-  - sudo apt install -y build-essential python3 python3-setuptools python3-pip patchelf gnupg2 file desktop-file-utils fakeroot
-  - sudo pip3 install git+https://github.com/AppImageCrafters/appimage-builder.git
-  
-  # Install appimagetool
-  - wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage -O /tmp/appimagetool
-  - chmod +x /tmp/appimagetool
-  - sudo mv /tmp/appimagetool /usr/bin
-  
-# build & test scripts
 script:
- - qmake CONFIG+=release PREFIX=/usr ../src/ubunsys.pro
- - make -j$(nproc)
- - INSTALL_ROOT=${PWD}/AppDir make install
- - cp ../src/images/ubunsys.png AppDir/usr/share/icons
- - export VERSION="$TRAVIS_BRANCH-$(git describe --tags --exact-match HEAD 2> /dev/null)-$TRAVIS_BUILD_NUMBER"
- - appimage-builder --skip-test
+  - qmake PREFIX=/usr
+  - make -j$(nproc)
+  - make INSTALL_ROOT=appdir install ; find appdir/
 
-# make the AppImage bundle
 after_success:
-  # listing the result
-  - ls -lh *.AppImage
-  # get the tag version
-
-  - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
-  - export GITHUB_TOKEN="$OAUTHTOKEN"
-  - bash upload.sh ubunsys*.AppImage*
-
-branches:
-  except:
-    - # Do not build tags that we create when we upload to GitHub Releases
-    - /^(?i:continuous.*)$/
+  - wget -c "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage" 
+  - chmod a+x linuxdeployqt*.AppImage
+  - unset QTDIR; unset QT_PLUGIN_PATH ; unset LD_LIBRARY_PATH
+  - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -bundle-non-qt-libs
+  - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -appimage
+  - find ./appdir -executable -type f -exec ldd {} \; | grep " => /usr" | cut -d " " -f 2-3 | sort | uniq
+  - curl --upload-file ./ubunsys*.AppImage https://transfer.sh/ubunsys-git.$(git rev-parse --short HEAD)-x86_64.AppImage
