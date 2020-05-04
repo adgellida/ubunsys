@@ -46,7 +46,7 @@ void MainWindow::on_actionAbout_triggered()
 
                   "<p align='left'><a href='' style='color:red' ></a></p></br>"));
 
-    about.setInformativeText(tr("Copyright (c) 2020 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\nv2020.05.03"));
+    about.setInformativeText(tr("Copyright (c) 2020 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\nv2020.05.04"));
 
     about.setWindowTitle(tr("About"));
 
