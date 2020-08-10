@@ -45,6 +45,9 @@ public:
     void checkUbunsysUpdate();
     void checkUserInSudoers();
     void showUpdateOutput();        //######## DISABLED
+    void putUbunsysVersion();
+
+
 
     //######## CHECK METHODS
     void checkAllStatus();

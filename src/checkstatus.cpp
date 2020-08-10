@@ -13,6 +13,7 @@ void MainWindow::checkAllStatus()
     MainWindow::checkUserInSudoers();
     MainWindow::checkaptfastInstalled();
     MainWindow::checkUbunsysUpdate();
+    MainWindow::putUbunsysVersion();
     //MainWindow::checkFirewallStatus();
     MainWindow::checkHiddenStartupItemsStatus();
     MainWindow::checkOfficialUpdateNotificationStatus();
@@ -317,6 +318,35 @@ void MainWindow::checkUbunsysUpdate(){
           // do nothing
         }
     }
+}
+
+void MainWindow::putUbunsysVersion(){
+
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("appUpdatePresent");
+    QString status2 = db.getStatus("ubunsysGithubVersion");
+
+
+    if (status == "false"){
+
+        QPixmap pix(":/images/check.png");
+        ui->label_pic->setPixmap(pix.scaled(25,25,Qt::KeepAspectRatio));
+        ui->label_vMessage->setText("Latest version");
+        qDebug() << "Latest version";
+    }
+
+    else if (status == "true"){
+
+        QPixmap pix(":/images/close.png");
+        ui->label_pic->setPixmap(pix.scaled(25,25,Qt::KeepAspectRatio));
+        ui->label_vMessage->setText("Outdated version");
+        qDebug() << "Outdated version";
+    }
+
+    ui->label_version->setText(status2);
+
 }
 
 void MainWindow::checkUserInSudoers(){

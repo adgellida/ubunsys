@@ -3,6 +3,7 @@
 #include <QPixmap>
 #include <QMovie>
 #include <QLabel>
+#include <dbmanager.h>
 
 ///////////////////////ABOUT///////////////////////
 
@@ -46,7 +47,12 @@ void MainWindow::on_actionAbout_triggered()
 
                   "<p align='left'><a href='' style='color:red' ></a></p></br>"));
 
-    about.setInformativeText(tr("Copyright (c) 2020 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\nv2020.05.04"));
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("ubunsysGithubVersion");
+
+    about.setInformativeText(qPrintable("Copyright (c) 2020 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\n" + status));
 
     about.setWindowTitle(tr("About"));
 

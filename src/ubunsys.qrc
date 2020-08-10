@@ -59,5 +59,7 @@
         <file>images/transparent-clipboard-clear-5.png</file>
         <file>images/panda.png</file>
         <file>images/ubunsys+panda.png</file>
+        <file>images/check.png</file>
+        <file>images/close.png</file>
     </qresource>
 </RCC>

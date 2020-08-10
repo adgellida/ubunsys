@@ -7,6 +7,7 @@
 #include <QSystemTrayIcon>
 #include <QLayout>
 #include <QProcess>
+#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
   : QMainWindow(parent)
