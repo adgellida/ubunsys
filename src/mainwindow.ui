@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="iconSize">
      <size>
@@ -363,7 +363,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_28">
        <attribute name="title">
@@ -663,25 +663,6 @@
          <string>Clean ancient kernels</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_131">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>370</y>
-          <width>191</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Update auto at app begin</string>
-        </property>
-       </widget>
        <widget class="QCheckBox" name="checkBoxOfficialUpdateNotification">
         <property name="enabled">
          <bool>true</bool>
@@ -749,8 +730,8 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>290</y>
-          <width>91</width>
+          <y>300</y>
+          <width>121</width>
           <height>31</height>
          </rect>
         </property>
@@ -843,34 +824,6 @@
          <string>List latest installed packages</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBoxUpdateAutoAppBegin">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>400</y>
-          <width>51</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>16</width>
-          <height>16</height>
-         </size>
-        </property>
-        <property name="tristate">
-         <bool>false</bool>
-        </property>
-       </widget>
        <widget class="QPushButton" name="upgradeLatestStableButton">
         <property name="geometry">
          <rect>
@@ -951,8 +904,8 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>330</y>
-          <width>91</width>
+          <y>340</y>
+          <width>121</width>
           <height>31</height>
          </rect>
         </property>
