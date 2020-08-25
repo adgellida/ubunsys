@@ -61,5 +61,6 @@
         <file>images/ubunsys+panda.png</file>
         <file>images/check.png</file>
         <file>images/close.png</file>
+        <file>images/info.png</file>
     </qresource>
 </RCC>

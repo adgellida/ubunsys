@@ -161,8 +161,10 @@ private slots:
     void on_actionCleanSystem_triggered();
     void on_openBashRCButton_clicked();
     void closeEvent(QCloseEvent *event);
-
-    void on_configAutologinButton_clicked();
+    void on_configAutologinButton_clicked();  
+    void on_InfinalityFontsGeneralStylesButton_clicked();
+    void on_InfinalityFontsInfinalityStylesButton_clicked();
+    void on_generalInfoButton_clicked();
 
 private:
     Ui::MainWindow *ui;

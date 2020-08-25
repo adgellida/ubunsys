@@ -621,7 +621,7 @@ void MainWindow::on_checkBoxLoginSound_clicked(bool checked)
         qDebug() << checked;
 
           system("xterm -e '"
-                       "~/.ubunsys/downloads/ubuntuScripts-dev/040.disableLoginSound"
+                 "~/.ubunsys/downloads/ubuntuScripts-dev/040.disableLoginSound"
                  " && "
                  "exit"
                  "; exec bash'");
@@ -630,12 +630,12 @@ void MainWindow::on_checkBoxLoginSound_clicked(bool checked)
     MainWindow::checkLoginSoundStatus();
 }
 
-//##fonts - to implement
+//##fonts
 
 void MainWindow::on_installInfinalityFontsButton_clicked()
 {
     system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntupackages-master-apps/infinality-fonts"
+           "~/.ubunsys/downloads/ubuntupackages-master/apps1/infinality-fonts"
            " && "
            "exit"
            "; exec bash'");
@@ -644,8 +644,41 @@ void MainWindow::on_installInfinalityFontsButton_clicked()
 void MainWindow::on_uninstallInfinalityFontsButton_clicked()
 {
     system("xterm -e '"
-                 "~/.ubunsys/downloads/ubuntuScripts-dev/082.uninstallInfinalityFonts"
+           "~/.ubunsys/downloads/ubuntuScripts-dev/082.uninstallInfinalityFonts"
            " && "
            "exit"
+           "; exec bash'");
+}
+
+void MainWindow::on_InfinalityFontsGeneralStylesButton_clicked()
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+
+    QProcess::startDetached(status + " -e \"sudo bash /etc/fonts/infinality/infctl.sh setstyle \" ");
+}
+
+void MainWindow::on_InfinalityFontsInfinalityStylesButton_clicked()
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+    QString status2 = db.getStatus("textEditor");
+
+    QProcess::startDetached(status + " -e \"sudo -H "+ status2 +" /etc/profile.d/infinality-settings.sh\" ");
+}
+
+
+void MainWindow::on_generalInfoButton_clicked()
+{
+    system("xterm -e '"
+           "sudo apt install -y neofetch"
+           " && "
+           " clear "
+           " && "
+           "neofetch -n"
            "; exec bash'");
 }

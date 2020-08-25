@@ -35,15 +35,17 @@ void MainWindow::on_actionAbout_triggered()
 
                   "<p align='left'><b>Sources:</b></p></br>"
 
-                  "<p align='left'><a href='https://github.com/adgellida/ubunsys' style='color:red' >Github Repo </a> - Updated</p></br>"
+                  "<p align='left'><a href='https://github.com/adgellida/ubunsys' style='color:red' >Github Repo </a></p></br>"
 
-                  "<p align='left'><a href='https://gitlab.com/adgellida/ubunsys' style='color:red' >Gitlab Repo</a> - Updated</p></br>"
+                  "<p align='left'><a href='https://gitlab.com/adgellida/ubunsys' style='color:red' >Gitlab Repo</a></p></br>"
 
-                  "<p align='left'><a href='https://sourceforge.net/projects/ubunsys' style='color:red' >Sourceforge</a> - Updated</p></br>"
+                  "<p align='left'><a href='https://www.pling.com/p/1179908' style='color:red' >Linux-apps</a></p></br>"
 
-                  "<p align='left'><a href='https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys' style='color:red' >Launchpad PPA</a> - Updated</p></br>"
+                  "<p align='left'><a href='https://sourceforge.net/projects/ubunsys' style='color:red' >Sourceforge</a></p></br>"
 
-                  "<p align='left'><a href='https://www.pling.com/p/1179908' style='color:red' >Linux-apps</a> - Updated</p></br>"
+                  "<p align='left'><a href='https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys' style='color:red' >Launchpad PPA</a></p></br>"
+
+                  "<p align='left'>.</p></br>"
 
                   "<p align='left'><a href='' style='color:red' ></a></p></br>"));
 

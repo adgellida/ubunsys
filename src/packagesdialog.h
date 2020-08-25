@@ -29,7 +29,6 @@ private slots:
     void on_clearSelectionButton_clicked();
     ///To implement yet
     //void on_txtFilter_textChanged(const QString &arg1);
-
     void on_showCategoriesButton_clicked();
 
 private:

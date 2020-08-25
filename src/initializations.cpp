@@ -115,6 +115,7 @@ void MainWindow::initializeGUI(){
     tabw->setTabText(5, "");
     tabw->setTabText(6, "");
     tabw->setTabText(7, "");
+    tabw->setTabText(8, "");
 
     QTabBar *tabbar = tabw->tabBar();
 
@@ -153,6 +154,11 @@ void MainWindow::initializeGUI(){
     lbl7->setText("Extras");
     tabbar->setTabButton(6, QTabBar::LeftSide, lbl7);
 
+    QLabel *lbl8 = new QLabel();
+    lbl8->setStyleSheet("QLabel { background:transparent }");
+    lbl8->setText("Info");
+    tabbar->setTabButton(7, QTabBar::LeftSide, lbl8);
+
     //Configure tabs open end
 
     //Set main GUI position
@@ -180,7 +186,7 @@ void MainWindow::initializeConsole(){
     console->ensureCursorVisible();
 
     ui->widget_3->setLayout(layout);
-    ui->widget_3->setGeometry(70, 550, 600, 200);
+    ui->widget_3->setGeometry(70, 600, 600, 200);
 
     connect(process, SIGNAL(readyRead()), this, SLOT(get_data()));
     connect(process, SIGNAL(finished(int)), this, SLOT(add_text_completed()));

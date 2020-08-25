@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>666</width>
-    <height>835</height>
+    <height>890</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
       <x>9</x>
       <y>9</y>
       <width>651</width>
-      <height>541</height>
+      <height>581</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>7</number>
     </property>
     <property name="iconSize">
      <size>
@@ -74,7 +74,7 @@
         <x>9</x>
         <y>9</y>
         <width>599</width>
-        <height>519</height>
+        <height>551</height>
        </rect>
       </property>
       <property name="font">
@@ -157,7 +157,7 @@
         <x>9</x>
         <y>9</y>
         <width>599</width>
-        <height>519</height>
+        <height>551</height>
        </rect>
       </property>
       <property name="font">
@@ -350,7 +350,7 @@
         <x>9</x>
         <y>9</y>
         <width>599</width>
-        <height>519</height>
+        <height>551</height>
        </rect>
       </property>
       <property name="font">
@@ -363,7 +363,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_28">
        <attribute name="title">
@@ -1043,7 +1043,7 @@
         <x>9</x>
         <y>9</y>
         <width>599</width>
-        <height>519</height>
+        <height>551</height>
        </rect>
       </property>
       <property name="currentIndex">
@@ -1931,7 +1931,7 @@ for unsupported realeases</string>
         <x>9</x>
         <y>9</y>
         <width>599</width>
-        <height>519</height>
+        <height>551</height>
        </rect>
       </property>
       <property name="font">
@@ -2574,7 +2574,7 @@ on terminal</string>
         <x>9</x>
         <y>9</y>
         <width>599</width>
-        <height>519</height>
+        <height>551</height>
        </rect>
       </property>
       <property name="font">
@@ -2704,7 +2704,7 @@ on terminal</string>
         <x>9</x>
         <y>9</y>
         <width>599</width>
-        <height>519</height>
+        <height>551</height>
        </rect>
       </property>
       <property name="font">
@@ -3765,160 +3765,6 @@ Windows</string>
          <string>Specific infinality fonts</string>
         </property>
        </widget>
-       <widget class="QComboBox" name="comboBox">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>171</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <item>
-         <property name="text">
-          <string/>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>OSX</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>IPAD</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>UBUNTU</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>LINUX</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>WINDOWS</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>WINDOWS7</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>WINDOWS7LIGHT</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>VANILLA</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>CUSTOM</string>
-         </property>
-        </item>
-       </widget>
-       <widget class="QComboBox" name="comboBox_2">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>170</y>
-          <width>171</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <item>
-         <property name="text">
-          <string/>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>CLASSIC</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>NUDGE</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>PUSH</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>SHOVE</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>SHARPENED</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>INFINALITY</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>DISABLED</string>
-         </property>
-        </item>
-       </widget>
-       <widget class="QLabel" name="label_7">
-        <property name="geometry">
-         <rect>
-          <x>190</x>
-          <y>170</y>
-          <width>211</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Infinality styles</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_12">
-        <property name="geometry">
-         <rect>
-          <x>190</x>
-          <y>140</y>
-          <width>211</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>General styles</string>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_10">
         <property name="geometry">
          <rect>
@@ -3940,7 +3786,7 @@ Windows</string>
        </widget>
        <widget class="QPushButton" name="installInfinalityFontsButton">
         <property name="enabled">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
         <property name="geometry">
          <rect>
@@ -3971,7 +3817,7 @@ Windows</string>
        </widget>
        <widget class="QPushButton" name="uninstallInfinalityFontsButton">
         <property name="enabled">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
         <property name="geometry">
          <rect>
@@ -4000,6 +3846,117 @@ Windows</string>
          <bool>false</bool>
         </property>
        </widget>
+       <widget class="QPushButton" name="InfinalityFontsGeneralStylesButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>General styles</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="InfinalityFontsInfinalityStylesButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Infinality styles</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="icon">
+      <iconset resource="ubunsys.qrc">
+       <normaloff>:/images/info.png</normaloff>:/images/info.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>9</y>
+        <width>599</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_30">
+       <attribute name="title">
+        <string>System</string>
+       </attribute>
+       <widget class="QPushButton" name="generalInfoButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>General Info</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -4008,7 +3965,7 @@ Windows</string>
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>550</y>
+      <y>640</y>
       <width>621</width>
       <height>131</height>
      </rect>
