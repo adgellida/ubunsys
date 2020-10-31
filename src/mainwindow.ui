@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>7</number>
+     <number>2</number>
     </property>
     <property name="iconSize">
      <size>
@@ -363,7 +363,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_28">
        <attribute name="title">
@@ -919,7 +919,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>10</y>
+          <y>60</y>
           <width>41</width>
           <height>36</height>
          </rect>
@@ -957,7 +957,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>60</y>
+          <y>10</y>
           <width>41</width>
           <height>36</height>
          </rect>
@@ -992,7 +992,7 @@
         <property name="geometry">
          <rect>
           <x>60</x>
-          <y>70</y>
+          <y>20</y>
           <width>271</width>
           <height>21</height>
          </rect>
@@ -1011,7 +1011,7 @@
         <property name="geometry">
          <rect>
           <x>60</x>
-          <y>10</y>
+          <y>60</y>
           <width>311</width>
           <height>41</height>
          </rect>

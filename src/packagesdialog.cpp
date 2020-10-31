@@ -29,10 +29,12 @@ PackagesDialog::PackagesDialog(QWidget *parent) :
     fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
     ui->treeView->setModel(fsModel);
     connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
-    ui->statusBar->showMessage(tr("Select your option"));
+    //ui->statusBar->showMessage(tr("Select your option"));
     //fsModel->setFilterRegExp(QRegExp(".png", Qt::CaseInsensitive,QRegExp::FixedString));
     fsModel->setFilterKeyColumn(1);
     ui->treeView->expandAll();
+
+    getShowNumberofPackages();
 }
 
 PackagesDialog::~PackagesDialog()
@@ -42,30 +44,7 @@ PackagesDialog::~PackagesDialog()
 
 void PackagesDialog::onFileItemSelected()
 {
-    //Get and show number of packages
-
-    system("find ~/.ubunsys/downloads/ubuntupackages-master/apps1 -type f | wc -l >> ~/.ubunsys/files/packagesNumber");
-    system("echo  packages >> ~/.ubunsys/files/packagesNumber");
-
-    QFile file0 (QDir::homePath() + "/.ubunsys/files/packagesNumber");
-
-    if(!file0.open(QIODevice::ReadOnly))
-        QMessageBox::information(0,"info",file0.errorString());
-
-    QTextStream in (&file0);
-
-    ui->statusBar->showMessage(in.readAll());
-
-    //ui->statusBar->showMessage("test");
-
-    //ui->textBrowser->setText(in.readAll());
-
-    //ui->statusBar->showMessage(tr(in.readAll()));
-
-    system("rm -Rf ~/.ubunsys/files/packagesNumber");
-
-    //ui->statusBar->showMessage(tr("Selecting items..."));
-
+    getShowNumberofPackages();
 
     //Preparing to install
 
@@ -175,7 +154,7 @@ void PackagesDialog::on_selectUnofficialReposButton_clicked()
 
     QMessageBox msgBox;
     msgBox.setWindowTitle("Select");
-    msgBox.setText("Select option");
+    //msgBox.setText("Select option");
     //msgBox.setStandardButtons(QMessageBox::Yes);
     QAbstractButton* pButtonRemote = msgBox.addButton(tr("Remote URL"), QMessageBox::YesRole);
     QAbstractButton* pButtonLocal = msgBox.addButton(tr("Local folder"), QMessageBox::YesRole);
@@ -287,7 +266,7 @@ void PackagesDialog::on_clearSelectionButton_clicked()
     fsModel = new RootFileSysProxyModel(new QFileSystemModel, QDir::homePath() + "/.ubunsys/downloads/ubuntupackages-master/apps1", this);
     ui->treeView->setModel(fsModel);
     connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
-    ui->statusBar->showMessage(tr("Select your option"));
+    //ui->statusBar->showMessage(tr("Select your option"));
     //fsModel->setFilterRegExp(QRegExp(".png", Qt::CaseInsensitive,QRegExp::FixedString));
     //fsModel->setFilterKeyColumn(1);
     ui->treeView->expandAll();
@@ -303,4 +282,31 @@ void PackagesDialog::on_showCategoriesButton_clicked()
     connect(fsModel, SIGNAL(dataChanged(QModelIndex,QModelIndex,QVector<int>)), this, SLOT(onFileItemSelected()));
 
     ui->statusBar->showMessage(tr("Categories enabled"));
+}
+
+void PackagesDialog::getShowNumberofPackages()
+{
+//Get and show number of packages
+
+system("find ~/.ubunsys/downloads/ubuntupackages-master/apps1 -type f | wc -l >> ~/.ubunsys/files/packagesNumber");
+system("echo  packages >> ~/.ubunsys/files/packagesNumber");
+
+QFile file0 (QDir::homePath() + "/.ubunsys/files/packagesNumber");
+
+if(!file0.open(QIODevice::ReadOnly))
+    QMessageBox::information(0,"info",file0.errorString());
+
+QTextStream in (&file0);
+
+ui->statusBar->showMessage(in.readAll());
+
+//ui->statusBar->showMessage("test");
+
+//ui->textBrowser->setText(in.readAll());
+
+//ui->statusBar->showMessage(tr(in.readAll()));
+
+system("rm -Rf ~/.ubunsys/files/packagesNumber");
+
+//ui->statusBar->showMessage(tr("Selecting items..."));
 }
