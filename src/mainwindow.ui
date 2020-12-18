@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <property name="iconSize">
      <size>
@@ -1047,7 +1047,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_13">
        <attribute name="title">
@@ -1789,7 +1789,7 @@ apt-fast -y clean</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>410</y>
+          <y>420</y>
           <width>131</width>
           <height>36</height>
          </rect>
@@ -1837,7 +1837,7 @@ for unsupported realeases</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>370</y>
+          <y>380</y>
           <width>131</width>
           <height>36</height>
          </rect>
@@ -1868,7 +1868,7 @@ for unsupported realeases</string>
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>330</y>
+          <y>340</y>
           <width>131</width>
           <height>36</height>
          </rect>
@@ -1899,7 +1899,7 @@ for unsupported realeases</string>
         <property name="geometry">
          <rect>
           <x>160</x>
-          <y>330</y>
+          <y>340</y>
           <width>191</width>
           <height>40</height>
          </rect>
@@ -2220,7 +2220,7 @@ specific</string>
          <rect>
           <x>210</x>
           <y>160</y>
-          <width>171</width>
+          <width>201</width>
           <height>41</height>
          </rect>
         </property>
@@ -2555,6 +2555,112 @@ on terminal</string>
         </property>
         <property name="text">
          <string>autologin</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_133">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>130</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Maps hostnames to IP addresses.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>DNS</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="openDNSButton">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>150</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Edit</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="saveDNSButton">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>190</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Save</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="showDNSButton">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>230</y>
+          <width>111</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Show</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
         </property>
        </widget>
       </widget>

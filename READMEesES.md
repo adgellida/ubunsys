@@ -1,3 +1,5 @@
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=adgellida.ubunsys)
+
 <p align="center">
   <a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://www.linux-apps.com/images_sys/superstore/linux-apps-logo.png" width="250"></a><a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://i.imgur.com/c7JgyGJ.jpg" width="250" alt="Gitlab"></a>
 </p>

@@ -183,6 +183,42 @@ void MainWindow::on_eraseCronButton_clicked()
            "; exec bash'");
 }
 
+void MainWindow::on_openDNSButton_clicked()
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+    QString status2 = db.getStatus("textEditor");
+
+    QProcess::startDetached(status + " -e \"sudo -i "+ status2 +" /etc/resolvconf/resolv.conf.d/head \" ");
+
+}
+
+void MainWindow::on_saveDNSButton_clicked()
+{
+    system("xterm -e '"
+           "sudo resolvconf --enable-updates"
+           " && "
+           "sudo resolvconf -u"
+           " && "
+           "echo Close this window!"
+           "; exec bash'");
+}
+
+void MainWindow::on_showDNSButton_clicked()
+{
+    static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
+    DbManager db(path);
+
+    QString status = db.getStatus("terminal");
+    QString status2 = db.getStatus("textEditor");
+
+    QProcess::startDetached(status + " -e \"sudo -i "+ status2 +" /etc/resolv.conf \" ");
+
+
+}
+
 void MainWindow::on_actionCleanTerminal_triggered()
 {
     console->clear();

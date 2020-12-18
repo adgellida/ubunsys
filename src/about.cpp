@@ -52,7 +52,7 @@ void MainWindow::on_actionAbout_triggered()
     static const QString path (QDir::homePath() + "/.ubunsys/configurations/config.db");
     DbManager db(path);
 
-    QString status = db.getStatus("ubunsysGithubVersion");
+    QString status = db.getStatus("ubunsysInstalledVersion");
 
     about.setInformativeText(qPrintable("Copyright (c) 2020 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\n" + status));
 

@@ -165,6 +165,9 @@ private slots:
     void on_InfinalityFontsGeneralStylesButton_clicked();
     void on_InfinalityFontsInfinalityStylesButton_clicked();
     void on_generalInfoButton_clicked();
+    void on_openDNSButton_clicked();
+    void on_saveDNSButton_clicked();
+    void on_showDNSButton_clicked();
 
 private:
     Ui::MainWindow *ui;

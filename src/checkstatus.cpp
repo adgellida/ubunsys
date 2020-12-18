@@ -326,7 +326,7 @@ void MainWindow::putUbunsysVersion(){
     DbManager db(path);
 
     QString status = db.getStatus("appUpdatePresent");
-    QString status2 = db.getStatus("ubunsysGithubVersion");
+    QString status2 = db.getStatus("ubunsysInstalledVersion");
 
 
     if (status == "false"){
