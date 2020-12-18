@@ -39,8 +39,6 @@
 	<a href="http://www.somsubhra.com/github-release-stats/?username=adgellida&repository=ubunsys" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/src/images/github-release-stats.png" alt="github release stats"></a>
 </p>
 
-**For English click [here](https://github.com/adgellida/ubunsys/blob/master/README.md)**
-
 Instalador de una lista de paquetes útiles, capaz de hacer cambios en la configuración del sistema, actualizaciones, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
 
 Teóricamente compatible con todas las versiones de 64 bits de Ubuntu.
