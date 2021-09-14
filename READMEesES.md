@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://www.linux-apps.com/images_sys/superstore/linux-apps-logo.png" width="250"></a><a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/resources/master/images/download-badge.png" width="250" alt="Gitlab"></a>
+  <a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/resources/master/images/linux-apps-logo.png" width="250"></a><a href="https://www.pling.com/p/1179908" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/resources/master/images/download-badge.png" width="250" alt="Gitlab"></a>
 </p>
 
 <a href="https://github.com/adgellida/ubunsys/blob/master/READMEesES.md" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/data-protection-list/main/images/languages/spain.png" width="80" img align="right"></a>
